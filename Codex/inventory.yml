@@ -2,11 +2,11 @@ Inventories:
 
   main:
     slots: 45
-    title: '&fꐮꀯ ꐲꐰꐮꐭꐬ#5e5e5eCodex > #3b3b3bRegions &m                    '
+    title: '&fꐮꀯ ꐲꐰꐮꐭꐬ#5e5e5eCodex > #3b3b3bРегионы &m                    '
     '1;10':
       item: BARRIER
       custom_model_data: 1
-      name: '&cClose'
+      name: '&cЗакрыть'
       open_inventory: close
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -16,14 +16,14 @@ Inventories:
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
     '4;5;13;14':
       type: monsters
       item: BARRIER
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
       open_inventory: monsters
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -33,7 +33,7 @@ Inventories:
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
       open_inventory: bosses
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -111,12 +111,12 @@ Inventories:
 
   monsters:
     slots: 45
-    title: '&fꐮꂄ ꐲꐰꐮꐭꐬ#5e5e5eCodex > #3b3b3bMonsters &m                  '
+    title: '&fꐮꂄ ꐲꐰꐮꐭꐬ#5e5e5eCodex > #3b3b3bМонстры &m                  '
 
     '1;10':
       item: BARRIER
       custom_model_data: 1
-      name: '&cClose'
+      name: '&cЗакрыть'
       open_inventory: close
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -126,7 +126,7 @@ Inventories:
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
       open_inventory: main
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -136,14 +136,14 @@ Inventories:
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
     '6;7;15;16':
       type: bosses
       item: BARRIER
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
       open_inventory: bosses
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -206,7 +206,7 @@ Inventories:
     '1;10':
       item: BARRIER
       custom_model_data: 1
-      name: '&cClose'
+      name: '&cЗакрыть'
       open_inventory: close
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -216,7 +216,7 @@ Inventories:
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
       open_inventory: main
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -226,7 +226,7 @@ Inventories:
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
       open_inventory: monsters
       click_commands:
       - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
@@ -236,7 +236,7 @@ Inventories:
       custom_model_data: 1
       name: '#5594d9%name%'
       lore:
-      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      - '#8a9dbfЗавершено #cae2fc%unlocked% (%percentage%)'
 
     '18':
       type: bosses;1
