@@ -20,11 +20,11 @@ items:
   '@':
     type: BARRIER
     customModel: 1
-    name: '&aConfirm &2leaving this island&a?'
+    name: '&aПодтвердить &2leaving this island&a?'
   '^':
     type: BARRIER
     customModel: 1
-    name: '&4Cancel'
+    name: '&4Отмена'
 
 sounds:
   '@':

@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꀦ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Bank &m               '
+title: '&fꐮꀦ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Остров Panel > &{HEX:3b3b3b}Банк &m               '
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
@@ -22,38 +22,38 @@ items:
   '!':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Deposit &{HEX:72f155}Half Money'
+    name: '&{HEX:cccccc}Депозит &{HEX:72f155}Half Деньги'
     bank-action:
       deposit: 50.0
   '#':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Deposit &{HEX:72f155}Money'
+    name: '&{HEX:cccccc}Депозит &{HEX:72f155}Деньги'
     bank-action:
       deposit: 0.0
   '$':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Deposit &{HEX:72f155}All Money'
+    name: '&{HEX:cccccc}Депозит &{HEX:72f155}All Деньги'
     bank-action:
       deposit: 100.0
 
   '%':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Withdraw &{HEX:e43030}Half Money'
+    name: '&{HEX:cccccc}Снятие &{HEX:e43030}Half Деньги'
     bank-action:
       withdraw: 50.0
   '^':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Withdraw &{HEX:e43030}Money'
+    name: '&{HEX:cccccc}Снятие &{HEX:e43030}Деньги'
     bank-action:
       withdraw: 0.0
   '&':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Withdraw &{HEX:e43030}All Money'
+    name: '&{HEX:cccccc}Снятие &{HEX:e43030}All Деньги'
     bank-action:
       withdraw: 100.0
 
@@ -61,14 +61,14 @@ items:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZkMTA4MzgzZGZhNWIwMmU4NjYzNTYwOTU0MTUyMGU0ZTE1ODk1MmQ2OGMxYzhmOGYyMDBlYzdlODg2NDJkIn19fQ=='
     customModel: 16
-    name: '&{HEX:cccccc}Bank Balance: &f%superior_island_bank_format%&8/%superior_island_bank_limit_format%'
+    name: '&{HEX:cccccc}Банк Баланс: &f%superior_island_bank_format%&8/%superior_island_bank_limit_format%'
     lore:
       - ''
       - '&fꂀ &{HEX:83ca16}See bank log.'
   '*':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Bank Balance: &f%superior_island_bank_format%&8/%superior_island_bank_limit_format%'
+    name: '&{HEX:cccccc}Банк Баланс: &f%superior_island_bank_format%&8/%superior_island_bank_limit_format%'
     lore:
       - ''
       - '&fꂀ &{HEX:83ca16}See bank log.'
@@ -76,7 +76,7 @@ items:
   'h':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back'
+    name: '&{HEX:cccccc}Go Назад'
 
 commands:
   'h':

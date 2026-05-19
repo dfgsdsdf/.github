@@ -35,7 +35,7 @@ upgrades:
   hoppers-limit:
     '1':
       price: 1000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       block-limits:
         HOPPER: 8
       commands:
@@ -43,7 +43,7 @@ upgrades:
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your hoppers limit was increased to 16!'
     '2':
       price: 3000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       block-limits:
         HOPPER: 16
       commands:
@@ -51,7 +51,7 @@ upgrades:
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your hoppers limit was increased to 32!'
     '3':
       price: 9000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       block-limits:
         HOPPER: 32
       commands:
@@ -59,99 +59,99 @@ upgrades:
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your hoppers limit was increased to 64!'
     '4':
       price: 0.0
-      price-type: "Money"
+      price-type: "Деньги"
       block-limits:
         HOPPER: 64
       commands:
-        - 'island admin msg %player% &e&lSuperiorSkyblock &7You have reached the maximum upgrade for hoppers limit.'
+        - 'island admin msg %player% &e&lSuperiorSkyblock &7Вы reached the maximum upgrade for hoppers limit.'
   crop-growth:
     '1':
       price: 100000.0
-      price-type: "Money"
+      price-type: "Деньги"
       crop-growth: 1
       commands:
         - 'island admin setupgrade %player% crop-growth 2'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Crop growth 1 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Crop growth 1 purchased!'
     '2':
       price: 250000.0
-      price-type: "Money"
+      price-type: "Деньги"
       crop-growth: 1.25
       commands:
         - 'island admin setupgrade %player% crop-growth 3'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Crop growth 2 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Crop growth 2 purchased!'
     '3':
       price: 500000.0
-      price-type: "Money"
+      price-type: "Деньги"
       crop-growth: 1.5
       commands:
         - 'island admin setupgrade %player% crop-growth 4'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Crop growth 3 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Crop growth 3 purchased!'
     '4':
       price: 1000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       crop-growth: 1.75
       commands:
         - 'island admin setupgrade %player% crop-growth 5'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Crop growth 4 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Crop growth 4 purchased!'
     '5':
       price: 2500000.0
-      price-type: "Money"
+      price-type: "Деньги"
       crop-growth: 2
       commands:
         - 'island admin setupgrade %player% crop-growth 6'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Crop growth 5 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Crop growth 5 purchased!'
     '6':
       price: 0.0
-      price-type: "Money"
+      price-type: "Деньги"
       crop-growth: 2.5
       commands:
         - 'island admin msg %player% &fꀓ &{HEX:e55039}Maximum level reached!'
   spawner-rates:
     '1':
       price: 500000.0
-      price-type: "Money"
+      price-type: "Деньги"
       spawner-rates: 1
       commands:
         - 'island admin setupgrade %player% spawner-rates 2'
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your spawner-rates multiplier was increased to x2!'
     '2':
       price: 1000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       spawner-rates: 2
       commands:
         - 'island admin setupgrade %player% spawner-rates 3'
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your spawner-rates multiplier was increased to x3!'
     '3':
       price: 2500000.0
-      price-type: "Money"
+      price-type: "Деньги"
       spawner-rates: 3
       commands:
         - 'island admin setupgrade %player% spawner-rates 4'
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your spawner-rates multiplier was increased to x4!'
     '4':
       price: 0.0
-      price-type: "Money"
+      price-type: "Деньги"
       spawner-rates: 4
       commands:
-        - 'island admin msg %player% &e&lSuperiorSkyblock &7You have reached the maximum upgrade for spawner-rates.'
+        - 'island admin msg %player% &e&lSuperiorSkyblock &7Вы reached the maximum upgrade for spawner-rates.'
   mob-drops:
     '1':
       price: 1000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       mob-drops: 1
       commands:
         - 'island admin setupgrade %player% mob-drops 2'
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your mob-drops multiplier was increased to x2!'
     '2':
       price: 2000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       mob-drops: 2
       commands:
         - 'island admin setupgrade %player% mob-drops 3'
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your mob-drops multiplier was increased to x3!'
     '3':
       price: 5000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       mob-drops: 3
       commands:
         - 'island admin setupgrade %player% mob-drops 4'
@@ -160,81 +160,81 @@ upgrades:
       price: 0.0
       mob-drops: 4
       commands:
-        - 'island admin msg %player% &e&lSuperiorSkyblock &7You have reached the maximum upgrade for mob-drops.'
+        - 'island admin msg %player% &e&lSuperiorSkyblock &7Вы reached the maximum upgrade for mob-drops.'
   members-limit:
     '1':
       price: 200000.0
-      price-type: "Money"
+      price-type: "Деньги"
       team-limit: 5
       commands:
         - 'island admin setupgrade %player% members-limit 2'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Team cap 1 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Team cap 1 purchased!'
     '2':
       price: 350000.0
-      price-type: "Money"
+      price-type: "Деньги"
       team-limit: 6
       commands:
         - 'island admin setupgrade %player% members-limit 3'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Team cap 2 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Team cap 2 purchased!'
     '3':
       price: 600000.0
-      price-type: "Money"
+      price-type: "Деньги"
       team-limit: 7
       commands:
         - 'island admin setupgrade %player% members-limit 4'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Team cap 3 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Team cap 3 purchased!'
     '4':
       price: 1000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       team-limit: 8
       commands:
         - 'island admin setupgrade %player% members-limit 5'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Team cap 4 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Team cap 4 purchased!'
     '5':
       price: 0.0
-      price-type: "Money"
+      price-type: "Деньги"
       team-limit: 10
       commands:
         - 'island admin msg %player% &fꀓ &{HEX:e55039}Maximum level reached!'
   border-size:
     '1':
       price: 150000.0
-      price-type: "Money"
+      price-type: "Деньги"
       border-size: 25
       commands:
         - 'island admin setupgrade %player% border-size 2'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Border size 1 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Border size 1 purchased!'
     '2':
       price: 400000.0
-      price-type: "Money"
+      price-type: "Деньги"
       border-size: 50
       commands:
         - 'island admin setupgrade %player% border-size 3'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Border size 2 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Border size 2 purchased!'
     '3':
       price: 1000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       border-size: 100
       commands:
         - 'island admin setupgrade %player% border-size 4'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Border size 3 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Border size 3 purchased!'
     '4':
       price: 2000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       border-size: 150
       commands:
         - 'island admin setupgrade %player% border-size 5'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Border size 4 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Border size 4 purchased!'
     '5':
       price: 0.0
-      price-type: "Money"
+      price-type: "Деньги"
       border-size: 200
       commands:
         - 'island admin msg %player% &fꀓ &{HEX:e55039}Maximum level reached!'
   generator-rates:
     '1':
       price: 300000.0
-      price-type: "Money"
+      price-type: "Деньги"
       generator-rates:
         normal:
           STONE: 95
@@ -243,10 +243,10 @@ upgrades:
           IRON_ORE: 1
       commands:
         - 'island admin setupgrade %player% generator-rates 2'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Generator 1 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Generator 1 purchased!'
     '2':
       price: 750000.0
-      price-type: "Money"
+      price-type: "Деньги"
       generator-rates:
         normal:
           STONE: 92
@@ -256,10 +256,10 @@ upgrades:
           IRON_ORE: 2
       commands:
         - 'island admin setupgrade %player% generator-rates 3'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Generator 2 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Generator 2 purchased!'
     '3':
       price: 1500000.0
-      price-type: "Money"
+      price-type: "Деньги"
       generator-rates:
         normal:
           STONE: 80
@@ -275,10 +275,10 @@ upgrades:
           GLOWSTONE: 13
       commands:
         - 'island admin setupgrade %player% generator-rates 4'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Generator 3 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Generator 3 purchased!'
     '4':
       price: 3000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       generator-rates:
         normal:
           STONE: 65
@@ -298,10 +298,10 @@ upgrades:
           NEXO:soulsteel_ore: 2
       commands:
         - 'island admin setupgrade %player% generator-rates 5'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Generator 4 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Generator 4 purchased!'
     '5':
       price: 5000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       generator-rates:
         normal:
           STONE: 48
@@ -322,10 +322,10 @@ upgrades:
           NEXO:soulsteel_ore: 5
       commands:
         - 'island admin setupgrade %player% generator-rates 6'
-        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Island upgrade: Generator 5 purchased!'
+        - 'island admin msgall %player% &fꀒ &{HEX:04d42c}Остров upgrade: Generator 5 purchased!'
     '6':
       price: 0.0
-      price-type: "Money"
+      price-type: "Деньги"
       generator-rates:
         normal:
           STONE: 34
@@ -349,7 +349,7 @@ upgrades:
   minecarts-limit:
     '1':
       price: 1000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       entity-limits:
         MINECART: 4
       commands:
@@ -357,7 +357,7 @@ upgrades:
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your minecarts limit was increased to 8!'
     '2':
       price: 3000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       entity-limits:
         MINECART: 8
       commands:
@@ -365,7 +365,7 @@ upgrades:
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your minecarts limit was increased to 16!'
     '3':
       price: 9000000.0
-      price-type: "Money"
+      price-type: "Деньги"
       entity-limits:
         MINECART: 16
       commands:
@@ -373,8 +373,8 @@ upgrades:
         - 'island admin msgall %player% &e&lSuperiorSkyblock &7Your minecarts limit was increased to 32!'
     '4':
       price: 0.0
-      price-type: "Money"
+      price-type: "Деньги"
       entity-limits:
         MINECART: 32
       commands:
-        - 'island admin msg %player% &e&lSuperiorSkyblock &7You have reached the maximum upgrade for minecarts limit.'
+        - 'island admin msg %player% &e&lSuperiorSkyblock &7Вы reached the maximum upgrade for minecarts limit.'

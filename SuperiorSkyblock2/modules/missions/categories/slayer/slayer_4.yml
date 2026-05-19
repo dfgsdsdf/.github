@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: KillsMissions
+mission-file: KillsМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -19,9 +19,9 @@ rewards:
   commands:
     - 'eco give %player% 250000'
     - 'is admin unlockworld %player% the_end true'
-    - 'is admin msg %player% &e&lSlayer | &7Successfully finished the mission Slayer IV!'
+    - 'is admin msg %player% &e&lSlayer | &7Успехfully finished the mission Slayer IV!'
     - 'is admin msg %player% &e&lSlayer | &7You passed all the tests, you are ready now for the end...'
-    - 'is admin msg %player% &e&lSlayer | &7&oYou are now a professional Slayer, congratz!'
+    - 'is admin msg %player% &e&lSlayer | &7&oВы now a professional Slayer, congratz!'
 
 # List of required missions that must be completed before completing this one.
 required-missions:
@@ -42,7 +42,7 @@ icons:
     type: PAPER
     name: '&aSlayer IV'
     lore:
-      - '&7Before the end, there is one mission left.'
+      - '&7Before the end, there is one mission вышел.'
       - '&7Kill the wither.'
       - ''
       - '&6Required Kills:'
@@ -57,7 +57,7 @@ icons:
     type: PAPER
     name: '&aSlayer IV'
     lore:
-      - '&7Before the end, there is one mission left.'
+      - '&7Before the end, there is one mission вышел.'
       - '&7Kill the wither.'
       - ''
       - '&6Required Kills:'
@@ -68,7 +68,7 @@ icons:
       - '&8 - &7Unlock The End'
       - ''
       - '&6Wither Killed: &a&l ✔'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:
@@ -77,7 +77,7 @@ icons:
     type: MAP
     name: '&aSlayer IV'
     lore:
-      - '&7Before the end, there is one mission left.'
+      - '&7Before the end, there is one mission вышел.'
       - '&7Kill the wither.'
       - ''
       - '&6Rewards:'
@@ -85,4 +85,4 @@ icons:
       - '&8 - &7Unlock The End'
       - ''
       - '&6Wither Killed: &a&l ✔'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'

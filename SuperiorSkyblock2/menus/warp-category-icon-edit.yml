@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&lCategory: {0}'
+title: '&lКатегория: {0}'
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
@@ -47,7 +47,7 @@ items:
       - '&{HEX:cccccc}&o(( &f&oClick &{HEX:cccccc}&oto edit the item lore. ))'
   '%':
     type: EMERALD
-    name: '&6Confirm Changes'
+    name: '&6Подтвердить Changes'
     lore:
       - '&f '
       - '&f '

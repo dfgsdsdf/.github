@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꃌ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Visitors &m           '
+title: '&fꐮꃌ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Остров Panel > &{HEX:3b3b3b}Посетительs &m           '
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
@@ -32,11 +32,11 @@ items:
   'm':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Switch to &{HEX:318ad8}Members'
+    name: '&{HEX:cccccc}Switch to &{HEX:318ad8}Участникs'
   'v':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Switch to &{HEX:318ad8}Visitors'
+    name: '&{HEX:cccccc}Switch to &{HEX:318ad8}Посетительs'
   'c':
     type: BARRIER
     customModel: 1
@@ -45,15 +45,15 @@ items:
   'p':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Previous Page'
+    name: '&{HEX:cccccc}Назад Страница'
   'n':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Next Page'
+    name: '&{HEX:cccccc}Далее Страница'
   'h':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back'
+    name: '&{HEX:cccccc}Go Назад'
 
 commands:
   'h':

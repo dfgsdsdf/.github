@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꃐ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Managing Member'
+title: '&fꐮꃐ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Managing Участник'
 
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
@@ -24,29 +24,29 @@ items:
   'h':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back'
+    name: '&{HEX:cccccc}Go Назад'
   '@':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:35addc}Player Role'
+    name: '&{HEX:35addc}Игрок Role'
     lore:
-      - '&{HEX:cccccc}Click to edit player''s'
+      - '&{HEX:cccccc}Нажмите чтобы edit player''s'
       - '&{HEX:cccccc}role.'
     flags:
       - HIDE_ATTRIBUTES
   '%':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:e82121}Ban Player'
+    name: '&{HEX:e82121}Ban Игрок'
     lore:
-      - '&{HEX:cccccc}Click to ban the player'
+      - '&{HEX:cccccc}Нажмите чтобы ban the player'
       - '&{HEX:cccccc}from the island.'
   '^':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:dc8835}Kick Player'
+    name: '&{HEX:dc8835}Kick Игрок'
     lore:
-      - '&{HEX:cccccc}Click to kick the player'
+      - '&{HEX:cccccc}Нажмите чтобы kick the player'
       - '&{HEX:cccccc}from the island.'
 
 commands:

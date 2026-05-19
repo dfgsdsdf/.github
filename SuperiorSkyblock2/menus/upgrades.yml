@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꀢ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Upgrade &m          '
+title: '&fꐮꀢ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Остров Panel > &{HEX:3b3b3b}Улучшение &m          '
 
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
@@ -54,7 +54,7 @@ items:
   'b':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back.'
+    name: '&{HEX:cccccc}Go Назад.'
 
 upgrades:
   crop-growth:
@@ -236,10 +236,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(1/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(1/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m5&8 → &{HEX:bdf59f}6'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m5&8 → &{HEX:bdf59f}6'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}200,000C'
           - ''
@@ -251,10 +251,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(1/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(1/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m5&8 → &{HEX:bdf59f}6'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m5&8 → &{HEX:bdf59f}6'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}200,000C'
     '2':
@@ -265,10 +265,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(2/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(2/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m6&8 → &{HEX:bdf59f}7'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m6&8 → &{HEX:bdf59f}7'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}350,000C'
           - ''
@@ -280,10 +280,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(2/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(2/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m6&8 → &{HEX:bdf59f}7'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m6&8 → &{HEX:bdf59f}7'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}350,000C'
     '3':
@@ -294,10 +294,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(3/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(3/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m7&8 → &{HEX:bdf59f}8'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m7&8 → &{HEX:bdf59f}8'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}600,000C'
           - ''
@@ -309,10 +309,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(3/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(3/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m7&8 → &{HEX:bdf59f}8'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m7&8 → &{HEX:bdf59f}8'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}600,000C'
     '4':
@@ -323,10 +323,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(4/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(4/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m8&8 → &{HEX:bdf59f}10'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m8&8 → &{HEX:bdf59f}10'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
           - ''
@@ -338,10 +338,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(4/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(4/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m8&8 → &{HEX:bdf59f}10'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &8&m8&8 → &{HEX:bdf59f}10'
           - '&{HEX:565973}'
           - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
     '5':
@@ -352,10 +352,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(5/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(5/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &{HEX:bdf59f}10'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &{HEX:bdf59f}10'
       no-next-level:
         sound:
           type: BLOCK_ANVIL_PLACE
@@ -363,10 +363,10 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:32e3c0}Max Members &f(5/5)'
+        name: '&{HEX:32e3c0}Max Участникs &f(5/5)'
         lore:
           - '&{HEX:9c9c9c}'
-          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &{HEX:bdf59f}10'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Участникs: &{HEX:bdf59f}10'
 
 
   border-size:
@@ -379,7 +379,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(1/5)'
+        name: '&{HEX:eb6767}Остров Border &f(1/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m25x25&8 → &{HEX:bdf59f}50x50'
@@ -394,7 +394,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(1/5)'
+        name: '&{HEX:eb6767}Остров Border &f(1/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m25x25&8 → &{HEX:bdf59f}50x50'
@@ -408,7 +408,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(2/5)'
+        name: '&{HEX:eb6767}Остров Border &f(2/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m50x50&8 → &{HEX:bdf59f}100x100'
@@ -423,7 +423,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(2/5)'
+        name: '&{HEX:eb6767}Остров Border &f(2/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m50x50&8 → &{HEX:bdf59f}100x100'
@@ -437,7 +437,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(3/5)'
+        name: '&{HEX:eb6767}Остров Border &f(3/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m100x100&8 → &{HEX:bdf59f}150x150'
@@ -452,7 +452,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(3/5)'
+        name: '&{HEX:eb6767}Остров Border &f(3/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m100x100&8 → &{HEX:bdf59f}150x150'
@@ -468,7 +468,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(4/5)'
+        name: '&{HEX:eb6767}Остров Border &f(4/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m150x150&8 → &{HEX:bdf59f}200x200'
@@ -483,7 +483,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(4/5)'
+        name: '&{HEX:eb6767}Остров Border &f(4/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m150x150&8 → &{HEX:bdf59f}200x200'
@@ -499,7 +499,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(5/5)'
+        name: '&{HEX:eb6767}Остров Border &f(5/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &{HEX:bdf59f}200x200'
@@ -510,7 +510,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:eb6767}Island Border &f(5/5)'
+        name: '&{HEX:eb6767}Остров Border &f(5/5)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &{HEX:bdf59f}200x200'
@@ -525,7 +525,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(1/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(1/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m95%&8 → &{HEX:bdf59f}92%'
@@ -545,7 +545,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(1/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(1/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m95%&8 → &{HEX:bdf59f}92%'
@@ -566,7 +566,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(2/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(2/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m92%&8 → &{HEX:bdf59f}80%'
@@ -593,7 +593,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(2/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(2/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m92%&8 → &{HEX:bdf59f}80%'
@@ -619,7 +619,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(3/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(3/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m80%&8 → &{HEX:bdf59f}65%'
@@ -651,7 +651,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(3/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(3/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m80%&8 → &{HEX:bdf59f}65%'
@@ -682,7 +682,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(4/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(4/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m65%&8 → &{HEX:bdf59f}48%'
@@ -715,7 +715,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(4/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(4/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m65%&8 → &{HEX:bdf59f}48%'
@@ -747,7 +747,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(5/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(5/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m48%&8 → &{HEX:bdf59f}34%'
@@ -780,7 +780,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(5/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(5/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m48%&8 → &{HEX:bdf59f}34%'
@@ -813,7 +813,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(6/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(6/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &{HEX:bdf59f}34%'
@@ -842,7 +842,7 @@ upgrades:
           pitch: 0.2
         type: BARRIER
         customModel: 1
-        name: '&{HEX:ffcf40}Island Ore Generator &f(6/6)'
+        name: '&{HEX:ffcf40}Остров Ore Generator &f(6/6)'
         lore:
           - '&{HEX:9c9c9c}'
           - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &{HEX:bdf59f}34%'

@@ -2,57 +2,57 @@
 # Messages support HEX colours codes.
 
 player_help: |
-  &a&nPlayer commands:
-  &e/dq me &a: see your own quests
-  &e/dq reroll <index> &a: reroll a quest (requires permission)
-  &e/dq show <global/easy/medium/hard> &a: see the quests of a category
+  &a&nКоманды игрока:
+  &e/dq me &a: посмотреть свои задания
+  &e/dq reroll <index> &a: перезапустить задание (требуется право)
+  &e/dq show <global/easy/medium/hard> &a: посмотреть задания категории
 admin_help: |
-  &c&nAdmin commands:
-  &e/dqa complete <player> <index> &a: complete a player quest
-  &e/dqa customcomplete <player> <index> <amount> &a: complete a player quest from a custom type
-  &e/dqa reset <quests/total> <player> &a: draw new quests for a player, or reset his total number of achieved quests.
+  &c&nКоманды администратора:
+  &e/dqa complete <player> <index> &a: завершить задание игрока
+  &e/dqa customcomplete <player> <index> <amount> &a: завершить задание игрока from a custom type
+  &e/dqa reset <quests/total> <player> &a: выдать игроку новые задания или сбросить его общее число выполненных заданий.
   &e/dqa add total <player> <amount> &a: add a number of achieved quests to a player.
   &e/dqa reroll <player> <index> &a: draw a new quest for a player, at a specific index.
   &e/dqa show <player> &a: see quests of a player
 no_permission: '&fꀓ #e55039You don''t have permission.'
 no_permission_category: '&fꀓ #e55039You don''t have permission to see this category.'
-player_only: '&fꀓ #e55039Only player can execute this command.'
-invalid_category: '&fꀓ #e55039Invalid quest category.'
+player_only: '&fꀓ #e55039Только игрок может выполнить эту команду.'
+invalid_category: '&fꀓ #e55039Неверная категория задания.'
 invalid_player: '&fꀓ #e55039This player doesn''t exist, or is offline.'
-invalid_quest_id: '&fꀓ #e55039You must specify a valid quest ID.'
-invalid_quest_index: '&fꀓ #e55039The specified index is invalid.'
-invalid_amount: '&fꀓ #e55039The specified amount is invalid.'
+invalid_quest_id: '&fꀓ #e55039Укажите корректный ID задания.'
+invalid_quest_index: '&fꀓ #e55039Указан неверный индекс.'
+invalid_amount: '&fꀓ #e55039Указано неверное количество.'
 categorized_enabled: '&fꀓ #e55039Categorized quests are enabled, the global menu is
   not available.'
 categorized_disabled: '&fꀓ #e55039Categorized quests are disabled, only the global
   menu is available.'
 global_disabled: '&fꀓ #e55039Global quests are disabled, only the categorized menus
   are available.'
-already_achieved: '&fꀓ #e55039This quest is already achieved.'
+already_achieved: '&fꀓ #e55039Это задание уже выполнено.'
 hologram_categorized_enabled: '&fꀓ #e55039Categorized quests are enabled, impossible
   to create the global hologram.'
 hologram_categorized_disabled: '&fꀓ #e55039Categorized quests are disabled, impossible
   to create the categorized holograms.'
-hologram_deleted: '&fꀒ #04d42cHologram successfully deleted.'
-hologram_invalid_index: '&fꀓ #e55039Invalid index for the hologram.'
+hologram_deleted: '&fꀒ #04d42cГолограмма успешно удалена.'
+hologram_invalid_index: '&fꀓ #e55039Неверный индекс голограммы.'
 quests_in_progress: ''
-all_quests_achieved_connect: '&fꀒ #04d42cYou have completed all your daily quests
+all_quests_achieved_connect: '&fꀒ #04d42cВы выполнили все ежедневные задания
   !'
-quests_renewed: '&fꀒ #04d42cYou have new daily quests to complete !'
-quests_renewed_admin: '&fꀷ #4b56b4You have reset the quests of %target%.'
-quest_rerolled: '&fꀒ #04d42cYou have rerolled your quest number %index% !'
-quest_rerolled_admin: '&fꀷ #4b56b4You have rerolled the quest number %index% of %target%.'
+quests_renewed: '&fꀒ #04d42cУ вас появились новые ежедневные задания !'
+quests_renewed_admin: '&fꀷ #4b56b4Вы сбросили задания игрока %target%.'
+quest_rerolled: '&fꀒ #04d42cВы перезапустили задание №%index% !'
+quest_rerolled_admin: '&fꀷ #4b56b4Вы перезапустили задание №%index% у %target%.'
 add_total_admin: '&fꀷ #4b56b4You have added %amount% to %target%''s total number of
   completed quests.'
 add_total_target: '&fꀷ #4b56b4An admin has added %amount% to your total number of
   completed quests.'
-quest_achieved: '&fꀒ #04d42cQuest card &8[%questName%&8] #04d42cis cleared, well done
+quest_achieved: '&fꀒ #04d42cКарточка задания &8[%questName%&8] #04d42cвыполнена, отлично
   !'
-all_quests_achieved: '&fꀒ #04d42cYou have finished all your daily quests, well done
+all_quests_achieved: '&fꀒ #04d42cВы завершили все ежедневные задания, отлично
   !'
-easy_reward: '&fꀒ #04d42cYou have completed all your easy quests!'
-medium_reward: '&fꀒ #04d42cYou have completed all your medium quests!'
-hard_reward: '&fꀒ #04d42cYou have completed all your hard quests!'
+easy_reward: '&fꀒ #04d42cВы выполнили все лёгкие задания!'
+medium_reward: '&fꀒ #04d42cВы выполнили все средние задания!'
+hard_reward: '&fꀒ #04d42cВы выполнили все сложные задания!'
 not_enough_items: '&fꀓ #e55039You don''t have the required amount to complete this
   quest.'
 total_amount_reset: '&fꀷ #4b56b4Your total number of completed quests has been reset
@@ -62,15 +62,15 @@ total_amount_reset_admin: '&fꀷ #4b56b4%target%''s total number of completed qu
 world_disabled: '&fꀓ #e55039You can''t complete quests in this world.'
 not_required_world: '&fꀓ #e55039You can''t complete this quest in this world.'
 not_required_region: '&fꀓ #e55039You can''t complete this quest in this region.'
-reward_command: '&fꀒ #04d42cYou have received your rewards.'
-reward_exp_levels: '&fꀒ #04d42cYou receive &e%rewardAmount% &bEXP &alevels.'
-reward_exp_points: '&fꀒ #04d42cYou receive &e%rewardAmount% &bEXP &apoints.'
-reward_money: '&fꀒ #04d42cYou receive &e%rewardAmount% &b$&a.'
-reward_points: '&fꀒ #04d42cYou receive &e%rewardAmount% &bpoints&a.'
-reward_coins_engine: '&fꀒ #04d42cYou receive &e%rewardAmount% &b%currencyName%&a.'
+reward_command: '&fꀒ #04d42cВы получили награды.'
+reward_exp_уровней: '&fꀒ #04d42cВы получаете &e%rewardAmount% &bEXP &aуровней.'
+reward_exp_очков: '&fꀒ #04d42cВы получаете &e%rewardAmount% &bEXP &aочков.'
+reward_money: '&fꀒ #04d42cВы получаете &e%rewardAmount% &b$&a.'
+reward_очков: '&fꀒ #04d42cВы получаете &e%rewardAmount% &bочков&a.'
+reward_coins_engine: '&fꀒ #04d42cВы получаете &e%rewardAmount% &b%currencyName%&a.'
 new_day: '&6It''s a new day!'
-too_far: '&fꀓ #e55039You are too far from the required location.'
-bad_world: '&fꀓ #e55039You are in the wrong world.'
+too_far: '&fꀓ #e55039Вы слишком далеко от нужной точки.'
+bad_world: '&fꀓ #e55039Вы находитесь в неправильном мире.'
 placeholder_api_not_enabled: '&fꀓ #e55039The PlaceholderAPI plugin is not enabled.
   Please inform an administrator.'
 placeholder_not_number: '&fꀓ #e55039The placeholder %placeholder% is not a number.
@@ -79,14 +79,14 @@ cannot_complete_quest_with_off_hand: '&fꀓ #e55039All required items must be in
   inventory, not in your off hand.'
 cannot_reroll_if_achieved: '&fꀓ #e55039You can''t reroll a quest that you have already
   achieved!'
-quest_already_assigned: '&cThis quest is already assigned to the player.'
+quest_already_assigned: '&cЭто задание уже назначено игроку.'
 player_quests_not_loaded: '&cThe player''s quests are not loaded yet. Please try again
   in a moment.'
 no_available_quests_in_category: '&cThere are no available quests in this category
   to assign.'
 quest_set_admin: '&eYou have set quest %quest_id% (%quest%&r&e) in slot %slot% for
   %target% in %category%.'
-quest_set_target: '&eAn admin set your quest number %slot% to %quest%&r&e (%quest_id%)
+quest_set_target: '&eАдминистратор установил вам задание №%slot%:  %quest%&r&e (%quest_id%)
   in %category%.'
 add_total_category_admin: '&eYou have added %amount% to %target%''s total number of
   completed quests in the category %category%.'
@@ -105,14 +105,14 @@ total_category_reset_admin: '&e%target%''s total number of completed quests in t
 total_category_reset_target: '&eYour total number of completed quests in the category
   %category% has been reset by an admin.'
 category_quests_achieved: '&aYou have completed all your %category% quests!'
-plugin_reloaded: '&aThe plugin has been reloaded successfully!'
-error_inventory: '&cAn error occurred while opening the inventory.'
-conversion_failed: '&cConversion failed! Please check the console for more information.'
+plugin_reloaded: '&aПлагин успешно перезагружен!'
+error_inventory: '&cПроизошла ошибка при открытии инвентаря.'
+conversion_failed: '&cConversion failed! Проверьте консоль для дополнительной информации.'
 conversion_success: '&aConversion successful! Please select the new storage mode in
   the config file and restart the server to apply changes.'
-check_console: '&cPlease check the console for more information.'
+check_console: '&cПроверьте консоль для дополнительной информации.'
 impossible_to_open_inventory: '&cImpossible to open the quests interface. Is the plugin
   still loading?'
-contact_admin: '&cIf the problem persists, please contact the server administrator.'
+contact_admin: '&cЕсли проблема сохраняется, обратитесь к администратору сервера.'
 configuration_error: '&cA configuration error prevents the interface from being displayed.
   Please inform an administrator.'

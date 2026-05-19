@@ -21,7 +21,7 @@ useTimes:
     B: {}
     Q:
       buyUseTimes: 1
-      lastBuyTime: '2025-11-14 18:31:34'
+      lastКупитьTime: '2025-11-14 18:31:34'
     E: {}
     G: {}
     D: {}
@@ -32,7 +32,7 @@ useTimes:
     F: {}
     P:
       buyUseTimes: 1
-      lastBuyTime: '2025-11-14 18:31:35'
+      lastКупитьTime: '2025-11-14 18:31:35'
     K: {}
     O: {}
     H: {}
@@ -83,11 +83,11 @@ useTimes:
     J: {}
     H: {}
     K:
-      lastSellTime: '2025-10-21 14:10:21'
+      lastПродатьTime: '2025-10-21 14:10:21'
       sellUseTimes: 1
     E:
       buyUseTimes: 2
-      lastBuyTime: '2025-10-26 02:03:44'
+      lastКупитьTime: '2025-10-26 02:03:44'
     I: {}
     B: {}
     D: {}
@@ -95,11 +95,11 @@ useTimes:
     O: {}
     N:
       buyUseTimes: 3
-      lastBuyTime: '2025-11-08 11:54:59'
+      lastКупитьTime: '2025-11-08 11:54:59'
     A: {}
     M:
       buyUseTimes: 1
-      lastBuyTime: '2025-11-12 23:25:26'
+      lastКупитьTime: '2025-11-12 23:25:26'
     L: {}
     F: {}
   fish:
@@ -111,14 +111,14 @@ useTimes:
     C: {}
   minerals:
     M:
-      lastSellTime: '2025-11-14 01:58:51'
+      lastПродатьTime: '2025-11-14 01:58:51'
       sellUseTimes: 6
     C: {}
     A: {}
     E: {}
     H: {}
     K:
-      lastSellTime: '2025-11-14 01:58:53'
+      lastПродатьTime: '2025-11-14 01:58:53'
       sellUseTimes: 10
     G: {}
     I: {}
@@ -130,10 +130,10 @@ useTimes:
   stardust:
     A:
       buyUseTimes: 1
-      lastBuyTime: '2025-11-09 00:45:20'
+      lastКупитьTime: '2025-11-09 00:45:20'
     C: {}
     B: {}
     E:
       buyUseTimes: 2
-      lastBuyTime: '2025-11-09 00:43:30'
+      lastКупитьTime: '2025-11-09 00:43:30'
     D: {}

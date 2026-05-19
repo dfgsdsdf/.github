@@ -1,11 +1,11 @@
-Warp:
+Варп:
   Creation:
     # List of worlds, where players can't create warps.
     # This setting can be bypassed with the 'sunlight.warps.bypass.creation.world' permission.
     World_Blacklist:
     - world_events
     - custom_world
-    # Amount of possible warps to create for certain permission groups.
+    # Количество of possible warps to create for certain permission groups.
     # If player is in multiple groups listed here, the greater value will be used.
     # If player is not in any group listed here, the 'default' value will be used if present.
     # -*-
@@ -15,24 +15,24 @@ Warp:
     # -*-
     # Use '-1' for unlimited warps amount.
     # You must have Vault installed for this feature to work. No extra permissions required.
-    Amount_Per_Rank:
+    Количество_Per_Rank:
       # Available values: RANK, PERMISSION
       # ==================== RANK MODE ====================
       # Get value by player's permission group. All keys in 'Values' list will represent permission group names.
       # If player has none of specified groups, the 'Default_Value' setting will be used then
       #   Values:
-      #     vip: 1 # -> Player must be in 'vip' permission group.
-      #     gold: 2 # -> Player must be in 'gold' permission group.
-      #     emerald: 3 # -> Player must be in 'emerald' permission group.
+      #     vip: 1 # -> Игрок must be in 'vip' permission group.
+      #     gold: 2 # -> Игрок must be in 'gold' permission group.
+      #     emerald: 3 # -> Игрок must be in 'emerald' permission group.
       #
       # ==================== PERMISSION MODE ====================
       # Get value by player's permissions. All keys in 'Values' list will represent postfixes for the 'Permission_Prefix' setting (see below).
       # If player has none of specified permissions, the 'Default_Value' setting will be used then
       #   Permission_Prefix: 'example.prefix.'
       #   Values:
-      #     vip: 1 # -> Player must have 'example.prefix.vip' permission.
-      #     gold: 2 # -> Player must have 'example.prefix.gold' permission.
-      #     emerald: 3 # -> Player must have 'example.prefix.emerald' permission.
+      #     vip: 1 # -> Игрок must have 'example.prefix.vip' permission.
+      #     gold: 2 # -> Игрок must have 'example.prefix.gold' permission.
+      #     emerald: 3 # -> Игрок must have 'example.prefix.emerald' permission.
       Mode: RANK
       # Sets permission prefix for the 'PERMISSION' mode.
       Permission_Prefix: warps.amount.

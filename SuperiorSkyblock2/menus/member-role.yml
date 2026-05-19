@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꃑ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Managing Member''s Role'
+title: '&fꐮꃑ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Managing Участник''s Role'
 
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
@@ -20,9 +20,9 @@ items:
   'h':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back'
+    name: '&{HEX:cccccc}Go Назад'
   '@':
-    role: Member
+    role: Участник
     type: BARRIER
     customModel: 1
     name: '&{HEX:cccccc}Set role to &{HEX:35addc}member.'

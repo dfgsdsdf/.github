@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: FishingMissions
+mission-file: FishingМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -18,9 +18,9 @@ reset-after-finish: true
 rewards:
   commands:
     - 'eco give %player% 50000'
-    - 'is admin msg %player% &e&lFisherman | &7Successfully finished the mission Fisherman III!'
+    - 'is admin msg %player% &e&lFisherman | &7Успехfully finished the mission Fisherman III!'
     - 'is admin msg %player% &e&lFisherman | &7Now you know how fishing works!'
-    - 'is admin msg %player% &e&lFisherman | &7&oYou are now a professional Fisherman, congratz!'
+    - 'is admin msg %player% &e&lFisherman | &7&oВы now a professional Fisherman, congratz!'
 
 # List of required missions that must be completed before completing this one.
 required-missions:
@@ -72,7 +72,7 @@ icons:
       - ''
       - '&6Treasure Items: &73/3'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:

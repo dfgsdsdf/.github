@@ -14,7 +14,7 @@ config-version: 92
 
 settings:
   # What language do you want the plugin to read? The list langs are in the lang/ folder.
-  lang: en_US
+  lang: ru_RU
   # Should the plugin try and attempt to detect what language the player is using on their client?
   # If it could not find one, it'll use the default language.
   attempt-detect-lang: true

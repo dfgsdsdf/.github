@@ -1,6 +1,6 @@
 TradeSystem:
   Prefix: ''
-  Language: ENG
+  Language: ru_RU
   # Permissions:
   #   "tradesystem.trade": Can accept/deny/toggle trade requests
   #   "tradesystem.trade.initiate": Can invite players for trades

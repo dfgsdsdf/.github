@@ -4,7 +4,7 @@
 Unregister_Conflicts: false
 Cooldowns:
   heal:
-    Commands: heal,health
+    Командаs: heal,health
     Patterns:
     - heal
     - hp|health restore
@@ -12,14 +12,14 @@ Cooldowns:
       vip: 60
       gold: 30
   home:
-    Commands: homes,home
+    Командаs: homes,home
     Patterns:
     - homes teleport
     - home
     Cooldown:
       vip: 0
       default: 30
-Settings:
+Настройки:
   Time:
     # In this section you can create custom shortcuts for the 'time_set' command.
     # In other words, it will create one-shot time set commands with specified name and time value.
@@ -31,8 +31,8 @@ Settings:
       night: 13000
       day: 1000
   # Add here names of command executors to disable them completely.
-  # Disabled executor will result in disabling ALL commands using that executor.
-  Disabled_Executors: []
+  # Отключено executor will result in disabling ALL commands using that executor.
+  Отключено_Executors: []
   Broadcast:
     # Sets message format for the 'broadcast' command.
     # Text Formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
@@ -48,7 +48,7 @@ Settings:
       # Sets whether or not 'foodlevel_restore' command will give saturation points.
       GiveSaturation: true
       # Sets amount of saturation points given by the 'foodlevel_restore' command.
-      Saturation_Amount: 5.0
+      Saturation_Количество: 5.0
   Health:
     Restore:
       # Sets whether or not 'health_restore' command will clear potion effects as well.
@@ -70,19 +70,19 @@ Settings:
     # Available text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
     Format:
     - ' '
-    - <lyellow><b>Nearby Players:</b></lyellow>
+    - <lyellow><b>Nearby Игрокs:</b></lyellow>
     - '%entry%'
     - ' '
-    # Player entry format.
+    # Игрок entry format.
     # Available text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
     # PlaceholderAPI is supported here.
-    EntryFormat: <lgray><lyellow>●</lyellow> %vault_prefix%<hover:show_text:'<gray>Click to send teleport request.</gray>'><click:suggest_command:"/ptp request %player_name%">%player_display_name%</click></hover>%vault_suffix% <gray>(<white>%amount%</white> blocks away)</gray></lgray>
+    EntryFormat: <lgray><lyellow>●</lyellow> %vault_prefix%<hover:show_text:'<gray>Нажмите чтобы send teleport request.</gray>'><click:suggest_command:"/ptp request %player_name%">%player_display_name%</click></hover>%vault_suffix% <gray>(<white>%amount%</white> blocks away)</gray></lgray>
   Nick:
     # Sets minimal allowed length for the 'nick_change' command.'
     Min_Length: 3
     # Sets maximal allowed length for the 'nick_change' command.'
     Max_Length: 20
-    # A list of words that can not be used in the 'nick_change' command.'
+    # A list of words that не можете be used in the 'nick_change' command.'
     Banned_Words:
     - nigga
     - dick
@@ -91,8 +91,8 @@ Settings:
     # Sets regex pattern that custom nick must match to be used.
     # By default it accepts all EN-RU characters, numbers, spaces and underscore.
     Regex: '[a-zA-Zа-яА-Я0-9_\s]*'
-  PlayerInfo:
-    # Player info format.
+  ИгрокInfo:
+    # Игрок info format.
     # PlaceholderAPI is supported here.
     # Text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
     Format:
@@ -129,515 +129,515 @@ Settings:
     - ' '
     - <lgray>Total <lyellow>%amount%</lyellow> staff online.</lgray>
     - ' '
-    # Player entry format.
+    # Игрок entry format.
     # Available text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
     # PlaceholderAPI is supported here.
-    EntryFormat: <lgray><lyellow>●</lyellow> %vault_prefix%<hover:show_text:'<gray>Click to send private message.</gray>'><click:suggest_command:"/msg %player_name% ">%player_display_name%</click></hover>%vault_suffix%</lgray>
+    EntryFormat: <lgray><lyellow>●</lyellow> %vault_prefix%<hover:show_text:'<gray>Нажмите чтобы send private message.</gray>'><click:suggest_command:"/msg %player_name% ">%player_display_name%</click></hover>%vault_suffix%</lgray>
   Item:
-    Amount:
+    Количество:
       # Sets default amount for the 'item_amount' command.
       Default_Value: 64
-CommandMap:
-  Commands:
+КомандаMap:
+  Командаs:
     kick:
-      Enabled: true
+      Включено: true
       Aliases: kick
       Executor: kick
     ban:
-      Enabled: true
+      Включено: true
       Aliases: ban
       Executor: ban
     banip:
-      Enabled: true
+      Включено: true
       Aliases: banip
       Executor: banip
     mute:
-      Enabled: true
+      Включено: true
       Aliases: mute
       Executor: mute
     warn:
-      Enabled: true
+      Включено: true
       Aliases: warn
       Executor: warn
     unban:
-      Enabled: true
+      Включено: true
       Aliases: unban
       Executor: unban
     unmute:
-      Enabled: true
+      Включено: true
       Aliases: unmute
       Executor: unmute
     unwarn:
-      Enabled: true
+      Включено: true
       Aliases: unwarn
       Executor: unwarn
     banhistory:
-      Enabled: true
+      Включено: true
       Aliases: banhistory
       Executor: banhistory
     mutehistory:
-      Enabled: true
+      Включено: true
       Aliases: mutehistory
       Executor: mutehistory
     warnhistory:
-      Enabled: true
+      Включено: true
       Aliases: warnhistory
       Executor: warnhistory
     banlist:
-      Enabled: true
+      Включено: true
       Aliases: banlist
       Executor: banlist
     mutelist:
-      Enabled: true
+      Включено: true
       Aliases: mutelist
       Executor: mutelist
     warnlist:
-      Enabled: true
+      Включено: true
       Aliases: warnlist
       Executor: warnlist
     alts:
-      Enabled: true
+      Включено: true
       Aliases: alts
       Executor: alts
     createworld:
-      Enabled: true
+      Включено: true
       Aliases: createworld
       Executor: world_create
     deleteworld:
-      Enabled: true
+      Включено: true
       Aliases: deleteworld
       Executor: world_delete
     editworld:
-      Enabled: true
+      Включено: true
       Aliases: editworld
       Executor: world_editor
     loadworld:
-      Enabled: true
+      Включено: true
       Aliases: loadworld
       Executor: world_load
     unloadworld:
-      Enabled: true
+      Включено: true
       Aliases: unloadworld
       Executor: world_unload
     setspawn:
-      Enabled: true
+      Включено: true
       Aliases: setspawn
       Executor: spawn_create
     delspawn:
-      Enabled: true
+      Включено: true
       Aliases: delspawn
       Executor: spawn_delete
     editspawn:
-      Enabled: true
+      Включено: true
       Aliases: editspawn
       Executor: spawn_editor
     spawn:
-      Enabled: true
+      Включено: true
       Aliases: spawn
       Executor: spawn_teleport
     delhome:
-      Enabled: true
+      Включено: true
       Aliases: delhome
       Executor: home_delete
     homelist:
-      Enabled: true
+      Включено: true
       Aliases: homelist
       Executor: home_list
     sethome:
-      Enabled: true
+      Включено: true
       Aliases: sethome
       Executor: home_set
     home:
-      Enabled: true
+      Включено: true
       Aliases: home
       Executor: home_teleport
     visithome:
-      Enabled: true
+      Включено: true
       Aliases: visithome
       Executor: home_visit
     homeinvite:
-      Enabled: true
+      Включено: true
       Aliases: homeinvite
       Executor: home_invite
     setplayerhome:
-      Enabled: true
+      Включено: true
       Aliases: setplayerhome
       Executor: home_admin_create
     delplayerhome:
-      Enabled: true
+      Включено: true
       Aliases: delplayerhome
       Executor: home_admin_delete
     editkit:
-      Enabled: true
+      Включено: true
       Aliases: editkit
       Executor: kit_editor
     viewkit:
-      Enabled: true
+      Включено: true
       Aliases: viewkit
       Executor: kit_preview
     kitlist:
-      Enabled: true
+      Включено: true
       Aliases: kitlist
       Executor: kit_list
     kit:
-      Enabled: true
+      Включено: true
       Aliases: kit
       Executor: kit_get
     setwarp:
-      Enabled: true
+      Включено: true
       Aliases: setwarp
       Executor: warp_create
     delwarp:
-      Enabled: true
+      Включено: true
       Aliases: delwarp
       Executor: warp_delete
     warplist:
-      Enabled: true
+      Включено: true
       Aliases: warplist
       Executor: warp_list
     warp:
-      Enabled: true
+      Включено: true
       Aliases: warp
       Executor: warp_teleport
     joinchannel:
-      Enabled: true
+      Включено: true
       Aliases: joinchannel
       Executor: channel_join
     leavechannel:
-      Enabled: true
+      Включено: true
       Aliases: leavechannel
       Executor: channel_leave
     setchannel:
-      Enabled: true
+      Включено: true
       Aliases: setchannel
       Executor: channel_set
     clearchat:
-      Enabled: true
+      Включено: true
       Aliases: clearchat
       Executor: clearchat
     pm:
-      Enabled: true
+      Включено: true
       Aliases: pm,whisper,w,tell,msg
       Executor: pm_send
     reply:
-      Enabled: true
+      Включено: true
       Aliases: reply,r
       Executor: pm_reply
     pmtoggle:
-      Enabled: true
+      Включено: true
       Aliases: pmtoggle
       Executor: pm_toggle
     mentions:
-      Enabled: true
+      Включено: true
       Aliases: mentions
       Executor: mentions_toggle
     me:
-      Enabled: true
+      Включено: true
       Aliases: me
       Executor: me
     spylogger:
-      Enabled: true
+      Включено: true
       Aliases: spylogger
       Executor: spy_logger
     chatspy:
-      Enabled: true
+      Включено: true
       Aliases: chatspy
       Executor: spy_mode_chat
     commandspy:
-      Enabled: true
+      Включено: true
       Aliases: commandspy
       Executor: spy_mode_command
     socialspy:
-      Enabled: true
+      Включено: true
       Aliases: socialspy
       Executor: spy_mode_social
     tpa:
-      Enabled: true
+      Включено: true
       Aliases: tpa,call
       Executor: ptp_request
     tphere:
-      Enabled: true
+      Включено: true
       Aliases: tphere
       Executor: ptp_invite
     tpyes:
-      Enabled: true
+      Включено: true
       Aliases: tpyes
       Executor: ptp_accept
     tpno:
-      Enabled: true
+      Включено: true
       Aliases: tpno
       Executor: ptp_decline
     tptoggle:
-      Enabled: true
+      Включено: true
       Aliases: tptoggle
       Executor: ptp_toggle
     scoreboard:
-      Enabled: true
+      Включено: true
       Aliases: scoreboard,board,sb
       Executor: scoreboard_toggle
     rtp:
-      Enabled: false
+      Включено: false
       Aliases: rtp,wild
       Executor: rtp
     chairs:
-      Enabled: true
+      Включено: true
       Aliases: chairs
       Executor: chairs_toggle
     sit:
-      Enabled: true
+      Включено: true
       Aliases: sit
       Executor: chairs_sit
     chestsort:
-      Enabled: true
+      Включено: true
       Aliases: chestsort
       Executor: chestsort_toggle
     back:
-      Enabled: false
+      Включено: false
       Aliases: back
       Executor: back
     deathback:
-      Enabled: false
+      Включено: false
       Aliases: deathback,dback
       Executor: deathback
     nophantom:
-      Enabled: true
+      Включено: true
       Aliases: nophantom
       Executor: nophantom_toggle
     afk:
-      Enabled: false
+      Включено: false
       Aliases: afk
       Executor: afk
     customtext:
-      Enabled: true
+      Включено: true
       Aliases: customtext,ctext
       Executor: custom_text
     god:
-      Enabled: true
+      Включено: true
       Aliases: god
       Executor: god_toggle
     foodgod:
-      Enabled: true
+      Включено: true
       Aliases: foodgod
       Executor: foodgod_toggle
     vanish:
-      Enabled: true
+      Включено: true
       Aliases: vanish
       Executor: vanish_toggle
     anvil:
-      Enabled: true
+      Включено: true
       Aliases: anvil
       Executor: anvil
     broadcast:
-      Enabled: true
+      Включено: true
       Aliases: broadcast,bc
       Executor: broadcast
     condense:
-      Enabled: true
+      Включено: true
       Aliases: condense
       Executor: condense
     dimension:
-      Enabled: true
+      Включено: true
       Aliases: dimension,dim,world
       Executor: dimension
     disposal:
-      Enabled: true
+      Включено: true
       Aliases: disposal
       Executor: disposal
     enchant:
-      Enabled: true
+      Включено: true
       Aliases: enchant
       Executor: enchant
     enchanting:
-      Enabled: true
+      Включено: true
       Aliases: enchanting,virtualenchant
       Executor: enchanting
     ec:
-      Enabled: true
+      Включено: true
       Aliases: ec,endersee
       Executor: enderchest_open
     ignite:
-      Enabled: true
+      Включено: true
       Aliases: ignite
       Executor: fire_set
     extinguish:
-      Enabled: true
+      Включено: true
       Aliases: extinguish,ext
       Executor: fire_reset
     fly:
-      Enabled: true
+      Включено: true
       Aliases: fly
       Executor: fly
     flyspeed:
-      Enabled: true
+      Включено: true
       Aliases: flyspeed
       Executor: flyspeed
     feed:
-      Enabled: true
+      Включено: true
       Aliases: feed
       Executor: foodlevel_restore
     gamemode_creative:
-      Enabled: true
+      Включено: true
       Aliases: gmc
       Executor: gamemode_creative
     gamemode_survival:
-      Enabled: true
+      Включено: true
       Aliases: gms
       Executor: gamemode_survival
     gamemode_adventure:
-      Enabled: true
+      Включено: true
       Aliases: gma
       Executor: gamemode_adventure
     gamemode_spectator:
-      Enabled: true
+      Включено: true
       Aliases: gmsp
       Executor: gamemode_spectator
     grindstone:
-      Enabled: true
+      Включено: true
       Aliases: grindstone
       Executor: grindstone
     hat:
-      Enabled: true
+      Включено: true
       Aliases: hat
       Executor: hat
     heal:
-      Enabled: true
+      Включено: true
       Aliases: heal
       Executor: health_restore
     addignore:
-      Enabled: true
+      Включено: true
       Aliases: addignore
       Executor: ignore_add
     ignorelist:
-      Enabled: true
+      Включено: true
       Aliases: ignorelist
       Executor: ignore_list
     unignore:
-      Enabled: true
+      Включено: true
       Aliases: unignore
       Executor: ignore_list
     clearinv:
-      Enabled: true
+      Включено: true
       Aliases: clearinv
       Executor: inventory_clear
     invsee:
-      Enabled: true
+      Включено: true
       Aliases: invsee
       Executor: inventory_open
     repairall:
-      Enabled: true
+      Включено: true
       Aliases: repairall,fixall
       Executor: inventory_repair
     itemname:
-      Enabled: true
+      Включено: true
       Aliases: itemname,rename
       Executor: item_name
     repair:
-      Enabled: true
+      Включено: true
       Aliases: repair,fix
       Executor: item_repair
     loom:
-      Enabled: true
+      Включено: true
       Aliases: loom
       Executor: loom
     killmob:
-      Enabled: true
+      Включено: true
       Aliases: killmob
       Executor: mob_kill
     spawnmob:
-      Enabled: true
+      Включено: true
       Aliases: spawnmob
       Executor: mob_spawn
     near:
-      Enabled: true
+      Включено: true
       Aliases: near
       Executor: near
     changename:
-      Enabled: true
+      Включено: true
       Aliases: changename
       Executor: nick_change
     setnick:
-      Enabled: true
+      Включено: true
       Aliases: setnick
       Executor: nick_set
     clearnick:
-      Enabled: true
+      Включено: true
       Aliases: clearnick
       Executor: nick_clear
     playerinfo:
-      Enabled: true
+      Включено: true
       Aliases: playerinfo,pinfo,seen
       Executor: playerinfo
     staff:
-      Enabled: true
+      Включено: true
       Aliases: staff
       Executor: staff
     playerhead:
-      Enabled: true
+      Включено: true
       Aliases: playerhead
       Executor: skull_player
     customhead:
-      Enabled: true
+      Включено: true
       Aliases: customhead
       Executor: skull_custom
     smite:
-      Enabled: true
+      Включено: true
       Aliases: smite
       Executor: smite
     spawner:
-      Enabled: true
+      Включено: true
       Aliases: spawner
       Executor: spawner
     speed:
-      Enabled: true
+      Включено: true
       Aliases: speed
       Executor: speed
     suicide:
-      Enabled: true
+      Включено: true
       Aliases: suicide
       Executor: suicide
     tppos:
-      Enabled: true
+      Включено: true
       Aliases: tppos,tploc
       Executor: teleport_location
     tpplayer:
-      Enabled: true
+      Включено: true
       Aliases: tpplayer
       Executor: teleport_send
     summon:
-      Enabled: true
+      Включено: true
       Aliases: summon
       Executor: teleport_summon
     tpto:
-      Enabled: true
+      Включено: true
       Aliases: tpto
       Executor: teleport_to
     toppos:
-      Enabled: true
+      Включено: true
       Aliases: toppos
       Executor: teleport_top
     weather_clear:
-      Enabled: true
+      Включено: true
       Aliases: sun
       Executor: weather_clear
     weather_storm:
-      Enabled: true
+      Включено: true
       Aliases: rain
       Executor: weather_storm
     weather_thunder:
-      Enabled: true
+      Включено: true
       Aliases: thunderstorm
       Executor: weather_thunder
     workbench:
-      Enabled: true
+      Включено: true
       Aliases: workbench
       Executor: workbench
   Groups:
     worldmanager:
-      Enabled: true
+      Включено: true
       Aliases: worldmanager
       Description: World commands.
       Permission: sunlight.worlds.command.worldmanager
-      Commands:
+      Командаs:
         world_create:
           Aliases: create
           Executor: world_create
@@ -654,11 +654,11 @@ CommandMap:
           Aliases: unload
           Executor: world_unload
     homes:
-      Enabled: true
+      Включено: true
       Aliases: homes
       Description: Homes commands.
       Permission: sunlight.homes.command.homes
-      Commands:
+      Командаs:
         home_delete:
           Aliases: delete
           Executor: home_delete
@@ -678,11 +678,11 @@ CommandMap:
           Aliases: invite
           Executor: home_invite
     homesadmin:
-      Enabled: true
+      Включено: true
       Aliases: homesadmin
       Description: Home admin commands.
       Permission: sunlight.homes.command.homesadmin
-      Commands:
+      Командаs:
         home_admin_create:
           Aliases: create
           Executor: home_admin_create
@@ -690,11 +690,11 @@ CommandMap:
           Aliases: delete
           Executor: home_admin_delete
     kits:
-      Enabled: false
+      Включено: false
       Aliases: kits
       Description: Kit commands.
       Permission: sunlight.kits.command.kits
-      Commands:
+      Командаs:
         kit_editor:
           Aliases: editor
           Executor: kit_editor
@@ -714,11 +714,11 @@ CommandMap:
           Aliases: preview
           Executor: kit_preview
     warps:
-      Enabled: false
+      Включено: false
       Aliases: warps
-      Description: Warp commands.
+      Description: Варп commands.
       Permission: sunlight.warps.command.warps
-      Commands:
+      Командаs:
         warp_create:
           Aliases: create
           Executor: warp_create
@@ -738,11 +738,11 @@ CommandMap:
           Aliases: teleport
           Executor: warp_teleport
     channel:
-      Enabled: true
+      Включено: true
       Aliases: channel
       Description: Chat channel commands.
       Permission: sunlight.chat.command.channel
-      Commands:
+      Командаs:
         channel_join:
           Aliases: join
           Executor: channel_join
@@ -753,11 +753,11 @@ CommandMap:
           Aliases: set
           Executor: channel_set
     spymode:
-      Enabled: true
+      Включено: true
       Aliases: spymode
       Description: SpyMode commands.
       Permission: sunlight.chat.command.spymode
-      Commands:
+      Командаs:
         spy_mode_chat:
           Aliases: chat
           Executor: spy_mode_chat
@@ -768,11 +768,11 @@ CommandMap:
           Aliases: social
           Executor: spy_mode_social
     ptp:
-      Enabled: false
+      Включено: false
       Aliases: ptp
-      Description: PTP Commands.
+      Description: PTP Командаs.
       Permission: sunlight.ptp.command.ptp
-      Commands:
+      Командаs:
         ptp_request:
           Aliases: request
           Executor: ptp_request
@@ -789,11 +789,11 @@ CommandMap:
           Aliases: toggle
           Executor: ptp_toggle
     air:
-      Enabled: true
+      Включено: true
       Aliases: air,oxygen
       Description: Air commands.
       Permission: sunlight.command.air
-      Commands:
+      Командаs:
         air_add:
           Aliases: add
           Executor: air_add
@@ -804,11 +804,11 @@ CommandMap:
           Aliases: remove
           Executor: air_remove
     enderchest:
-      Enabled: true
+      Включено: true
       Aliases: enderchest,echest
       Description: Enderchest commands.
       Permission: sunlight.command.enderchest
-      Commands:
+      Командаs:
         enderchest_clear:
           Aliases: clear
           Executor: enderchest_clear
@@ -825,11 +825,11 @@ CommandMap:
           Aliases: repair
           Executor: enderchest_repair
     experience:
-      Enabled: true
+      Включено: true
       Aliases: experience,exp,xp
       Description: Experience commands.
       Permission: sunlight.command.experience
-      Commands:
+      Командаs:
         exp_add:
           Aliases: add
           Executor: exp_add
@@ -843,11 +843,11 @@ CommandMap:
           Aliases: view
           Executor: exp_view
     fire:
-      Enabled: true
+      Включено: true
       Aliases: fire
       Description: Fire ticks commands.
       Permission: sunlight.command.fire
-      Commands:
+      Командаs:
         fire_set:
           Aliases: set
           Executor: fire_set
@@ -855,11 +855,11 @@ CommandMap:
           Aliases: reset
           Executor: fire_reset
     foodlevel:
-      Enabled: true
+      Включено: true
       Aliases: foodlevel,food
       Description: Food level commands.
       Permission: sunlight.command.foodlevel
-      Commands:
+      Командаs:
         foodlevel_restore:
           Aliases: restore
           Executor: foodlevel_restore
@@ -873,11 +873,11 @@ CommandMap:
           Aliases: remove
           Executor: foodlevel_remove
     gamemode:
-      Enabled: true
+      Включено: true
       Aliases: gamemode,gm
       Description: Gamemode commands.
       Permission: sunlight.command.gamemode
-      Commands:
+      Командаs:
         gamemode_adventure:
           Aliases: adventure
           Executor: gamemode_adventure
@@ -891,11 +891,11 @@ CommandMap:
           Aliases: creative
           Executor: gamemode_creative
     health:
-      Enabled: true
+      Включено: true
       Aliases: health,hp
       Description: Health commands.
       Permission: sunlight.command.health
-      Commands:
+      Командаs:
         health_restore:
           Aliases: restore
           Executor: health_restore
@@ -909,11 +909,11 @@ CommandMap:
           Aliases: remove
           Executor: health_remove
     ignore:
-      Enabled: true
+      Включено: true
       Aliases: ignore
       Description: Ignore commands.
       Permission: sunlight.command.ignore
-      Commands:
+      Командаs:
         ignore_add:
           Aliases: add
           Executor: ignore_add
@@ -924,11 +924,11 @@ CommandMap:
           Aliases: remove
           Executor: ignore_remove
     inventory:
-      Enabled: true
+      Включено: true
       Aliases: inventory,inv
-      Description: Inventory commands.
+      Description: Инвентарь commands.
       Permission: sunlight.command.inventory
-      Commands:
+      Командаs:
         inventory_clear:
           Aliases: clear
           Executor: inventory_clear
@@ -945,11 +945,11 @@ CommandMap:
           Aliases: repair
           Executor: inventory_repair
     item:
-      Enabled: true
+      Включено: true
       Aliases: item,i
       Description: item
       Permission: sunlight.command.item
-      Commands:
+      Командаs:
         item_amount:
           Aliases: amount
           Executor: item_amount
@@ -987,11 +987,11 @@ CommandMap:
           Aliases: unbreakable
           Executor: item_unbreakable
     itemlore:
-      Enabled: true
+      Включено: true
       Aliases: itemlore,relore
       Description: Item lore commands.
       Permission: sunlight.command.itemlore
-      Commands:
+      Командаs:
         item_lore_add:
           Aliases: add
           Executor: item_lore_add
@@ -1002,11 +1002,11 @@ CommandMap:
           Aliases: remove
           Executor: item_lore_remove
     mob:
-      Enabled: true
+      Включено: true
       Aliases: mob
       Description: Mob commands.
       Permission: sunlight.command.mob
-      Commands:
+      Командаs:
         mob_clear:
           Aliases: clear
           Executor: mob_clear
@@ -1017,11 +1017,11 @@ CommandMap:
           Aliases: spawn
           Executor: mob_spawn
     nick:
-      Enabled: true
+      Включено: true
       Aliases: nick
       Description: Nick commands.
       Permission: sunlight.command.nick
-      Commands:
+      Командаs:
         nick_change:
           Aliases: change
           Executor: nick_change
@@ -1032,11 +1032,11 @@ CommandMap:
           Aliases: set
           Executor: nick_set
     skull:
-      Enabled: true
+      Включено: true
       Aliases: skull
       Description: Skull commands.
       Permission: sunlight.command.skull
-      Commands:
+      Командаs:
         skull_custom:
           Aliases: custom
           Executor: skull_custom
@@ -1044,11 +1044,11 @@ CommandMap:
           Aliases: player
           Executor: skull_player
     sudo:
-      Enabled: true
+      Включено: true
       Aliases: sudo
       Description: Sudo commands.
       Permission: sunlight.command.sudo
-      Commands:
+      Командаs:
         sudo_chat:
           Aliases: chat
           Executor: sudo_chat
@@ -1056,11 +1056,11 @@ CommandMap:
           Aliases: command
           Executor: sudo_command
     teleport:
-      Enabled: true
+      Включено: true
       Aliases: teleport,tp
       Description: Teleport commands.
       Permission: sunlight.command.teleport
-      Commands:
+      Командаs:
         teleport_location:
           Aliases: location
           Executor: teleport_location
@@ -1077,11 +1077,11 @@ CommandMap:
           Aliases: top
           Executor: teleport_top
     time:
-      Enabled: true
+      Включено: true
       Aliases: time
       Description: Time commands.
       Permission: sunlight.command.time
-      Commands:
+      Командаs:
         time_set:
           Aliases: set
           Executor: time_set
@@ -1089,11 +1089,11 @@ CommandMap:
           Aliases: show
           Executor: time_show
     time_personal:
-      Enabled: true
+      Включено: true
       Aliases: ptime
       Description: Personal Time commands.
       Permission: sunlight.command.ptime
-      Commands:
+      Командаs:
         time_personal_set:
           Aliases: set
           Executor: time_personal_set
@@ -1101,11 +1101,11 @@ CommandMap:
           Aliases: reset
           Executor: time_personal_reset
     weather:
-      Enabled: true
+      Включено: true
       Aliases: weather
       Description: Weather commands.
       Permission: sunlight.command.weather
-      Commands:
+      Командаs:
         weather_clear:
           Aliases: clear
           Executor: weather_clear

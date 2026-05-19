@@ -29,7 +29,7 @@ deposit:
   cooldown-message: []
 forcedeposit:
   usage:
-  - '%prefix% &cUsage: &7/bank forceDeposit [player] [amount/half/all/custom] <bankName>'
+  - '%prefix% &cUsage: &7/bank forceДепозит [player] [amount/half/all/custom] <bankName>'
   confirm-cooldown: 0
   confirm-message: []
   cooldown: 0
@@ -43,14 +43,14 @@ forceopen:
   cooldown-message: []
 forceupgrade:
   usage:
-  - '%prefix% &cUsage: &7/bank forceOpen [player] <bankName>'
+  - '%prefix% &cUsage: &7/bank forceОткрыть [player] <bankName>'
   confirm-cooldown: 0
   confirm-message: []
   cooldown: 0
   cooldown-message: []
 forcewithdraw:
   usage:
-  - '%prefix% &cUsage: &7/bank forceWithdraw [player] [amount/half/all/custom] <bankName>'
+  - '%prefix% &cUsage: &7/bank forceСнятие [player] [amount/half/all/custom] <bankName>'
   confirm-cooldown: 0
   confirm-message: []
   cooldown: 0
@@ -81,15 +81,15 @@ interestmillis:
   cooldown-message: []
 loan:
   usage:
-  - '%prefix% &cUsage: &7/bank loan [action] [playerName] [amount] <fromBankName>
-    <toBankName>'
+  - '%prefix% &cUsage: &7/bank loan [action] [playerName] [amount] <fromБанкName>
+    <toБанкName>'
   - ''
   - '&7Possible actions:'
   - ' &8* &aGive'
   - ' &8* &aRequest'
   - ' &8* &aAccept'
   - ' &8* &aDeny'
-  - ' &8* &aCancel'
+  - ' &8* &aОтмена'
   confirm-cooldown: 0
   confirm-message: []
   cooldown: 0
@@ -103,10 +103,10 @@ open:
   cooldown-message: []
 pay:
   usage:
-  - '%prefix% &cUsage: &7/bank pay [player] [amount] <fromBankName> <toBankName>'
+  - '%prefix% &cUsage: &7/bank pay [player] [amount] <fromБанкName> <toБанкName>'
   - ''
-  - '&7<fromBankName> The bank from where to take the money.'
-  - '&7<toBankName>: The bank where to send the money.'
+  - '&7<fromБанкName> The bank from where to take the money.'
+  - '&7<toБанкName>: The bank where to send the money.'
   confirm-cooldown: 5
   confirm-message: []
   cooldown: 0

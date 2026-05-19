@@ -1,12 +1,12 @@
 general:
   prefix: "<gradient:#46C392:#7FC794>Nexo <gray>| "
-  no_permission: "<prefix><#fa4943>You're lacking the permission <b><permission></b> to do this!"
-  work_in_progress: "<prefix><#facc43>This feature is work in progress!"
-  not_player: "<prefix><#fa4943>This can only be done as a player!"
-  cooldown: "<prefix><#facc43>Please wait Another <time> seconds!"
-  reload: "<prefix><#55ffa4>Successfully reloaded"
+  no_permission: "<prefix><#fa4943>У вас нет разрешения <b><permission></b> to do this!"
+  work_in_progress: "<prefix><#facc43>This feature is функция в разработке!"
+  not_player: "<prefix><#fa4943>Это может сделать только игрок!"
+  cooldown: "<prefix><#facc43>Пожалуйста, подождите ещё <time> seconds!"
+  reload: "<prefix><#55ffa4>Успешно перезагружено"
   pack_uploading: "<prefix><#D5D6D8>Automatic upload of the resource pack is enabled, uploading..."
-  pack_not_uploaded: "<prefix><#fa4943>Resourcepack not uploaded"
+  pack_not_uploaded: "<prefix><#fa4943>Ресурспак не загружен"
   pack_uploaded: "<prefix><#55ffa4>Resourcepack uploaded to <url> in <delay> ms"
   pack_regenerated: "<prefix><#55ffa4>Resourcepack successfully regenerated"
   updating_config: "<prefix><#facc43>Configuration option \"<option>\" not found, adding it!"
@@ -23,17 +23,17 @@ general:
   plugin_unhooks: "<prefix><#55ffa4>Unhooking plugin \"<plugin>\""
   not_enough_exp: "<prefix><#fa4943>You need more experience to do this"
   not_enough_space: "<prefix><#fa4943>You need more space to place this furniture"
-  exit_menu: "<gradient:#FA7CBB:#F14658>Exit"
-  no_emojis: "<prefix><#fa4943>No emojis found"
+  exit_menu: "<gradient:#FA7CBB:#F14658>Выход"
+  no_emojis: "<prefix><#fa4943>Эмодзи не найдены"
 
 logs:
-  loaded: "<prefix><#55ffa4>Successfully loaded on <os>"
+  loaded: "<prefix><#55ffa4>Успешно загружено на <os>"
   unloaded: "<prefix><#55ffa4>Successfully unloaded"
   no_armor_item: "<prefix><#fa4943>No item matching <name> found. Unable to use <armor_layer_file>"
   duplicate_armor_color: "<prefix><#fa4943><first_armor_prefix> armor set uses the same color as <second_armor_prefix> with a different texture"
 
 command:
-  help: "<prefix><#b8bbc2>Available commands
+  help: "<prefix><#b8bbc2>Доступные команды
         \n<hover:show_text:\"<gray>fill reload command\"><click:SUGGEST_COMMAND:/nexo reload ><#6f737d>/nexo
           <#b8bbc2>reload <#fa8943>type</click></hover>  <#6f737d>»<#b8bbc2> reload the plugin
         \n<hover:show_text:\"<gray>fill inv command\"><click:SUGGEST_COMMAND:/nexo inv><#6f737d>/nexo
@@ -56,11 +56,11 @@ command:
     <dark_gray>»<gray> To download it from the internet, <hover:show_text:"<pack_url> <green>! install it from Options/ResourcePacks in your game"><green><bold><click:OPEN_URL:"<pack_url>">CLICK HERE</click></bold></hover>
 
   recipe:
-    no_builder: "<prefix><#fa4943>Please create a recipe first!"
+    no_builder: "<prefix><#fa4943>Сначала создайте рецепт!"
     no_furnace: "<prefix><#fa4943>This option is only available for Furnace Recipes!"
     no_name: "<prefix><#fa4943>Please <gradient:#FA7CBB:#F14658>specify a name for the recipe!"
     no_recipes: "<prefix><#fa4943>There are no recipes to show!"
-    no_item: "<prefix><#fa4943>Please specify an item!"
+    no_item: "<prefix><#fa4943>Укажите предмет!"
     save: "<prefix><#55ffa4>Recipe '<name>' saved successfully!"
 
   give:

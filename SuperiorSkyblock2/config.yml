@@ -34,12 +34,12 @@ database:
 # You must have a full restart in order to apply changes for the command.
 island-command: island,is,islands
 
-# Set the maximum island size. Island distances is 3 times bigger than the max size.
+# Set the maximum island size. Остров distances is 3 times bigger than the max size.
 # Please, do not change it while you have a running islands world!
 max-island-size: 200
 
 # All the default values for new islands that are created.
-# Please note: Upgrades with built-in values (upgrades that don't run commands to update values),
+# Please note: Улучшениеs with built-in values (upgrades that don't run commands to update values),
 # will override all the values here. For example, if I set an upgrade that changes generator rates,
 # there's no need to touch the default generator rates here, as new islands will get the rates from
 # the upgrade, and not from here.
@@ -130,7 +130,7 @@ stacked-blocks:
   # Custom name for the blocks.
   custom-name: '&ex{0} {1}'
 
-  # A list of worlds that blocks cannot stack in.
+  # A list of worlds that blocks не можете stack in.
   disabled-worlds: []
 
   # A list of whitelisted blocks that will get stacked when players have stack mode toggled on.
@@ -144,12 +144,12 @@ stacked-blocks:
   # Should blocks get added directly into the player's inventory?
   auto-collect: false
 
-  # Settings related to the deposit menu.
+  # Настройки related to the deposit menu.
   deposit-menu:
     # Should the menu be opened when shift-clicking stacked blocks?
     enabled: true
     # The title of the menu.
-    title: '&lDeposit Blocks'
+    title: '&lДепозит Blocks'
 
 # Set a formula to calculate the island level by it's worth.
 # Use {} as a placeholder for worth. Make sure you only use digits and mathematical operations!
@@ -245,7 +245,7 @@ island-roles:
   ladder:
     member:
       id: 0
-      name: Member
+      name: Участник
       weight: 0
       permissions:
       - ANIMAL_SPAWN
@@ -298,11 +298,11 @@ island-roles:
       - ALL
 
 # Set the line to create the warp sign.
-sign-warp-line: '[IslandWarp]'
+sign-warp-line: '[ОстровВарп]'
 
 # Set the lines of the island warp.
 sign-warp:
-- '&a[Island Warp]'
+- '&a[Остров Варп]'
 - ''
 - ''
 - ''
@@ -313,13 +313,13 @@ visitors-sign:
   # If set to false, visitors will be teleported to the regular island home when using `/is visit`
   required-for-visit: true
   # Set the line to create the visitors sign.
-  line: '[Welcome]'
+  line: '[Добро пожаловать]'
   # The line that will be displayed when the sign is active.
-  active: '&a[Welcome]'
+  active: '&a[Добро пожаловать]'
   # The line that will be displayed when the sign is inactive.
-  inactive: '&c[Welcome]'
+  inactive: '&c[Добро пожаловать]'
 
-# Settings related to the island worlds.
+# Настройки related to the island worlds.
 worlds:
   # The default world that will be used.
   # Use normal, nether or the_end.
@@ -327,7 +327,7 @@ worlds:
   default-world: normal
   # Set the name of the islands world.
   world-name: world_private_islands
-  # Settings related to the normal world.
+  # Настройки related to the normal world.
   normal:
     # Should the normal world be enabled?
     enabled: true
@@ -338,7 +338,7 @@ worlds:
     # The default biome for the world.
     # If the biome is invalid, PLAINS will be set.
     biome: PLAINS
-  # Settings related to the nether world.
+  # Настройки related to the nether world.
   nether:
     # Should the nether world be enabled?
     enabled: true
@@ -365,7 +365,7 @@ worlds:
     # The default biome for the world.
     # If the biome is invalid, THE_END will be used.
     biome: THE_END
-    # Settings related to dragon fights on the server.
+    # Настройки related to dragon fights on the server.
     dragon-fight:
       # Whether dragon fights should be enabled.
       # If enabled, each island will have it's own ender dragon to battle with.
@@ -380,7 +380,7 @@ worlds:
 
 # All settings related to the spawn island.
 spawn:
-  # The location of the island. Players will be teleported to this
+  # The location of the island. Игрокs will be teleported to this
   # location in many events, such as disbanding islands & getting expelled from one.
   location: world_spawn, 10.5, 70, -3.5, 0, 0
 
@@ -545,7 +545,7 @@ default-settings:
 # This should increase performance on the server.
 disable-redstone-offline: true
 
-# Settings related to afk integrations.
+# Настройки related to afk integrations.
 # Supported AFK plugins: Essentials, CMI
 afk-integrations:
   # Should redstone be disabled when all the players inside the island are AFK?
@@ -590,7 +590,7 @@ teleport-on-pvp-enable: true
 # This doesn't apply to the spawn island!
 immune-to-pvp-when-teleport: true
 
-# A list of commands that cannot be executed by visitors.
+# A list of commands that не можете be executed by visitors.
 blocked-visitors-commands: []
 
 # Set items for containers inside island schematics.
@@ -648,18 +648,18 @@ default-signs: []
 # A list of placeholders (Not all of them work for all the events):
 # %island% %player% %schematic% %enter-cause% %target% %leave-cause% %old-owner% %new-owner% %worth% %level%
 event-commands:
-  IslandCreateEvent: []
+  ОстровСоздатьEvent: []
 
 # A delay before getting teleported to a warp (in milliseconds).
-# Players cannot move in that time, or the teleportation will be cancelled.
+# Игрокs не можете move in that time, or the teleportation will be cancelled.
 warps-warmup: 0
 
 # A delay before getting teleported to your island (in milliseconds).
-# Players cannot move in that time, or the teleportation will be cancelled.
+# Игрокs не можете move in that time, or the teleportation will be cancelled.
 home-warmup: 0
 
 # A delay before getting teleported to another island (in milliseconds).
-# Players cannot move in that time, or the teleportation will be cancelled.
+# Игрокs не можете move in that time, or the teleportation will be cancelled.
 visit-warmup: 0
 
 # Should liquids get updated when pasting schematics?
@@ -751,7 +751,7 @@ obsidian-to-lava: false
 
 # Should the worth values be synced with other prices providers?
 # You can set the following values: NONE (disabled), BUY (buy prices), SELL (sell prices)
-# Supported Providers: ShopGUIPlus
+# Supported Providers: МагазинGUIPlus
 sync-worth: NONE
 
 # Can the worth value of the island be negative?
@@ -776,10 +776,10 @@ disabled-hooks: []
 # When enabled, people will be able to skip the create menu and create islands directly with the command.
 schematic-name-argument: true
 
-# Settings related to the island chest.
+# Настройки related to the island chest.
 island-chests:
   # The chest title.
-  chest-title: '&{HEX:2c405e}Island Chest'
+  chest-title: '&{HEX:2c405e}Остров Chest'
   # Default amount of pages.
   # You can set this value to 0 to not have any pages by default.
   default-pages: 20
@@ -797,7 +797,7 @@ command-aliases:
 # These blocks require the "VALUABLE_BREAK" permission in order to break them.
 valuable-blocks: []
 
-# Settings related to the island previews.
+# Настройки related to the island previews.
 island-previews:
   # The game mode that will be set for the player when they enter preview mode.
   # Use ADVENTURE, CREATIVE, SPECTATOR or SURVIVAL.
@@ -806,7 +806,7 @@ island-previews:
   # The maximum distance a player can move before the preview mode is canceled.
   max-distance: 100
 
-  # A list of commands that cannot be executed by players in preview mode.
+  # A list of commands that не можете be executed by players in preview mode.
   blocked-commands: []
 
   # Preview locations for schematics.
@@ -854,7 +854,7 @@ recalc-task-timeout: 10
 # otherwise the default language will be chosen for the player.
 auto-language-detection: true
 
-# Automatically uncoop players when there are no island members left online that can remove uncoop players.
+# Automatically uncoop players when there are no island members вышел online that can remove uncoop players.
 auto-uncoop-when-alone: false
 
 # The way members of islands will be sorted in top islands when using the {4} placeholder.
@@ -896,7 +896,7 @@ block-counts-save-threshold: 100
 # might be better to disable it.
 chat-signing-support: false
 
-# Amount of commands to be listed in the `/is help` and `/is admin` commands.
+# Количество of commands to be listed in the `/is help` and `/is admin` commands.
 # Setting this to 0 or below will result all commands to be shown in a single page.
 commands-per-page: 7
 

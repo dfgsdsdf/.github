@@ -27,19 +27,19 @@ items:
     type: PLAYER_HEAD
     name: '&e{0}'
     lore:
-      - '&{HEX:cccccc}Click to unban the player.'
+      - '&{HEX:cccccc}Нажмите чтобы unban the player.'
   'p':
     type: BOOK
     customModel: 25
-    name: '&aPrevious Page'
+    name: '&aНазад Страница'
   'n':
     type: BOOK
     customModel: 24
-    name: '&aNext Page'
+    name: '&aДалее Страница'
   'h':
     type: BOOK
     customModel: 26
-    name: '&eGo Back'
+    name: '&eGo Назад'
 
 commands:
   'h':

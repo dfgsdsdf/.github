@@ -1,7 +1,7 @@
 settings:
   menu: 'example-shop-menu'
   buy-more: true
-  shop-name: 'Flowers Shop'
+  shop-name: 'Flowers Магазин'
   hide-message: false
 
 general-configs:

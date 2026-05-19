@@ -1,12 +1,12 @@
 prefix: ''
 noPermissions: 'ꀓ #e55039You don''t have permissions.'
-configReloaded: 'ꀒ #04d42cConfig reloaded.'
+configReloaded: 'ꀒ #04d42cКонфиг перезагружен.'
 commandUnlockErrorUse: 'ꀓ #e55039You need to use: &7/codex unlock <player> <category> <discovery>
   (optional, send message)<true/false>'
 commandNotExists: 'ꀓ #e55039That command doesn''t exists. Use &7/codex help#e55039.'
 commandResetErrorUse: 'ꀓ #e55039You need to use: &7/codex reset <player> <category> <discovery>
   #e55039or &7/codex reset <player> all'
-notOnline: 'ꀓ #e55039That player is not online.'
+notOnline: 'ꀓ #e55039Этот игрок не в сети.'
 playerNotUnlockedDiscovery: 'ꀓ #e55039That player doesn''t have unlocked that Codex discovery.'
 playerResetDiscovery: 'ꀒ #04d42cDiscovery &7%discovery% #04d42con category &7%category% #04d42creset
   for &7%player%#04d42c.'
@@ -19,9 +19,9 @@ playerUnlockDiscovery: 'ꀒ #04d42cPlayer &7%player% #04d42cunlocked discovery &
   category &7%category%#04d42c!'
 inventoryUnlockedVariable: '%current%/%max%'
 inventoryLockedDiscoveryLore:
-- '&c✘ #cf7a81Not unlocked yet!'
+- '&c✘ #cf7a81Ещё не открыто!'
 inventoryLockedDiscoveryName: '#4d3b3b&k?????????????????'
-commandCodexError: 'ꀓ #e55039There are errors on the plugin, check the console.'
+commandCodexError: 'ꀓ #e55039В плагине есть ошибки, проверьте консоль.'
 playerResetAll: 'ꀒ #04d42cAll discoveries have been reset for &7%player%#04d42c.'
 currentUnlockedDiscoveriesColorNone: '#cae2fc'
 currentUnlockedDiscoveriesColorAll: '#fce9d2'

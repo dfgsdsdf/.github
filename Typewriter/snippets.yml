@@ -1,10 +1,10 @@
 quest:
   tracked:
-    none: None tracked
+    none: Ничего не отслеживается
   objective:
     inactive: <gray><display></gray>
     showing: <white><display></white>
-    interact_entity: Interact with <entity>
+    interact_entity: Взаимодействуйте с <entity>
 chat:
   # The amount of messages displayed in the chat history during a dialogue
   darken-limit: 12

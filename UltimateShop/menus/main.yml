@@ -1,4 +1,4 @@
-title: 'Items Shop'
+title: 'Items Магазин'
 size: 54
 
 open-actions:
@@ -18,7 +18,7 @@ buttons:
       material: wheat
       name: '&a&lFARMING'
       lore:
-        - '&7Sell and buy various items'
+        - '&7Продать and buy various items'
         - '&7such as seeds.'
     actions:
       - 'shop_menu: farming'
@@ -27,7 +27,7 @@ buttons:
       material: bone
       name: '&b&lDROPS'
       lore:
-        - '&7Sell and buy related items'
+        - '&7Продать and buy related items'
         - '&7to mob drops as strings.'
     actions:
       - 'shop_menu: drops'
@@ -36,7 +36,7 @@ buttons:
       material: ORANGE_CONCRETE
       name: '&a&lCONCRETES'
       lore:
-        - '&7Sell and buy blocks of concrete'
+        - '&7Продать and buy blocks of concrete'
         - '&7and all their color variants.'
     actions:
       - 'shop_menu: concretes'
@@ -45,7 +45,7 @@ buttons:
       material: LILAC
       name: '&a&lFLOWERS'
       lore:
-        - '&7Sell and buy many types of'
+        - '&7Продать and buy many types of'
         - '&7flowers in this section.'
     actions:
       - 'shop_menu: flowers'
@@ -54,7 +54,7 @@ buttons:
       material: oak_log
       name: '&a&lLOGS AND SAPLING'
       lore:
-        - '&7Sell and buy all variants of overworld'
+        - '&7Продать and buy all variants of overworld'
         - '&7logs and their saplings.'
     actions:
       - 'shop_menu: logs'
@@ -63,7 +63,7 @@ buttons:
       material: diamond
       name: '&a&lMINERALS'
       lore:
-        - '&7Sell and buy different minerals'
+        - '&7Продать and buy different minerals'
         - '&7such as diamond, iron and more.'
     actions:
       - 'shop_menu: minerals'
@@ -72,7 +72,7 @@ buttons:
       material: GRASS_BLOCK
       name: '&a&lBLOCKS'
       lore:
-        - '&7Sell and buy different types'
+        - '&7Продать and buy different types'
         - '&7of varied blocks.'
     actions:
       - 'shop_menu: blocks'
@@ -81,7 +81,7 @@ buttons:
       material: LIME_TERRACOTTA
       name: '&a&lTERRACOTTA'
       lore:
-        - '&7Sell and buy blocks of terracotta'
+        - '&7Продать and buy blocks of terracotta'
         - '&7and all their color variants.'
     actions:
       - 'shop_menu: terracottas'
@@ -90,7 +90,7 @@ buttons:
       material: GLASS
       name: '&7&lGLASS'
       lore:
-        - '&7Sell and buy blocks of glass and panels'
+        - '&7Продать and buy blocks of glass and panels'
         - '&7and all their color variants.'
     actions:
       - 'shop_menu: glass'
@@ -99,7 +99,7 @@ buttons:
       material: LIME_WOOL
       name: '&a&lWOOL'
       lore:
-        - '&7Sell and buy blocks of wools'
+        - '&7Продать and buy blocks of wools'
         - '&7and all their color variants.'
     actions:
       - 'shop_menu: wools'
@@ -108,7 +108,7 @@ buttons:
       material: EXPERIENCE_BOTTLE
       name: '&d&lSPECIAL ITEMS'
       lore:
-        - '&7Sell and buy some special'
+        - '&7Продать and buy some special'
         - '&7or rare items.'
     actions:
       - 'shop_menu: special'
@@ -117,7 +117,7 @@ buttons:
       material: REDSTONE
       name: '&c&lREDSTONE'
       lore:
-        - '&7Sell and buy everything related'
+        - '&7Продать and buy everything related'
         - '&7to redstone as comparators.'
     actions:
       - 'shop_menu: redstone'
@@ -126,7 +126,7 @@ buttons:
       material: FISHING_ROD
       name: '&9&lFISH SHOP'
       lore:
-        - '&7Sell or buy different raw'
+        - '&7Продать or buy different raw'
         - '&7or cooked fish.'
     actions:
       - 'shop_menu: fish'
@@ -142,6 +142,6 @@ buttons:
   Z:
     display-item:
       material: BARRIER
-      name: '&cClose this menu'
+      name: '&cЗакрыть this menu'
     actions:
       - 'close'

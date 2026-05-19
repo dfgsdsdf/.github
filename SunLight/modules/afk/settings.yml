@@ -13,13 +13,13 @@ WakeUp:
     # Sets how much activity points are produced by player chat messages.
     Chat: 5
     # Sets how much activity points are produced by player commands.
-    Command: 0
+    Команда: 0
     # Sets how much activity points are produced by player interactions with items, blocks or entities.
     Interaction: 1
   # List of commands to execute when player leaves AFK mode.
   # Use '%player_name%' for player name.
   # PlaceholderAPI placeholders are supported here.
-  Commands: []
+  Командаs: []
 AFK:
   # Sets auto AFK mode cooldown.
   # This will prevent players from being moved into afk mode back soon after they leave it.
@@ -43,18 +43,18 @@ AFK:
     # Get value by player's permission group. All keys in 'Values' list will represent permission group names.
     # If player has none of specified groups, the 'Default_Value' setting will be used then
     #   Values:
-    #     vip: 1 # -> Player must be in 'vip' permission group.
-    #     gold: 2 # -> Player must be in 'gold' permission group.
-    #     emerald: 3 # -> Player must be in 'emerald' permission group.
+    #     vip: 1 # -> Игрок must be in 'vip' permission group.
+    #     gold: 2 # -> Игрок must be in 'gold' permission group.
+    #     emerald: 3 # -> Игрок must be in 'emerald' permission group.
     #
     # ==================== PERMISSION MODE ====================
     # Get value by player's permissions. All keys in 'Values' list will represent postfixes for the 'Permission_Prefix' setting (see below).
     # If player has none of specified permissions, the 'Default_Value' setting will be used then
     #   Permission_Prefix: 'example.prefix.'
     #   Values:
-    #     vip: 1 # -> Player must have 'example.prefix.vip' permission.
-    #     gold: 2 # -> Player must have 'example.prefix.gold' permission.
-    #     emerald: 3 # -> Player must have 'example.prefix.emerald' permission.
+    #     vip: 1 # -> Игрок must have 'example.prefix.vip' permission.
+    #     gold: 2 # -> Игрок must have 'example.prefix.gold' permission.
+    #     emerald: 3 # -> Игрок must have 'example.prefix.emerald' permission.
     Mode: RANK
     # Sets permission prefix for the 'PERMISSION' mode.
     Permission_Prefix: sunlight.afk.idletime.
@@ -72,18 +72,18 @@ AFK:
     # Get value by player's permission group. All keys in 'Values' list will represent permission group names.
     # If player has none of specified groups, the 'Default_Value' setting will be used then
     #   Values:
-    #     vip: 1 # -> Player must be in 'vip' permission group.
-    #     gold: 2 # -> Player must be in 'gold' permission group.
-    #     emerald: 3 # -> Player must be in 'emerald' permission group.
+    #     vip: 1 # -> Игрок must be in 'vip' permission group.
+    #     gold: 2 # -> Игрок must be in 'gold' permission group.
+    #     emerald: 3 # -> Игрок must be in 'emerald' permission group.
     #
     # ==================== PERMISSION MODE ====================
     # Get value by player's permissions. All keys in 'Values' list will represent postfixes for the 'Permission_Prefix' setting (see below).
     # If player has none of specified permissions, the 'Default_Value' setting will be used then
     #   Permission_Prefix: 'example.prefix.'
     #   Values:
-    #     vip: 1 # -> Player must have 'example.prefix.vip' permission.
-    #     gold: 2 # -> Player must have 'example.prefix.gold' permission.
-    #     emerald: 3 # -> Player must have 'example.prefix.emerald' permission.
+    #     vip: 1 # -> Игрок must have 'example.prefix.vip' permission.
+    #     gold: 2 # -> Игрок must have 'example.prefix.gold' permission.
+    #     emerald: 3 # -> Игрок must have 'example.prefix.emerald' permission.
     Mode: RANK
     # Sets permission prefix for the 'PERMISSION' mode.
     Permission_Prefix: sunlight.afk.kicktime.
@@ -95,10 +95,10 @@ AFK:
   # Message displayed to player on disconnect window when kicked for being AFK long enough.
   # Use '%time%' placeholder for a formatted kick time.
   Kick_Message:
-  - '<lred>You have been kicked for being AFK too long: <lorange>%time%</lorange></lred>'
+  - '<lred>Вы been kicked for being AFK too long: <lorange>%time%</lorange></lred>'
   - ''
   - <lgreen><u>You can join back now.</u></lgreen>
   # List of commands to execute when player enters AFK mode.
   # Use '%player_name%' for player name.
   # PlaceholderAPI placeholders are supported here.
-  Commands: []
+  Командаs: []

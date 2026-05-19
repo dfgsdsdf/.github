@@ -6,7 +6,7 @@ useTimes:
     E: {}
     J:
       buyUseTimes: 6
-      lastBuyTime: '2024-10-16 21:44:18'
+      lastКупитьTime: '2024-10-16 21:44:18'
     F: {}
     C: {}
     A: {}
@@ -17,7 +17,7 @@ useTimes:
     L: {}
     M:
       buyUseTimes: 1
-      lastBuyTime: '2024-10-07 20:26:01'
+      lastКупитьTime: '2024-10-07 20:26:01'
     O: {}
   flowers:
     A: {}
@@ -25,7 +25,7 @@ useTimes:
     B: {}
     Q:
       buyUseTimes: 2
-      lastBuyTime: '2025-11-14 18:31:34'
+      lastКупитьTime: '2025-11-14 18:31:34'
     E: {}
     G: {}
     D: {}
@@ -33,12 +33,12 @@ useTimes:
     I: {}
     N:
       buyUseTimes: 1
-      lastBuyTime: '2025-02-21 20:38:47'
+      lastКупитьTime: '2025-02-21 20:38:47'
     J: {}
     F: {}
     P:
       buyUseTimes: 2
-      lastBuyTime: '2025-11-14 18:31:35'
+      lastКупитьTime: '2025-11-14 18:31:35'
     K: {}
     O: {}
     H: {}
@@ -48,36 +48,36 @@ useTimes:
     (: {}
     N:
       buyUseTimes: 1
-      lastBuyTime: '2024-09-28 22:55:25'
+      lastКупитьTime: '2024-09-28 22:55:25'
     J: {}
     ;:
       buyUseTimes: 6
-      lastBuyTime: '2025-05-08 11:44:38'
+      lastКупитьTime: '2025-05-08 11:44:38'
     '&': {}
     H:
       buyUseTimes: 1
-      lastBuyTime: '2024-10-14 15:30:08'
+      lastКупитьTime: '2024-10-14 15:30:08'
     P: {}
     M:
       buyUseTimes: 5
-      lastBuyTime: '2024-09-28 22:55:24'
+      lastКупитьTime: '2024-09-28 22:55:24'
     W:
       buyUseTimes: 8
-      lastBuyTime: '2024-09-28 22:55:27'
+      lastКупитьTime: '2024-09-28 22:55:27'
     E: {}
     U: {}
     Q: {}
     S: {}
     '%':
       buyUseTimes: 9
-      lastBuyTime: '2024-11-11 19:45:24'
+      lastКупитьTime: '2024-11-11 19:45:24'
     \:
       buyUseTimes: 5
-      lastBuyTime: '2025-05-08 11:44:37'
+      lastКупитьTime: '2025-05-08 11:44:37'
     F: {}
     ^:
       buyUseTimes: 3
-      lastBuyTime: '2024-09-28 22:53:49'
+      lastКупитьTime: '2024-09-28 22:53:49'
     $: {}
     G: {}
     '#': {}
@@ -88,23 +88,23 @@ useTimes:
     R: {}
     Y:
       buyUseTimes: 2
-      lastBuyTime: '2024-10-18 19:47:42'
+      lastКупитьTime: '2024-10-18 19:47:42'
     '[': {}
     O: {}
     K: {}
     '*': {}
     C:
       buyUseTimes: 4
-      lastBuyTime: '2024-10-06 11:45:12'
+      lastКупитьTime: '2024-10-06 11:45:12'
     V:
       buyUseTimes: 389
-      lastBuyTime: '2024-10-06 22:31:44'
+      lastКупитьTime: '2024-10-06 22:31:44'
     L: {}
     ): {}
     B: {}
     X:
       buyUseTimes: 3
-      lastBuyTime: '2024-09-28 22:54:07'
+      lastКупитьTime: '2024-09-28 22:54:07'
     I: {}
     D: {}
     A: {}
@@ -128,53 +128,53 @@ useTimes:
   drops:
     G:
       buyUseTimes: 1
-      lastBuyTime: '2025-04-30 00:34:22'
+      lastКупитьTime: '2025-04-30 00:34:22'
     J:
-      lastSellTime: '2024-09-21 22:16:37'
+      lastПродатьTime: '2024-09-21 22:16:37'
       buyUseTimes: 3
-      lastBuyTime: '2024-09-27 20:59:13'
+      lastКупитьTime: '2024-09-27 20:59:13'
       sellUseTimes: 2
     H: {}
     K:
-      lastSellTime: '2025-10-21 14:10:21'
+      lastПродатьTime: '2025-10-21 14:10:21'
       buyUseTimes: 1
-      lastBuyTime: '2025-10-21 12:49:57'
+      lastКупитьTime: '2025-10-21 12:49:57'
       sellUseTimes: 1
     E:
       buyUseTimes: 3
-      lastBuyTime: '2025-10-26 02:03:44'
+      lastКупитьTime: '2025-10-26 02:03:44'
     I: {}
     B: {}
     D:
       buyUseTimes: 2
-      lastBuyTime: '2025-04-30 00:34:21'
+      lastКупитьTime: '2025-04-30 00:34:21'
     C:
       buyUseTimes: 11
-      lastBuyTime: '2025-04-30 00:34:21'
+      lastКупитьTime: '2025-04-30 00:34:21'
     O:
       buyUseTimes: 4
-      lastBuyTime: '2025-04-29 20:24:53'
+      lastКупитьTime: '2025-04-29 20:24:53'
     N:
-      lastSellTime: '2024-09-18 19:43:11'
+      lastПродатьTime: '2024-09-18 19:43:11'
       buyUseTimes: 143
-      lastBuyTime: '2025-11-08 11:54:59'
+      lastКупитьTime: '2025-11-08 11:54:59'
       sellUseTimes: 6
     A: {}
     M:
       buyUseTimes: 2
-      lastBuyTime: '2025-11-12 23:25:26'
+      lastКупитьTime: '2025-11-12 23:25:26'
     L:
       buyUseTimes: 1
-      lastBuyTime: '2025-04-30 00:34:20'
+      lastКупитьTime: '2025-04-30 00:34:20'
     F:
       buyUseTimes: 3
-      lastBuyTime: '2025-04-30 00:34:22'
+      lastКупитьTime: '2025-04-30 00:34:22'
   concretes:
     F: {}
     G: {}
     P:
       buyUseTimes: 1
-      lastBuyTime: '2024-09-04 00:13:33'
+      lastКупитьTime: '2024-09-04 00:13:33'
     L: {}
     C: {}
     O: {}
@@ -182,16 +182,16 @@ useTimes:
     N: {}
     I: {}
     M:
-      lastSellTime: '2024-09-04 00:13:01'
+      lastПродатьTime: '2024-09-04 00:13:01'
       buyUseTimes: 6
-      lastBuyTime: '2024-09-04 00:13:00'
+      lastКупитьTime: '2024-09-04 00:13:00'
       sellUseTimes: 6
     B: {}
     H: {}
     K:
-      lastSellTime: '2024-09-04 00:13:03'
+      lastПродатьTime: '2024-09-04 00:13:03'
       buyUseTimes: 3
-      lastBuyTime: '2024-09-04 00:13:02'
+      lastКупитьTime: '2024-09-04 00:13:02'
       sellUseTimes: 3
     A: {}
     D: {}
@@ -218,97 +218,97 @@ useTimes:
     A: {}
     B:
       buyUseTimes: 1
-      lastBuyTime: '2024-11-11 14:55:56'
+      lastКупитьTime: '2024-11-11 14:55:56'
     F:
       buyUseTimes: 5
-      lastBuyTime: '2025-03-29 15:24:01'
+      lastКупитьTime: '2025-03-29 15:24:01'
     D:
       buyUseTimes: 3
-      lastBuyTime: '2024-11-11 14:55:57'
+      lastКупитьTime: '2024-11-11 14:55:57'
     E:
       buyUseTimes: 1
-      lastBuyTime: '2024-10-22 10:20:20'
+      lastКупитьTime: '2024-10-22 10:20:20'
     C: {}
   minerals:
     M:
-      lastSellTime: '2025-11-14 01:58:51'
+      lastПродатьTime: '2025-11-14 01:58:51'
       sellUseTimes: 13
     C: {}
     A:
-      lastSellTime: '2024-10-03 19:23:49'
+      lastПродатьTime: '2024-10-03 19:23:49'
       sellUseTimes: 3
     E:
-      lastSellTime: '2024-10-03 19:23:49'
+      lastПродатьTime: '2024-10-03 19:23:49'
       sellUseTimes: 19
     H: {}
     K:
-      lastSellTime: '2025-11-14 01:58:53'
+      lastПродатьTime: '2025-11-14 01:58:53'
       sellUseTimes: 31
     G: {}
     I: {}
     F:
-      lastSellTime: '2024-10-03 19:23:49'
+      lastПродатьTime: '2024-10-03 19:23:49'
       sellUseTimes: 12
     B: {}
     L:
-      lastSellTime: '2025-04-30 02:19:49'
+      lastПродатьTime: '2025-04-30 02:19:49'
       sellUseTimes: 21
     D:
-      lastSellTime: '2024-10-03 19:23:49'
+      lastПродатьTime: '2024-10-03 19:23:49'
       sellUseTimes: 12
     J:
       buyUseTimes: 9
-      lastBuyTime: '2024-09-09 20:49:44'
+      lastКупитьTime: '2024-09-09 20:49:44'
   farming:
     N:
       buyUseTimes: 5
-      lastBuyTime: '2024-11-09 13:12:39'
+      lastКупитьTime: '2024-11-09 13:12:39'
     G: {}
     M: {}
     P:
-      lastSellTime: '2024-10-14 15:51:18'
+      lastПродатьTime: '2024-10-14 15:51:18'
       buyUseTimes: 9
-      lastBuyTime: '2024-10-22 00:19:54'
+      lastКупитьTime: '2024-10-22 00:19:54'
       sellUseTimes: 1
     F: {}
     K: {}
     A:
       buyUseTimes: 57
-      lastBuyTime: '2024-09-04 00:50:51'
+      lastКупитьTime: '2024-09-04 00:50:51'
     O: {}
     E:
-      lastSellTime: '2024-10-22 00:19:44'
+      lastПродатьTime: '2024-10-22 00:19:44'
       buyUseTimes: 2
-      lastBuyTime: '2024-09-04 22:04:58'
+      lastКупитьTime: '2024-09-04 22:04:58'
       sellUseTimes: 14
     H: {}
     D:
       buyUseTimes: 4
-      lastBuyTime: '2025-05-07 22:55:54'
+      lastКупитьTime: '2025-05-07 22:55:54'
     I: {}
     B: {}
     J:
-      lastSellTime: '2024-10-22 00:19:44'
+      lastПродатьTime: '2024-10-22 00:19:44'
       sellUseTimes: 10
     C:
       buyUseTimes: 2
-      lastBuyTime: '2025-05-07 22:55:54'
+      lastКупитьTime: '2025-05-07 22:55:54'
     L: {}
     Q:
       buyUseTimes: 4
-      lastBuyTime: '2024-10-07 15:40:36'
+      lastКупитьTime: '2024-10-07 15:40:36'
   stardust:
     A:
       buyUseTimes: 73
-      lastBuyTime: '2025-11-09 00:45:20'
+      lastКупитьTime: '2025-11-09 00:45:20'
     C: {}
     B:
       buyUseTimes: 1
-      lastBuyTime: '2025-05-07 00:09:54'
+      lastКупитьTime: '2025-05-07 00:09:54'
     E:
       buyUseTimes: 10
-      lastBuyTime: '2025-11-09 00:43:30'
+      lastКупитьTime: '2025-11-09 00:43:30'
     D:
       buyUseTimes: 3
-      lastBuyTime: '2025-05-07 00:09:54'
+      lastКупитьTime: '2025-05-07 00:09:54'
 randomPlaceholder: {}

@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&lCategory: {0}'
+title: '&lКатегория: {0}'
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
@@ -27,7 +27,7 @@ category-warps: '$'
 items:
   '!':
     type: BOOK
-    name: '&6Rename Category'
+    name: '&6Rename Категория'
     lore:
       - '&f '
       - '&f '
@@ -43,7 +43,7 @@ items:
       - '&{HEX:cccccc}&o(( &f&oLeft-Click &{HEX:cccccc}&oto edit the category''s slot. ))'
   '$':
     type: ENDER_PEARL
-    name: '&6Island Warps'
+    name: '&6Остров Варпs'
     lore:
       - '&f '
       - '&f '

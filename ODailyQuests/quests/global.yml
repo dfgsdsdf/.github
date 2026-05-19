@@ -34,7 +34,7 @@ quests:
     name: "&aStone"
     menu_item: STONE
     description:
-      - "&bMine 32 stones."
+      - "&bДобудьте 32 камней."
       - "&bWin &c500$&b."
     quest_type: BREAK
     required_item: STONE
@@ -346,7 +346,7 @@ quests:
     name: "&aFarmer"
     menu_item: CARROT
     description:
-      - "&eHarvest 10 fully grown carrots."
+      - "&eСоберите 10 fully grown carrots."
       - "&eWin &b5 EXP levels&e."
     quest_type: FARMING
     required_item: CARROT
@@ -521,7 +521,7 @@ quests:
     menu_item: STONE
     achieved_menu_item: "customhead:b5a3b49beec3ab23ae0b60dab56e9cc8fa16769a25830b5d8d6c46378f54430" # checkmark head
     description:
-      - "&bMine 32 stones."
+      - "&bДобудьте 32 камней."
       - "&bWin &c500$&b."
     quest_type: BREAK
     required_item: STONE
@@ -530,19 +530,19 @@ quests:
       reward_type: MONEY
       amount: 500
 
-  # example quest that is using the CoinsEngine reward type
+  # example quest that is using the МонетEngine reward type
   33:
     name: "&aStone"
     menu_item: STONE
     achieved_menu_item: "customhead:b5a3b49beec3ab23ae0b60dab56e9cc8fa16769a25830b5d8d6c46378f54430" # checkmark head
     description:
-      - "&bMine 32 stones."
+      - "&bДобудьте 32 камней."
       - "&bWin &c500$&b."
     quest_type: BREAK
     required_item: STONE
     required_amount: 32
     reward:
       reward_type: COINS_ENGINE
-      currency_label: "quests_coins" # name from the CoinsEngine configuration file
-      currency_display_name: "&6&lQuests Coins" # name that will be used in the reward message to the player
+      currency_label: "quests_coins" # name from the МонетEngine configuration file
+      currency_display_name: "&6&lQuests Монет" # name that will be used in the reward message to the player
       amount: 500

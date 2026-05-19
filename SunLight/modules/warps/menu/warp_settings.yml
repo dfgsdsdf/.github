@@ -1,12 +1,12 @@
-Settings:
+Настройки:
   # GUI title.
-  Title: <black>Warp Settings</black>
+  Title: <black>Варп Настройки</black>
   # GUI size. Must be multiply of 9.
-  # Useful for 'CHEST' Inventory Type only.
+  # Useful for 'CHEST' Инвентарь Type only.
   Size: 27
   # GUI type.
-  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
-  Inventory_Type: CHEST
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/ИнвентарьType.html
+  Инвентарь_Type: CHEST
   # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
   Auto_Refresh: 0
 # ==================== GUI CONTENT ====================
@@ -27,10 +27,10 @@ Settings:
 # > Item: Item to display. Please check: https://github.com/nulli0n/nightcore-spigot/wiki/ItemStack-Options
 # > Priority: Button priority. Better values will override other item(s) in the same slot(s).
 # > Slots: Button slots. From [0] to [Size - 1]. Split with commas.
-# > Click_Commands: Execute custom commands on click. PlaceholderAPI available here.
+# > Click_Командаs: Execute custom commands on click. PlaceholderAPI available here.
 #     Available click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4, NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9
 #     Use prefix 'player:' to run command by a player.
-#     Click_Commands:
+#     Click_Командаs:
 #       LEFT:
 #       - say Hello
 #       - give %player_name% diamond 1
@@ -54,7 +54,7 @@ Content:
       Lore:
       - '<lyellow>▪ <lgray>Current: </lgray>%warp_name%</lyellow>'
       - ' '
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>change</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>change</lyellow>.</lgray>
     Slots: '3'
     Type: warp_change_name
   descrpition:
@@ -65,7 +65,7 @@ Content:
       Lore:
       - '%warp_description%'
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>change</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>change</lyellow>.</lgray>
     Slots: '4'
     Type: warp_change_description
   icon:
@@ -83,13 +83,13 @@ Content:
       Material: REDSTONE_TORCH
       Name: <lyellow><b>Permission Requirement</b></lyellow>
       Lore:
-      - '<lyellow>▪ <lgray>Enabled: </lgray>%warp_permission_required%</lyellow>'
+      - '<lyellow>▪ <lgray>Включено: </lgray>%warp_permission_required%</lyellow>'
       - '<lyellow>▪ <lgray>Node: </lgray>%warp_permission_node%</lyellow>'
       - ''
       - <lgray>Sets whether or not permission is</lgray>
       - <lgray>required to visit this warp.</lgray>
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>toggle</lyellow>.</lgray>
     Slots: '11'
     Type: warp_change_permission
   visit_cost:
@@ -103,8 +103,8 @@ Content:
       - <lgray>Sets how much money player will have to pay</lgray>
       - <lgray>in order to use this warp.</lgray>
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Left-Click to <lyellow>change</lyellow>.</lgray>
-      - <lgray><lyellow>[▶]</lyellow> Right-Click to <lyellow>disable</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Left-Нажмите чтобы <lyellow>change</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Right-Нажмите чтобы <lyellow>disable</lyellow>.</lgray>
     Slots: '12'
     Type: warp_change_visit_cost
   visit_cooldown:
@@ -117,8 +117,8 @@ Content:
       - ''
       - <lgray>Sets the cooldown for next warp visit per a player.</lgray>
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Left-Click to <lyellow>change</lyellow>.</lgray>
-      - <lgray><lyellow>[▶]</lyellow> Right-Click to <lyellow>disable</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Left-Нажмите чтобы <lyellow>change</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Right-Нажмите чтобы <lyellow>disable</lyellow>.</lgray>
     Slots: '13'
     Type: warp_change_visit_cooldown
   visit_times:
@@ -131,8 +131,8 @@ Content:
       - ''
       - <lgray>Sets the times when the warp is available for visits.</lgray>
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Left-Click to <lyellow>add time</lyellow>.</lgray>
-      - <lgray><lyellow>[▶]</lyellow> Right-Click to <lyellow>remove all</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Left-Нажмите чтобы <lyellow>add time</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Right-Нажмите чтобы <lyellow>remove all</lyellow>.</lgray>
     Slots: '14'
     Type: warp_change_visit_times
   type:
@@ -143,21 +143,21 @@ Content:
       Lore:
       - '<lyellow>▪ <lgray>Current: </lgray>%warp_type%</lyellow>'
       - ' '
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>toggle</lyellow>.</lgray>
     Slots: '15'
     Type: warp_change_type
   dedicated_command:
     Priority: 10
     Item:
       Material: COMMAND_BLOCK
-      Name: <lyellow><b>Dedicated Command</b></lyellow>
+      Name: <lyellow><b>Dedicated Команда</b></lyellow>
       Lore:
       - <lyellow>▪ <lgray>Current:</lgray> /%warp_command_shortcut%</lyellow>
       - ''
       - <lgray>Allows to access the warp</lgray>
       - <lgray>using dedicated command.</lgray>
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Left-Click to <lyellow>change</lyellow>.</lgray>
-      - <lgray><lyellow>[▶]</lyellow> Right-Click to <lyellow>disable</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Left-Нажмите чтобы <lyellow>change</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Right-Нажмите чтобы <lyellow>disable</lyellow>.</lgray>
     Slots: '16'
     Type: warp_change_command_shortcut

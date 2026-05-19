@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: FarmingMissions
+mission-file: FarmingМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -28,7 +28,7 @@ rewards:
       amount: 1
   commands:
     - 'eco give %player% 2500'
-    - 'is admin msg %player% &e&lFarmer | &7Successfully finished the mission Farmer I!'
+    - 'is admin msg %player% &e&lFarmer | &7Успехfully finished the mission Farmer I!'
 
 # List of all required blocks must be gathered in order to complete the mission.
 required-plants:
@@ -90,7 +90,7 @@ icons:
       - '&6Grown Potatoes: &710/10'
       - '&6Grown Wheat: &710/10'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:

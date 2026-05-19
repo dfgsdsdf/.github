@@ -32,11 +32,11 @@ quests:
     name: "#e09443♦&lKING &8| #ffba70Scientists Slayer"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Slay 3 Infected Scientists."
+      - "#e8e8e8→ Убейте 3 Infected Scientists."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: MYTHIC_MOBS
     entity_name: "INFECTED_SCIENTIST"
     required_amount: 3
@@ -50,11 +50,11 @@ quests:
     name: "#e09443♦&lKING &8| #ffba70Parasitic End"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Slay 8 Silver Parasites."
+      - "#e8e8e8→ Убейте 8 Silver Parasites."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: MYTHIC_MOBS
     entity_name: "SILVER_PARASITE"
     required_amount: 8
@@ -70,9 +70,9 @@ quests:
     description:
       - "#e8e8e8→ Complete 1 Lab of Horrors dungeon run."
       - ""
-      - " #bcecf7+150 Stardust"
-      - " #d1884f+1000 Coins"
-      - " #db8a8a+350 Class EXP"
+      - " #bcecf7+150 Стардаст"
+      - " #d1884f+1000 Монет"
+      - " #db8a8a+350 Опыт класса"
       - " #74b4b8+1 Diamond Chamber Key"
     quest_type: COMPLETE_DUNGEON
     required_amount: 1
@@ -88,11 +88,11 @@ quests:
     name: "#e09443♦&lKING &8| #ffba70Diamondsss!!!"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Break 6 diamond ores."
+      - "#e8e8e8→ Break 6 diamond руд."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: BREAK
     required_item: DIAMOND_ORE
     required_amount: 6
@@ -108,9 +108,9 @@ quests:
     description:
       - "#e8e8e8→ Break 2 ancient debrises."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: BREAK
     required_item: ANCIENT_DEBRIS
     required_amount: 2
@@ -124,11 +124,11 @@ quests:
     name: "#e09443♦&lKING &8| #ffba70Treasure Fisher"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Fish up any treasure."
+      - "#e8e8e8→ Поймайте up any treasure."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: FISH
     required_item: 
       - "BOW"
@@ -150,9 +150,9 @@ quests:
     description:
       - "#e8e8e8→ Enchant a random thing."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: ENCHANT
     required_amount: 1
     reward:
@@ -167,9 +167,9 @@ quests:
     description:
       - "#e8e8e8→ Gain 20 EXP levels."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: EXP_LEVELS
     required_amount: 20
     reward:
@@ -184,9 +184,9 @@ quests:
     description:
       - "#e8e8e8→ Farm 5 glow berries crop."
       - ""
-      - " #bcecf7+50 Stardust"
-      - " #d1884f+400 Coins"
-      - " #db8a8a+200 Class EXP"
+      - " #bcecf7+50 Стардаст"
+      - " #d1884f+400 Монет"
+      - " #db8a8a+200 Опыт класса"
     quest_type: FARMING
     required_item: GLOW_BERRIES
     required_amount: 5

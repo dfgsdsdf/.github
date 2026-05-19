@@ -20,11 +20,11 @@ items:
   '@':
     type: BARRIER
     customModel: 1
-    name: '&aConfirm &2banning that player&a?'
+    name: '&aПодтвердить &2banning that player&a?'
   '^':
     type: BARRIER
     customModel: 1
-    name: '&4Cancel'
+    name: '&4Отмена'
 
 sounds:
   '@':

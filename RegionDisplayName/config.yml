@@ -2,34 +2,34 @@
 # RGB can be used with & then the hex code, such as &#FFFF00.
 
 # Displays when the region does not have a set display name.
-Default: None
+Default: Нет
 
 # Sets the region's display name.
 # Format: region_id: "display name"
 Regions:
   
   # Spawn
-  world_spawn: Darwin Village
-  blacksmith: The Blacksmith
-  grotto: The Grotto
-  enchantcenter: Enchant Center
-  treasury: The Treasury
-  guild: Guild's Domain
-  town_hall: Town Hall
-  portal: The Portal
-  dungeonportal: Dungeon Portal
-  rift: The Rift
-  balloondock: Balloon Dock
-  quester_house: Quester House
-  ascension_pedal: Ascension Pedal
+  world_spawn: Деревня Дарвин
+  blacksmith: Кузница
+  grotto: Грот
+  enchantcenter: Центр зачарований
+  treasury: Казна
+  guild: Территория гильдии
+  town_hall: Ратуша
+  portal: Портал
+  dungeonportal: Портал в подземелье
+  rift: Разлом
+  balloondock: Причал воздушных шаров
+  quester_house: Дом квестера
+  ascension_pedal: Пьедестал Вознесения
   
-  # Private Island
-  world_private_islands: Private Island
-  world_private_islands_nether: Private Island
+  # Приватный остров
+  world_private_islands: Приватный остров
+  world_private_islands_nether: Приватный остров
   
   # Dungeons 1
-  loh_0: Lab of Horrors
-  loh_1: Lab of Horrors
-  loh_2: Lab of Horrors
-  loh_3: Lab of Horrors
-  loh_4: Lab of Horrors
+  loh_0: Лаборатория Ужасов
+  loh_1: Лаборатория Ужасов
+  loh_2: Лаборатория Ужасов
+  loh_3: Лаборатория Ужасов
+  loh_4: Лаборатория Ужасов

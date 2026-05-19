@@ -2,15 +2,15 @@
 # gui with a list of all available banks, otherwise will
 # open the main bank even if there are more banks.
 # (You can always open other banks with /bank open <bank>)
-Enabled: true
+Включено: true
 
 # Choose if showing or hiding a bank if it's not accessible.
-Shows-Not-Available-Banks: true
+Shows-Not-Available-Банкs: true
 
 # If having only one bank available, this option will
 # make the player directly open that one instead of
 # opening the banks-gui with just the 1 gui available.
-Directly-Open-If-1-Is-Available: true
+Directly-Открыть-If-1-Is-Available: true
 
 # This is a new feature used to automatically unlock
 # new banks when a player has maxed the selected bank.
@@ -22,19 +22,19 @@ Directly-Open-If-1-Is-Available: true
 # player upgrades the selected bank to the max level
 # (In this example, when you max the "bank" bank it will run
 # the "lp user %player% permission set bankplus.bank2" cmd):
-# Auto-Banks-Unlocker:
+# Auto-Банкs-Unlocker:
 # - "bank:lp user %player% permission set bankplus.bank2"
 #
 # You can also use more than 1 cmd:
-# Auto-Banks-Unlocker
+# Auto-Банкs-Unlocker
 # - "bank:cmd1:cmd2:cmd3"
-Auto-Banks-Unlocker: []
+Auto-Банкs-Unlocker: []
 
 # The gui that contains the different banks.
 #
 # To add more banks, go to the "banks" folder and
 # add more files following the default bank format.
-Banks-Gui:
+Банкs-Gui:
   Title: '&a&lBANKS LIST'
 
   # If the number of banks is higher
@@ -46,13 +46,13 @@ Banks-Gui:
   Update-Delay: 20
 
   Filler:
-    Enabled: true
+    Включено: true
     Material: WHITE_STAINED_GLASS_PANE
     Glowing: false
 
-  Previous-Page:
+  Назад-Страница:
     Material: ARROW
-    Displayname: '&aPrevious page &8(&7%previous_page%/%all_pages%&8)'
+    Displayname: '&aНазад page &8(&7%previous_page%/%all_pages%&8)'
     Lore:
       - '&7Go to the previous page'
     Glowing: false
@@ -60,9 +60,9 @@ Banks-Gui:
   # It will show the item only if the
   # banks are more than the empty slots.
 
-  Next-Page:
+  Далее-Страница:
     Material: ARROW
-    Displayname: '&aNext page &8(&7%nex_page%/%all_pages%&8)'
+    Displayname: '&aДалее page &8(&7%nex_page%/%all_pages%&8)'
     Lore:
       - '&7Go to the next page'
     Glowing: false

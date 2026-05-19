@@ -1,5 +1,5 @@
 # Individual per-player scoreboard format based on player's rank and world.
-# [You must have Vault with compatible Permissions plugins installed for this feature to work properly]
+# [You must have Vault with compatible Права plugins installed for this feature to work properly]
 #
 # If multiple scoreboards are available for a player, the one with the greatest priority will be used.
 # If no scoreboard is available for a player, the one labeled 'default' will be used (if present).
@@ -24,7 +24,7 @@ Boards:
     - ' '
     - <blue>%player_display_name%</blue>
     - <blue> ▎ <gray>Rank:</gray> <white>%vault_rank%</white></blue>
-    - <blue> ▎ <gray>Balance:</gray> $%vault_eco_balance_formatted%</blue>
+    - <blue> ▎ <gray>Баланс:</gray> $%vault_eco_balance_formatted%</blue>
     - <blue> ▎ <gray>Kills:</gray> <white>%statistic_player_kills%</white></blue>
     - <blue> ▎ <gray>Deaths:</gray> <white>%statistic_deaths%</white></blue>
     - ' '

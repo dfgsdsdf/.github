@@ -10,11 +10,11 @@
 
 # W celu zgłoszenia jakichkolwiek błędów w tłumaczeniu, dodaj mnie na Discorda, którego nazwa znajduje się wyżej.
 Generic:
-  Command:
+  Команда:
     Cooldown:
       Default: '<! prefix:"false" !>#fd5e5eMusisz poczekać #fdba5e%time%#fd5e5e zanim będziesz mógł ponownie użyć #fdba5e%command%#fd5e5e.'
       OneTime: <! prefix:"false" !>#fd5e5eTo polecenie można użyć tylko raz i już zostało użyte.
-Command:
+Команда:
   Air:
     Desc: Zarządzaj punktami powietrza.
     Usage: <operacja> <ilość> [gracz] [-max] [-s]
@@ -32,10 +32,10 @@ Command:
     Usage: '[gracz] [-s]'
     Target: '#ffeea2Otworzyłeś przenośne kowadło dla #fdba5e%player_display_name%#ffeea2.'
     Notify: <! type:"action_bar" !>#ffeea2Otworzyłeś przenośne kowadło!
-  Back:
+  Назад:
     Desc: Powróć gracza do poprzedniej lokalizacji.
     Usage: '[gracz] [-s]'
-    Error:
+    Ошибка:
       Nothing: <! type:"action_bar" sound:"ENTITY_VILLAGER_NO" !>#fd5e5eNie masz zapisanej poprzedniej lokalizacji.
     Notify: <! type:"action_bar" sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Wróciłeś do poprzedniej lokalizacji.
     Target: '#ffeea2Gracz #fdba5e%player_display_name%#ffeea2 został teleportowany do poprzedniej lokalizacji.'
@@ -48,14 +48,14 @@ Command:
   Condense:
     Desc: Kondensuj przedmioty w bloki.
     Usage: ''
-    Error:
+    Ошибка:
       Nothing: <! type:"action_bar" sound:"ENTITY_VILLAGER_NO" !>#fd5e5eNie ma czego kondensować.
       NotEnough: '#ffeea2Za mało przedmiotów do przekształcenia #fd5e5e%source%#ffeea2 w #fd5e5e%result%#ffeea2. Potrzebujesz minimum #fd5e5e%amount%#ffeea2.'
-    Done: '#ffeea2Przekształcono #fdba5ex%total% %source%#ffeea2 na #fdba5ex%amount% %result%#ffeea2.'
-  DeathBack:
+    Готово: '#ffeea2Przekształcono #fdba5ex%total% %source%#ffeea2 na #fdba5ex%amount% %result%#ffeea2.'
+  DeathНазад:
     Desc: Przywróć gracza do miejsca śmierci.
     Usage: '[gracz] [-s]'
-    Error:
+    Ошибка:
       Nothing: <! type:"action_bar" sound:"ENTITY_VILLAGER_NO" !>#fd5e5eNie masz zapisanej lokalizacji śmierci.
     Notify: <! type:"action_bar" sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Wróciłeś do miejsca śmierci.
     Target: '#ffeea2Gracz #fdba5e%player_display_name%#ffeea2 został teleportowany do miejsca śmierci.'
@@ -106,24 +106,24 @@ Command:
     Clear:
       Desc: Wyczyść enderchest gracza.
       Usage: '[gracz] [-s]'
-      Done:
+      Готово:
         Target: '<! sound:"BLOCK_FIRE_EXTINGUISH" !>#ffeea2Wyczyszczono enderchest gracza #fdba5e%player_display_name%#ffeea2!'
         Notify: <! type:"action_bar" sound:"BLOCK_FIRE_EXTINGUISH" !>#ffeea2Twój enderchest został wyczyszczony!
     Copy:
       Desc: Skopiuj enderchest gracza.
       Usage: <z> [do]
-      Done:
+      Готово:
         Executor: '<! sound:"ITEM_ARMOR_EQUIP_LEATHER" !>#ffeea2Skopiowano enderchest gracza #fdba5e%player_display_name%#ffeea2.'
         Others: '<! sound:"ITEM_ARMOR_EQUIP_LEATHER" !>#ffeea2Skopiowano enderchest #fdba5e%source%#ffeea2 do #fdba5e%target%#ffeea2.'
     Fill:
       Desc: Wypełnij enderchest gracza określonymi przedmiotami.
       Usage: <gracz> <przedmiot>
-      Done:
+      Готово:
         Executor: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Wypełniono enderchest gracza #fdba5e%player_display_name%#ffeea2 przedmiotem #fdba5e%item%#ffeea2.'
-    Open:
+    Открыть:
       Desc: Otwórz enderchest gracza.
       Usage: '[gracz]'
-      Done:
+      Готово:
         Executor: <! sound:"BLOCK_CHEST_OPEN" !>#ffeea2Otwarzyłeś przenośny enderchest!
     Repair:
       Desc: Napraw wszystkie przedmioty w endercheście.
@@ -138,11 +138,11 @@ Command:
   Equip:
     Desc: Przenieś przedmiot trzymany w ręce do wyznaczonego miejsca w zbroi.
     Usage: <slot>
-    Done: '<! sound:"ITEM_ARMOR_EQUIP_LEATHER" !>#ffeea2Wyposażono #fdba5e%item%#ffeea2.'
+    Готово: '<! sound:"ITEM_ARMOR_EQUIP_LEATHER" !>#ffeea2Wyposażono #fdba5e%item%#ffeea2.'
   Feed:
     Desc: Uzupełnij poziom jedzenia.
     Usage: '[gracz] [-sat] [-s]'
-    Done:
+    Готово:
       Self: <! sound:"ENTITY_GENERIC_EAT" !>#ffeea2Twój poziom jedzenia został uzupełniony!
       Others: '<! sound:"ENTITY_GENERIC_EAT" !>#ffeea2Uzupełniono poziom jedzenia dla #fdba5e%player_display_name%#ffeea2!'
   Fly:
@@ -153,7 +153,7 @@ Command:
   FlySpeed:
     Desc: Zmień prędkość latania gracza.
     Usage: <prędkość> [gracz] [-s]
-    Done:
+    Готово:
       Notify: '#ffeea2Twoja prędkość lotu została ustawiona na #fdba5e%amount%#ffeea2.'
       Target: '#ffeea2Prędkość lotu gracza #fdba5e%player_display_name%#ffeea2 została ustawiona na #fdba5e%amount%#ffeea2.'
   Fire:
@@ -196,7 +196,7 @@ Command:
     Desc: Przełącz tryb nieśmiertelności.
     Usage: '[gracz] [-on] [-off] [-s]'
     Notify:
-      DamageDisabled: <! type:"action_bar" !>#fd5e5eNie możesz zadawać obrażeń w trybie nieśmiertelności!
+      DamageОтключено: <! type:"action_bar" !>#fd5e5eNie możesz zadawać obrażeń w trybie nieśmiertelności!
       BadWorld: '#fd5e5eUwaga: #ffeea2Tryb nieśmiertelności jest wyłączony w tym świecie!'
     Toggle:
       Notify: '#ffeea2Nieśmiertelność została #fdba5e%state%#ffeea2.'
@@ -224,41 +224,41 @@ Command:
     Add:
       Desc: Dodaj gracza do czarnej listy.
       Usage: <gracz>
-      Done: '#ffeea2Gracz #fd5e5e%player_name%#ffeea2 został dodany do czarnej listy. Możesz zmienić ustawienia lub odblokować go za pomocą #fd5e5e/ignore list'
-      Error:
+      Готово: '#ffeea2Gracz #fd5e5e%player_name%#ffeea2 został dodany do czarnej listy. Możesz zmienić ustawienia lub odblokować go za pomocą #fd5e5e/ignore list'
+      Ошибка:
         AlreadyIn: '#ffeea2Gracz jest już na czarnej liście.'
     Remove:
       Desc: Usuń gracza z czarnej listy.
       Usage: <gracz>
-      Done: '#ffeea2Gracz #fdba5e%player_name%#ffeea2 został usunięty z czarnej listy.'
-      Error:
+      Готово: '#ffeea2Gracz #fdba5e%player_name%#ffeea2 został usunięty z czarnej listy.'
+      Ошибка:
         NotIn: '#ffeea2Gracz nie jest na czarnej liście.'
     List:
       Desc: Wyświetl swoją czarną listę graczy.
       Usage: ''
-  Inventory:
+  Инвентарь:
     Desc: Zarządzaj ekwipunkiem gracza.
     Usage: '[pomoc]'
     Clear:
       Desc: Wyczyść własny lub inny ekwipunek gracza.
       Usage: '[gracz] [-s]'
-      Done:
+      Готово:
         Target: '<! sound:"BLOCK_FIRE_EXTINGUISH" !>#ffeea2Wyczyszczono ekwipunek gracza #fdba5e%player_display_name%#ffeea2!'
         Notify: <! sound:"BLOCK_FIRE_EXTINGUISH" !>#ffeea2Twój ekwipunek został wyczyszczony!
     Copy:
       Desc: Skopiuj ekwipunek gracza.
       Usage: <z> [do]
-      Done:
+      Готово:
         Notify: '<! sound:"ITEM_ARMOR_EQUIP_LEATHER" !>#ffeea2Skopiowano ekwipunek gracza #fdba5e%player_display_name%#ffeea2.'
         Target: '<! sound:"ITEM_ARMOR_EQUIP_LEATHER" !>#ffeea2Skopiowano ekwipunek #fdba5e%source%#ffeea2 do #fdba5e%target%#ffeea2.'
     Fill:
       Desc: Wypełnij ekwipunek gracza określonym(i) przedmiotem(ami).
       Usage: <gracz> <przedmiot>
-      Done: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Wypełniono ekwipunek gracza #fdba5e%player_display_name%#ffeea2 przedmiotem #fdba5e%item%#ffeea2.'
-    Open:
+      Готово: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Wypełniono ekwipunek gracza #fdba5e%player_display_name%#ffeea2 przedmiotem #fdba5e%item%#ffeea2.'
+    Открыть:
       Desc: Otwórz edytowalny ekwipunek gracza.
       Usage: <gracz>
-      Done: '<! sound:"BLOCK_CHEST_OPEN" !>#ffeea2Otwarto ekwipunek gracza #fdba5e%player_display_name%#ffeea2.'
+      Готово: '<! sound:"BLOCK_CHEST_OPEN" !>#ffeea2Otwarto ekwipunek gracza #fdba5e%player_display_name%#ffeea2.'
     Repair:
       Desc: Napraw wszystkie przedmioty w ekwipunku gracza.
       Usage: '[gracz] [-s]'
@@ -267,23 +267,23 @@ Command:
   Item:
     Desc: Zarządzaj przedmiotami.
     Usage: '[pomoc]'
-    Error:
+    Ошибка:
       Material: '#fdba5e%type%#fd5e5e nie jest prawidłowym materiałem!'
       EmptyHand: '#fd5e5eMusisz trzymać przedmiot!'
-    Amount:
+    Количество:
       Desc: Zmień ilość przedmiotu.
       Usage: '[ilość]'
-      Done: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Ustawiono ilość przedmiotu #fdba5e%item%#ffeea2 na x#fdba5e%amount%#ffeea2.'
+      Готово: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Ustawiono ilość przedmiotu #fdba5e%item%#ffeea2 na x#fdba5e%amount%#ffeea2.'
     Damage:
       Desc: Zmień uszkodzenie przedmiotu.
       Usage: '[ilość]'
-      Done: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Ustawiono uszkodzenie przedmiotu #fdba5e%item%#ffeea2 na #fdba5e%amount%#ffeea2.'
-      Error:
+      Готово: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Ustawiono uszkodzenie przedmiotu #fdba5e%item%#ffeea2 na #fdba5e%amount%#ffeea2.'
+      Ошибка:
         NotDamageable: <! sound:"ENTITY_VILLAGER_NO" !>#fdba5e%item%#fd5e5e nie może być uszkodzony.
     Enchant:
       Desc: Enchantuj przedmiot w dłoni.
       Usage: <enchant> <poziom>
-      Done:
+      Готово:
         Enchanted: '<! sound:"BLOCK_ENCHANTMENT_TABLE_USE" !>#fdba5e%item%#ffeea2 został zaczarowany na #fdba5e%name% poziomu %level%!'
         Disenchanted: '<! sound:"BLOCK_ENCHANTMENT_TABLE_USE" !>#ffeea2Usunieto zaklęcie #fdba5e%name%#ffeea2 z przedmiotu #fdba5e%item%#ffeea2!'
     Flag:
@@ -292,28 +292,28 @@ Command:
       Add:
         Desc: Dodaj określoną flagę do przedmiotu.
         Usage: <flaga>
-        Done: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Dodano flagę #fdba5e%name%#ffeea2 do przedmiotu!'
+        Готово: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Dodano flagę #fdba5e%name%#ffeea2 do przedmiotu!'
       Remove:
         Desc: Usuń określoną flagę z przedmiotu.
         Usage: <flaga>
-        Done: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Usunięto flagę #fdba5e%name%#ffeea2 z przedmiotu.'
+        Готово: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Usunięto flagę #fdba5e%name%#ffeea2 z przedmiotu.'
       Clear:
         Desc: Wyczyść flagi przedmiotu.
-        Done: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Flagi przedmiotu usunięte!
+        Готово: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Flagi przedmiotu usunięte!
     Get:
       Desc: Pobierz określony stack przedmiotów.
       Usage: <materiał> [ilość] [-name <nazwa>] [-lore <tekst>] [-ench <zaklęcie:poziom>] [-model <modelData>]
-      Done: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Otrzymałeś #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2!'
+      Готово: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Otrzymałeś #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2!'
     Give:
       Desc: Daj określoną ilość przedmiotów graczowi.
       Usage: <gracz> <materiał> [ilość] [-name <nazwa>] [-lore <tekst>] [-ench <zaklęcie:poziom>] [-model <modelData>]
-      Done: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Dałeś #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2 graczowi #fdba5e%player_display_name%#ffeea2!'
+      Готово: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Dałeś #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2 graczowi #fdba5e%player_display_name%#ffeea2!'
       Notify: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Otrzymałeś #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2!'
     Take:
       Desc: Weź określony stos przedmiotów od gracza.
       Usage: <gracz> <materiał> [ilość] [-name <nazwa>] [-lore <tekst>] [-ench <czar:poziom>] [-model <modelData>]
-      Done: '<! sound:"ENTITY_GLOW_ITEM_FRAME_REMOVE_ITEM" !>#ffeea2Odebrano #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2 od gracza #fdba5e%player_display_name%#ffeea2!'
-      Error:
+      Готово: '<! sound:"ENTITY_GLOW_ITEM_FRAME_REMOVE_ITEM" !>#ffeea2Odebrano #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2 od gracza #fdba5e%player_display_name%#ffeea2!'
+      Ошибка:
         NotEnough: '<! sound:"ENTITY_VILLAGER_NO" !>#fd5e5eGracz nie ma wystarczającej ilości #fdba5e%type%#fd5e5e (%amount%/%total%)!'
       Notify: '<! sound:"ENTITY_GLOW_ITEM_FRAME_REMOVE_ITEM" !>#fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2 zostało zabrane z twojego ekwipunku!'
     Lore:
@@ -322,41 +322,41 @@ Command:
       Add:
         Desc: Dodaj nową linię lore.
         Usage: <tekst> [-pos <pozycja>]
-        Done: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Dodano nową linię lore do przedmiotu!
+        Готово: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Dodano nową linię lore do przedmiotu!
       Remove:
         Desc: Usuń linię lore z przedmiotu.
         Usage: <pozycja>
-        Done: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Usunięto lore z przedmiotu.
+        Готово: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Usunięto lore z przedmiotu.
       Clear:
         Desc: Wyczyść lore przedmiotu.
-        Done: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Wyczyszczono lore przedmiotu!
+        Готово: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Wyczyszczono lore przedmiotu!
     Model:
       Desc: Zmień dane modelu przedmiotu.
       Usage: <model data>
-      Done: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Ustawiono #fdba5e%amount%#ffeea2 jako dane modelu przedmiotu #fdba5e%item%#ffeea2!'
+      Готово: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Ustawiono #fdba5e%amount%#ffeea2 jako dane modelu przedmiotu #fdba5e%item%#ffeea2!'
     Name:
       Desc: Zmień nazwę wyświetlaną przedmiotu.
       Usage: '[nazwa]'
-      Done:
+      Готово:
         Changed: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Pomyślnie zmieniłeś nazwe przedmiotu!
         Reset: <! sound:"BLOCK_ANVIL_USE" !>#ffeea2Nazwa przedmiotu przywrócona do domyślnej.
     Potion:
-      Error:
+      Ошибка:
         NotAPotion: '#fd5e5eMusisz trzymać miksturę!'
         InvalidEffect: '#fd5e5eNieprawidłowy efekt!'
       Add:
         Desc: Dodaj efekt do mikstury.
         Usage: <efekt> <moc> <czas trwania>
-        Done: '#ffeea2Dodano efekt mikstury!'
+        Готово: '#ffeea2Dodano efekt mikstury!'
     Spawn:
       Desc: Stwórz określony stos przedmiotów.
       Usage: <materiał> <ilość> [świat] [x] [y] [z] [-name <nazwa>] [-lore <tekst>] [-ench <zaklęcie:poziom>] [-model <modelData>]
-      Done: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Pomyślnie stworzono #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2 na pozycjach #fdba5e%location_x%, %location_y%, %location_z%#ffeea2 w świecie #fdba5e%location_world%#ffeea2!'
+      Готово: '<! sound:"ENTITY_ITEM_PICKUP" !>#ffeea2Pomyślnie stworzono #fdba5ex%amount%#ffeea2 #fdba5e%type%#ffeea2 na pozycjach #fdba5e%location_x%, %location_y%, %location_z%#ffeea2 w świecie #fdba5e%location_world%#ffeea2!'
     Unbreakable:
       Desc: Tworzy niezniszczalny przedmiot.
       Usage: ''
-      Done: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Status niezniszczalności bedzie włączony: #fdba5e%state%#ffeea2.'
-      Error:
+      Готово: '<! sound:"BLOCK_ANVIL_USE" !>#ffeea2Status niezniszczalności bedzie włączony: #fdba5e%state%#ffeea2.'
+      Ошибка:
         NotDamageable: <! sound:"ENTITY_VILLAGER_NO" !>#fdba5e%item%#fd5e5eNie może być niezniszczalny!
   Loom:
     Desc: Otwórz przenośne krosno.
@@ -369,23 +369,23 @@ Command:
     Kill:
       Desc: Zabij określone typy mobów.
       Usage: <typ> [-r <promień>] [-w <świat>] [-lim <limit>]
-      Error:
+      Ошибка:
         Type: '#fd5e5eByt #fdba5e%type%#fd5e5e nie może być zabity!'
-      Done: '<! prefix:"false" sound:"ENTITY_ZOMBIE_DEATH" !>#ffeea2Zabito #fdba5ex%amount% %type%#ffeea2 w świecie #fdba5e%world%#ffeea2 w promieniu #fdba5e%radius%#ffeea2 bloków.'
+      Готово: '<! prefix:"false" sound:"ENTITY_ZOMBIE_DEATH" !>#ffeea2Zabito #fdba5ex%amount% %type%#ffeea2 w świecie #fdba5e%world%#ffeea2 w promieniu #fdba5e%radius%#ffeea2 bloków.'
     Clear:
       Desc: Zabij wszystkie żywe istoty.
       Usage: '[promień] [-w <świat>]'
-      Done: '<! sound:"ENTITY_ZOMBIE_DEATH" !>#ffeea2Zabito #fdba5e%amount%#ffeea2 mobów w świecie #fdba5e%world%#ffeea2 w promieniu #fdba5e%radius%#ffeea2 bloków.'
+      Готово: '<! sound:"ENTITY_ZOMBIE_DEATH" !>#ffeea2Zabito #fdba5e%amount%#ffeea2 mobów w świecie #fdba5e%world%#ffeea2 w promieniu #fdba5e%radius%#ffeea2 bloków.'
     Spawn:
       Desc: Stwórz określonego moba.
       Usage: <typ> [ilość] [-name <nazwa>]
-      Error:
+      Ошибка:
         Type: '#fd5e5eTen typ bytu jest nieprawidłowy lub nie może być stworzony!'
-      Done: '#ffeea2Stworzono #fdba5ex%amount% %type%#ffeea2.'
+      Готово: '#ffeea2Stworzono #fdba5ex%amount% %type%#ffeea2.'
   Near:
     Desc: Pokaż najbliższych graczy.
     Usage: ''
-    Error:
+    Ошибка:
       Nothing: '#ffeea2Brak graczy w promieniu #fdba5e%radius%#ffeea2 bloków.'
   Nick:
     Desc: Zarządzanie niestandardowy nick.
@@ -403,8 +403,8 @@ Command:
     Change:
       Desc: Zmień swój nick.
       Usage: <pseudonim>
-      Done: '#ffeea2Ustawiono nick na #fdba5e%name%#ffeea2.'
-    Error:
+      Готово: '#ffeea2Ustawiono nick na #fdba5e%name%#ffeea2.'
+    Ошибка:
       BadWords: '#fd5e5ePseudonim zawiera zakazane słowa.'
       Regex: '#fd5e5ePseudonim zawiera niedozwolone znaki.'
       TooLong: '#fd5e5ePseudonim nie może być dłuższy niż #fdba5e%amount%#fd5e5e znaków.'
@@ -421,51 +421,51 @@ Command:
     Toggle:
       Notify: '#ffeea2Możliwość atakowania ciebie przez moby została #fdba5e%state%#ffeea2.'
       Target: '#ffeea2Możliwość atakowania gracza przez moby dla #fdba5e%player_display_name%#ffeea2 została #fdba5e%state%#ffeea2.'
-  PlayerInfo:
+  ИгрокInfo:
     Desc: Pokaż informacje o graczu.
     Usage: <gracz>
-  PlayerList:
+  ИгрокList:
     Desc: Pokaż listę graczy online.
   Skull:
     Desc: Zdobądź [gracza] głowę.
     Usage: <nazwa>
-    Done: '#ffeea2Otrzymałeś głowę #fdba5e%player_name%#ffeea2.'
+    Готово: '#ffeea2Otrzymałeś głowę #fdba5e%player_name%#ffeea2.'
   Spawner:
     Desc: Zmień typ spawnera.
     Usage: <typ>
-    Done: <! prefix:"false" !>&7Zmieniono typ spawnera na &e%type%&7.
-    Error:
+    Готово: <! prefix:"false" !>&7Zmieniono typ spawnera na &e%type%&7.
+    Ошибка:
       Type: <! prefix:"false" !>&7Ten typ nie może być stworzony.
       Block: <! prefix:"false" !>&cMusisz patrzeć na &espawner
   Speed:
     Desc: Zmień prędkość chodzenia.
     Usage: <prędkość> [gracz] [-s]
-    Done:
+    Готово:
       Notify: '#ffeea2Twoja prędkość chodzenia została ustawiona na #fdba5e%amount%#ffeea2.'
       Target: '#ffeea2Ustawiono prędkość chodzenia dla #fdba5e%player_display_name%#ffeea2 na #fdba5e%amount%#ffeea2.'
   Sudo:
     Desc: Wymuś wykonanie polecenia lub wiadomości na czacie przez gracza.
     Usage: <gracz> <polecenie> [-c]
-    Done:
-      Command: '#ffeea2Zmuszono gracza #fdba5e%player_display_name%#ffeea2 do wykonania polecenia: #fdba5e/%command%#ffeea2.'
+    Готово:
+      Команда: '#ffeea2Zmuszono gracza #fdba5e%player_display_name%#ffeea2 do wykonania polecenia: #fdba5e/%command%#ffeea2.'
       Chat: '#ffeea2Zmuszono gracza #fdba5e%player_display_name%#ffeea2 do wykonania polecenia: #fdba5e/%command%#ffeea2.'
   Suicide:
     Desc: Popełnij samobójstwo.
-    Done: <! prefix:"false" !>#fdba5e%player_display_name%#ffeea2 popełnił samobójstwo.
+    Готово: <! prefix:"false" !>#fdba5e%player_display_name%#ffeea2 popełnił samobójstwo.
   Teleport:
     Desc: Narzędzia teleportacji.
     Usage: '[pomoc]'
-    Error:
+    Ошибка:
       Requests:
         Cooldown: '<! sound:"ENTITY_VILLAGER_NO" !>#fd5e5eMożesz wysłać kolejną prośbę o teleportację za #fdba5e%time%'
-        Disabled: '<! sound:"ENTITY_VILLAGER_NO" !>#fd5e5eNie możesz wysłać prośby o teleportację do #fdba5e%player_name%#fd5e5e.'
+        Отключено: '<! sound:"ENTITY_VILLAGER_NO" !>#fd5e5eNie możesz wysłać prośby o teleportację do #fdba5e%player_name%#fd5e5e.'
     Accept:
       Desc: Zaakceptuj zaproszenie do teleportacji/zaproszenie.
       Usage: '[gracz]'
       Notify:
         Sender: '<! sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Zaakceptowałeś prośbę o teleportację od gracza #fdba5e%player_display_name%#ffeea2!'
         Target: <! sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Gracz # fdba5e%player_display_name%#ffeea2 zaakceptował twoją prośbę o teleportację!
-      Error:
+      Ошибка:
         Nothing: <! sound:"ENTITY_VILLAGER_NO" !>#ffeea2Zaproszenie nie jest już ważne..
     Decline:
       Desc: Odrzuć przychodzące zaproszenie do teleportacji/zaproszenie.
@@ -473,7 +473,7 @@ Command:
       Notify:
         Sender: '<! sound:"ENTITY_VILLAGER_NO" !>#ffeea2Odrzuciłeś prośbę o teleportację od gracza #fdba5e%player_display_name%#ffeea2.'
         Target: <! sound:"ENTITY_VILLAGER_NO" !>#fdba5e%player_display_name%#ffeea2 odrzucił twoją prośbę o teleportację.
-      Error:
+      Ошибка:
         Nothing: <! sound:"ENTITY_VILLAGER_NO" !>#ffeea2Zaproszenie nie jest już ważne.
     Invite:
       Desc: Wyślij prośbę do teleportacji do ciebie.
@@ -495,7 +495,7 @@ Command:
     Location:
       Desc: Teleportuj się na określone współrzędne.
       Usage: <x> <y> <z> [gracz] [-w <świat>] [-s]
-      Done:
+      Готово:
         Target: '<! sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Gracz #fdba5e%player_display_name%#ffeea2 teleportowany na #fdba5e%location_x%, %location_y%, %location_z%#ffeea2 w świecie #fdba5e%location_world%#ffeea2.'
         Notify: '<! sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Zostałeś teleportowany na #fdba5e%location_x%, %location_y%, %location_z%#ffeea2 w świecie #fdba5e%location_world%#ffeea2.'
     Request:
@@ -528,7 +528,7 @@ Command:
     To:
       Desc: Teleportuj się do określonego gracza.
       Usage: <gracz>
-      Done: '<! sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Teleportowałeś się do #fdba5e%player_display_name%#ffeea2.'
+      Готово: '<! sound:"ENTITY_ENDERMAN_TELEPORT" !>#ffeea2Teleportowałeś się do #fdba5e%player_display_name%#ffeea2.'
     Send:
       Desc: Teleportuj jednego gracza do innego.
       Usage: <gracz> <cel> [-s]
@@ -557,7 +557,7 @@ Command:
     Set:
       Desc: Ustaw czas w świecie.
       Usage: <tiki> [-w <świat>]
-      Done: '#ffeea2Ustawiono czas na #fdba5e%time%#d4d9d8 (%total% tiki)#ffeea2 w świecie #fdba5e%world%#ffeea2.'
+      Готово: '#ffeea2Ustawiono czas na #fdba5e%time%#d4d9d8 (%total% tiki)#ffeea2 w świecie #fdba5e%world%#ffeea2.'
     Personal:
       Desc: Ustaw osobisty czas gracza.
       Usage: <tiki> [gracz] [-r] [-s]
@@ -595,12 +595,12 @@ Command:
       Notify: '#ffeea2Możliwość prowadzenia prywatnej konwersacji z tobą została #fdba5e%state%#ffeea2.'
       Target: '#ffeea2Możliwość prowadzenia prywatnej konwersacji z graczem #fdba5e%player_name%#ffeea2 została #fdba5e%state%#ffeea2.'
 Other:
-  Enabled: '#aefd5eWłączona'
-  Disabled: '#fd5e5eWyłączona'
-Error:
+  Включено: '#aefd5eWłączona'
+  Отключено: '#fd5e5eWyłączona'
+Ошибка:
   Enchantment:
     Invalid: '#fd5e5eNieprawidłowe zaklęcie!'
-  Player:
+  Игрок:
     NoItem: '#fd5e5eGracz nie posiada przedmiotu!'
   Material:
     Invalid: '&cNie podano prawidłowego materiału!'
@@ -621,7 +621,7 @@ WeatherType:
   STORM: Burze
   THUNDER: Burze z piorunami
 Bans:
-  Command:
+  Команда:
     History:
       Mute:
         Desc: Wyświetl historię wyciszeń gracza.
@@ -663,7 +663,7 @@ Bans:
       Desc: Usuń najnowsze ostrzeżenie gracza.
       Usage: <gracz>
   Punishment:
-    Error:
+    Ошибка:
       RankPriority: '#d4d9d8Nie możesz ukarać #fd5e5e%user%#d4d9d8!'
       RankDuration: '#d4d9d8Nie możesz ukarać na dłużej niż #fd5e5e%time%#d4d9d8!'
       Immune: <! prefix:"false" !>#fd5e5e%user%#d4d9d8 nie może być ukarany.
@@ -672,104 +672,104 @@ Bans:
       NotWarned: <! prefix:"false" !>#fd5e5e%user%#d4d9d8 nie ma aktywnych ostrzeżeń.
       NotIP: <! prefix:"false" !>#fd5e5e%user% nie jest adresem IP!
   Pardon:
-    Error:
+    Ошибка:
       RankPriority: '#d4d9d8Nie możesz ułaskawić #aefd5e%user%#d4d9d8!'
   Ban:
     User:
       Perma:
-        Done: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został zbanowany na stałe: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został zbanowany na stałe: #fd5e5e%punishment_reason%'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 na stałe zbanował #fd5e5e%punishment_user% <? show_text:"&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
       Temp:
-        Done: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został zbanowany na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został zbanowany na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 zbanował #fd5e5e%punishment_user% <? show_text:"&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
     IP:
       Perma:
-        Done: '<! prefix:"false" !>#d4d9d8IP #fd5e5e%punishment_user%#d4d9d8 zostało zbanowane na stałe: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#d4d9d8IP #fd5e5e%punishment_user%#d4d9d8 zostało zbanowane na stałe: #fd5e5e%punishment_reason%'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 na stałe zbanował IP #fd5e5e%punishment_user% <? show_text:"&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
       Temp:
-        Done: '<! prefix:"false" !>#d4d9d8IP #fd5e5e%punishment_user%#d4d9d8 zostało zbanowane na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#d4d9d8IP #fd5e5e%punishment_user%#d4d9d8 zostało zbanowane na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 zbanował IP #fd5e5e%punishment_user% <? show_text:"&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
   Unban:
     User:
-      Done: '<! prefix:"false" !>Odbanowano użytkownika: #aefd5e%punishment_user%#d4d9d8.'
+      Готово: '<! prefix:"false" !>Odbanowano użytkownika: #aefd5e%punishment_user%#d4d9d8.'
       Broadcast: '<! prefix:"false" !>#aefd5e%admin%#d4d9d8 odbanował użytkownika: #aefd5e%punishment_user%#d4d9d8.'
     IP:
-      Done: '<! prefix:"false" !>Odbanowano IP: #aefd5e%punishment_user%#d4d9d8.'
+      Готово: '<! prefix:"false" !>Odbanowano IP: #aefd5e%punishment_user%#d4d9d8.'
       Broadcast: '<! prefix:"false" !>#aefd5e%admin%#d4d9d8 odbanował IP: #aefd5e%punishment_user%#d4d9d8.'
   Kick:
-    Done: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został wyrzucony za #fd5e5e%punishment_reason%'
+    Готово: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został wyrzucony za #fd5e5e%punishment_reason%'
     Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 wyrzucił #fd5e5e%punishment_user% <? show_text:"&7Powód: &f%punishment_reason%" ?>#fdba5e[Szczegóły]</>'
   Mute:
     User:
       Perma:
-        Done: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został wyciszony na stałe: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został wyciszony na stałe: #fd5e5e%punishment_reason%'
         Notify: '<! prefix:"false" !>#fd5e5eZostałeś wyciszony na stałe! <? show_text:"&7Przez: &f%punishment_punisher%<newline>&7Wygasa: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 na stałe wyciszył #fd5e5e%punishment_user% <? show_text:"&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
       Temp:
-        Done: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został wyciszony na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został wyciszony na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
         Notify: '<! prefix:"false" !>#fd5e5eZostałeś wyciszony! <? show_text:"&7Przez: &f%punishment_punisher%<newline>&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 wyciszył #fd5e5e%punishment_user% <? show_text:"&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
     IP:
       Perma:
-        Done: '<! prefix:"false" !>IP #fd5e5e%punishment_user%#d4d9d8 zostało wyciszone na stałe: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>IP #fd5e5e%punishment_user%#d4d9d8 zostało wyciszone na stałe: #fd5e5e%punishment_reason%'
         Notify: '<! prefix:"false" !>#fd5e5eZostałeś wyciszony na stałe! <? show_text:"&7Przez: &f%punishment_punisher%<newline>&7Wygasa: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 na stałe wyciszył IP #fd5e5e%punishment_user% <? show_text:"&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
       Temp:
-        Done: '<! prefix:"false" !>IP #fd5e5e%punishment_user%#d4d9d8 zostało wyciszone na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>IP #fd5e5e%punishment_user%#d4d9d8 zostało wyciszone na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
         Notify: '<! prefix:"false" !>#fd5e5eZostałeś wyciszony! <? show_text:"&7Przez: &f%punishment_punisher%<newline>&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 wyciszył IP #fd5e5e%punishment_user% <? show_text:"&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
   Unmute:
     User:
-      Done: '<! prefix:"false" !>Odciszono użytkownika: #aefd5e%punishment_user%#d4d9d8.'
+      Готово: '<! prefix:"false" !>Odciszono użytkownika: #aefd5e%punishment_user%#d4d9d8.'
       Broadcast: '<! prefix:"false" !>#aefd5e%admin%#d4d9d8 odciszył użytkownika: #aefd5e%punishment_user%#d4d9d8.'
     IP:
-      Done: '<! prefix:"false" !>Odciszono IP: #aefd5e%punishment_user%#d4d9d8.'
+      Готово: '<! prefix:"false" !>Odciszono IP: #aefd5e%punishment_user%#d4d9d8.'
       Broadcast: '<! prefix:"false" !>#aefd5e%admin%#d4d9d8 odciszył IP: #aefd5e%punishment_user%#d4d9d8.'
   Warn:
     User:
       Temp:
-        Done: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został ostrzeżony na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został ostrzeżony na #fd5e5e%punishment_expires_in%#d4d9d8. Powód: #fd5e5e%punishment_reason%'
         Notify: '<! prefix:"false" !>#fd5e5eZostałeś ostrzeżony! <? show_text:"&7Przez: &f%punishment_punisher%<newline>&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 ostrzegł #fd5e5e%punishment_user% <? show_text:"&7Czas trwania: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%<newline>&7Wygasa: &f%punishment_date_expired%" ?>#fdba5e[Szczegóły]</>'
       Perma:
-        Done: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został ostrzeżony na stałe za #fd5e5e%punishment_reason%'
+        Готово: '<! prefix:"false" !>#fd5e5e%punishment_user%#d4d9d8 został ostrzeżony na stałe za #fd5e5e%punishment_reason%'
         Notify: '<! prefix:"false" !>#fd5e5eZostałeś ostrzeżony! <? show_text:"&7Przez: &f%punishment_punisher%<newline>&7Wygasa: &f%punishment_expires_in%<newline>&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
         Broadcast: '<! prefix:"false" !>#fd5e5e%punishment_punisher%#d4d9d8 na stałe ostrzegł #fd5e5e%punishment_user% <? show_text:"&7Powód: &f%punishment_reason%<newline>&7Data: &f%punishment_date_created%" ?>#fdba5e[Szczegóły]</>'
   Unwarn:
     User:
-      Done: '<! prefix:"false" !>#d4d9d8Usunięto ostrzeżenie od #aefd5e%punishment_user%#d4d9d8.'
+      Готово: '<! prefix:"false" !>#d4d9d8Usunięto ostrzeżenie od #aefd5e%punishment_user%#d4d9d8.'
       Broadcast: '<! prefix:"false" !>#aefd5e%punishment_punisher%#d4d9d8 usunął ostrzeżenie od #aefd5e%punishment_user%#d4d9d8.'
 PunishmentType:
   BAN: Ban
   MUTE: Wyciszenie
   WARN: Ostrzeżenie
 Worlds:
-  Command:
+  Команда:
     WorldManager:
       Desc: Narzędzia zarządzania światami.
     Worlds:
-      Create:
+      Создать:
         Usage: <nazwa>
         Desc: Utwórz nową konfigurację świata.
-        Error: '#ea3131Świat o tej nazwie już istnieje!'
-        Done: '#ffeea2Utworzono konfigurację świata: #ea9631%world_id%#ffeea2!'
+        Ошибка: '#ea3131Świat o tej nazwie już istnieje!'
+        Готово: '#ffeea2Utworzono konfigurację świata: #ea9631%world_id%#ffeea2!'
       Delete:
         Usage: <świat> [-f]
         Desc: Usuń określoną konfigurację świata [i folder ze światem].
-        Error: '#ea3131Nie można usunąć świata #ea9631%world_id%#ea3131! Świat jest załadowany lub wystąpił błąd dostępu do plików.'
-        Done: '#ffeea2Usunięto świat #ea9631%world_id%#ffeea2!'
+        Ошибка: '#ea3131Nie można usunąć świata #ea9631%world_id%#ea3131! Świat jest załadowany lub wystąpił błąd dostępu do plików.'
+        Готово: '#ffeea2Usunięto świat #ea9631%world_id%#ffeea2!'
       Editor:
         Desc: Otwórz edytor świata.
       Load:
         Usage: <świat>
         Desc: Załaduj określony świat na serwer.
-        Error: '#ea3131Świat jest już załadowany lub ustawienia świata są nieprawidłowe!'
-        Done: '#ffeea2Załadowano świat: #ea9631%world_id%#ffeea2!'
+        Ошибка: '#ea3131Świat jest już załadowany lub ustawienia świata są nieprawidłowe!'
+        Готово: '#ffeea2Załadowano świat: #ea9631%world_id%#ffeea2!'
       Unload:
         Usage: <świat>
         Desc: Wyładuj określony świat z serwera.
-        Error: '#ea3131Świat jest już wyładowany!'
-        Done: '#ffeea2Wyładowano świat: #ea9631%world_id%#ffeea2!'
+        Ошибка: '#ea3131Świat jest już wyładowany!'
+        Готово: '#ffeea2Wyładowano świat: #ea9631%world_id%#ffeea2!'
   AutoWipe:
     MoveOut: '#aaa8a8Zostałeś teleportowany z powodu automatycznego resetowania świata.'
     Notify:
@@ -777,9 +777,9 @@ Worlds:
       - '#aaa8a8'
       - '#fd5e5eUwaga: #d4d9d8Świat zostanie zresetowany automatycznie za #fd5e5e%time%'
       - '#aaa8a8'
-  Error:
-    CommandBlocked: '#ea3131Nie możesz używać tego polecenia w tym świecie!'
-    FlyDisabled: '#ea3131Latanie jest niedozwolone w tym świecie!'
+  Ошибка:
+    КомандаBlocked: '#ea3131Nie możesz używać tego polecenia w tym świecie!'
+    FlyОтключено: '#ea3131Latanie jest niedozwolone w tym świecie!'
   Editor:
     Enter:
       Value: '#aaa8a8Wprowadź #74ea31[Wartość]'
@@ -907,7 +907,7 @@ Worlds:
       SpawnLimits:
         Name: '#ead931&lLimity Spawnu'
         Lore:
-          - '#aaa8a8Ustawia limit liczby Spawn Category'
+          - '#aaa8a8Ustawia limit liczby Spawn Категория'
           - '#aaa8a8jednostek, które mogą się pojawić w danym fragmencie'
           - '#aaa8a8w tym świecie.'
           - ''
@@ -923,7 +923,7 @@ Worlds:
         Name: '#ead931&lTicki na Spawn'
         Lore:
           - '#aaa8a8Ustawia ticki świata na'
-          - '#aaa8a8spawn jednostek kategorii Spawn Category.'
+          - '#aaa8a8spawn jednostek kategorii Spawn Категория.'
           - ''
           - '#ead931&lObecnie:'
           - '#aaa8a8%world_spawn_ticks%'
@@ -944,21 +944,21 @@ Difficulty:
   NORMAL: Normalny
   HARD: Trudny
 Spawns:
-  Command:
+  Команда:
     Spawns:
       Desc: Zarządzanie spawnami.
       Usage: '[help]'
       Delete:
         Desc: Usuń określony spawn.
         Usage: <nazwa>
-        Done:
+        Готово:
           - <! type:"titles:20:50:20" !>
           - '#fd5e5e&lSpawn Usunięty'
           - '#d4d9d8Usunąłeś #fd5e5e%spawn_name%#d4d9d8 spawn!'
-      Create:
+      Создать:
         Desc: Utwórz punkt spawnu.
         Usage: '[nazwa]'
-        Done:
+        Готово:
           - <! type:"titles:20:50:20" !>
           - '#aefd5e&lSpawn Ustawiony!'
           - '#d4d9d8Id spawnu: #aefd5e%spawn_id%#d4d9d8 | Edytor: #aefd5e/spawns editor'
@@ -966,14 +966,14 @@ Spawns:
         Desc: Teleportuj na określony spawn.
         Usage: '[spawn] [gracz]'
         Notify: '#d4d9d8Teleportowanie #fdf35e%player_display_name%#d4d9d8 na #fdf35e%spawn_id%#d4d9d8 spawn.'
-        Done:
+        Готово:
           - <! type:"titles:20:60:20" !>
           - '#fdf35e&lSpawn'
           - '#d4d9d8Zostałeś teleportowany na #fdf35e%spawn_name%#d4d9d8 spawn.'
       Editor:
         Desc: Otwórz edytor spawnów.
   Spawn:
-    Error:
+    Ошибка:
       Invalid: '#fd5e5eSpawn nie istnieje.'
   Editor:
     Enter:
@@ -1223,7 +1223,7 @@ Editor:
         - '#74ea31&lAkcje:'
         - '#74ea31▪ #aaa8a8LPM: #74ea31Nawiguj'
 Homes:
-  Command:
+  Команда:
     Homes:
       Desc: Zarządzanie domami.
       Usage: '[help]'
@@ -1253,13 +1253,13 @@ Homes:
       Delete:
         Desc: Usuń dom gracza.
         Usage: <gracz> [dom]
-        Done:
+        Готово:
           Single: 'Usunąłeś dom #aefd5e%player_name%#d4d9d8 o nazwie #aefd5e%home_id%#d4d9d8.'
           All: 'Usunąłeś wszystkie domy #aefd5e%player_name%#d4d9d8.'
-      Create:
+      Создать:
         Desc: Utwórz dom dla gracza.
         Usage: <gracz> [nazwa]
-        Done:
+        Готово:
           Fresh: 'Utworzyłeś dom #aefd5e%home_id%#d4d9d8 dla #aefd5e%player_name%#d4d9d8.'
           Edited: 'Zaktualizowałeś lokalizację domu #aefd5e%player_name%#d4d9d8 o nazwie #aefd5e%home_id%#d4d9d8.'
   Home:
@@ -1268,19 +1268,19 @@ Homes:
       - '#aefd5e&lDom'
       - '#d4d9d8Zostałeś teleportowany do swojego domu #aefd5e%home_name%#d4d9d8.'
     Visit:
-      Success:
+      Успех:
         - <! type:"titles:20:50:20" sound:"ENTITY_ENDERMAN_TELEPORT" !>
         - '#fdf35e&lGość w Domu'
         - '#d4d9d8Odwiedziłeś dom #fdf35e%home_owner%#d4d9d8 o nazwie #fdf35e%home_name%#d4d9d8.'
-      Error:
+      Ошибка:
         NotPermitted: <! sound:"ENTITY_VILLAGER_NO" !>#fd5e5eNie masz zaproszenia do tego domu!
     Set:
-      Error:
+      Ошибка:
         Limit: '#fd5e5eOsiągnąłeś limit domów. Nie możesz ustawić więcej.'
         World: '#fd5e5eNie możesz ustawić domu w tym świecie!'
         Region: '#fd5e5eNie możesz ustawić domu w tym regionie!'
         Protection: '#fd5e5eNie możesz ustawić domu w chronionym obszarze!'
-      Success:
+      Успех:
         - <! type:"titles:20:50:20" sound:"BLOCK_WOODEN_DOOR_OPEN" !>
         - '#aefd5e&lDom Ustawiony!'
         - '#d4d9d8Teleport: #aefd5e/homes teleport %home_id%#d4d9d8 | Menu: #aefd5e/homes list'
@@ -1289,16 +1289,16 @@ Homes:
         - '#aefd5e&lDom Ustawiony!'
         - '#d4d9d8Lokalizacja domu została zaktualizowana.'
     Delete:
-      Done:
+      Готово:
         - <! type:"titles:20:50:20" sound:"ENTITY_ZOMBIE_BREAK_WOODEN_DOOR" !>
         - '#aefd5e&lDom Usunięty!'
         - '#d4d9d8Usunąłeś dom #aefd5e%home_name%#d4d9d8.'
-    Error:
+    Ошибка:
       Invalid: '#fd5e5eDom o takiej nazwie nie istnieje.'
-      NotCreated: '#fd5e5eNie masz jeszcze żadnych utworzonych domów.'
+      NotСоздатьd: '#fd5e5eNie masz jeszcze żadnych utworzonych domów.'
   Editor:
     Enter:
-      PlayerName: '#d4d9d8Wprowadź #aefd5e[Nazwę Gracza]'
+      ИгрокName: '#d4d9d8Wprowadź #aefd5e[Nazwę Gracza]'
       HomeName: '#d4d9d8Wprowadź #aefd5e[Nazwę Domu]'
 HomeType:
   PUBLIC: Publiczny
@@ -1307,7 +1307,7 @@ HomeType:
 # Kits Module Lang
 # --------------------------------------------------
 Kits:
-  Command:
+  Команда:
     Kits:
       Desc: Zarządzanie zestawami.
       Usage: '[help]'
@@ -1320,7 +1320,7 @@ Kits:
       Give:
         Desc: Daj zestaw graczowi.
         Usage: <zestaw> <gracz> [-s]
-        Done: '#ffeea2Dano zestaw #fdba5e%kit_name%#ffeea2 graczowi #fdba5e%player_display_name%#ffeea2!'
+        Готово: '#ffeea2Dano zestaw #fdba5e%kit_name%#ffeea2 graczowi #fdba5e%player_display_name%#ffeea2!'
         Notify: '<! prefix:"false" !>#ffeea2&oDano ci zestaw #fdba5e&o%kit_name% #ffeea2&ozestaw od #fdba5e&o%player_display_name%#ffeea2.'
       Get:
         Desc: Zdobądź określony zestaw.
@@ -1332,19 +1332,19 @@ Kits:
       ResetCooldown:
         Desc: Zresetuj czas oczekiwania zestawu gracza.
         Usage: <zestaw> [gracz] [-s]
-        Done: '#ffeea2Zresetowano czas oczekiwania zestawu #fdba5e%kit_name%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
+        Готово: '#ffeea2Zresetowano czas oczekiwania zestawu #fdba5e%kit_name%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
         Notify: '#ffeea2Twój czas oczekiwania zestawu #fdba5e%kit_name%#ffeea2 został zresetowany!'
       SetCooldown:
         Desc: Ustaw czas oczekiwania zestawu gracza.
         Usage: <zestaw> <ilość> [gracz] [-s]
-        Done: '#ffeea2Ustawiono czas oczekiwania zestawu #fdba5e%kit_name%#ffeea2 z #fdba5e%amount%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
+        Готово: '#ffeea2Ustawiono czas oczekiwania zestawu #fdba5e%kit_name%#ffeea2 z #fdba5e%amount%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
         Notify: '#ffeea2Twój czas oczekiwania zestawu #fdba5e%kit_name%#ffeea2 został ustawiony na #fdba5e%amount%#ffeea2!'
   Kit:
     Get:
       - <! type:"titles:20:60:20" sound:"ITEM_ARMOR_EQUIP_LEATHER" !>
       - '#aefd5e&lZestaw Odebrany!'
       - '#d4d9d8Otrzymałeś zestaw #aefd5e%kit_name%#d4d9d8!'
-    Error:
+    Ошибка:
       NoKits: '#fd5e5eNie ma dostępnych zestawów.'
       InvalidKit: '#fd5e5eNie ma takiego zestawu.'
       NoPermission: '#fd5e5eNie masz uprawnień do używania tego zestawu!'
@@ -1355,23 +1355,23 @@ Kits:
   Editor:
     Enter:
       Id: '#d4d9d8Wprowadź #aefd5e[Identyfikator Zestawu]'
-      Command: '#d4d9d8Wprowadź #aefd5e[Polecenie]'
+      Команда: '#d4d9d8Wprowadź #aefd5e[Polecenie]'
       Cooldown: '#d4d9d8Wprowadź #aefd5e[Ilość Sekund]'
       Cost: '#d4d9d8Wprowadź #aefd5e[Koszt]'
       Name: '#d4d9d8Wprowadź #aefd5e[Nazwę Wyświetlaną]'
       Description: '#d4d9d8Wprowadź #aefd5e[Opis]'
       Priority: '#d4d9d8Wprowadź #aefd5e[Priorytet]'
-    Error:
+    Ошибка:
       AlreadyExists: '#fd5e5eZestaw już istnieje!'
-Warps:
-  Command:
-    Warps:
+Варпs:
+  Команда:
+    Варпs:
       Desc: Zarządzanie warpami.
       Usage: '[help]'
       Delete:
         Desc: Usuń określony warp.
         Usage: <warp>
-      Create:
+      Создать:
         Desc: Ustaw nowy warp.
         Usage: <warp>
       Teleport:
@@ -1385,26 +1385,26 @@ Warps:
       ResetCooldown:
         Desc: Zresetuj czas oczekiwania warpa gracza.
         Usage: <warp> [gracz] [-s]
-        Done: '#ffeea2Zresetowano czas oczekiwania warpa #fdba5e%warp_name%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
+        Готово: '#ffeea2Zresetowano czas oczekiwania warpa #fdba5e%warp_name%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
         Notify: '#ffeea2Twój czas oczekiwania warpa #fdba5e%warp_name%#ffeea2 został zresetowany!'
       SetCooldown:
         Desc: Ustaw czas oczekiwania warpa gracza.
         Usage: <warp> <ilość> [gracz] [-s]
-        Done: '#ffeea2Ustawiono czas oczekiwania warpa #fdba5e%warp_name%#ffeea2 z #fdba5e%amount%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
+        Готово: '#ffeea2Ustawiono czas oczekiwania warpa #fdba5e%warp_name%#ffeea2 z #fdba5e%amount%#ffeea2 dla #fdba5e%player_name%#ffeea2.'
         Notify: '#ffeea2Twój czas oczekiwania warpa #fdba5e%warp_name%#ffeea2 został ustawiony na #fdba5e%amount%#ffeea2!'
-  Warp:
-    Error:
+  Варп:
+    Ошибка:
       Invalid: '#fd5e5eNieprawidłowy warp!'
     Creation:
       New:
         - <! type:"titles:20:50:30" sound:"BLOCK_ANVIL_PLACE" !>
-        - '#aefd5e&lWarp Utworzony!'
+        - '#aefd5e&lВарп Utworzony!'
         - '#d4d9d8Teleport: #aefd5e/warp %warp_id%#d4d9d8 | Edytuj w: #aefd5e /warplist'
       Relocate:
         - <! type:"titles:20:50:30" sound:"BLOCK_ANVIL_PLACE" !>
-        - '#aefd5e&lWarp Przeniesiony!'
-        - '#d4d9d8Warp #aefd5e%warp_name%#d4d9d8 został przeniesiony tutaj.'
-      Error:
+        - '#aefd5e&lВарп Przeniesiony!'
+        - '#d4d9d8Варп #aefd5e%warp_name%#d4d9d8 został przeniesiony tutaj.'
+      Ошибка:
         Limit:
           - <! type:"titles:20:50:30" sound:"ENTITY_VILLAGER_NO" !>
           - '#fd5e5e&lLimit Osiągnięty!'
@@ -1416,17 +1416,17 @@ Warps:
         Exists:
           - <! type:"titles:20:50:30" sound:"ENTITY_VILLAGER_NO" !>
           - '#fd5e5e&lJuż Istnieje!'
-          - '#d4d9d8Warp o takiej nazwie już istnieje!'
+          - '#d4d9d8Варп o takiej nazwie już istnieje!'
         Unsafe:
           - <! type:"titles:20:50:30" sound:"ENTITY_VILLAGER_NO" !>
           - '#fd5e5e&lNiebezpieczna Lokalizacja!'
           - '#d4d9d8Nie możesz tworzyć warpów tutaj!'
     Teleport:
-      Done:
+      Готово:
         - <! type:"titles:20:50:30" sound:"ENTITY_ENDERMAN_TELEPORT" !>
         - '#fdf35e&l%warp_name%'
         - '#d4d9d8%warp_description%'
-      Error:
+      Ошибка:
         NotEnoughFunds:
           - <! type:"titles:20:50:30" sound:"ENTITY_VILLAGER_NO" !>
           - '#fd5e5e&lBrak Środków!'
@@ -1444,24 +1444,24 @@ Warps:
           - '#fd5e5e&lZła Porа!'
           - '#fdba5e%warp_name%#d4d9d8 nie jest dostępny do odwiedzin teraz.'
   Delete:
-    Done:
+    Готово:
       - <! type:"titles:20:50:30" sound:"BLOCK_GLASS_BREAK" !>
-      - '#fd5e5e&lWarp Usunięty'
-      - '#d4d9d8Warp #fd5e5e%warp_name%#d4d9d8 został usunięty.'
+      - '#fd5e5e&lВарп Usunięty'
+      - '#d4d9d8Варп #fd5e5e%warp_name%#d4d9d8 został usunięty.'
   Editor:
     Enter:
-      CostMoney: '#d4d9d8Wprowadź #aefd5e[Koszt]'
-      Command: '#d4d9d8Wprowadź #aefd5e[Nazwę Polecenia]'
+      CostДеньги: '#d4d9d8Wprowadź #aefd5e[Koszt]'
+      Команда: '#d4d9d8Wprowadź #aefd5e[Nazwę Polecenia]'
       Times: '#d4d9d8Wprowadź #aefd5e[Czasy] #fdba5e (10:00 14:00)'
       Cooldown: '#d4d9d8Wprowadź #aefd5e[Czas Oczekiwania]'
       Name: '#d4d9d8Wprowadź #aefd5e[Nazwę Wyświetlaną]'
       Description: '#d4d9d8Wprowadź #aefd5e[Opis]'
-WarpSortType:
-  WARP_NAME: Nazwa Warpa
-  WARP_ID: Identyfikator Warpa
-  WARP_TYPE: Typ Warpa
+ВарпSortType:
+  WARP_NAME: Nazwa Варпa
+  WARP_ID: Identyfikator Варпa
+  WARP_TYPE: Typ Варпa
   VISIT_COST: Koszt Odwiedzin
-WarpType:
+ВарпType:
   SERVER: Serwerowy
   PLAYER: Gracza
 Chat:
@@ -1474,9 +1474,9 @@ Chat:
         Msg: <! prefix:"false" !>&cMusisz poczekać &c%time% &czanim będziesz mógł wysłać kolejną wiadomość.
         Cmd: <! prefix:"false" !>&cMusisz poczekać &c%time% &czanim będziesz mógł użyć kolejnego polecenia.
     Mention:
-      Error:
+      Ошибка:
         Cooldown: <! prefix:"false" !>&cMożesz wspomnieć &e%name%&c ponownie za &e%time%&c.
-  Command:
+  Команда:
     ShortChannel:
       Desc: Przełącz kanał czatu lub wyślij wiadomość na kanał
       Usage: '[wiadomość]'
@@ -1494,14 +1494,14 @@ Chat:
       Desc: Dołącz do kanału.
     ClearChat:
       Desc: Wyczyść czat.
-      Done: <! prefix:"false" !>&7Czat został wyczyszczony przez &a%player_display_name%&7.
+      Готово: <! prefix:"false" !>&7Czat został wyczyszczony przez &a%player_display_name%&7.
     Me:
       Desc: Pokaż akcję w czacie.
       Usage: <operacja>
     Reply:
       Desc: Szybka odpowiedź na ostatnią prywatną wiadomość.
       Usage: <wiadomość>
-      Error:
+      Ошибка:
         Empty: <! prefix:"false" !>&cNie otrzymałeś żadnych prywatnych wiadomości.
     Tell:
       Desc: Wyślij prywatną wiadomość do gracza.
@@ -1512,44 +1512,44 @@ Chat:
       Mode:
         Desc: Przełącza określony tryb Szpiegowania, informując gracza.
         Usage: <typ> [gracz] [stan]
-        Done:
+        Готово:
           Others: '#ffeea2Możliwość szpiegowania &c%type% #ffeea2dla #fdba5e%player_display_name% #ffeea2została &f%state%#ffeea2.'
           Notify: '#ffeea2Możliwość szpiegowania &c%type% #ffeea2została &f%state%#ffeea2.'
       Logger:
         Desc: Umożliwia dodanie lub usunięcie trybu szpiegowania bez informowania gracza.
         Usage: <add | remove> <typ> <gracz>
-        Done:
+        Готово:
           Add: '#ffeea2Możliwość szpiegowania &c%type% #ffeea2dla #fdba5e%player_display_name% #ffeea2została &f%state%#ffeea2.'
   Channel:
     Join:
-      Success: <! prefix:"false" !>&7Dołączyłeś do kanału czatu &a%channel_name% &7.
-      Error:
+      Успех: <! prefix:"false" !>&7Dołączyłeś do kanału czatu &a%channel_name% &7.
+      Ошибка:
         NoPermission: <! prefix:"false" !>&cNie masz uprawnień do dołączenia do tego kanału.
         AlreadyIn: <! prefix:"false" !>&cJuż dołączyłeś do tego kanału!
     Leave:
-      Success: <! prefix:"false" !>&7Opuściłeś kanał czatu &c%channel_name%&7.
-      Error:
+      Успех: <! prefix:"false" !>&7Opuściłeś kanał czatu &c%channel_name%&7.
+      Ошибка:
         NotIn: <! prefix:"false" !>&cNie jesteś na tym kanale!
     Set:
-      Success: '<! prefix:"false" !>&7Ustawiono domyślny kanał: &e%channel_name%&7.'
-    Error:
+      Успех: '<! prefix:"false" !>&7Ustawiono domyślny kanał: &e%channel_name%&7.'
+    Ошибка:
       Invalid: <! prefix:"false" !>&cNieprawidłowy kanał!
 PrivateMessage:
-  Error:
-    Disabled: '#fdba5e%player_display_name%#fd5e5e wyłączył Prywatne Wiadomości.'
+  Ошибка:
+    Отключено: '#fdba5e%player_display_name%#fd5e5e wyłączył Prywatne Wiadomości.'
 ChatSpyType:
   SOCIAL: Wiadomości i Poleceń
   COMMAND: Poleceń
   CHAT: Wiadomości
 RTP:
-  Command:
+  Команда:
     RTP:
       Desc: Teleportuj się do losowego miejsca.
   Teleport:
-    Error:
+    Ошибка:
       AlreadyIn: '#fd5e5eJesteś już w RTP!'
     Notify:
-      Done:
+      Готово:
         - <! type:"titles:20:80:20" sound:"ENTITY_ENDERMAN_TELEPORT" !>
         - '#aefd5e&lUdany Teleport!'
         - '#d4d9d8Lokalizacja: #aefd5e%location_x%#d4d9d8, #aefd5e%location_y%#d4d9d8, #aefd5e%location_z%'
@@ -1562,7 +1562,7 @@ RTP:
         - '#fd5e5e&lTeleport Nieudany'
         - '#d4d9d8Nie udało się znaleźć bezpiecznej lokalizacji.'
 Extras:
-  Command:
+  Команда:
     Chairs:
       Desc: Przełącz funkcję krzeseł gracza.
       Usage: '[gracz] [-on] [-off] [-s]'
@@ -1579,7 +1579,7 @@ Extras:
       Notify: '#ffeea2Możliwość sortowania skrzyń została #fdba5e%state%#ffeea2.'
       Target: '#ffeea2Możliwość sortowania skrzyń dla #fdba5e%player_name%#ffeea2 została #fdba5e%state%#ffeea2.'
 Afk:
-  Command:
+  Команда:
     Afk:
       Desc: Przełącz tryb AFK gracza.
       Usage: '[gracz] [-on] [-off] [-s]'
@@ -1590,7 +1590,7 @@ Afk:
     PrivateMessage: '<! prefix:"false" !>#fd5e5e[AFK]#ffeea2 Gracz #fdba5e%player_display_name%#ffeea2 jest AFK i może nie zauważyć Twojej wiadomości.'
     TeleportRequest: '<! prefix:"false" !>#fd5e5e[AFK]#ffeea2 Gracz #fdba5e%player_display_name%#ffeea2 jest AFK i może nie zauważyć Twojego zaproszenia.'
 Scoreboard:
-  Command:
+  Команда:
     Scoreboard:
       Desc: Przełącz Scoreboard gracza.
       Usage: '[gracz] [-on] [-off] [-s]'

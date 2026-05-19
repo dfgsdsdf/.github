@@ -5,7 +5,7 @@ Tablist:
   # [Default is 1]
   Update_Interval: 1
   # Individual per-player tablist format based on player's rank and world.
-  # [You must have Vault with compatible Permissions plugins installed for this feature to work properly]
+  # [You must have Vault with compatible Права plugins installed for this feature to work properly]
   #
   # If multiple tablists are available for a player, the one with the greatest priority will be used.
   # If no tablist is available for a player, the one labeled 'default' will be used (if present).
@@ -32,13 +32,13 @@ Tablist:
       - ""
       Footer:
       - ""
-      - "<#66e368>You are playing with <#56ba57>%server_online%</#56ba57> players!</#66e368>"
+      - "<#66e368>Вы playing with <#56ba57>%server_online%</#56ba57> players!</#66e368>"
       - "<#4c6649>%mmocore_online_friends% of your friends are online!</#4c6649>"
       - ""
       - "  #55b0c2ᴍᴄ.ɴᴀᴍᴇ.ᴄᴏᴍ   &8|   #7289daᴅɪsᴄᴏʀᴅ.ɴᴀᴍᴇ.ᴄᴏᴍ   &8|   #79c255%server_tps_1% Tᴘs  "
       - ""
   # Tablist name format based on player's rank.
-  # [You must have Vault with compatible Permissions plugins installed for this feature to work properly]
+  # [You must have Vault with compatible Права plugins installed for this feature to work properly]
   #
   # ====================[ IMPORTANT! ]====================
   # This option does NOT affect player sorting in tablist!
@@ -51,7 +51,7 @@ Tablist:
   # Use '%animation:[name]%' placeholder to include dynamic text (animation) from the animations.yml config file.
   # Text and Color Formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
   # You can use PlaceholderAPI placeholders.
-  Player_Names:
+  Игрок_Names:
     default:
       Priority: 1
       Format: '%luckperms_prefix%%player_display_name%'
@@ -82,8 +82,8 @@ Nametags:
   # [1 second = 20 ticks]
   # [Default is 300]
   Update_Interval: 300
-  # Player nametag format based on their permission group.
-  # [You must have Vault with compatible Permissions plugins installed for this feature to work properly]
+  # Игрок nametag format based on their permission group.
+  # [You must have Vault with compatible Права plugins installed for this feature to work properly]
   #
   # If multiple tag formats are available for a player, the one with the greatest priority will be used.
   # If no tag format is available for a player, the one labeled 'default' will be used (if present).

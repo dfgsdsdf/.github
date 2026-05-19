@@ -15,7 +15,7 @@
 #IG @_WHYLCKER_
 
 
-Command:
+Команда:
   Argument:
     Name:
       Slot: slot
@@ -65,12 +65,12 @@ Command:
     Desc: Transmitir uma mensagem.
   Condense:
     Desc: Condensar itens em blocos.
-    Error:
+    Ошибка:
       Nothing:
         - <sound:"entity_villager_no">
         - <lgray>Nada para condensar.</lgray>
       NotEnough: <lgray>Itens insuficientes para converter <lred>%source%</lred> em <lred>%result%</lred>. Necessário pelo menos <lred>%amount%</lred>.</lgray>
-    Done: <lgray>Convertido <lyellow>x%total% %source%</lyellow> para <lyellow>x%amount% %result%</lyellow>.</lgray>
+    Готово: <lgray>Convertido <lyellow>x%total% %source%</lyellow> para <lyellow>x%amount% %result%</lyellow>.</lgray>
   Disposal:
     Desc: Abrir menu de descarte.
     Target: <lgray>Menu de descarte aberto para <lyellow>%player_display_name%</lyellow>.</lgray>
@@ -85,7 +85,7 @@ Command:
       - <lgray>Você viajou para o mundo <lyellow>%world%</lyellow>.</lgray>
   Enchant:
     Desc: Encantar ou desencantar item em um slot.
-    Error:
+    Ошибка:
       NoItem: <lred>Nenhum item para encantar!</lred>
     Enchanted:
       Target:
@@ -170,7 +170,7 @@ Command:
   EnderChest:
     Copy:
       Desc: Copiar baú do fim do jogador.
-      Done:
+      Готово:
         Executor:
           - <sound:"item_armor_equip_leather">
           - <lgray>Copiado o baú do fim de <lyellow>%player_display_name%</lyellow>.</lgray>
@@ -179,13 +179,13 @@ Command:
           - <lgray>Copiado o conteúdo do baú do fim de <lyellow>%source%</lyellow> para o baú do fim de <lyellow>%target%</lyellow>.</lgray>
     Fill:
       Desc: Preencher baú do fim com item especificado.
-      Done:
+      Готово:
         Executor:
           - <sound:"entity_item_pickup">
           - <lgray>Preenchido o baú do fim de <lyellow>%player_display_name%</lyellow> com <lyellow>%item%</lyellow>.</lgray>
-    Open:
+    Открыть:
       Desc: Abrir baú do fim.
-      Done:
+      Готово:
         Executor:
           - <sound:"block_ender_chest_open">
           - <lgray>Abrido o baú do fim de <lyellow>%player_display_name%</lyellow>.</lgray>
@@ -199,7 +199,7 @@ Command:
         - <lgray>Reparados todos os itens no baú do fim de <lyellow>%player_display_name%</lyellow>!</lgray>
   Hat:
     Desc: Colocar item na cabeça.
-    Done:
+    Готово:
       - <sound:"item_armor_equip_leather">
       - <lgray>Desfrute do seu novo chapéu!</lgray>
   Fly:
@@ -208,7 +208,7 @@ Command:
     Notify: <lgray>Voo <lyellow>%state%</lyellow>.</lgray>
   FlySpeed:
     Desc: Alterar velocidade de voo.
-    Done:
+    Готово:
       Notify: <lgray>Sua velocidade de voo foi definida para <lyellow>%amount%</lyellow>.</lgray>
       Target: <lgray>Definida a velocidade de voo para <lyellow>%amount%</lyellow> para <lyellow>%player_display_name%</lyellow>.</lgray>
   Fire:
@@ -281,28 +281,28 @@ Command:
       Desc: Restaurar saúde.
       Notify: <lgray>Você foi curado!</lgray>
       Info: <lgray>Jogador <lyellow>%player_display_name%</lyellow> foi curado.</lgray>
-      Notfiy: <lgray>You have been healed!</lgray>
+      Notfiy: <lgray>Вы been healed!</lgray>
   Ignore:
     Add:
       Desc: Adicionar jogador à lista negra.
-      Done:
+      Готово:
         - <noprefix>
         - <lyellow><b>Jogador Bloqueado!</b></lyellow>
         - <lgray>Jogador <lyellow>%player_display_name%</lyellow> adicionado à lista negra.</lgray>
         - <lgray>Você pode alterar as configurações ou desbloqueá-lo usando <lyellow>/ignorelist</lyellow></lgray>
-      Error:
+      Ошибка:
         AlreadyIn: <lgray>Jogador já está bloqueado.</lgray>
     List:
       Desc: Abrir lista negra de jogadores.
     Remove:
       Desc: Remover jogador da lista negra.
-      Done: <lgray>Jogador <lyellow>%player_name%</lyellow> foi desbloqueado.</lgray>
-      Error:
+      Готово: <lgray>Jogador <lyellow>%player_name%</lyellow> foi desbloqueado.</lgray>
+      Ошибка:
         NotIn: <lgray>Jogador não está bloqueado.</lgray>
-  Inventory:
+  Инвентарь:
     Clear:
       Desc: Limpar inventário.
-      Done:
+      Готово:
         Target:
           - <sound:"block_fire_extinguish">
           - <lgray>Inventário de <lyellow>%player_display_name%</lyellow> limpo!</lgray>
@@ -311,7 +311,7 @@ Command:
           - <lgray>Seu inventário foi limpo!</lgray>
     Copy:
       Desc: Copiar inventário do jogador.
-      Done:
+      Готово:
         Notify:
           - <sound:"item_armor_equip_leather">
           - <lgray>Copiado o inventário de <lyellow>%player_display_name%</lyellow>.</lgray>
@@ -320,12 +320,12 @@ Command:
           - <lgray>Copiado o inventário de <lyellow>%source%</lyellow> para o inventário de <lyellow>%target%</lyellow>.</lgray>
     Fill:
       Desc: Preencher inventário com itens especificados.
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - <lgray>Preenchido o inventário de <lyellow>%player_display_name%</lyellow> com <lyellow>%item%</lyellow>.</lgray>
-    Open:
+    Открыть:
       Desc: Abrir inventário do jogador.
-      Done:
+      Готово:
         - <sound:"block_chest_open">
         - <lgray>Abrido o inventário de <lyellow>%player_display_name%</lyellow>.</lgray>
     Repair:
@@ -337,19 +337,19 @@ Command:
         - <sound:"block_anvil_use">
         - <lgray>Reparados todos os itens no inventário de <lyellow>%player_display_name%</lyellow>!</lgray>
   Item:
-    Amount:
+    Количество:
       Desc: Alterar quantidade do item.
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - <lgray>Definida a quantidade do item <lyellow>%item%</lyellow> para x<lyellow>%amount%</lyellow>.</lgray>
     Damage:
       Desc: Alterar dano do item.
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - <lgray>Definido o dano do item <lyellow>%item%</lyellow> para <lyellow>%amount%</lyellow>.</lgray>
     Enchant:
       Desc: (Des)encantar um item na mão.
-      Done:
+      Готово:
         Enchanted:
           - <sound:"block_enchantment_table_use">
           - <lgray><lyellow>%item%</lyellow> encantado com <lyellow>%name% %level%</lyellow>!</lgray>
@@ -358,12 +358,12 @@ Command:
           - <lgray>Encantamento <lyellow>%name%</lyellow> removido de <lyellow>%item%</lyellow>!</lgray>
     Get:
       Desc: Obter pilha de item especificado.
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - <lgray>Você obteve <lyellow>x%amount% %type%</lyellow>!</lgray>
     Give:
       Desc: Dar pilha de item especificado a um jogador.
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - <lgray>Adicionado <lyellow>x%amount% %type%</lyellow> para <lyellow>%player_display_name%</lyellow>!</lgray>
       Notify:
@@ -371,10 +371,10 @@ Command:
         - <lgray><lyellow>x%amount% %type%</lyellow> foram adicionados ao seu inventário!</lgray>
     Take:
       Desc: Retirar item de um jogador.
-      Done:
+      Готово:
         - <sound:"entity_glow_item_frame_remove_item">
         - <lgray>Removido <lyellow>x%amount%</lyellow> de <lyellow>%type%</lyellow> de <lyellow>%player_display_name%</lyellow>!</lgray>
-      Error:
+      Ошибка:
         NotEnough:
           - <sound:"entity_villager_no">
           - <lgray>Não foi possível retirar item(s). O jogador não tem o suficiente de <lred>%type%</lred> (<white>%amount%</white>/<white>%total%</white>)!</lgray>
@@ -384,57 +384,57 @@ Command:
     Lore:
       Add:
         Desc: Adicionar uma lore.
-        Done:
+        Готово:
           - <sound:"block_anvil_use">
           - <lgray>Lore adicionada!</lgray>
       Remove:
         Desc: Remover uma lore.
-        Done:
+        Готово:
           - <sound:"block_anvil_use">
           - <lgray>Lore removida!</lgray>
       Clear:
         Desc: Limpar lore.
-        Done:
+        Готово:
           - <sound:"block_anvil_use">
           - <lgray>Lore limpa!</lgray>
     Model:
       Desc: Alterar dados do modelo do item.
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - <lgray>Definido <lyellow>%amount%</lyellow> como dados do modelo de <lyellow>%item%</lyellow>!</lgray>
     Name:
       Desc: Alterar nome de exibição do item.
-      Done:
+      Готово:
         Changed:
           - <sound:"block_anvil_use">
           - <lgray>Item renomeado!</lgray>
     Potion:
       Add:
         Desc: Adicionar efeito a uma poção.
-        Done: <lgray>Efeito de poção adicionado!</lgray>
+        Готово: <lgray>Efeito de poção adicionado!</lgray>
     Repair:
       Desc: Reparar item.
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - <lgray>Item <lyellow>%item%</lyellow> reparado!</lgray>
     Spawn:
       Desc: Spawn item in world.
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - <lgray>Spawned <lyellow>x%amount%</lyellow> <lyellow>%type%</lyellow> at <lyellow>%location_x%, %location_y%, %location_z%</lyellow> in <lyellow>%location_world%</lyellow>!</lgray>
     Unbreakable:
       Desc: Toggle unbreakable state.
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - '<lgray>Set <lyellow>%item%</lyellow> Unbreakable: <lyellow>%state%</lyellow>.</lgray>'
   Spawn:
     Desc: Gerar item no mundo.
-    Done:
+    Готово:
       - <sound:"entity_item_pickup">
       - <lgray>Gerado <lyellow>x%amount%</lyellow> <lyellow>%type%</lyellow> em <lyellow>%location_x%, %location_y%, %location_z%</lyellow> no <lyellow>%location_world%</lyellow>!</lgray>
   Unbreakable:
     Desc: Alternar estado de indestrutível.
-    Done:
+    Готово:
       - <sound:"block_anvil_use">
       - '<lgray>Definido <lyellow>%item%</lyellow> como Indestrutível: <lyellow>%state%</lyellow>.</lgray>'
   Loom:
@@ -446,20 +446,20 @@ Command:
   Mob:
     Kill:
       Desc: Matar mob específico.
-      Done:
+      Готово:
         - <sound:"entity_zombie_death">
         - <lgray>Morto <lyellow>x%amount% %type%</lyellow> em <lyellow>%world%</lyellow> dentro de <lyellow>%radius%</lyellow> blocos.</lgray>
     Clear:
       Desc: Matar todos os mobs.
-      Done:
+      Готово:
         - <sound:"entity_zombie_death">
         - <lgray>Morto <lyellow>%amount%</lyellow> mobs em <lyellow>%world%</lyellow> dentro de <lyellow>%radius%</lyellow> blocos.</lgray>
     Spawn:
       Desc: Gerar um mob.
-      Done: <lgray>Gerado <lyellow>x%amount% %type%</lyellow>.</lgray>
+      Готово: <lgray>Gerado <lyellow>x%amount% %type%</lyellow>.</lgray>
   Near:
     Desc: Mostrar jogadores mais próximos.
-    Error:
+    Ошибка:
       Nothing: <lgray>Não há jogadores em um raio de <lyellow>%radius%</lyellow> blocos.</lgray>
   Nick:
     Clear:
@@ -472,52 +472,52 @@ Command:
       Notify: '<lgray>Você recebeu um novo nome personalizado: <lyellow>%name%</lyellow>.</lgray>'
     Change:
       Desc: Definir nome personalizado.
-      Done: <lgray>Você mudou seu nome personalizado para <lyellow>%name%</lyellow>.</lgray>
-    Error:
+      Готово: <lgray>Você mudou seu nome personalizado para <lyellow>%name%</lyellow>.</lgray>
+    Ошибка:
       BadWords: <lred>Este nome não é permitido.</lred>
       Regex: <lred>Nome contém caracteres proibidos.</lred>
       TooLong: <lgray>O nome não pode ter mais de <lred>%amount%</lred> caracteres.</lgray>
       TooShort: <lred>O nome não pode ter menos de <lred>%amount%</lred> caracteres.</lred>
-  PlayerInfo:
+  ИгрокInfo:
     Desc: Mostrar informações do jogador.
   Skull:
     Custom:
       Desc: Criar cabeça personalizada.
-      Done: <lgray>Cabeça personalizada criada.</lgray>
-    Player:
+      Готово: <lgray>Cabeça personalizada criada.</lgray>
+    Игрок:
       Desc: Obter cabeça de jogador.
-      Done: <lgray>Você obteve a cabeça de <lyellow>%player_name%</lyellow>.</lgray>
+      Готово: <lgray>Você obteve a cabeça de <lyellow>%player_name%</lyellow>.</lgray>
   Staff:
     Desc: Mostrar staff online.
     Empty: <lgray>Não há staff online.</lgray>
   Spawner:
     Desc: Alterar tipo de spawner.
-    Done: <lgray>Tipo de spawner alterado para <lyellow>%type%</lyellow>.</lgray>
-    Error:
+    Готово: <lgray>Tipo de spawner alterado para <lyellow>%type%</lyellow>.</lgray>
+    Ошибка:
       Type: <lred>Este tipo não pode ser definido para o spawner.</lred>
       Block: <lred>Você deve olhar para o bloco Spawner!</lred>
   Speed:
     Desc: Alterar velocidade de caminhada.
-    Done:
+    Готово:
       Notify: <lgray>Sua velocidade de caminhada foi definida para <lyellow>%amount%</lyellow>.</lgray>
       Target: <lgray>Definida a velocidade de caminhada para <lyellow>%amount%</lyellow> para <lyellow>%player_display_name%</lyellow>.</lgray>
   Sudo:
-    Command:
+    Команда:
       Desc: Forçar jogador a executar um comando.
     Chat:
       Desc: Forçar jogador a enviar uma mensagem de chat.
-    Done:
-      Command: '<lgray>Forçado <lyellow>%player_display_name%</lyellow> a executar: <lyellow>/%command%</lyellow></lgray>'
+    Готово:
+      Команда: '<lgray>Forçado <lyellow>%player_display_name%</lyellow> a executar: <lyellow>/%command%</lyellow></lgray>'
       Chat: '<lgray>Forçado <lyellow>%player_display_name%</lyellow> a dizer: <lyellow>%command%</lyellow></lgray>'
   Suicide:
     Desc: Cometer suicídio.
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lyellow>%player_display_name%</lyellow> cometeu suicídio.</lgray>
   Teleport:
     Location:
       Desc: Teleportar para coordenadas.
-      Done:
+      Готово:
         Target:
           - <sound:"entity_enderman_teleport">
           - <lgray>Jogador <lyellow>%player_display_name%</lyellow> teleportado para <lyellow>%location_x%, %location_y%, %location_z%</lyellow> no <lyellow>%location_world%</lyellow>.</lgray>
@@ -534,7 +534,7 @@ Command:
         - <lgray>Você foi invocado por <lyellow>%player_display_name%</lyellow>.</lgray>
     To:
       Desc: Teletransportar para um jogador.
-      Done:
+      Готово:
         - <sound:"entity_enderman_teleport">
         - <lgray>Teletransportado para <lyellow>%player_display_name%</lyellow>...</lgray>
     Send:
@@ -565,7 +565,7 @@ Command:
         - ' '
     Set:
       Desc: Definir o horário do mundo.
-      Done: <lgray>Tempo definido para <lyellow>%time%</lyellow> (<white>%total% ticks</white>) no mundo <lyellow>%world%</lyellow>.</lgray>
+      Готово: <lgray>Tempo definido para <lyellow>%time%</lyellow> (<white>%total% ticks</white>) no mundo <lyellow>%world%</lyellow>.</lgray>
     Personal:
       Set:
         Desc: Definir tempo pessoal.
@@ -598,7 +598,7 @@ Command:
   Enderchest:
     Clear:
       Desc: Clear ender chest.
-      Done:
+      Готово:
         Target:
           - <sound:"block_fire_extinguish">
           - <lgray>Cleared <lyellow>%player_display_name%</lyellow>'s ender chest!</lgray>
@@ -607,7 +607,7 @@ Command:
           - <lgray>Your ender chest has been cleared!</lgray>
     Copy:
       Desc: Copy player's ender chest.
-      Done:
+      Готово:
         Executor:
           - <sound:"item_armor_equip_leather">
           - <lgray>Copied <lyellow>%player_display_name%</lyellow>'s ender chest.</lgray>
@@ -616,16 +616,16 @@ Command:
           - <lgray>Copied <lyellow>%source%</lyellow>'s ender chest content to <lyellow>%target%</lyellow>'s ender chest.</lgray>
     Fill:
       Desc: Fill ender chest with specified item.
-      Done:
+      Готово:
         Executor:
           - <sound:"entity_item_pickup">
           - <lgray>Filled <lyellow>%player_display_name%</lyellow>'s ender chest with <lyellow>%item%</lyellow>.</lgray>
-    Open:
-      Desc: Open ender chest.
-      Done:
+    Открыть:
+      Desc: Открыть ender chest.
+      Готово:
         Executor:
           - <sound:"block_ender_chest_open">
-          - <lgray>Opened <lyellow>%player_display_name%</lyellow>'s ender chest.</lgray>
+          - <lgray>Открытьed <lyellow>%player_display_name%</lyellow>'s ender chest.</lgray>
     Repair:
       Desc: Repair all ender chest items.
       Notify:
@@ -635,7 +635,7 @@ Command:
         - <sound:"block_anvil_use">
         - <lgray>Repaired all items in <lyellow>%player_display_name%</lyellow>'s ender chest!</lgray>
 Generic:
-  Command:
+  Команда:
     Cooldown:
       Default:
         - <noprefix>
@@ -643,7 +643,7 @@ Generic:
       OneTime:
         - <noprefix>
         - <lred>Este comando é de uso único e você já o utilizou.</lred>
-  Error:
+  Ошибка:
     ItemNotAPotion: <lred>Você deve segurar uma poção!</lred>
     EmptyHand:
       - <sound:"block_anvil_place">
@@ -651,7 +651,7 @@ Generic:
     ItemNotDamageable:
       - <sound:"block_anvil_place">
       - <lgray>Item <lred>%item%</lred> não tem durabilidade.</lgray>
-    Command:
+    Команда:
       Argument:
         InvalidSlot: <lgray><lred>%value%</lred> não é um slot de equipamento válido!</lgray>
         InvalidType: <lgray><lred>%value%</lred> não é um tipo válido!</lgray>
@@ -866,7 +866,7 @@ WeatherType:
   STORM: Tempestade
   THUNDER: Trovão
 Bans:
-  Command:
+  Команда:
     History:
       Ban:
         Desc: Visualize o histórico de banimentos de um jogador ou IP.
@@ -882,7 +882,7 @@ Bans:
       Desc: Lista de jogadores advertidos.
     Ban:
       Desc: Banir jogador.
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ' '
@@ -902,7 +902,7 @@ Bans:
       Desc: Banir IP.
     Mute:
       Desc: Mutar jogador.
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ' '
@@ -926,7 +926,7 @@ Bans:
       Desc: Desbanir jogador ou IP.
     Warn:
       Desc: Advertir jogador.
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ' '
@@ -945,7 +945,7 @@ Bans:
     Unwarn:
       Desc: Remover a advertência mais recente de um jogador.
     BanIP:
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ' '
@@ -962,7 +962,7 @@ Bans:
           - '<lgray><lred>»</lred> Duração: <lred>%punishment_expires_in%</lred></lgray>'
           - ' '
   Punishment:
-    Error:
+    Ошибка:
       RankPriority:
         - <noprefix>
         - ' '
@@ -987,7 +987,7 @@ Bans:
         - <lred>🛈 <b>Erro!</b></lred>
         - <lgray><lred>»</lred> O jogador <lred>%punishment_user%</lred> não pode ser punido!</lgray>
         - ' '
-      PlayerNotBanned:
+      ИгрокNotBanned:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Erro!</b></lred>
@@ -1012,7 +1012,7 @@ Bans:
         - <lgray><lred>»</lred> O jogador <lred>%punishment_user%</lred> não tem advertências!</lgray>
         - ' '
   Kick:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Expulsou <lred>%punishment_user%</lred> por <lred>%punishment_reason%</lred>.</lgray>
     Broadcast:
@@ -1023,7 +1023,7 @@ Bans:
       - '<lgray><lred>»</lred> Motivo: <lred>%punishment_reason%</lred></lgray>'
       - ' '
   Mute:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Mutou <lred>%punishment_user%</lred> por <lred>%punishment_reason%</lred>.</lgray>
     Broadcast:
@@ -1038,7 +1038,7 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Mute Notification</b></lred>
-        - <lgray><lred>»</lred> You have permanently been muted!</lgray>
+        - <lgray><lred>»</lred> Вы permanently been muted!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - ' '
@@ -1046,7 +1046,7 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Mute Notification</b></lred>
-        - <lgray><lred>»</lred> Player <lred>%punishment_user%</lred> have permanently been muted!</lgray>
+        - <lgray><lred>»</lred> Игрок <lred>%punishment_user%</lred> have permanently been muted!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - ' '
@@ -1055,7 +1055,7 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Mute Notification</b></lred>
-        - <lgray><lred>»</lred> You have been muted!</lgray>
+        - <lgray><lred>»</lred> Вы been muted!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - '<lgray><lred>»</lred> Duration: <lred>%punishment_expires_in%</lred></lgray>'
@@ -1064,13 +1064,13 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Mute Notification</b></lred>
-        - <lgray><lred>»</lred> Player <lred>%punishment_user%</lred> have been muted!</lgray>
+        - <lgray><lred>»</lred> Игрок <lred>%punishment_user%</lred> have been muted!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - '<lgray><lred>»</lred> Duration: <lred>%punishment_expires_in%</lred></lgray>'
         - ' '
   Unmute:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Desmutou <lred>%punishment_user%</lred>.</lgray>
     Broadcast:
@@ -1083,11 +1083,11 @@ Bans:
       - <noprefix>
       - ' '
       - <lgreen>🛈 <b>Mute Info</b></lgreen>
-      - <lgray><lgreen>»</lgreen> You have been unmuted.</lgray>
+      - <lgray><lgreen>»</lgreen> Вы been unmuted.</lgray>
       - '<lgray><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></lgray>'
       - ' '
   Unwarn:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Removida a advertência de <lred>%punishment_user%</lred>.</lgray>
     Broadcast:
@@ -1104,7 +1104,7 @@ Bans:
       - '<lgray><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></lgray>'
       - ' '
   Unban:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Desbaniu <lred>%punishment_user%</lred>.</lgray>
     Broadcast:
@@ -1114,7 +1114,7 @@ Bans:
       - <lgray><lred>»</lred> O jogador <lred>%punishment_user%</lred> foi desbanido!</lgray>
       - ' '
   Ban:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Baniu <lred>%punishment_user%</lred> por <lred>%punishment_reason%</lred>.</lgray>
     Broadcast:
@@ -1129,7 +1129,7 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Ban Notification</b></lred>
-        - <lgray><lred>»</lred> Player <lred>%punishment_user%</lred> have permanently been banned!</lgray>
+        - <lgray><lred>»</lred> Игрок <lred>%punishment_user%</lred> have permanently been banned!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - ' '
@@ -1138,13 +1138,13 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Ban Notification</b></lred>
-        - <lgray><lred>»</lred> Player <lred>%punishment_user%</lred> have been banned!</lgray>
+        - <lgray><lred>»</lred> Игрок <lred>%punishment_user%</lred> have been banned!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - '<lgray><lred>»</lred> Duration: <lred>%punishment_expires_in%</lred></lgray>'
         - ' '
   BanIP:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Baniu o IP: <lred>%punishment_user%</lred> por <lred>%punishment_reason%</lred>.</lgray>
     Broadcast:
@@ -1174,7 +1174,7 @@ Bans:
         - '<lgray><lred>»</lred> Duration: <lred>%punishment_expires_in%</lred></lgray>'
         - ' '
   Warn:
-    Done:
+    Готово:
       - <noprefix>
       - <lgray><lred>🛈</lred> Advertiu <lred>%punishment_user%</lred> por <lred>%punishment_reason%</lred>.</lgray>
     Broadcast:
@@ -1188,7 +1188,7 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Warn Notification</b></lred>
-        - <lgray><lred>»</lred> You have permanently been warned!</lgray>
+        - <lgray><lred>»</lred> Вы permanently been warned!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - ' '
@@ -1196,7 +1196,7 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Warn Notification</b></lred>
-        - <lgray><lred>»</lred> Player <lred>%punishment_user%</lred> have permanently been warned!</lgray>
+        - <lgray><lred>»</lred> Игрок <lred>%punishment_user%</lred> have permanently been warned!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - ' '
@@ -1205,7 +1205,7 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Warn Notification</b></lred>
-        - <lgray><lred>»</lred> You have been warned!</lgray>
+        - <lgray><lred>»</lred> Вы been warned!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - '<lgray><lred>»</lred> Duration: <lred>%punishment_expires_in%</lred></lgray>'
@@ -1214,13 +1214,13 @@ Bans:
         - <noprefix>
         - ' '
         - <lred>🛈 <b>Warn Notification</b></lred>
-        - <lgray><lred>»</lred> Player <lred>%punishment_user%</lred> have been warned!</lgray>
+        - <lgray><lred>»</lred> Игрок <lred>%punishment_user%</lred> have been warned!</lgray>
         - '<lgray><lred>»</lred> By: <lred>%punishment_punisher%</lred></lgray>'
         - '<lgray><lred>»</lred> Reason: <lred>%punishment_reason%</lred></lgray>'
         - '<lgray><lred>»</lred> Duration: <lred>%punishment_expires_in%</lred></lgray>'
         - ' '
   UnBan:
-    Done:
+    Готово:
       - <noprefix>
       - ' '
       - <lgreen>🛈 <b>Ban Info</b></lgreen>
@@ -1230,11 +1230,11 @@ Bans:
       - <noprefix>
       - ' '
       - <lgreen>🛈 <b>Ban Info</b></lgreen>
-      - <lgray><lgreen>»</lgreen> Player <lgreen>%punishment_user%</lgreen> have been unbanned.</lgray>
+      - <lgray><lgreen>»</lgreen> Игрок <lgreen>%punishment_user%</lgreen> have been unbanned.</lgray>
       - '<lgray><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></lgray>'
       - ' '
   UnBanIP:
-    Done:
+    Готово:
       - <noprefix>
       - ' '
       - <lgreen>🛈 <b>Ban Info</b></lgreen>
@@ -1255,26 +1255,26 @@ Bans:
     PUNISHER: Punisher
     REASON: Reason
 Worlds:
-  Command:
+  Команда:
     Worlds:
-      Create:
+      Создать:
         Desc: Criar um novo mundo.
-        Error: <lred>Mundo com esse nome já existe!</lred>
-        Done: '<lgray>Dados do mundo criado: <lyellow>%world_id%</lyellow>!</lgray>'
+        Ошибка: <lred>Mundo com esse nome já existe!</lred>
+        Готово: '<lgray>Dados do mundo criado: <lyellow>%world_id%</lyellow>!</lgray>'
       Delete:
         Desc: Excluir um mundo personalizado.
-        Error: '<lgray>Não foi possível excluir o mundo: <lred>%world_id%</lred>!</lgray>'
-        Done: '<lgray>Mundo excluído: <lyellow>%world_id%</lyellow>!</lgray>'
+        Ошибка: '<lgray>Não foi possível excluir o mundo: <lred>%world_id%</lred>!</lgray>'
+        Готово: '<lgray>Mundo excluído: <lyellow>%world_id%</lyellow>!</lgray>'
       Editor:
         Desc: Abrir o editor de mundos.
       Load:
         Desc: Carregar um mundo personalizado.
-        Error: '<lgray>Não foi possível carregar o mundo: <lred>%world_id%</lred>!</lgray>'
-        Done: '<lgray>Mundo carregado: <lyellow>%world_id%</lyellow>!</lgray>'
+        Ошибка: '<lgray>Não foi possível carregar o mundo: <lred>%world_id%</lred>!</lgray>'
+        Готово: '<lgray>Mundo carregado: <lyellow>%world_id%</lyellow>!</lgray>'
       Unload:
         Desc: Descarregar um mundo personalizado.
-        Error: '<lgray>Não foi possível descarregar o mundo: <lred>%world_id%</lred>!</lgray>'
-        Done: '<lgray>Mundo descarregado: <lyellow>%world_id%</lyellow>!</lgray>'
+        Ошибка: '<lgray>Não foi possível descarregar o mundo: <lred>%world_id%</lred>!</lgray>'
+        Готово: '<lgray>Mundo descarregado: <lyellow>%world_id%</lyellow>!</lgray>'
   AutoWipe:
     MoveOut: <lgray>Você foi teleportado devido ao descarregamento do mundo.</lgray>
     Notify:
@@ -1282,16 +1282,16 @@ Worlds:
       - ''
       - <lred><b>Aviso de Reset Automático:</b></lred>
       - <lgray>O mundo será resetado automaticamente em <lred>%time%</lred></lgray>
-  Error:
-    CommandBlocked: <lred>Você não pode usar esse comando neste mundo!</lred>
-    FlyDisabled: <lred>Voar não é permitido neste mundo!</lred>
-    Command:
+  Ошибка:
+    КомандаBlocked: <lred>Você não pode usar esse comando neste mundo!</lred>
+    FlyОтключено: <lred>Voar não é permitido neste mundo!</lred>
+    Команда:
       Argument:
         InvalidWorldData: <lgray><lred>%value%</lred> não é um mundo válido!</lgray>
   Editor:
     Title:
       List: <black>Lista de Mundos</black>
-      Settings: <black>Configurações do Mundo</black>
+      Настройки: <black>Configurações do Mundo</black>
       Generation: <black>Carregamento/Criação do Mundo</black>
       GameRules: <black>Regras do Jogo do Mundo</black>
     World:
@@ -1384,48 +1384,48 @@ Worlds:
     NORMAL: Normal
     HARD: Difícil
 Spawns:
-  Command:
+  Команда:
     Spawns:
       Delete:
         Desc: Excluir um ponto de spawn.
-        Done:
+        Готово:
           - <output:"titles:20:60:20">
           - <lyellow><b>Spawn Excluído!</b></lyellow>
           - <lgray>Você excluiu o spawn <lyellow>%spawn_name%</lyellow>!</lgray>
-      Create:
+      Создать:
         Desc: Definir ponto de spawn.
-        Done:
+        Готово:
           - <output:"titles:20:60:20">
           - '<lgreen><b>Spawn Definido: </b><white>%spawn_name%</white></lgreen>'
           - <lgray>Use <lgreen>/editspawn</lgreen> para configurá-lo.</lgray>
       Teleport:
         Desc: Teleportar para um spawn.
         Notify: <lgray>Teleportando <lyellow>%player_display_name%</lyellow> para o spawn <lyellow>%spawn_name%</lyellow>.</lgray>
-        Done:
+        Готово:
           - <output:"titles:20:60:20">
           - <lyellow><b>Spawn</b></lyellow>
           - <lgray>Você foi teleportado para o spawn <lyellow>%spawn_name%</lyellow>.</lgray>
       Editor:
         Desc: Abrir editor de spawns.
     Spawn:
-      Error:
+      Ошибка:
         NoDefault: <lred>Você deve especificar o nome do spawn.</lred>
   Spawn:
     Teleport:
-      Error:
+      Ошибка:
         World: <lred>Este spawn está localizado em um mundo que não está disponível no momento.</lred>
-    Error:
+    Ошибка:
       Invalid: <lgray><lred>%value%</lred> não é um spawn válido!</lgray>
   Editor:
     Title:
       List: <black>Editor de Spawns</black>
-      Settings: <black>Configurações do Spawn</black>
+      Настройки: <black>Configurações do Spawn</black>
     Enter:
       Name: <lgray>Digite <lgreen>[Nome do Spawn]</lgreen></lgray>
       Priority: <lgray>Digite <lgreen>[Prioridade]</lgreen></lgray>
       Group: <lgray>Digite <lgreen>[Nome do Grupo]</lgreen></lgray>
 Homes:
-  Command:
+  Команда:
     Argument:
       Name:
         Home: casa
@@ -1447,15 +1447,15 @@ Homes:
     HomesAdmin:
       Delete:
         Desc: Excluir a casa de um jogador.
-        Done:
+        Готово:
           Single: <lgray>Você excluiu a casa <lyellow>%home_id%</lyellow> de <lyellow>%player_name%</lyellow>.</lgray>
           All: <lgray>Você excluiu todas as casas de <lyellow>%player_name%</lyellow>.</lgray>
-      Create:
+      Создать:
         Desc: Criar uma casa para o jogador.
-        Done:
+        Готово:
           Fresh: <lgray>Definido a casa <lyellow>%home_id%</lyellow> para <lyellow>%player_name%</lyellow>.</lgray>
           Edited: <lgray>Atualizada a casa <lyellow>%home_id%</lyellow> de <lyellow>%player_name%</lyellow>.</lgray>
-    Error:
+    Ошибка:
       Argument:
         InvalidHome: <lgray><lred>%value%</lred> não é uma casa válida.</lgray>
   Home:
@@ -1464,11 +1464,11 @@ Homes:
       - <lyellow><b>Casa</b></lyellow>
       - <lgray>Você foi teleportado para a casa <lyellow>%home_name%</lyellow>.</lgray>
     Visit:
-      Success:
+      Успех:
         - <output:"titles:20:60:20"><sound:"entity_enderman_teleport">
         - <lyellow><b>Visita à Casa</b></lyellow>
         - <lgray>Você visitou a casa de <lyellow>%home_owner%</lyellow> chamada <lyellow>%home_name%</lyellow>.</lgray>
-      Error:
+      Ошибка:
         NotPermitted:
           - <sound:"entity_villager_no">
           - <lred>Você não tem um convite para esta casa!</lred>
@@ -1477,7 +1477,7 @@ Homes:
           - <lred><b>Localização Insegura!</b></lred>
           - <lred>Visita foi cancelada.</lred>
     Set:
-      Error:
+      Ошибка:
         Limit:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - <lred><b>Limite Atingido!</b></lred>
@@ -1494,7 +1494,7 @@ Homes:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - <lred><b>Área Protegida!</b></lred>
           - <lred>Você não pode criar casas aqui.</lred>
-      Success:
+      Успех:
         - <output:"titles:20:60:20"><sound:"block_wooden_door_open">
         - <lyellow><b>Casa Definida!</b></lyellow>
         - '<lgray>Uso: <lyellow>/home %home_id%</lyellow> | Ver casas: <lyellow>/homelist</lyellow></lgray>'
@@ -1503,21 +1503,21 @@ Homes:
         - <lyellow><b>Casa Atualizada!</b></lyellow>
         - <lgray>A localização da casa foi atualizada.</lgray>
     Delete:
-      Done:
+      Готово:
         - <output:"titles:20:60:20"><sound:"entity_zombie_break_wooden_door">
         - <lyellow><b>Casa Removida!</b></lyellow>
         - <lgray>Você removeu a casa <lyellow>%home_name%</lyellow>.</lgray>
-  Error:
+  Ошибка:
     NoHomes: <lred>Você não tem casas definidas!</lred>
   Editor:
     Enter:
-      PlayerName: <lgray>Digite <lgreen>[Nome do Jogador]</lgreen></lgray>
+      ИгрокName: <lgray>Digite <lgreen>[Nome do Jogador]</lgreen></lgray>
       HomeName: <lgray>Digite <lgreen>[Nome da Casa]</lgreen></lgray>
   HomeType:
     PUBLIC: Público
     PRIVATE: Privado
 Kits:
-  Command:
+  Команда:
     Kits:
       Editor:
         Desc: Abrir editor de kits.
@@ -1526,19 +1526,19 @@ Kits:
         Others: <lgray>Visualizou a prévia do kit <lyellow>%kit_name%</lyellow> para <lyellow>%player_display_name%</lyellow>.</lgray>
       Give:
         Desc: Dar um kit.
-        Done: <lgray>Concedido o kit <lyellow>%kit_name%</lyellow> para <lyellow>%player_display_name%</lyellow>!</lgray>
+        Готово: <lgray>Concedido o kit <lyellow>%kit_name%</lyellow> para <lyellow>%player_display_name%</lyellow>!</lgray>
       List:
         Desc: Abrir GUI de Kits.
         Others: <lgray>Abriu a GUI de Kits para <lyellow>%player_display_name%</lyellow>.</lgray>
       ResetCooldown:
         Desc: Redefinir o cooldown do kit do jogador.
-        Done: <lgray>Cooldown do kit <lyellow>%kit_name%</lyellow> redefinido para <lyellow>%player_name%</lyellow>.</lgray>
+        Готово: <lgray>Cooldown do kit <lyellow>%kit_name%</lyellow> redefinido para <lyellow>%player_name%</lyellow>.</lgray>
         Notify: <lgray>O cooldown do seu kit <lyellow>%kit_name%</lyellow> foi redefinido!</lgray>
       SetCooldown:
         Desc: Definir o cooldown do kit do jogador.
-        Done: <lgray>Cooldown do kit <lyellow>%kit_name%</lyellow> definido para <lyellow>%amount%</lyellow> para <lyellow>%player_name%</lyellow>.</lgray>
+        Готово: <lgray>Cooldown do kit <lyellow>%kit_name%</lyellow> definido para <lyellow>%amount%</lyellow> para <lyellow>%player_name%</lyellow>.</lgray>
         Notify: <lgray>O cooldown do seu kit <lyellow>%kit_name%</lyellow> foi definido para <lyellow>%amount%</lyellow>!</lgray>
-    Error:
+    Ошибка:
       Argument:
         InvalidKit: <lgray><lred>%value%</lred> não é um kit válido!</lgray>
   Kit:
@@ -1546,7 +1546,7 @@ Kits:
       - <output:"titles:20:60:20"><sound:"item_armor_equip_leather">
       - <lyellow><b>Kit Recebido!</b></lyellow>
       - <lgray>Você recebeu o kit <lyellow>%kit_name%</lyellow>!</lgray>
-    Error:
+    Ошибка:
       NoPermission: <lred>Você não tem permissão para usar este kit!</lred>
       NotEnoughFunds: <lred>Você não pode pagar por este kit! Você precisa de <lred>$%kit_cost_money%</lred>.</lred>
       Cooldown:
@@ -1555,53 +1555,53 @@ Kits:
   Editor:
     Title:
       List: <black>Editor de Kits</black>
-      Settings: <black>Configurações do Kit</black>
+      Настройки: <black>Configurações do Kit</black>
       Content: <black>Conteúdo do Kit</black>
     Enter:
       Id: <lgray>Digite <lgreen>[Identificador do Kit]</lgreen></lgray>
-      Command: <lgray>Digite <lgreen>[Comando]</lgreen></lgray>
+      Команда: <lgray>Digite <lgreen>[Comando]</lgreen></lgray>
       Cost: <lgray>Digite <lgreen>[Custo em Dinheiro]</lgreen></lgray>
       Description: <lgray>Digite <lgreen>[Descrição]</lgreen></lgray>
       Priority: <lgray>Digite <lgreen>[Prioridade]</lgreen></lgray>
-    Error:
+    Ошибка:
       AlreadyExists: <lgray>O kit já existe!</lgray>
-Warps:
-  Command:
-    Warps:
+Варпs:
+  Команда:
+    Варпs:
       Delete:
         Desc: Excluir um warp.
-      Create:
+      Создать:
         Desc: Criar um novo warp.
       Teleport:
         Desc: Teleportar para um warp.
         Others: <lgray>Teleportado <lyellow>%player_display_name%</lyellow> para o warp <lyellow>%warp_name%</lyellow>.</lgray>
       ResetCooldown:
         Desc: Redefinir o cooldown do warp.
-        Done: <lgray>Cooldown do warp <lyellow>%warp_name%</lyellow> redefinido para <lyellow>%player_name%</lyellow>.</lgray>
+        Готово: <lgray>Cooldown do warp <lyellow>%warp_name%</lyellow> redefinido para <lyellow>%player_name%</lyellow>.</lgray>
         Notify: <lgray>O cooldown do seu warp <lyellow>%warp_name%</lyellow> foi redefinido!</lgray>
       SetCooldown:
         Desc: Definir o cooldown do warp.
-        Done: <lgray>Cooldown do warp <lyellow>%warp_name%</lyellow> definido para <lyellow>%amount%</lyellow> para <lyellow>%player_name%</lyellow>.</lgray>
+        Готово: <lgray>Cooldown do warp <lyellow>%warp_name%</lyellow> definido para <lyellow>%amount%</lyellow> para <lyellow>%player_name%</lyellow>.</lgray>
         Notify: <lgray>O cooldown do seu warp <lyellow>%warp_name%</lyellow> foi definido para <lyellow>%amount%</lyellow>!</lgray>
       List:
-        Desc: Abrir GUI de Warps.
-        Others: <lgray>Abriu a GUI de Warps para <lyellow>%player_display_name%</lyellow>.</lgray>
+        Desc: Abrir GUI de Варпs.
+        Others: <lgray>Abriu a GUI de Варпs para <lyellow>%player_display_name%</lyellow>.</lgray>
   Delete:
-    Done:
+    Готово:
       - <output:"titles:20:60:20"><sound:"block_glass_break">
-      - <lyellow><b>Warp Removido!</b></lyellow>
+      - <lyellow><b>Варп Removido!</b></lyellow>
       - <lgray>Você removeu o warp <lyellow>%warp_name%</lyellow>.</lgray>
-  Warp:
+  Варп:
     Creation:
       New:
         - <output:"titles:20:60:20"><sound:"block_anvil_place">
-        - <lgreen><b>Warp Criado!</b></lgreen>
+        - <lgreen><b>Варп Criado!</b></lgreen>
         - '<lgray>Teleportar: <lgreen>/warp %warp_id%</lgreen> | Editar em: <lgreen>/warplist</lgreen></lgray>'
       Relocate:
         - <output:"titles:20:60:20"><sound:"block_anvil_place">
-        - <lgreen><b>Warp Relocado!</b></lgreen>
+        - <lgreen><b>Варп Relocado!</b></lgreen>
         - <lgray>Você moveu o warp <lgreen>%warp_name%</lgreen>.</lgray>
-      Error:
+      Ошибка:
         Limit:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - <lred><b>Limite Atingido!</b></lred>
@@ -1613,17 +1613,17 @@ Warps:
         Exists:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - <lred><b>Já Existe!</b></lred>
-          - <lgray>Warp com esse nome já existe.</lgray>
+          - <lgray>Варп com esse nome já existe.</lgray>
         Unsafe:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - <lred><b>Localização Insegura!</b></lred>
           - <lgray>Escolha outro lugar.</lgray>
     Teleport:
-      Done:
+      Готово:
         - <output:"titles:20:60:20"><sound:"entity_enderman_teleport">
         - <lyellow><b>%warp_name%</b></lyellow>
         - <lgray>%warp_description%</lgray>
-      Error:
+      Ошибка:
         NotEnoughFunds:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - <lred><b>Dinheiro Insuficiente!</b></lred>
@@ -1638,34 +1638,34 @@ Warps:
           - <lgray>Você pode visitar <lred>%warp_name%</lred> novamente em <lred>%cooldown%</lred></lgray>
         Unreachable:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
-          - <lred><b>Warp Inacessível!</b></lred>
+          - <lred><b>Варп Inacessível!</b></lred>
           - <lgray><lred>%warp_name%</lred> está localizado em um mundo não disponível.</lgray>
         Time:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - <lred><b>Hora Errada!</b></lred>
           - <lgray><lred>%warp_name%</lred> não está disponível para visitas no momento.</lgray>
-  Error:
-    Command:
+  Ошибка:
+    Команда:
       Argument:
-        InvalidWarp: <lgray><lred>%value%</lred> não é um warp válido!</lgray>
+        InvalidВарп: <lgray><lred>%value%</lred> não é um warp válido!</lgray>
   Editor:
     Enter:
-      CostMoney: <lgray>Digite <lgreen>[Custo]</lgreen></lgray>
-      Command: <lgray>Digite <lgreen>[Nome do Comando]</lgreen></lgray>
+      CostДеньги: <lgray>Digite <lgreen>[Custo]</lgreen></lgray>
+      Команда: <lgray>Digite <lgreen>[Nome do Comando]</lgreen></lgray>
       Times: <lgray>Digite <lgreen>[Horários] <lgray>></lgray> 10:00 14:00</lgreen></lgray>
       Cooldown: <lgray>Digite <lgreen>[Cooldown]</lgreen></lgray>
       Name: <lgray>Digite <lgreen>[Nome]</lgreen></lgray>
       Description: <lgray>Digite <lgreen>[Descrição]</lgreen></lgray>
-  WarpType:
+  ВарпType:
     SERVER: Servidor
     PLAYER: Jogador
   SortType:
-    WARP_NAME: Nome do Warp
-    WARP_ID: ID do Warp
-    WARP_TYPE: Tipo de Warp
+    WARP_NAME: Nome do Варп
+    WARP_ID: ID do Варп
+    WARP_TYPE: Tipo de Варп
     VISIT_COST: Custo de Visita
 Chat:
-  Command:
+  Команда:
     ShortChannel:
       Desc: Mudar de canal ou enviar mensagem.
     Channel:
@@ -1687,7 +1687,7 @@ Chat:
         Target: <lgray>Definir Mensagens Privadas para <lyellow>%state%</lyellow> para <lyellow>%player_name%</lyellow>.</lgray>
     ClearChat:
       Desc: Limpar o chat.
-      Done:
+      Готово:
         - <noprefix>
         - <lgray>O chat foi limpo por <lyellow>%name%</lyellow>.</lgray>
     Me:
@@ -1697,15 +1697,15 @@ Chat:
     Spy:
       Mode:
         Desc: Alternar espionagem %type%.
-        Done:
+        Готово:
           Others: <lgray>Definiu a espionagem de <lyellow>%type%</lyellow> para <lyellow>%player_display_name%</lyellow> para <lyellow>%state%</lyellow></lgray>
           Notify: '<lgray><lyellow>%type%</lyellow> espionagem: <lyellow>%state%</lyellow></lgray>'
       Logger:
         Desc: Alternar registro de espionagem.
-        Done: <lgray>Definiu o registro de espionagem <lyellow>%type%</lyellow> para <lyellow>%player_display_name%</lyellow> para <lyellow>%state%</lyellow></lgray>
+        Готово: <lgray>Definiu o registro de espionagem <lyellow>%type%</lyellow> para <lyellow>%player_display_name%</lyellow> para <lyellow>%state%</lyellow></lgray>
     Reply:
       Desc: Responder rapidamente à última mensagem privada.
-      Error:
+      Ошибка:
         Empty:
           - <noprefix>
           - <lred>Você não recebeu nenhuma mensagem privada.</lred>
@@ -1726,16 +1726,16 @@ Chat:
           - <noprefix>
           - <lred>&cVocê deve esperar <orange>%time%</orange> antes de usar outro comando.</lred>
     Mention:
-      Error:
+      Ошибка:
         Cooldown:
           - <noprefix>
           - <lred>Você pode mencionar <orange>%name%</orange> novamente em <orange>%time%</orange></lred>
   Channel:
     Join:
-      Success:
+      Успех:
         - <noprefix>
         - <lgray>Você entrou no canal de chat <lyellow>%channel_name%</lyellow>.</lgray>
-      Error:
+      Ошибка:
         NoPermission:
           - <noprefix>
           - <lred>Você não tem permissão para entrar neste canal.</lred>
@@ -1743,15 +1743,15 @@ Chat:
           - <noprefix>
           - <lred>Você já entrou neste canal!</lred>
     Leave:
-      Success:
+      Успех:
         - <noprefix>
         - <lgray>Você saiu do canal de chat <lyellow>%channel_name%</lyellow>.</lgray>
-      Error:
+      Ошибка:
         NotIn:
           - <noprefix>
           - <lred>Você não está no canal!</lred>
     Set:
-      Success:
+      Успех:
         - <noprefix>
         - <lgray>Definido <lyellow>%channel_name%</lyellow> como canal de chat padrão.</lgray>
   Mentions:
@@ -1760,11 +1760,11 @@ Chat:
       - <lgreen><b>Menção!</b></lgreen>
       - <lgray><lgreen>%player_display_name%</lgreen> mencionou você no chat.</lgray>
   PrivateMessage:
-    Error:
-      Disabled: <lgray><lred>%player_display_name%</lred> não aceita mensagens.</lgray>
+    Ошибка:
+      Отключено: <lgray><lred>%player_display_name%</lred> não aceita mensagens.</lgray>
       Ignorance: <lgray><lred>%player_display_name%</lred> não aceita suas mensagens.</lgray>
-  Error:
-    Command:
+  Ошибка:
+    Команда:
       Argument:
         InvalidChannel: <lgray><lred>%value%</lred> não é um canal válido!</lgray>
   SpyType:
@@ -1777,7 +1777,7 @@ Chat:
         Channel: channel
 
 P:
-  Command:
+  Команда:
     Teleport:
       Invite:
         Desc: Pedir para o jogador ser teleportado.
@@ -1808,7 +1808,7 @@ P:
       Notify: '<lgray>Pedidos de teletransporte: <lyellow>%state%</lyellow>.</lgray>'
   Request:
     Accept:
-      Done:
+      Готово:
         - <sound:"entity_enderman_teleport">
         - <lgray>Você aceitou o pedido de teletransporte de <lgreen>%player_display_name%</lgreen>!</lgray>
       Notify:
@@ -1818,7 +1818,7 @@ P:
         - <sound:"entity_villager_no">
         - <lgray>Você não tem nenhum pedido ativo.</lgray>
     Decline:
-      Done:
+      Готово:
         - <sound:"entity_villager_no">
         - <lgray>Você recusou o pedido de teletransporte de <lred>%player_display_name%</lred>.</lgray>
       Notify:
@@ -1828,11 +1828,11 @@ P:
         - <sound:"entity_villager_no">
         - <lgray>Você não tem nenhum pedido ativo.</lgray>
     Send:
-      Error:
+      Ошибка:
         Cooldown:
           - <sound:"entity_villager_no">
           - <lgray>Você pode enviar outro pedido em <lred>%time%</lred></lgray>
-        Disabled:
+        Отключено:
           - <sound:"entity_villager_no">
           - <lgray>Você não pode enviar pedidos de teletransporte para <lred>%player_name%</lred>.</lgray>
     Sent:
@@ -1850,21 +1850,21 @@ P:
       - <lyellow>            <hover:show_text:'<gray>Clique para teleportar <green>%player_display_name%</green></gray>'><click:run_command:"/tpyes %player_name%"><lgreen><b>[Aceitar]</b></lgreen></click></hover>      <hover:show_text:'<gray>Clique para negar o teletransporte de <red>%player_display_name%</red></gray>'><click:run_command:"/tpno %player_name%"><lred><b>[Recusar]</b></lred></click></hover></lyellow>
       - ' '
 Scoreboard:
-  Command:
+  Команда:
     Scoreboard:
       Desc: Alternar placar.
       Notify: '<lgray>Placar: <lyellow>%state%</lyellow></lgray>'
       Target: <lgray>Definir Placar <lyellow>%state%</lyellow> para <lyellow>%player_name%</lyellow>.</lgray>
 RTP:
-  Command:
+  Команда:
     RTP:
       Desc: Teleportar para um lugar aleatório.
   Teleport:
-    Error:
+    Ошибка:
       AlreadyIn: <lred>Você já está em RTP!</lred>
       InvalidRange: <lred>Teletransporte aleatório não é suportado para este mundo ou tem configurações de alcance inválidas.</lred>
     Notify:
-      Done:
+      Готово:
         - <output:"titles:20:80:20"><sound:"entity_enderman_teleport">
         - <lgreen><b>Teletransporte Bem-Sucedido!</b></lgreen>
         - '<lgray>Localização: <lgreen>%location_x%</lgreen>, <lgreen>%location_y%</lgreen>, <lgreen>%location_z%</lgreen></lgray>'
@@ -1877,7 +1877,7 @@ RTP:
         - <lred><b>Falha no Teletransporte</b></lred>
         - <lgray>Não foi possível encontrar uma localização válida.</lgray>
 Extras:
-  Command:
+  Команда:
     Chairs:
       Desc: Alternar Cadeiras.
       Notify: <lgray>Definir <lyellow>Cadeiras</lyellow> para <lyellow>%state%</lyellow>.</lgray>
@@ -1890,19 +1890,19 @@ Extras:
       Desc: Alternar Ordenação de Baús.
       Notify: <lgray>Definir <lyellow>Ordenação de Baús</lyellow> para <lyellow>%state%</lyellow>.</lgray>
       Target: <lgray>Definir <lyellow>%player_display_name%</lyellow>'s <lyellow>Ordenação de Baús</lyellow> para <lyellow>%state%</lyellow>.</lgray>
-BackLocation:
-  Command:
-    Back:
+НазадLocation:
+  Команда:
+    Назад:
       Desc: Voltar para a localização anterior.
       Others:
-        Done: <lgray>Jogador <lyellow>%player_display_name%</lyellow> teleportado para a localização anterior.</lgray>
+        Готово: <lgray>Jogador <lyellow>%player_display_name%</lyellow> teleportado para a localização anterior.</lgray>
         Nothing: <lgray>O jogador <lred>%player_display_name%</lred> não tem uma localização anterior.</lgray>
-    DeathBack:
+    DeathНазад:
       Desc: Voltar para a localização da morte.
       Others:
-        Done: <lgray>Jogador <lyellow>%player_display_name%</lyellow> teleportado para a localização da morte.</lgray>
+        Готово: <lgray>Jogador <lyellow>%player_display_name%</lyellow> teleportado para a localização da morte.</lgray>
         Nothing: <lgray>O jogador <lred>%player_display_name%</lred> não tem uma localização da morte.</lgray>
-  Previous:
+  Назад:
     Teleport:
       Nothing:
         - <sound:"entity_villager_no">
@@ -1919,17 +1919,17 @@ BackLocation:
         - <output:"action_bar"><sound:"entity_enderman_teleport">
         - <lyellow>Voltando para a localização da morte...</lyellow>
 NerfPhantoms:
-  Command:
+  Команда:
     NoPhantom:
       Desc: Alternar modo anti-fantasma.
       Toggle:
         Notify: '<lgray>Modo Anti-Fantasma: <lyellow>%state%</lyellow>.</lgray>'
         Others: <lgray>Definir modo Anti-Fantasma <lyellow>%state%</lyellow> para <lyellow>%player_display_name%</lyellow>.</lgray>
 Afk:
-  Command:
+  Команда:
     Afk:
       Desc: Alternar modo AFK.
-      Done:
+      Готово:
         Others: <lgray>Definiu o modo afk de <lyellow>%player_display_name%</lyellow> como <lyellow>%state%</lyellow>.</lgray>
   Mode:
     Enter:
@@ -1946,15 +1946,15 @@ Afk:
       - <noprefix>
       - <lgray>O jogador <lred>%player_display_name%</lred> está AFK e pode não responder.</lgray>
 CustomText:
-  Command:
+  Команда:
     Text:
       Desc: Ver um texto personalizado.
-  Error:
-    Command:
+  Ошибка:
+    Команда:
       Argument:
         InvalidCustomText: <lgray><lred>%value%</lred> não é um texto personalizado válido!</lgray>
 GodMode:
-  Command:
+  Команда:
     God:
       Desc: Alternar Modo Deus.
       Notify: <lgray>Modo Deus definido como <lyellow>%state%</lyellow>.</lgray>
@@ -1963,13 +1963,13 @@ GodMode:
       Target: <lgray>Definir Modo Deus da Comida como <lyellow>%state%</lyellow> para <lyellow>%player_display_name%</lyellow>.</lgray>
       Notify: <lgray>Modo Deus da Comida definido como <lyellow>%state%</lyellow>.</lgray>
   Notify:
-    DamageDisabled:
+    DamageОтключено:
       - <output:"action_bar">
       - <lred>Você não pode causar dano no Modo Deus!</lred>
     BadWorld:
       - <lred><b>Informações do Modo Deus:</b></lred>
       - <lgray>Modo Deus não tem efeito neste mundo!</lgray>
-Error:
+Ошибка:
   ItemNotAPotion: <lred>You must hold a potion!</lred>
   EmptyHand:
     - <sound:"block_anvil_place">
@@ -1977,7 +1977,7 @@ Error:
   ItemNotDamageable:
     - <sound:"block_anvil_place">
     - <lgray>Item <lred>%item%</lred> doesn't have a durability.</lgray>
-  Command:
+  Команда:
     Argument:
       InvalidSlot: <lgray><lred>%value%</lred> is not a valid equipment slot!</lgray>
       InvalidType: <lgray><lred>%value%</lred> is not a valid type!</lgray>
@@ -1986,7 +1986,7 @@ Error:
       InvalidIPAddress: <lgray><lred>%value%</lred> is not an IP address!</lgray>
       InvalidReason: <lgray><lred>%value%</lred> is not a valid reason!</lgray>
 PTP:
-  Command:
+  Команда:
     Teleport:
       Invite:
         Desc: Ask player to be summoned.
@@ -1999,11 +1999,11 @@ PTP:
             - ' '
             - <lyellow><b>Teleport Invite:</b></lyellow>
             - ' '
-            - <lyellow>Player <orange>%player_display_name%</orange> wants summon you to them.</lyellow>
+            - <lyellow>Игрок <orange>%player_display_name%</orange> wants summon you to them.</lyellow>
             - <lyellow>Type <lgreen>/tpyes %player_name%</lgreen> to accept and be summoned.</lyellow>
             - <lyellow>or <lred>/tpno %player_name%</lred> to decline.</lyellow>
             - ' '
-            - <lyellow>            <hover:show_text:'<gray>Click to be summoned by <green>%player_display_name%</green></gray>'><click:run_command:"/tpyes %player_name%"><lgreen><b>[Accept]</b></lgreen></click></hover>      <hover:show_text:'<gray>Click to deny summoning by <red>%player_display_name%</red></gray>'><click:run_command:"/tpno %player_name%"><lred><b>[Decline]</b></lred></click></hover></lyellow>
+            - <lyellow>            <hover:show_text:'<gray>Нажмите чтобы be summoned by <green>%player_display_name%</green></gray>'><click:run_command:"/tpyes %player_name%"><lgreen><b>[Accept]</b></lgreen></click></hover>      <hover:show_text:'<gray>Нажмите чтобы deny summoning by <red>%player_display_name%</red></gray>'><click:run_command:"/tpno %player_name%"><lred><b>[Decline]</b></lred></click></hover></lyellow>
             - ' '
       Request:
         Desc: Ask player to teleport you.
@@ -2017,7 +2017,7 @@ PTP:
       Notify: '<lgray>Teleport requests: <lyellow>%state%</lyellow>.</lgray>'
   Request:
     Accept:
-      Done:
+      Готово:
         - <sound:"entity_enderman_teleport">
         - <lgray>You accepted <lgreen>%player_display_name%</lgreen>'s teleport request!</lgray>
       Notify:
@@ -2027,7 +2027,7 @@ PTP:
         - <sound:"entity_villager_no">
         - <lgray>You don't have any active requests.</lgray>
     Decline:
-      Done:
+      Готово:
         - <sound:"entity_villager_no">
         - <lgray>You declined <lred>%player_display_name%</lred>'s teleport request.</lgray>
       Notify:
@@ -2037,11 +2037,11 @@ PTP:
         - <sound:"entity_villager_no">
         - <lgray>You don't have any active requests.</lgray>
     Send:
-      Error:
+      Ошибка:
         Cooldown:
           - <sound:"entity_villager_no">
           - <lgray>You can send another request in <lred>%time%</lred></lgray>
-        Disabled:
+        Отключено:
           - <sound:"entity_villager_no">
           - <lgray>You can't send teleport requests to <lred>%player_name%</lred>.</lgray>
     Sent:
@@ -2052,9 +2052,9 @@ PTP:
       - ' '
       - <lyellow><b>Teleport Request:</b></lyellow>
       - ' '
-      - <lyellow>Player <orange>%player_display_name%</orange> wants teleport to you.</lyellow>
+      - <lyellow>Игрок <orange>%player_display_name%</orange> wants teleport to you.</lyellow>
       - <lyellow>Type <lgreen>/tpyes %player_name%</lgreen> to accept and summon him.</lyellow>
       - <lyellow>or <lred>/tpno %player_name%</lred> to decline.</lyellow>
       - ' '
-      - <lyellow>            <hover:show_text:'<gray>Click to teleport <green>%player_display_name%</green></gray>'><click:run_command:"/tpyes %player_name%"><lgreen><b>[Accept]</b></lgreen></click></hover>      <hover:show_text:'<gray>Click to deny <red>%player_display_name%</red> teleport.</gray>'><click:run_command:"/tpno %player_name%"><lred><b>[Decline]</b></lred></click></hover></lyellow>
+      - <lyellow>            <hover:show_text:'<gray>Нажмите чтобы teleport <green>%player_display_name%</green></gray>'><click:run_command:"/tpyes %player_name%"><lgreen><b>[Accept]</b></lgreen></click></hover>      <hover:show_text:'<gray>Нажмите чтобы deny <red>%player_display_name%</red> teleport.</gray>'><click:run_command:"/tpno %player_name%"><lred><b>[Decline]</b></lred></click></hover></lyellow>
       - ' '

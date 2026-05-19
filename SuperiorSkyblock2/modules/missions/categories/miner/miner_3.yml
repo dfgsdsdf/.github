@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: BlocksMissions
+mission-file: BlocksМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -21,7 +21,7 @@ only-natural-blocks: true
 rewards:
   commands:
     - 'eco give %player% 25000'
-    - 'is admin msg %player% &e&lMiner | &7Successfully finished the mission Miner III!'
+    - 'is admin msg %player% &e&lMiner | &7Успехfully finished the mission Miner III!'
     - 'is admin msg %player% &e&lMiner | &7Let''s turn you into a professional miner!'
     - 'is admin msg %player% &e&lMiner | &7&oFor more information about the next mission, checkout /is missions'
 
@@ -78,7 +78,7 @@ icons:
       - '&6Coal Ore Mined: &764/64'
       - '&6Iron Ore Mined: &764/64'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:

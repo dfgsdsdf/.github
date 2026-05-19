@@ -6,8 +6,8 @@
 # -- Ranks: List of permission groups, that can see announcer messages. Add '*' to include all groups.
 # -- Text: Announcer messages.
 # Placeholders:
-# -- %player_display_name%: Player display (custom) name.
-# -- %player_name%: Player name.
+# -- %player_display_name%: Игрок display (custom) name.
+# -- %player_name%: Игрок name.
 # -- PlaceholderAPI
 # Text Formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
 
