@@ -4,849 +4,1026 @@
 
 abilities:
   bountiful_harvest:
-    name: Vụ mùa bội thu
-    desc: "+{value} May mắn trồng trọt, giúp tăng cơ hội nhận thêm vật phẩm khi thu hoạch."
-    info: "+{value} May mắn trồng trọt"
+    name: Обильный урожай
+    desc: Получите +{value} Фермерской Удачи, которая повышает шанс на дополнительный
+      дроп.
+    info: +{value} Фермерской Удачи
   farmer:
-    name: Nông dân
-    desc: "Nhận thêm {value}% XP Thu hoạch."
-    info: "+{value}% XP"
+    name: Фермер
+    desc: Заработайте на {value}% больше опыта в сельском хозяйстве.
+    info: +{value}% ОПЫТ
   scythe_master:
-    name: Bậc thầy lưỡi hái
-    desc: "Tăng {value}% sát thương của cuốc."
-    info: "+{value}% ST Cuốc"
+    name: Мастер косы
+    desc: Увеличивает урон от мотыги на {value}%.
+    info: +{value}% урона мотыги
   geneticist:
-    name: Nhà di truyền học
-    desc: "Tăng độ no nê thêm {value} khi sử dụng đồ ăn từ thực vật."
-    info: "+{value} Độ no nê"
+    name: Генетик
+    desc: Увеличивает насыщение от растительных продуктов на {value}.
+    info: +{value} Насыщенность
   growth_aura:
-    name: Hào quang tăng trưởng
-    desc: "Nông sản đang mọc trong phạm vi {radius} khối xung quanh bạn sẽ phát triển nhanh hơn {value}%."
-    info: "+{value}% Khả năng phát triển"
+    name: Аура взращивания
+    desc: Посадки на стадии роста в радиусе {radius} блоков от вас растут на {value}%
+      быстрее.
+    info: +{value}% роста
   lumberjack:
-    name: Lumberjack
-    desc: "+{value} May mắn chặt gỗ, giúp tăng cơ hội nhận thêm vật phẩm khi chặt gỗ."
-    info: "+{value} May mắn chặt gỗ"
+    name: Лесоруб
+    desc: Получите +{value} Удачи Лесоруба, которая повышает шанс на дополнительный
+      дроп.
+    info: +{value} Удачи Лесоруба
   forager:
-    name: Người hái lượm
-    desc: "Nhận thêm {value}% XP Chặt gỗ."
-    info: "+{value}% XP"
+    name: Лесник
+    desc: Заработайте на {value}% больше XP.
+    info: +{value}% ОПЫТ
   axe_master:
-    name: Bậc thầy múa rìu
-    desc: "Tăng {value}% sát thương của rìu"
-    info: "+{value}% ST Rìu"
+    name: Мастер топора
+    desc: Увеличивает урон от топоров на {value}%
+    info: +{value}% Урон топором
   valor:
-    name: Dũng cảm
-    desc: "+{value} Sức mạnh khi cầm rìu."
-    info: "+{value} Sức mạnh"
+    name: Доблестый
+    desc: Даёт+{value} силы при ношение топора.
+    info: +{value} Сила
   shredder:
-    name: Xé vụn
-    desc: "Có {value}% cơ hội gây mất ba lần độ bền với rìu."
-    info: "{value}% 3x Làm mất độ bền"
+    name: Измельчитель
+    desc: '{value}% шанс нанести тройное повреждение прочности топорами.'
+    info: '{value}% 3x Повреждение прочности'
   lucky_miner:
-    name: Lucky Miner
-    desc: "+{value} May mắn đào mỏ, giúp tăng cơ hội nhận thêm vật phẩm khi đào quặng."
-    info: "+{value} May mắn đào mỏ"
+    name: Удачливый шахтер
+    desc: Получите +{value} Шахтёрской удачи, которая повышает шанс на дополнительный
+      дроп.
+    info: +{value} Шахтерской Удачи
   miner:
-    name: Thợ mỏ
-    desc: "Nhận thêm {value}% XP Khai thác."
-    info: "+{value}% XP"
+    name: Шахтер
+    desc: Заработайте на {value}% больше XP в горном деле.
+    info: +{value}% ОПЫТ
   pick_master:
-    name: Bậc thầy cuốc chim
-    desc: "Tăng {value}% sát thương từ cúp."
-    info: "+{value}% ST Cúp"
+    name: Мастер сбора
+    desc: Нанесете на {value}% больше урона киркой.
+    info: +{value}% Урон от кирки
   stamina:
-    name: Thể lực
-    desc: "+{value} Điểm bền bỉ khi cầm cúp."
-    info: "+{value} Điểm bền bỉ"
+    name: Выносливый
+    desc: Даёт +{value} к выносливости, когда держит кирку.
+    info: +{value} Стойкость
   hardened_armor:
-    name: Giáp cứng
-    desc: "Có {value}% cơ hội không bị giảm độ bền của giáp khi nhận sát thương."
-    info: "{value}% Không giảm độ bền"
+    name: Закаленная броня
+    desc: '{value}% шанс свести на нет прочность повреждений брони.'
+    info: '{value}% Нет потери прочности'
   lucky_catch:
-    name: Đánh bắt bội thu
-    desc: "+{value} May mắn câu cá, giúp tăng cơ hội nhận thêm vật phẩm khi câu cá."
-    info: "+{value} May mắn câu cá"
+    name: Удачный улов
+    desc: Получите +{value} Рыболовной Удачи, которая повышает шанс на дополнительный
+      дроп.
+    info: +{value} Рыболовной Удачи
   fisher:
-    name: Ngư dân
-    desc: "Nhận thêm {value}% XP Câu cá."
-    info: "+{value}% XP"
+    name: Рыбачок
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   treasure_hunter:
-    name: Thợ săn kho báu
-    desc: "{value}% cơ hội tìm được vật phẩm quý hiếm khi câu cá."
-    info: "+{value}% Rơi đồ hiếm"
+    name: Охотник за сокровищами
+    desc: '{value}% выше шанс получить редкую добычу на рыбалке.'
+    info: +{value}% Редкая добыча
   grappler:
-    name: Grappler
-    desc: "Móc thực thể bằng cần câu nhanh hơn {value}%."
-    info: "+{value}% Tốc độ móc"
+    name: Ловец
+    desc: Подцепить улов на {value}% быстрее.
+    info: +{value}% Скорость крючка
   epic_catch:
-    name: Trúng số
-    desc: "Thêm {value}% cơ hội để tìm được đồ cực hiếm từ câu cá."
-    info: "+{value}% Rơi đồ cực hiếm"
+    name: Эпический улов
+    desc: '{value}% добавлен дополнительный шанс получить грандиозную добычу от рыбалки.'
+    info: +{value}% Эпическая добыча
   metal_detector:
-    name: Máy dò kim loại
-    desc: "{value}% cơ hội cao hơn để tìm được vật phẩm quý hiếm khi đào bằng xẻng."
-    info: "+{value}% Rơi đồ hiếm"
+    name: Металлоискатель
+    desc: '{value}% добавлен шанс получить редкую добычу при копании.'
+    info: +{value}% Редкая добыча
   excavator:
-    name: Máy xúc chính hiệu
-    desc: "Nhận thêm {value}% XP Đào bới."
-    info: "+{value}% XP"
+    name: Экскаватор
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   spade_master:
-    name: Đào mộ
-    desc: "Tăng {value}% sát thương từ xẻng."
-    info: "+{value}% ST Xẻng"
+    name: Мастер лопаты
+    desc: Нанесете на {value} больше урона лопатами.
+    info: +{value}% урон лопаты
   bigger_scoop:
-    name: Xúc lớn
-    desc: "+{value} May mắn đào bới, giúp tăng cơ hội nhận thêm vật phẩm khi đào bới bằng xẻng."
-    info: "+{value}% May mắn đào bới"
+    name: Большой совок
+    desc: Получите +{value} Удачи Сельхоза, которая повышает шанс на дополнительный
+      дроп.
+    info: +{value}% Удачи Сельхоза
   lucky_spades:
-    name: Cây xẻng may mắn
-    desc: "{value}% cơ hội cao hơn để tìm được vật phẩm cực hiếm khi đào bới bằng xẻng."
-    info: "+{value}% Rơi đồ cực hiếm"
+    name: Счастливая лопата
+    desc: '{value}% добавил шанс получить грандиозную добычу при копании.'
+    info: +{value}% Эпическая добыча
   retrieval:
-    name: Bồi thường
-    desc: "Mũi tên bạn bắn trượt sẽ được rút lại sau {time} giây trong phạm vi {value} khối."
-    info: "Khoảng cách {value}"
+    name: Подбирание
+    desc: Стрелы, которые пролетели мимо мгновенно возвращаются через {time} секунд
+      в пределах {value} блоков.
+    info: Расстояние {value}
   archer:
-    name: Cung thủ
-    desc: "Nhận thêm {value}% XP Cung thủ."
-    info: "+{value}% XP"
+    name: Робингуд
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   bow_master:
-    name: Cung thủ lão làng
-    desc: "Tăng {value}% sát thương từ cung."
-    info: "+{value}% ST Cung"
+    name: Мастер лука
+    desc: Нанесете на {value}% больше урона луками.
+    info: +{value}% Урон от лука
   piercing:
-    name: Xuyên thủng
-    desc: "Có {value}% cơ hội để mũi tên xuyên qua quái vật."
-    info: "{value}% Xuyên thủng"
+    name: Пронзительный
+    desc: '{value}% шанса для стрел на пробитие мобов.'
+    info: '{value}% Шанс пронзить'
   stun:
-    name: Choáng
-    desc: "{value}% tỉ lệ giảm tốc độ di chuyển của kẻ địch đi 20% trong 2 giây."
-    info: "{value}% Cơ hội làm chậm"
+    name: Оглушить
+    desc: '{value}% шанс снизить скорость передвижения противника на 20% на 2 секунды.'
+    info: '{value}% Шанс оглушения'
   shielding:
-    name: Lá chắn
-    desc: "Giảm {value}% sát thương nhận vào trong khi đi rón rén."
-    info: "-{value}% Sát thương nhận vào khi rón rén"
+    name: Стальная стена
+    desc: Уменьшить входящий урон на {value}% при подкрадывание.
+    info: -{value}% Входящего урона при подкрадывание
   defender:
-    name: Thủ hộ
-    desc: "Nhận thêm {value}% XP Phòng thủ."
-    info: "+{value}% XP"
+    name: Защитник
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   mob_master:
-    name: Thợ săn quái vật
-    desc: "Giảm {value}% sát thương từ quái."
-    info: "-{value}% Sát thương từ quái"
+    name: Мастер мобов
+    desc: Уменьшает входящий урон от мобов на {value}%
+    info: -{value}% урон от мобов
   immunity:
-    name: Miễn nhiễm
-    desc: "Có {value}% cơ hội né đòn đánh của kẻ thù."
-    info: "{value}% Miễn ST"
+    name: Иммунитет
+    desc: '{value}% шанс полностью свести на нет атаку противника.'
+    info: '{value}% Иммунитета'
   no_debuff:
-    name: No Debuff
-    desc: "Có {value}% cơ hội mất đi những hiệu ứng xấu trên người."
-    info: "{value}% Xóa hiệu ứng xấu"
+    name: Без дебаффа
+    desc: '{value}% шанс нейтрализовать вредный эффект зелья от применения.'
+    info: '{value}% Без дебаффа'
   parry:
-    name: Phản kích
-    desc: "Khi vung kiếm trượt trong vòng {time} giây trước khi nhận sát thương sẽ giảm {value}% sát thương nhận vào và không bị bật lùi."
-    info: "Giảm {value}% ST nhận"
-    parried: "<red>Đã đỡ đòn"
+    name: Парирование
+    desc: Встречный удар мечом за {time} секунд до удара соперника снижает урон на
+      {value}% и поглощает отбрасывание.
+    info: '{value}% Уменьшение урона'
+    parried: <red>Атака парирована
   fighter:
-    name: Đấu sĩ
-    desc: "Nhận thêm {value}% XP Chiến đấu."
-    info: "+{value}% XP"
+    name: Истребитель
+    desc: Получишь на {value}% XP Больше.
+    info: +{value}% XP
   sword_master:
-    name: Kiếm sư
-    desc: "Tăng {value}% sát thương từ kiếm."
-    info: "+{value}% Sát thương từ kiếm"
+    name: Мастер меча
+    desc: Нанесете на {value}% больше урона мечами.
+    info: +{value}% Урон от меча
   first_strike:
-    name: Đòn phủ đầu
-    desc: "Tăng {value}% sát thương trong lần đánh đầu."
-    info: "+{value}% ST phát đầu"
-    dealt: "<red>Đã ra đòn phủ đầu!"
+    name: Первый удар
+    desc: Наносит на {value}% больше урона при первом попадании.
+    info: +{value}% Урон от первого удара
+    dealt: <red>Первый удар нанесен!
   bleed:
-    name: Xuất huyết
-    desc: "Có {value}% khả năng làm cho kẻ địch xuất huyết trong {base_ticks} nhịp, mỗi nhịp gây {value_2} ST. Cộng thêm {added_ticks} nhịp cho kẻ địch đang xuất huyết."
-    info: "{value}% Khả năng gây xuất huyết, {value_2} ST"
-    enemy_bleeding: "<red>Kẻ địch xuất huyết!"
-    self_bleeding: "<red>Bạn đang xuất huyết!"
-    stop: "<white>Đã cầm máu"
+    name: Кровоточить
+    desc: '{value}% шанс нанести кровотечение противнику каждые {base_ticks} тика,
+      нанося {value_2} урона за каждый тик. {added_ticks} тиков добавляется к врагам
+      с кровотечением.'
+    info: '{value}% Шанса, {value_2} Урона'
+    enemy_bleeding: <red>Вражеское кровотечение!
+    self_bleeding: <red>У тебя кровотечение!
+    stop: <white>Кровотечение остановилось
   anti_hunger:
-    name: No nê
-    desc: "Có {value}% khả năng dừng quá trình đói."
-    info: "{value}% Không bị đói"
+    name: Против голода
+    desc: '{value}% шанс остановить голод.'
+    info: '{value}% Нет потери голода'
   runner:
-    name: Runner
-    desc: "Nhận thêm {value}% XP Bền bỉ."
-    info: "+{value}% XP"
+    name: Бегун
+    desc: Получишь на {value} XP больше.
+    info: +{value}% XP
   golden_heal:
-    name: Golden Heal
-    desc: "Tăng {value}% hiệu ứng hồi phục."
-    info: "+{value}% Hiệu ứng hồi máu"
+    name: Золотое исцеление
+    desc: Увеличивает эффект регенерации здоровья на {value}%
+    info: +{value}% Регенерация эффекта
   recovery:
-    name: Hồi phục
-    desc: "Tăng {value}% khả năng hồi phục tự nhiên khi HP dưới 50%."
-    info: "+{value}% Hồi máu dưới 50%"
+    name: Регенерация эффекта
+    desc: Увеличивает естественную регенерацию, когда имеет менее половины здоровья
+      на {value}%
+    info: +{value}% Низкая регенерация HP
   meal_steal:
-    name: Háu ăn
-    desc: "Có {value}% cơ hội cướp đi 1 điểm thức ăn khi tấn công một người chơi."
-    info: "{value}% Cướp điểm thức ăn"
+    name: Кража еды
+    desc: '{value}% шанс украсть 1 очко голода при атаке игрока.'
+    info: '{value}% Голодная кража'
   light_fall:
-    name: Tựa như lông
-    desc: "Giảm {value}% ST rơi."
-    info: "-{value}% ST rơi"
+    name: Легкое падение
+    desc: Уменьшает весь урон от падения на {value}%
+    info: -{value}% Повреждение при падении
   jumper:
-    name: Nhảy cao
-    desc: "Nhận thêm {value}% XP Nhanh nhẹn."
-    info: "+{value}% XP"
+    name: Прыгун
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   sugar_rush:
-    name: Nạp đường
-    desc: "Thuốc chạy nhanh và nhảy cao kéo dài lâu hơn {value}%."
-    info: "{value}% Kéo dài hiệu ứng"
+    name: Сахарная лихорадка
+    desc: Израсходованная и разбросанная скорость и ускорение прыжка зелий действуют
+      на {value}% дольше.
+    info: '{value}% Более длинная скорость'
   fleeting:
-    name: Gió lướt
-    desc: "Nhận thêm {value}% Tốc độ khi máu dưới 20%."
-    info: "+{value}% Tốc độ"
-    start: "<white>Bạn đã được tăng tốc độ di chuyển! <#cccccc>(+{value}% Tốc độ)"
-    end: "<#cccccc>Tăng tốc độ di chuyển đã hết"
+    name: Мимолетный
+    desc: Прирост +{value}% скорости передвижения при уровне здоровья ниже 20%.
+    info: +{value}% Скорость
+    start: <white>Вы получили мгновенный прирост скорости! <#cccccc>(+{value}% Скорости)
+    end: <#cccccc>Мимолетный прирост скорости закончился
   thunder_fall:
-    name: Chấn động
-    desc: "Khi ấn Shift trong lúc rơi, bạn có {value}% khả năng gây ra {value_2}% ST từ cú rơi cho quái vật trong phạm vi 3 khối."
-    info: "{value}% Tỉ lệ, {value_2}% Sát thương"
+    name: Гром Падение
+    desc: Когда вы крадетесь во время падения, у вас есть {value}% шанса нанести {value_2}%
+      ожидаемого урона от падения по мобам в радиусе 3 блоков.
+    info: '{value}% Шанса, {value_2}% Урона'
   alchemist:
-    name: Dược sĩ
-    desc: "Thuốc bạn chế sẽ có thời gian kéo dài thêm {value}%."
-    info: "+{value}% Thời gian của thuốc"
+    name: Алхимик
+    desc: Зелья, которые вы варите, имеют на {value}% больше продолжительность действия.
+    info: +{value}% Срок действия зелья
   brewer:
-    name: Người pha chế
-    desc: "Nhận thêm {value}% XP Điều chế."
-    info: "+{value}% XP"
+    name: Пивовар
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   splasher:
-    name: Bắn tùm lum
-    desc: "Lọ thuốc bạn ném được tăng {value}% thời lượng cho mỗi người chơi chịu phải."
-    info: "+{value}% Thời lượng/Người chơi"
+    name: Сплешер
+    desc: Зелья, которые вы выплескиваете, увеличивают на {value}% долше продолжительность
+      для каждого затронутого игрока.
+    info: +{value}% Продолжительность / Игрок
   lingering:
-    name: Kéo dài
-    desc: "Thuốc kéo biến mất chậm hơn {value}% trong tự nhiên và biến mất {value_2}% ít hơn cho mỗi thực thể bị ảnh hưởng."
-    info: "-{value}% Tự nhiên, -{value_2}% Phân rã của thực thể"
+    name: Затяжной
+    desc: Затяжные зелья естественным образом разлагаются на {value}% медленнее и
+      на {value_2}% меньше на каждую пораженную сущность.
+    info: -{value}% Естественный, -{value_2}% Распад сущности
   wise_effect:
-    name: Sáng suốt
-    desc: "Nhận {value} Trí khôn với mỗi loại hiệu ứng riêng biệt."
-    info: "+{value} Trí khôn/Hiệu ứng"
+    name: Мудрый эффект
+    desc: Получите {value} мудрости за каждый активный уникальный эффект зелья.
+    info: +{value} Мудрость/Эффект
   xp_convert:
-    name: Chuyển hoá XP
-    desc: "Nhận 1 điểm thanh kinh nghiệm cho mỗi {value} XP kĩ năng đạt được."
-    info: "1 Kinh nghiệm/{value} XP Kĩ năng"
+    name: Конвертировать XP
+    desc: Зарабатывайте 1 опыт Minecraft за каждые {value} XP, которые вы получаете.
+    info: 1 EXP/{value} Опыт навыков
   enchanter:
-    name: Phù phép
-    desc: "Nhận thêm {value}% XP Phù phép."
-    info: "+{value}% XP"
+    name: Чародей
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   xp_warrior:
-    name: Chiến binh dày dặn
-    desc: "Quái bạn giết có {value}% cơ hội rớt x2 kinh nghiệm."
-    info: "{value}% x2 Kinh nghiệm giết quái"
+    name: XP Воин
+    desc: У убитых вами мобов есть {value}% шанс выдать двойной опыт.
+    info: '{value}% 2x XP'
   enchanted_strength:
-    name: Chơi đồ
-    desc: "Nhận {value} Sức mạnh cho mỗi phù phép của món bạn cầm trên tay."
-    info: "{value} Sức mạnh/Phù phép"
+    name: Зачарованная сила
+    desc: Получите {value} силы за каждое уникальное зачарование на предмете.
+    info: '{value} Сила/Чары'
   lucky_table:
-    name: Bàn may mắn
-    desc: "Vật phẩm bạn phù phép bằng bàn phù phép có {value}% cơ hội thăng 1 cấp độ nếu chưa đạt cấp độ tối đa."
-    info: "{value}% Cơ hội nâng cấp cường hóa"
+    name: Счастливый стол
+    desc: Предметы, которые вы зачаровываете с помощью таблицы чар имееют {value}%
+      шанс повысить уровень чар на 1, если не на максимальный уровень.
+    info: '{value}% Шанс улучшения для чар'
   life_essence:
-    name: Sức sống
-    desc: Thuốc hồi máu tức thì hồi thêm {value}% HP.
-    info: "+{value}% Hồi máu tức thì"
+    name: Сущность Жизни
+    desc: Мгновенные зелья здоровья исцеляют на {value}% больше.
+    info: +{value}% Мгновенное здоровье
   healer:
-    name: Healer
-    desc: Nhận thêm {value}% XP Hồi máu.
-    info: "+{value}% XP"
+    name: Целитель
+    desc: Получишь на {value}% XP больше.
+    info: +{value}% XP
   life_steal:
-    name: Life Steal
-    desc: Hồi {value}% HP tối đa của con quái hay người chơi mà bạn giết.
-    info: "Cướp {value}% HP tối đa"
+    name: Кража жизни
+    desc: Исцелить {value}% от максимального запаса здоровья враждебных мобов и убитых
+      вами игроков.
+    info: Украсть {value}% HP
   golden_heart:
-    name: Trái tim Vàng
-    desc: Sát thương ảnh hưởng đến tim vàng được giảm {value}%
-    info: "-{value}% Sát thương đến tim vàng"
+    name: Золотое сердце
+    desc: Урон, нанесенный вашим поглощенным сердцам уменьшен на {value}%
+    info: -{value}% Поглощение УРОНА
   revival:
-    name: Hồi sinh
-    desc: Nhận +{value} HP và +{value_2} Hồi phục trong 30 giây sau khi hồi sinh.
-    info: "+{value} HP, +{value_2} Hồi HP"
-    message: "<white>Bạn nhận được đặc quyền hồi sinh trong 30 giây! <white>(<red>+{value} Máu, <gold>+{value_2} Hồi phục<white>)"
+    name: Возрождение
+    desc: Получите +{value} Здоровье и +{value_2} Регенерацию на 30 секунд после возрождения.
+    info: +{value} Здоровье, +{value_2} Регенерация
+    message: <white>Вы получили бонус к возрождению на 30 секунд! <white>(<red>+{value}
+      Здоровье, <gold>+{value_2} Регенерация<white>)
   disenchanter:
-    name: Người giải phép
-    desc: Tăng {value}% XP nhận được khi sử dụng bàn mài để tách phù phép.
-    info: "+{value}% XP từ bàn mài"
+    name: Разочарователь
+    desc: Получите на {value}% больше опыта, распыляя предметы с помощью точильного
+      камня.
+    info: +{value}% Точильный камень EXP
   forger:
-    name: Thợ rèn
-    desc: Nhận thêm {value}% XP Thợ rèn.
-    info: "+{value}% XP"
+    name: Фальсификатор
+    desc: Получите {value}% XP больше.
+    info: +{value}% XP
   repairing:
-    name: Sửa chữa
-    desc: Hồi thêm {value}% độ bền cho vật phẩm khi dùng vật liệu thô để sửa bằng đe.
-    info: "+{value}% Độ bền"
+    name: Ремонт
+    desc: Ремонт предметов с использованием сырья из которого он сделан добавляеет
+      {value}% прочности.
+    info: +{value}% Ремонт наковальни
   anvil_master:
-    name: Bậc thầy đe
-    desc: Tăng chi phí sửa chữa tối đa của đe trước khi nó quá đắt thành {value} XP.
-    info: "{value} XP tối đa"
+    name: Мастер наковальни
+    desc: Увеличивает максимальную стоимость ремонта наковальни пока она не станет
+      слишком дорогой до {value} опыта.
+    info: '{value} Макс. Стоимость'
   skill_mender:
-    name: Sửa chữa
-    desc: Có {value}% khả năng giúp hồi 1 Độ bền/2 XP Kĩ năng cho vật phẩm đang cầm hoặc giáp đang trang bị có phù phép Sửa chữa.
-    info: "{value}% Cơ hội sửa chữa"
+    name: Мастер восстановления
+    desc: Получение опыта навыков дает {value}% шанс отремонтировать удерживаемый
+      предмет или изношенную часть брони с помощью чар лечения на 1 прочность за каждые
+      2 опыта навыков.
+    info: '{value}% Исправить шанс'
 acf:
   core:
-    permission_denied: "<red>Xin lỗi, nhưng bạn không có quyền để sử dụng lệnh này."
-    permission_denied_parameter: "<red>Xin lỗi, nhưng bạn không có quyền để sử dụng lệnh này."
-    error_generic_logged: "<red>Có lỗi xảy ra. Vui lòng kiểm tra file log. Xin lỗi vì bất tiện."
-    unknown_command: "<red>Lệnh không khả dụng, vui lòng nhập <yellow>/sk help <red> để được trợ giúp"
-    invalid_syntax: "<yellow>Cách dùng: <yellow>{command} <green>{syntax}"
-    error_prefix: "<red>Lỗi: {message}"
-    error_performing_command: "<red> Đã xảy ra lỗi khi bạn dùng câu lệnh này."
-    please_specify_one_of: "<red>Lỗi: Hãy cụ thể hóa một trong những cái (<yellow>{valid}<red>)"
-    must_be_a_number: "<red>Lỗi: {num} phải là một số."
-    must_be_min_length: "<red>Lỗi: Cần ít nhất {min} kí tự."
-    must_be_max_length: "<red>Lỗi: Nhiều nhất là {max} kí tự."
-    please_specify_at_most: "<red>Lỗi: Vui lòng chỉ định một giá trị tối đa {max}."
-    please_specify_at_least: "<red>Lỗi: Vui lòng chỉ định một giá trị tối thiểu {min}."
-    not_allowed_on_console: "<red>Lỗi: Không thể thực thi lệnh này trong bảng điều khiển."
-    could_not_find_player: "<red>Lỗi: Không thể tìm thấy người chơi có tên: <yellow>{search}"
-    no_command_matched_search: "<red>Không lệnh khả dụng với <yellow>{search}."
-    help_page_information: "<aqua> - Hiển thị trang <green>{page}<aqua>trên <green>{totalpages}<aqua>(<yellow>{results}<aqua> kết quả)."
-    help_no_results: "<aqua>Lỗi: Không có kết quả."
-    help_header: "<yellow>=== <aqua>Hiển thị trợ giúp cho <green>{commandprefix}{command}<yellow> ==="
-    help_detailed_header: "<yellow>=== <aqua>Hiện thị trợ giúp cụ thể cho <green>{commandprefix}{command}<yellow> ==="
-    help_search_header: "<yellow>=== <aqua>Kết quả tìm kiếm cho <green>{commandprefix}{command} {search}<yellow> ==="
+    permission_denied: <red>Извините, но у вас нет разрешения на выполнение этой команды.
+    permission_denied_parameter: <red>Извините, но у вас нет разрешения на выполнение
+      этой команды.
+    error_generic_logged: <red>Произошла ошибка. Эта проблема была зарегистрирована.
+      Извините за причиненные неудобства.
+    unknown_command: <red>Неизвестная команда, введите <yellow>/sk help
+    invalid_syntax: '<yellow>Используйте: <yellow>{command} <green>{syntax}'
+    error_prefix: '<red>Ошибка: {message}'
+    error_performing_command: <red>Извините, но при выполнении этой команды произошла
+      ошибка.
+    please_specify_one_of: '<red>Ошибка: Укажите одно из (<yellow>{valid}<red>)'
+    must_be_a_number: '<red>Ошибка: {num} должен быть числом.'
+    must_be_min_length: '<red>Ошибка: Должно быть не менее {min}.'
+    must_be_max_length: '<red>Ошибка: Должно быть не более {max}.'
+    please_specify_at_most: '<red>Ошибка: Укажите значение не более {max}.'
+    please_specify_at_least: '<red>Ошибка: Укажите значение не менее {min}.'
+    not_allowed_on_console: '<red>Ошибка: Консоль может не выполнять эту команду.'
+    could_not_find_player: '<red>Ошибка: Не удалось найти игрока по названию: <yellow>{search}'
+    no_command_matched_search: <red>Ни одна команда не найдена <yellow>{search}.
+    help_page_information: <aqua> - Показаны страницы <green>{page} <aqua>из <green>{totalpages}
+      <aqua>(<yellow>{results}<aqua> результатов).
+    help_no_results: '<aqua>Ошибка: Больше нет результатов.'
+    help_header: <yellow>=== <aqua>Отображение справки для <green>{commandprefix}{command}<yellow>
+      ===
+    help_detailed_header: <yellow>=== <aqua>Показана подробная справка для <green>{commandprefix}{command}<yellow>
+      ===
+    help_search_header: <yellow>=== <aqua>Результаты поиска для <green>{commandprefix}{command}
+      {search}<yellow> ===
   minecraft:
-    invalid_world: "<red>Lỗi: Thế giới này không tồn tại."
-    you_must_be_holding_item: "<red>Lỗi: Bạn phải cầm một vật phẩm trên tay."
-    player_is_vanished_confirm: "<yellow>Cảnh báo: <green>{vanished} <yellow>đã vào chế độ ngoại tuyến. Đừng cố gắng liên hệ với họ\n<yellow>Để xác nhận hãy ấn <green>:confirm <yellow>evào cuối tên của bạn.\n<yellow> dụ: {vanished}:confirm"
-    username_too_short: "<red>Lỗi: Tên quá ngắn, cần ít nhất 3 kí tự."
-    is_not_a_valid_name: "<red>Lỗi: <yellow>{name} <red>không phải là một tên hợp lệ."
-    multiple_players_match: "<red>Lỗi: Quá nhiều người chơi phù hợp <aqua>{search} <yellow>({all})<red>, vui lòng chi tiết hơn."
-    no_player_found_server: "<red>Không người chơi phù hợp với <yellow>{search} <red>đang kết nối với máy chủ."
-    no_player_found_offline: "<red>Không người chơi phù hợp <yellow>{search}<red> có thể được tìm thấy."
-    no_player_found: "<red>Không người chơi phù hợp với <yellow>{search}<red> có thể được tìm thấy."
-    location_please_specify_world: "<red>Lỗi: Vui lòng đưa ra thế giới cụ thể. Ví dụ: <yellow>world:x,y,z."
-    location_please_specify_xyz: "<red>Lỗi: Vui lòng nhập tọa độ x, y, và z. Ví dụ: <yellow>world:x,y,z."
-    location_console_not_relative: "<red>Lỗi: Bảng điều khiển có thể xác định không chính xác tọa độ của người chơi."
+    invalid_world: '<red>Ошибка: Этого мира не существует.'
+    you_must_be_holding_item: '<red>Ошибка: Вы должны держать предмет в основной руке.'
+    player_is_vanished_confirm: |-
+      <yellow>Внимание: <green>{vanished} <yellow>исчез. Не разрушайте их прикрытие!
+      <yellow>Чтобы подтвердить свое действие, добавьте <green>:confirm <yellow>подтверждение в конце их имени.
+      <yellow>Ex: {vanished}:confirm
+    username_too_short: '<red>Ошибка: Имя пользователя слишком короткое, должно содержать
+      не менее трех символов.'
+    is_not_a_valid_name: '<red>Ошибка: <yellow>{name} <red>не действительное имя пользователя.'
+    multiple_players_match: '<red>Ошибка: Совпадение нескольких игроков <aqua>{search}
+      <yellow>({all})<red>, просьба уточнить.'
+    no_player_found_server: <red>Не один игрок не подключен <yellow>{search} <red>к
+      этому серверу.
+    no_player_found_offline: <red>Соответствующий игрок <yellow>{search}<red> не найден.
+    no_player_found: <red>Соответствующий игрок <yellow>{search}<red> не найден.
+    location_please_specify_world: '<red>Ошибка: Укажите мир. Пример: <yellow>world:x,y,z.'
+    location_please_specify_xyz: '<red>Ошибка: Укажите координаты x, y, и z. Пример:
+      <yellow>world:x,y,z.'
+    location_console_not_relative: '<red>Ошибка: Консоль не может использовать относительные
+      координаты для определения местоположения.'
 commands:
-  prefix: "<dark_#83ca16>[<aqua>Khả năng<dark_#83ca16>]<reset> "
+  prefix: '<dark_#83ca16>[<aqua>Навыки<dark_#83ca16>] '
   armor:
     modifier:
       add:
-        added: "<#cccccc>Nâng cấp {color}{stat} <#cccccc>với cấp độ <aqua>{value} <#cccccc>đã được thêm vào vật phẩm của bạn"
-        already_exists: "<yellow>Nâng cấp cho giáp với chỉ số {color}{stat} <yellow>đã có trên giáp của bạn! Hãy gỡ nó trước với lệnh /sk armor modifier remove"
+        added: '{color}{stat} <#cccccc>модификатор с уровнем <aqua>{value} <#cccccc>был
+          добавлен к вашему элементу'
+        already_exists: <yellow>Модификатор брони со статистикой {color}{stat} <yellow>уже
+          существует на вашей броне! Сначала удалите его с помощью модификатора брони
+          /sk armor modifier remove
       remove:
-        does_not_exist: "<yellow>Vật phẩm của bạn không có nâng cấp {color}{stat} <yellow>!"
-        removed: "<#cccccc>Nâng cấp {color}{stat} đã được gỡ"
+        does_not_exist: <yellow>Ваш товар не имеет {color}{stat} <yellow>и модификатора!
+        removed: '{color}{stat} <#cccccc>модификатор был удален из вашего предмета'
       list:
-        header: "<white>Đã tìm thấy nâng cấp của giáp:"
+        header: '<white>Найдены модификаторы брони:'
       removeall:
-        removed: "<#cccccc>Tất cả nâng cấp đã được gỡ"
+        removed: <#cccccc>Все модификаторы брони были удалены с вашего предмета
     multiplier:
       add:
-        added: "<#cccccc>Chỉ số cộng thêm <aqua>{target} <#cccccc>với giá trị <aqua>{value} <#cccccc>đã được thêm"
-        already_exists: "<yellow>Chỉ số cộng thêm <aqua>{target} <yellow>đã có trên giáp của bạn! Hãy gỡ nó trước với lệnh /sk armor multiplier remove"
-        skill_lore: "<#cccccc>Khi mặc: <aqua>+{value}% XP {skill}"
-        skill_lore_subtract: "<#cccccc>Khi mặc: <aqua>-{value}% XP {skill}"
-        global_lore: "<#cccccc>Khi mặc: <blue>+{value}% XP Khả năng"
-        global_lore_subtract: "<#cccccc>Khi mặc: <blue>-{value}% XP Khả năng"
+        added: <aqua>{target} <#cccccc>Модификатор с уровнем <aqua>{value} <#cccccc>был
+          добавлен к вашему предмету
+        already_exists: <yellow>Модификатор брони со статистикой <aqua>{target} <yellow>уже
+          существует на вашей броне! Сначала удалите его с помощью модификатора брони
+          /sk armor multiplier remove
+        skill_lore: '<#cccccc>Когда надето: <aqua>+{value}% {skill} XP'
+        skill_lore_subtract: '<#cccccc>Когда надето: <aqua>+{value}% {skill} XP'
+        global_lore: '<#cccccc>Когда надето: <blue>+{value}% опыта'
+        global_lore_subtract: '<#cccccc>Когда надето: <blue>-{value}% опыта'
       remove:
-        does_not_exist: "<yellow>Vật phẩm của bạn không có chỉ số <aqua>{target} <yellow>cộng thêm!"
-        removed: "<#cccccc>Chỉ số <aqua>{target} <#cccccc>cộng thêm đã được gỡ khỏi giáp của bạn"
+        does_not_exist: <yellow>У вашего предмета нет <aqua>{target}<yellow> требований
+          к броне!
+        removed: <aqua>{target} <#cccccc>модификатор был удален из вашего предмета
       list:
-        header: "<white>Chỉ số giáp cộng thêm đã được tìm thấy:"
+        header: '<white>Найдены модификаторы предметов:'
       removeall:
-        removed: "<#cccccc>Tất cả chỉ số giáp cộng thêm đã được gỡ"
+        removed: <#cccccc>Все модификаторы предметов удалены из вашего предмета
     requirement:
       add:
-        added: "<#cccccc>Yêu cầu giáp <dark_aqua>{skill} <#cccccc>với cấp <aqua>{level}<#cccccc> đã được thêm"
-        already_exists: "<yellow>Vật phẩm đã có yêu cầu giáp <dark_aqua>{skill}<yellow>! Hãy gỡ nó trước với lệnh <gold>/sk armor requirement remove"
-        lore: "<red>Yêu cầu <dark_aqua>{skill} {level}"
+        added: <dark_aqua>{skill}<#cccccc> Требование брони с уровнем <aqua>{level}<#cccccc>
+          было добавлено к вашему предмету
+        already_exists: <yellow>Предмет уже требует <dark_aqua>{skill}<yellow> брони!
+          Сначала удалите его с помощью <gold>/sk armor requirement remove
+        lore: <red>Требует <dark_aqua>{skill} {level}
       remove:
-        does_not_exist: "<yellow>Vật phẩm của bạn không có yêu cầu giáp <dark_aqua>{skill}<yellow>!"
-        removed: "<#cccccc>Yêu cầu giáp <dark_aqua>{skill} <#cccccc>đã được gỡ"
+        does_not_exist: <yellow>У вашего предмета нет <dark_aqua>{skill}<yellow> требований
+          к броне!
+        removed: <dark_aqua>{skill}<#cccccc> требование брони было снято с вашего
+          предмета
       list:
-        header: "<white>Yêu cầu giáp đã được tìm thấy:"
+        header: '<white>Найдены требования к броне:'
       removeall:
-        removed: "<#cccccc>Tất cả yêu cầu giáp đã được gỡ"
-      equip: "<yellow>Bạn không đủ điều kiện để trang bị vật phẩm này: {requirements}"
+        removed: <#cccccc>С вашего предмета удалены все требования к броне
+      equip: '<yellow>Вы не соответствуете требованиям для экипировки этого предмета:
+        {requirements}'
+    trait:
+      add:
+        already_exists: <yellow>Модификатор брони со статистикой {trait} <yellow>уже
+          существует на вашей броне! Сначала удалите его с помощью модификатора брони
+          /sk armor modifier remove
   backup:
     load:
-      confirm: "<red>Việc áp dụng sao lưu bây giờ sẽ trả lại toàn bộ dữ liêu về Kĩ năng của người chơi dựa vào bản sao lưu đó. Điều này gây ảnh hưởng vĩnh viễn và không thể quay trở lại. Bạn có thể lưu một bản sao lưu ngay bây giờ nếu cần. Nhập lại lệnh để xác nhận áp dụng sao lưu."
-      loading: "<white>Đang áp dụng sao lưu..."
-      loaded: "<green>Đã áp dụng sao lưu"
-      error: "<red>Lỗi khi áp dụng sao lưu: {error}"
-      must_be_yaml: "<yellow>Phải là một tệp .yml !"
-      file_not_found: "<yellow>Bản sao lưu cho tệp này không có trong thư mục sao lưu!"
+      confirm: <red>Загрузка резервной копии вернет все данные о навыках игроков.
+        Это действие окончательно и не может быть отменено. Вы можете создать резервную
+        копию перед загрузкой. Введите команду еще раз, чтобы подтвердить это действие
+      loading: <white>Загрузка резервной копии...
+      loaded: <green>Резервная копия успешно загружена
+      error: '<red>Ошибка при загрузке резервной копии: {error}'
+      must_be_yaml: <yellow>Файл должен быть в формате .yml!
+      file_not_found: <yellow>Резервная копия этого файла не существует в папке резервных
+        копий!
     save:
-      saving: "<white>Đang lưu sao lưu..."
-      saved: "<white>Đã sao lưu dữ liệu {type} dưới dạng {file}"
-      error: "<red>Lỗi khi sao lưu dữ liệu {type}! Xem lỗi trên bảng điều khiển/các dòng dưới để xem chi tiết"
+      saving: <white>Сохранение резервной копии...
+      saved: <white>Резервное копирование {type} данных как {file}
+      error: <red>Ошибка резервного копирования данных {type}! Смотрите ошибки в консоли
+        / ниже для подробностей
   claimitems:
-    no_items: "<yellow>Bạn không có vật phẩm để nhận"
+    no_items: <yellow>У вас нет элементов для сбора
   item:
     give:
-      sender: "<white>Đã đưa <aqua>{amount}x {key} <white>cho {player}"
-      receiver: "<white>Bạn đã nhận <aqua>{amount}x {key}"
+      sender: <white>Выдано <aqua>{amount}x {key} <white>игроку {player}
+      receiver: <white>Вам дали <aqua>{amount}x {key}
     modifier:
       add:
-        added: "<#cccccc>Nâng cấp {color}{stat} <#cccccc>với cấp <aqua>{value} <#cccccc>đã được thêm"
-        already_exists: "<yellow>Nâng cấp với chỉ số của {color}{stat} <yellow>đã có trên giáp của bạn! Hãy gỡ nó trước với lệnh /sk item modifier remove"
+        added: '{color}{stat} <#cccccc>модификатор с уровнем <aqua>{value} <#cccccc>был
+          добавлен в ваш товар'
+        already_exists: <yellow>Модификатор предмета со статистикой {color}{stat}
+          <yellow>уже есть на вашей броне! Сначала удалите его с помощью /sk item
+          modifier remove
       remove:
-        does_not_exist: "<yellow>Vật phẩm của bạn không có nâng cấp {color}{stat}<yellow>!"
-        removed: "<#cccccc>Nâng cấp {color}{stat} đã được gỡ"
+        does_not_exist: <yellow>У вашего товара нет {color}{stat} <yellow>модификатора!
+        removed: '{color}{stat} <#cccccc>модификатор был удален из вашего предмета'
       list:
-        header: "<white>Nâng cấp vật phẩm đã được tìm thấy:"
+        header: '<white>Найдены модификаторы предметов:'
       removeall:
-        removed: "<#cccccc>Tất cả nâng cấp đã được gỡ"
+        removed: <#cccccc>Все модификаторы предметов удалены из вашего предмета
     multiplier:
       add:
-        added: "<#cccccc>Chỉ số cộng thêm <aqua>{target} <#cccccc>với giá trị <aqua>{value} <#cccccc>đã được thêm"
-        already_exists: "<yellow>Chỉ số cộng thêm <aqua>{target} <yellow>đã có trên vật phẩm của bạn! Hãy gỡ nó trước với lệnh /sk item multiplier remove"
-        skill_lore: "<#cccccc>Khi cầm: <aqua>+{value}% XP {skill}"
-        skill_lore_subtract: "<#cccccc>Khi cầm: <aqua>-{value}% {skill} XP"
-        global_lore: "<#cccccc>Khi cầm: <blue>+{value}% XP Kĩ năng"
-        global_lore_subtract: "<#cccccc>Khi cầm: <blue>-{value}% XP Kĩ năng"
+        added: <aqua>{target} <#cccccc>Модификатор с уровнем <aqua>{value} <#cccccc>был
+          добавлен к вашему предмету
+        already_exists: <yellow>Модификатор предмета со статистикой <aqua>{target}
+          <yellow>уже есть на вашей броне! Сначала удалите его с помощью /sk item
+          modifier remove
+        skill_lore: '<#cccccc>Когда надето: <aqua>+{value}% {skill} XP'
+        skill_lore_subtract: '<#cccccc>Когда надето: <aqua>+{value}% {skill} XP'
+        global_lore: '<#cccccc>Когда в руке: <blue>+{value}% опыта'
+        global_lore_subtract: '<#cccccc>Когда надето: <blue>-{value}% опыта умения'
       remove:
-        does_not_exist: "<yellow>Vật phẩm của bạn không có chỉ số <aqua>{target} <yellow>cộng thêm!"
-        removed: "<#cccccc>Chỉ số <aqua>{target} <#cccccc>cộng thêm đã được gỡ"
+        does_not_exist: <yellow>У вашего предмета нет <aqua>{target}<yellow> требований
+          к броне!
+        removed: <aqua>{target} <#cccccc>модификатор был удален из вашего предмета
       list:
-        header: "<white>Chỉ số cộng thêm đã được tìm thấy:"
+        header: '<white>Найдены модификаторы предметов:'
       removeall:
-        removed: "<#cccccc>Toàn bộ chỉ số cộng thêm đã được gỡ khỏi vật phẩm của bạn"
+        removed: <#cccccc>Все модификаторы предметов удалены из вашего предмета
     register:
-      registered: "<white>Đã đăng kí vật phẩm đang cầm thành chìa khoá {key}"
-      already_registered: "<yellow>Đã có vật phẩm được đăng kí thành chìa khoá <white>{key}<yellow>, dùng lệnh <white>/skills item unregister <yellow>để huỷ nó trước"
-      no_spaces: "<yellow>Tên chìa khoá không được có khoảng cách!"
+      registered: <white>Зарегистрирован элемент на ключ {key}
+      already_registered: <yellow>Уже есть элемент, зарегистрированный для ключа <white>{key}<yellow>,
+        используйте <white>/skills item unregister <yellow>сначала
+      no_spaces: <yellow>Ключ элемента не может содержать пробелов!
     requirement:
       add:
-        added: "<#cccccc>Yêu cầu <dark_aqua>{skill} <#cccccc>với cấp <aqua>{level}<#cccccc> đã được thêm"
-        already_exists: "<yellow>Vật phẩm đã có yêu cầu <dark_aqua>{skill}<yellow>! Hãy gỡ nó trước với lệnh <gold>/sk item requirement remove"
-        lore: "<red>Yêu cầu <dark_aqua>{skill} {level}"
+        added: <dark_aqua>{skill}<#cccccc> требование к предмету с уровнем <aqua>{level}<#cccccc>
+          было добавлено к вашему предмету
+        already_exists: <yellow>У предмета уже есть <dark_aqua>{skill}<yellow> требование!
+          Сначала удалите его с помощью <gold>/sk item requirement remove
+        lore: <red>Требует <dark_aqua>{skill} {level}
       remove:
-        does_not_exist: "<yellow>Vật phẩm của bạn không có yêu cầu <dark_aqua>{skill}<yellow>!"
-        removed: "<#cccccc>Yêu cầu <dark_aqua>{skill} <#cccccc>đã được gỡ"
+        does_not_exist: <yellow>Ваш товар не соответствует требованиям <dark_aqua>{skill}<yellow>!
+        removed: <dark_aqua>{skill}<#cccccc> требование элемента было удалено из вашего
+          элемента
       list:
-        header: "<white>Yêu cầu vật phẩm được tìm thấy:"
+        header: '<white>Найдены требования к предмету:'
       removeall:
-        removed: "<#cccccc>Tất cả các yêu cầu về vật phẩm đã được gỡ khỏi vật phẩm của bạn"
-      use: "<yellow>Bạn không đủ điều kiện để dùng vật phẩm này: {requirements}"
+        removed: <#cccccc>Все требования к предмету были удалены из вашего предмета
+      use: '<yellow>Вы не соответствуете требованиям для использования этого предмета:
+        {requirements}'
     unregister:
-      unregistered: "<white>Đã huỷ đăng kí vật phẩm có chìa khoá {key}"
-      not_registered: "<yellow>Không có vật phẩm đăng kí thành chìa khoá {key}"
+      unregistered: <white>Незарегистрированный элемент с ключом {key}
+      not_registered: <yellow>Нет элемента с ключом {key}
+    trait:
+      add:
+        already_exists: <yellow>Модификатор предмета со статистикой {trait} <yellow>уже
+          есть на вашем предмете! Сначала удалите его с помощью /sk item modifier
+          remove
+    ignore:
+      add: <#cccccc>Ваша вещь больше не будет игнорироваться взаимодействием маны
+      remove: <#cccccc>Ваша вещь больше не будет игнорироваться взаимодействием мана
   lang:
-    set: "<#cccccc>Ngôn ngữ đã đặt thành <aqua>{lang}"
-    not_found: "<yellow>Không tìm thấy ngôn ngữ này!"
+    set: <#cccccc>Язык установлен на <aqua>{lang}
+    not_found: <yellow>Язык не найден!
   mana:
-    display: "<white>{mana_unit} của bạn: <aqua>{current}/{max}"
-    display_other: "<white>{mana_unit} của {player}: <aqua>{current}/{max}"
-    add: "<#cccccc>Đã thêm <aqua>{amount} {mana_unit} <#cccccc>cho <gold>{player}"
-    remove: "<#cccccc>Đã xóa bỏ <aqua>{amount} {mana_unit} <#cccccc>từ <gold>{player}"
-    set: "<#cccccc>Đã đặt <gold>{player} <#cccccc> thành <aqua>{amount} {mana_unit}"
-    at_least_zero: "<yellow>{mana_unit} tối thiểu là 0!"
-    console_specify_player: "<yellow>Bảng điều khiển phải chỉ định một người chơi!"
+    display: '<white>Ваш {mana_unit}: <aqua>{current}/{max}'
+    display_other: '<white>{mana_unit} из {player}: <aqua>{current}/{max}'
+    add: <#cccccc>Добавлен <aqua>{amount} {mana_unit} <#cccccc>для <gold>{player}
+    remove: <#cccccc>Удалено <aqua>{amount} {mana_unit} <#cccccc>от <gold>{player}
+    set: <#cccccc>Установить <gold>{player} <#cccccc>на <aqua>{amount} {mana_unit}
+    at_least_zero: <yellow>{mana_unit}должно быть не меньше нуля!
+    console_specify_player: <yellow>В консоли должен быть указан игрок!
   modifier:
     add:
-      added: "<#cccccc>Nâng cấp {color}{stat} <#cccccc>cấp <aqua>{value} <#cccccc>tên <white>{name} <#cccccc>đã được thêm cho <gold>{player}"
-      already_exists: "<yellow>Nâng cấp tên {name} đã tồn tại trên <gold>{player}<yellow>! Hãy gỡ nó trước với lệnh <gold>/sk modifier remove {player} {name}"
+      added: '{color}{stat} <#cccccc>уровень скилла <aqua>{value} <#cccccc>с именем
+        <white>{name} <#cccccc>добавлено игроку <gold>{player}'
+      already_exists: <yellow>Модификатор с именем {name} уже существует на <gold>{player}<yellow>!
+        Удалите его с помощью <gold>/sk modifier remove {player} {name}
     remove:
-      not_found: "<yellow>Nâng cấp {name} không được tìm thấy ở <gold>{player}"
-      removed: "<#cccccc>Đã gỡ nâng cấp <white>{name} <#cccccc>khỏi <gold>{player}"
+      not_found: <yellow>Модификатор {name} не найден для игрока <gold>{player}
+      removed: <#cccccc>Модификатор <white>{name} <#cccccc>удален с игрока <gold>{player}
     list:
-      all_stats_header: "<#cccccc>Nâng cấp chỉ số của <gold>{player}:"
-      all_stats_entry: "  <white>{name} - {color}{stat} <white>Cấp <gold>{value}"
-      one_stat_header: "<#cccccc>Nâng cấp chỉ số ({color}{stat}<#cccccc>) của <gold>{player}:"
-      one_stat_entry: "  <white>{name} - {color}{stat} <white>Level <gold>{value}"
-      players_only: "<yellow>Chỉ có thể liệt kê nâng cấp chỉ số của một người chơi! Hãy thử nhập tên một người chơi"
+      all_stats_header: '<#cccccc>Модификаторы характеристик для игрока <gold>{player}:'
+      all_stats_entry: '  <white>{name} - {color}{stat} <white>Уровень <gold>{value}'
+      one_stat_header: '<#cccccc>Модификаторы характеристик ({color}{stat}<#cccccc>)
+        для игрока <gold>{player}:'
+      one_stat_entry: '  <white>{name} - {color}{stat} <white>Уровень <gold>{value}'
+      players_only: <yellow>Только игроки могут указывать свои собственные модификаторы!
+        Попробуйте указать игрока
     removeall:
-      removed_all_stats: "<#cccccc> Đã xóa <aqua>{num} nâng cấp <#cccccc>của <gold>{player}"
-      removed_one_stat: "<#cccccc>Đã xóa <aqua>{num} <#cccccc>nâng cấp {color}{stat} <#cccccc>của <gold>{player}"
-      players_only: "<yellow>Chỉ có thể xóa nâng cấp chỉ số của một người chơi! Hãy thử nhập tên một người chơi"
+      removed_all_stats: <#cccccc>Удалены <aqua>{num} <#cccccc>модификаторы характеристик
+        у игрока <gold>{player}
+      removed_one_stat: <#cccccc>Удалены <aqua>{num} {color}{stat} <#cccccc>модификаторы
+        от игрока <gold>{player}
+      players_only: <yellow>Только игроки могут удалять свои собственные модификаторы!
+        Попробуйте указать игрока
   multiplier:
-    global: Tổng quát
-    list: "<white>XP thưởng thêm cho người chơi <gold>{player}<white>: <aqua>{multiplier}x / +{percent}%"
-    skill_entry: "<aqua>{skill} <white> XP thưởng: <aqua>{multiplier}x / +{percent}%"
-    players_only: "<yellow>Chỉ người chơi mới có thể liệt kê danh sách XP thưởng! Hãy nhập tên một người chơi cụ thể!"
+    global: Общее
+    list: '<white>Множитель опыта для <gold>{player}<white>: <aqua>{multiplier}x /
+      +{percent}%'
+    skill_entry: '<aqua> множитель{skill} <white>X: <aqua>{multiplier}x / +{percent}%'
+    players_only: <yellow>Только игроки могут указывать свой множитель! Укажите игрока!
   preset:
     load:
-      confirm: "<red>Tải thiết lập trước sẽ ghi đè lên thiết lập hiện tại! Những tệp sau đây sẽ bị ảnh hưởng <#cccccc>(<aqua>Đã thêm<#cccccc>, <yellow>Đã gộp<#cccccc>, <red>Đã thay thế<#cccccc>, <dark_red>Đã xóa<#cccccc>):{entries} <red> Hành động này sẽ không thể trở lại như cũ, hãy sao lưu thủ công những tệp quan trọng. Nhập lại lệnh để xác nhận."
-      loaded: Đã tải thành công thiết lập trước "{name}", hãy khởi động lại máy chủ.
-      created: Tệp đã tạo
-      modified: Tệp đã chỉnh sửa
-      replaced: Tệp đã thay thế
-      deleted: Tệp đã xóa
-      skipped: Tệp bị bỏ qua
+      confirm: '<red>Загрузка пресета переопределит ваши файлы настроек! На следующие
+        файлы будут затронуты <#cccccc>(<aqua>Добавлено<#cccccc>, <yellow>Объединены<#cccccc>,
+        <red>Заменены<#cccccc>, <dark_red>Удалено<#cccccc>): {entries} <red>Это действие
+        не может быть отменено, необходимо резервное копирование файлов вручную. Введите
+        команду еще раз для подтверждения.'
+      loaded: Предустановка {name} успешно загружена, перезапустите сервер сейчас.
+      created: Созданные файлы
+      modified: Измененные файлы
+      replaced: Заменённые файлы
+      deleted: Удаленные файлы
+      skipped: Пропущенные файлы
   profile:
-    skills: "Khả năng cá nhân của <gold>{name}:\n<#cccccc>UUID: <white>{uuid}\n<#cccccc>Khả năng:{skill_entries}"
-    skill_entry: "\n<dark_aqua>{skill}<#cccccc>- Cấp độ: <white>{level}<#cccccc>, XP: <white>{xp}"
-    stats: "Chỉ số cá nhân của <gold>{name}:\n<#cccccc>UUID: <white>{uuid}\n<#cccccc>Chỉ số: {stat_entries}"
-    stat_entry: "\n<dark_aqua>{stat} <#cccccc>- Tổng cấp độ: <white>{total_level}<#cccccc>, Cấp độ cơ bản: <white>{base_level}<#cccccc>, Cấp độ chỉnh sửa: <white>{modified_level}"
+    skills: |-
+      Профиль навыков Aurelium для <gold>{name}:
+      <#cccccc>UID: <white>{uuid}
+      <#cccccc>Навыки:{skill_entries}
+    skill_entry: |2-
+
+        <dark_aqua>{skill} <#cccccc>- Уровень: <white>{level}<#cccccc>, XP: <white>{xp}
+    stats: |-
+      Профиль статистики навыков Aurelium для <gold>{name}:
+      <#cccccc>UID: <white>{uuid}
+      <#cccccc>Статистика:{stat_entries}
+    stat_entry: |2-
+
+        <dark_aqua>{stat} <#cccccc>- Общий уровень: <white>{total_level}<#cccccc>, Базовый уровень: <white>{base_level}<#cccccc>, Изменённый уровень: <white>{modified_level}
   rank:
-    header: "<aqua><bold>Xếp hạng Khả năng của bạn"
-    power: "<yellow>Sức mạnh <#cccccc>(Tất cả Khả năng): <white>#{rank} trên {total}"
-    entry: "<aqua>{skill}<#cccccc>: <white>#{rank} trên {total}"
-  reload: "<green>Đã tải lại thiết lập!"
+    header: <aqua><bold>Ваш рейтинг навыков
+    power: '<yellow>Мощность <#cccccc>(Все навыки): <white>#{rank} из {total}'
+    entry: '<aqua>{skill}<#cccccc>: <white>#{rank} из {total}'
+  reload: <green>Конфиг перезагружен!
   save:
-    already_saving: "<yellow>Dữ liệu đã được lưu!"
-    mysql_not_enabled: "<yellow>MySQL không được kích hoạt khi khởi động máy chủ, thay vào đó hãy lưu vào một tệp!"
-    saved: "<green>Dữ liệu về Khả năng đã được lưu lại!"
+    already_saving: <yellow>Данные уже сохраняются!
+    mysql_not_enabled: <yellow>MySQL не был включен при запуске сервера, вместо этого
+      сохранялось в файл!
+    saved: <green>Данные о навыках сохранены!
   skill:
     setall:
-      set: "<#cccccc>Tất cả Khả năng đã được thành cấp <aqua>{level} <#cccccc>cho người chơi <gold>{player}"
+      set: <#cccccc>Все навыки установлены на уровень <aqua>{level} <#cccccc>для игрока
+        <gold>{player}
     setlevel:
-      set: "<#cccccc>Khả năng <aqua>{skill} <#cccccc>của người chơi <gold>{player} đã được đặt thành cấp độ <aqua>{level} <#cccccc>"
-    at_least: "<yellow>Cấp độ tối thiểu là {level}!"
+      set: <#cccccc>Навыки <aqua>{skill} <#cccccc>установлены на уровень <aqua>{level}
+        <#cccccc>для игрока <gold>{player}
+    at_least: <yellow>Уровень должен быть не менее {level}!
   toggle:
-    enabled: "<green>Thanh Kĩ năng của bạn đã được bật"
-    disabled: "<red>Thanh Kĩ năng của bạn đã được tắt"
-    not_enabled: "<yellow>Thanh Kĩ năng không được bật trong máy chủ này!"
+    enabled: <green>Панель действий ваших навыков была включена
+    disabled: <red>Панель действий ваших навыков отключена
+    not_enabled: <yellow>Панель действий навыков не активирована на этом сервере!
   top:
-    power_header: "<white>--==<aqua><bold>Bảng xếp hạng tất cả Khả năng</bold><white>==--"
-    power_header_page: "<white>--==<aqua><bold>Bảng xếp hạng tất cả Khả năng</bold><white>(Trang{page})==--"
-    skill_header: "<white>--==<aqua><bold>{skill} Bảng xếp hạng</bold><white>==--"
-    skill_header_page: "<white>--==<aqua><bold>{skill} Bảng xếp hạng</bold><white>(Trang {page})==--"
-    average_header: "<white>--==<aqua><bold>Bảng xếp hạng trung bình Khả năng</bold><white>==--"
-    average_header_page: "<white>--==<aqua><bold>Bảng xếp hạng trung bình Khả năng</bold><white>(Trang {page})==--"
-    usage: "<yellow>Cách dùng: <green>/sk top <white><page> <#cccccc>hoặc <green>/sk top <white>[skill] <page>"
+    power_header: <white>--==<aqua><bold>Таблица лидеров всех навыков</bold><white>==--
+    power_header_page: <white>--==<aqua><bold>Таблица лидеров всех навыков </bold><white>(Страница
+      {page})==--
+    skill_header: <white>--==<aqua><bold>{skill} Таблица лидеров</bold><white>==--
+    skill_header_page: <white>--==<aqua><bold>{skill} Таблица лидеров </bold><white>(Страница
+      {page})==--
+    average_header: <white>--==<aqua><bold>Таблица средних навыков</bold><white>==--
+    average_header_page: <white>--==<aqua><bold>Таблица средних навыков </bold><white>(Страница
+      {page})==--
+    usage: '<yellow>Используйте: <green>/sk top <white><page> <#cccccc>из <green>/sk
+      top <white>[skill] <page>'
   transfer:
-    success: "<green>Chuyển đổi dữ liệu người chơi từ <#cccccc>{from} <green>to <#cccccc>{to} thành công"
-    error: "<red>Có lỗi xảy ra khi chuyển dữ liệu người chơi. Xem lỗi trong bảng điều khiển."
+    success: <green>Успешно перенесенные данные игрока из <#cccccc>{from} <green>в
+      <#cccccc>{to}
+    error: <red>Произошла ошибка при передаче данных игрока. Проверьте консоль на
+      наличие ошибок.
   updateleaderboards:
-    already_updating: "<yellow>Bảng xếp hạng đã đang được cập nhật!"
-    updated: "<green>Đã cập nhật bảng xếp hạng!"
-  version: "<white>Bạn đang dùng AuraSkills phiên bản <aqua>{current_version}<white>. Phiên bản mới nhất là <aqua>{latest_version}"
+    already_updating: <yellow>Таблица лидеров уже обновляется!
+    updated: <green>Таблица лидеров обновлена!
+  version: <white>Вы используете версию AuraSkills <aqua>{current_version}<white>.
+    Последняя версия <aqua>{latest_version}
   xp:
-    add: "<#cccccc>Đã thêm <aqua>{amount} XP {skill}<#cccccc> cho <#cccccc>{player}"
-    set: "<#cccccc> Đã đặt XP <aqua>{skill} <#cccccc>cho người chơi <#cccccc>{player} <#cccccc>thành {amount}"
-    remove: "<#cccccc>Đã xóa bỏ <aqua>{amount} {skill} <#cccccc>XP từ người chơi <gold>{player}"
+    add: <#cccccc>Добавлены <aqua>{amount} {skill} <#cccccc>XP игроку <#cccccc>{player}
+    set: <#cccccc>Установить <aqua>{skill} <#cccccc>XP для игрока <#cccccc>{player}
+      <#cccccc>на {amount}
+    remove: <#cccccc>Удалить <aqua>{amount} {skill} <#cccccc>XP у игрока <gold>{player}
   manaability:
-    cooldown_reset: "<#cccccc>Cooldown for <aqua>{ability} <#cccccc>has been reset for player <gold>{player}"
-  unknown_skill: "<yellow>Khả năng không khả dụng!"
-  unknown_mana_ability: "<yellow>Unknown mana ability!"
-  unknown_stat: "<yellow>Chỉ số không khả dụng!"
-  no_profile: "<yellow>Người chơi không có hồ sơ Khả năng. Hãy thử thoát ra và vào lại hoặc khởi động lại máy chủ."
+    cooldown_reset: <#cccccc>Cooldown for <aqua>{ability} <#cccccc>has been reset
+      for player <gold>{player}
+  unknown_skill: <yellow>Неизвестный навык!
+  unknown_mana_ability: <yellow>Unknown mana ability!
+  unknown_stat: <yellow>Неизвестная статистика!
+  no_profile: <yellow>Игрок не имеет профиля навыков. Пожалуйста, попробуйте переподключиться
+    к игре или перезапустить сервер.
+  antiafk:
+    failed: '<red>Игрок {player} не прошёл анти-AFK проверку {check} <#cccccc>(Счет:
+      {count})'
+    logs:
+      header: '<#cccccc>Анти-AFK логи для игрока <red>{player} <#cccccc>({count} В
+        целом) <dark_#83ca16>| <#cccccc> Страница {page}/{total_pages}:'
+      entry: <#cccccc>{timestamp} - {message}
+  jobs:
+    add:
+      added: <white>Работа {job} была успешно добавлена игроку {player}
+      limited: <yellow>Невозможно добавить эту работу, потому что игрок {player} достиг
+        лимит по работам
+      existing: <yellow>Игрок {player} уже имеет работу {job}
+    remove:
+      removed: <white>Удалена задача {job} у игрока {player}
+      unchanged: <yellow>Ничего не изменилось, поскольку игрок {player} не имеет работы
+        {job}
+    removeall:
+      removed: <white>Удалены все задачи с игрока {player}
+  trait:
+    add:
+      already_exists: <yellow>Модификатор с именем {name} уже существует на игроке
+        <gold>{player}<yellow>! Удалите его с помощью <gold>/sk trait remove {player}
+        {name}
+    list:
+      all_traits_header: '<#cccccc>Модификаторы характеристик для игрока <gold>{player}:'
+      one_trait_header: '<#cccccc>Модификаторы характеристик ({color}{trait}<#cccccc>)
+        для игрока <gold>{player}:'
+    removeall:
+      removed_all_traits: <#cccccc>Удалены <aqua>{num} <#cccccc>модификаторы характеристик
+        у игрока <gold>{player}
+  unknown_trait: <yellow>Неизвестный навык!
 leveler:
-  level_up: "Lên cấp Khả năng {skill}"
-  skill_level_up: Lên cấp Khả năng
-  rewards: Thưởng
-  ability_unlock: Kĩ năng bị động
-  ability_level_up: Lên cấp Kĩ năng bị động
-  mana_ability_unlock: Kĩ năng ma pháp
-  mana_ability_level_up: Lên cắp Kĩ năng Ma pháp
-  unclaimed_item: "<red>Bạn có vật phẩm chưa nhận do kho đồ đã đầy, dùng <yellow>/skills claimitems <red>để nhận"
+  level_up: '{skill} уровень повышен'
+  skill_level_up: Уровень скилла повышен
+  rewards: Награды
+  ability_unlock: Способность разблокирована
+  ability_level_up: Способность повышена
+  mana_ability_unlock: Мана способность разблокирована
+  mana_ability_level_up: Уровень мана способности повышен
+  unclaimed_item: <red>У вас есть не собранные предметы, потому что ваш инвентарь
+    был заполнен, используйте <yellow>/skills claimitems <red>для их получения
 menus:
   common:
-    close: "Đóng"
-    level: "Cấp độ"
-    progress_to_level: "Tiến trình lên cấp"
-    max_level: "CẤP ĐỘ TỐI ĐA"
-    ability_levels: "Cấp độ Kĩ năng"
-    stats_leveled: "Chỉ số nhận được"
-    mana_ability: "Kĩ năng Ma pháp"
-    duration: "Kéo dài"
-    mana_cost: "Yêu cầu Mana"
-    cooldown: "Hồi chiêu"
-    damage: "Sát thương"
-    max_mana_cost: "Yêu cầu Mana tối đa"
-    attack_speed: "Tốc độ đánh"
-    back: "Trở lại"
-    back_click: "Trở về menu {menu_name}"
-    unlocked: "ĐÃ MỞ KHÓA"
-    in_progress: "ĐANG THỰC HIỆN"
-    locked: "ĐÃ KHÓA"
-    your_level: "Cấp độ của bạn"
-    next_page: "Trang kế"
-    next_page_click: "Nhấn để qua trang tiếp theo"
-    previous_page: "Trang trước"
-    previous_page_click: "Nhấn để trở lại trang trước"
+    close: Закрыть
+    level: Уровень
+    progress_to_level: Прогресс уровня
+    max_level: МАКСИМАЛЬНЫЙ УРОВЕНЬ
+    ability_levels: Уровни способностей
+    stats_leveled: Повышаемые статистики
+    mana_ability: Мана способность
+    duration: Длительность
+    mana_cost: Цена маны
+    cooldown: Перезарядка
+    damage: Урон
+    max_mana_cost: Максимальная цена маны
+    attack_speed: Скорость атаки
+    back: Вернуться обратно
+    back_click: Вернуть в {menu_name} меню
+    unlocked: РАЗБЛОКИРОВАНО
+    in_progress: В ПРОГРЕССЕ
+    locked: ЗАКРЫТО
+    your_level: Ваш уровень
+    next_page: Следующая страница
+    next_page_click: Нажмите чтобы перейти к следующей странице
+    previous_page: Предыдущая страница
+    previous_page_click: Нажмите чтобы перейти к предыдущей странице
   skills:
-    skills_title: "Khả năng của bạn"
-    your_skills: "Khả năng của bạn"
-    your_skills_desc: "Thăng cấp Khả năng bằng cách thực hiện các nhiệm vụ khác nhau để mở khóa chỉ số, Kĩ năng và hơn thế nữa!"
-    your_skills_hover: "Di chuột qua một Khả năng để xem thêm!"
-    your_skills_click: "Nhấn vào một Khả năng để xem tiến trình!"
-    skill_click: "Nhấn để xem tiến trình thăng cấp!"
-    stats: "Chỉ số"
-    stats_desc: "Tăng Chỉ số khi thăng cấp Khả năng"
-    stats_click: "Nhấn để xem Chỉ số của bạn"
+    skills_title: Ваши навыки
+    your_skills: Ваши навыки
+    your_skills_desc: Улучшайте навыки, выполняя различные задания, чтобы улучшить
+      характеристики, возможности и т. д!
+    your_skills_hover: Наведите курсор на навык для получения дополнительной информации!
+    your_skills_click: Нажмите на навык, чтобы просмотреть прогресс уровня!
+    skill_click: Нажмите, чтобы просмотреть прогресс уровня!
+    stats: Статистика
+    stats_desc: Зарабатывайте очки статистики, повышая уровень навыков
+    stats_click: Нажмите, чтобы узнать больше или просмотреть свою статистику
+    active_job: Активная работа
   level_progression:
-    level_progression_title: "Cấp độ của {skill} - Trang {page}"
-    your_ranking: "Xếp hạng Khả năng của bạn"
-    rank_out_of: "<1>Bạn đứng thứ <2>{rank}</2> trong tổng số {total} người chơi</1>"
-    rank_percent: "<1>Bạn ở trong top <2>{percent}%</2> trong tổng số người chơi</1>"
-    rewards: "Thưởng"
-    ability_unlock: "[Mở khóa Kĩ năng bị động]"
-    mana_ability_unlock: "[Mở khóa Kĩ năng ma pháp]"
-    progress: "Tiến trình"
-    leaderboard_click: "Nhấn để xem bảng xếp hạng cho Khả năng {skill}"
-    sources: "Nguồn XP"
-    sources_desc: "Menu Nguồn XP cho biết các cách để nhận XP Kĩ năng, cũng như lượng XP nhận được của mỗi nguồn."
-    sources_click: "Nhấn để xem nguồn XP cho Khả năng {skill}"
-    abilities: "Kĩ năng"
-    abilities_desc: "<2>Kĩ năng bị động</2> <1>có thể được mở khóa và thăng cấp khi bạn thăng cấp Kĩ năng.</1>"
-    mana_abilities_desc: "<3>Kĩ năng Ma pháp</3> <1>là một dạng Kĩ năng đặc biệt, có thể được kích hoạt chủ động và tiêu tốn Mana.</1>"
-    abilities_click: "Nhấn để xem Kĩ năng của {skill}"
+    level_progression_title: '{skill} Уровни - Страница {page}'
+    your_ranking: Ваш ранг скилла
+    rank_out_of: <1>Вы на <2>{rank}</2> месте среди {total} игроков</1>
+    rank_percent: <1>Вы в топе <2>{percent}%</2> игроков</1>
+    rewards: Награды
+    ability_unlock: Способность разблокирована
+    mana_ability_unlock: Мана способность разблокирована
+    progress: Прогресс
+    leaderboard_click: Нажмите чтобы посмотреть топ {skill}
+    sources: XP источники
+    sources_desc: В меню источников показаны все способы, которыми вы можете заработать
+      опыт в навыке, а также количество опыта, которое дает каждый источник.
+    sources_click: Нажмите чтобы увидеть источники {skill}
+    abilities: Способности
+    abilities_desc: <2>Способности</2> <1> это пассивные перки, которые вы открываете
+      и улучшаете по мере повышения уровня навыков.</1>
+    mana_abilities_desc: <3>Мана способности</3> <1> это специальный тип способности,
+      который активируется и тратит ману.</1>
+    abilities_click: Нажмите чтобы увидеть {skill} способности
+    job: Работа
+    job_desc: Выбрав {skill} как вашу работу, позволяет вам зарабатывать деньги при
+      получении опыта.
+    job_select: Нажмите левую кнопку мыши, чтобы выбрать {skill} как вашу работу
+    job_active: Вы активно работаете на этой работе
+    job_quit: Нажмите правой кнопкой мыши, чтобы покинуть эту работу
+    job_limit: Вы исчерпали свой лимит по количеству заданий. Сначала закройте текущее
+      задание, чтобы выбрать это.
+    job_cooldown: Выбор работы находится в откате. Вы можете выбрать его через {time}.
   stats:
-    stats_title: Chỉ số của bạn
-    skills: "Khả năng"
-    added_drop: "+{value} Rơi"
-    added_drops: "+{value} Rơi"
-    chance_drop: "{chance}% cho +{value} Rơi"
-    chance_drops: "{chance}% cho +{value} Rơi"
+    stats_title: Ваша статистика
+    skills: Навыки
+    added_drop: +{value} выпадение
+    added_drops: +{value} выпадений
+    chance_drop: '{chance}% для +{value} выпадения'
+    chance_drops: '{chance}% для +{value} выпадений'
   unclaimed_items:
-    unclaimed_items_title: "Nhận vật phẩm"
-    inventory_full: "Bạn không đủ chỗ trống trong kho đồ để nhận vật phẩm này"
-    click_to_claim: "Nhấp để nhận!"
+    unclaimed_items_title: Подобрать предметы
+    inventory_full: У вас недостаточно места в вашем инвентаре чтобы подобрать вещи
+    click_to_claim: Нажмите чтобы собрать!
   leaderboard:
-    leaderboard_title: "Bảng xếp hạng {skill}"
+    leaderboard_title: '{skill} таблица лидеров'
   sources:
-    sources_title: "Nguồn XP cho {skill}"
-    sorter: "Phân loại nguồn XP"
-    descending: "Cao tới Thấp"
-    ascending: "Thấp tới Cao"
-    alphabetical: "Tên (A-Z)"
-    reverse_alphabetical: "Tên (Z-A)"
-    sort_click: "Ấn để đổi kiểu phân loại"
-    multiplied_xp: "Thưởng {xp_unit}"
-    multiplied_desc: "Đây là lượng XP thực tế bạn nhận được dựa trên XP Thưởng"
+    sources_title: '{skill} XP источники'
+    sorter: Сортировать XP источники
+    descending: Высший к низшему
+    ascending: Низший к высшему
+    alphabetical: Имя (А-Z)
+    reverse_alphabetical: Имя (Z-A)
+    sort_click: Нажмите, чтобы выбрать тип сортировки
+    multiplied_xp: Множитель {xp_unit}
+    multiplied_desc: Это количество опыта, которое вы фактически заработаете, исходя
+      из вашего текущего множителя опыта
   abilities:
-    abilities_title: "Kĩ năng của {skill}"
-    description: "Mô tả"
-    unlocked_at: "<1>Mở khóa khi đạt <2>{skill} {level}"
-    next_upgrade_at: "<1>Nâng cấp tiếp theo ở <2>{skill}{level}"
+    abilities_title: '{skill} способности'
+    description: Описание
+    unlocked_at: <1>Разблокирован <2>{skill} {level}
+    next_upgrade_at: <1>Следующее улучшение на <2>{skill} {level}
 mana_abilities:
   replenish:
-    name: Tái tạo
-    desc: "Tự động trồng lại cây trồng trong {value} giây. <1>[Chuột phải vào cuốc và và phá cây trồng để kích hoạt]"
-    raise: "<#cccccc>Bạn đã giơ cuốc lên"
-    lower: "<#cccccc>Bạn đã hạ cuốc xuống"
-    start: "<gold>Đã kích hoạt Tái tạo! <#cccccc>(-{mana} {mana_unit})"
-    end: "<#cccccc>Tái tạo kết thúc"
+    name: Комбайнер
+    desc: Автоматически пересаживает посевы {value} секунд. <1>[Щелкните ПКМ мотыгой
+      и сломайте посев, чтобы активировать]
+    raise: <#cccccc>Вы поднимаете мотыгу
+    lower: <#cccccc>Вы опускаете мотыгу
+    start: <gold>Пополнение активировано! <#cccccc>(-{mana} {mana_unit})
+    end: <#cccccc>Пополнение закончилось
   treecapitator:
-    name: Đốn hạ
-    desc: "Đốn ngã cả cây ngay lập tức trong {value} giây. <1>[Chuột phải vào rìu và chặt gỗ để kích hoạt]"
-    raise: "<#cccccc>Bạn đã giơ rìu lên"
-    lower: "<#cccccc>Bạn đã hạ rìu xuống"
-    start: "<gold>Đã kích hoạt Đốn hạ! <#cccccc>(-{mana} {mana_unit})"
-    end: "<#cccccc>Đốn hạ kết thúc"
+    name: Древовидный
+    desc: Мгновенно ломает деревья целиком в течении {value} секунд. <1>[Щелкните
+      ПКМ по топору и сломайте дерево, чтобы активировать]
+    raise: <#cccccc>Вы поднимаете топор
+    lower: <#cccccc>Вы опускаете топор
+    start: <gold>Древовидный активирован! <#cccccc>(-{mana} {mana_unit})
+    end: <#cccccc>Древовидный отключен
   speed_mine:
-    name: Đào nhanh
-    desc: "Cung cấp hiệu ứng Đào nhanh {haste_level} trong {value} giây. <1>[Chuột phải vào cúp và đào khối để kích hoạt]"
-    raise: "<#cccccc>Bạn đã giơ cúp lên"
-    lower: "<#cccccc>Bạn đã hạ cúp xuống"
-    start: "<gold>Đã kích hoạt Đào nhanh! <#cccccc>(-{mana} {mana_unit})"
-    end: "<#cccccc>Đào nhanh kết thúc"
+    name: Быстрый Рудокоп
+    desc: Дает Спешку {haste_level} с {value} секундами. <1>[Щелкните правой кнопкой
+      мыши с киркой и копайте блоки]
+    raise: <#cccccc>Вы поднимаете кирку
+    lower: <#cccccc>Вы опускаете кирку
+    start: <gold>Быстрый Рудокоп активирован! <#cccccc>(-{mana} {mana_unit})
+    end: <#cccccc>Быстрый Рудокоп отключен
   absorption:
-    name: Hấp thụ
-    desc: "Sát thương nhận vào sẽ giảm Mana bằng 2 lần ST nhận vào thay vì mất HP trong {value} giây. Mana sẽ không hồi lại trong khi Hấp thụ được kích hoạt. <1>[Chuột trái vào khiên và nhận ST để kích hoạt]"
-    raise: "<#cccccc>Bạn đã giơ khiên lên"
-    lower: "<#cccccc>Bạn đã hạ khiên xuống"
-    start: "<gold>Đã kích hoạt Hấp thụ! <#cccccc>(-{mana} {mana_unit})"
-    end: "<#cccccc>Hấp thụ kết thúc"
+    name: Поглощатель
+    desc: Поступающий урон уменьшит ману на 2x вместо вашего здоровья в течение {value}
+      секунд. Мана не будет восстанавливаться, пока активна абсорбция. <1>[Щелкните
+      ЛКМ по щиту и получите урон, чтобы активировать]
+    raise: <#cccccc>Вы поднимаете свой щит
+    lower: <#cccccc>Вы опускаете свой щит
+    start: <gold>Поглощение активировано! <#cccccc>(-{mana} {mana_unit})
+    end: <#cccccc>Поглощение закончилось
   terraform:
-    name: Terraform
-    desc: "Các khối tương tự kết nối với nhau trong bán kính {radius} khối sẽ bị phá ngay lập tức theo chiều ngang khi đào trong {value} giây. <1>[Chuột phải vào xẻng và đào khối để kích hoạt]"
-    raise: "<#cccccc>Bạn đã giơ xẻng lên"
-    lower: "<#cccccc>Bạn đã hạ xẻng xuống"
-    start: "<gold>Đã kích hoạt Terraform! <#cccccc>(-{mana} {mana_unit})"
-    end: "<#cccccc>Terraform kết thúc"
+    name: Терраформация
+    desc: 'При копании, в радиусе {radius} блок ломаются соседние блоки по горизонтали
+      на {value} секунд. <1> [Правая кнопка мыши и копать блок чтобы активировать] '
+    raise: <#cccccc>Вы поднимаете лопату
+    lower: <#cccccc>Вы опускаете лопату
+    start: <gold>Терроформация активированна! <#cccccc>(-{mana} {mana_unit})
+    end: <#cccccc>Терроформация выключена
   sharp_hook:
-    name: Móc câu sắc lẹm
-    desc: "Gây thêm {value} ST khi đánh vào một thực thể bị móc bởi cần câu"
-    use: "<gold>Đã kích hoạt Móc câu sắc lẻm! <#cccccc>(-{mana} {mana_unit})"
+    name: Острый крюк
+    desc: Нанести {value} урон зацепившемуся объекту щелкнув левой кнопкой мыши удочкой
+    use: <gold>Используемый острый крючок! <#cccccc>(-{mana} {mana_unit})
   charged_shot:
-    name: Siêu tên
-    desc: "Mũi tên bắn ra sẽ gây thêm sát thương dựa trên lực kéo cung và làm tiêu tốn Mana. Gây thêm {value}% ST trên mỗi Mana. <1>[Chuột trái vào cung để bật/tắt Siêu tên]"
-    enable: "<#cccccc>Đã bật Siêu tên"
-    disable: "<#cccccc>Đã tắt Siêu tên"
-    shoot: "<gold>Đã dùng Siêu tên! <light_purple>+{percent}% ST <#cccccc>(-{mana} {mana_unit})"
+    name: Заряженный выстрел
+    desc: Стрелы, которые вы стреляете, нанесут больше урона в зависимости от того,
+      насколько далеко был отведен лук, потребляя при этом ману. Наносит на {value}%
+      больше урона за потребленную ману. <1>[Щелкните ЛКМ по луку, чтобы переключить
+      режим заряженного выстрела]
+    enable: <#cccccc>Режим заряженного выстрела теперь включен
+    disable: <#cccccc>Режим заряженного выстрела отключен
+    shoot: <gold>Используется заряженный выстрел! <light_purple>+{percent}% DMG <#cccccc>(-{mana}
+      {mana_unit})
   lightning_blade:
-    name: Kiếm sét
-    desc: Tăng thêm {value}% tốc độ đánh trong {duration} giây. <1>[Chuột phải vào kiếm và tấn công để kích hoạt]
-    raise: "<#cccccc>Bạn giương kiếm lên"
-    lower: "<#cccccc>Bạn đã xuống kiếm"
-    start: "<gold>Đã kích hoạt Kiếm sét! <#cccccc>(-{mana} {mana_unit})"
-    end: "<#cccccc>Kiếm sét kết thúc"
-  not_ready: "<red>Kĩ năng chưa hồi! <#cccccc>({cooldown}s)"
-  not_enough_mana: "<yellow>Không đủ Mana! <#cccccc>(Cần {mana} {mana_unit})"
+    name: Световой меч
+    desc: Увеличивает скорость атаки на {value}% в течение {duration} секунд. <1>[ПКМ
+      и удар по мобу для активации]
+    raise: <#cccccc>Вы готовы к мечу
+    lower: <#cccccc>Вы опускаете меч
+    start: <gold>Световое лезвие активно! <#cccccc>(-{mana} {mana_unit})
+    end: <#cccccc>Световое лезвие стерлось
+  not_ready: <red>Способность не готова! <#cccccc>({cooldown}s)
+  not_enough_mana: <yellow>Недостаточно маны! <#cccccc>({mana} {mana_unit} required)
 skills:
   farming:
-    name: Thu hoạch
-    desc: "Thu hoạch cây trồng để nhận {xp_unit} Thu hoạch"
+    name: Фермер
+    desc: Собирайте урожай, чтобы заработать {xp_unit}
   foraging:
-    name: Chặt gỗ
-    desc: "Chặt cây để nhận {xp_unit} Chặt gỗ"
+    name: Лесоруб
+    desc: Рубите деревья, чтобы заработать {xp_unit}
   mining:
-    name: Khai thác
-    desc: "Khai thác đá và quặng để nhận {xp_unit} Khai thác"
+    name: Шахтер
+    desc: Добывайте камень и руды, чтобы заработать {xp_unit}
   fishing:
-    name: Câu cá
-    desc: "Bắt cá để nhận {xp_unit} Câu cá"
+    name: Рыбак
+    desc: Ловите рыбу, чтобы заработать {xp_unit}
   excavation:
-    name: Đào bới
-    desc: "Đào bằng xẻng để nhận {xp_unit} Đào bới"
+    name: Сельхоз
+    desc: Копайте лопатой, чтобы заработать {xp_unit}
   archery:
-    name: Cung thủ
-    desc: "Bắn các con quái vật và người chơi bằng cung để nhận {xp_unit} Cung thủ"
+    name: Лучник
+    desc: Стреляйте в мобов и игроков из лука, чтобы заработать {xp_unit}
   defense:
-    name: Phòng thủ
-    desc: "Nhận ST từ thực thể để nhận {xp_unit} Phòng thủ"
+    name: Защитник
+    desc: Получайте урон от сущностей, чтобы заработать {xp_unit}
   fighting:
-    name: Chiến đấu
-    desc: "Đánh các con quái với vũ khí cận chiến để nhận {xp_unit} Chiến đấu"
+    name: Борец
+    desc: Сражайтесь с мобами холодным оружием, чтобы заработать {xp_unit}
   endurance:
-    name: Bền bỉ
-    desc: "Đi bộ và chạy để nhận {xp_unit} Bền bỉ"
+    name: Выносливость
+    desc: Ходите и бегайте, чтобы заработать {xp_unit}
   agility:
-    name: Nhanh nhẹn
-    desc: "Di chuyển xung quanh và nhận ST rơi để nhận {xp_unit} Nhanh nhẹn"
+    name: Ловкость
+    desc: Передвигайтесь и получайте урон при падении, чтобы заработать Ловкость {xp_unit}
   alchemy:
-    name: Điều chế
-    desc: "Nấu và dùng thuốc hiệu ứng để nhận {xp_unit} Điều chế"
+    name: Алхимия
+    desc: Варите и бросайте зелья, чтобы заработать алхимию {xp_unit}
   enchanting:
-    name: Phù phép
-    desc: "Phù phép, kết hợp và mài vật phẩm để nhận {xp_unit} Phù phép"
+    name: Зачарователь
+    desc: Зачаровывайте, комбинируйте предметы, используйте точильный камень, чтобы
+      заработать очки Зачарования {xp_unit}
   sorcery:
-    name: Ma thuật
-    desc: "Dùng Kĩ năng Ma pháp để nhận {xp_unit} Ma thuật"
+    name: Колдовство
+    desc: Используйте мановые способности, чтобы заработать {xp_unit}
   healing:
-    name: Chữa trị
-    desc: "Uống hoặc quăng thuốc hiệu ứng để nhận {xp_unit} Chữa trị"
+    name: Целитель
+    desc: Пейте и взрывайте зелья, чтобы заработать {xp_unit}
   forging:
-    name: Rèn đúc
-    desc: "Hợp nhất hoặc áp dụng sách vào trang bị bằng đe để nhận {xp_unit} Rèn đúc"
+    name: Ковка
+    desc: Объединяйте и применяйте книги на наковальне, чтобы заработать {xp_unit}
 sources:
   fishing:
-    cod: Cá tuyết
-    salmon: Cá hồi
-    tropical_fish: Cá nhiệt đới
-    pufferfish: Cá nóc
-    treasure: Báu vật
-    junk: Vật phẩm rác
-    rare: Vật phẩm hiếm
-    epic: Vật phẩm cực hiếm
+    cod: Треска
+    salmon: Лосось
+    tropical_fish: Тропическая рыба
+    pufferfish: Иглобрюх
+    treasure: Сокровища
+    junk: Хлам
+    rare: Редкий дроп
+    epic: Эпический дроп
   damage:
-    mob_damage: ST từ quái
-    player_damage: ST từ người chơi
-    fall_damage: Nhận ST rơi
+    mob_damage: Урон от мобов
+    player_damage: Урон от игроков
+    fall_damage: Получение урона от падения
   statistic:
-    walk_per_meter: Đi bộ
-    sprint_per_meter: Chạy nhanh
-    swim_per_meter: Bơi lội
+    walk_per_meter: Ходьба
+    sprint_per_meter: Бег
+    swim_per_meter: Плавание
   jumping:
-    jump_per_100: Nhảy
+    jump_per_100: Прыгание
   brewing:
-    awkward: Nấu thuốc kì lạ
-    regular: Nấu thuốc thường
-    extended: Nấu thuốc cộng thêm thời gian
-    upgraded: Nấu thuốc được nâng cấp
-    splash: Nấu thuốc quăng được
-    lingering: Nấu thuốc kéo dài
+    awkward: Сварить неловкое зелье
+    regular: Сварить обычное зелье
+    extended: Сварить зелье длительного действия
+    upgraded: Сварить улучшенное зелье
+    splash: Сварить взрывающееся зелье
+    lingering: Сварить затяжное зелье
   enchanting:
-    weapon_per_level: Phù phép vũ khí
-    armor_per_level: Phù phép giáp
-    tool_per_level: Phù phép trang bị
-    book_per_level: Phù phép sách
+    weapon_per_level: Зачаровать оружие
+    armor_per_level: Зачаровать броню
+    tool_per_level: Зачаровать инструмент
+    book_per_level: Зачаровать книгу
   mana_ability_use:
-    mana_ability_use: Dùng Kĩ năng Ma pháp
+    mana_ability_use: Использование мана способности
   item_consume:
-    drink_regular: Uống thuốc thường
-    drink_extended: Uống thuốc cộng thêm thời gian
-    drink_upgraded: Uống thuốc được nâng cấp
-    golden_apple: Ăn Táo vàng
-    enchanted_golden_apple: Ăn Táo vàng được phù phép
+    drink_regular: Выпить обычное зелье
+    drink_extended: Выпить зелье длительного действия
+    drink_upgraded: Выпить улучшенное зелье
+    golden_apple: Съесть золотое яблоко
+    enchanted_golden_apple: Съесть зачарованное золотое яблоко
   potion_splash:
-    splash_regular: Quăng thuốc thường
-    splash_extended: Quăng thuốc cộng thêm thời gian
-    splash_upgraded: Quăng thuốc được nâng cấp
-    lingering_regular: Dùng thuốc kéo dài
-    lingering_extended: Dùng thuốc kéo dài cộng thêm thời gian
-    lingering_upgraded: Dùng thuốc kéo dài được nâng cấp
+    splash_regular: Бросить обычное зелье
+    splash_extended: Бросить зелье длительного действия
+    splash_upgraded: Бросить улучшенное зелье
+    lingering_regular: Использовать обычное затяжное зелье
+    lingering_extended: Использовать затяжное зелье длительного действия
+    lingering_upgraded: Использовать улучшенное затяжное зелье
   anvil:
-    combine_books_per_level: Kết hợp sách phù phép
-    combine_weapon_per_level: Kết hợp Vũ khí với Sách
-    combine_armor_per_level: Kết hợp Giáp với Sách
-    combine_tool_per_level: Kết hợp Công cụ với Sách
+    combine_books_per_level: Совместить книги зачарования
+    combine_weapon_per_level: Совместить оружие с книгой зачарования
+    combine_armor_per_level: Совместить броню с книгой зачарования
+    combine_tool_per_level: Совместить инструмент с книгой зачарования
   grindstone:
-    grindstone_per_level: Giải phù phép bằng Bàn đá mài
+    grindstone_per_level: Снять зачарования в точильном камне
   units:
-    damage: Sát thương
-    meter: Mét
-    100_jumps: Nhảy 100
-    mana: Mana đã dùng
-    combine_level: Phí XP dùng đe
-    grindstone_level: Cấp độ phù phép trên vật phẩm
-    enchant_level: Cấp độ Phù phép được nhận
+    damage: Урон
+    meter: Метр
+    100_jumps: 100 прыжков
+    mana: Потребляемая мана
+    combine_level: Цена опыта наковальни
+    grindstone_level: Уровень зачарования предмета
+    enchant_level: Уровень полученного зачарования
 stats:
   strength:
-    name: Sức mạnh
-    desc: "Sức mạnh tăng sát thương tấn công của bạn với các loại vũ khí khác nhau."
+    name: Сила
+    desc: Сила увеличивает урон от атаки с помощью различного оружия.
   health:
-    name: Máu
-    desc: "Máu giúp tăng lượng {hp_unit} bạn có, cho bạn khả năng sống sót lâu hơn trong giao tranh."
+    name: Здоровье
+    desc: Здоровье увеличивает количество имеющихся у вас {hp_unit}.
   regeneration:
-    name: Hồi phục
-    desc: "Hồi phục giúp tăng khả năng hồi máu và năng lượng."
+    name: Регенерация
+    desc: Регенерация увеличивает скорость восстановления здоровья и маны.
   luck:
-    name: May mắn
-    desc: "May mắn tăng khả năng nhận thêm vật phẩm từ khối ở các Kĩ năng thu thập."
+    name: Удача
+    desc: Удача увеличивает вероятность выпадения дополнительных блоков при получении
+      навыков.
   wisdom:
-    name: Trí khôn
-    desc: "Trí khôn tăng năng lượng tối đa của bạn, tăng số kinh nghiệm bạn nhận được, và giảm giá khi sử dụng đe."
+    name: Мудрость
+    desc: Мудрость увеличивает ваш максимальный запас маны увеличивает получаемый
+      опыт и снижает затраты на наковальню.
   toughness:
-    name: Bền bỉ
-    desc: "Bền bỉ giảm lượng sát thương nhận vào khi bị tấn công."
+    name: Стойкость
+    desc: Стойкость увеличивает урон, уменьшаемый от атак противника.
   crit_chance:
-    name: Tỉ lệ chí mạng
-    desc: "Tỉ lệ chí mạng là xác suất gây ra một đòn chí mạng."
+    name: Критический шанс
+    desc: Критический шанс - это ваши шансы нанести критический удар.
   crit_damage:
-    name: Sát thương chí mạng
-    desc: "Sát thương chí mạng là lượng sát thương theo phần trăm được tăng thêm khi gây ra 1 đòn chí mạng."
+    name: Критический урон
+    desc: Критический урон - это процентное увеличение урона при нанесении критического
+      удара.
   speed:
-    name: Tốc độ
-    desc: "Tốc độ tăng tốc độ di chuyển khi đi bộ và chạy nhanh."
+    name: Скорость
+    desc: Скорость повышает скорость ходьбы и бега.
 traits:
   attack_damage:
-    name: Sát thương
+    name: Урон атаки
   hp:
     name: HP
   saturation_regen:
-    name: Hồi độ no nê
+    name: Восстановление насыщения
   hunger_regen:
-    name: Hồi độ đói
+    name: Восстановление голода
   mana_regen:
-    name: Hồi phục Mana
+    name: Восстановление маны
   luck:
-    name: Chỉ số may mắn
+    name: Характеристики удачи
   double_drop:
-    name: x2 Rơi
+    name: Двойное выпадение
   experience_bonus:
-    name: XP thưởng
+    name: Бонус опыта
   anvil_discount:
-    name: Giảm giá dùng đe
+    name: Уменьшение стоимости в наковальне
   max_mana:
-    name: Mana tối đa
+    name: Максимальная мана
   damage_reduction:
-    name: Giảm sát thương
+    name: Уменьшение урона
   crit_chance:
-    name: Tỉ lệ chí mạng
+    name: Критический шанс
   crit_damage:
-    name: Sát thương chí mạng
+    name: Критический урон
   movement_speed:
-    name: Tốc độ di chuyển
+    name: Скорость движения
   farming_luck:
-    name: May mắn thu hoạch
+    name: Фермерская удача
   foraging_luck:
-    name: May mắn chặt gỗ
+    name: Удача лесоруба
   mining_luck:
-    name: May mắn đào mỏ
+    name: Шахтерская удача
   excavation_luck:
-    name: May mắn đào bới
+    name: Сельхозная удача
   fishing_luck:
-    name: May mắn câu cá
+    name: Рыболовная удача
 ui:
-  maxed: TỐI ĐA
+  maxed: МАКСИМАЛЬНЫЙ
 units:
-  mana: Mana
-  hp: HP
-  xp: XP
-file_version: 32
+  mana: МАНЫ
+  hp: ЖИЗНЕЙ
+  xp: ОПЫТ
+file_version: 35
