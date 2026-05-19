@@ -2,26 +2,26 @@
 # Messages support HEX colours codes.
 
 player_help: |
-  &a&nPlayer commands:
-  &e/dq me &a: see your own quests
-  &e/dq reroll <index> &a: reroll a quest (requires permission)
-  &e/dq show <global/easy/medium/hard> &a: see the quests of a category
+  &a&nКоманды игрока:
+  &e/dq me &a: посмотреть свои задания
+  &e/dq reroll <index> &a: перезапустить задание (требуется право)
+  &e/dq show <global/easy/medium/hard> &a: посмотреть задания категории
 admin_help: |
-  &c&nAdmin commands:
-  &e/dqa complete <player> <index> &a: complete a player quest
-  &e/dqa customcomplete <player> <index> <amount> &a: complete a player quest from a custom type
-  &e/dqa reset <quests/total> <player> &a: draw new quests for a player, or reset his total number of achieved quests.
+  &c&nКоманды администратора:
+  &e/dqa complete <player> <index> &a: завершить задание игрока
+  &e/dqa customcomplete <player> <index> <amount> &a: завершить задание игрока from a custom type
+  &e/dqa reset <quests/total> <player> &a: выдать игроку новые задания или сбросить его общее число выполненных заданий.
   &e/dqa add total <player> <amount> &a: add a number of achieved quests to a player.
   &e/dqa reroll <player> <index> &a: draw a new quest for a player, at a specific index.
   &e/dqa show <player> &a: see quests of a player
 no_permission: '&fꀓ #e55039You don''t have permission.'
 no_permission_category: '&fꀓ #e55039You don''t have permission to see this category.'
-player_only: '&fꀓ #e55039Only player can execute this command.'
-invalid_category: '&fꀓ #e55039Invalid quest category.'
+player_only: '&fꀓ #e55039Только игрок может выполнить эту команду.'
+invalid_category: '&fꀓ #e55039Неверная категория задания.'
 invalid_player: '&fꀓ #e55039This player doesn''t exist, or is offline.'
-invalid_quest_id: '&fꀓ #e55039You must specify a valid quest ID.'
-invalid_quest_index: '&fꀓ #e55039The specified index is invalid.'
-invalid_amount: '&fꀓ #e55039The specified amount is invalid.'
+invalid_quest_id: '&fꀓ #e55039Укажите корректный ID задания.'
+invalid_quest_index: '&fꀓ #e55039Указан неверный индекс.'
+invalid_amount: '&fꀓ #e55039Указано неверное количество.'
 categorized_enabled: '&fꀓ #e55039Categorized quests are enabled, the global menu is
   not available.'
 categorized_disabled: '&fꀓ #e55039Categorized quests are disabled, only the global
@@ -50,9 +50,9 @@ quest_achieved: '&fꀒ #04d42cQuest card &8[%questName%&8] #04d42cis cleared, we
   !'
 all_quests_achieved: '&fꀒ #04d42cYou have finished all your daily quests, well done
   !'
-easy_reward: '&fꀒ #04d42cYou have completed all your easy quests!'
-medium_reward: '&fꀒ #04d42cYou have completed all your medium quests!'
-hard_reward: '&fꀒ #04d42cYou have completed all your hard quests!'
+easy_reward: '&fꀒ #04d42cВы выполнили все лёгкие задания!'
+medium_reward: '&fꀒ #04d42cВы выполнили все средние задания!'
+hard_reward: '&fꀒ #04d42cВы выполнили все сложные задания!'
 not_enough_items: '&fꀓ #e55039You don''t have the required amount to complete this
   quest.'
 total_amount_reset: '&fꀷ #4b56b4Your total number of completed quests has been reset
@@ -62,15 +62,15 @@ total_amount_reset_admin: '&fꀷ #4b56b4%target%''s total number of completed qu
 world_disabled: '&fꀓ #e55039You can''t complete quests in this world.'
 not_required_world: '&fꀓ #e55039You can''t complete this quest in this world.'
 not_required_region: '&fꀓ #e55039You can''t complete this quest in this region.'
-reward_command: '&fꀒ #04d42cYou have received your rewards.'
+reward_command: '&fꀒ #04d42cВы получили награды.'
 reward_exp_levels: '&fꀒ #04d42cYou receive &e%rewardAmount% &bEXP &alevels.'
 reward_exp_points: '&fꀒ #04d42cYou receive &e%rewardAmount% &bEXP &apoints.'
 reward_money: '&fꀒ #04d42cYou receive &e%rewardAmount% &b$&a.'
 reward_points: '&fꀒ #04d42cYou receive &e%rewardAmount% &bpoints&a.'
 reward_coins_engine: '&fꀒ #04d42cYou receive &e%rewardAmount% &b%currencyName%&a.'
 new_day: '&6It''s a new day!'
-too_far: '&fꀓ #e55039You are too far from the required location.'
-bad_world: '&fꀓ #e55039You are in the wrong world.'
+too_far: '&fꀓ #e55039Вы слишком далеко от нужной точки.'
+bad_world: '&fꀓ #e55039Вы находитесь в неправильном мире.'
 placeholder_api_not_enabled: '&fꀓ #e55039The PlaceholderAPI plugin is not enabled.
   Please inform an administrator.'
 placeholder_not_number: '&fꀓ #e55039The placeholder %placeholder% is not a number.
@@ -105,14 +105,14 @@ total_category_reset_admin: '&e%target%''s total number of completed quests in t
 total_category_reset_target: '&eYour total number of completed quests in the category
   %category% has been reset by an admin.'
 category_quests_achieved: '&aYou have completed all your %category% quests!'
-plugin_reloaded: '&aThe plugin has been reloaded successfully!'
-error_inventory: '&cAn error occurred while opening the inventory.'
-conversion_failed: '&cConversion failed! Please check the console for more information.'
+plugin_reloaded: '&aПлагин успешно перезагружен!'
+error_inventory: '&cПроизошла ошибка при открытии инвентаря.'
+conversion_failed: '&cConversion failed! Проверьте консоль для дополнительной информации.'
 conversion_success: '&aConversion successful! Please select the new storage mode in
   the config file and restart the server to apply changes.'
-check_console: '&cPlease check the console for more information.'
+check_console: '&cПроверьте консоль для дополнительной информации.'
 impossible_to_open_inventory: '&cImpossible to open the quests interface. Is the plugin
   still loading?'
-contact_admin: '&cIf the problem persists, please contact the server administrator.'
+contact_admin: '&cЕсли проблема сохраняется, обратитесь к администратору сервера.'
 configuration_error: '&cA configuration error prevents the interface from being displayed.
   Please inform an administrator.'

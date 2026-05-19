@@ -4,10 +4,10 @@
 # The Original Message is used as a yaml config key to get your new message!
 # To use hex color codes, use <#hexcolor> where hexcolor is the 6 char code
 # Reference: NO_DISGUISES_IN_USE
-"<red>There are no disguises in use!": "<red>There are no disguises in use!"
+"<red>Нет активных маскировок!": "<red>Нет активных маскировок!"
 
 # Reference: ACTIVE_DISGUISES_COUNT
-"<dark_green>There are %s disguises active": "<dark_green>There are %s disguises active"
+"<dark_green>Сейчас активно %s маскировок": "<dark_green>Сейчас активно %s маскировок"
 
 # Reference: ACTIVE_DISGUISES_DISGUISE
 "<green>%s:</green> <aqua>%s</aqua>": "<green>%s:</green> <aqua>%s</aqua>"
@@ -19,16 +19,16 @@
 "<red>,</red>": "<red>,</red>"
 
 # Reference: BLOWN_DISGUISE
-"<red>Your disguise was blown!": "<red>Your disguise was blown!"
+"<red>Ваша маскировка раскрыта!": "<red>Ваша маскировка раскрыта!"
 
 # Reference: BLOWN_DISGUISE_BLOCK_PLACE
-"<red>Placing a block blew your disguise!": "<red>Placing a block blew your disguise!"
+"<red>Установка блока раскрыла вашу маскировку!": "<red>Установка блока раскрыла вашу маскировку!"
 
 # Reference: BLOWN_DISGUISE_BLOCK_BREAK
-"<red>Breaking a block blew your disguise!": "<red>Breaking a block blew your disguise!"
+"<red>Ломание блока раскрыло вашу маскировку!": "<red>Ломание блока раскрыло вашу маскировку!"
 
 # Reference: EXPIRED_DISGUISE
-"<red>Your disguise has expired!": "<red>Your disguise has expired!"
+"<red>Срок вашей маскировки истёк!": "<red>Срок вашей маскировки истёк!"
 
 # Reference: CAN_USE_DISGS
 "<dark_green>You can use the disguises:</dark_green> <green>%s</green>": "<dark_green>You can use the disguises:</dark_green> <green>%s</green>"
@@ -37,13 +37,13 @@
 "<red>, </red>": "<red>, </red>"
 
 # Reference: CANNOT_FIND_PLAYER
-"<red>Cannot find the player/uuid '%s'": "<red>Cannot find the player/uuid '%s'"
+"<red>Не удалось найти игрока/uuid '%s'": "<red>Не удалось найти игрока/uuid '%s'"
 
 # Reference: CANNOT_FIND_PLAYER_NAME
-"<red>Cannot find the player '%s'": "<red>Cannot find the player '%s'"
+"<red>Не удалось найти игрока '%s'": "<red>Не удалось найти игрока '%s'"
 
 # Reference: CANNOT_FIND_PLAYER_UUID
-"<red>Cannot find the uuid '%s'": "<red>Cannot find the uuid '%s'"
+"<red>Не удалось найти uuid '%s'": "<red>Не удалось найти uuid '%s'"
 
 # Reference: CLICK_TIMER
 "<red>Right click a entity in the next %s seconds to grab the disguise reference!": "<red>Right click a entity in the next %s seconds to grab the disguise reference!"
@@ -76,7 +76,7 @@
 "<red>You do not have permission to use the method %s": "<red>You do not have permission to use the method %s"
 
 # Reference: DHELP_CANTFIND
-"<red>Cannot find the disguise %s": "<red>Cannot find the disguise %s"
+"<red>Не удалось найти маскировку %s": "<red>Не удалось найти маскировку %s"
 
 # Reference: DHELP_HELP1
 "<red>/disguisehelp <DisguiseType> <green>- View the methods you can set on a disguise. Add 'show' to reveal the methods you don't have permission to use": "<red>/disguisehelp <DisguiseType> <green>- View the methods you can set on a disguise. Add 'show' to reveal the methods you don't have permission to use"
@@ -142,19 +142,19 @@
 "<dark_green>/disguise <Dropped_Item/Falling_Block> <Id> <Durability>": "<dark_green>/disguise <Dropped_Item/Falling_Block> <Id> <Durability>"
 
 # Reference: DISG_PLAYER_AS_DISG
-"<red>Successfully disguised %s as a %s!": "<red>Successfully disguised %s as a %s!"
+"<red>Успешно замаскирован %s as a %s!": "<red>Успешно замаскирован %s as a %s!"
 
 # Reference: DISG_PLAYER_AS_DISG_FAIL
-"<red>Failed to disguise %s as a %s!": "<red>Failed to disguise %s as a %s!"
+"<red>Не удалось замаскировать %s as a %s!": "<red>Не удалось замаскировать %s as a %s!"
 
 # Reference: DISGUISED
-"<red>Now disguised as %s": "<red>Now disguised as %s"
+"<red>Теперь вы замаскированы как %s": "<red>Теперь вы замаскированы как %s"
 
 # Reference: DISRADIUS
-"<red>Successfully disguised %s entities!": "<red>Successfully disguised %s entities!"
+"<red>Успешно замаскирован %s entities!": "<red>Успешно замаскирован %s entities!"
 
 # Reference: DISRADIUS_FAIL
-"<red>Couldn't find any entities to disguise!": "<red>Couldn't find any entities to disguise!"
+"<red>Не удалось найти сущности для маскировки!": "<red>Не удалось найти сущности для маскировки!"
 
 # Reference: DMODENT_HELP1
 "<dark_green>Choose the options for a disguise then right click a entity to modify it!": "<dark_green>Choose the options for a disguise then right click a entity to modify it!"
@@ -172,7 +172,7 @@
 "<red>Your disguise has been modified!": "<red>Your disguise has been modified!"
 
 # Reference: DMODIFY_NO_PERM
-"<red>No permission to modify your disguise!": "<red>No permission to modify your disguise!"
+"<red>Нет прав to modify your disguise!": "<red>Нет прав to modify your disguise!"
 
 # Reference: DMODIFYENT_CLICK
 "<red>Right click a disguised entity in the next %s seconds to modify their disguise!": "<red>Right click a disguised entity in the next %s seconds to modify their disguise!"
@@ -193,7 +193,7 @@
 "<red>You do not have permission to modify this disguise": "<red>You do not have permission to modify this disguise"
 
 # Reference: DMODRADIUS
-"<red>Successfully modified the disguises of %s entities!": "<red>Successfully modified the disguises of %s entities!"
+"<red>Успешно изменено the disguises of %s entities!": "<red>Успешно изменено the disguises of %s entities!"
 
 # Reference: DMODRADIUS_HELP1
 "<dark_green>Modify the disguises in a radius! Caps at %s blocks!": "<dark_green>Modify the disguises in a radius! Caps at %s blocks!"
@@ -226,7 +226,7 @@
 "<red>Couldn't find any disguised entities!": "<red>Couldn't find any disguised entities!"
 
 # Reference: DMODRADIUS_NOPERM
-"<red>No permission to modify %s disguises!": "<red>No permission to modify %s disguises!"
+"<red>Нет прав to modify %s disguises!": "<red>Нет прав to modify %s disguises!"
 
 # Reference: DMODRADIUS_UNRECOGNIZED
 "<red>Unrecognised DisguiseType %s": "<red>Unrecognised DisguiseType %s"
@@ -259,7 +259,7 @@
 "<dark_green>See the EntityType's usable by <green>/disguiseradius EntityTypes": "<dark_green>See the EntityType's usable by <green>/disguiseradius EntityTypes"
 
 # Reference: DRADIUS_MISCDISG
-"<red>Failed to disguise %s entities because the option to disguise a living entity as a non-living has been disabled in the config": "<red>Failed to disguise %s entities because the option to disguise a living entity as a non-living has been disabled in the config"
+"<red>Не удалось замаскировать %s entities because the option to disguise a living entity as a non-living has been disabled in the config": "<red>Не удалось замаскировать %s entities because the option to disguise a living entity as a non-living has been disabled in the config"
 
 # Reference: DRADIUS_NEEDOPTIONS
 "<red>You need to supply a disguise as well as the radius": "<red>You need to supply a disguise as well as the radius"
@@ -268,7 +268,7 @@
 "<red>You need to supply a disguise as well as the radius and EntityType": "<red>You need to supply a disguise as well as the radius and EntityType"
 
 # Reference: FAILED_DISGIUSE
-"<red>Failed to disguise as %s": "<red>Failed to disguise as %s"
+"<red>Не удалось замаскировать as %s": "<red>Не удалось замаскировать as %s"
 
 # Reference: GRABBED_SKIN
 "<gold>Grabbed skin and saved as %s!": "<gold>Grabbed skin and saved as %s!"
@@ -295,19 +295,19 @@
 "<red>Disguised %s as the player %s!": "<red>Disguised %s as the player %s!"
 
 # Reference: LISTEN_ENTITY_ENTITY_DISG_PLAYER_FAIL
-"<red>Failed to disguise %s as the player %s!": "<red>Failed to disguise %s as the player %s!"
+"<red>Не удалось замаскировать %s as the player %s!": "<red>Не удалось замаскировать %s as the player %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_ENTITY
 "<red>Disguised the player %s as a %s!": "<red>Disguised the player %s as a %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_ENTITY_FAIL
-"<red>Failed to disguise the player %s as a %s!": "<red>Failed to disguise the player %s as a %s!"
+"<red>Не удалось замаскировать the player %s as a %s!": "<red>Не удалось замаскировать the player %s as a %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_PLAYER
 "<red>Disguised the player %s as the player %s!": "<red>Disguised the player %s as the player %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_PLAYER_FAIL
-"<red>Failed to disguise the player %s as the player %s!": "<red>Failed to disguise the player %s as the player %s!"
+"<red>Не удалось замаскировать the player %s as the player %s!": "<red>Не удалось замаскировать the player %s as the player %s!"
 
 # Reference: LISTEN_UNDISG_ENT
 "<red>Undisguised the %s": "<red>Undisguised the %s"
