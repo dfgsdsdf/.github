@@ -1,0 +1,53 @@
+# Mining a block in creative will NOT drop any
+# custom drops/will not apply block regen, etc.
+#
+# Any block specified in this config, wherever it
+# is located, MUST be mined using the correct tool
+# otherwise nothing will drop!
+
+# The corresponding tool. It's CASE_SENSITIVE!
+WOODEN_PICKAXE:
+
+    can-mine:
+    - vanilla{type=COAL_ORE}
+
+STONE_PICKAXE:
+    parent: WOODEN_PICKAXE
+    can-mine:
+    - vanilla{type=IRON_ORE}
+
+IRON_PICKAXE:
+    parent: STONE_PICKAXE
+    can-mine:
+    - vanilla{type=GOLD_ORE}
+
+GOLDEN_PICKAXE:
+    parent: IRON_PICKAXE
+    can-mine:
+    - vanilla{type=LAPIS_ORE}
+
+DIAMOND_PICKAXE:
+    parent: GOLDEN_PICKAXE
+    can-mine:
+    - vanilla{type=DIAMOND_ORE}
+    - vanilla{type=EMERALD_ORE}
+    - vanilla{type=REDSTONE_ORE}
+    - mmoitems{id=3}
+
+NETHERITE_PICKAXE:
+    parent: DIAMOND_PICKAXE
+
+TOOL?COBALT_PICKAXE:
+    parent: NETHERITE_PICKAXE
+    can-mine:
+    - mmoitems{id=4}
+
+TOOL?MITHRIL_PICKAXE:
+    parent: TOOL?COBALT_PICKAXE
+    can-mine:
+    - mmoitems{id=1}
+
+TOOL?SOULSTEEL_PICKAXE:
+    parent: TOOL?MITHRIL_PICKAXE
+    can-mine:
+    - mmoitems{id=2}

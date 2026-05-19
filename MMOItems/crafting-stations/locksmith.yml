@@ -1,0 +1,60 @@
+name: '&fꐮꁗ ꐲꐰꐮꐭꐬ<#5e5e5e>Forge > <#3b3b3b>Keys &m                       '
+max-queue-size: 10
+sound: BLOCK_CHAIN_PLACE
+layout: locksmith
+
+items:
+    fill:
+        material: AIR
+    no-recipe:
+        material: BOOK:68
+        name: '<#b0b0b0>Unknown Recipe.'
+    no-queue-item:
+        material: BOOK:67
+        name: '<#e8cc87>Available Forge Slot'
+        lore: 
+        - '<#c4c4c4>Choose a recipe to'
+        - '<#c4c4c4>begin forging.'
+
+recipes:
+
+    diamondkey:
+        output:
+            type: DUNGEON_KEY
+            id: CHAMBER_DIAMOND_KEY
+            amount: 1
+        crafting-time: 60
+        ingredients:
+        - 'vanilla{type=diamond,amount=64}'
+        - 'mmoitem{type=MATERIAL,id=INFECTED_FLESH,amount=4}'
+        - 'mmoitem{type=MATERIAL,id=COBALT_INGOT,amount=3}'
+        - 'mmoitem{type=MATERIAL,id=KEY_FRAGMENT,amount=16}'
+
+    emeraldkey:
+        output:
+            type: DUNGEON_KEY
+            id: CHAMBER_EMERALD_KEY
+            amount: 1
+        crafting-time: 300
+        ingredients:
+        - 'vanilla{type=emerald,amount=64}'
+        - 'mmoitem{type=MATERIAL,id=INFECTED_FLESH,amount=16}'
+        - 'mmoitem{type=MATERIAL,id=LAB_SAMPLE,amount=5}'
+        - 'mmoitem{type=MATERIAL,id=COBALT_INGOT,amount=4}'
+        - 'mmoitem{type=MATERIAL,id=MITHRIL_INGOT,amount=2}'
+        - 'mmoitem{type=MATERIAL,id=KEY_FRAGMENT,amount=32}'
+
+    starkey:
+        output:
+            type: DUNGEON_KEY
+            id: CHAMBER_STAR_KEY
+            amount: 1
+        crafting-time: 1800
+        ingredients:
+        - 'mmoitem{type=MATERIAL,id=COBALT_INGOT,amount=6}'
+        - 'mmoitem{type=MATERIAL,id=MITHRIL_INGOT,amount=4}'
+        - 'mmoitem{type=MATERIAL,id=SOULSTEEL_INGOT,amount=3}'
+        - 'mmoitem{type=MATERIAL,id=INFECTED_FLESH,amount=32}'
+        - 'mmoitem{type=MATERIAL,id=LAB_SAMPLE,amount=10}'
+        - 'mmoitem{type=MATERIAL,id=KEY_FRAGMENT,amount=64}'
+

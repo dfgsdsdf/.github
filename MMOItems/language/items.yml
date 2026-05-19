@@ -1,0 +1,55 @@
+CONFIRM:
+  name: '&aConfirm'
+  lore: []
+FILL:
+  name: '&8'
+  lore: []
+PREVIOUS_PAGE:
+  name: '&aPrevious Page'
+  lore: []
+NEXT_PAGE:
+  name: '&aNext Page'
+  lore: []
+PREVIOUS_IN_QUEUE:
+  name: '&aPrevious'
+  lore: []
+NEXT_IN_QUEUE:
+  name: '&aNext'
+  lore: []
+BACK:
+  name: '&aBack'
+  lore: []
+CRAFTING_RECIPE_DISPLAY:
+  name: '&f#name#'
+  lore:
+  - '{conditions}'
+  - ''
+  - '#ingredients#'
+  - '{crafting_time}'
+  - '{crafting_time}<#584d80>⏳ <#dbdbdb>Takes <#61538c>#crafting-time#s <#dbdbdb>to
+    forge.'
+  - ''
+  - '&fꂀ <#83ca16>Forge this item.'
+  - '&fꂁ <#0097d8>Preview.'
+UPGRADING_RECIPE_DISPLAY:
+  name: '&e&lUpgrade&f #name#'
+  lore:
+  - '&8Upgrade Recipe'
+  - '{conditions}'
+  - '{conditions}<#474d80>▶ Cᴏɴᴅɪᴛɪᴏɴs'
+  - ''
+  - '<#474d80>▶ Iɴɢʀᴇᴅɪᴇɴᴛ:'
+  - '#ingredients#'
+  - ''
+  - '&eLeft-Click to craft!'
+  - '&eRight-Click to preview!'
+QUEUE_ITEM_DISPLAY:
+  name: <#8c5353>⏳ &f#name#
+  lore:
+  - '{queue}&8Forging Item'
+  - '{queue}'
+  - '{queue}<#bf7575>#left#&7until forging completes.'
+  - '{ready}&8Forged Item'
+  - ''
+  - '{ready}&fꂀ <#83ca16>Claim items!'
+  - '{queue}&fꂀ <#83ca16>Cancel forging!'

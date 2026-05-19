@@ -1,0 +1,51 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀧ'
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '$ $ @ @ @ @ @ $ $'
+  - '$ $ @ @ @ @ @ $ $'
+  - '$ % @ @ @ @ @ ^ $'
+  - '$ $ @ @ @ @ @ $ $'
+
+slots: '@'
+previous-page: '%'
+next-page: '^'
+
+items:
+  '@':
+    valid-page:
+      type: BOOK
+      customModel: 22
+      name: '&{HEX:cf935b}Island Chest &f#{0}'
+    invalid-page:
+      type: BOOK
+      customModel: 23
+      name: '&8Locked'
+  '%':
+    type: BOOK
+    customModel: 25
+    name: '{0}Previous Page'
+  '*':
+    type: SUNFLOWER
+    name: '&aCurrent Page'
+    lore:
+      - '&{HEX:cccccc}Page {0}'
+  '^':
+    type: BOOK
+    customModel: 24
+    name: '{0}Next Page'
+
+sounds:
+  '@':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1

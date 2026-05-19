@@ -1,0 +1,161 @@
+# Weapon Stats
+attack-damage: '<#AA4A44>+{value} <#9aa0b3>Attack Damage'
+attack-speed: '<#CC5500>+{value}/s <#9aa0b3>Attack Speed'
+critical-strike-chance: '<#6F8FAF><plus>{value}% <#9aa0b3>Crit Chance'
+critical-strike-power: '<#6F8FAF><plus>{value}% <#9aa0b3>Crit Damage'
+skill-critical-strike-chance: '<#88648c><plus>{value}% <#9aa0b3>Skill Crit Chance'
+skill-critical-strike-power: '<#88648c><plus>{value}% <#9aa0b3>Skill Crit Damage'
+range: '<#6bb584><plus>{value} <#9aa0b3>Range'
+mana-cost: '<#6bb584>▲ <#9aa0b3>Uses &9{value} Mana'
+stamina-cost: '<#6bb584>▲ <#9aa0b3>Uses &9{value} Stamina'
+arrow-velocity: '<#6bb584><plus>{value} <#9aa0b3>Arrow Velocity'
+blunt-power: '<#6bb584><plus>{value} <#9aa0b3>Blunt Power'
+blunt-rating: '<#6bb584><plus>{value}% <#9aa0b3>Blunt Rating'
+two-handed: '<#6bb584>▲ <#9aa0b3>Two Handed'
+handworn: '<#6bb584>▲ <#9aa0b3>Handworn'
+knockback: '<#6bb584><plus>{value} <#9aa0b3>Knockback'
+recoil: '<#6bb584><plus>{value}% <#9aa0b3>Recoil'
+note-weight: '<#6bb584><plus>{value} <#9aa0b3>Note Weight'
+lifesteal: '<#d11f1f><plus>{value}% <#9aa0b3>Lifesteal'
+spell-vampirism: '<#4e3552><plus>{value}% <#9aa0b3>Spell Vampirism'
+
+# Extra Damage
+pve-damage: '<#c96166><plus>{value}% <#9aa0b3>Mob Damage'
+pvp-damage: '<#c96166><plus>{value}% <#9aa0b3>PvP Damage'
+magic-damage: '<#c96166><plus>{value}% <#9aa0b3>Magic Damage'
+weapon-damage: '<#c96166><plus>{value}% <#9aa0b3>Weapon Damage'
+undead-damage: '<#c96166><plus>{value}% <#9aa0b3>Undead Damage'
+skill-damage: '<#c96166><plus>{value}% <#9aa0b3>Skill Damage'
+physical-damage: '<#c96166><plus>{value}% <#9aa0b3>Physical Damage'
+projectile-damage: '<#c96166><plus>{value}% <#9aa0b3>Projectile Damage'
+faction-damage-undead: '<#c96166><plus>{value}% <#9aa0b3>Undead Faction Damage'
+faction-damage-dungeon: '<#d18080><plus>{value}% <#9aa0b3>Dungeon Damage'
+
+# Abilities (changed in MI 6.9.5)
+ability:
+  general-format: ""
+  modifier-if-any: ""
+  modifier-foreach: ""
+  modifier-splitter: ""
+  modifiers-per-line: 0
+  ability-splitter:
+    enabled: false
+    format: ''
+
+# Armor Stats
+block-power: '<#7099e0><plus>{value}% <#9aa0b3>Block Power'
+block-rating: '<#7099e0><plus>{value}% <#9aa0b3>Block Rating'
+block-cooldown-reduction: '<#7099e0><plus>{value}% <#9aa0b3>Block Cooldown Reduction'
+dodge-rating: '<#7099e0><plus>{value}% <#9aa0b3>Dodge Rating'
+dodge-cooldown-reduction: '<#7099e0><plus>{value}% <#9aa0b3>Dodge Cooldown Reduction'
+parry-rating: '<#7099e0><plus>{value}% <#9aa0b3>Parry Rating'
+parry-cooldown-reduction: '<#7099e0><plus>{value}% <#9aa0b3>Parry Cooldown Reduction'
+armor: '<#755543><plus>{value} <#9aa0b3>Armor'
+armor-toughness: '<#755543><plus>{value} <#9aa0b3>Armor Toughness'
+knockback-resistance: '<#3241e3><plus>{value}% <#9aa0b3>Knockback Resistance'
+max-health: '<#ed1a41><plus>{value} <#9aa0b3>Health'
+movement-speed: '<#a8dee6><plus>{value}% <#9aa0b3>Movement Speed'
+
+# Damage Reduction
+defense: '<#755543><plus>{value} <#9aa0b3>Defense'
+damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>Damage Reduction'
+fall-damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>Fall Damage Reduction'
+fire-damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>Fire Damage Reduction'
+magic-damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>Magic Damage Reduction'
+projectile-damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>Projectile Damage Reduction'
+physical-damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>Physical Damage Reduction'
+pve-damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>PvE Damage Reduction'
+pvp-damage-reduction: '<#ab4f1d><plus>{value}% <#9aa0b3>PvP Damage Reduction'
+
+# RPG stats
+health-regeneration: '<#c44972><plus>{value} <#9aa0b3>Health Regeneration'
+max-health-regeneration: '<#c44972><plus>{value}% <#9aa0b3>Max Health Regeneration'
+max-mana: '<#4965ab><plus>{value} <#9aa0b3>Max Mana'
+mana-regeneration: '<#2c488f><plus>{value} <#9aa0b3>Mana Regeneration'
+max-mana-regeneration: '<#2c488f><plus>{value}% <#9aa0b3>Max Mana Regeneration'
+max-stamina: '<#2c488f><plus>{value}% <#9aa0b3>Max Stamina'
+stamina-regeneration: '<#2c488f><plus>{value}% <#9aa0b3>Stamina Regeneration'
+cooldown-reduction: '<#ce87de><plus>{value}% <#9aa0b3>Skill Cooldown Reduction'
+additional-experience: '<#7272b5><plus>{value}% <#9aa0b3>Additional Experience'
+
+additional-experience-alchemy: '<#9aa0b3>■ Additional Alchemy Experience'
+additional-experience-enchanting: '<#9aa0b3>■ Additional Enchanting Experience'
+additional-experience-farming: '<#9aa0b3>■ Additional Farming Experience'
+additional-experience-fishing: '<#9aa0b3>■ Additional Fishing Experience'
+additional-experience-mining: '<#9aa0b3>■ Additional Mining Experience'
+additional-experience-smelting: '<#9aa0b3>■ Additional Smelting Experience'
+additional-experience-smithing: '<#9aa0b3>■ Additional Smithing Experience'
+additional-experience-woodcutting: '<#9aa0b3>■ Additional Woodcutting Experience'
+
+# Extra Options
+perm-effects: '<#6bb584><plus>{value}% <#9aa0b3>Permanent &f{effect}'
+commands: '<#6bb584><plus>{value}% <#9aa0b3>Command: &f{format} &3 <#9aa0b3>(&f{cooldown}&3 <#9aa0b3>s)'
+item-cooldown: '<#6bb584><plus>{value}% <#9aa0b3>&f{value}&3 <#9aa0b3>s Cooldown'
+arrow-potion-effects: '<#6bb584><plus>{value}% <#9aa0b3>Arrow Effect: &f{effect}'
+
+# Consumables
+restore-health: '<#6bb584><plus>{value}% <#9aa0b3>Restores &f{value} <#9aa0b3>Health'
+restore-food: '<#6bb584><plus>{value}% <#9aa0b3>Restores &f{value} <#9aa0b3>Food'
+restore-saturation: '<#6bb584><plus>{value}% <#9aa0b3>Restores &f{value} <#9aa0b3>Saturation'
+restore-mana: '<#6bb584><plus>{value}% <#9aa0b3>Restores &f{value} <#9aa0b3>Mana'
+restore-stamina: '<#6bb584><plus>{value}% <#9aa0b3>Restores &f{value} <#9aa0b3>Stamina'
+effects: '<#6bb584><plus>{value}% <#9aa0b3>Grants &f{effect} <#9aa0b3>for &f{duration} <#9aa0b3>s'
+repair: '<#6bb584><plus>{value}% <#9aa0b3>Repair: &f{value}'
+repair-percent: '<#6bb584><plus>{value}% <#9aa0b3>Repair: &f{value}%'
+can-identify: '<#6bb584><plus>{value}% <#9aa0b3>Can identify items.'
+can-deconstruct: '<#6bb584><plus>{value}% <#9aa0b3>Can deconstruct tiered items.'
+can-deskin: '<#6bb584><plus>{value}% <#9aa0b3>Can de-skin skinned items.'
+success-rate: '<#6bb584><plus>{value}% <#9aa0b3>Success Rate: &a&l{value}%'
+max-consume: '<#6bb584>{value} <#9aa0b3>Uses Left'
+
+# Gem Stones
+gem-stone-lore: "<#5d6675>Drag & drag onto items to\n<#5d6675>apply the gemstone and gain:"
+gem-sockets:
+  empty: '<#5f6a7a>◆ <#49515e>Available {name} <#49515e>Slot'
+  filled: '<#5f6a7a>◆ {name}'
+
+# Soulbound
+soulbinding-chance: '<#6bb584><plus>{value}% <#9aa0b3>Has a &a{value}% <#9aa0b3>chance to bind your item.'
+soulbound-break-chance: '<#6bb584><plus>{value}% <#9aa0b3>Has a &a{value}% <#9aa0b3>chance to break soulbounds.'
+soulbound-level: '<#6bb584><plus>{value}% <#9aa0b3>Level &e{value} <#9aa0b3>Soulbound'
+
+# Tools
+autosmelt: '<#6bb584><plus>{value}% <#9aa0b3>&fAutosmelt'
+bouncing-crack: '<#6bb584><plus>{value}% <#9aa0b3>&fBouncing Crack'
+pickaxe-power: '<#6bb584><plus>{value}% <#9aa0b3>&fPickaxe Power: &a{value}'
+durability: '<#9aa0b3>Durability: {current} / {max}'
+
+# General
+item-type: '&8{type}'
+tier: '&f{value}'
+required-class: '&3 <#9aa0b3>{value} Item'
+required-level: '&eRequires Lvl {value}'
+
+#AuraSkills Stats
+additional-strength: '<#ad2d2d><plus>{value} <#9aa0b3>Strength'
+additional-wisdom: '<#1a37ba><plus>{value} <#9aa0b3>Wisdom'
+additional-regeneration: '<#e39242><plus>{value} <#9aa0b3>Regeneration'
+additional-luck: '<#6bdb48><plus>{value} <#9aa0b3>Luck'
+additional-dexterity: '&3 <#9aa0b3>■ Extra Dexterity: &f<plus>{value}'
+additional-intelligence: '&3 <#9aa0b3>■ Extra Intelligence: &f<plus>{value}'
+
+# Professions
+profession-alchemy: '&eAlchemy Level: &c{value}'
+profession-enchanting: '&eEnchanting Level: &c{value}'
+profession-farming: '&eFarming Level: &c{value}'
+profession-fishing: '&eFishing Level: &c{value}'
+profession-mining: '&eMining Level: &c{value}'
+profession-smelting: '&eSmelting Level: &c{value}'
+profession-smithing: '&eSmithing Level: &c{value}'
+profession-woodcutting: '&eWoodcutting Level: &c{value}'
+
+# Elemental Stat Formats
+element:
+  damage: '{color}{icon}<#9aa0b3> {value} {element} Damage'
+  damage-percent: '{color}{icon}<#9aa0b3> +{value}% {element} Damage'
+  defense: '{color}{icon}<#9aa0b3> {value} {element} Defense'
+  defense-percent: '{color}{icon}<#9aa0b3> +{value}% {element} Defense'
+  weakness: '{color}{icon}<#9aa0b3> {value}% {element} Weakness'
+
+# Custom stats
+custom-myluck: '<#6bb584><plus>{value}% <#9aa0b3>Luck'

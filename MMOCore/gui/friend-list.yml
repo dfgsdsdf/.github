@@ -1,0 +1,58 @@
+
+# GUI display name
+name: "&fꐮꀘ ꐲꐰꐮꐭꐬ<#5e5e5e>Main Menu > <#3b3b3b>Friends &m               "
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+    friend:
+        slots: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
+        function: friend
+        
+        # No friend
+        item: BOOK
+        custom-model-data: 68
+        name: '&8No Friend'
+        lore: {}
+        
+        # Online friend
+        online:
+            item: PLAYER_HEAD
+            custom-model-data: 11
+            name: '&fꀛ <#55c521>{name}'
+            lore:
+            - '&8Lvl.{level} {class}'
+            - ''
+            - '&7Online since <#6082B6>{online_since} &7.'
+            - ''
+            - '&fꂀ <#83ca16>Remove friend.'
+            
+        # Offline friend
+        offline:
+            item: PLAYER_HEAD
+            custom-model-data: 11
+            name: '&fꀜ <#d74f4f>{name}'
+            lore:
+            - '&7Online <#6082B6>{last_seen} &7ago.'
+            - ''
+            - '&fꂀ <#83ca16>Remove friend.'
+    request:
+        slots: [8]
+        function: request
+        item: BARRIER
+        custom-model-data: 1
+        name: '<#588ed9>Send Friend Request'
+        lore: 
+        - '<#cccccc>Click to send a friend'
+        - '<#cccccc>request to a player!'
+    request:
+        slots: [8]
+        function: request
+        item: BARRIER
+        custom-model-data: 1
+        name: '<#588ed9>Send Friend Request'
+        lore: 
+        - '<#cccccc>Click to send a friend'
+        - '<#cccccc>request to a player!'

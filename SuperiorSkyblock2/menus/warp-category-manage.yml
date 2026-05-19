@@ -1,0 +1,50 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&lCategory: {0}'
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ ! @ @ ~ @ @ $ @'
+  - '@ @ @ @ @ @ @ @ @'
+
+success-update-sound:
+  type: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 0.2
+  pitch: 0.2
+
+category-rename: '!'
+category-icon: '~'
+category-warps: '$'
+
+items:
+  '!':
+    type: BOOK
+    name: '&6Rename Category'
+    lore:
+      - '&f '
+      - '&f '
+      - '&{HEX:cccccc}&o(( &f&oClick &{HEX:cccccc}&oto rename the category. ))'
+  '~':
+    type: STONE
+    lore:
+      - '&{HEX:cccccc}&oYou can use the following placeholders:'
+      - '&{HEX:cccccc}&o{0} is used for the warp''s name.'
+      - '&{HEX:cccccc}&o{1} is used for the warp''s location.'
+      - '&{HEX:cccccc}&o{2} is used for the warp''s public status.'
+      - '&{HEX:cccccc}&o(( &f&oRight-Click &{HEX:cccccc}&oto edit the icon. ))'
+      - '&{HEX:cccccc}&o(( &f&oLeft-Click &{HEX:cccccc}&oto edit the category''s slot. ))'
+  '$':
+    type: ENDER_PEARL
+    name: '&6Island Warps'
+    lore:
+      - '&f '
+      - '&f '
+      - '&{HEX:cccccc}&o(( &f&oClick &{HEX:cccccc}&oto edit the category warps. ))'

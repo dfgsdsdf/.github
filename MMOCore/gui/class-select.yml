@@ -1,0 +1,55 @@
+
+# GUI display name
+name: "&fꐮꀗ ꐲꐰꐮꐭꐬ<#3b3b3b>Choose A Side &m                       "
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+
+    class-witch:
+      slots: [5,14,23]
+      item: BARRIER
+      custom-model-data: 1
+      function: class-witch
+      name: '<#68468C>۞&l        <#aa74e3>ᴛʜᴇ ᴡɪᴛᴄʜ&r          <#68468C>۞'
+      hide-flags: true
+      lore:
+        - ''
+        - '{lore}'
+        - ''
+        - '{attribute-lore}'
+
+    class-marksman:
+      slots: [3,12,21]
+      item: BARRIER
+      custom-model-data: 1
+      function: class-marksman
+      name: '<#5F8575>🏹&l        <#7db09a>ᴛʜᴇ ᴍᴀʀᴋꜱᴍᴀɴ&r        <#5F8575>🏹'
+      hide-flags: true
+      lore:
+        - ''
+        - '{lore}'
+        - ''
+        - '{attribute-lore}'
+
+    class-warrior:
+      slots: [1,10,19]
+      item: BARRIER
+      custom-model-data: 1
+      function: class-warrior
+      name: '<#811331>🗡&l       <#a81d43>ᴛʜᴇ ᴡᴀʀʀɪᴏʀ&r       <#811331>🗡'
+      hide-flags: true
+      lore:
+        - ''
+        - '{lore}'
+        - ''
+        - '{attribute-lore}'
+
+    class-upcoming:
+      slots: [7,16,25]
+      item: BARRIER
+      custom-model-data: 1
+      name: '&8Coming Soon!'
+      hide-flags: true

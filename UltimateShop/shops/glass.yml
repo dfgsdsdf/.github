@@ -1,0 +1,251 @@
+settings:
+  menu: 'example-shop-menu'
+  buy-more: true
+  shop-name: 'Glass Shop'
+  hide-message: false
+
+general-configs:
+  fail-actions:
+    - 'sound: entity.villager.no;;1;;1'
+  buy-actions:
+    - 'sound: coins;;1;;1-b-o' 
+  sell-actions:
+    - 'sound: coins;;1;;1-b-o' 
+
+items:
+  A:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: RED_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  B:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: ORANGE_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  C:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: YELLOW_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  D:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: LIME_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  E:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: GREEN_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  F:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: LIGHT_BLUE_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  G:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: CYAN_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  H:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BLUE_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  I:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: PURPLE_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  J:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: MAGENTA_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  K:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: PINK_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  L:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BROWN_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  M:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BLACK_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  N:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: GRAY_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  O:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: LIGHT_GRAY_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  P:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: WHITE_STAINED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  Q:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: TINTED_GLASS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 4
+        placeholder: '{amount} Coins'
+        start-apply: 0
+
+buttons:
+  b:
+    display-item:
+      material: BOOK
+      custom-model-data: 24
+      name: '&6☰ &eChange sort'
+      lore:
+        - ''
+        - '&8 Flowers'
+        - '&8 Concretes'
+        - '&8 Wools'
+        - '&f→ Glass'
+    actions:
+      - 'shop_menu: flowers'

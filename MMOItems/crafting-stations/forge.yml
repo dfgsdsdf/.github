@@ -1,0 +1,97 @@
+name: '&fꐮꀰ ꐲꐰꐮꐭꐬ<#5e5e5e>Forge > <#3b3b3b>Materials &m                  '
+max-queue-size: 10
+sound: BLOCK_ANVIL_USE
+layout: default
+
+items:
+    fill:
+        material: AIR
+    no-recipe:
+        material: BOOK:68
+        name: '<#b0b0b0>Unknown Recipe.'
+    no-queue-item:
+        material: BOOK:67
+        name: '<#e8cc87>Available Forge Slot'
+        lore: 
+        - '<#c4c4c4>Choose a recipe to'
+        - '<#c4c4c4>begin forging.'
+
+recipes:
+
+    cobaltingot:
+        output:
+            type: MATERIAL
+            id: COBALT_INGOT
+            amount: 1
+        crafting-time: 60
+        ingredients:
+        - 'mmoitem{type=MATERIAL,id=RAW_COBALT,amount=3}'
+
+    mithril:
+        output:
+            type: MATERIAL
+            id: MITHRIL_INGOT
+            amount: 1
+        crafting-time: 180
+        ingredients:
+        - 'mmoitem{type=MATERIAL,id=RAW_MITHRIL,amount=4}'
+
+    soulsteel:
+        output:
+            type: MATERIAL
+            id: SOULSTEEL_INGOT
+            amount: 1
+        crafting-time: 360
+        ingredients:
+        - 'mmoitem{type=MATERIAL,id=RAW_SOULSTEEL,amount=4}'
+
+    gilded_netherite:
+        output:
+            type: MATERIAL
+            id: GILDED_NETHERITE_INGOT
+            amount: 1
+        crafting-time: 1000
+        ingredients:
+        - vanilla{type=NETHERITE_INGOT,amount=1}
+        - vanilla{type=GOLD_INGOT,amount=128}
+        - 'mmoitem{type=MATERIAL,id=MITHRIL_INGOT,amount=16}'
+
+    soul_netherite:
+        output:
+            type: MATERIAL
+            id: SOUL_NETHERITE_INGOT
+            amount: 1
+        crafting-time: 1000
+        ingredients:
+        - vanilla{type=NETHERITE_INGOT,amount=1}
+        - 'mmoitem{type=MATERIAL,id=SOULSTEEL_INGOT,amount=32}'
+        - 'mmoitem{type=MATERIAL,id=COBALT_INGOT,amount=16}'
+
+    hextech_ingot:
+        output:
+            type: MATERIAL
+            id: HEXTECH_INGOT
+            amount: 1
+        crafting-time: 43200
+        ingredients:
+        - 'mmoitem{type=MATERIAL,id=RAW_HEXTECH,amount=10}'
+        - 'mmoitem{type=MATERIAL,id=LAB_SAMPLE,amount=32}'
+        - 'mmoitem{type=MATERIAL,id=INFECTED_FLESH,amount=64}'
+        - 'mmoitem{type=MATERIAL,id=COBALT_INGOT,amount=10}'
+        - 'mmoitem{type=MATERIAL,id=MITHRIL_INGOT,amount=10}'
+        - 'mmoitem{type=MATERIAL,id=SOULSTEEL_INGOT,amount=6}'
+        - 'mmoitem{type=MATERIAL,id=SOUL_NETHERITE_INGOT,amount=1}'
+        - 'mmoitem{type=MATERIAL,id=GILDED_NETHERITE_INGOT,amount=1}'
+        - 'mmoitem{type=MATERIAL,id=WARDEN_INGOT,amount=1}'
+
+    sword_handle:
+        output:
+            type: MATERIAL
+            id: SWORD_HANDLE
+            amount: 1
+        crafting-time: 1200
+        ingredients:
+        - vanilla{type=STICK,amount=1}
+        - vanilla{type=DIAMOND,amount=16}
+        - vanilla{type=GOLD_INGOT,amount=32}
+        - vanilla{type=IRON_INGOT,amount=64}

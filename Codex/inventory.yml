@@ -1,0 +1,247 @@
+Inventories:
+
+  main:
+    slots: 45
+    title: '&fꐮꀯ ꐲꐰꐮꐭꐬ#5e5e5eCodex > #3b3b3bRegions &m                    '
+    '1;10':
+      item: BARRIER
+      custom_model_data: 1
+      name: '&cClose'
+      open_inventory: close
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '2;3;11;12':
+      type: regions
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+    '4;5;13;14':
+      type: monsters
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      open_inventory: monsters
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '6;7;15;16':
+      type: bosses
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      open_inventory: bosses
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '18':
+      type: regions;1
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJhOTY4ZDI3ZGQ5MGY2NzQzNGU4MTg2NDZiMmIwMDQyOTQ2YjY3YTE0YzU5NGIzMTY5OGRhZTMwOWNiNTJhNCJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '19':
+      type: regions;2
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTI3Y2Y4YjgyZDI0OTZlMTNhYWI3YjQ2ZTRmZDIxZGQ5YjE2N2ViMmUyZDBmM2JiOGM5NjIwZTUwNDdjOGNmYiJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '20':
+      type: regions;3
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RkYWYyZTk0NDUzZjUzMDg2MWUwNWEwMGQ0MzRhZTRjMDFhYWZkMDQ5OWZmMmMyNGNiZTFiZjM0OTlmMmU0MCJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '21':
+      type: regions;4
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYyNjUxODc5ZDg3MDQ5OWRhNTBlMzQwMzY4MDBkZGZmZDUyZjNlNGUxOTkzYzVmYzBmYzgyNWQwMzQ0NmQ4YiJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '22':
+      type: regions;5
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjAxNjM3ZDNkZTExNDUxYTdkNDI5MjRiMDJiNjg0YmQ1MDRlMDNjYTRkNDE2NzBjOTJiNTRjMmEzMGM4ODdmIn19fQ==
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '23':
+      type: regions;6
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM5MTVkYjNmYzQwYTc5YjYzYzJjNDUzZjBjNDkwOTgxZTUyMjdjNTAyNzUwMTI4MzI3MjEzODUzM2RlYTUxOSJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '24':
+      type: regions;7
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk0Y2E1YmRhMDU2NDQ4OTc5NzUwNTQ1OTAxMDM3MjY0MTM1N2Q5ODdjODI0MWY3MDNiZmFkZjZmM2M1MDNlNCJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '25':
+      type: regions;8
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNiMDc0ZDJmZmQyZGRlMmFlOTE2NGNkMGEzZmM4YzI3YTcyN2MxYmU4Y2U0M2I3ZmQzZDI3N2YyYmQ1NGVlNiJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '26':
+      type: regions;9
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjViNWE5OTU5Y2MyZGU0MzIwMzA0ZThlMGEyNmFhZWRkMTFmYjc5YjZhNjliMmRlOGI4OWRjZWMyZDgwZWIxZCJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '27':
+      type: regions;10
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjdiNmY1YjBkNzEwZTU5YTk5YmM4MWY1NTE0NTg1ZTYxYjU0N2JlNGQzYjgyY2M1ZTBkODYyZjE0YTYyNTc0ZSJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+
+
+  monsters:
+    slots: 45
+    title: '&fꐮꂄ ꐲꐰꐮꐭꐬ#5e5e5eCodex > #3b3b3bMonsters &m                  '
+
+    '1;10':
+      item: BARRIER
+      custom_model_data: 1
+      name: '&cClose'
+      open_inventory: close
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '2;3;11;12':
+      type: regions
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      open_inventory: main
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '4;5;13;14':
+      type: monsters
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+    '6;7;15;16':
+      type: bosses
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      open_inventory: bosses
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+
+    '18':
+      type: monsters;1
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2MwNjY0NzRlMDM2MGNlYzE2MWVmYTkwM2UxZTllODQxMTgwNzdkYWEwYWFjNDY5MWNmOTEzMTU3YWVmOGRmZSJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '19':
+      type: monsters;2
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJlZDkzMWVlNmI3NzUzOWQyZmQ3ZDI3MTYxN2RiNmIxOTM2NWNiMGUzYzUyZWFjMDA1MjcyMzAxZDA3YWM3NCJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '20':
+      type: monsters;3
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmUwNDA5ODMzMjhkYTQyYjRlZGE5MzFiZGNlZmIzOWE4ODE2YjMyMDQ1ZGExZWQ5ZjMzNWU1MzhjMThmM2M0MSJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '21':
+      type: monsters;4
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTkzNTg0MmFmNzY5MzgwZjc4ZThiOGE4OGQxZWE2Y2EyODA3YzFlNTY5M2MyY2Y3OTc0NTY2MjA4MzNlOTM2ZiJ9fX0=
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '22':
+      type: monsters;5
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE5MWRhYjgzOTFhZjVmZGE1NGFjZDJjMGIxOGZiZDgxOWI4NjVlMWE4ZjFkNjIzODEzZmE3NjFlOTI0NTQwIn19fQ==
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '23':
+      type: monsters;6
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM2NzhjOWY0YzZkZDRkOTkxOTMwZjgyZTZlN2Q4Yjg5YjI4OTFmMzVjYmE0OGE0YjE4NTM5YmJlN2VjOTI3In19fQ==
+      name: '%name%'
+      lore:
+      - '%lore%'
+    '24':
+      type: monsters;7
+      custom_model_data: 11
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQzMzMyMmUyY2NiZDljNTVlZjQxZDk2ZjM4ZGJjNjY2YzgwMzA0NWIyNDM5MWFjOTM5MWRjY2FkN2NkIn19fQ==
+      name: '%name%'
+      lore:
+      - '%lore%'
+
+
+  bosses:
+    slots: 45
+    title: '&fꐮꂅ ꐲꐰꐮꐭꐬ#5e5e5eCodex > #3b3b3bBosses &m                    '
+    
+    '1;10':
+      item: BARRIER
+      custom_model_data: 1
+      name: '&cClose'
+      open_inventory: close
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '2;3;11;12':
+      type: regions
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      open_inventory: main
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '4;5;13;14':
+      type: monsters
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+      open_inventory: monsters
+      click_commands:
+      - "execute at %player% run playsound minecraft:block.note_block.hat player %player% ~ ~ ~ 1 1"
+    '6;7;15;16':
+      type: bosses
+      item: BARRIER
+      custom_model_data: 1
+      name: '#5594d9%name%'
+      lore:
+      - '#8a9dbfCompleted #cae2fc%unlocked% (%percentage%)'
+
+    '18':
+      type: bosses;1
+      item: BOOK
+      custom_model_data: 69
+      name: '%name%'
+      lore:
+      - '%lore%'

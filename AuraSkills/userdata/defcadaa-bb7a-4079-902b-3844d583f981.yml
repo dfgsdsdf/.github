@@ -1,0 +1,105 @@
+uuid: defcadaa-bb7a-4079-902b-3844d583f981
+skills:
+  auraskills/excavation:
+    level: 0
+    xp: 0.0
+  auraskills/agility:
+    level: 0
+    xp: 40.924
+  auraskills/farming:
+    level: 2
+    xp: 68.0
+  auraskills/archery:
+    level: 1
+    xp: 25.0
+  auraskills/mining:
+    level: 5
+    xp: 1131.0000000000023
+  auraskills/fishing:
+    level: 9
+    xp: 710.0
+  auraskills/defense:
+    level: 7
+    xp: 375.99999046325684
+  auraskills/fighting:
+    level: 9
+    xp: 1445.0
+  auraskills/foraging:
+    level: 1
+    xp: 60.999999999999986
+  auraskills/alchemy:
+    level: 2
+    xp: 360.0
+  auraskills/enchanting:
+    level: 17
+    xp: 13600.0
+mana: 0.0
+action_bar:
+  idle: false
+stat_modifiers:
+  '0':
+    name: mmoitems_STRENGTH
+    stat: auraskills/strength
+    operation: ADD
+    value: 0.0
+  '1':
+    name: mmoitems_TOUGHNESS
+    stat: auraskills/toughness
+    operation: ADD
+    value: 0.0
+  '2':
+    name: mmoitems_WISDOM
+    stat: auraskills/wisdom
+    operation: ADD
+    value: 0.0
+  '3':
+    name: test
+    stat: auraskills/luck
+    operation: ADD
+    value: 500.0
+  '4':
+    name: mmoitems_REGENERATION
+    stat: auraskills/regeneration
+    operation: ADD
+    value: 0.0
+  '5':
+    name: mmoitems_CRIT_CHANCE
+    stat: auraskills/crit_chance
+    operation: ADD
+    value: 0.0
+  '6':
+    name: mmoitems_SPEED
+    stat: auraskills/speed
+    operation: ADD
+    value: 0.0
+  '7':
+    name: mmoitems_CRIT_DAMAGE
+    stat: auraskills/crit_damage
+    operation: ADD
+    value: 0.0
+  '8':
+    name: mmoitems_LUCK
+    stat: auraskills/luck
+    operation: ADD
+    value: 0.0
+  '9':
+    name: mmoitems_HEALTH
+    stat: auraskills/health
+    operation: ADD
+    value: 0.0
+trait_modifiers:
+  '0':
+    name: mmoitems_max_mana
+    trait: auraskills/max_mana
+    operation: ADD
+    value: 36.0
+  '1':
+    name: jacob_bonus
+    trait: auraskills/farming_luck
+    operation: ADD
+    value: 10.0
+ability_data:
+  auraskills/xp_convert:
+    xp: 19.774985218047732
+  auraskills/first_strike:
+    counter: 216

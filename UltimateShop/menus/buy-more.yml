@@ -1,0 +1,92 @@
+title: '&fꐮꀽ ꐱꐰꐡ %coinsengine_balance_rounded_coin%'
+size: 36
+
+layout:
+  - 'A12304560'
+  - '00000000F'
+  - 'DDD0B0EEE'
+
+amount-items:
+  1:
+    display-item:
+      material: BOOK
+      custom-model-data: 52
+      name: '&#8ceb44+1'
+      lore:
+        - '&#ccccccClick to add 1 more.'
+    add-amount: 1
+  2:
+    display-item:
+      material: BOOK
+      custom-model-data: 52
+      amount: 10
+      name: '&#8ceb44+10'
+      lore:
+        - '&#ccccccClick to add 10 more.'
+    add-amount: 10
+  3:
+    display-item:
+      material: BOOK
+      custom-model-data: 52
+      amount: 32
+      name: '&#8ceb44+32'
+      lore:
+        - '&#ccccccClick to add 32 more.'
+    add-amount: 32
+  4:
+    display-item:
+      material: BOOK
+      custom-model-data: 53
+      name: '&#db4848-1'
+      lore:
+        - '&#ccccccClick to add 1 more.'
+    add-amount: -1
+  5:
+    display-item:
+      material: BOOK
+      custom-model-data: 53
+      amount: 10
+      name: '&#db4848-10'
+      lore:
+        - '&#ccccccClick to add 10 more.'
+    add-amount: -10
+  6:
+    display-item:
+      material: BOOK
+      custom-model-data: 53
+      amount: 32
+      name: '&#db4848-32'
+      lore:
+        - '&#ccccccClick to add 32 more.'
+    add-amount: -32
+    # Support replace add-amount option to set-amount.
+    # set-amount: 32
+
+display-item: B
+
+confirm-items:
+  D:
+    display-item:
+      material: BARRIER
+      custom-model-data: 1
+      name: '&#8ceb44Buy &fx{amount} &#8ceb44of this item.'
+      lore:
+    # You can remove click-action option, then confirm button can do all things, like buy, sell, sell all.
+    # If this option exists, then this confirm button can only do the thing.
+    click-action: buy
+  E:
+    display-item:
+      material: BARRIER
+      custom-model-data: 1
+      name: '&#db4848Sell &fx{amount} &#db4848of this item.'
+      lore:
+    click-action: sell
+
+buttons:
+  A:
+    display-item:
+      material: BARRIER
+      custom-model-data: 1
+      name: '&#cccccc← Go back'
+    actions:
+      - 'shop_menu: {shop}'

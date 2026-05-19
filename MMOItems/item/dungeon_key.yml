@@ -1,0 +1,54 @@
+CHAMBER_DIAMOND_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#74b4b8>Diamond Chamber Key
+    custom-model-data: 1.0
+    tier: TIER3
+    lore-format: material
+    lore:
+    - '<#cccccc>Used to unlock a <#74b4b8>Diamond'
+    - '<#74b4b8>Chest <#cccccc>in &6rewards chamber'
+    - '<#cccccc>after defeating dungeons!'
+    - '<#cccccc>'
+    - '&8Consumed on use!'
+    disable-repairing: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+CHAMBER_EMERALD_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#80b874>Emerald Chamber Key
+    custom-model-data: 2.0
+    tier: TIER4
+    lore-format: material
+    lore:
+    - '<#cccccc>Used to unlock an <#80b874>Emerald'
+    - '<#80b874>Chest <#cccccc>in &6rewards chamber'
+    - '<#cccccc>after defeating dungeons!'
+    - '<#cccccc>'
+    - '&8Consumed on use!'
+    disable-repairing: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+CHAMBER_STAR_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#94a7c6>Star Chamber Key
+    custom-model-data: 3.0
+    lore-format: material
+    lore:
+    - '<#cccccc>Used to unlock a <#8090aa>Star Chest'
+    - '<#cccccc>in &6rewards chamber <#cccccc>after'
+    - '<#cccccc>defeating dungeons!'
+    - '<#cccccc>'
+    - '&8Consumed on use!'
+    disable-repairing: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    tier: TIER5

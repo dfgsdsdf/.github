@@ -1,0 +1,64 @@
+factions-warrior:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 20
+    model: prism_skyblock/gui_textures/factions/warrior
+factions-marksman:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 21
+    model: prism_skyblock/gui_textures/factions/marksman
+factions-witch:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 22
+    model: prism_skyblock/gui_textures/factions/witch
+factions-warriorportrait:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 23
+    model: prism_skyblock/gui_textures/factions/warrior_portrait
+factions-marksmanortrait:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 24
+    model: prism_skyblock/gui_textures/factions/marksman_portrait
+factions-witchportrait:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 25
+    model: prism_skyblock/gui_textures/factions/witch_portrait
+factions-humanportrait:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 26
+    model: prism_skyblock/gui_textures/factions/human_portrait
+factions-human:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 27
+    model: prism_skyblock/gui_textures/factions/human

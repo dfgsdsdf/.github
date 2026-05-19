@@ -1,0 +1,110 @@
+display:
+    name: 'Warrior'
+
+    attribute-lore:
+    - '&f▶ ʙᴀꜱᴇ ꜱᴛᴀᴛꜱ'
+    - ' <#ed1a41> 30 Health &8(<#ed1a41>↑+2&8)'
+    - ' <#755543> 1% Max HP Regen &8(<#755543>↑+0.2&8)'
+    - ' <#c96166> 2% Weapon Damage &8(<#c96166>↑+0.5&8)'
+    - '&8[↑ = stats gain per level]'
+    - '&7'
+    - '&e       ᴄʟɪᴄᴋ ᴛᴏ ꜱᴇʟᴇᴄᴛ!'
+    - '&8    Costs 1 faction token!'
+
+    lore:
+    - '<#ba8c98>Bulky, strong and resillient,'
+    - '<#ba8c98>warriors charge head-first'
+    - '<#ba8c98>into battles, blocking attacks'
+    - '<#ba8c98>with heavy armor and strike'
+    - '<#ba8c98>down enemies with force.'
+
+    item: BARRIER:1
+
+exp-curve: levels
+
+max-level: 30
+skill-trees: []
+
+skill-slots:
+    1:
+        name: "<#bae6e6>♦ <#438c8c>%mmocore_bound_1%"
+        lore: []
+
+resource:
+    mana:
+        type: MAX
+        value:
+            base: 3
+            per-level: .1
+            max: 10
+        off-combat: true
+        
+mana:
+    char: ■
+    icon: '&9⭐'
+    color:
+        full: AQUA
+        half: BLUE
+        empty: WHITE
+    name: 'Mana'
+
+cast-particle:
+    particle: SPELL_INSTANT
+
+skills:
+    BACKSTAB:
+        level: 1
+        max-level: 10
+        needs-bound: true
+        extra:
+            base: 5.0
+            per-level: 1.0
+        mana:
+            base: 0
+        cooldown:
+            base: 0
+    FIRE_BERSERKER:
+        level: 10
+        max-level: 10
+        needs-bound: true
+        extra:
+            base: 10.0
+            per-level: 1.0
+        mana:
+            base: 0
+        cooldown:
+            base: 0
+    SNEAKY_PICKY:
+        level: 25
+        max-level: 10
+        needs-bound: true
+        extra:
+            base: 25.0
+            per-level: 2.0
+        mana:
+            base: 0
+        cooldown:
+            base: 0
+    DIVINE_INTERVENTION:
+        max-level: 10
+        unlocked-by-default: false
+    
+attributes:
+    max-health:
+        base: 30
+        per-level: 2
+    max_health_regeneration:
+        base: 1
+        per-level: 0.2
+    weapon-damage:
+        base: 2
+        per-level: 0.5
+
+#The number of skills a player can bound.
+max-bound-active-skills: 0
+max-bound-passive-skills: 1
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'
+

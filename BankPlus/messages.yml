@@ -1,0 +1,138 @@
+# * Placeholders *
+# BankPlus messages support PlaceholderApi, and you can
+# use every type of placeholder inside the messages.
+
+# Enable the alert message when a message is missing in the file.
+Enable-Missing-Message-Alert: true
+
+# The main plugin prefix.
+Prefix: ""
+
+# You can use a message as single or multiple:
+# MessageIdentifier: "A single message"
+# MessageIdentifier:
+#   - "Multiple messages"
+#   - "in just one! :)"
+#
+# If you don't want a message to show put:
+# Message: ""
+
+# Plugin
+Personal-Bank:
+- "&7Bank statistics:"
+- "  #04d42cBank coins: &f%amount_formatted%"
+- "  #04d42cBank level: &f%level%"
+Multiple-Personal-Bank: "&fꀒ #04d42cYou have a total amount of &f%amount_formatted% #04d42ccoins in your banks."
+Bank-Others:
+- "&f%player%'s &7bank statistics:"
+- "  #04d42cBank coins: &f%amount_formatted%"
+- "  #04d42cBank level: &f%level%"
+Multiple-Bank-Others: "&f%player% #04d42chas a total amount of &f%amount_formatted% coins #04d42cin their banks!"
+Success-Withdraw: "&fꀒ #04d42cSuccessfully withdrew &f%amount_formatted% #04d42ccoins! (&f%taxes_formatted% #04d42clost in taxes)"
+Success-Deposit: "&fꀒ #04d42cSuccessfully deposited &f%amount_formatted% #04d42ccoins! (&f%taxes_formatted% #04d42clost in taxes)"
+Set-Message: "&fꀒ #04d42cYou have set &f%player%'s #04d42cbank balance to &f%amount_formatted%#04d42c!"
+Add-Message: "&fꀒ #04d42cYou have added &f%amount_formatted% coins #04d42cto &f%player%'s #04d42cbank balance!"
+Remove-Message: "&fꀒ #04d42cYou have removed &f%amount_formatted% #04d42ccoins to &f%player%'s #04d42cbank balance!"
+Force-Open: "&fꀒ #04d42cSuccessfully forced &f%player% #04d42cto open their &f%bank% #04d42cbank!"
+Force-Upgrade: "&fꀒ #04d42cSuccessfully forced &f%player% #04d42cto upgrade their &f%bank% #04d42cbank!"
+Set-Level-Message: "&fꀒ #04d42cYou have set &f%player%'s #04d42cbank level to &f%level%#04d42c!"
+Pay-Message: "&fꀒ #04d42cYou have added &f%amount_formatted% coins #04d42cto &f%player%'s #04d42cbank balance!"
+Chat-Deposit: "&fꀒ #04d42cType an amount in chat to deposit, type 'exit' to exit"
+Chat-Withdraw: "&fꀒ #04d42cType an amount in chat to withdraw, type 'exit' to exit"
+Chat-Time-Expired: "&fꀓ #e55039The time to type a number has expired."
+Payment-Sent: "&fꀒ #04d42cYou have successfully sent to &f%player% %amount_formatted% #04d42ccoins!"
+Payment-Received: "&fꀒ #04d42cYou have received &f%amount_formatted% #04d42ccoins from &f%player%!"
+Interest-Time: "&fꀒ #04d42cWait more &f%time% #04d42cto get the interest."
+BankTop-Updated: "&fꀒ #04d42cSuccessfully updated the banktop!"
+Bank-Upgraded: "&fꀒ #04d42cSuccessfully upgraded the bank!"
+Debt-Money-Taken: "&fꀓ #e55039We took &f%amount_formatted% #e55039coins from your bank to pay your debt, which is now: &f%debt_formatted%#e55039."
+
+# Loans
+Loan-Request-Sent: "&fꀒ #04d42cSuccessfully sent the loan request to &f%player%#04d42c, waiting for a confirm..."
+Loan-Request-Received:
+- "                       &6&l!! LOAN REQUEST !!"
+- ""
+- "      &f%player% #04d42crequested you a loan of &f%amount_formatted% #04d42ccoins"
+- "&fꀒ #04d42cType &2/bank loan accept#04d42c to accept or #e55039/bank loan deny#04d42c to deny."
+- "&7&o(( The coins will be automatically be payed back with 5% interest ))"
+Loan-Give-Request-Received:
+- "                       &6&l!! LOAN REQUEST !!"
+- ""
+- "      &f%player% #04d42cis offering you a loan of &f%amount_formatted% #04d42ccoins"
+- "&fꀒ #04d42cType &2/bank loan accept#04d42c to accept or #e55039/bank loan deny#04d42c to deny."
+- "&7&o(( The coins will be automatically be payed back with 5% interest ))"
+
+Received-Loan: "&fꀒ #04d42cSuccessfully received #04d42ca loan of &f%amount_formatted% #04d42ccoins from &f%player%#04d42c."
+Received-Loan-Full: "&fꀒ #04d42cSuccessfully received #04d42ca loan of &f%amount_formatted% #04d42ccoins from &f%player%#04d42c, but since your bank was full, &f%extra_formatted% #04d42ccoins went to your wallet."
+Received-Loan-Bank: "&fꀒ #04d42cSuccessfully received #04d42ca loan of &f%amount_formatted% #04d42ccoins from the bank."
+Received-Loan-Full-Bank: "&fꀒ #04d42cSuccessfully received #04d42ca loan of &f%amount_formatted% #04d42ccoins from the bank, but since your bank was full, &f%extra_formatted% #04d42ccoins went to your wallet."
+Given-Loan: "&fꀒ #04d42cSuccessfully sent to &f%player% #04d42ca loan of &f%amount_formatted% #04d42ccoins."
+Loan-Request-Sent-Denied: "&f%player% #e55039has denied your loan request!"
+Loan-Request-Sent-Cancelled: "&fꀒ #04d42cYou have cancelled your loan request."
+Loan-Request-Received-Denied: "&fꀒ #04d42cSuccessfully denied &f%player%#04d42c's loan."
+Loan-Request-Received-Cancelled: "&f%player% #e55039has cancelled the loan request."
+Loan-Payback: "&fꀒ #04d42cYou have received &f%amount_formatted% #04d42cfrom the loan given to &f%player%."
+Loan-Payback-Full: "&fꀒ #04d42cYou have received &f%amount_formatted% #04d42cfrom the loan given to &f%player%#04d42c, but since your bank was full, &f%extra_formatted% #04d42ccoins has been added to your wallet."
+Loan-Returned: "&fꀒ #04d42cYou have returned &f%amount_formatted% #04d42ccoins to &f%player% #04d42cfor his loan."
+Loan-Returned-Debt: "&fꀓ #e55039Sadly, you did not have enough coins to pay back &f%player%#e55039, so you are now in debt for &f%amount_formatted%#e55039."
+Loan-Returned-Bank: "&fꀒ #04d42cYou have returned &f%amount_formatted% #04d42ccoins"
+Loan-Returned-Debt-Bank: "&fꀓ #e55039Sadly, you did not have enough coins to return to the bank, so you are now in debt for &f%amount_formatted%#e55039."
+
+# Titles
+Title-Custom-Transaction:
+  Enabled: false
+  Title-Deposit: "&fType in #04d42cchat &fan, amount to #04d42cdeposit,10,40,10"
+  Title-Withdraw: "&fType in #04d42cchat &fan, amount to #04d42cwithdraw,10,40,10"
+
+# Interest Messages
+Interest-Broadcast:
+  Enabled: true
+  Message: "&fꀷ #4b56b4You have earned &f%amount_formatted% coins #04d42cin interest!"
+  Multi-Message: "&fꀒ #04d42cYou have earned a total amount of &f%amount_formatted% coins #04d42cin interest!"
+  No-Money: "&fꀒ #04d42cSadly, you received 0 coins from interest."
+  Bank-Full: "&fꀓ #e55039You can't earn anymore coins from interest because your bank is full!"
+
+# Help Message
+Help-Message:
+- "&fꀒ #04d42cHelp page"
+- "&fꀒ #04d42c/bank deposit <amount> &7Deposit an amount of coins."
+- "&fꀒ #04d42c/bank withdraw <amount> &7Withdraw an amount of coins."
+- "&fꀒ #04d42c/bank view <player> &7View the balance of a player."
+- "&7Plugin made by Pulsi_"
+- "&fꀒ #04d42cRate 5 Star!"
+
+# Errors
+Interest-Disabled: "&fꀓ #e55039The interest is disabled!"
+BankTop-Disabled: "&fꀓ #e55039The banktop is disabled!"
+Specify-Number: "&fꀓ #e55039Please specify a number."
+Specify-Player: "&fꀓ #e55039Please specify a player."
+Specify-Bank: "&fꀓ #e55039Please specify a bank."
+Specify-Action: "&fꀓ #e55039Please specify an action!"
+Invalid-Number: "&fꀓ #e55039Please choose a valid number."
+Invalid-Player: "&fꀓ #e55039Please choose a valid player."
+Invalid-Bank: "&fꀓ #e55039Please choose a valid bank."
+Invalid-Action: "&fꀓ #e55039Please specify a valid action!"
+Invalid-Bank-Level: "&fꀓ #e55039Please choose a valid bank level."
+Cannot-Deposit-Anymore: "&fꀓ #e55039You can't deposit anymore coins."
+Cannot-Use-Bank-Here: "&fꀓ #e55039Sorry, the bank is disabled in this world."
+Cannot-Use-Negative-Number: "&fꀓ #e55039You can't use a negative number."
+Bank-Full: "&fꀓ #e55039The bank of %player% is full."
+Bank-Empty: "&fꀓ #e55039The bank of %player% is empty."
+Cannot-Access-Bank: "&fꀓ #e55039You can't access to this bank."
+Cannot-Access-Bank-Others: "&fꀓ #e55039%player% can't access to this bank."
+Bank-Max-Level: "&fꀓ #e55039The bank is already at the max level."
+Minimum-Number: "&fꀓ #e55039Please use an higher number for this action. ( Minimum: 10 )"
+Not-Player: "&fꀓ #e55039You are not a player."
+Insufficient-Money: "&fꀓ #e55039You don't have enough coins."
+Insufficient-Items: "&fꀓ #e55039You need at least &f%items%#e55039."
+Gui-Module-Disabled: "&fꀓ #e55039The gui module is disabled!"
+Internal-Error: "&fꀓ #e55039An internal error has occurred, try again later."
+Unknown-Command: "&fꀓ #e55039Unknown Command."
+No-Permission: "&fꀓ #e55039You don't have the permission. (%permission%)"
+No-Loan-Requests: "&fꀓ #e55039You haven't received any loan requests."
+No-Loan-Sent: "&fꀓ #e55039You haven't sent any loan."
+Loan-Already-Sent: "&fꀓ #e55039You have already sent a loan request."
+Cannot-Afford-Loan: "&fꀓ #e55039You can't afford for this loan."
+Cannot-Afford-Loan-Others: "&fꀓ #e55039%player% can't afford for this loan."
+No-Available-Banks: "&fꀓ #e55039You have no available banks."
+No-Available-Items: "%prefix% &cNo available items."

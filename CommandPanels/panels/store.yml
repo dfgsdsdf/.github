@@ -1,0 +1,162 @@
+panels:
+  store:
+    rows: 6
+    title: '&fꐮꁾ ꐲꐰꐮꐭꐬ<#5e5e5e>Main Menu > <#3b3b3b>Store &m                  '
+    commands:
+    - store
+    - buy
+    - rank
+    - ranks
+    item:
+
+      '45':
+        material: barrier
+        customdata: '1'
+        name: '&#d6d6d6Go back.'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'open= menu'
+
+
+
+      '0': &vip
+        material: barrier
+        customdata: '1'
+        name: '         &#66f28b- &#e6e6e6ꁀ &#66f28b-         '
+        lore:
+          - ''
+          - ' &#66f28b✦&#e3ffeaᴘᴇʀᴋs'
+          - '&#e6e6e6/ah max items: &#66f28b5'
+          - '&#e6e6e6/ah expire time: &#66f28b8h'
+          - '&#e6e6e6/homes max homes: &#66f28b4'
+          - ''
+          - ' &#66f28b⭐&#e3ffeaʙᴏɴᴜsᴇs'
+          - '&#e6e6e6Tab and chat colors'
+          - '&#e6e6e6Priority in tab'
+          - '&#e6e6e6VIP discord channel'
+          - ''
+          - ' &#66f28b☻&#e3ffeaᴄᴏsᴍᴇᴛɪᴄ'
+          - '&#e6e6e6Basic emoji pack'
+          - ''
+          - '&#808080     Priced at &#cccccc9.99$'
+        commands:
+          - 'cpc'
+          - 'sound= ENTITY_CHICKEN_EGG'
+          - "minimessage= <white>ꀷ <#4b56b4>Buy ranks, dungeon keys and various items through our store: <b>store.name.com</b>"
+      '1': *vip
+      '9': *vip
+      '10': *vip
+      '18': *vip
+      '19': *vip
+
+
+      '7': &mvp
+        material: barrier
+        customdata: '1'
+        name: '          &#4abcbc- &#e6e6e6ꁁ &#4abcbc-          '
+        lore:
+          - ''
+          - ' &#4abcbc✦&#befafaᴘᴇʀᴋs'
+          - '&#e6e6e6/ah max items: &#4abcbc6'
+          - '&#e6e6e6/ah expire time: &#4abcbc16h'
+          - '&#e6e6e6/homes max homes: &#4abcbc5'
+          - ''
+          - ' &#4abcbc⭐&#befafaʙᴏɴᴜsᴇs'
+          - '&#e6e6e6Tab and chat colors'
+          - '&#e6e6e6Priority in tab'
+          - '&#e6e6e6VIP discord channel'
+          - ''
+          - ' &#4abcbc☻&#befafaᴄᴏsᴍᴇᴛɪᴄ'
+          - '&#e6e6e6Basic emoji pack'
+          - '&#e6e6e6Advanced emoji pack'
+          - ''
+          - '&#808080     Priced at &#cccccc19.99$'
+        commands:
+          - 'cpc'
+          - 'sound= ENTITY_CHICKEN_EGG'
+          - "minimessage= <white>ꀷ <#4b56b4>Buy ranks, dungeon keys and various items through our store: <b>store.name.com</b>"
+      '8': *mvp
+      '16': *mvp
+      '17': *mvp
+      '25': *mvp
+      '26': *mvp
+
+
+
+      '3': &hero
+        material: barrier
+        customdata: '1'
+        name: '          &#a051dd- &#e6e6e6ꁂ &#a051dd-          '
+        lore:
+          - ''
+          - ' &#a051dd✦&#e9c4ffᴘᴇʀᴋs'
+          - '&#e6e6e6/ah max items: &#a051dd8'
+          - '&#e6e6e6/ah expire time: &#a051dd24h'
+          - '&#e6e6e6/homes max homes: &#a051dd6'
+          - ''
+          - ' &#a051dd⭐&#e9c4ffʙᴏɴᴜsᴇs'
+          - '&#e6e6e6Beta access'
+          - '&#e6e6e6Priority in closed session'
+          - '&#e6e6e6Tab and chat colors'
+          - '&#e6e6e6Priority in tab'
+          - '&#e6e6e6VIP discord channel'
+          - '&#e6e6e6HERO discord channel'
+          - ''
+          - ' &#a051dd☻&#e9c4ffᴄᴏsᴍᴇᴛɪᴄ'
+          - '&#e6e6e6Basic emoji pack'
+          - '&#e6e6e6Advanced emoji pack'
+          - '&#e6e6e6Supreme emoji pack'
+          - ''
+          - '&#808080      Priced at &#cccccc29.99$'
+        commands:
+          - 'cpc'
+          - 'sound= ENTITY_CHICKEN_EGG'
+          - "minimessage= <white>ꀷ <#4b56b4>Buy ranks, dungeon keys and various items through our store: <b>store.name.com</b>"
+      '4': *hero
+      '5': *hero
+      '12': *hero
+      '13': *hero
+      '14': *hero
+      '21': *hero
+      '22': *hero
+      '23': *hero
+
+
+      '29': &key
+        material: barrier
+        customdata: '1'
+        name: '      &#ff6e92- Dᴜɴɢᴇᴏɴ Kᴇʏs -       '
+        lore:
+          - '&#ffc4d3Unlocks a chest in rewards'
+          - '&#ffc4d3chamber at the end of each'
+          - '&#ffc4d3successful dungeon run!'
+          - ''
+          - '&#74b4b8⭐ Diamond Dungeon Key'
+          - '&#80b874⭐ Emerald Dungeon Key'
+          - '&#94a7c6⭐ Star Dungeon Key'
+        commands:
+          - 'cpc'
+          - 'sound= ENTITY_CHICKEN_EGG'
+          - "minimessage= <white>ꀷ <#4b56b4>Buy ranks, dungeon keys and various items through our store: <b>store.name.com</b>"
+      '30': *key
+      '31': *key
+      '32': *key
+      '33': *key
+      '38': *key
+      '39': *key
+      '40': *key
+      '41': *key
+      '42': *key
+
+      '47': &store
+        material: barrier
+        customdata: '1'
+        name: '&#ccdbff→ Visit our Store Page!'
+        commands:
+          - 'cpc'
+          - 'sound= ENTITY_CHICKEN_EGG'
+          - "minimessage= <white>ꀷ <#4b56b4>Buy ranks, dungeon keys and various items through our store: <b>store.name.com</b>"
+      '48': *store
+      '49': *store
+      '50': *store
+      '51': *store

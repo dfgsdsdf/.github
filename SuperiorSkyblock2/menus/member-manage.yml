@@ -1,0 +1,68 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꃐ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Managing Member'
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ ^ ^ ^ % % %'
+  - '@ @ @ ^ ^ ^ % % %'
+  - 'h h | | | | | | |'
+
+roles: '@'
+ban: '%'
+kick: '^'
+
+items:
+  'h':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back'
+  '@':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:35addc}Player Role'
+    lore:
+      - '&{HEX:cccccc}Click to edit player''s'
+      - '&{HEX:cccccc}role.'
+    flags:
+      - HIDE_ATTRIBUTES
+  '%':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:e82121}Ban Player'
+    lore:
+      - '&{HEX:cccccc}Click to ban the player'
+      - '&{HEX:cccccc}from the island.'
+  '^':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:dc8835}Kick Player'
+    lore:
+      - '&{HEX:cccccc}Click to kick the player'
+      - '&{HEX:cccccc}from the island.'
+
+commands:
+  'h':
+    - '[player] is members'
+
+sounds:
+  '@':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  '%':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '^':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

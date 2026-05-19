@@ -1,0 +1,43 @@
+# GUI display name, used by default
+name: "&fꐮꀙ"
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 9
+
+items:
+    yes:
+        slots: [1,2,3]
+        function: 'yes'
+
+        # Displayed when the player had already selected this class
+        # before (only if class slots are enabled in the config).
+        unlocked:
+            item: BARRIER
+            custom-model-data: 1
+            name: '<#32CD32>✔ &aSelect <#32CD32>{class}'
+            lore:
+            - '&8The following stats is saved'
+            - '&8since your last membership:'
+            - ''
+            - '&7Level: &e{level}'
+            - '&7Progression: &e{exp} / {next_level}'
+            - '&8[&e{progress}&8] &e{percent}%'
+            - ''
+            - '&7Skill Points: &6{skill_points}'
+            - '&7Skills You Unlocked: &6{unlocked_skills}&7/&6{class_skills}'
+
+        # Displayed when the class is being chosen for the first time.
+        locked:
+            item: BARRIER
+            custom-model-data: 1
+            name: '<#32CD32>✔ &aSelect <#32CD32>{class}'
+            lore: {}
+
+    back:
+        slots: [5,6,7]
+        item: BARRIER
+        custom-model-data: 1
+        function: back
+        name: '&c✘ Back'
+        lore: {}

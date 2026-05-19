@@ -1,0 +1,10 @@
+{
+  "connect.joining": "",
+  "menu.disconnect": "§f<glyph:esc_banner>",
+  "menu.returnToGame": "Back to Prism Skyblock",
+  "menu.game": "<glyph:bannertitle>",
+  "multiplayer.downloadingTerrain": "ꐳꁯꐴꐳꁱ",
+  "item.dyed": "",
+  "container.inventory": " Inventory",
+  "resourcePack.server.name": "Prism Skyblock"
+} 

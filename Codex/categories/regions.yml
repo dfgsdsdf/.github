@@ -1,0 +1,76 @@
+name: "World Regions"
+discover_title:
+  title: "&c&lCODEX UPDATED"
+  subtitle: "&7Region: %name%"
+  fade_in: 0
+  stay: 0
+  fade_out: 0
+discover_message:
+- "&fꀷ #4b56b4You have discovered %name%#4b56b4, codex updated!"
+discover_sound:
+  name: BLOCK_NOTE_BLOCK_BELL
+  volume: 10
+  pitch: 0.1
+discoveries:
+  1:
+    name: "#69c2f5Balloon Dock"
+    lore:
+    - "#b8e5ffVarious hot-air balloons"
+    - "#b8e5ffdock here, waiting to pick"
+    - "#b8e5fftravellers up."
+    discovered_on_region: balloondock
+  2:
+    name: "#69c2f5The Blacksmith"
+    lore:
+    - "#b8e5ffCome and forge various"
+    - "#b8e5ffpowerful equipment!"
+    discovered_on_region: blacksmith
+  3:
+    name: "#69c2f5The Grotto"
+    lore:
+    - "#b8e5ffEnjoy the view of this"
+    - "#b8e5ffbreath-taking grotto."
+    discovered_on_region: grotto
+  4:
+    name: "#69c2f5Enchant Center"
+    lore:
+    - "#b8e5ffMeet Helix and uncover"
+    - "#b8e5ffancient enchants!"
+    discovered_on_region: enchantcenter
+  5:
+    name: "#69c2f5The Treasury"
+    lore:
+    - "#b8e5ffStore your coins with"
+    - "#b8e5ffthe banker!"
+    discovered_on_region: treasury
+  6:
+    name: "#69c2f5Dungeon Portal"
+    lore:
+    - "#b8e5ffConquer dungeons and"
+    - "#b8e5ffloot their booty!"
+    discovered_on_region: dungeonportal
+  7:
+    name: "#69c2f5Guild's Domain"
+    lore:
+    - "#b8e5ffMeet all faction leaders"
+    - "#b8e5ffand the grandmaster here!"
+    discovered_on_region: guild
+  8:
+    name: "#69c2f5Town's Hall"
+    lore:
+    - "#b8e5ffThe heart of the town,"
+    - "#b8e5ffmeet the mayor and many"
+    - "#b8e5ffvillagers here."
+    discovered_on_region: town_hall
+  9:
+    name: "#69c2f5Quester's House"
+    lore:
+    - "#b8e5ffComplete quests and gain"
+    - "#b8e5ffrewards!"
+    discovered_on_region: quester_house
+  10:
+    name: "#69c2f5Ascension Pedal"
+    lore:
+    - "#b8e5ffAscend items to its"
+    - "#b8e5ffultimate form!"
+    discovered_on_region: ascension_pedal

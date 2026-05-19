@@ -1,0 +1,198 @@
+# ==============================================================
+#                        HARD QUESTS FILE
+# ==============================================================
+# Quests must be numbered and increment from 1 to 1.
+# Please be attentive to the indentation and respect the scheme.
+# This could cause several bugs.
+# ==============================================================
+# AVAILABLE QUESTS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/quests-types
+# ==============================================================
+# AVAILABLE REWARDS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/rewards-types
+# ==============================================================
+# AVAILABLE ENTITY TYPES :
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html
+# ==============================================================
+# AVAILABLE ITEM TYPES :
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# ==============================================================
+# AVAILABLE PLUGIN PLACEHOLDERS FOR QUESTS DESCRIPTIONS :
+# %progressBar% is replaced by the progress bar defined in the configuration.
+# %progress% is replaced by the progression of the quest.
+# %required% is replaced by the required amount to complete the quest.
+# ==============================================================
+# More tips available on Wiki :
+# https://ordwenplugins.gitbook.io/odailyquests/
+# Need help ? https://discord.com/invite/NPAUE7kTgJ
+# For more affected objects or types, please make suggestion.
+# ==============================================================
+quests:
+  1:
+    name: "#e09443♦&lKING &8| #ffba70Scientists Slayer"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Slay 3 Infected Scientists."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: MYTHIC_MOBS
+    entity_name: "INFECTED_SCIENTIST"
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"
+  2:
+    name: "#e09443♦&lKING &8| #ffba70Parasitic End"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Slay 8 Silver Parasites."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: MYTHIC_MOBS
+    entity_name: "SILVER_PARASITE"
+    required_amount: 8
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"
+  3:
+    name: "#e09443♦&lKING &8| #ffba70Madness Undoing #ff7575⭐"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Complete 1 Lab of Horrors dungeon run."
+      - ""
+      - " #bcecf7+150 Stardust"
+      - " #d1884f+1000 Coins"
+      - " #db8a8a+350 Class EXP"
+      - " #74b4b8+1 Diamond Chamber Key"
+    quest_type: COMPLETE_DUNGEON
+    required_amount: 1
+    shared_mobs: true
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 150 -s"
+        - "coins give %player% 1000 -s"
+        - "mmocore admin exp give %player% main 350"
+        - "mmoitems give DUNGEON_KEY CHAMBER_DIAMOND_KEY %player% 1 s"
+  4:
+    name: "#e09443♦&lKING &8| #ffba70Diamondsss!!!"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Break 6 diamond ores."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: BREAK
+    required_item: DIAMOND_ORE
+    required_amount: 6
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"
+  5:
+    name: "#e09443♦&lKING &8| #ffba70Netherite!!!"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Break 2 ancient debrises."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: BREAK
+    required_item: ANCIENT_DEBRIS
+    required_amount: 2
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"
+  6:
+    name: "#e09443♦&lKING &8| #ffba70Treasure Fisher"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Fish up any treasure."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: FISH
+    required_item: 
+      - "BOW"
+      - "FISHING_ROD"
+      - "NAME_TAG"
+      - "NAUTILUS_SHELL"
+      - "SADDLE"
+      - "ENCHANTED_BOOK"
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"
+  7:
+    name: "#e09443♦&lKING &8| #ffba70Wizardin!"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Enchant a random thing."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: ENCHANT
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"
+  8:
+    name: "#e09443♦&lKING &8| #ffba70Super Experienced!"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Gain 20 EXP levels."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: EXP_LEVELS
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"
+  9:
+    name: "#e09443♦&lKING &8| #ffba70Glowin!"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Farm 5 glow berries crop."
+      - ""
+      - " #bcecf7+50 Stardust"
+      - " #d1884f+400 Coins"
+      - " #db8a8a+200 Class EXP"
+    quest_type: FARMING
+    required_item: GLOW_BERRIES
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 50 -s"
+        - "coins give %player% 400 -s"
+        - "mmocore admin exp give %player% main 200"

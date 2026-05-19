@@ -1,0 +1,62 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&lCategory: {0}'
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ ! @ @ @ @ @ ~ @'
+  - '@ @ @ @ ^ @ @ @ @'
+  - '@ $ @ @ @ @ @ % @'
+  - '@ @ @ @ @ @ @ @ @'
+
+icon-type: '!'
+icon-rename: '~'
+icon-relore: '$'
+icon-confirm: '%'
+icon-slots: '^'
+
+items:
+  '!':
+    type: DIAMOND
+    name: '&6Set Type'
+    lore:
+      - '&f '
+      - '&f '
+      - '&{HEX:cccccc}&o(( &f&oClick &{HEX:cccccc}&oto edit the item type. ))'
+  '~':
+    type: ANVIL
+    name: '&6Set Name'
+    lore:
+      - '&f '
+      - '&f '
+      - '&{HEX:cccccc}&o(( &f&oClick &{HEX:cccccc}&oto edit the item name. ))'
+  '$':
+    type: PAPER
+    name: '&6Set Lore'
+    lore:
+      - '&f '
+      - '&f '
+      - '&{HEX:cccccc}&o(( &f&oClick &{HEX:cccccc}&oto edit the item lore. ))'
+  '%':
+    type: EMERALD
+    name: '&6Confirm Changes'
+    lore:
+      - '&f '
+      - '&f '
+      - '&{HEX:cccccc}&o(( &f&oClick &{HEX:cccccc}&oto confirm all changes. ))'
+  '^':
+    type: STONE
+
+sounds:
+  '%':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

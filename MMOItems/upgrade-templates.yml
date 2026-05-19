@@ -1,0 +1,9 @@
+
+# Template ID, only used as reference. This is the
+# text you need to enter in the edition GUI in order
+# to setup item upgrading for a specific item.
+hextechweapon:
+    critical-strike-chance: 0.5
+    critical-strike-power: 1.0
+hextecharmor:
+    pve-damage: 0.5

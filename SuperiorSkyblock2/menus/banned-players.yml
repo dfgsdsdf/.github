@@ -1,0 +1,60 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀨ'
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '$ @ @ @ @ @ @ @ $'
+  - '$ @ @ @ @ @ @ @ $'
+  - '$ @ @ @ @ @ @ @ $'
+  - '$ @ @ @ @ @ @ @ $'
+  - '$ $ p $ h $ n $ $'
+
+slots: '@'
+previous-page: 'p'
+current-page: 'h'
+next-page: 'n'
+
+items:
+  '@':
+    type: PLAYER_HEAD
+    name: '&e{0}'
+    lore:
+      - '&{HEX:cccccc}Click to unban the player.'
+  'p':
+    type: BOOK
+    customModel: 25
+    name: '&aPrevious Page'
+  'n':
+    type: BOOK
+    customModel: 24
+    name: '&aNext Page'
+  'h':
+    type: BOOK
+    customModel: 26
+    name: '&eGo Back'
+
+commands:
+  'h':
+    - '[back]'
+
+sounds:
+  'h':
+    type: BLOCK_ENDER_CHEST_OPEN
+    volume: 1
+    pitch: 1
+  'p':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+  'n':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1

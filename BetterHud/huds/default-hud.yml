@@ -1,0 +1,31 @@
+bars:
+  layouts:
+    1:
+      name: manabar
+      x: 50
+      y: 100
+    2:
+      name: experiencebar
+      x: 50
+      y: 100
+
+top_left: 
+  layouts:
+    1:
+      name: tophud
+      x: 8
+      y: 1
+
+quest_tracker: 
+  layouts:
+    1:
+      name: objective_tracker
+      x: 50
+      y: 1
+
+cutsceneskip: 
+  layouts:
+    1:
+      name: cutsceneskip
+      x: 50
+      y: 1

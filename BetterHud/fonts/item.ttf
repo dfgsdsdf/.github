@@ -1,0 +1,3 @@
+itim:
+  file: itim.ttf #Optional. defines your ttf location.
+  scale: 16 #Rendering scale. The greater that value, The bigger resource pack size.

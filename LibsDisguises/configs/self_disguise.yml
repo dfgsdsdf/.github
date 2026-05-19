@@ -1,0 +1,46 @@
+# For self disguises, they need to have the armor and the held item removed
+# Else they see floating armor, floating held items.
+# This turns the items invisible in the disguised players inventory. It does not actually remove them!
+RemoveArmor: true
+RemoveHeldItem: false
+# An exception for creative mode as this can actually delete the item from the inventory due to creative being weird
+RemoveCreativeEquipment: false
+
+# Shall the players view their disguises?
+# Best used when viewing yourself in 3rd person
+ViewSelfDisguises: true
+
+# Are self disguises enabled by default
+# Default is true
+ViewSelfDisguisesDefault: true
+
+# If this is enabled and the server is 1.21+, players will be given the scale attribute to scale them up/down to the disguise's size
+# This will only work on living disguises, and is false by default due to the possibility of abuse as it'd shrink hitboxes and the like
+# This may behave unexpectably if you're playing with other scaling modifiers outside of this plugin!
+# An example of what this setting does, is if you disguise as a cat you will be scaled down so your viewpoint is at the same height of an actual cat
+# The player's move, jump, etc is unchanged
+SelfDisguisesScaling: false
+
+# The following two settings controls the min and max scale that can be applied to a self disguise so that the player's viewpoint will shrink/grow to match.
+# This means they will not shrink below the min, and will not grow beyond the max
+# 0.3 means 30% of the player's size. 0.72 means 72%, 2 means 200%, etc.
+# The minimum scale (per Minecraft) is 0.06
+SelfDisguisesScaleMin: 0.06
+# The default is 1, so players can only shrink and if disguised as something larger, will not see themselves become taller
+SelfDisguisesScaleMax: 1
+
+# Shall the disguised hear their disguise sounds or their damage sounds.
+# I disable this as it can be a little confusing when not used with self disguises
+HearSelfDisguise: true
+
+# Some disguises are rather big and tall and block your vision
+# By default those disguises are disabled, such as zombies, players, etc.
+# The baby versions however, are normally short enough that it's a non-issue
+# false = hidden, true = shown
+TallSelfDisguises: false
+
+# This setting which is for servers that are 1.21+, allows the server to scale down the self disguise instead of hiding it completely
+# If a player looks down, they'll see a mini figure of the previously large disguise
+# This setting only works if the disguise wouldn't be shown as it's too tall, aka the above setting is false
+# This will only work on living disguises!
+TallSelfDisguisesScaling: true

@@ -1,0 +1,252 @@
+pickaxe-cobalt:
+  itemname: ''
+  material: DIAMOND_PICKAXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/tools/cobalt_pickaxe.png
+axe-cobalt:
+  itemname: ''
+  material: DIAMOND_AXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/tools/cobalt_axe.png
+shovel-cobalt:
+  itemname: ''
+  material: DIAMOND_SHOVEL
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/tools/cobalt_shovel.png
+hoe-cobalt:
+  itemname: ''
+  material: DIAMOND_HOE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/tools/cobalt_hoe.png
+pickaxe-mithril:
+  itemname: ''
+  material: DIAMOND_PICKAXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/tools/mithril_pickaxe.png
+axe-mithril:
+  itemname: ''
+  material: DIAMOND_AXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/tools/mithril_axe.png
+shovel-mithril:
+  itemname: ''
+  material: DIAMOND_SHOVEL
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/tools/mithril_shovel.png
+hoe-mithril:
+  itemname: ''
+  material: DIAMOND_HOE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/tools/mithril_hoe.png
+pickaxe-soulsteel:
+  itemname: ''
+  material: DIAMOND_PICKAXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/tools/soulsteel_pickaxe.png
+axe-soulsteel:
+  itemname: ''
+  material: DIAMOND_AXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/tools/soulsteel_axe.png
+shovel-soulsteel:
+  itemname: ''
+  material: DIAMOND_SHOVEL
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/tools/soulsteel_shovel.png
+hoe-soulsteel:
+  itemname: ''
+  material: DIAMOND_HOE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/tools/soulsteel_hoe.png
+pickaxe-gilded_netherite:
+  itemname: ''
+  material: DIAMOND_PICKAXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/item_texture/tools/gilded_netherite_pickaxe.png
+axe-gilded_netherite:
+  itemname: ''
+  material: DIAMOND_AXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/item_texture/tools/gilded_netherite_axe.png
+shovel-gilded_netherite:
+  itemname: ''
+  material: DIAMOND_SHOVEL
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/item_texture/tools/gilded_netherite_shovel.png
+hoe-gilded_netherite:
+  itemname: ''
+  material: DIAMOND_HOE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/item_texture/tools/gilded_netherite_hoe.png
+pickaxe-soul_netherite:
+  itemname: ''
+  material: DIAMOND_PICKAXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/item_texture/tools/soul_netherite_pickaxe.png
+axe-soul_netherite:
+  itemname: ''
+  material: DIAMOND_AXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/item_texture/tools/soul_netherite_axe.png
+shovel-soul_netherite:
+  itemname: ''
+  material: DIAMOND_SHOVEL
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/item_texture/tools/soul_netherite_shovel.png
+hoe-soul_netherite:
+  itemname: ''
+  material: DIAMOND_HOE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/item_texture/tools/soul_netherite_hoe.png
+pickaxe-warden:
+  itemname: ''
+  material: DIAMOND_PICKAXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/item_texture/tools/warden_pickaxe.png
+axe-warden:
+  itemname: ''
+  material: DIAMOND_AXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/item_texture/tools/warden_axe.png
+shovel-warden:
+  itemname: ''
+  material: DIAMOND_SHOVEL
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/item_texture/tools/warden_shovel.png
+hoe-warden:
+  itemname: ''
+  material: DIAMOND_HOE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/item_texture/tools/warden_hoe.png
+pickaxe-hextech:
+  itemname: ''
+  material: DIAMOND_PICKAXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/item_texture/tools/hextech_pickaxe.png
+axe-hextech:
+  itemname: ''
+  material: DIAMOND_AXE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/item_texture/tools/hextech_axe.png
+shovel-hextech:
+  itemname: ''
+  material: DIAMOND_SHOVEL
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/item_texture/tools/hextech_shovel.png
+hoe-hextech:
+  itemname: ''
+  material: DIAMOND_HOE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/item_texture/tools/hextech_hoe.png

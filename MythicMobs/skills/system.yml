@@ -1,0 +1,11 @@
+#Spawn Animation
+invul:
+  Skills:
+  - onDamaged{name=Invulnerability;mergeAll=true;d=99999999;cE=true;m=0;oH=invul-warning}
+invul-warning:
+  Skills:
+  - sound{s=entity.bat.hurt} @trigger
+  - message{m="&fꀓ <#e55039>This monster is currently &f✘ Invulnerable"} @trigger
+invul-remove:
+  Skills:
+  - auraremove{aura=Invulnerability}

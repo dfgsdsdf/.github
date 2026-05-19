@@ -1,0 +1,185 @@
+title: '&fꐮꀂ ꐲꐰꐮꐭꐬ<#3b3b3b>Player Skills &m                        '
+size: 5
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+on_open:
+- sound: block.note_block.hat
+  category: master
+  volume: 1
+  pitch: 1
+items:
+  close:
+    pos: 5,4
+    material: barrier
+    display_name: <red>{{close}}
+  stats:
+    pos: 2,1
+    material: player_head
+    custom_model_data: 11
+    display_name: <#94342b>%player_name%'s Skills
+    lore:
+    - ''
+    - '&f <#8f6864>Sᴋɪʟʟs Aᴠᴇʀᴀɢᴇ: <#94342b>%auraskills_average_1%'
+    - '&8 You rank &f#%auraskills_rank%&8!'
+    - ''
+    - '&8You gain &f+%auraskills_multiplier_percent%%&8 exp!'
+    on_click:
+    - type: command
+      executor: player
+      command: stats
+templates:
+  skill:
+    contexts:
+      archery:
+        group: first_row
+        order: 1
+        material: bone
+        custom_model_data: 4
+      fighting:
+        group: first_row
+        order: 2
+        material: bone
+        custom_model_data: 5
+      defense:
+        group: first_row
+        order: 3
+        material: bone
+        custom_model_data: 9
+      endurance:
+        group: first_row
+        order: 4
+        material: bone
+        custom_model_data: 9
+      farming:
+        group: second_row
+        order: 1
+        material: bone
+        custom_model_data: 1
+      foraging:
+        group: second_row
+        order: 2
+        material: bone
+        custom_model_data: 7
+      mining:
+        group: second_row
+        order: 3
+        material: bone
+        custom_model_data: 2
+      fishing:
+        group: third_row
+        order: 4
+        material: bone
+        custom_model_data: 6
+      excavation:
+        group: second_row
+        order: 5
+        material: iron_shovel
+        flags:
+        - hide_attributes
+      agility:
+        group: third_row
+        order: 1
+        material: feather
+      alchemy:
+        group: third_row
+        order: 2
+        material: bone
+        custom_model_data: 3
+      enchanting:
+        group: third_row
+        order: 3
+        material: bone
+        custom_model_data: 8
+      sorcery:
+        group: third_row
+        order: 4
+        material: blaze_rod
+      healing:
+        group: third_row
+        order: 5
+        material: splash_potion
+        potion_data:
+          type: instant_heal
+        flags:
+        - hide_potion_effects
+      forging:
+        group: third_row
+        order: 6
+        material: anvil
+    groups:
+      first_row:
+        start: 1,4
+        end: 1,7
+        align: center
+      second_row:
+        start: 2,4
+        end: 2,7
+        align: center
+      third_row:
+        start: 3,4
+        end: 3,7
+        align: center
+    display_name: <#cca861>{skill} <#968154>ʟᴠʟ.<#d1ba8a>{level}
+    lore:
+    - text: '{desc}'
+      wrap: true
+      style: <dark_gray>
+    - component: ability_levels
+    - component: mana_ability_info
+    - ' '
+    - component: progress
+    - component: max_level
+    - component: skill_job_active
+    - ' '
+    - <yellow>{{skill_click}}
+components:
+  stats_leveled:
+    context: Skill
+    lore:
+    - ' '
+    - '<#cccccc>{{stats_leveled}}: {entries[<#cccccc>, ]}'
+  ability_levels:
+    context: Skill
+    lore:
+    - '{entries[]}'
+  mana_ability_info:
+    context: Skill
+    lore:
+    - ' '
+    - <light_purple><bold>{{mana_ability}}</bold> <blue>{name} {level}
+    - '  {entries[\n  ](3)}'
+  progress:
+    context: Skill
+    lore:
+    - <#8a7346> <#d1ba8a>{current_xp}<dark_gray>/<#968154>{level_xp} {xp_unit} <dark_gray>→
+      <#968154>ʟᴠʟ.<#d1ba8a>{next_level}
+    - ' {bar} <reset><dark_gray> {percent}%'
+  max_level:
+    context: Skill
+    lore:
+    - <rainbow:3><b>{{max_level}}
+  skill_job_active:
+    context: Skill
+    lore:
+    - ' '
+    - <dark_gray>▶ <green>{{active_job}}
+formats:
+  stat_leveled_entry: '{color}{stat}<#cccccc>'
+  unlocked_ability_entry: \n <#8a7346>⭐<#f2d9a7> {name} <#a18958>{level}\n    <#b09d78>{info}
+  locked_ability_entry: \n <#29251d>⭐ <#574c37><strikethrough>{name}
+  duration_entry: '<#cccccc>{{duration}}: <green>{duration}s '
+  mana_cost_entry: '<#cccccc>{{mana_cost}}: <aqua>{mana_cost} '
+  cooldown_entry: '<#cccccc>{{cooldown}}: <yellow>{cooldown}s '
+  damage_entry: '<#cccccc>{{damage}}: <red>{value} '
+  damage_per_mana_entry: '<#cccccc>{{damage}}: <red>+{value}% / Mana '
+  max_mana_cost_entry: '<#cccccc>{{max_mana_cost}}: <aqua>{mana_cost} '
+  attack_speed_entry: '<#cccccc>{{attack_speed}}: <red>+{value}% '
+  bar_completed: '<white><strikethrough> '
+  bar_current: '<yellow><strikethrough> '
+  bar_remaining: '<#cccccc><strikethrough> '
+options:
+  bar_length: 15
+  current_xp_format: '#.##'
+  percent_format: '#.##'
+file_version: 1

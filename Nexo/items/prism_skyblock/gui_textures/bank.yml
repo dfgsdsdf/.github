@@ -1,0 +1,90 @@
+bank-account:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/account
+    custom_model_data: 43
+bank-accountupgrade:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/account_upgrade
+    custom_model_data: 44
+bank-deposit1:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 42
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/deposit_one
+bank-deposit2:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 45
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/deposit_two
+bank-deposit3:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 46
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/deposit_three
+bank-deposit4:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 47
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/deposit_four
+bank-withdraw1:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 48
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/withdraw_one
+bank-withdraw2:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 49
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/withdraw_two
+bank-withdraw3:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 50
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/withdraw_three
+bank-withdraw4:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 51
+    textures:
+    - prism_skyblock/interface/gui_textures/bank/withdraw_four

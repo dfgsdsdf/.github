@@ -1,0 +1,50 @@
+item_player_head:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: item/player_head
+    custom_model_data: 10
+ui_avatar_profile:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: ui/avatar_profile
+    custom_model_data: 11
+ui_island:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: ui/player_profile
+    custom_model_data: 12
+player_profile_menu:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: ui/player_profile_menu
+    custom_model_data: 13
+menu_avatar:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: ui/avatar
+    custom_model_data: 14
+ui_avatar_profile_new:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: ui/avatar_profile_new
+    custom_model_data: 15
+    
+ui_bigger_head:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: ui/bigger_head
+    custom_model_data: 16

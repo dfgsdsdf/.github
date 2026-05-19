@@ -1,0 +1,45 @@
+gilded_netherite_armor:
+  Skills:
+  - randomskill{skills=
+      [- currencygive{amount=10}] 1000,
+      [- currencygive{amount=20}] 400,
+      [- currencygive{amount=50}] 350,
+      [- currencygive{amount=75}] 200,
+      [- currencygive{amount=100}] 10} @self
+
+soul_netherite_armor:
+  Skills:
+  - delay 2
+  - missile{b=MOB;mob=VEX;ot=SoulNetherite-Tick;oh=SoulNetherite-Hit;v=13;i=1;hR=1;vR=1;in=0.75} @EIR{r=15;ignore=players;limit=1;sort=NEAREST}
+SoulNetherite-Tick:
+  Skills:
+  - effect:particles{p=soul;amount=1;speed=0;hS=1;vS=0} @origin
+  - effect:particles{p=reddust;color=#7fbbc9;amount=2;speed=0;hS=0.2;vS=0.2;y=0} @origin
+  - effect:particles{p=reddust;color=#dcf6fc;amount=2;speed=0;hS=0.2;vS=0.2;y=0} @origin
+SoulNetherite-Hit:
+  Skills:
+  - mmodamage{a=5;t=MAGIC,SKILL}
+
+warden_armor:
+  Skills:
+  - setvariable{var=caster.sonicenergy;value=0;type=INTEGER;save=true} ?!variableisset{var=caster.sonicenergy}
+  - variableadd{var=caster.sonicenergy;amount=2} 
+
+  - actionmessage{m="<#274c96><b>Pet Warden </b>is summoned!"} @self ?variableInRange{var=caster.sonicenergy;value=>100}
+  - sound{s=entity.warden.roar;audience=self} @self ?variableInRange{var=caster.sonicenergy;value=>100}
+  - summon{t=pet_warden;a=1;r=2;yr=0} @self ?variableInRange{var=caster.sonicenergy;value=>100}
+  - variablesubtract{var=caster.sonicenergy;amount=100} ?variableInRange{var=caster.sonicenergy;value=>100}
+
+hextech_armor:
+  Cooldown: 0.2
+  Skills:
+  - setvariable{var=caster.hexenergy;value=0;type=INTEGER;save=true} ?!variableisset{var=caster.hexenergy}
+  - variableadd{var=caster.hexenergy;amount=2} ?variableInRange{var=caster.hexenergy;value=<51}
+
+  - actionmessage{m="<#e7b5eb><b>MAXED </b>hextech energy!"} @self ?variableInRange{var=caster.hexenergy;value=>49}
+  - sound{s=block.beacon.power_select;audience=self} @self ?variableInRange{var=caster.hexenergy;value=>49}
+hextech_energy_notenough:
+  Cooldown: 1
+  Skills:
+  - message{m="<white>ꀓ <#e55039>You don't have enough Hextech Energy!"} @self
+  - sound{s=block.note_block.didgeridoo;audience=self} @self

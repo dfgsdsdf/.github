@@ -1,0 +1,60 @@
+model-chest:
+  itemname: ''
+  material: BLAZE_POWDER
+  excludeFromInventory: true
+  Pack:
+    model: models/mystery_box
+    custom_model_data: 2
+  Mechanics:
+    furniture:
+      properties:
+        scale: 1.1,1.1,1.1
+        translation: 0,0.1,0
+      hitbox:
+        barriers:
+        - 0,0,0
+model-dungeonchest1:
+  itemname: ''
+  material: BLAZE_POWDER
+  excludeFromInventory: true
+  Pack:
+    model: models/normal_chest
+    custom_model_data: 3
+  Mechanics:
+    furniture:
+      properties:
+        scale: 1.5,1.5,1.5
+        translation: 0,0.3,0
+      hitbox:
+        barriers:
+        - 0,0,0
+model-dungeonchest2:
+  itemname: ''
+  material: BLAZE_POWDER
+  excludeFromInventory: true
+  Pack:
+    model: models/medium_chest
+    custom_model_data: 4
+  Mechanics:
+    furniture:
+      properties:
+        scale: 1.5,1.5,1.5
+        translation: 0,0.3,0
+      hitbox:
+        barriers:
+        - 0,0,0
+model-dungeonchest3:
+  itemname: ''
+  material: BLAZE_POWDER
+  excludeFromInventory: true
+  Pack:
+    model: models/premium_chest
+    custom_model_data: 5
+  Mechanics:
+    furniture:
+      properties:
+        scale: 1.5,1.5,1.5
+        translation: 0,0.3,0
+      hitbox:
+        barriers:
+        - 0,0,0

@@ -1,0 +1,9 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "prism_skyblock/interface/gui_textures/factions/warrior"
+	},
+	"display":{
+		"gui": {"rotation": [ 0, 0, 0 ], "translation": [ -27, 0, 0 ], "scale": [ 4, 4, 4 ]}
+	}
+}

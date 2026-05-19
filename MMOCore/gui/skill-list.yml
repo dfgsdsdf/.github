@@ -1,0 +1,80 @@
+# GUI display name
+name: "&fꐮꀔ ꐲꐰꐮꐭꐬ<#3b3b3b>Faction Innates &m                    "
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 18
+
+items:
+  skill:
+    slots: [ 0,1,2,3,12,13,14,15 ]
+
+    function: skill
+    name: '<#83a7a8>♦ <#5F9EA0>{skill} &8ʟᴠʟ.<#83a7a8>{level}'
+    lore:
+      - '&a'
+      - '{lore}'
+      - '{locked}'
+      - '{locked}<#eb4034>✘ Requires faction lvl.{unlock}!'
+      - '{max_level}'
+      - '{max_level}<#ad7947>★ Maxed out!'
+  next:
+    slots: [ 0 ]
+    function: next
+    item: BARRIER
+    custom-model-data: 7
+    name: '&aNext'
+    lore: { }
+  previous:
+    slots: [ 4 ]
+    function: previous
+    item: BARRIER
+    custom-model-data: 6
+    name: '&aPrevious'
+    lore: { }
+
+  reallocate:
+    slots: [ 16 ]
+    function: reallocation
+    item: BARRIER
+    custom-model-data: 1
+    name: '<#E97451>⌀ <#e88b6f>Reallocate All Innates'
+    lore:
+      - ''
+      - '<#917066>Reset all innates back'
+      - '<#917066>to lvl 1 and gain every'
+      - '<#917066>tokens allocated.'
+      - ''
+      - '<#e88b6f>Spent <#E97451>{total}<#e88b6f> innates tokens.'
+      - '<#e88b6f>Costs <#E97451>1 <#e88b6f>reallocate point.'
+      - '&8(You have &7{points}&8)'
+      - ''
+      - '&fꂀ <#83ca16>Reallocate token.'
+
+
+  slot:
+    slots: [ 5 ]
+    function: slot
+    item: BARRIER
+    custom-model-data: 1
+
+    no-skill: '&7None'
+    lore:
+      - ''
+      - '{skill-lore}'
+      - ''
+      - '&fꂀ <#83ca16>Activate &a{selected}'
+      - '&fꂁ <#0097d8>Deactivate innate.'
+
+  upgrade:
+    slots: [ 7 ]
+    function: upgrade
+    item: BARRIER
+    custom-model-data: 1
+    name: '<#7bced1>↑ Upgrade <#c7763c>{skill}'
+    lore:
+      - ''
+      - '<#6e8485>Costs <#c5d8d9>1 <#6e8485>innate token'
+      - '&8(You have <#c5d8d9>{skill_points}&8)'
+      - ''
+      - '&fꂀ <#83ca16>Upgrade innate.'

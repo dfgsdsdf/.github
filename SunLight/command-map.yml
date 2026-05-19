@@ -1,0 +1,1117 @@
+# Sets whether or not commands with similar names/aliases should be unregistered from the server
+# if they're overlaps with the SunLight commands.
+# Warning: Setting this on 'true' may result both positive and negative effects.
+Unregister_Conflicts: false
+Cooldowns:
+  heal:
+    Commands: heal,health
+    Patterns:
+    - heal
+    - hp|health restore
+    Cooldown:
+      vip: 60
+      gold: 30
+  home:
+    Commands: homes,home
+    Patterns:
+    - homes teleport
+    - home
+    Cooldown:
+      vip: 0
+      default: 30
+Settings:
+  Time:
+    # In this section you can create custom shortcuts for the 'time_set' command.
+    # In other words, it will create one-shot time set commands with specified name and time value.
+    Shortcuts:
+      midnight: 18000
+      sunrise: 23000
+      noon: 6000
+      sunset: 12000
+      night: 13000
+      day: 1000
+  # Add here names of command executors to disable them completely.
+  # Disabled executor will result in disabling ALL commands using that executor.
+  Disabled_Executors: []
+  Broadcast:
+    # Sets message format for the 'broadcast' command.
+    # Text Formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+    Format: <newline><lyellow><b>BROADCAST:</b></lyellow><newline><lgray>%message%</lgray><newline>
+  Disposal:
+    Menu:
+      # Sets the inventory title for disposal GUI.
+      Title: <black>Disposal</black>
+      # Sets the inventory size for disposal GUI. Must be multiply of 9 up to 54.
+      Size: 36
+  FoodLevel:
+    Restore:
+      # Sets whether or not 'foodlevel_restore' command will give saturation points.
+      GiveSaturation: true
+      # Sets amount of saturation points given by the 'foodlevel_restore' command.
+      Saturation_Amount: 5.0
+  Health:
+    Restore:
+      # Sets whether or not 'health_restore' command will clear potion effects as well.
+      ClearEffects: true
+  Mob:
+    Spawn:
+      # Sets max. possible amount for the 'mob_spawn' command.
+      Limit: 10
+    Clear:
+      # Sets whether or not 'mob_clear' command should ignore tamed mobs.
+      Ignore_Tamed: true
+      # Sets whether or not 'mob_clear' command should ignore villagers.
+      Ignore_Villagers: true
+  Near:
+    # Sets radius for the 'near' command.
+    Radius: 100
+    # List format for the 'near' command.
+    # Use '%radius%' placeholder for command radius value.
+    # Available text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+    Format:
+    - ' '
+    - <lyellow><b>Nearby Players:</b></lyellow>
+    - '%entry%'
+    - ' '
+    # Player entry format.
+    # Available text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+    # PlaceholderAPI is supported here.
+    EntryFormat: <lgray><lyellow>●</lyellow> %vault_prefix%<hover:show_text:'<gray>Click to send teleport request.</gray>'><click:suggest_command:"/ptp request %player_name%">%player_display_name%</click></hover>%vault_suffix% <gray>(<white>%amount%</white> blocks away)</gray></lgray>
+  Nick:
+    # Sets minimal allowed length for the 'nick_change' command.'
+    Min_Length: 3
+    # Sets maximal allowed length for the 'nick_change' command.'
+    Max_Length: 20
+    # A list of words that can not be used in the 'nick_change' command.'
+    Banned_Words:
+    - nigga
+    - dick
+    - ass
+    - admin
+    # Sets regex pattern that custom nick must match to be used.
+    # By default it accepts all EN-RU characters, numbers, spaces and underscore.
+    Regex: '[a-zA-Zа-яА-Я0-9_\s]*'
+  PlayerInfo:
+    # Player info format.
+    # PlaceholderAPI is supported here.
+    # Text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+    Format:
+    - ' '
+    - <lyellow><b>%player_name% Info:</b></lyellow>
+    - ' '
+    - '<lyellow>▪ <lgray>Real Name: </lgray>%player_name%</lyellow>'
+    - '<lyellow>▪ <lgray>Display Name: </lgray>%player_display_name%</lyellow>'
+    - '<lyellow>▪ <lgray>Online: </lgray>%is_online%</lyellow>'
+    - '<lyellow>▪ <lgray>Last Join: </lgray>%last_join%</lyellow>'
+    - '<lyellow>▪ <lgray>Last IP: </lgray>%ip%</lyellow>'
+    - ' '
+    - '<lyellow>▪ <lgray>Location: </lgray>%location_x%, %location_y%, %location_z% in %location_world%</lyellow>'
+    - '<lyellow>▪ <lgray>Game Mode: </lgray>%game_mode%</lyellow>'
+    - '<lyellow>▪ <lgray>Can Fly: </lgray>%can_fly%</lyellow>'
+    - '<lyellow>▪ <lgray>Food Level: </lgray>%food_level% <lgreen>+%saturation%</lgreen></lyellow>'
+    - '<lyellow>▪ <lgray>Health: </lgray>%health%<lgray>/</lgray>%max_health%</lyellow>'
+    - ' '
+  Staff:
+    # List of staff ranks to display players from for the 'staff' command.
+    # You must have Vault with compatible permissions plugins installed.
+    Ranks:
+    - owner
+    - admin
+    - mod
+    - helper
+    # Staff list format.
+    # Use '%entry%' placeholder for a player list.
+    # Available text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+    ListFormat:
+    - ' '
+    - <lyellow><b>Staff Online:</b></lyellow>
+    - '%entry%'
+    - ' '
+    - <lgray>Total <lyellow>%amount%</lyellow> staff online.</lgray>
+    - ' '
+    # Player entry format.
+    # Available text formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+    # PlaceholderAPI is supported here.
+    EntryFormat: <lgray><lyellow>●</lyellow> %vault_prefix%<hover:show_text:'<gray>Click to send private message.</gray>'><click:suggest_command:"/msg %player_name% ">%player_display_name%</click></hover>%vault_suffix%</lgray>
+  Item:
+    Amount:
+      # Sets default amount for the 'item_amount' command.
+      Default_Value: 64
+CommandMap:
+  Commands:
+    kick:
+      Enabled: true
+      Aliases: kick
+      Executor: kick
+    ban:
+      Enabled: true
+      Aliases: ban
+      Executor: ban
+    banip:
+      Enabled: true
+      Aliases: banip
+      Executor: banip
+    mute:
+      Enabled: true
+      Aliases: mute
+      Executor: mute
+    warn:
+      Enabled: true
+      Aliases: warn
+      Executor: warn
+    unban:
+      Enabled: true
+      Aliases: unban
+      Executor: unban
+    unmute:
+      Enabled: true
+      Aliases: unmute
+      Executor: unmute
+    unwarn:
+      Enabled: true
+      Aliases: unwarn
+      Executor: unwarn
+    banhistory:
+      Enabled: true
+      Aliases: banhistory
+      Executor: banhistory
+    mutehistory:
+      Enabled: true
+      Aliases: mutehistory
+      Executor: mutehistory
+    warnhistory:
+      Enabled: true
+      Aliases: warnhistory
+      Executor: warnhistory
+    banlist:
+      Enabled: true
+      Aliases: banlist
+      Executor: banlist
+    mutelist:
+      Enabled: true
+      Aliases: mutelist
+      Executor: mutelist
+    warnlist:
+      Enabled: true
+      Aliases: warnlist
+      Executor: warnlist
+    alts:
+      Enabled: true
+      Aliases: alts
+      Executor: alts
+    createworld:
+      Enabled: true
+      Aliases: createworld
+      Executor: world_create
+    deleteworld:
+      Enabled: true
+      Aliases: deleteworld
+      Executor: world_delete
+    editworld:
+      Enabled: true
+      Aliases: editworld
+      Executor: world_editor
+    loadworld:
+      Enabled: true
+      Aliases: loadworld
+      Executor: world_load
+    unloadworld:
+      Enabled: true
+      Aliases: unloadworld
+      Executor: world_unload
+    setspawn:
+      Enabled: true
+      Aliases: setspawn
+      Executor: spawn_create
+    delspawn:
+      Enabled: true
+      Aliases: delspawn
+      Executor: spawn_delete
+    editspawn:
+      Enabled: true
+      Aliases: editspawn
+      Executor: spawn_editor
+    spawn:
+      Enabled: true
+      Aliases: spawn
+      Executor: spawn_teleport
+    delhome:
+      Enabled: true
+      Aliases: delhome
+      Executor: home_delete
+    homelist:
+      Enabled: true
+      Aliases: homelist
+      Executor: home_list
+    sethome:
+      Enabled: true
+      Aliases: sethome
+      Executor: home_set
+    home:
+      Enabled: true
+      Aliases: home
+      Executor: home_teleport
+    visithome:
+      Enabled: true
+      Aliases: visithome
+      Executor: home_visit
+    homeinvite:
+      Enabled: true
+      Aliases: homeinvite
+      Executor: home_invite
+    setplayerhome:
+      Enabled: true
+      Aliases: setplayerhome
+      Executor: home_admin_create
+    delplayerhome:
+      Enabled: true
+      Aliases: delplayerhome
+      Executor: home_admin_delete
+    editkit:
+      Enabled: true
+      Aliases: editkit
+      Executor: kit_editor
+    viewkit:
+      Enabled: true
+      Aliases: viewkit
+      Executor: kit_preview
+    kitlist:
+      Enabled: true
+      Aliases: kitlist
+      Executor: kit_list
+    kit:
+      Enabled: true
+      Aliases: kit
+      Executor: kit_get
+    setwarp:
+      Enabled: true
+      Aliases: setwarp
+      Executor: warp_create
+    delwarp:
+      Enabled: true
+      Aliases: delwarp
+      Executor: warp_delete
+    warplist:
+      Enabled: true
+      Aliases: warplist
+      Executor: warp_list
+    warp:
+      Enabled: true
+      Aliases: warp
+      Executor: warp_teleport
+    joinchannel:
+      Enabled: true
+      Aliases: joinchannel
+      Executor: channel_join
+    leavechannel:
+      Enabled: true
+      Aliases: leavechannel
+      Executor: channel_leave
+    setchannel:
+      Enabled: true
+      Aliases: setchannel
+      Executor: channel_set
+    clearchat:
+      Enabled: true
+      Aliases: clearchat
+      Executor: clearchat
+    pm:
+      Enabled: true
+      Aliases: pm,whisper,w,tell,msg
+      Executor: pm_send
+    reply:
+      Enabled: true
+      Aliases: reply,r
+      Executor: pm_reply
+    pmtoggle:
+      Enabled: true
+      Aliases: pmtoggle
+      Executor: pm_toggle
+    mentions:
+      Enabled: true
+      Aliases: mentions
+      Executor: mentions_toggle
+    me:
+      Enabled: true
+      Aliases: me
+      Executor: me
+    spylogger:
+      Enabled: true
+      Aliases: spylogger
+      Executor: spy_logger
+    chatspy:
+      Enabled: true
+      Aliases: chatspy
+      Executor: spy_mode_chat
+    commandspy:
+      Enabled: true
+      Aliases: commandspy
+      Executor: spy_mode_command
+    socialspy:
+      Enabled: true
+      Aliases: socialspy
+      Executor: spy_mode_social
+    tpa:
+      Enabled: true
+      Aliases: tpa,call
+      Executor: ptp_request
+    tphere:
+      Enabled: true
+      Aliases: tphere
+      Executor: ptp_invite
+    tpyes:
+      Enabled: true
+      Aliases: tpyes
+      Executor: ptp_accept
+    tpno:
+      Enabled: true
+      Aliases: tpno
+      Executor: ptp_decline
+    tptoggle:
+      Enabled: true
+      Aliases: tptoggle
+      Executor: ptp_toggle
+    scoreboard:
+      Enabled: true
+      Aliases: scoreboard,board,sb
+      Executor: scoreboard_toggle
+    rtp:
+      Enabled: false
+      Aliases: rtp,wild
+      Executor: rtp
+    chairs:
+      Enabled: true
+      Aliases: chairs
+      Executor: chairs_toggle
+    sit:
+      Enabled: true
+      Aliases: sit
+      Executor: chairs_sit
+    chestsort:
+      Enabled: true
+      Aliases: chestsort
+      Executor: chestsort_toggle
+    back:
+      Enabled: false
+      Aliases: back
+      Executor: back
+    deathback:
+      Enabled: false
+      Aliases: deathback,dback
+      Executor: deathback
+    nophantom:
+      Enabled: true
+      Aliases: nophantom
+      Executor: nophantom_toggle
+    afk:
+      Enabled: false
+      Aliases: afk
+      Executor: afk
+    customtext:
+      Enabled: true
+      Aliases: customtext,ctext
+      Executor: custom_text
+    god:
+      Enabled: true
+      Aliases: god
+      Executor: god_toggle
+    foodgod:
+      Enabled: true
+      Aliases: foodgod
+      Executor: foodgod_toggle
+    vanish:
+      Enabled: true
+      Aliases: vanish
+      Executor: vanish_toggle
+    anvil:
+      Enabled: true
+      Aliases: anvil
+      Executor: anvil
+    broadcast:
+      Enabled: true
+      Aliases: broadcast,bc
+      Executor: broadcast
+    condense:
+      Enabled: true
+      Aliases: condense
+      Executor: condense
+    dimension:
+      Enabled: true
+      Aliases: dimension,dim,world
+      Executor: dimension
+    disposal:
+      Enabled: true
+      Aliases: disposal
+      Executor: disposal
+    enchant:
+      Enabled: true
+      Aliases: enchant
+      Executor: enchant
+    enchanting:
+      Enabled: true
+      Aliases: enchanting,virtualenchant
+      Executor: enchanting
+    ec:
+      Enabled: true
+      Aliases: ec,endersee
+      Executor: enderchest_open
+    ignite:
+      Enabled: true
+      Aliases: ignite
+      Executor: fire_set
+    extinguish:
+      Enabled: true
+      Aliases: extinguish,ext
+      Executor: fire_reset
+    fly:
+      Enabled: true
+      Aliases: fly
+      Executor: fly
+    flyspeed:
+      Enabled: true
+      Aliases: flyspeed
+      Executor: flyspeed
+    feed:
+      Enabled: true
+      Aliases: feed
+      Executor: foodlevel_restore
+    gamemode_creative:
+      Enabled: true
+      Aliases: gmc
+      Executor: gamemode_creative
+    gamemode_survival:
+      Enabled: true
+      Aliases: gms
+      Executor: gamemode_survival
+    gamemode_adventure:
+      Enabled: true
+      Aliases: gma
+      Executor: gamemode_adventure
+    gamemode_spectator:
+      Enabled: true
+      Aliases: gmsp
+      Executor: gamemode_spectator
+    grindstone:
+      Enabled: true
+      Aliases: grindstone
+      Executor: grindstone
+    hat:
+      Enabled: true
+      Aliases: hat
+      Executor: hat
+    heal:
+      Enabled: true
+      Aliases: heal
+      Executor: health_restore
+    addignore:
+      Enabled: true
+      Aliases: addignore
+      Executor: ignore_add
+    ignorelist:
+      Enabled: true
+      Aliases: ignorelist
+      Executor: ignore_list
+    unignore:
+      Enabled: true
+      Aliases: unignore
+      Executor: ignore_list
+    clearinv:
+      Enabled: true
+      Aliases: clearinv
+      Executor: inventory_clear
+    invsee:
+      Enabled: true
+      Aliases: invsee
+      Executor: inventory_open
+    repairall:
+      Enabled: true
+      Aliases: repairall,fixall
+      Executor: inventory_repair
+    itemname:
+      Enabled: true
+      Aliases: itemname,rename
+      Executor: item_name
+    repair:
+      Enabled: true
+      Aliases: repair,fix
+      Executor: item_repair
+    loom:
+      Enabled: true
+      Aliases: loom
+      Executor: loom
+    killmob:
+      Enabled: true
+      Aliases: killmob
+      Executor: mob_kill
+    spawnmob:
+      Enabled: true
+      Aliases: spawnmob
+      Executor: mob_spawn
+    near:
+      Enabled: true
+      Aliases: near
+      Executor: near
+    changename:
+      Enabled: true
+      Aliases: changename
+      Executor: nick_change
+    setnick:
+      Enabled: true
+      Aliases: setnick
+      Executor: nick_set
+    clearnick:
+      Enabled: true
+      Aliases: clearnick
+      Executor: nick_clear
+    playerinfo:
+      Enabled: true
+      Aliases: playerinfo,pinfo,seen
+      Executor: playerinfo
+    staff:
+      Enabled: true
+      Aliases: staff
+      Executor: staff
+    playerhead:
+      Enabled: true
+      Aliases: playerhead
+      Executor: skull_player
+    customhead:
+      Enabled: true
+      Aliases: customhead
+      Executor: skull_custom
+    smite:
+      Enabled: true
+      Aliases: smite
+      Executor: smite
+    spawner:
+      Enabled: true
+      Aliases: spawner
+      Executor: spawner
+    speed:
+      Enabled: true
+      Aliases: speed
+      Executor: speed
+    suicide:
+      Enabled: true
+      Aliases: suicide
+      Executor: suicide
+    tppos:
+      Enabled: true
+      Aliases: tppos,tploc
+      Executor: teleport_location
+    tpplayer:
+      Enabled: true
+      Aliases: tpplayer
+      Executor: teleport_send
+    summon:
+      Enabled: true
+      Aliases: summon
+      Executor: teleport_summon
+    tpto:
+      Enabled: true
+      Aliases: tpto
+      Executor: teleport_to
+    toppos:
+      Enabled: true
+      Aliases: toppos
+      Executor: teleport_top
+    weather_clear:
+      Enabled: true
+      Aliases: sun
+      Executor: weather_clear
+    weather_storm:
+      Enabled: true
+      Aliases: rain
+      Executor: weather_storm
+    weather_thunder:
+      Enabled: true
+      Aliases: thunderstorm
+      Executor: weather_thunder
+    workbench:
+      Enabled: true
+      Aliases: workbench
+      Executor: workbench
+  Groups:
+    worldmanager:
+      Enabled: true
+      Aliases: worldmanager
+      Description: World commands.
+      Permission: sunlight.worlds.command.worldmanager
+      Commands:
+        world_create:
+          Aliases: create
+          Executor: world_create
+        world_delete:
+          Aliases: delete
+          Executor: world_delete
+        world_editor:
+          Aliases: editor
+          Executor: world_editor
+        world_load:
+          Aliases: load
+          Executor: world_load
+        world_unload:
+          Aliases: unload
+          Executor: world_unload
+    homes:
+      Enabled: true
+      Aliases: homes
+      Description: Homes commands.
+      Permission: sunlight.homes.command.homes
+      Commands:
+        home_delete:
+          Aliases: delete
+          Executor: home_delete
+        home_list:
+          Aliases: list
+          Executor: home_list
+        home_set:
+          Aliases: set
+          Executor: home_set
+        home_teleport:
+          Aliases: teleport
+          Executor: home_teleport
+        home_visit:
+          Aliases: visit
+          Executor: home_visit
+        home_invite:
+          Aliases: invite
+          Executor: home_invite
+    homesadmin:
+      Enabled: true
+      Aliases: homesadmin
+      Description: Home admin commands.
+      Permission: sunlight.homes.command.homesadmin
+      Commands:
+        home_admin_create:
+          Aliases: create
+          Executor: home_admin_create
+        home_admin_delete:
+          Aliases: delete
+          Executor: home_admin_delete
+    kits:
+      Enabled: false
+      Aliases: kits
+      Description: Kit commands.
+      Permission: sunlight.kits.command.kits
+      Commands:
+        kit_editor:
+          Aliases: editor
+          Executor: kit_editor
+        kit_get:
+          Aliases: give
+          Executor: kit_get
+        kit_list:
+          Aliases: list
+          Executor: kit_list
+        kit_reset_cooldown:
+          Aliases: resetcooldown
+          Executor: kit_reset_cooldown
+        kit_set_cooldown:
+          Aliases: setcooldown
+          Executor: kit_set_cooldown
+        kit_preview:
+          Aliases: preview
+          Executor: kit_preview
+    warps:
+      Enabled: false
+      Aliases: warps
+      Description: Warp commands.
+      Permission: sunlight.warps.command.warps
+      Commands:
+        warp_create:
+          Aliases: create
+          Executor: warp_create
+        warp_delete:
+          Aliases: delete
+          Executor: warp_delete
+        warp_list:
+          Aliases: list
+          Executor: warp_list
+        warp_reset_cooldown:
+          Aliases: resetcooldown
+          Executor: warp_reset_cooldown
+        warp_set_cooldown:
+          Aliases: setcooldown
+          Executor: warp_set_cooldown
+        warp_teleport:
+          Aliases: teleport
+          Executor: warp_teleport
+    channel:
+      Enabled: true
+      Aliases: channel
+      Description: Chat channel commands.
+      Permission: sunlight.chat.command.channel
+      Commands:
+        channel_join:
+          Aliases: join
+          Executor: channel_join
+        channel_leave:
+          Aliases: leave
+          Executor: channel_leave
+        channel_set:
+          Aliases: set
+          Executor: channel_set
+    spymode:
+      Enabled: true
+      Aliases: spymode
+      Description: SpyMode commands.
+      Permission: sunlight.chat.command.spymode
+      Commands:
+        spy_mode_chat:
+          Aliases: chat
+          Executor: spy_mode_chat
+        spy_mode_command:
+          Aliases: command
+          Executor: spy_mode_command
+        spy_mode_social:
+          Aliases: social
+          Executor: spy_mode_social
+    ptp:
+      Enabled: false
+      Aliases: ptp
+      Description: PTP Commands.
+      Permission: sunlight.ptp.command.ptp
+      Commands:
+        ptp_request:
+          Aliases: request
+          Executor: ptp_request
+        ptp_invite:
+          Aliases: invite
+          Executor: ptp_invite
+        ptp_accept:
+          Aliases: accept
+          Executor: ptp_accept
+        ptp_decline:
+          Aliases: decline
+          Executor: ptp_decline
+        ptp_toggle:
+          Aliases: toggle
+          Executor: ptp_toggle
+    air:
+      Enabled: true
+      Aliases: air,oxygen
+      Description: Air commands.
+      Permission: sunlight.command.air
+      Commands:
+        air_add:
+          Aliases: add
+          Executor: air_add
+        air_set:
+          Aliases: set
+          Executor: air_set
+        air_remove:
+          Aliases: remove
+          Executor: air_remove
+    enderchest:
+      Enabled: true
+      Aliases: enderchest,echest
+      Description: Enderchest commands.
+      Permission: sunlight.command.enderchest
+      Commands:
+        enderchest_clear:
+          Aliases: clear
+          Executor: enderchest_clear
+        enderchest_copy:
+          Aliases: copy
+          Executor: enderchest_copy
+        enderchest_fill:
+          Aliases: fill
+          Executor: enderchest_fill
+        enderchest_open:
+          Aliases: open
+          Executor: enderchest_open
+        enderchest_repair:
+          Aliases: repair
+          Executor: enderchest_repair
+    experience:
+      Enabled: true
+      Aliases: experience,exp,xp
+      Description: Experience commands.
+      Permission: sunlight.command.experience
+      Commands:
+        exp_add:
+          Aliases: add
+          Executor: exp_add
+        exp_set:
+          Aliases: set
+          Executor: exp_set
+        exp_remove:
+          Aliases: remove
+          Executor: exp_remove
+        exp_view:
+          Aliases: view
+          Executor: exp_view
+    fire:
+      Enabled: true
+      Aliases: fire
+      Description: Fire ticks commands.
+      Permission: sunlight.command.fire
+      Commands:
+        fire_set:
+          Aliases: set
+          Executor: fire_set
+        fire_reset:
+          Aliases: reset
+          Executor: fire_reset
+    foodlevel:
+      Enabled: true
+      Aliases: foodlevel,food
+      Description: Food level commands.
+      Permission: sunlight.command.foodlevel
+      Commands:
+        foodlevel_restore:
+          Aliases: restore
+          Executor: foodlevel_restore
+        foodlevel_add:
+          Aliases: add
+          Executor: foodlevel_add
+        foodlevel_set:
+          Aliases: set
+          Executor: foodlevel_set
+        foodlevel_remove:
+          Aliases: remove
+          Executor: foodlevel_remove
+    gamemode:
+      Enabled: true
+      Aliases: gamemode,gm
+      Description: Gamemode commands.
+      Permission: sunlight.command.gamemode
+      Commands:
+        gamemode_adventure:
+          Aliases: adventure
+          Executor: gamemode_adventure
+        gamemode_survival:
+          Aliases: survival
+          Executor: gamemode_survival
+        gamemode_spectator:
+          Aliases: spectator
+          Executor: gamemode_spectator
+        gamemode_creative:
+          Aliases: creative
+          Executor: gamemode_creative
+    health:
+      Enabled: true
+      Aliases: health,hp
+      Description: Health commands.
+      Permission: sunlight.command.health
+      Commands:
+        health_restore:
+          Aliases: restore
+          Executor: health_restore
+        health_add:
+          Aliases: add
+          Executor: health_add
+        health_set:
+          Aliases: set
+          Executor: health_set
+        health_remove:
+          Aliases: remove
+          Executor: health_remove
+    ignore:
+      Enabled: true
+      Aliases: ignore
+      Description: Ignore commands.
+      Permission: sunlight.command.ignore
+      Commands:
+        ignore_add:
+          Aliases: add
+          Executor: ignore_add
+        ignore_list:
+          Aliases: list
+          Executor: ignore_list
+        ignore_remove:
+          Aliases: remove
+          Executor: ignore_remove
+    inventory:
+      Enabled: true
+      Aliases: inventory,inv
+      Description: Inventory commands.
+      Permission: sunlight.command.inventory
+      Commands:
+        inventory_clear:
+          Aliases: clear
+          Executor: inventory_clear
+        inventory_copy:
+          Aliases: copy
+          Executor: inventory_copy
+        inventory_fill:
+          Aliases: fill
+          Executor: inventory_fill
+        inventory_open:
+          Aliases: open
+          Executor: inventory_open
+        inventory_repair:
+          Aliases: repair
+          Executor: inventory_repair
+    item:
+      Enabled: true
+      Aliases: item,i
+      Description: item
+      Permission: sunlight.command.item
+      Commands:
+        item_amount:
+          Aliases: amount
+          Executor: item_amount
+        item_damage:
+          Aliases: damage
+          Executor: item_damage
+        item_enchant:
+          Aliases: enchant
+          Executor: item_enchant
+        item_get:
+          Aliases: get
+          Executor: item_get
+        item_give:
+          Aliases: give
+          Executor: item_give
+        item_model:
+          Aliases: model
+          Executor: item_model
+        item_name:
+          Aliases: name
+          Executor: item_name
+        item_potion:
+          Aliases: potion
+          Executor: item_potion
+        item_repair:
+          Aliases: repair
+          Executor: item_repair
+        item_spawn:
+          Aliases: spawn
+          Executor: item_spawn
+        item_take:
+          Aliases: take
+          Executor: item_take
+        item_unbreakable:
+          Aliases: unbreakable
+          Executor: item_unbreakable
+    itemlore:
+      Enabled: true
+      Aliases: itemlore,relore
+      Description: Item lore commands.
+      Permission: sunlight.command.itemlore
+      Commands:
+        item_lore_add:
+          Aliases: add
+          Executor: item_lore_add
+        item_lore_clear:
+          Aliases: clear
+          Executor: item_lore_clear
+        item_lore_remove:
+          Aliases: remove
+          Executor: item_lore_remove
+    mob:
+      Enabled: true
+      Aliases: mob
+      Description: Mob commands.
+      Permission: sunlight.command.mob
+      Commands:
+        mob_clear:
+          Aliases: clear
+          Executor: mob_clear
+        mob_kill:
+          Aliases: kill
+          Executor: mob_kill
+        mob_spawn:
+          Aliases: spawn
+          Executor: mob_spawn
+    nick:
+      Enabled: true
+      Aliases: nick
+      Description: Nick commands.
+      Permission: sunlight.command.nick
+      Commands:
+        nick_change:
+          Aliases: change
+          Executor: nick_change
+        nick_clear:
+          Aliases: clear
+          Executor: nick_clear
+        nick_set:
+          Aliases: set
+          Executor: nick_set
+    skull:
+      Enabled: true
+      Aliases: skull
+      Description: Skull commands.
+      Permission: sunlight.command.skull
+      Commands:
+        skull_custom:
+          Aliases: custom
+          Executor: skull_custom
+        skull_player:
+          Aliases: player
+          Executor: skull_player
+    sudo:
+      Enabled: true
+      Aliases: sudo
+      Description: Sudo commands.
+      Permission: sunlight.command.sudo
+      Commands:
+        sudo_chat:
+          Aliases: chat
+          Executor: sudo_chat
+        sudo_command:
+          Aliases: command
+          Executor: sudo_command
+    teleport:
+      Enabled: true
+      Aliases: teleport,tp
+      Description: Teleport commands.
+      Permission: sunlight.command.teleport
+      Commands:
+        teleport_location:
+          Aliases: location
+          Executor: teleport_location
+        teleport_send:
+          Aliases: send
+          Executor: teleport_send
+        teleport_summon:
+          Aliases: summon
+          Executor: teleport_summon
+        teleport_to:
+          Aliases: to
+          Executor: teleport_to
+        teleport_top:
+          Aliases: top
+          Executor: teleport_top
+    time:
+      Enabled: true
+      Aliases: time
+      Description: Time commands.
+      Permission: sunlight.command.time
+      Commands:
+        time_set:
+          Aliases: set
+          Executor: time_set
+        time_show:
+          Aliases: show
+          Executor: time_show
+    time_personal:
+      Enabled: true
+      Aliases: ptime
+      Description: Personal Time commands.
+      Permission: sunlight.command.ptime
+      Commands:
+        time_personal_set:
+          Aliases: set
+          Executor: time_personal_set
+        time_personal_reset:
+          Aliases: reset
+          Executor: time_personal_reset
+    weather:
+      Enabled: true
+      Aliases: weather
+      Description: Weather commands.
+      Permission: sunlight.command.weather
+      Commands:
+        weather_clear:
+          Aliases: clear
+          Executor: weather_clear
+        weather_storm:
+          Aliases: storm
+          Executor: weather_storm
+        weather_thunder:
+          Aliases: thunder
+          Executor: weather_thunder

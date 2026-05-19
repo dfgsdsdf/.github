@@ -1,0 +1,262 @@
+warden_helmet:
+  itemname: ''
+  material: CHAINMAIL_HELMET
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 2
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/warden_helmet
+    - prism_skyblock/item_texture/armors/warden_helmet
+  trim_pattern: nexo:warden
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+warden_chestplate:
+  itemname: ''
+  material: CHAINMAIL_CHESTPLATE
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 2
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/warden_chestplate
+    - prism_skyblock/item_texture/armors/warden_chestplate
+  trim_pattern: nexo:warden
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+warden_leggings:
+  itemname: ''
+  material: CHAINMAIL_LEGGINGS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 2
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/warden_leggings
+    - prism_skyblock/item_texture/armors/warden_leggings
+  trim_pattern: nexo:warden
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+warden_boots:
+  itemname: ''
+  material: CHAINMAIL_BOOTS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 2
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/warden_boots
+    - prism_skyblock/item_texture/armors/warden_boots
+  trim_pattern: nexo:warden
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+gilded_netherite_helmet:
+  itemname: ''
+  material: CHAINMAIL_HELMET
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 3
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/gilded_netherite_helmet
+    - prism_skyblock/item_texture/armors/gilded_netherite_helmet
+  trim_pattern: nexo:gilded_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+gilded_netherite_chestplate:
+  itemname: ''
+  material: CHAINMAIL_CHESTPLATE
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 3
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/gilded_netherite_chestplate
+    - prism_skyblock/item_texture/armors/gilded_netherite_chestplate
+  trim_pattern: nexo:gilded_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+gilded_netherite_leggings:
+  itemname: ''
+  material: CHAINMAIL_LEGGINGS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 3
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/gilded_netherite_leggings
+    - prism_skyblock/item_texture/armors/gilded_netherite_leggings
+  trim_pattern: nexo:gilded_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+gilded_netherite_boots:
+  itemname: ''
+  material: CHAINMAIL_BOOTS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 3
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/gilded_netherite_boots
+    - prism_skyblock/item_texture/armors/gilded_netherite_boots
+  trim_pattern: nexo:gilded_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+soul_netherite_helmet:
+  itemname: ''
+  material: CHAINMAIL_HELMET
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 4
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/soul_netherite_helmet
+    - prism_skyblock/item_texture/armors/soul_netherite_helmet
+  trim_pattern: nexo:soul_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+soul_netherite_chestplate:
+  itemname: ''
+  material: CHAINMAIL_CHESTPLATE
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 4
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/soul_netherite_chestplate
+    - prism_skyblock/item_texture/armors/soul_netherite_chestplate
+  trim_pattern: nexo:soul_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+soul_netherite_leggings:
+  itemname: ''
+  material: CHAINMAIL_LEGGINGS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 4
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/soul_netherite_leggings
+    - prism_skyblock/item_texture/armors/soul_netherite_leggings
+  trim_pattern: nexo:soul_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+soul_netherite_boots:
+  itemname: ''
+  material: CHAINMAIL_BOOTS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 4
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/soul_netherite_boots
+    - prism_skyblock/item_texture/armors/soul_netherite_boots
+  trim_pattern: nexo:soul_netherite
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+
+hextech_helmet:
+  itemname: ''
+  material: CHAINMAIL_HELMET
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 5
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_helmet
+    - prism_skyblock/item_texture/armors/hextech_helmet
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+hextech_chestplate:
+  itemname: ''
+  material: CHAINMAIL_CHESTPLATE
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 5
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_chestplate
+    - prism_skyblock/item_texture/armors/hextech_chestplate
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+hextech_leggings:
+  itemname: ''
+  material: CHAINMAIL_LEGGINGS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 5
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_leggings
+    - prism_skyblock/item_texture/armors/hextech_leggings
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+hextech_boots:
+  itemname: ''
+  material: CHAINMAIL_BOOTS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 5
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_boots
+    - prism_skyblock/item_texture/armors/hextech_boots
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+
+hextech_helmet_ascended:
+  itemname: ''
+  material: CHAINMAIL_HELMET
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 6
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_helmet_ascended
+    - prism_skyblock/item_texture/armors/hextech_helmet_ascended
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+hextech_chestplate_ascended:
+  itemname: ''
+  material: CHAINMAIL_CHESTPLATE
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 6
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_chestplate_ascended
+    - prism_skyblock/item_texture/armors/hextech_chestplate_ascended
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+hextech_leggings_ascended:
+  itemname: ''
+  material: CHAINMAIL_LEGGINGS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 6
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_leggings_ascended
+    - prism_skyblock/item_texture/armors/hextech_leggings_ascended
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM
+hextech_boots_ascended:
+  itemname: ''
+  material: CHAINMAIL_BOOTS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 6
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/armors/hextech_boots_ascended
+    - prism_skyblock/item_texture/armors/hextech_boots_ascended
+  trim_pattern: nexo:hextech
+  ItemFlags:
+  - HIDE_ARMOR_TRIM

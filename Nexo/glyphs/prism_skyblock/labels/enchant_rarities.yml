@@ -1,0 +1,31 @@
+enchantrarity-common:
+  char: ꂺ
+  texture: prism_skyblock/labels/enchant_rarity/common.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+
+enchantrarity-rare:
+  char: ꂻ
+  texture: prism_skyblock/labels/enchant_rarity/rare.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+
+enchantrarity-legendary:
+  char: ꂼ
+  texture: prism_skyblock/labels/enchant_rarity/legendary.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+
+enchantrarity-fabled:
+  char: ꂽ
+  texture: prism_skyblock/labels/enchant_rarity/fabled.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm

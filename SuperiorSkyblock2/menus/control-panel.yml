@@ -1,0 +1,202 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀝ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Island Panel &m                        '
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '( ) ) _ _ _ = = ='
+  - ') ) ) + + + # # #'
+  - ') ) ) % 1 @ & $ X'
+
+members: '+'
+settings: '@'
+visitors: '-'
+
+items:
+  '(':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU0ODUwMzFiMzdmMGQ4YTRmM2I3ODE2ZWI3MTdmMDNkZTg5YTg3ZjZhNDA2MDJhZWY1MjIyMWNkZmFmNzQ4OCJ9fX0='
+    customModel: 16
+    name: '&{HEX:ffffff}Island: &{HEX:1fa5de}@%superior_island_name_leader%'
+    lore:
+      - ''
+      - '&{HEX:cccccc}▪ Island Level: &{HEX:e8af46}%superior_island_level%⭐ &8(#%superior_island_top_level_position%)'
+      - '&{HEX:9c9c9c} Worth: &f%superior_island_worth_format% &8(#%superior_island_top_worth_position%)'
+      - '&{HEX:9c9c9c} Rating: &f%superior_island_rating_stars%'
+      - ''
+      - '&{HEX:cccccc}▪ Leader: &f%superior_island_leader%'
+      - '&{HEX:9c9c9c} Members: &f%superior_island_team_size%&8/%superior_island_team_limit%'
+      - '&{HEX:9c9c9c} Visitors: &f%superior_island_visitors_count%'
+      - ''
+      - '&{HEX:cccccc}▪ Island Upgrades:'
+      - '&{HEX:9c9c9c} Crop Growth: &f%superior_island_upgrade_crop-growth%&8/6'
+      - '&{HEX:9c9c9c} Team Limit: &f%superior_island_upgrade_members-limit%&8/5'
+      - '&{HEX:9c9c9c} Border Size: &f%superior_island_upgrade_border-size%&8/5'
+      - '&{HEX:9c9c9c} Generator Rates: &f%superior_island_upgrade_generator-rates%&8/6'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Teleport to island'
+  ')':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:ffffff}Island: &{HEX:1fa5de}@%superior_island_name_leader%'
+    lore:
+      - ''
+      - '&{HEX:cccccc}▪ Island Level: &{HEX:e8af46}%superior_island_level%⭐ &8(#%superior_island_top_level_position%)'
+      - '&{HEX:9c9c9c} Worth: &f%superior_island_worth_format% &8(#%superior_island_top_worth_position%)'
+      - '&{HEX:9c9c9c} Rating: &f%superior_island_rating_stars%'
+      - ''
+      - '&{HEX:cccccc}▪ Leader: &f%superior_island_leader%'
+      - '&{HEX:9c9c9c} Members: &f%superior_island_team_size%&8/%superior_island_team_limit%'
+      - '&{HEX:9c9c9c} Visitors: &f%superior_island_visitors_count%'
+      - ''
+      - '&{HEX:cccccc}▪ Island Upgrades:'
+      - '&{HEX:9c9c9c} Crop Growth: &f%superior_island_upgrade_crop-growth%&8/6'
+      - '&{HEX:9c9c9c} Team Limit: &f%superior_island_upgrade_members-limit%%&8/5'
+      - '&{HEX:9c9c9c} Border Size: &f%superior_island_upgrade_border-size%&8/5'
+      - '&{HEX:9c9c9c} Generator Rates: &f%superior_island_upgrade_generator-rates%&8/6'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Teleport to island'
+
+
+  '=':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:30ddcc}Island Ratings'
+    lore:
+      - '&{HEX:cccccc}See other players'' ratings'
+      - '&{HEX:cccccc}on your island.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access ratings.'
+  '#':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:9d54de}Island Upgrades'
+    lore:
+      - '&{HEX:cccccc}Upgrade various aspects of'
+      - '&{HEX:cccccc}your islands with coins'
+      - ''
+      - '&{HEX:9c9c9c} Crop Growth: &f%superior_island_upgrade_crop-growth%&8/6'
+      - '&{HEX:9c9c9c} Team Limit: &f%superior_island_upgrade_members-limit%&8/5'
+      - '&{HEX:9c9c9c} Border Size: &f%superior_island_upgrade_border-size%&8/5'
+      - '&{HEX:9c9c9c} Generator Rates: &f%superior_island_upgrade_generator-rates%&8/6'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access upgrades panel.'
+  '_':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:e1a42c}Island Bank'
+    lore:
+      - '&{HEX:cccccc}Access your community bank'
+      - '&{HEX:cccccc}shared with other members.'
+      - ''
+      - '&{HEX:9c9c9c} Bank Storage: &f%superior_island_bank_format%&8/%superior_island_bank_limit_format%'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access island bank.'
+  '+':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:2de674}Island Members'
+    lore:
+      - '&{HEX:cccccc}Manage the members of'
+      - '&{HEX:cccccc}the island.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access members.'
+
+  '@':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:ffffff}Island Settings'
+    lore:
+      - '&{HEX:cccccc}Manage settings regarding'
+      - '&{HEX:cccccc}your island.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access panel.'
+  '$':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:ffffff}Island Permissions'
+    lore:
+      - '&{HEX:cccccc}Manage permissions in'
+      - '&{HEX:cccccc}your island.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access panel.'
+  '%':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:ffffff}Island Biomes'
+    lore:
+      - '&{HEX:cccccc}Change the biome of'
+      - '&{HEX:cccccc}your island.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access panel.'
+  '&':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:ffffff}Top Islands'
+    lore:
+      - '&{HEX:cccccc}Check which island is'
+      - '&{HEX:cccccc}top on your server.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access panel.'
+  '1':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:ffffff}Island Counts'
+    lore:
+      - '&{HEX:cccccc}See all the blocks'
+      - '&{HEX:cccccc}on your island.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Access panel.'
+  'X':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:e02f2f}Disband The Island'
+    lore:
+      - '&{HEX:cccccc}Disband this island,'
+      - '&{HEX:cccccc}deleting all traces.'
+      - '&{HEX:cccccc}of it.'
+      - ''
+      - '&fꂀ &{HEX:83ca16}Disband.'
+  '2':
+    type: BARRIER
+    customModel: 1
+    name: '&f'
+
+sounds:
+  '(':
+    type: ENTITY_ENDERMAN_TELEPORT
+  ')':
+    type: ENTITY_ENDERMAN_TELEPORT
+
+commands:
+  '(':
+    - '[player] is tp'
+  ')':
+    - '[player] is tp'
+  '$':
+    - '[player] is permissions'
+  '%':
+    - '[player] is biome'
+  '_':
+    - '[player] is bank'
+  '#':
+    - '[player] is upgrade'
+  '&':
+    - '[player] is top'
+  '*':
+    - '[player] is missions'
+  '1':
+    - '[player] is counts'
+  '~':
+    - '[player] is disband'
+  '=':
+    - '[player] is ratings'
+  'X':
+    - '[player] is disband'

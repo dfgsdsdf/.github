@@ -1,0 +1,70 @@
+# Item sets let you create links betweens the different items you create.
+# By wearing multiple items from the same set, the player will benefit from
+# set bonuses which incites him to use items from the same type.
+# This is a very powerful system for RPG items.
+#
+# You can also use potion effects as set bonuses, e.g
+# - "potion-speed: 2" gives permanent Speed II
+# - "potion-increase_damage: 3" gives permanent Strength III
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+#
+# You may also add abilities as full set bonuses. The ability ID
+# must start with 'ability-' but it is only used as reference.
+# You can configure the ability cast mode, type & modifiers as usual.
+
+WARDEN:
+    name: 'Warden'
+    bonuses:
+        '4':
+            ability-1:
+                type: warden_armor
+                cooldown: 0
+                mode: ATTACK
+    lore-tag:
+    - <#d6b351> ⭐<white>ғᴜʟʟ sᴇᴛ ʙᴏɴᴜs
+    - <dark_gray>▎ <#b0a797>Your attacks accumulate <#253e70>Sonic
+    - <dark_gray>▎ <#b0a797><#253e70>Energy<#b0a797>. Once it reaches <#253e70>100<#b0a797>,
+    - <dark_gray>▎ <#b0a797>summons the <#274c96><b>Pet Warden <#b0a797>to
+    - <dark_gray>▎ <#b0a797>fight for you.
+
+GILDED_NETHERITE:
+    name: 'Gilded Netherite'
+    bonuses:
+        '4':
+            ability-1:
+                type: gilded_netherite_armor
+                cooldown: 0
+                mode: KILL_ENTITY
+    lore-tag:
+    - <#d6b351> ⭐<white>ғᴜʟʟ sᴇᴛ ʙᴏɴᴜs
+    - <dark_gray>▎ <#b0a797>Each time you kill an enemy,
+    - <dark_gray>▎ <#b0a797>you steal <#ebaa60>10 - 100 Coins
+
+SOUL_NETHERITE:
+    name: 'Soul Netherite'
+    bonuses:
+        '4':
+            ability-1:
+                type: soul_netherite_armor
+                cooldown: 1
+                mode: KILL_ENTITY
+    lore-tag:
+    - <#d6b351> ⭐<white>ғᴜʟʟ sᴇᴛ ʙᴏɴᴜs
+    - <dark_gray>▎ <#b0a797>Killing an enemy forces its
+    - <dark_gray>▎ <#b0a797><#2d4db5>spirit <#b0a797>to seek one nearby
+    - <dark_gray>▎ <#b0a797>target and attack it.
+
+HEXTECH:
+    name: 'Hextech'
+    bonuses:
+        '4':
+            ability-1:
+                type: hextech_armor
+                mode: ATTACK
+    lore-tag:
+    - <#d6b351> ⭐<white>ғᴜʟʟ sᴇᴛ ʙᴏɴᴜs
+    - <dark_gray>▎ <#b0a797>Dealing damage builds up
+    - <dark_gray>▎ <#b0a797><#e7b5eb>Hextech Energy<#b0a797>, capped
+    - <dark_gray>▎ <#b0a797>at 50. Hextech equipment
+    - <dark_gray>▎ <#b0a797>use it to power up their
+    - <dark_gray>▎ <#b0a797>special abilities.

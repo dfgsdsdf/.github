@@ -1,0 +1,9 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "prism_skyblock/interface/gui_textures/page_forward"
+	},
+	"display":{
+		"gui": {"rotation": [ 0, 0, 0 ], "translation": [ 0, 0, 0 ], "scale": [ 2, 2, 2 ]}
+	}
+}

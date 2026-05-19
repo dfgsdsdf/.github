@@ -1,0 +1,17 @@
+SCROLL_OF_DIVINE_INTERVENTION:
+  base:
+    material: BLACK_DYE
+    name: "<#fff6b0>Scroll: <#f5e889>Divine Intervention"
+    lore:
+      - "<#737165>Bring to Demetrix to unlock"
+      - "<#737165>this innate."
+    lore-format: material
+    custom-model-data: 1.0
+    tier: TIER4
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    max-stack-size: 1.0

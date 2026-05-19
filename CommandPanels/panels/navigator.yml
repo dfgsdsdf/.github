@@ -1,0 +1,105 @@
+panels:
+  navigator:
+    rows: 2
+    title: '&fꐮꁿ ꐲꐰꐮꐭꐬ<#5e5e5e>Main Menu > <#3b3b3b>Navigator &m             '
+    commands:
+    - navigator
+    - warps
+    - warp
+    - darwin
+    item:
+
+      '0':
+        material: barrier
+        customdata: '1'
+        name: '&#d6d6d6Go back.'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'open= menu'
+
+
+      '1': &is
+        material: barrier
+        customdata: '1'
+        name: '&#edededTravel to &#3b8bc1Private Island'
+        lore:
+          - '&#8a8a8aFly to your own private'
+          - '&#8a8a8aisland, where you could'
+          - '&#8a8a8ado whatever you want!'
+          - ''
+          - '&fꂀ &#83ca16Travel.'
+        commands:
+          - 'sound= ENTITY_SHULKER_TELEPORT'
+          - 'is'
+      '2': *is
+      '3': *is
+      '10': *is
+      '11': *is
+      '12': *is
+
+
+      '4': &balloonA
+        material: barrier
+        customdata: '1'
+        name: '&#edededTravel to &#5aa64cBalloon Dock A'
+        lore:
+          - '&#8a8a8aNavigate to this dock and'
+          - '&#8a8a8atravel to these adjacent'
+          - '&#8a8a8alocations:'
+          - ' &#697d65Spawn Fountain'
+          - ' &#697d65The Blacksmith'
+          - ' &#697d65The Treasury'
+          - ' &#697d65Guild''s Domain'
+          - ' &#697d65Dungeon Portal'
+          - ''
+          - '&fꂀ &#83ca16Travel.'
+        commands:
+          - 'sound= ENTITY_SHULKER_TELEPORT'
+          - 'spawn docka'
+      '5': *balloonA
+
+      '13': &balloonB
+        material: barrier
+        customdata: '1'
+        name: '&#edededTravel to &#d49528Balloon Dock B'
+        lore:
+          - '&#8a8a8aNavigate to this dock and'
+          - '&#8a8a8atravel to these adjacent'
+          - '&#8a8a8alocations:'
+          - ' &#756c5dEnchant Center'
+          - ' &#756c5dAscension Pedal'
+          - ' &#756c5dThe Grotto'
+          - ''
+          - '&fꂀ &#83ca16Travel.'
+        commands:
+          - 'sound= ENTITY_SHULKER_TELEPORT'
+          - 'spawn dockb'
+      '14': *balloonB
+
+
+      '6': &balloonC
+        material: barrier
+        customdata: '1'
+        name: '&#edededTravel to &#b54747Balloon Dock C'
+        lore:
+          - '&#8a8a8aNavigate to this dock and'
+          - '&#8a8a8atravel to these adjacent'
+          - '&#8a8a8alocations:'
+          - ' &#735656Town''s Hall'
+          - ' &#735656Quester''s House'
+          - ' &#735656The Grotto'
+          - ''
+          - '&fꂀ &#83ca16Travel.'
+        commands:
+          - 'sound= ENTITY_SHULKER_TELEPORT'
+          - 'spawn dockc'
+      '7': *balloonC
+
+      '15': &na
+        material: barrier
+        customdata: '1'
+        name: '&#c45c5cUh oh...'
+        lore:
+          - '&#8a8a8aI cannot take you'
+          - '&#8a8a8ahere yet!'
+      '16': *na

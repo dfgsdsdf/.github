@@ -1,0 +1,8 @@
+draedon_grimoire:
+  material: FEATHER
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/grimoire/draedon_grimoire.png

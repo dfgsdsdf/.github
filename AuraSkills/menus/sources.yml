@@ -1,0 +1,67 @@
+title: '&fꐮꀎ ꐲꐰꐮꐭꐬ<#5e5e5e>Player Skills > <#3b3b3b>XP Sources &m       '
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+on_open:
+- sound: block.note_block.hat
+  category: master
+  volume: 1
+  pitch: 1
+items:
+  back:
+    pos: 5,0
+    material: BOOK
+    custom_model_data: 13
+    display_name: <#e3b56b>{{back}}
+    lore: []
+  next_page:
+    pos: 5,8
+    material: BOOK
+    custom_model_data: 11
+    display_name: <#e3b56b>{{next_page}}
+    lore: []
+  previous_page:
+    pos: 5,7
+    material: BOOK
+    custom_model_data: 12
+    display_name: <#e3b56b>{{previous_page}}
+    lore: []
+  sorter:
+    pos: 5,4
+    material: BOOK
+    custom_model_data: 14
+    display_name: <#e3b56b>{{sorter}}
+    lore:
+    - '{sort_types[\n]}'
+    - ' '
+    - <yellow>{{sort_click}}
+templates:
+  source:
+    material: gray_dye
+    display_name: <white>{source_name}
+    lore:
+    - '<#cccccc>{xp_unit}: {source_xp}'
+    - component: multiplied_xp
+components:
+  multiplied_xp:
+    context: XpSource
+    lore:
+    - ' '
+    - '<white>{{multiplied_xp}}: {source_xp}'
+    - text: '{{multiplied_desc}}'
+      wrap: true
+      style: <#cccccc><italic>
+formats:
+  sort_type_entry: <#cccccc>{selected}{type_name}
+  selected: '<white>> '
+  source_xp: <green>{xp}
+  source_xp_rate: <green>{xp}/{unit}
+options:
+  source_start: 0,1
+  source_end: 4,8
+  items_per_page: 28
+  use_track: false
+  track: []
+  xp_format: '#.##'
+  income_format: '0.00'

@@ -1,0 +1,7 @@
+name: prisq
+banks:
+  bank:
+    level: 5
+    money: '1000000000.00'
+    debt: '0.00'
+    interest: '0.00'

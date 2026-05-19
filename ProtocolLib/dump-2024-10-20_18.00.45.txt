@@ -1,0 +1,160 @@
+ProtocolLib Dump
+Timestamp: 10/20/24 18:00:45
+
+ProtocolLib Version: ProtocolLib v5.3.0-SNAPSHOT-732
+Bukkit Version: 1.21.1-R0.1-SNAPSHOT
+Server Version: 1.21.1-77-4ff58c4 (MC: 1.21.1)
+Java Version: 21.0.5
+
+ProtocolLib: com.comphenix.protocol.ProtocolLib@7f9b6840[
+  statistics=com.comphenix.protocol.metrics.Statistics@5e9c7afb
+  packetTask=com.comphenix.protocol.scheduler.DefaultTask@72ca9e31
+  tickCounter=2021
+  configExpectedMod=1
+  updater=com.comphenix.protocol.updater.SpigotUpdater@44f8503
+  redirectHandler=com.comphenix.protocol.ProtocolLib$2@203224a2
+  scheduler=com.comphenix.protocol.scheduler.DefaultScheduler@1dc4c9fd
+  commandProtocol=com.comphenix.protocol.CommandProtocol@3bd9f762
+  commandPacket=com.comphenix.protocol.CommandPacket@43461a87
+  commandFilter=com.comphenix.protocol.CommandFilter@72e03179
+  packetLogging=com.comphenix.protocol.PacketLogging@49d085f9
+  skipDisable=false
+  isEnabled=true
+  loader=io.papermc.paper.plugin.manager.DummyBukkitPluginLoader@3dc60946
+  server=CraftServer{serverName=Paper,serverVersion=1.21.1-77-4ff58c4,minecraftVersion=1.21.1}
+  file=plugins\ProtocolLib (16).jar
+  description=org.bukkit.plugin.PluginDescriptionFile@3dbf251f
+  pluginMeta=org.bukkit.plugin.PluginDescriptionFile@3dbf251f
+  dataFolder=plugins\ProtocolLib
+  classLoader=PluginClassLoader{plugin=ProtocolLib v5.3.0-SNAPSHOT-732, pluginEnabled=true, url=plugins\ProtocolLib (16).jar}
+  naggable=true
+  newConfig=YamlConfiguration[path='', root='YamlConfiguration']
+  configFile=plugins\ProtocolLib\config.yml
+  logger=com.destroystokyo.paper.utils.PaperPluginLogger@7d0c3b72
+  lifecycleEventManager=io.papermc.paper.plugin.lifecycle.event.PaperLifecycleEventManager@eaa87ee
+  allowsLifecycleRegistration=false
+]
+Manager: com.comphenix.protocol.injector.PacketFilterManager@4a79ccf9[
+  plugin=ProtocolLib v5.3.0-SNAPSHOT-732
+  server=CraftServer{serverName=Paper,serverVersion=1.21.1-77-4ff58c4,minecraftVersion=1.21.1}
+  reporter=com.comphenix.protocol.ProtocolLib$1@56e828ca
+  minecraftVersion=(MC: 1.21.1)
+  asyncFilterManager=com.comphenix.protocol.async.AsyncFilterManager@4a235ece
+  pluginVerifier=com.comphenix.protocol.injector.PluginVerifier@10ec3593
+  mainThreadPacketTypes=com.comphenix.protocol.concurrent.PacketTypeListenerSet@14762d73
+  inboundListeners=com.comphenix.protocol.injector.collection.InboundPacketListenerSet@3cfe94f
+  outboundListeners=com.comphenix.protocol.injector.collection.OutboundPacketListenerSet@534a02d6
+  registeredListeners=[PacketAdapter[plugin=ConditionalEvents, sending=ListeningWhitelist[priority=HIGHEST, packets=[SYSTEM_CHAT[class=ClientboundSystemChatPacket, id=108]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=AuraSkills, sending=ListeningWhitelist[priority=MONITOR, packets=[SET_ACTION_BAR_TEXT[class=ClientboundSetActionBarTextPacket, id=76]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Oraxen, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=LOW, packets=[BLOCK_DIG[class=ServerboundPlayerActionPacket, id=36]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=SuperiorSkyblock2, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[SETTINGS[class=ServerboundClientInformationPacket, id=10]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=MythicLib, sending=ListeningWhitelist[priority=NORMAL, packets=[WORLD_PARTICLES[class=ClientboundLevelParticlesPacket, id=41]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=PlayerAuctions, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[UPDATE_SIGN[class=ServerboundSignUpdatePacket, id=53]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=AuraSkills, sending=ListeningWhitelist[priority=MONITOR, packets=[CHAT[class=ClientboundPlayerChatPacket, id=57]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Citizens, sending=ListeningWhitelist[priority=HIGHEST, packets=[PLAYER_INFO[class=ClientboundPlayerInfoUpdatePacket, id=62]], gamephase=PLAYING, options=[ASYNC]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Citizens, sending=ListeningWhitelist[priority=HIGHEST, packets=[ENTITY_HEAD_ROTATION[class=ClientboundRotateHeadPacket, id=72], REL_ENTITY_MOVE_LOOK[class=PosRot, id=47], ENTITY_LOOK[class=Rot, id=48], ENTITY_TELEPORT[class=ClientboundTeleportEntityPacket, id=112]], gamephase=PLAYING, options=[ASYNC]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=ConditionalEvents, sending=ListeningWhitelist[priority=HIGHEST, packets=[CHAT[class=ClientboundPlayerChatPacket, id=57]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Citizens, sending=ListeningWhitelist[priority=HIGHEST, packets=[ENTITY_METADATA[class=ClientboundSetEntityDataPacket, id=88]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=ConditionalEvents, sending=ListeningWhitelist[priority=HIGHEST, packets=[DISGUISED_CHAT[class=ClientboundDisguisedChatPacket, id=30]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Oraxen, sending=ListeningWhitelist[priority=MONITOR, packets=[SET_ACTION_BAR_TEXT[class=ClientboundSetActionBarTextPacket, id=76], SET_SUBTITLE_TEXT[class=ClientboundSetSubtitleTextPacket, id=99], SET_TITLE_TEXT[class=ClientboundSetTitleTextPacket, id=101]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Oraxen, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=LOW, packets=[BLOCK_DIG[class=ServerboundPlayerActionPacket, id=36]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=AuraSkills, sending=ListeningWhitelist[priority=MONITOR, packets=[SYSTEM_CHAT[class=ClientboundSystemChatPacket, id=108]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Oraxen, sending=ListeningWhitelist[priority=MONITOR, packets=[OPEN_WINDOW[class=ClientboundOpenScreenPacket, id=51]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST]]
+  networkManagerInjector=com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector@227bf581
+  debug=false
+  closed=false
+  injected=true
+]
+
+Listeners:
+ce.ajneb97.managers.dependencies.ProtocolLibManager$1@7ce3e463[
+  plugin=ConditionalEvents v4.57.3
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=HIGHEST, packets=[SYSTEM_CHAT[class=ClientboundSystemChatPacket, id=108]], gamephase=PLAYING, options=[]]
+]
+dev.aurelium.auraskills.bukkit.hooks.ProtocolLibHook$1@1c74e494[
+  plugin=AuraSkills v2.2.3
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=MONITOR, packets=[SET_ACTION_BAR_TEXT[class=ClientboundSetActionBarTextPacket, id=76]], gamephase=PLAYING, options=[]]
+]
+io.th0rgal.oraxen.utils.breaker.BreakerSystem$1@35ec8dee[
+  plugin=Oraxen v1.182.0
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=LOW, packets=[BLOCK_DIG[class=ServerboundPlayerActionPacket, id=36]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+com.bgsoftware.superiorskyblock.external.ProtocolLibHook$ChangePlayerLanguageListener@595cea3e[
+  plugin=SuperiorSkyblock2 v2024.3
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[SETTINGS[class=ServerboundClientInformationPacket, id=10]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+io.lumine.mythic.lib.comp.protocollib.DamageParticleCap$1@2025d3c0[
+  plugin=MythicLib v1.6.2-SNAPSHOT
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[WORLD_PARTICLES[class=ClientboundLevelParticlesPacket, id=41]], gamephase=PLAYING, options=[]]
+]
+com.olziedev.playerauctions.k.b.b$1@4a7f8dda[
+  plugin=PlayerAuctions v1.29.0
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[UPDATE_SIGN[class=ServerboundSignUpdatePacket, id=53]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+dev.aurelium.auraskills.bukkit.hooks.ProtocolLibHook$4@f5ea7d8[
+  plugin=AuraSkills v2.2.3
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=MONITOR, packets=[CHAT[class=ClientboundPlayerChatPacket, id=57]], gamephase=PLAYING, options=[]]
+]
+net.citizensnpcs.ProtocolLibListener$2@6fe98b4f[
+  plugin=Citizens v2.0.35-SNAPSHOT (build 3541)
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=HIGHEST, packets=[PLAYER_INFO[class=ClientboundPlayerInfoUpdatePacket, id=62]], gamephase=PLAYING, options=[ASYNC]]
+]
+net.citizensnpcs.ProtocolLibListener$3@6aadf6ea[
+  plugin=Citizens v2.0.35-SNAPSHOT (build 3541)
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=HIGHEST, packets=[ENTITY_HEAD_ROTATION[class=ClientboundRotateHeadPacket, id=72], REL_ENTITY_MOVE_LOOK[class=PosRot, id=47], ENTITY_LOOK[class=Rot, id=48], ENTITY_TELEPORT[class=ClientboundTeleportEntityPacket, id=112]], gamephase=PLAYING, options=[ASYNC]]
+]
+ce.ajneb97.managers.dependencies.ProtocolLibManager$1@63c7184d[
+  plugin=ConditionalEvents v4.57.3
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=HIGHEST, packets=[CHAT[class=ClientboundPlayerChatPacket, id=57]], gamephase=PLAYING, options=[]]
+]
+net.citizensnpcs.ProtocolLibListener$1@1fd4269e[
+  plugin=Citizens v2.0.35-SNAPSHOT (build 3541)
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=HIGHEST, packets=[ENTITY_METADATA[class=ClientboundSetEntityDataPacket, id=88]], gamephase=PLAYING, options=[]]
+]
+ce.ajneb97.managers.dependencies.ProtocolLibManager$1@1d67a84c[
+  plugin=ConditionalEvents v4.57.3
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=HIGHEST, packets=[DISGUISED_CHAT[class=ClientboundDisguisedChatPacket, id=30]], gamephase=PLAYING, options=[]]
+]
+io.th0rgal.oraxen.font.packets.TitlePacketListener@31df9e2b[
+  plugin=Oraxen v1.182.0
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=MONITOR, packets=[SET_ACTION_BAR_TEXT[class=ClientboundSetActionBarTextPacket, id=76], SET_SUBTITLE_TEXT[class=ClientboundSetSubtitleTextPacket, id=99], SET_TITLE_TEXT[class=ClientboundSetTitleTextPacket, id=101]], gamephase=PLAYING, options=[]]
+]
+io.th0rgal.oraxen.mechanics.provided.gameplay.efficiency.EfficiencyMechanicListener@db9ba8d[
+  factory=io.th0rgal.oraxen.mechanics.provided.gameplay.efficiency.EfficiencyMechanicFactory@1d0e4892
+  plugin=Oraxen v1.182.0
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=LOW, packets=[BLOCK_DIG[class=ServerboundPlayerActionPacket, id=36]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+dev.aurelium.auraskills.bukkit.hooks.ProtocolLibHook$2@51b08046[
+  plugin=AuraSkills v2.2.3
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=MONITOR, packets=[SYSTEM_CHAT[class=ClientboundSystemChatPacket, id=108]], gamephase=PLAYING, options=[]]
+]
+io.th0rgal.oraxen.font.packets.InventoryPacketListener@751e5ec2[
+  plugin=Oraxen v1.182.0
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=MONITOR, packets=[OPEN_WINDOW[class=ClientboundOpenScreenPacket, id=51]], gamephase=PLAYING, options=[]]
+]
+
+Plugins Using ProtocolLib:
+Oraxen by [th0rgal, boy0000]
+AuraSkills by [Archyx]
+Citizens by [fullwall]
+SuperiorSkyblock2 by [Ome_R]
+ConditionalEvents by [Ajneb97]
+PlayerAuctions by [Olzie]
+MythicLib by [Indyuce]

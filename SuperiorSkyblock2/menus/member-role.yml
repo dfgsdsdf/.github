@@ -1,0 +1,73 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꃑ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Managing Member''s Role'
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ ^ ^ ^ % % %'
+  - '@ @ @ ^ ^ ^ % % %'
+  - 'h h | | | | | * *'
+
+items:
+  'h':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back'
+  '@':
+    role: Member
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Set role to &{HEX:35addc}member.'
+    flags:
+      - HIDE_ATTRIBUTES
+  '^':
+    role: Moderator
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Set role to &{HEX:dc8835}moderator.'
+    flags:
+      - HIDE_ATTRIBUTES
+  '%':
+    role: Admin
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Set role to &{HEX:e82121}admin.'
+    flags:
+      - HIDE_ATTRIBUTES
+  '*':
+    role: Leader
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:7a41e3}Transfer ownership to &f@{}'
+    flags:
+      - HIDE_ATTRIBUTES
+
+commands:
+  'h':
+    - '[player] is members'
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '%':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '&':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '*':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

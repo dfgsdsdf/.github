@@ -1,0 +1,27 @@
+dungeonkey-diamond:
+  itemname: ''
+  material: TRIPWIRE_HOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/dungeon_keys/diamond_key.png
+dungeonkey-emerald:
+  itemname: ''
+  material: TRIPWIRE_HOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/dungeon_keys/emerald_key.png
+dungeonkey-star:
+  itemname: ''
+  material: TRIPWIRE_HOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/dungeon_keys/star_key.png

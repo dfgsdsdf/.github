@@ -1,0 +1,20 @@
+name: <#438c8c>Fire Berserker
+lore:
+- <#9ba8a8>Attacks deal <#36e3e3>+{extra}% damage
+- <#9ba8a8>when on fire.
+material: BLAZE_ROD:5
+mana:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+stamina:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+extra:
+  base: 10.0
+  per-level: 5.0

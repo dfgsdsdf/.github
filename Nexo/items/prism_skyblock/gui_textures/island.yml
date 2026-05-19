@@ -1,0 +1,90 @@
+islandchest-chest:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 22
+    textures:
+    - prism_skyblock/interface/gui_textures/island/chest
+islandchest-lockedchest:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 23
+    textures:
+    - prism_skyblock/interface/gui_textures/island/lockedchest
+island-next:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 24
+    textures:
+    - prism_skyblock/interface/gui_textures/island/next
+island-back:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 25
+    textures:
+    - prism_skyblock/interface/gui_textures/island/back
+island-home:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 26
+    textures:
+    - prism_skyblock/interface/gui_textures/island/home
+island-sortworth:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 27
+    textures:
+    - prism_skyblock/interface/gui_textures/island/sortworth
+island-sortlevel:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 28
+    textures:
+    - prism_skyblock/interface/gui_textures/island/sortlevel
+island-sortplayer:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 29
+    textures:
+    - prism_skyblock/interface/gui_textures/island/sortplayer
+island-sortrating:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 30
+    textures:
+    - prism_skyblock/interface/gui_textures/island/sortrating
+island-uniquevisitor:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 31
+    textures:
+    - prism_skyblock/interface/gui_textures/island/uniquevisitor

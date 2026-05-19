@@ -1,0 +1,21 @@
+name: <#438c8c>Backstab
+lore:
+- <#9ba8a8>Backstab deals <#36e3e3>+{extra}%
+- <#9ba8a8>damage.
+material: BLAZE_ROD:4
+mana:
+  base: 8.0
+  per-level: 1.0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+stamina:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+extra:
+  base: 50.0
+  per-level: 20.0
+cooldown:
+  base: 2.0
+  per-level: 1.0

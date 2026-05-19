@@ -1,0 +1,548 @@
+settings:
+  menu: 'example-shop-menu'
+  buy-more: true
+  shop-name: 'Blocks Shop'
+  hide-message: false
+
+general-configs:
+  fail-actions:
+    - 'sound: entity.villager.no;;1;;1'
+  buy-actions:
+    - 'sound: coins;;1;;1-b-o' 
+  sell-actions:
+    - 'sound: coins;;1;;1-b-o' 
+
+items:
+  A:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: GRASS_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  B:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: DIRT
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  C:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: COARSE_DIRT
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  D:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: ROOTED_DIRT
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  E:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: COBBLESTONE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  F:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: STONE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  G:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: GRAVEL
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  H:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: ANDESITE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  I:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: DIORITE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  J:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: GRANITE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  K:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: ICE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  L:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: PACKED_ICE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  M:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BLUE_ICE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  N:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: NETHERRACK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  O:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: NETHER_BRICKS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  P:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: GLOWSTONE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  Q:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: SOUL_SAND
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  R:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: SOUL_SOIL
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  S:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BASALT
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  T:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: OBSIDIAN
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  U:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: CRYING_OBSIDIAN
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  V:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: MUD
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  W:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BRICKS
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  X:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: SPONGE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  Y:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: MOSS_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  Z:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: CALCITE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '!':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BLACKSTONE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '@':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: PURPUR_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '#':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: SHROOMLIGHT
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '$':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: AMETHYST_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '%':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: TUBE_CORAL_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '^':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BRAIN_CORAL_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '&':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: BUBBLE_CORAL_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '*':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: FIRE_CORAL_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '(':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: HORN_CORAL_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  ')':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: SEA_LANTERN
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '-':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: MAGMA_BLOCK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  ';':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: TUFF
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '[':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: SAND
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  ']':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: RED_SAND
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  '\':
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: PRISMARINE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: 5
+        placeholder: '{amount} Coins'
+        start-apply: 0

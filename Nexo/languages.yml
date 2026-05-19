@@ -1,0 +1,11 @@
+## This file can be used to create custom translation-keys for given languages or override existing keys
+## This is the same as if you manually make the resourcepack JSON file for the given language
+## Example of a key applied to all languages (global) and overriden specifically for en_us & en_gb
+#global:
+#  chat.greeting: "Hi"
+#en_us:
+#  chat.greeting: "Hello"
+#en_gb:
+#  chat.greeting: "G'day"
+#2fb1d286c284fd52fe9b5099b0463e4a
+# eyJ1c2VyLW5hbWUiOiJhbGJhbmVhZ3JhOTM0NzYiLCJ1c2VyLWlkIjoiNTcyOSIsImRhdGUiOiIyMDI1LTA4LTIzIDE1OjI0Iiwic2l0ZSI6Imh0dHBzOi8vZ2xlYWtzLnBybyJ9

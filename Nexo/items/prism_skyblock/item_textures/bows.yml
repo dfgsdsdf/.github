@@ -1,0 +1,105 @@
+bow-cobalt:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/bows/cobalt
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/cobalt_0
+    - prism_skyblock/item_texture/bows/cobalt_1
+    - prism_skyblock/item_texture/bows/cobalt_2
+bow-hextech:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/bows/hextech
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/hextech_0
+    - prism_skyblock/item_texture/bows/hextech_1
+    - prism_skyblock/item_texture/bows/hextech_2
+bow-soul:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/bows/soul
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/soul_0
+    - prism_skyblock/item_texture/bows/soul_1
+    - prism_skyblock/item_texture/bows/soul_2
+bow-warden:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/item_texture/bows/warden
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/warden_0
+    - prism_skyblock/item_texture/bows/warden_1
+    - prism_skyblock/item_texture/bows/warden_2
+bow-soul_netherite:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/bows/soul_netherite
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/soul_netherite_0
+    - prism_skyblock/item_texture/bows/soul_netherite_1
+    - prism_skyblock/item_texture/bows/soul_netherite_2
+    custom_model_data: 5
+bow-gilded_netherite:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/bows/gilded_netherite
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/gilded_netherite_0
+    - prism_skyblock/item_texture/bows/gilded_netherite_1
+    - prism_skyblock/item_texture/bows/gilded_netherite_2
+    custom_model_data: 6
+bow-mithril:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/bows/mithril
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/mithril_0
+    - prism_skyblock/item_texture/bows/mithril_1
+    - prism_skyblock/item_texture/bows/mithril_2
+    custom_model_data: 7
+
+bow-hextech_ascended:
+  itemname: ''
+  material: BOW
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 8
+    textures:
+    - prism_skyblock/item_texture/bows/hextech_ascended
+    pulling_textures:
+    - prism_skyblock/item_texture/bows/hextech_ascended_0
+    - prism_skyblock/item_texture/bows/hextech_ascended_1
+    - prism_skyblock/item_texture/bows/hextech_ascended_2

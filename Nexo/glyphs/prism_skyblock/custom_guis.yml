@@ -1,0 +1,443 @@
+gui-profile_gui:
+  char: ꀀ
+  texture: prism_skyblock/interface/custom_guis/adventurer_menu.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-portals_gui:
+  char: ꀁ
+  texture: prism_skyblock/interface/custom_guis/portals.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-skills_gui:
+  char: ꀂ
+  texture: prism_skyblock/interface/custom_guis/skills.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-skills_progression_gui:
+  char: ꀃ
+  texture: prism_skyblock/interface/custom_guis/skills_progression.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-xp_sources:
+  char: ꀎ
+  texture: prism_skyblock/interface/custom_guis/xp_sources.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-abilities:
+  char: ꀏ
+  texture: prism_skyblock/interface/custom_guis/abilities.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-skillleaderboard:
+  char: ꀐ
+  texture: prism_skyblock/interface/custom_guis/skill_leaderboard.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-dungeons:
+  char: ꀑ
+  texture: prism_skyblock/interface/custom_guis/dungeons.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-innates:
+  char: ꀔ
+  texture: prism_skyblock/interface/custom_guis/innates.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-factions:
+  char: ꀗ
+  texture: prism_skyblock/interface/custom_guis/factions.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-friends:
+  char: ꀘ
+  texture: prism_skyblock/interface/custom_guis/friends.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-confirm:
+  char: ꀙ
+  texture: prism_skyblock/interface/custom_guis/confirm.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-party:
+  char: ꀚ
+  texture: prism_skyblock/interface/custom_guis/party.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-islandpanel:
+  char: ꀝ
+  texture: prism_skyblock/interface/custom_guis/island_panel.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-islandupgrades:
+  char: ꀢ
+  texture: prism_skyblock/interface/custom_guis/island_upgrades.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-islandbank:
+  char: ꀦ
+  texture: prism_skyblock/interface/custom_guis/island_bank.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-islandchest:
+  char: ꀧ
+  texture: prism_skyblock/interface/custom_guis/island_chest.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-islandgui:
+  char: ꀨ
+  texture: prism_skyblock/interface/custom_guis/island_gui.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-islandcreate:
+  char: ꀭ
+  texture: prism_skyblock/interface/custom_guis/island_create.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-ascension:
+  char: ꀮ
+  texture: prism_skyblock/interface/custom_guis/ascension.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-codex:
+  char: ꀯ
+  texture: prism_skyblock/interface/custom_guis/codex.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-forge:
+  char: ꀰ
+  texture: prism_skyblock/interface/custom_guis/forge.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-ah:
+  char: ꀲ
+  texture: prism_skyblock/interface/custom_guis/ah.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-ahauctioning:
+  char: ꀳ
+  texture: prism_skyblock/interface/custom_guis/ah_auction.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-auctionmy:
+  char: ꀴ
+  texture: prism_skyblock/interface/custom_guis/ah_myauction.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-ahexpired:
+  char: ꀵ
+  texture: prism_skyblock/interface/custom_guis/ah_expired.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-bank:
+  char: ꀹ
+  texture: prism_skyblock/interface/custom_guis/bank.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-shop:
+  char: ꀻ
+  texture: prism_skyblock/interface/custom_guis/shop.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-shopamount:
+  char: ꀽ
+  texture: prism_skyblock/interface/custom_guis/shop_amount.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-ancientenchantress:
+  char: ꁎ
+  texture: prism_skyblock/interface/custom_guis/ancient_enchantress.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-enchantwiki:
+  char: ꁏ
+  texture: prism_skyblock/interface/custom_guis/enchant_wiki.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-homelist:
+  char: ꂂ
+  texture: prism_skyblock/interface/custom_guis/homelist.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-banlist:
+  char: ꁑ
+  texture: prism_skyblock/interface/custom_guis/banlist.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-warnlist:
+  char: ꁓ
+  texture: prism_skyblock/interface/custom_guis/warnlist.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-mutelist:
+  char: ꁔ
+  texture: prism_skyblock/interface/custom_guis/mutelist.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-punishmentrecords:
+  char: ꁖ
+  texture: prism_skyblock/interface/custom_guis/punishmentrecords.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-locksmith:
+  char: ꁗ
+  texture: prism_skyblock/interface/custom_guis/locksmith.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-trade:
+  char: ꁭ
+  texture: prism_skyblock/interface/custom_guis/trade.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-settings:
+  char: ꁲ
+  texture: prism_skyblock/interface/custom_guis/settings.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-store:
+  char: ꁾ
+  texture: prism_skyblock/interface/custom_guis/store.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-navigator:
+  char: ꁿ
+  texture: prism_skyblock/interface/custom_guis/navigator.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-profile:
+  char: ꂃ
+  texture: prism_skyblock/interface/custom_guis/player_profile.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-codexmob:
+  char: ꂄ
+  texture: prism_skyblock/interface/custom_guis/codex_mob.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-codexboss:
+  char: ꂅ
+  texture: prism_skyblock/interface/custom_guis/codex_boss.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-dailyquests:
+  char: ꂚ
+  texture: prism_skyblock/interface/custom_guis/daily_quests.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-questsmilestone:
+  char: ꂛ
+  texture: prism_skyblock/interface/custom_guis/quests_milestone.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-stardustshop:
+  char: ꂜ
+  texture: prism_skyblock/interface/custom_guis/stardust_shop.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-scrolldecypher:
+  char: ꂝ
+  texture: prism_skyblock/interface/custom_guis/scroll_decypher.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-yourfaction:
+  char: ꂟ
+  texture: prism_skyblock/interface/custom_guis/your_faction.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-lootloh:
+  char: ꂮ
+  texture: prism_skyblock/interface/custom_guis/loot_loh.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+
+gui-island-member:
+  char: ꃋ
+  texture: prism_skyblock/interface/custom_guis/island_member.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+gui-island-visitors:
+  char: ꃌ
+  texture: prism_skyblock/interface/custom_guis/island_visitors.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+gui-island-coops:
+  char: ꃍ
+  texture: prism_skyblock/interface/custom_guis/island_coops.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+gui-island-biome:
+  char: ꃎ
+  texture: prism_skyblock/interface/custom_guis/island_biome.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+gui-island-member-manage:
+  char: ꃐ
+  texture: prism_skyblock/interface/custom_guis/island_member_manage.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+gui-island-member-role:
+  char: ꃑ
+  texture: prism_skyblock/interface/custom_guis/island_member_role.png
+  ascent: 19
+  height: 256
+  chat:
+    permission: somerandom.perm
+

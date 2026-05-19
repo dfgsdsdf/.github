@@ -1,0 +1,871 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀢ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Upgrade &m          '
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '1 # # 2 ~ ~ 3 ! !'
+  - '# # # ~ ~ ~ ! ! !'
+  - '# # # ~ ~ ~ ! ! !'
+  - '$ $ $ 4 + + 5 | |'
+  - '$ $ $ + + + | | |'
+  - 'b b b + + + | | |'
+
+items:
+  '$':
+    type: AIR
+  '1':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGQwMWNiYTIzZWRlMmNkMjg5NTEwN2YwYzAyNThlOTcxZDI0ODU1MzhmZTk2NDllZjI4NTNiZDI2ZTYyMzJkYyJ9fX0='
+    customModel: 16
+    name: '&a'
+  '2':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQzMmRkYTE5MDE0NmQ0YWQ3YTg1NjliMzg5YWVhNzc3Njg0YzQ0ZmEyNjI0ZGNmNzQwMTY0Njc3NjVlOTY5MyJ9fX0='
+    customModel: 16
+    name: '&a'
+  '3':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjk1MGNiNjVlNDFiMWQ2NjhjZjg4MmViODk4NWUwM2UxNzY2MTc5NTU2NjM2NDA3MTRmYzA4ZmJlZTFmMWE0NiJ9fX0='
+    customModel: 16
+    name: '&a'
+  '4':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM5ZDRiMGVjNWUwYTYzZTRjMjg2ZWNkZmEyNTViMzFkZjEzYzQyMDIzMzgxNWI1ZTgxZTdlZjMxNTY3NTEwOSJ9fX0='
+    customModel: 16
+    name: '&a'
+  '5':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmE1MmQ1NzlhZmUyZmRmN2I4ZWNmYTc0NmNkMDE2MTUwZDk2YmViNzUwMDliYjI3MzNhZGUxNWQ0ODdjNDJhMSJ9fX0='
+    customModel: 16
+    name: '&a'
+  '|':
+    type: BARRIER
+    customModel: 1
+    name: '&8Coming soon.'
+  'b':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back.'
+
+upgrades:
+  crop-growth:
+    item: '#'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(1/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m0%&8 → &{HEX:bdf59f}25%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}100,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(1/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m0%&8 → &{HEX:bdf59f}25%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}100,000C'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(2/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m25%&8 → &{HEX:bdf59f}50%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}250,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(2/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m25%&8 → &{HEX:bdf59f}50%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}250,000C'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(3/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m50%&8 → &{HEX:bdf59f}75%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}500,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(3/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m50%&8 → &{HEX:bdf59f}75%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}500,000C'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(4/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m75%&8 → &{HEX:bdf59f}100%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&{HEX:d1672e}Crop Growth &f(4/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m75%&8 → &{HEX:bdf59f}100%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
+    '5':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(5/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m100%&8 → &{HEX:bdf59f}150%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}2,500,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(5/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &8&m100%&8 → &{HEX:bdf59f}150%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}2,500,000C'
+    '6':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(6/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &{HEX:bdf59f}150%'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:d1672e}Crop Growth &f(6/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Growth Speed: &{HEX:bdf59f}150%'
+  members-limit:
+    item: '~'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(1/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m5&8 → &{HEX:bdf59f}6'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}200,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(1/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m5&8 → &{HEX:bdf59f}6'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}200,000C'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(2/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m6&8 → &{HEX:bdf59f}7'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}350,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(2/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m6&8 → &{HEX:bdf59f}7'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}350,000C'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(3/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m7&8 → &{HEX:bdf59f}8'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}600,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(3/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m7&8 → &{HEX:bdf59f}8'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}600,000C'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(4/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m8&8 → &{HEX:bdf59f}10'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(4/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &8&m8&8 → &{HEX:bdf59f}10'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
+    '5':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(5/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &{HEX:bdf59f}10'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:32e3c0}Max Members &f(5/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Max Members: &{HEX:bdf59f}10'
+
+
+  border-size:
+    item: '!'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(1/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m25x25&8 → &{HEX:bdf59f}50x50'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}150,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(1/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m25x25&8 → &{HEX:bdf59f}50x50'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}150,000C'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(2/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m50x50&8 → &{HEX:bdf59f}100x100'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}400,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(2/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m50x50&8 → &{HEX:bdf59f}100x100'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}400,000C'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(3/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m100x100&8 → &{HEX:bdf59f}150x150'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(3/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m100x100&8 → &{HEX:bdf59f}150x150'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(4/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m150x150&8 → &{HEX:bdf59f}200x200'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}2,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(4/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &8&m150x150&8 → &{HEX:bdf59f}200x200'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}2,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+    '5':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(5/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &{HEX:bdf59f}200x200'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:eb6767}Island Border &f(5/5)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Border Size: &{HEX:bdf59f}200x200'
+
+  generator-rates:
+    item: '+'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(1/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m95%&8 → &{HEX:bdf59f}92%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m5%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m3%&8 → &{HEX:bdf59f}6%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m0%&8 → &{HEX:bdf59f}4%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}300,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(1/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m95%&8 → &{HEX:bdf59f}92%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m5%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m3%&8 → &{HEX:bdf59f}6%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m0%&8 → &{HEX:bdf59f}4%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}300,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(2/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m92%&8 → &{HEX:bdf59f}80%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m5%&8 → &{HEX:bdf59f}10%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m6%&8 → &{HEX:bdf59f}9%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m4%&8 → &{HEX:bdf59f}6%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m2%&8 → &{HEX:bdf59f}4%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m0%&8 → &{HEX:bdf59f}3%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m0%&8 → &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m0%&8 → &{HEX:bdf59f}70%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m0%&8 → &{HEX:bdf59f}14%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m0%&8 → &{HEX:bdf59f}13%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}750,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(2/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m92%&8 → &{HEX:bdf59f}80%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m5%&8 → &{HEX:bdf59f}10%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m6%&8 → &{HEX:bdf59f}9%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m4%&8 → &{HEX:bdf59f}6%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m2%&8 → &{HEX:bdf59f}4%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m0%&8 → &{HEX:bdf59f}3%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m0%&8 → &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m0%&8 → &{HEX:bdf59f}70%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m0%&8 → &{HEX:bdf59f}14%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m0%&8 → &{HEX:bdf59f}13%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}750,000C'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(3/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m80%&8 → &{HEX:bdf59f}65%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m10%&8 → &{HEX:bdf59f}11%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m9%&8 → &{HEX:bdf59f}9%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m6%&8 → &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m4%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m3%&8 → &{HEX:bdf59f}4%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m2%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m70%&8 → &{HEX:bdf59f}63%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m14%&8 → &{HEX:bdf59f}20%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m13%&8 → &{HEX:bdf59f}15%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &8&m0%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,500,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(3/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m80%&8 → &{HEX:bdf59f}65%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m10%&8 → &{HEX:bdf59f}11%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m9%&8 → &{HEX:bdf59f}9%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m6%&8 → &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m4%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m3%&8 → &{HEX:bdf59f}4%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m2%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m70%&8 → &{HEX:bdf59f}63%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m14%&8 → &{HEX:bdf59f}20%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m13%&8 → &{HEX:bdf59f}15%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &8&m0%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}1,500,000C'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(4/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m65%&8 → &{HEX:bdf59f}48%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m11%&8 → &{HEX:bdf59f}12%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m9%&8 → &{HEX:bdf59f}11%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m7%&8 → &{HEX:bdf59f}8%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m5%&8 → &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m4%&8 → &{HEX:bdf59f}6%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m2%&8 → &{HEX:bdf59f}4%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &8&m1%&8 → &{HEX:bdf59f}1%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m63%&8 → &{HEX:bdf59f}55%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m20%&8 → &{HEX:bdf59f}22%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m15%&8 → &{HEX:bdf59f}17%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &8&m2%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Ancient Debris: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}3,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(4/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m65%&8 → &{HEX:bdf59f}48%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m11%&8 → &{HEX:bdf59f}12%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m9%&8 → &{HEX:bdf59f}11%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m7%&8 → &{HEX:bdf59f}8%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m5%&8 → &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m4%&8 → &{HEX:bdf59f}6%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m2%&8 → &{HEX:bdf59f}4%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &8&m1%&8 → &{HEX:bdf59f}1%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m63%&8 → &{HEX:bdf59f}55%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m20%&8 → &{HEX:bdf59f}22%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m15%&8 → &{HEX:bdf59f}17%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &8&m2%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Ancient Debris: &8&m0%&8 → &{HEX:bdf59f}1%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}3,000,000C'
+    '5':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(5/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m48%&8 → &{HEX:bdf59f}34%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m12%&8 → &{HEX:bdf59f}14%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m11%&8 → &{HEX:bdf59f}13%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m8%&8 → &{HEX:bdf59f}10%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m7%&8 → &{HEX:bdf59f}9%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m6%&8 → &{HEX:bdf59f}8%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m4%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &8&m2%&8 → &{HEX:bdf59f}4%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &8&m2%&8 → &{HEX:bdf59f}3%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m55%&8 → &{HEX:bdf59f}47%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m22%&8 → &{HEX:bdf59f}25%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m17%&8 → &{HEX:bdf59f}18%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &8&m5%&8 → &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Ancient Debris: &8&m1%&8 → &{HEX:bdf59f}3%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}5,000,000C'
+          - ''
+          - '&fꂀ &{HEX:83ca16}Purchase upgrade'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(5/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &8&m48%&8 → &{HEX:bdf59f}34%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &8&m12%&8 → &{HEX:bdf59f}14%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &8&m11%&8 → &{HEX:bdf59f}13%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &8&m8%&8 → &{HEX:bdf59f}10%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &8&m7%&8 → &{HEX:bdf59f}9%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &8&m6%&8 → &{HEX:bdf59f}8%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &8&m4%&8 → &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &8&m2%&8 → &{HEX:bdf59f}4%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &8&m2%&8 → &{HEX:bdf59f}3%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &8&m1%&8 → &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &8&m55%&8 → &{HEX:bdf59f}47%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &8&m22%&8 → &{HEX:bdf59f}25%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &8&m17%&8 → &{HEX:bdf59f}18%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &8&m5%&8 → &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Ancient Debris: &8&m1%&8 → &{HEX:bdf59f}3%'
+          - '&{HEX:565973}'
+          - '&{HEX:9c9c9c}Required Coins: &{HEX:d1884f}5,000,000C'
+
+    '6':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(6/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &{HEX:bdf59f}34%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &{HEX:bdf59f}14%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &{HEX:bdf59f}13%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &{HEX:bdf59f}10%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &{HEX:bdf59f}9%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &{HEX:bdf59f}8%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &{HEX:bdf59f}4%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &{HEX:bdf59f}3%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &{HEX:bdf59f}47%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &{HEX:bdf59f}25%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &{HEX:bdf59f}18%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Ancient Debris: &{HEX:bdf59f}3%'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        customModel: 1
+        name: '&{HEX:ffcf40}Island Ore Generator &f(6/6)'
+        lore:
+          - '&{HEX:9c9c9c}'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Stone: &{HEX:bdf59f}34%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Coal Ore: &{HEX:bdf59f}14%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Redstone Ore: &{HEX:bdf59f}13%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Lapis Ore: &{HEX:bdf59f}10%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Iron Ore: &{HEX:bdf59f}9%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Gold Ore: &{HEX:bdf59f}8%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Diamond Ore: &{HEX:bdf59f}5%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Emerald Ore: &{HEX:bdf59f}4%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Cobalt Ore: &{HEX:bdf59f}3%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Mithril Ore: &{HEX:bdf59f}2%'
+          - ''
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Basalt: &{HEX:bdf59f}47%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Nether Quartz: &{HEX:bdf59f}25%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Glowstone: &{HEX:bdf59f}18%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Soulsteel Ore: &{HEX:bdf59f}7%'
+          - '&{HEX:9c9c9c}▪ &{HEX:cccccc}Ancient Debris: &{HEX:bdf59f}3%'
+
+
+commands:
+  'b':
+    - '[player] is panel'

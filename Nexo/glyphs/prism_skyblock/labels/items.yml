@@ -1,0 +1,50 @@
+item-hexiacrystal:
+  char: ꂡ
+  texture: prism_skyblock/item_texture/consumables/hexia_crystal.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+
+item-hextechsword:
+  char: ꂢ
+  texture: prism_skyblock/item_texture/swords/hextech.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+item-hextechbow:
+  char: ꂧ
+  texture: prism_skyblock/item_texture/bows/hextech.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+item-hextechhelmet:
+  char: ꂣ
+  texture: prism_skyblock/item_texture/armors/hextech_helmet.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+item-hextechchestplate:
+  char: ꂤ
+  texture: prism_skyblock/item_texture/armors/hextech_chestplate.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+item-hextechleggings:
+  char: ꂥ
+  texture: prism_skyblock/item_texture/armors/hextech_leggings.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+item-hextechboots:
+  char: ꂦ
+  texture: prism_skyblock/item_texture/armors/hextech_boots.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm

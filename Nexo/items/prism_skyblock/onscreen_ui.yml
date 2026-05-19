@@ -1,0 +1,9 @@
+ui-menu:
+  itemname: ''
+  material: LEATHER
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/interface/onscreen_ui/menu

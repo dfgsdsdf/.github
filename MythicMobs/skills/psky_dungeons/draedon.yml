@@ -1,0 +1,465 @@
+#Spawn Animation
+draedon_spawn:
+  Skills:
+  - model{mid=draedon} @self !?dungeondifficulty{d=MASTER}
+  - model{mid=master_draedon} @self ?dungeondifficulty{d=MASTER}
+  - setAI{ai=false} @self
+  - teleportY{y=5} @self
+  - setstance{stance=spawn} @self
+  - summon{type=LOST_SOUL_SPAWN;amount=10;yr=1;radius=10} @self
+  - skill{s=invul} @self
+  - hide{d=150} @Server
+  - delay 20
+  - skill{s=draedon_spawn-particles}
+
+draedon_spawn-particles:
+  Skills:
+  - delay 20
+  - particleline{db=0.4;p=Scrape;hr=0.5;md=40;repeat=10;repeatinterval=10} @child
+
+  - sound{s=draedon.spawn;v=20} @self
+
+  - effect:particles{p=soul_fire_flame;amount=100;y=1;speed=0;hS=0.4;vS=1;repeat=10;repeatinterval=10} @Self
+  - effect:particles{p=reddust;color=#273959;amount=200;y=1;speed=0;hS=0.4;vS=1;repeat=10;repeatinterval=10} @Self
+  - effect:particles{p=reddust;color=#e0e0e0;amount=50;y=1;speed=0;hS=0.4;vS=1;repeat=10;repeatinterval=10} @Self
+  - effect:particles{p=lava;amount=10;speed=0;y=1;hS=0.4;vS=1;repeat=10;repeatinterval=10} @Self
+
+  - skill{s=draedon_titleintroduction}
+
+  - delay 100
+
+  - sound{s=draedon.laugh;v=20} @self
+  - effect:particles{p=soul_fire_flame;amount=500;y=1;speed=0;hS=0.4;vS=1} @Self
+  - effect:particles{p=lava;amount=50;speed=0;y=1;hS=0.4;vS=1} @Self
+  - setAI{ai=true} @self
+  - setstance{stance=attack} @self
+  - skill{s=invul-remove} @self
+  - skill{s=draedon_thememusic} 
+  - remove @MobsInRadius{r=100;types=LOST_SOUL_SPAWN}
+
+draedon_thememusic:
+  Skills:
+  - sound{s=draedon.theme;v=40} @self
+  - delay 5680
+  - sound{s=draedon.theme;v=40} @self
+
+draedon_titleintroduction:
+  Skills:
+  - sendtitle{title="<white>ꁘ";subtitle="";d=20;fo=0;fi=0} @World
+  - sound{s=type;v=20} @self
+  - delay 4
+  - sendtitle{title="<white>ꁙ";subtitle="";d=20;fo=9} @World
+  - sound{s=type;v=20} @self
+  - delay 4
+  - sendtitle{title="<white>ꁚ";subtitle="";d=20;fo=9} @World
+  - sound{s=type;v=20} @self
+  - delay 4
+  - sendtitle{title="<white>ꁛ";subtitle="";d=30;fo=9} @World
+  - sound{s=type;v=20} @self
+  - delay 30
+  - sendtitle{title="<white>ꁜ";subtitle="";d=60;fo=0} @World
+  - sound{s=type;v=20} @self
+  - delay 53
+  - sendtitle{title="<white>ꁝ";subtitle="";d=40;fo=40} @World
+  - sound{s=entity.wither.spawn;v=20} @self
+
+#Basic Attacks:
+draedon_waveofpain:
+  Conditions:
+  - stance attack
+  Cooldown: 3
+  Skills:
+  - state{s=staff_attack} @self
+  - delay 20
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=1;p=64;pts=20} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=2;p=64;pts=20;delay=2} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=3;p=64;pts=20;delay=4} @self
+  - mmodamage{a=15} @PIR{r=3}
+  - potion{type=SLOW;duration=100;level=0;p=false} @PIR{r=3}
+  - sound{s=entity.player.attack.strong} @PIR{r=3}
+
+draedon_waveofpain-enhanced:
+  Skills:
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=1;p=64;pts=20} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=2;p=64;pts=20;delay=2} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=3;p=64;pts=20;delay=4} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=4;p=64;pts=20;delay=6} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=5;p=64;pts=20;delay=8} @self
+  - mmodamage{a=25} @PIR{r=5}
+  - potion{type=SLOW;duration=100;level=1;p=false} @PIR{r=5}
+  - sound{s=entity.player.attack.strong} @PIR{r=5}
+
+
+#Spell Cast:
+draedon_spellcast:
+  Conditions:
+  - stance attack
+  Skills:
+  - sound{s=draedon.spellcast;v=20} @self
+  - potion{type=SLOW;duration=60;level=10;p=false;i=false} @self
+  - state{s=spell_cast} @self
+  - delay 20
+
+  - particlering{particle=scrape;radius=1;y=0.1;points=32;amount=1} @self
+  - particlering{particle=scrape;radius=1;y=0.3;points=32;amount=1;delay=2} @self
+  - particlering{particle=scrape;radius=1;y=0.5;points=32;amount=1;delay=3} @self
+  - particlering{particle=scrape;radius=1;y=0.7;points=32;amount=1;delay=4} @self
+  - particlering{particle=scrape;radius=1;y=0.9;points=32;amount=1;delay=5} @self
+  - particlering{particle=scrape;radius=1;y=1;points=32;amount=1;delay=6} @self
+
+
+  - particlering{particle=soul;radius=0.25;points=32;amount=1;y=0.5} @modelpart{mid=draedon;pid=satff}
+  - particlering{particle=soul;radius=0.75;points=32;amount=1;y=0.5;delay=2} @modelpart{mid=draedon;pid=satff}
+  - particlering{particle=soul;radius=1.25;points=32;amount=1;y=0.5;delay=4} @modelpart{mid=draedon;pid=satff}
+
+  - randomskill{
+      skills=
+      draedon_soulblast,
+      draedon_supersonic,
+      draedon_uncagedspawn,
+      draedon_infectedspawn,
+      draedon_pullandpain
+      }
+
+
+draedon_soulblast:
+  Skills:
+  - projectile{byo=2;ot=draedon_soulblast-tick;oh=draedon_soulblast-hit;oe=draedon_soulblast-end;hp=true;fo=true;origin=@modelpart{mid=draedon;pid=satff};v=20} @World
+draedon_soulblast-tick:
+  Skills:
+  - effect:particles{p=scrape;amount=2;speed=0;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=soul;amount=2;speed=0;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=soul_fire_flame;amount=2;speed=0;hS=0.2;vS=0.2} @origin 
+draedon_soulblast-hit:
+  Skills:
+  - effect:particles{p=lava;amount=3}
+  - mmodamage{a=20} 
+  - potion{type=SLOW;duration=100;level=0;p=false}
+  - potion{type=DARKNESS;duration=100;level=0;p=false}
+  - fakeexplosion
+
+draedon_supersonic:
+  Skills:
+  - projectile{onTick=draedon_SupersonicBoom-Tick;onHit=draedon_SupersonicBoom-Hit;v=40;i=1;hR=1;vR=1;se=true;sb=true;hp=true} @World
+  - sound{s=entity.warden.sonic_boom;v=1;p=1}
+  - setspeed{speed=0.4;type=walking} @self
+draedon_SupersonicBoom-Tick:
+  Skills:
+  - effect:particles{p=Sonic_Boom;amount=1;speed=0;hS=0.2;vS=0.2} @origin 
+draedon_SupersonicBoom-Hit:
+  Skills:
+  - mmodamage{a=15} 
+  - sound{s=entity.generic.extinguish_fire;v=1;p=1}
+  - potion{type=WEAKNESS;duration=100;lvl=1}
+
+draedon_uncagedspawn:
+  Conditions:
+  - mobsinworld{a=1to12} orElseCast draedon_supersonic
+  Skills:
+  - summon{type=UNCAGED_SUBJECT;a=5;v=3} @modelpart{mid=draedon;pid=satff}
+
+draedon_infectedspawn:
+  Conditions:
+  - mobsinworld{a=1to12} orElseCast draedon_supersonic
+  Skills:
+  - summon{type=INFECTED_SCIENTIST;a=5;v=3} @modelpart{mid=draedon;pid=satff}
+
+draedon_pullandpain:
+  Skills:
+  - pull{velocity=12} @World
+  - delay 10
+  - skill{s=draedon_waveofpain-enhanced}
+
+#HextechCompulsion
+draedon_hextechcompulsion:
+  Cooldown: 5
+  Conditions:
+  - dungeondifficulty{d=MASTER}
+  Skills:
+  - sound{s=block.note_block.chime;p=1} 
+  - delay 5
+  - sound{s=block.note_block.chime;p=1} 
+  - randomskill{
+      skills=
+      Order-Jump3,
+      Order-DontJump,
+      Order-Swing5,
+      Order-DontSwing
+      }
+
+Order-Fail:
+  Cooldown: 1
+  Skills:
+  - message{m="<#e82e2e><bold>ORDER FAILED!</bold> <gray>You have failed Draedon's order and took <red>30 ❤</red> as damage!"}
+  - mmodamage{a=30}
+  - sendtitle{title="";subtitle="";d=5} 
+  - sound{s=block.note_block.bit;p=2} 
+  - delay 3
+  - sound{s=block.note_block.bit;p=1} 
+  - delay 3
+  - sound{s=block.note_block.bit;p=0} 
+
+  - auraremove{name=orderdonotjump} 
+
+Order-Jump3:
+  Skills:
+  - sendtitle{title="<#ff4040>JUMP 3 TIMES!";subtitle="<gray>Do it in 5s or <red>SUFFER<gray>!";d=100} 
+  - onJump{name=orderjump3;oj=Order-Jump3-Progress;oe=Order-Fail;;d=100;ares=false} 
+Order-Jump3-Progress:
+  Skills:
+  - sound{s=block.note_block.bit;p=0} 
+  - setvariable{var=caster.orderjumpprogress;type=INTEGER;d=100} ?!variableisset{var=caster.orderjumpprogress}
+  - variableadd{var=caster.orderjumpprogress;amount=1} ?variableInRange{var=caster.orderjumpprogress;value=<3}
+  - sendtitle{title="<#ff4040>JUMP 3 TIMES!";subtitle="<yellow><caster.var.orderjumpprogress>/3 completed!";d=40} ?variableInRange{var=caster.orderjumpprogress;value=<3}
+
+  - auraremove{name=orderjump3} ?variableInRange{var=caster.orderjumpprogress;value=>2}
+  - sendtitle{title="<#ff4040>JUMP 3 TIMES!";subtitle="<green>✔ Order completed!";d=20} ?variableInRange{var=caster.orderjumpprogress;value=>2}
+  - variableunset{var=caster.orderjumpprogress} ?variableInRange{var=caster.orderjumpprogress;value=>2}
+
+Order-DontJump:
+  Skills:
+  - sendtitle{title="<#ff4040>DO NOT JUMP!";subtitle="<gray>Do it in 5s or <red>SUFFER<gray>!";d=100} 
+  - onJump{name=orderdonotjump;oj=Order-Fail;oe=Order-DontJumpSuccess;d=100;ares=false} 
+Order-DontJumpSuccess:
+  Skills:
+  - sound{s=block.note_block.bit;p=0} 
+  - sendtitle{title="<#ff4040>DO NOT JUMP!";subtitle="<green>✔ Order completed!";d=20}
+
+Order-Swing5:
+  Skills:
+  - sendtitle{title="<#ff4040>SWING YOUR ARM 5 TIMES!";subtitle="<gray>Do it in 5s or <red>SUFFER<gray>!";d=100} 
+  - onSwing{name=orderswing5;osw=Order-Swing5-Progress;oe=Order-Fail;;d=100;ares=false} 
+Order-Swing5-Progress:
+  Skills:
+  - sound{s=block.note_block.bit;p=0} 
+  - setvariable{var=caster.orderswing5progress;type=INTEGER;d=100} ?!variableisset{var=caster.orderswing5progress}
+  - variableadd{var=caster.orderswing5progress;amount=1} ?variableInRange{var=caster.orderswing5progress;value=<5}
+  - sendtitle{title="<#ff4040>SWING YOUR ARM 5 TIMES!";subtitle="<yellow><caster.var.orderswing5progress>/5 completed!";d=40} ?variableInRange{var=caster.orderswing5progress;value=<5}
+
+  - auraremove{name=orderswing5} ?variableInRange{var=caster.orderswing5progress;value=>4}
+  - sendtitle{title="<#ff4040>SWING YOUR ARM 5 TIMES!";subtitle="<green>✔ Order completed!";d=20} ?variableInRange{var=caster.orderswing5progress;value=>4}
+  - variableunset{var=caster.orderswing5progress} ?variableInRange{var=caster.orderswing5progress;value=>4}
+
+
+Order-DontSwing:
+  Skills:
+  - sendtitle{title="<#ff4040>DO NOT SWING YOUR ARM!";subtitle="<gray>Do it in 5s or <red>SUFFER<gray>!";d=100} 
+  - onSwing{name=orderdonotjump;osw=Order-Fail;oe=Order-DontSwingSuccess;d=100;ares=false} 
+Order-DontSwingSuccess:
+  Skills:
+  - sound{s=block.note_block.bit;p=0} 
+  - sendtitle{title="<#ff4040>DO NOT SWING YOUR ARM!!";subtitle="<green>✔ Order completed!";d=20}
+
+#Rain of Pain Atack
+draedon_rainofpain-initiate:
+  Skills:
+  - setAI{ai=false} @self
+  - skill{s=invul} @self
+  - bossBorder{r=30} @world
+  - setstance{stance=casting} @self
+  - teleportY{y=5} @self
+  - sound{s=draedon.rainofpain;v=20} @self
+  - sendtitle{title="<#c2252d>Bᴇᴡᴀʀᴇ!";subtitle="<#c95359>Soul lanterns are falling from the sky!";d=20;fo=40} @World
+  - sound{s=block.note_block.didgeridoo;v=20;p=2} @self
+
+  - delay 20
+  - skill{s=draedon_rainofpain-particles;repeat=4;repeatinterval=40}
+  - skill{s=draedon_hextechcompulsion;repeat=2;repeatinterval=100}
+  - delay 20
+  - skill{s=draedon_rainofpain}
+
+  - delay 170
+  - setAI{ai=true} @self
+  - setstance{stance=attack} @self
+  - skill{s=invul-remove} @self
+  - bossBorder{r=10000} @world
+
+draedon_rainofpain-particles:
+  Skills:
+  - state{s=spell_cast} @self
+  - delay 20
+  - particlering{particle=scrape;radius=1;y=0.1;points=32;amount=1} @self
+  - particlering{particle=scrape;radius=1;y=0.3;points=32;amount=1;delay=2} @self
+  - particlering{particle=scrape;radius=1;y=0.5;points=32;amount=1;delay=3} @self
+  - particlering{particle=scrape;radius=1;y=0.7;points=32;amount=1;delay=4} @self
+  - particlering{particle=scrape;radius=1;y=0.9;points=32;amount=1;delay=5} @self
+  - particlering{particle=scrape;radius=1;y=1;points=32;amount=1;delay=6} @self
+
+draedon_rainofpain:
+  Skills:
+  - projectile{type=meteor;ot=draedon_rainofpain-tick;ohb=draedon_rainofpain-hit;bullet=BLOCK;bulletmaterial=SOUL_LANTERN;dd=0;syo=4;se=false;sb=true;v=10;i=1;hfs=12;g=0.6;repeat=4;repeatinterval=40} @RandomLocationsNearCaster{a=8;r=15;s=2}
+  - sound{s=block.chain.break;v=20;repeat=4;repeatinterval=40} @self
+draedon_rainofpain-tick:
+  Skills:
+  - effect:particles{p=soul_fire_flame;amount=1;speed=0;hS=0.2;vS=0.2} @origin 
+draedon_rainofpain-hit:
+  Skills:
+  - effect:particles{p=Explosion_Emitter;amount=1;speed=0;hS=0.2;vS=0.2}
+  - mmodamage{a=20} @PlayersNearOrigin{r=4}
+
+#50% Health Rain of Pain Atack
+draedon_rainofpainv2-initiate:
+  Skills:
+  - setAI{ai=false} @self
+  - skill{s=invul} @self
+  - bossBorder{r=30} @world
+  - setstance{stance=casting} @self
+  - teleportY{y=5} @self
+  - sound{s=draedon.rainofpain;v=20} @self
+  - sendtitle{title="<#c2252d>Bᴇᴡᴀʀᴇ!";subtitle="<#c95359>Soul lanterns are falling from the sky!";d=20;fo=40} @World
+  - sound{s=block.note_block.didgeridoo;v=20;p=2} @self
+
+  - delay 20
+  - skill{s=draedon_rainofpain-particles;repeat=4;repeatinterval=40}
+  - skill{s=draedon_hextechcompulsion;repeat=2;repeatinterval=100}
+  - delay 20
+  - skill{s=draedon_rainofpain}
+
+  - delay 170
+  - skill{s=draedon_soulsunleash}
+  - setAI{ai=true} @self
+  - skill{s=invul-remove} @self
+  - bossBorder{r=10000} @world
+  - setstance{stance=attack} @self
+
+draedon_soulsunleash:
+  Skills:
+  - sound{s=draedon.spellcast;v=20} @self
+  - potion{type=SLOW;duration=60;level=10;p=false;i=false} @self
+  - state{s=spell_cast} @self
+  - message{m="<white>ꀷ <#4b56b4>Draedon is now immune to normal attacks! Slay Lost Souls to damage him!"} @World
+  - delay 20
+
+  - particlering{particle=scrape;radius=1;y=0.1;points=32;amount=1} @self
+  - particlering{particle=scrape;radius=1;y=0.3;points=32;amount=1;delay=2} @self
+  - particlering{particle=scrape;radius=1;y=0.5;points=32;amount=1;delay=3} @self
+  - particlering{particle=scrape;radius=1;y=0.7;points=32;amount=1;delay=4} @self
+  - particlering{particle=scrape;radius=1;y=0.9;points=32;amount=1;delay=5} @self
+  - particlering{particle=scrape;radius=1;y=1;points=32;amount=1;delay=6} @self
+
+  - summon{type=LOST_SOUL;a=10;v=3} @self
+  - potion{type=RESISTANCE;duration=999999;level=10;i=false;p=false} @self
+
+draedon_lostsoulssummon:
+  Conditions:
+  - mobsinworld{a=1to16}
+  - stance attack
+  Skills:
+  - summon{type=LOST_SOUL;a=6;v=3} @self
+
+draedon_soulrebound:
+  Skills:
+  - particlelinehelix{db=0.4;hl=4;p=soul_fire_flame;hr=0.5;md=40}
+  - SudoSkill{s=draedon_soulrebound-damage;setcasterastrigger=true}
+draedon_soulrebound-damage:
+  Skills:
+  - mmodamage{amount=200;ieff=true;pkb=true;ir=true;ii=true}
+
+
+#25% Health Rain of Pain Atack
+draedon_rainofpainv3-initiate:
+  Skills:
+  - remove @MobsInRadius{r=100;types=LOST_SOUL}
+  - skill{s=invul} @self
+  - potion{type=RESISTANCE;duration=1;level=0;force=true} @self
+  - setAI{ai=false} @self
+  - bossBorder{r=30} @world
+  - setstance{stance=casting} @self
+  - teleportY{y=5} @self
+  - sound{s=draedon.rainofpain;v=20} @self
+  - sendtitle{title="<#c2252d>Bᴇᴡᴀʀᴇ!";subtitle="<#c95359>Soul lanterns are falling from the sky!";d=20;fo=40} @World
+  - sound{s=block.note_block.didgeridoo;v=20;p=2} @self
+
+  - delay 20
+  - skill{s=draedon_rainofpain-particles;repeat=4;repeatinterval=40}
+  - skill{s=draedon_hextechcompulsion;repeat=2;repeatinterval=100}
+  - delay 20
+  - skill{s=draedon_rainofpain}
+
+  - delay 170
+  - setAI{ai=true} @self
+  - setstance{stance=attack} @self
+  - bossBorder{r=10000} @world
+  - skill{s=invul-remove} @self
+
+
+#10% Health Rain of Pain Atack
+draedon_rainofpainv4-initiate:
+  Skills:
+  - skill{s=invul} @self
+  - potion{type=RESISTANCE;duration=1;level=0;force=true} @self
+  - setAI{ai=false} @self
+  - setstance{stance=casting} @self
+  - teleportY{y=5} @self
+  - bossBorder{r=30} @world
+  - sound{s=draedon.rainofpain;v=20} @self
+  - sendtitle{title="<#c2252d>Bᴇᴡᴀʀᴇ!";subtitle="<#c95359>Soul lanterns are falling from the sky!";d=20;fo=40} @World
+  - sound{s=block.note_block.didgeridoo;v=20;p=2} @self
+
+  - delay 20
+  - skill{s=draedon_rainofpain-particles;repeat=8;repeatinterval=40}
+  - skill{s=draedon_hextechcompulsion;repeat=3;repeatinterval=100}
+  - delay 20
+  - skill{s=draedon_rainofpainv4}
+
+  - delay 340
+  - setAI{ai=true} @self
+  - setstance{stance=attack} @self
+  - bossBorder{r=10000} @world
+  - skill{s=invul-remove} @self
+draedon_rainofpainv4:
+  Skills:
+  - projectile{type=meteor;ot=draedon_rainofpain-tick;ohb=draedon_rainofpain-hit;bullet=BLOCK;bulletmaterial=SOUL_LANTERN;dd=0;syo=4;se=false;sb=true;v=10;i=1;hfs=12;g=0.6;repeat=8;repeatinterval=40} @RandomLocationsNearCaster{a=25;r=25;s=3}
+  - sound{s=block.chain.break;v=20;repeat=8;repeatinterval=40} @self
+
+draedon_death:
+  Cooldown: 9999
+  Skills:
+  - cancelevent
+
+  - remove @MobsInRadius{r=100;types=UNCAGED_SUBJECT,INFECTED_SCIENTIST}
+  - setvariable{var=target.raidchest;value="true";type=STRING} @World
+  - state{s=death} @self
+  - setai{ai=false} @self
+  - setstance{stance=dying} @self
+  - skill{s=invul} @self
+  - sound{s=draedon.death;v=20} @self
+  - stopsound{s=draedon.theme} @World
+
+  - sound{s=entity.vex.death;v=20;repeat=4;repeatinterval=15} @self
+  - summon{type=LOST_SOUL_DEATH;a=3;v=3;repeat=14;repeatinterval=5;y=0.8} @self
+  - effect:particles{p=lava;amount=10;speed=1;repeat=7;repeatinterval=10}
+  - effect:particles{p=Crimson_Spore;amount=40;speed=1;repeat=7;repeatinterval=10}
+  - effect:particles{p=flash;amount=3;speed=0;hs=0.2;repeat=7;repeatinterval=10}
+  - delay 80
+
+  - sound{s=entity.generic.explode;v=20}
+  - effect:particles{p=Explosion_Emitter;amount=1;speed=0;hS=0.2;vS=0.2}
+  - effect:particles{p=Gust_Emitter_Large;amount=3;speed=0;hS=1;vS=1}
+  - effect:particles{p=Soul;amount=400;speed=0;hS=1;vS=1}
+  - effect:particles{p=Soul;amount=100;speed=1;hS=2;vS=2}
+
+  - remove @self
+
+  - dsignal{s=loh_finish}
+  - skill{s=dungeon_completed} @world
+
+#this plays whenever a dungeon is cleared
+dungeon_completed:
+  Skills:
+  - sound{s=dungeonclear;audience=target}
+  - sendtitle{title="<white>ꃓ";subtitle="";d=20;fo=0;fi=0} 
+  - delay 2
+  - sendtitle{title="<white>ꃔ";subtitle="";d=3;fo=0;fi=0} 
+  - delay 2
+  - sendtitle{title="<white>ꃕ";subtitle="";d=3;fo=0;fi=0} 
+  - delay 2
+  - sendtitle{title="<white>ꃖ";subtitle="";d=3;fo=0;fi=0} 
+  - delay 2
+  - sendtitle{title="<white>ꃗ";subtitle="";d=3;fo=0;fi=0} 
+  - delay 2
+  - sendtitle{title="<white>ꃘ";subtitle="";d=3;fo=0;fi=0} 
+  - delay 2
+  - sendtitle{title="<white>ꃙ";subtitle="";d=3;fo=0;fi=0} 
+  - delay 2
+  - sendtitle{title="<white>ꃚ";subtitle="";d=100;fo=20} 

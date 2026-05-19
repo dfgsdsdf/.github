@@ -1,0 +1,104 @@
+DRAEDON:
+  Type: ZOMBIE
+  Display: ""
+  Health: 10000
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    PreventSunburn: true
+    MovementSpeed: 0.25
+    KnockbackResistance: 1
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+    ReviveHealth: 1
+  Modules:
+    ImmunityTable: true
+    ThreatTable: true
+  BossBar:
+    Enabled: true
+    Title: '&fꐭ￱'
+    Range: 40
+    Color: RED
+    Style: SEGMENTED_12
+    CreateFog: false
+  Skills:
+  - skill{s=draedon_spawn} ~onSpawn
+  - CancelEvent ~onAttack
+  - skill{s=draedon_waveofpain;sync=true} ~onAttack
+  - skill{s=draedon_hextechcompulsion} @world ~onTimer:200 <80% ?!stance{s=casting} 
+  - skill{s=draedon_spellcast} ~onTimer:160
+  - skill{s=draedon_rainofpain-initiate} =80%
+  - skill{s=draedon_rainofpainv2-initiate} =50%
+  - skill{s=draedon_lostsoulssummon} ~onTimer:400 =25%-50%
+  - skill{s=draedon_rainofpainv3-initiate} =25%
+  - skill{s=draedon_rainofpainv4-initiate} =10%
+
+  - skill{s=draedon_death;sync=true} @self ~onDeath
+
+  - sound{s=draedon.soulrebound} @self ~onDamaged 
+
+LOST_SOUL_SPAWN:
+  Type: PARROT
+  Disguise: Armor_Stand setInvisible true setYModifier -1.6
+  Display: ""
+  Equipment:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRiOGYzZGJlYTA4YjM2NDA1NTU3MjljMzJkNzQ2MWFhNDllZTIyOWI5ZDZiYjliYTNjOTA3ZmRjNDVmYTk1MiJ9fX0=} HEAD
+  Options:
+    AlwaysShowName: false
+    PreventSunburn: true
+    FlyingSpeed: 0
+    Invincible: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  AIGoalSelectors:
+  - clear
+  - gotoparent
+  AITargetSelectors:
+  - clear
+
+LOST_SOUL:
+  Type: VEX
+  Display: ""
+  Faction: dungeon
+  Health: 40
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventSunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Skills:
+  - skill{s=draedon_soulrebound} @parent ~onDeath
+
+LOST_SOUL_DEATH:
+  Type: VEX
+  Display: ""
+  Damage: 0
+  Options:
+    AlwaysShowName: false
+    PreventSunburn: true
+    Invincible: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Skills:
+  - remove{delay=15} @self ~onSpawn

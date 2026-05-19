@@ -1,0 +1,106 @@
+title: '&fꐮꀏ ꐲꐰꐮꐭꐬ<#5e5e5e>Player Skills > <#3b3b3b>Skill Abilities &m      '
+size: 3
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+on_open:
+  - sound: block.note_block.hat
+    category: master
+    volume: 1
+    pitch: 1
+items:
+  back:
+    pos: 1,0
+    material: BOOK
+    custom_model_data: 13
+    display_name: '<#e3b56b>{{back}}'
+    lore: []
+templates:
+  locked_ability:
+    material: BOOK
+    custom_model_data: 15
+    display_name: '<#29251d>⭐ <#574c37><strikethrough>{name}'
+    lore:
+      - text: '{desc}'
+        wrap: true
+        wrap_indent: ' '
+        style: '<#e3dfd3>'
+      - ' '
+      - text: '{{unlocked_at}}'
+        styles:
+          1: '<dark_gray>'
+          2: '<#574c37>'
+  locked_mana_ability:
+    pos: 1,2
+    material: gray_dye
+    display_name: '<light_purple>{name}'
+    lore:
+      - '<white>{{description}}:'
+      - text: '{desc}'
+        wrap: true
+        wrap_indent: '  '
+        styles:
+          0: '<#cccccc>'
+          1: '<yellow>'
+      - ' '
+      - text: '{{unlocked_at}}'
+        styles:
+          1: '<#cccccc>'
+          2: '<dark_aqua>'
+      - ' '
+      - '<red>{{locked}}'
+  unlocked_ability:
+    material: BOOK
+    custom_model_data: 16
+    display_name: '<#8a7346>⭐<#f2d9a7> {name}'
+    lore:
+      - component: your_level
+      - component: your_level_maxed
+      - ' '
+      - component: unlocked_desc
+      - component: unlocked_desc_maxed
+  unlocked_mana_ability:
+    pos: 1,4
+    material: magenta_dye
+    display_name: '&d{name}'
+    lore:
+      - component: your_level
+      - component: your_level_maxed
+      - ' '
+      - component: unlocked_desc
+      - component: unlocked_desc_maxed
+      - ' '
+      - '<green>{{unlocked}}'
+components:
+  your_level:
+    context: AbstractAbility
+    lore:
+      - '<dark_gray>Ability Lvl.<#8a7346>{level}'
+  your_level_maxed:
+    context: AbstractAbility
+    lore:
+      - '<dark_gray>Ability Lvl.<#8a7346>{level} <dark_gray>(MAXED)'
+  unlocked_desc:
+    context: AbstractAbility
+    lore:
+      - text: '<#f2d9a7>↑ {{next_upgrade_at}}'
+        styles:
+          1: '<#cccccc>'
+          2: '<#f2d9a7>'
+      - text: '{desc}'
+        wrap: true
+        wrap_indent: '  '
+        styles:
+          0: '<#e3dfd3>'
+          1: '<yellow>'
+  unlocked_desc_maxed:
+    context: AbstractAbility
+    lore:
+      - text: '{desc}'
+        wrap: true
+        wrap_indent: '  '
+        styles:
+          0: '<#e3dfd3>'
+          1: '<yellow>'
+formats:
+  desc_upgrade_value: '<gold>{current}<dark_gray>→{next}<#e3dfd3>'

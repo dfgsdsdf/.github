@@ -1,0 +1,159 @@
+panels:
+  settings:
+    rows: 3
+    title: '&fꐮꁲ ꐲꐰꐮꐭꐬ<#5e5e5e>Main Menu > <#3b3b3b>Settings &m               '
+    commands:
+    - settings
+    item:
+
+      '18':
+        material: barrier
+        customdata: '1'
+        name: '&#d6d6d6Go back.'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'open= menu'
+
+
+      '2': #this one shows the texture
+        material: BOOK
+        customdata: '65'
+        name: "&a"
+        has0:
+            value0: "Online"
+            compare0: '%tradesystem_status%'
+            material: BOOK
+            customdata: '64'
+            name: "&a"
+      '0': #these two are actual buttons
+        material: BARRIER
+        customdata: '1'
+        name: '&#db3e32✘ Trade Requests'
+        lore:
+        - ''
+        - '&#5b5a61Recieve trade requests'
+        - '&#5b5a61from other players!'
+        - ''
+        - '&fꂀ &#83ca16Toggle setting!'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'trade toggle'
+          - 'refresh'
+        has0:
+            value0: "Online"
+            compare0: '%tradesystem_status%'
+            material: BARRIER
+            customdata: '1'
+            name: '&#43db32✔ Trade Requests'
+            lore:
+            - ''
+            - '&#5b5a61Recieve trade requests'
+            - '&#5b5a61from other players!'
+            - ''
+            - '&fꂀ &#83ca16Toggle setting!'
+            commands:
+            - 'sound= UI_BUTTON_CLICK'
+            - 'trade toggle'
+            - 'refresh'
+      '1':
+        material: BARRIER
+        customdata: '1'
+        name: '&#db3e32✘ Trade Requests'
+        lore:
+        - ''
+        - '&#5b5a61Recieve trade requests'
+        - '&#5b5a61from other players!'
+        - ''
+        - '&fꂀ &#83ca16Toggle setting!'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'trade toggle'
+          - 'refresh'
+        has0:
+            value0: "Online"
+            compare0: '%tradesystem_status%'
+            material: BARRIER
+            customdata: '1'
+            name: '&#43db32✔ Trade Requests'
+            lore:
+            - ''
+            - '&#5b5a61Recieve trade requests'
+            - '&#5b5a61from other players!'
+            - ''
+            - '&fꂀ &#83ca16Toggle setting!'
+            commands:
+            - 'sound= UI_BUTTON_CLICK'
+            - 'trade toggle'
+            - 'refresh'
+
+
+      '11':
+        material: BOOK
+        customdata: '65'
+        name: "&a"
+        has0:
+            value0: "<#04d42c>Enabled</#04d42c>"
+            compare0: '%coinsengine_payments_state_coin%'
+            material: BOOK
+            customdata: '64'
+            name: "&a"
+      '10':
+        material: BARRIER
+        customdata: '1'
+        name: '&#db3e32✘ Coins Transfer Request'
+        lore:
+        - ''
+        - '&#5b5a61Recieve coins transfer'
+        - '&#5b5a61from other players!'
+        - ''
+        - '&fꂀ &#83ca16Toggle setting!'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'coin payments'
+          - 'refresh'
+        has0:
+            value0: "<#04d42c>Enabled</#04d42c>"
+            compare0: '%coinsengine_payments_state_coin%'
+            material: BARRIER
+            customdata: '1'
+            name: '&#43db32✔ Coins Transfer Request'
+            lore:
+            - ''
+            - '&#5b5a61Recieve coins transfer'
+            - '&#5b5a61from other players!'
+            - ''
+            - '&fꂀ &#83ca16Toggle setting!'
+            commands:
+            - 'sound= UI_BUTTON_CLICK'
+            - 'coin payments'
+            - 'refresh'
+      '9':
+        material: BARRIER
+        customdata: '1'
+        name: '&#db3e32✘ Coins Transfer Request'
+        lore:
+        - ''
+        - '&#5b5a61Recieve coins transfer'
+        - '&#5b5a61from other players!'
+        - ''
+        - '&fꂀ &#83ca16Toggle setting!'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'coin payments'
+          - 'refresh'
+        has0:
+            value0: "<#04d42c>Enabled</#04d42c>"
+            compare0: '%coinsengine_payments_state_coin%'
+            material: BARRIER
+            customdata: '1'
+            name: '&#43db32✔ Coins Transfer Request'
+            lore:
+            - ''
+            - '&#5b5a61Recieve coins transfer'
+            - '&#5b5a61from other players!'
+            - ''
+            - '&fꂀ &#83ca16Toggle setting!'
+            commands:
+            - 'sound= UI_BUTTON_CLICK'
+            - 'coin payments'
+            - 'refresh'

@@ -1,0 +1,304 @@
+title: '&fꐮꀃ ꐲꐰꐮꐭꐬ<#5e5e5e>Player Skills > <#3b3b3b>Skill Details &m       '
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+on_open:
+  - sound: block.note_block.hat
+    category: master
+    volume: 1
+    pitch: 1
+items:
+  rank:
+    pos: 5,3
+    material: BOOK
+    custom_model_data: 9
+    display_name: <#5e573a>▶ <#e3b56b>{{your_ranking}}
+    lore:
+    - '&7See how high you rank'
+    - '&7against your peers!'
+    - ''
+    - text: <dark_gray>>{{rank_out_of}}
+      styles:
+        1: <#cccccc>
+        2: <#998c54>
+    - text: '{{rank_percent}}'
+      styles:
+        1: <#f5e290>
+        2: <#998c54>
+    - ' '
+    - <yellow>{{leaderboard_click}}
+  back:
+    pos: 5,0
+    material: BOOK
+    custom_model_data: 13
+    display_name: <#e3b56b>{{back}}
+    lore: []
+  close:
+    pos: 5,2
+    material: barrier
+    display_name: <red>{{close}}
+  next_page:
+    pos: 5,8
+    material: BOOK
+    custom_model_data: 11
+    display_name: <#e3b56b>{{next_page}}
+    lore: []
+  previous_page:
+    pos: 5,7
+    material: BOOK
+    custom_model_data: 12
+    display_name: <#e3b56b>{{previous_page}}
+    lore: []
+  sources:
+    pos: 5,5
+    material: BOOK
+    custom_model_data: 10
+    display_name: <#5e573a>▶ <#e3b56b>{{sources}}
+    lore:
+    - text: '{{sources_desc}}'
+      wrap: true
+      style: <#cccccc>
+    - ' '
+    - <yellow>{{sources_click}}
+  abilities:
+    pos: 5,6
+    material: BOOK
+    custom_model_data: 8
+    display_name: <#5e573a>▶ <#e3b56b>{{abilities}}
+    lore:
+    - text: '{{abilities_desc}}'
+      wrap: true
+      wrap_style: 1
+      styles:
+        1: <#cccccc>
+        2: <#f5e290>
+        3: <light_purple>
+    - ' '
+    - <yellow>{{abilities_click}}
+  job:
+    pos: 0,4
+    material: gold_ingot
+    display_name: <yellow>{{job}}
+    lore:
+    - text: '{{job_desc}}'
+      wrap: true
+      style: <#cccccc>
+    - ' '
+    - component: job_select
+    - component: job_active
+    - component: job_limit
+templates:
+  skill:
+    pos: 5,4
+    contexts: 
+      archery:
+        material: bone
+        custom_model_data: 4
+      fighting:
+        material: bone
+        custom_model_data: 5
+      defense:
+        material: bone
+        custom_model_data: 9
+      endurance:
+        material: bone
+        custom_model_data: 9
+      farming:
+        material: bone
+        custom_model_data: 1
+      foraging:
+        material: bone
+        custom_model_data: 7
+      mining:
+        material: bone
+        custom_model_data: 2
+      fishing:
+        material: bone
+        custom_model_data: 6
+      excavation:
+        material: iron_shovel
+        flags:
+          - hide_attributes
+      agility:
+        material: feather
+      alchemy:
+        material: bone
+        custom_model_data: 3
+      enchanting:
+        material: bone
+        custom_model_data: 8
+      sorcery:
+        material: blaze_rod
+      healing:
+        material: splash_potion
+        potion_data:
+          type: instant_heal
+        flags:
+          - hide_potion_effects
+      forging:
+        material: anvil
+    display_name: <white>ꀈ <#cca861>{skill} <#968154>ʟᴠʟ.<#d1ba8a>{level}
+    lore:
+    - text: '{desc}'
+      wrap: true
+      style: <dark_gray>
+    - component: ability_levels
+    - component: mana_ability_info
+    - ' '
+    - component: progress
+    - component: max_level
+    - component: skill_job_active
+  unlocked:
+    material: BOOK
+    custom_model_data: 7
+    display_name: <#79ed4e>✔ <#60bd3e>{{level}} {level}
+    lore:
+    - component: rewards
+    - component: ability_unlock
+    - component: ability_level
+  in_progress:
+    material: BOOK
+    custom_model_data: 6
+    display_name: <#fafa48>→ <#c4c43b>{{level}} {level}
+    lore:
+    - component: rewards
+    - component: ability_unlock
+    - component: ability_level
+    - ''
+    - <#8a7346>▶<#8a7346> <#d1ba8a>{current_xp}<dark_gray>/<#968154>{level_xp} {xp_unit}
+    - '   {bar} <reset><dark_gray> {percent}%'
+  locked:
+    material: BOOK
+    custom_model_data: 5
+    display_name: <dark_gray>✘ <#454545>{{level}} {level}
+    lore:
+    - component: rewards
+    - component: ability_unlock
+    - component: ability_level
+components:
+  stats_leveled:
+    context: Skill
+    lore:
+    - ' '
+    - '<#cccccc>{{stats_leveled}}: {entries[<#cccccc>, ]}'
+  ability_levels:
+    context: Skill
+    lore:
+    - '{entries[]}'
+  mana_ability_info:
+    context: Skill
+    lore:
+    - ' '
+    - <light_purple><bold>{{mana_ability}}</bold> <blue>{name} {level}
+    - '  {entries[\n  ](3)}'
+  progress:
+    context: Skill
+    lore:
+    - '<#8a7346> <#d1ba8a>{current_xp}<dark_gray>/<#968154>{level_xp} {xp_unit} <dark_gray>→ <#968154>ʟᴠʟ.<#d1ba8a>{next_level}'
+    - ' {bar} <reset><dark_gray> {percent}%'
+  max_level:
+    context: Skill
+    lore:
+    - <gold>{{max_level}}
+  rewards:
+    context: Integer
+    lore:
+    - '{entries[]}'
+  ability_unlock:
+    context: Integer
+    lore:
+    - ' '
+    - <#8a7346>⭐<#f2d9a7> {name} <#e8dcc3>{{ability_unlock}}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '   '
+      style: <#b09d78>
+  ability_level:
+    context: Integer
+    lore:
+    - ' '
+    - <#8a7346>⭐<#f2d9a7> {name} <#a18958>{level}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '   '
+      style: <#b09d78>
+  mana_ability_unlock:
+    context: Integer
+    lore:
+    - ' '
+    - <blue>{name} <light_purple><bold>{{mana_ability_unlock}}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      styles:
+        0: <#cccccc>
+        1: <yellow>
+  mana_ability_level:
+    context: Integer
+    lore:
+    - ' '
+    - <blue>{name} {level}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      styles:
+        0: <#cccccc>
+        1: <yellow>
+  job_select:
+    lore:
+    - <yellow>{{job_select}}
+  job_active:
+    lore:
+    - <dark_gray>▶ <green>{{job_active}}
+    - ' '
+    - <#cccccc>{{job_quit}}
+  job_limit:
+    lore:
+    - text: '{{job_limit}}'
+      wrap: true
+      style: <red>
+  job_cooldown:
+    lore:
+    - text: '{{job_cooldown}}'
+      wrap: true
+      style: <red>
+formats:
+  stat_leveled_entry: '{color}{stat}<#cccccc>'
+  unlocked_ability_entry: \n <#8a7346>⭐<#f2d9a7> {name} <#a18958>{level}\n    <#b09d78>{info}
+  locked_ability_entry: \n <#29251d>⭐ <#574c37><strikethrough>{name}
+  duration_entry: '<#cccccc>{{duration}}: <green>{duration}s '
+  mana_cost_entry: '<#cccccc>{{mana_cost}}: <aqua>{mana_cost} '
+  cooldown_entry: '<#cccccc>{{cooldown}}: <yellow>{cooldown}s '
+  damage_entry: '<#cccccc>{{damage}}: <red>{value} '
+  damage_per_mana_entry: '<#cccccc>{{damage}}: <red>+{value}% / Mana '
+  max_mana_cost_entry: '<#cccccc>{{max_mana_cost}}: <aqua>{mana_cost} '
+  attack_speed_entry: '<#cccccc>{{attack_speed}}: <red>+{value}% '
+  stat_reward_entry: \n  {color}+{num} {symbol} {stat}
+  money_reward_entry: \n  <green>${amount}
+options:
+  use_level_as_amount: false
+  over_max_stack_amount: 1
+  items_per_page: 19
+  start_level: 1
+  track:
+  - 1
+  - 10
+  - 19
+  - 28
+  - 29
+  - 30
+  - 21
+  - 12
+  - 3
+  - 4
+  - 5
+  - 14
+  - 23
+  - 32
+  - 33
+  - 34
+  - 25
+  - 16
+  - 7
+file_version: 2

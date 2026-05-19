@@ -1,0 +1,164 @@
+title-draedon1:
+  char: ꁘ
+  texture: prism_skyblock/interface/titles/draedon1.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-draedon2:
+  char: ꁙ
+  texture: prism_skyblock/interface/titles/draedon2.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-draedon3:
+  char: ꁚ
+  texture: prism_skyblock/interface/titles/draedon3.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-draedon4:
+  char: ꁛ
+  texture: prism_skyblock/interface/titles/draedon4.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-draedon5:
+  char: ꁜ
+  texture: prism_skyblock/interface/titles/draedon5.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-draedon6:
+  char: ꁝ
+  texture: prism_skyblock/interface/titles/draedon6.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+
+title-dungeoncompleted1:
+  char: ꃓ
+  texture: prism_skyblock/interface/titles/dungeoncompleted1.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-dungeoncompleted2:
+  char: ꃔ
+  texture: prism_skyblock/interface/titles/dungeoncompleted2.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-dungeoncompleted3:
+  char: ꃕ
+  texture: prism_skyblock/interface/titles/dungeoncompleted3.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-dungeoncompleted4:
+  char: ꃖ
+  texture: prism_skyblock/interface/titles/dungeoncompleted4.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-dungeoncompleted5:
+  char: ꃗ
+  texture: prism_skyblock/interface/titles/dungeoncompleted5.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-dungeoncompleted6:
+  char: ꃘ
+  texture: prism_skyblock/interface/titles/dungeoncompleted6.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-dungeoncompleted7:
+  char: ꃙ
+  texture: prism_skyblock/interface/titles/dungeoncompleted7.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-dungeoncompleted8:
+  char: ꃚ
+  texture: prism_skyblock/interface/titles/dungeoncompleted8.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+
+title-grimoireacquired1:
+  char: ꃃ
+  texture: prism_skyblock/interface/titles/grimoireacquired1.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-grimoireacquired2:
+  char: ꃄ
+  texture: prism_skyblock/interface/titles/grimoireacquired2.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-grimoireacquired3:
+  char: ꃅ
+  texture: prism_skyblock/interface/titles/grimoireacquired3.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-grimoireacquired4:
+  char: ꃆ
+  texture: prism_skyblock/interface/titles/grimoireacquired4.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-grimoireacquired5:
+  char: ꃇ
+  texture: prism_skyblock/interface/titles/grimoireacquired5.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-grimoireacquired6:
+  char: ꃈ
+  texture: prism_skyblock/interface/titles/grimoireacquired6.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-grimoireacquired7:
+  char: ꃉ
+  texture: prism_skyblock/interface/titles/grimoireacquired7.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+title-grimoireacquired8:
+  char: ꃊ
+  texture: prism_skyblock/interface/titles/grimoireacquired8.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm
+
+title-welcome1:
+  char: ꁤ
+  texture: prism_skyblock/interface/titles/welcome.png
+  ascent: 8
+  height: 20
+  chat:
+    permission: somerandom.perm

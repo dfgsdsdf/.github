@@ -1,0 +1,12 @@
+default_font:
+  scale: 16
+  merge-default-bitmap: true
+  images:
+    right_click:
+      name: "right_click.png"
+      x: 0
+      y: -2
+      scale: 2
+default_font2:
+  file: 5z5.ttf
+  scale: 21

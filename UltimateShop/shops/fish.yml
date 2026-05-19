@@ -1,0 +1,129 @@
+settings:
+  menu: 'example-shop-menu'
+  buy-more: true
+  shop-name: 'Fish Shop'
+  hide-message: false
+
+general-configs:
+  fail-actions:
+    - 'sound: entity.villager.no;;1;;1'
+  buy-actions:
+    - 'sound: coins;;1;;1-b-o' 
+  sell-actions:
+    - 'sound: coins;;1;;1-b-o' 
+
+items:
+  A:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: COD
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '14'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '11'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  B:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: COOKED_COD
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '19'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '16'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  C:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: SALMON
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '14'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '11'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  D:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: COOKED_SALMON
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '19'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '16'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  E:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: TROPICAL_FISH
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '14'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '11'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  F:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: PUFFERFISH
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '16'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '13'
+        placeholder: '{amount} Coins'
+        start-apply: 0

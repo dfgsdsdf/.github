@@ -1,0 +1,126 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: DustinDinh
+  UUID: 7b0b0988-b799-4dae-b696-52e823b3079f
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 205.0
+      y: -9.0
+      z: 267.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 133.0
+      y: -9.0
+      z: 292.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 184.0
+      y: -8.0
+      z: 281.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 140.0
+      y: -6.0
+      z: 258.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 158.0
+      y: -9.0
+      z: 267.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 175.0
+      y: -6.0
+      z: 287.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 195.0
+      y: -9.0
+      z: 296.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 139.0
+      y: -9.0
+      z: 270.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 154.0
+      y: -9.0
+      z: 292.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 187.0
+      y: -8.0
+      z: 225.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395258218
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 151.0
+      y: -6.0
+      z: 240.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395258218
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1728395293968
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 223.0
+      y: -9.0
+      z: 228.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1728395293968
+Finished: true

@@ -1,0 +1,52 @@
+DICE_OF_FATE:
+  base:
+    material: APPLE
+    commands:
+      cmd0:
+        format: qadmin reroll %player_name% 1
+        delay: 0.0
+        console: true
+      cmd1:
+        format: qadmin reroll %player_name% 2
+        delay: 0.0
+        console: true
+      cmd2:
+        format: qadmin reroll %player_name% 3
+        delay: 0.0
+        console: true
+    name: <#4e59de>♠Dice <#db4da0>♥of <#e09443>♦Fate
+    lore:
+    - <#a2a5b8>Can be used to reroll all 3
+    - <#a2a5b8>quest cards of the Quester.
+    max-consume: 3.0
+    sounds:
+      on-consume:
+        sound: ENTITY_EVOKER_CAST_SPELL
+        volume: 1.0
+        pitch: 1.0
+      on-right-click:
+        sound: ENTITY_EVOKER_CAST_SPELL
+        volume: 1.0
+        pitch: 1.0
+    lore-format: consumable
+    custom-model-data: 1.0
+    tier: TIER3
+    unstackable: true
+    item-cooldown: 2.0
+
+HEXIA:
+  base:
+    material: APPLE
+    custom-model-data: 2.0
+    name: <#f5dcfa>Hexia Crystal
+    tier: TIER4
+    inedible: true
+    lore:
+    - <#a2a5b8>Can be used to upgrade
+    - <#a2a5b8>hextech equipment.
+    - ''
+    - '&f ꂢ ꂧ ꂣ ꂤ ꂥ ꂦ'
+    upgrade:
+      reference: hextech
+    max-stack-size: 1.0
+    lore-format: material

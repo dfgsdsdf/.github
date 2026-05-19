@@ -1,0 +1,46 @@
+healthbar-draedon:
+  char: ￱
+  texture: prism_skyblock/interface/onscreen_ui/draedon_healthbar.png
+  ascent: 17
+  height: 50
+  chat:
+    permission: somerandom.perm
+
+maintitle:
+  char: ꁧ
+  texture: prism_skyblock/title.png
+  ascent: 17
+  height: 32
+  chat:
+    permission: somerandom.perm
+
+bannertitle:
+  char: ꁰ
+  texture: prism_skyblock/title.png
+  ascent: 20
+  height: 32
+  chat:
+    permission: somerandom.perm
+
+esc_banner:
+  char: ꁮ
+  texture: prism_skyblock/esc_banner.png
+  ascent: 10
+  height: 74
+  chat:
+    permission: somerandom.perm
+
+loadingbackground:
+  char: ꁯ
+  texture: prism_skyblock/loadingbackground.png
+  ascent: 150
+  height: 1000
+  chat:
+    permission: somerandom.perm
+loading:
+  char: ꁱ
+  texture: prism_skyblock/loading.png
+  ascent: 1
+  height: 100
+  chat:
+    permission: somerandom.perm

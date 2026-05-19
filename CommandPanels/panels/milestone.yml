@@ -1,0 +1,439 @@
+panels:
+  milestone:
+    rows: 3
+    title: '&fꐮꂛ ꐲꐰꐮꐭꐬ<#3b3b3b>Daily Quests &m                        '
+    commands:
+    - milestone
+    sound-on-open: ENTITY_CHICKEN_EGG
+    pre-load-commands:
+    - 'add-data= questmilestone 0 %cp-player-name%'
+    item:
+
+      '1':
+        material: WHITE_DYE
+        customdata: '8'
+        name: '&#81d8e6✧ &#80edffMilestone 1: &#defaff%odailyquests_total%/10'
+        lore:
+          - ""
+          - " &#bcecf7+300 Stardust"
+          - " &#d1884f+1500 Coins"
+          - " &#db8a8a+1000 Faction EXP"
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '10'
+            material: WHITE_DYE
+            customdata: '7'
+            name: '&#81d8e6✧ &#80edffMilestone 1: &#defaff%odailyquests_total%/10'
+            lore:
+              - ""
+              - " &#bcecf7+300 Stardust"
+              - " &#d1884f+1500 Coins"
+              - " &#db8a8a+1000 Faction EXP"
+              - ""
+              - "&#f5f4b0→ Click to claim!"
+            commands:
+              - "console= stardust give %cp-player-name% 300 -s"
+              - "console= coins give %cp-player-name% 1500 -s"
+              - "console= mmocore admin exp give %cp-player-name% main 1000"
+              - "set-data= questmilestone 1 %cp-player-name%"
+              - "cpc"
+              - "sound= ENTITY_PLAYER_LEVELUP"
+              - "msg= <white>ꀒ <#04d42c>Quest milestone claimed!"
+            has0:
+                value0: "%cp-data-questmilestone% ISGREATER"
+                compare0: '1'
+                material: WHITE_DYE
+                customdata: '7'
+                name: '&#81d8e6✦ &#80edffMilestone 1: &#defaffDONE'
+                lore:
+                  - ""
+                  - " &#bcecf7+300 Stardust"
+                  - " &#d1884f+1500 Coins"
+                  - " &#db8a8a+1000 Faction EXP"
+
+      '2':
+        material: WHITE_DYE
+        customdata: '8'
+        name: '&#81d8e6✧ &#80edffMilestone 2: &#defaff%odailyquests_total%/50'
+        lore:
+          - ""
+          - " &#bcecf7+1000 Stardust"
+          - " &#d1884f+3000 Coins"
+          - " &#db8a8a+1500 Faction EXP"
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '50'
+            material: WHITE_DYE
+            customdata: '7'
+            name: '&#81d8e6✧ &#80edffMilestone 2: &#defaff%odailyquests_total%/50'
+            lore:
+              - ""
+              - " &#bcecf7+1000 Stardust"
+              - " &#d1884f+3000 Coins"
+              - " &#db8a8a+1500 Faction EXP"
+              - ""
+              - "&#f5f4b0→ Click to claim!"
+            commands:
+              - "console= stardust give %cp-player-name% 1000 -s"
+              - "console= coins give %cp-player-name% 3000 -s"
+              - "console= mmocore admin exp give %cp-player-name% main 1500"
+              - "set-data= questmilestone 2 %cp-player-name%"
+              - "cpc"
+              - "sound= ENTITY_PLAYER_LEVELUP"
+              - "msg= <white>ꀒ <#04d42c>Quest milestone claimed!"
+            has0:
+                value0: "%cp-data-questmilestone% ISGREATER"
+                compare0: '2'
+                material: WHITE_DYE
+                customdata: '7'
+                name: '&#81d8e6✦ &#80edffMilestone 2: &#defaffDONE'
+                lore:
+                  - ""
+                  - " &#bcecf7+1000 Stardust"
+                  - " &#d1884f+3000 Coins"
+                  - " &#db8a8a+1500 Faction EXP"
+
+      '3':
+        material: WHITE_DYE
+        customdata: '8'
+        name: '&#81d8e6✧ &#80edffMilestone 3: &#defaff%odailyquests_total%/200'
+        lore:
+          - ""
+          - " &#bcecf7+4000 Stardust"
+          - " &#d1884f+8000 Coins"
+          - " &#db8a8a+2500 Faction EXP"
+          - " &#f2c199+3 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '200'
+            material: WHITE_DYE
+            customdata: '7'
+            name: '&#81d8e6✧ &#80edffMilestone 3: &#defaff%odailyquests_total%/200'
+            lore:
+              - ""
+              - " &#bcecf7+4000 Stardust"
+              - " &#d1884f+8000 Coins"
+              - " &#db8a8a+2500 Faction EXP"
+              - " &#f2c199+3 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+              - ""
+              - "&#f5f4b0→ Click to claim!"
+            commands:
+              - "console= stardust give %cp-player-name% 4000 -s"
+              - "console= coins give %cp-player-name% 8000 -s"
+              - "console= mmocore admin exp give %cp-player-name% main 2500"
+              - "console= mmoitems give CONSUMABLE DICE_OF_FATE %cp-player-name% 3 s"
+              - "set-data= questmilestone 3 %cp-player-name%"
+              - "cpc"
+              - "sound= ENTITY_PLAYER_LEVELUP"
+              - "msg= <white>ꀒ <#04d42c>Quest milestone claimed!"
+            has0:
+                value0: "%cp-data-questmilestone% ISGREATER"
+                compare0: '3'
+                material: WHITE_DYE
+                customdata: '7'
+                name: '&#81d8e6✦ &#80edffMilestone 3: &#defaffDONE'
+                lore:
+                  - ""
+                  - " &#bcecf7+4000 Stardust"
+                  - " &#d1884f+8000 Coins"
+                  - " &#db8a8a+2500 Faction EXP"
+                  - " &#f2c199+3 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+
+      '4':
+        material: WHITE_DYE
+        customdata: '8'
+        name: '&#81d8e6✧ &#80edffMilestone 4: &#defaff%odailyquests_total%/500'
+        lore:
+          - ""
+          - " &#bcecf7+8000 Stardust"
+          - " &#d1884f+15000 Coins"
+          - " &#db8a8a+4000 Faction EXP"
+          - " &#f2c199+6 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+          - " &#74b4b8+2 Diamond Chamber Key"
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '500'
+            material: WHITE_DYE
+            customdata: '7'
+            name: '&#81d8e6✧ &#80edffMilestone 4: &#defaff%odailyquests_total%/500'
+            lore:
+              - ""
+              - " &#bcecf7+8000 Stardust"
+              - " &#d1884f+15000 Coins"
+              - " &#db8a8a+4000 Faction EXP"
+              - " &#f2c199+6 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+              - " &#74b4b8+2 Diamond Chamber Key"
+              - ""
+              - "&#f5f4b0→ Click to claim!"
+            commands:
+              - "console= stardust give %cp-player-name% 8000 -s"
+              - "console= coins give %cp-player-name% 15000 -s"
+              - "console= mmocore admin exp give %cp-player-name% main 4000"
+              - "console= mmoitems give CONSUMABLE DICE_OF_FATE %cp-player-name% 6 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_DIAMOND_KEY %cp-player-name% 2 s"
+              - "set-data= questmilestone 4 %cp-player-name%"
+              - "cpc"
+              - "sound= ENTITY_PLAYER_LEVELUP"
+              - "msg= <white>ꀒ <#04d42c>Quest milestone claimed!"
+            has0:
+                value0: "%cp-data-questmilestone% ISGREATER"
+                compare0: '4'
+                material: WHITE_DYE
+                customdata: '7'
+                name: '&#81d8e6✦ &#80edffMilestone 4: &#defaffDONE'
+                lore:
+                  - ""
+                  - " &#bcecf7+8000 Stardust"
+                  - " &#d1884f+15000 Coins"
+                  - " &#db8a8a+4000 Faction EXP"
+                  - " &#f2c199+6 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+                  - " &#74b4b8+2 Diamond Chamber Key"
+
+      '5':
+        material: WHITE_DYE
+        customdata: '8'
+        name: '&#81d8e6✧ &#80edffMilestone 5: &#defaff%odailyquests_total%/1000'
+        lore:
+          - ""
+          - " &#bcecf7+20000 Stardust"
+          - " &#d1884f+30000 Coins"
+          - " &#db8a8a+6000 Faction EXP"
+          - " &#f2c199+10 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+          - " &#74b4b8+4 Diamond Chamber Key"
+          - " &#80b874+2 Emerald Chamber Key"
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '1000'
+            material: WHITE_DYE
+            customdata: '7'
+            name: '&#81d8e6✧ &#80edffMilestone 5: &#defaff%odailyquests_total%/1000'
+            lore:
+              - ""
+              - " &#bcecf7+20000 Stardust"
+              - " &#d1884f+30000 Coins"
+              - " &#db8a8a+6000 Faction EXP"
+              - " &#f2c199+10 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+              - " &#74b4b8+4 Diamond Chamber Key"
+              - " &#80b874+2 Emerald Chamber Key"
+              - ""
+              - "&#f5f4b0→ Click to claim!"
+            commands:
+              - "console= stardust give %cp-player-name% 20000 -s"
+              - "console= coins give %cp-player-name% 30000 -s"
+              - "console= mmocore admin exp give %cp-player-name% main 6000"
+              - "console= mmoitems give CONSUMABLE DICE_OF_FATE %cp-player-name% 10 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_DIAMOND_KEY %cp-player-name% 4 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_EMERALD_KEY %cp-player-name% 2 s"
+              - "set-data= questmilestone 5 %cp-player-name%"
+              - "cpc"
+              - "sound= ENTITY_PLAYER_LEVELUP"
+              - "msg= <white>ꀒ <#04d42c>Quest milestone claimed!"
+            has0:
+                value0: "%cp-data-questmilestone% ISGREATER"
+                compare0: '5'
+                material: WHITE_DYE
+                customdata: '7'
+                name: '&#81d8e6✦ &#80edffMilestone 5: &#defaffDONE'
+                lore:
+                  - ""
+                  - " &#bcecf7+20000 Stardust"
+                  - " &#d1884f+30000 Coins"
+                  - " &#db8a8a+6000 Faction EXP"
+                  - " &#f2c199+10 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+                  - " &#74b4b8+4 Diamond Chamber Key"
+                  - " &#80b874+2 Emerald Chamber Key"
+
+      '6':
+        material: WHITE_DYE
+        customdata: '8'
+        name: '&#81d8e6✧ &#80edffMilestone 6: &#defaff%odailyquests_total%/2000'
+        lore:
+          - ""
+          - " &#bcecf7+40000 Stardust"
+          - " &#d1884f+50000 Coins"
+          - " &#db8a8a+8000 Faction EXP"
+          - " &#f2c199+14 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+          - " &#74b4b8+5 Diamond Chamber Key"
+          - " &#80b874+4 Emerald Chamber Key"
+          - " &#94a7c6+3 Star Chamber Key"
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '2000'
+            material: WHITE_DYE
+            customdata: '7'
+            name: '&#81d8e6✧ &#80edffMilestone 6: &#defaff%odailyquests_total%/2000'
+            lore:
+              - ""
+              - " &#bcecf7+40000 Stardust"
+              - " &#d1884f+50000 Coins"
+              - " &#db8a8a+8000 Faction EXP"
+              - " &#f2c199+14 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+              - " &#74b4b8+5 Diamond Chamber Key"
+              - " &#80b874+4 Emerald Chamber Key"
+              - " &#94a7c6+3 Star Chamber Key"
+              - ""
+              - "&#f5f4b0→ Click to claim!"
+            commands:
+              - "console= stardust give %cp-player-name% 40000 -s"
+              - "console= coins give %cp-player-name% 50000 -s"
+              - "console= mmocore admin exp give %cp-player-name% main 8000"
+              - "console= mmoitems give CONSUMABLE DICE_OF_FATE %cp-player-name% 14 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_DIAMOND_KEY %cp-player-name% 5 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_EMERALD_KEY %cp-player-name% 4 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_STAR_KEY %cp-player-name% 3 s"
+              - "set-data= questmilestone 6 %cp-player-name%"
+              - "cpc"
+              - "sound= ENTITY_PLAYER_LEVELUP"
+              - "msg= <white>ꀒ <#04d42c>Quest milestone claimed!"
+            has0:
+                value0: "%cp-data-questmilestone% ISGREATER"
+                compare0: '6'
+                material: WHITE_DYE
+                customdata: '7'
+                name: '&#81d8e6✦ &#80edffMilestone 6: &#defaffDONE'
+                lore:
+                  - ""
+                  - " &#bcecf7+40000 Stardust"
+                  - " &#d1884f+50000 Coins"
+                  - " &#db8a8a+8000 Faction EXP"
+                  - " &#f2c199+14 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+                  - " &#74b4b8+5 Diamond Chamber Key"
+                  - " &#80b874+4 Emerald Chamber Key"
+                  - " &#94a7c6+3 Star Chamber Key"
+
+      '7':
+        material: WHITE_DYE
+        customdata: '8'
+        name: '&#81d8e6✧ &#80edffMilestone 7: &#defaff%odailyquests_total%/5000'
+        lore:
+          - ""
+          - " &#bcecf7+100000 Stardust"
+          - " &#d1884f+80000 Coins"
+          - " &#db8a8a+10000 Faction EXP"
+          - " &#f2c199+20 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+          - " &#74b4b8+8 Diamond Chamber Key"
+          - " &#80b874+6 Emerald Chamber Key"
+          - " &#94a7c6+4 Star Chamber Key"
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '5000'
+            material: WHITE_DYE
+            customdata: '7'
+            name: '&#81d8e6✧ &#80edffMilestone 7: &#defaff%odailyquests_total%/5000'
+            lore:
+              - ""
+              - " &#bcecf7+100000 Stardust"
+              - " &#d1884f+80000 Coins"
+              - " &#db8a8a+10000 Faction EXP"
+              - " &#f2c199+20 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+              - " &#74b4b8+8 Diamond Chamber Key"
+              - " &#80b874+6 Emerald Chamber Key"
+              - " &#94a7c6+4 Star Chamber Key"
+              - ""
+              - "&#f5f4b0→ Click to claim!"
+            commands:
+              - "console= stardust give %cp-player-name% 100000 -s"
+              - "console= coins give %cp-player-name% 80000 -s"
+              - "console= mmocore admin exp give %cp-player-name% main 10000"
+              - "console= mmoitems give CONSUMABLE DICE_OF_FATE %cp-player-name% 20 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_DIAMOND_KEY %cp-player-name% 8 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_EMERALD_KEY %cp-player-name% 6 s"
+              - "console= mmoitems give DUNGEON_KEY CHAMBER_STAR_KEY %cp-player-name% 4 s"
+              - "set-data= questmilestone 8 %cp-player-name%"
+              - "cpc"
+              - "sound= ENTITY_PLAYER_LEVELUP"
+              - "msg= <white>ꀒ <#04d42c>Quest milestone claimed!"
+            has0:
+                value0: "%cp-data-questmilestone% ISGREATER"
+                compare0: '8'
+                material: WHITE_DYE
+                customdata: '7'
+                name: '&#81d8e6✦ &#80edffMilestone 7: &#defaffDONE'
+                lore:
+                  - ""
+                  - " &#bcecf7+100000 Stardust"
+                  - " &#d1884f+80000 Coins"
+                  - " &#db8a8a+10000 Faction EXP"
+                  - " &#f2c199+20 &#4e59de♠Dice &#db4da0♥of &#e09443♦Fate"
+                  - " &#74b4b8+8 Diamond Chamber Key"
+                  - " &#80b874+6 Emerald Chamber Key"
+                  - " &#94a7c6+4 Star Chamber Key"
+
+      '10':
+        material: string
+        customdata: '10'
+        name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '10'
+            material: string
+            customdata: '13'
+            name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+            lore: []
+
+      '11':
+        material: string
+        customdata: '17'
+        name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '50'
+            material: string
+            customdata: '14'
+            name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+            lore: []
+      '12':
+        material: string
+        customdata: '17'
+        name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '200'
+            material: string
+            customdata: '14'
+            name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+            lore: []
+      '13':
+        material: string
+        customdata: '17'
+        name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '500'
+            material: string
+            customdata: '14'
+            name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+            lore: []
+      '14':
+        material: string
+        customdata: '17'
+        name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '1000'
+            material: string
+            customdata: '14'
+            name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+            lore: []
+      '15':
+        material: string
+        customdata: '17'
+        name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '2000'
+            material: string
+            customdata: '14'
+            name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+            lore: []
+      '16':
+        material: string
+        customdata: '12'
+        name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+        has0:
+            value0: "%odailyquests_total% ISGREATER"
+            compare0: '5000'
+            material: string
+            customdata: '15'
+            name: '&#4181e8%odailyquests_total% &#93afdbtotal quests done!'
+            lore: []

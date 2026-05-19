@@ -1,0 +1,41 @@
+condition:
+  profession:
+    positive: '<#8ee38d>✔ Requires #level# in #profession#'
+    negative: '<#e38d8d>✘ Requires #level# in #profession#'
+  mana:
+    positive: '<#8ee38d>✔ Requires #mana# Mana'
+    negative: '<#e38d8d>✘ Requires #mana# Mana'
+  money:
+    positive: <#8ee38d>✔ Requires $#money#
+    negative: <#e38d8d>✘ Requires $#money#
+  level:
+    positive: '<#8ee38d>✔ Requires Level #level#'
+    negative: '<#e38d8d>✘ Requires Level #level#'
+  stellium:
+    positive: '<#8ee38d>✔ Requires #stellium# Stellium'
+    negative: '<#e38d8d>✘ Requires #stellium# Stellium'
+  stamina:
+    positive: '<#8ee38d>✔ Requires #stamina# Stamina'
+    negative: '<#e38d8d>✘ Requires #stamina# Stamina'
+  permission:
+    positive: '<#8ee38d>✔ #display#'
+    negative: '<#e38d8d>✖ #display#'
+  placeholder:
+    positive: '<#8ee38d>✔ #display#'
+    negative: '<#e38d8d>✖ #display#'
+  attribute:
+    positive: '<#8ee38d>✔ Requires #points# #attribute#'
+    negative: '<#e38d8d>✘ Requires #points# #attribute#'
+  class:
+    positive: '<#8ee38d>✔ Required Class: #class#'
+    negative: '<#e38d8d>✖ Required Class: #class#'
+  food:
+    positive: '<#8ee38d>✔ Requires #food# Food'
+    negative: '<#e38d8d>✘ Requires #food# Food'
+ingredient:
+  mmoitem:
+    positive: '<#8ee38d>✔ <#8a8a8a>#amount#x <#dbdbdb>#item# #level#'
+    negative: '<#e38d8d>✘ <#8a8a8a>#amount#x <#dbdbdb>#item# #level#'
+  vanilla:
+    positive: <#8ee38d>✔ <#8a8a8a>#amount#x <#dbdbdb>#item#
+    negative: <#e38d8d>✘ <#8a8a8a>#amount#x <#dbdbdb>#item#

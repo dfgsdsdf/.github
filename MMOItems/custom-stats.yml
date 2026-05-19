@@ -1,0 +1,14 @@
+# Add as many custom stats as you want below.
+#
+# For each custom stat you add, you must also add a corresponding
+# entry in the lore-format.yml and stats.yml files.
+#
+# Item stats are not reloaded when using /mi reload. Make sure
+# you restart your server when applying any changes to them.
+custom-stats:
+  1:
+    name: "Hextech Ascension Count"
+    type: "double"
+    lore:
+      - "Used for hextech ability."
+      - "&cDon't touch this."

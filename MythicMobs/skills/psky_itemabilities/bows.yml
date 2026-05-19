@@ -1,0 +1,23 @@
+warden_bow:
+  Skills:
+  - effect:particle{p=sonic_boom;a=1;y=0.5} @target
+  - effect:particlering{p=soul;y=0.5;pts=10;r=1} @target
+  - effect:particlering{p=soul;r=2;y=0.5;pts=12} @target 
+  - effect:particlering{p=soul;r=3;y=0.5;pts=16} @target
+  - sudoskill{s=warden_bow-damage} @target
+  - mmodamage{amount=5;types=PROJECTILE,SKILL} @target
+  - variableadd{var=caster.sonicenergy;amount=5} @self
+
+warden_bow-damage:
+  Skills:
+  - mmodamage{amount=5;types=PROJECTILE,SKILL} @EIR{r=3}
+
+hextech_bow:
+  Conditions:
+  - variableInRange{var=caster.hexenergy;value=>49} true
+  Skills:
+  - CancelEvent
+  - projectile{onTick=hextechsword-Tick;onHit=hextechsword-Hit;onEndSkill=hextechsword-End;v=60;i=1;hR=2;vR=2;se=false;sb=true;hp=false;hnp=true;mr=20} @targetlocation
+  - variablesubtract{var=caster.hexenergy;amount=50} @self
+  - sound{s=entity.blaze.shoot} @self
+  - command{c="ml tempstat add <caster.name> PVE_DAMAGE 50 200"} @self ?stringequals{val1="%mythiclib_stat_custom_hextech_ascension_count%";val2=1}

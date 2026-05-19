@@ -1,0 +1,1 @@
+15:06:42 | prisq -> INTEREST - 322485.76 [bank] Bank before-after: [16124288.13 -> 16446773.89] Vault before-after: [332.85K -> 332.85K]

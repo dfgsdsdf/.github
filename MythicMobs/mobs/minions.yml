@@ -1,0 +1,41 @@
+pet_warden:
+  Type: ZOMBIE
+  Display: '<#274c96>Pet Warden'
+  Health: 100
+  Damage: 5
+  Disguise: Warden setscale 0.7
+  Faction: Minion
+  Options:
+    MovementSpeed: 0.3
+    AlwaysShowName: true
+    Silent: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - gotoowner
+  AITargetSelectors:
+  - clear
+  - OtherFactionMonsters
+  Skills:
+  - effect:particles{p=soul;amount=100;vs=1;hs=1;speed=0.1} @self ~onSpawn
+  - effect:particles{p=reddust;color=#15404a;amount=300;speed=0;hs=1;vs=1} @self ~onSpawn
+  - CancelEvent{sync=true} @self ~onDamaged ?~isPlayer
+  - effect:particles{p=soul;amount=100;vs=1;hs=1;speed=0.1;delay=200} @self ~onSpawn
+  - effect:particles{p=reddust;color=#15404a;amount=300;speed=0;hs=1;vs=1;delay=200} @self ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+
+VEX:
+  Type: Vex
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    Despawn: false
+    Invincible: true 
+    NoAI: true

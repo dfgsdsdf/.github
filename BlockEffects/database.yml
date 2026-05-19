@@ -1,0 +1,102 @@
+blacksmith_forge:
+  particle: FLAME
+  world: world_spawn
+  location:
+  - -12.862500011920929
+  - 70.01250004768372
+  - -10.388792085155949
+  offset:
+  - '0.1'
+  - '0.5'
+  - '0.5'
+  count: '4'
+  speed: '0.1'
+  permission: ''
+  placeholder:
+  - ''
+  - ''
+portal_wilderness:
+  particle: CRIMSON_SPORE
+  world: world_spawn
+  location:
+  - -21.342910221005344
+  - 91.5
+  - -224.40637682371442
+  offset:
+  - '1'
+  - '1'
+  - '1'
+  count: '50'
+  speed: '0.8'
+  permission: ''
+  placeholder:
+  - ''
+  - ''
+spawn1:
+  particle: SPORE_BLOSSOM_AIR
+  world: world_spawn
+  location:
+  - 1.1285654800846925
+  - 77.27732168505473
+  - -28.348700932005734
+  offset:
+  - '1.0'
+  - '1.0'
+  - '1.0'
+  count: '2'
+  speed: '1'
+  permission: ''
+  placeholder:
+  - ''
+  - ''
+spawn2:
+  particle: SPORE_BLOSSOM_AIR
+  world: world_spawn
+  location:
+  - 25.344406097518213
+  - 72.20000004768372
+  - -3.300000011920929
+  offset:
+  - '1.0'
+  - '1.0'
+  - '1.0'
+  count: '2'
+  speed: '1'
+  permission: ''
+  placeholder:
+  - ''
+  - ''
+grotto:
+  particle: TOTEM_OF_UNDYING
+  world: world_spawn
+  location:
+  - -82.92045462869636
+  - 79.37254858981971
+  - -71.46991028332103
+  offset:
+  - '5'
+  - '8'
+  - '5'
+  count: '2'
+  speed: '0.1'
+  permission: ''
+  placeholder:
+  - ''
+  - ''
+froggy:
+  particle: FIREWORK
+  world: world_spawn
+  location:
+  - 93.30000001192093
+  - 72.20000004768372
+  - -62.30000001192093
+  offset:
+  - '1'
+  - '1'
+  - '1'
+  count: '2'
+  speed: '0.1'
+  permission: ''
+  placeholder:
+  - ''
+  - ''

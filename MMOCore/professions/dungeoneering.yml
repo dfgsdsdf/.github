@@ -1,0 +1,20 @@
+# Display options
+name: Dungeoneering
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# How to get exp in that profession
+exp-sources: []
+
+# The maximum profession level
+max-level: 20
+
+# See below for full explanation
+exp-table: dungeoneering_rewards
+
+# Experience given to the main level
+# when leveling up this profession
+experience:
+    base: 0
+    per-level: 0

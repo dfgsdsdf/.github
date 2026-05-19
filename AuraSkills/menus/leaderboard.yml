@@ -1,0 +1,40 @@
+title: '&fꐮꀐ ꐲꐰꐮꐭꐬ<#5e5e5e>Player Skills > <#3b3b3b>Leaderboard &m     '
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+on_open:
+  - sound: block.note_block.hat
+    category: master
+    volume: 1
+    pitch: 1
+items:
+  back:
+    pos: 5,4
+    material: BOOK
+    custom_model_data: 13
+    display_name: '<#e3b56b>{{back}}'
+    lore: []
+templates:
+  leaderboard_player:
+    material: player_head
+    contexts:
+      1:
+        pos: 0,4
+      2:
+        pos: 1,3
+      3:
+        pos: 1,5
+      4:
+        pos: 2,1
+      5:
+        pos: 2,2
+      6:
+        pos: 2,3
+      7:
+        pos: 2,4
+      8:
+        pos: 2,5
+    display_name: '<yellow>{place}. <gold>{player}'
+    lore:
+      - '<#cccccc>{{level}}: <white>{level}'

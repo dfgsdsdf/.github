@@ -1,0 +1,45 @@
+enchant-accept:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/ancient_enchantress/accept
+    custom_model_data: 54
+enchant-deny:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/ancient_enchantress/deny
+    custom_model_data: 55
+enchant-waiting:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/ancient_enchantress/waiting
+    custom_model_data: 56
+enchant-next:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/ancient_enchantress/next
+    custom_model_data: 57
+enchant-back:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/ancient_enchantress/back
+    custom_model_data: 58

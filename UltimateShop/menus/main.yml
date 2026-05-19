@@ -1,0 +1,147 @@
+title: 'Items Shop'
+size: 54
+
+open-actions:
+  - 'sound: block.note_block.pling;;1;;1'
+
+layout:
+  - '000000000'
+  - '0ABCDEFG0'
+  - '0HIJKLMN0'
+  - '000000000'
+  - '000000000'
+  - '0000Z0000'
+
+buttons:
+  A:
+    display-item:
+      material: wheat
+      name: '&a&lFARMING'
+      lore:
+        - '&7Sell and buy various items'
+        - '&7such as seeds.'
+    actions:
+      - 'shop_menu: farming'
+  B:
+    display-item:
+      material: bone
+      name: '&b&lDROPS'
+      lore:
+        - '&7Sell and buy related items'
+        - '&7to mob drops as strings.'
+    actions:
+      - 'shop_menu: drops'
+  C:
+    display-item:
+      material: ORANGE_CONCRETE
+      name: '&a&lCONCRETES'
+      lore:
+        - '&7Sell and buy blocks of concrete'
+        - '&7and all their color variants.'
+    actions:
+      - 'shop_menu: concretes'
+  D:
+    display-item:
+      material: LILAC
+      name: '&a&lFLOWERS'
+      lore:
+        - '&7Sell and buy many types of'
+        - '&7flowers in this section.'
+    actions:
+      - 'shop_menu: flowers'
+  E:
+    display-item:
+      material: oak_log
+      name: '&a&lLOGS AND SAPLING'
+      lore:
+        - '&7Sell and buy all variants of overworld'
+        - '&7logs and their saplings.'
+    actions:
+      - 'shop_menu: logs'
+  F:
+    display-item:
+      material: diamond
+      name: '&a&lMINERALS'
+      lore:
+        - '&7Sell and buy different minerals'
+        - '&7such as diamond, iron and more.'
+    actions:
+      - 'shop_menu: minerals'
+  G:
+    display-item:
+      material: GRASS_BLOCK
+      name: '&a&lBLOCKS'
+      lore:
+        - '&7Sell and buy different types'
+        - '&7of varied blocks.'
+    actions:
+      - 'shop_menu: blocks'
+  H:
+    display-item:
+      material: LIME_TERRACOTTA
+      name: '&a&lTERRACOTTA'
+      lore:
+        - '&7Sell and buy blocks of terracotta'
+        - '&7and all their color variants.'
+    actions:
+      - 'shop_menu: terracottas'
+  I:
+    display-item:
+      material: GLASS
+      name: '&7&lGLASS'
+      lore:
+        - '&7Sell and buy blocks of glass and panels'
+        - '&7and all their color variants.'
+    actions:
+      - 'shop_menu: glass'
+  J:
+    display-item:
+      material: LIME_WOOL
+      name: '&a&lWOOL'
+      lore:
+        - '&7Sell and buy blocks of wools'
+        - '&7and all their color variants.'
+    actions:
+      - 'shop_menu: wools'
+  K:
+    display-item:
+      material: EXPERIENCE_BOTTLE
+      name: '&d&lSPECIAL ITEMS'
+      lore:
+        - '&7Sell and buy some special'
+        - '&7or rare items.'
+    actions:
+      - 'shop_menu: special'
+  L:
+    display-item:
+      material: REDSTONE
+      name: '&c&lREDSTONE'
+      lore:
+        - '&7Sell and buy everything related'
+        - '&7to redstone as comparators.'
+    actions:
+      - 'shop_menu: redstone'
+  M:
+    display-item:
+      material: FISHING_ROD
+      name: '&9&lFISH SHOP'
+      lore:
+        - '&7Sell or buy different raw'
+        - '&7or cooked fish.'
+    actions:
+      - 'shop_menu: fish'
+  N:
+    display-item:
+      material: RAIL
+      name: '&a&lTRANSPORTS'
+      lore:
+        - '&7Some things related to'
+        - '&7transport like rails.'
+    actions:
+      - 'shop_menu: transport'
+  Z:
+    display-item:
+      material: BARRIER
+      name: '&cClose this menu'
+    actions:
+      - 'close'

@@ -1,0 +1,5 @@
+15:26:12 | prisq -> WITHDRAW - 125000.00 [bank] Bank before-after: [500000.00 -> 375000.00] Vault before-after: [2.04M -> 2.16M]
+15:26:12 | prisq -> WITHDRAW - 93750.00 [bank] Bank before-after: [375000.00 -> 281250.00] Vault before-after: [2.16M -> 2.26M]
+19:21:15 | prisq -> DEPOSIT - 564487.23 [bank] Bank before-after: [281250.00 -> 845737.23] Vault before-after: [2.26M -> 1.69M]
+19:21:15 | prisq -> DEPOSIT - 846730.85 [bank] Bank before-after: [845737.23 -> 1692468.08] Vault before-after: [1.69M -> 846.73K]
+19:46:12 | prisq -> DEPOSIT - 2000.00 [bank] Bank before-after: [1692468.08 -> 1694468.08] Vault before-after: [842.89K -> 840.89K]

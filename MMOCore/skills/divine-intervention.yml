@@ -1,0 +1,37 @@
+name: <#438c8c>Divine Intervention
+lore:
+- <#9ba8a8>Recieving damage while under
+- <red>40% max ❤ <#9ba8a8>heals you for <white>10%
+- <#9ba8a8>of your max HP and applies a
+- <#9ba8a8>shield for <red>20% max ❤<#9ba8a8>.
+- '<#5a6666>Cooldown: {cooldown}s'
+material: BLAZE_ROD:2
+unlocked-by-default: false
+max-level: 10
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 300
+  per-level: -10
+  min: 60
+  max: 300
+
+passive-type: DAMAGED

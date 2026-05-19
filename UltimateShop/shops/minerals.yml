@@ -1,0 +1,184 @@
+settings:
+  menu: 'example-shop-menu'
+  buy-more: true
+  shop-name: 'Minerals Shop'
+  hide-message: false
+
+general-configs:
+  fail-actions:
+    - 'sound: entity.villager.no;;1;;1'
+  buy-actions:
+    - 'sound: coins;;1;;1-b-o' 
+  sell-actions:
+    - 'sound: coins;;1;;1-b-o' 
+
+items:
+  A:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: diamond
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '160'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  B:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: GOLD_INGOT
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '80'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  C:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: IRON_INGOT
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '40'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  D:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: LAPIS_LAZULI
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '10'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  E:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: REDSTONE
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '10'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  F:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: COAL
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '25'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  G:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: AMETHYST_SHARD
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '30'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  H:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: ANCIENT_DEBRIS
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '1000'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  I:
+    price-mode: ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: QUARTZ
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '20'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  J:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: COPPER_INGOT
+        amount: 1
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '25'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  K:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: MATERIAL;;COBALT_INGOT
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '100'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  L:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: MATERIAL;;MITHRIL_INGOT
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '220'
+        placeholder: '{amount} Coins'
+        start-apply: 0
+  M:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: MATERIAL;;SOULSTEEL_INGOT
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '320'
+        placeholder: '{amount} Coins'
+        start-apply: 0

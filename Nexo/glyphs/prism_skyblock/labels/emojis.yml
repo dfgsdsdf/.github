@@ -1,0 +1,169 @@
+angry:
+  char: ꂋ
+  texture: prism_skyblock/labels/emoji/angry.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':angry:'
+    permission: emoji.basic
+clown:
+  char: ꂌ
+  texture: prism_skyblock/labels/emoji/clown.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':clown:'
+    permission: emoji.basic
+devil:
+  char: ꂍ
+  texture: prism_skyblock/labels/emoji/devil.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':devil:'
+    permission: emoji.basic
+grin:
+  char: ꂎ
+  texture: prism_skyblock/labels/emoji/grin.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':grin:'
+    permission: emoji.basic
+kiss:
+  char: ꂏ
+  texture: prism_skyblock/labels/emoji/kiss.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':kiss:'
+    permission: emoji.basic
+
+
+nerd:
+  char: ꂐ
+  texture: prism_skyblock/labels/emoji/nerd.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':nerd:'
+    permission: emoji.advanced
+sad:
+  char: ꂑ
+  texture: prism_skyblock/labels/emoji/sad.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':sad:'
+    permission: emoji.advanced
+scared:
+  char: ꂒ
+  texture: prism_skyblock/labels/emoji/scared.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':scared:'
+    permission: emoji.advanced
+sick:
+  char: ꂓ
+  texture: prism_skyblock/labels/emoji/sick.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':sick:'
+    permission: emoji.advanced
+sigh:
+  char: ꂔ
+  texture: prism_skyblock/labels/emoji/sigh.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':sigh:'
+    permission: emoji.advanced
+
+
+surprised:
+  char: ꂕ
+  texture: prism_skyblock/labels/emoji/surprised.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':surprised:'
+    permission: emoji.supreme
+sus:
+  char: ꂖ
+  texture: prism_skyblock/labels/emoji/sus.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':sus:'
+    permission: emoji.supreme
+tear:
+  char: ꂘ
+  texture: prism_skyblock/labels/emoji/tear.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':tear:'
+    permission: emoji.supreme
+vomit:
+  char: ꂘ
+  texture: prism_skyblock/labels/emoji/vomit.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':vomit:'
+    permission: emoji.supreme
+stern:
+  char: ꂙ
+  texture: prism_skyblock/labels/emoji/stern.png
+  ascent: 7
+  height: 8
+  is_emoji: true
+  chat:
+    tabcomplete: true
+    placeholders:
+    - ':stern:'
+    permission: emoji.supreme

@@ -1,0 +1,57 @@
+settings:
+  generate_sounds: true
+sounds:
+
+  - id: levelup
+    sound: levelup.ogg
+  - id: classchosen
+    sound: classchosen.ogg
+  - id: quest.completed
+    sound: questcompleted.ogg
+  - id: chest.open
+    sound: chest_open.ogg
+  - id: coins
+    sound: coins.ogg
+  - id: type
+    sound: type.ogg
+  - id: dungeonclear
+    sound: dungeonclear.ogg
+  - id: grimoireacquired
+    sound: grimoireacquired.ogg
+
+  - id: robot.talk
+    sound: robottalk.ogg
+
+  - id: villager.talking
+    sound: villagertalking.ogg
+  - id: villager.talking2
+    sound: villagertalking2.ogg
+  - id: villager.talking3
+    sound: villagertalking3.ogg
+
+  - id: quest.started
+    sound: queststarted.ogg
+  - id: shopbell
+    sound: shopbell.ogg
+
+  - id: cutscene.intro.theme
+    sound: cutscene/cutscene_intro_theme.ogg
+  - id: cutscene.guild.theme
+    sound: cutscene/cutscene_guild_theme.ogg
+
+  - id: draedon.spawn
+    sound: boss_draedon/spawn.ogg
+  - id: draedon.laugh
+    sound: boss_draedon/laugh.ogg
+  - id: draedon.spellcast
+    sound: boss_draedon/spellcast.ogg
+  - id: draedon.laugh
+    sound: boss_draedon/laugh.ogg
+  - id: draedon.rainofpain
+    sound: boss_draedon/rainofpain.ogg
+  - id: draedon.soulrebound
+    sound: boss_draedon/soulrebound.ogg
+  - id: draedon.theme
+    sound: boss_draedon/theme.ogg
+  - id: draedon.death
+    sound: boss_draedon/death.ogg

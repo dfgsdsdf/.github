@@ -1,0 +1,72 @@
+sword-cobalt:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 1
+    parent_model: item/handheld
+    textures:
+    - prism_skyblock/item_texture/swords/cobalt.png
+sword-mithril:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/swords/mithril.png
+sword-soulblade:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/swords/soulblade.png
+sword-hextech:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/item_texture/swords/hextech.png
+sword-warden:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/item_texture/swords/warden.png
+sword-soulnetherite:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/item_texture/swords/soul_netherite_sword.png
+sword-gildednetherite:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/item_texture/swords/gilded_netherite_sword.png
+sword-hextechascended:
+  itemname: ''
+  material: IRON_SWORD
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/handheld
+    custom_model_data: 8
+    textures:
+    - prism_skyblock/item_texture/swords/hextech_ascended.png

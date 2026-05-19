@@ -1,0 +1,224 @@
+RAW_COBALT:
+  base:
+    material: RAW_IRON
+    name: Raw Cobalt
+    lore-format: material
+    custom-model-data: 1.0
+    tier: TIER1
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+COBALT_INGOT:
+  base:
+    material: RAW_IRON
+    name: Cobalt Ingot
+    lore-format: material
+    custom-model-data: 2.0
+    tier: TIER1
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+RAW_MITHRIL:
+  base:
+    material: RAW_IRON
+    name: Raw Mithril
+    lore-format: material
+    custom-model-data: 3.0
+    tier: TIER2
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+MITHRIL_INGOT:
+  base:
+    material: RAW_IRON
+    name: Mithril Ingot
+    lore-format: material
+    custom-model-data: 4.0
+    tier: TIER2
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+RAW_SOULSTEEL:
+  base:
+    material: RAW_IRON
+    name: Raw Soulsteel
+    lore-format: material
+    custom-model-data: 7.0
+    tier: TIER3
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+SOULSTEEL_INGOT:
+  base:
+    material: RAW_IRON
+    name: Soulsteel Ingot
+    lore-format: material
+    custom-model-data: 8.0
+    tier: TIER3
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+SOUL_NETHERITE_INGOT:
+  base:
+    material: RAW_IRON
+    name: Soul Netherite Ingot
+    lore-format: material
+    custom-model-data: 9.0
+    tier: TIER3
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+GILDED_NETHERITE_INGOT:
+  base:
+    material: RAW_IRON
+    name: Gilded Netherite Ingot
+    lore-format: material
+    custom-model-data: 10.0
+    tier: TIER3
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+WARDEN_INGOT:
+  base:
+    material: RAW_IRON
+    name: Warden Ingot
+    lore-format: material
+    custom-model-data: 11.0
+    tier: TIER4
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    
+RAW_HEXTECH:
+  base:
+    material: RAW_IRON
+    name: Raw Hextech
+    lore-format: material
+    custom-model-data: 13.0
+    tier: TIER5
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+HEXTECH_INGOT:
+  base:
+    material: RAW_IRON
+    name: Hextech Ingot
+    lore-format: material
+    custom-model-data: 12.0
+    tier: TIER5
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+KEY_FRAGMENT:
+  base:
+    material: WHITE_DYE
+    name: Key Fragment
+    lore-format: material
+    custom-model-data: 1.0
+    tier: TIER2
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+LAB_SAMPLE:
+  base:
+    material: WHITE_DYE
+    name: Lab Sample
+    lore-format: material
+    custom-model-data: 2.0
+    tier: TIER2
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+HEXTECH_CRYSTAL:
+  base:
+    material: WHITE_DYE
+    name: <#65a5c9>Hextech Crystal
+    lore:
+    - <#404547>A magical artifact capable of
+    - <#404547>harnessing extremely volatile
+    - <#404547>hextech energy.
+    lore-format: material
+    custom-model-data: 3.0
+    tier: TIER4
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+INFECTED_FLESH:
+  base:
+    material: WHITE_DYE
+    name: Infected Flesh
+    lore-format: material
+    custom-model-data: 4.0
+    tier: TIER2
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+
+SWORD_HANDLE:
+  base:
+    material: WHITE_DYE
+    name: Sword Handle
+    lore-format: material
+    custom-model-data: 6.0
+    tier: TIER1
+    lore:
+    - <#828aab>- ǫᴜᴇsᴛ ɪᴛᴇᴍ -
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true

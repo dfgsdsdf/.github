@@ -1,0 +1,45 @@
+trade-accepted:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 59
+    textures:
+    - prism_skyblock/interface/gui_textures/trade/accepted
+trade-waiting:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 60
+    textures:
+    - prism_skyblock/interface/gui_textures/trade/waiting
+trade-coins:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 61
+    textures:
+    - prism_skyblock/interface/gui_textures/trade/coins
+trade-cancel:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 62
+    textures:
+    - prism_skyblock/interface/gui_textures/trade/cancel
+trade-alert:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 63
+    textures:
+    - prism_skyblock/interface/gui_textures/trade/alert

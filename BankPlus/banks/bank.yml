@@ -1,0 +1,201 @@
+# If you want to know more about bank guis: https://github.com/Pulsih/BankPlus/wiki/Bank-Config
+Title: "&fꐮꀹ ꐲꐰꐮꐭꐬ#3b3b3bPersonal Bank &m                     "
+Lines: 2
+Update-Delay: 10
+Filler:
+  Enabled: false
+  Material: "WHITE_STAINED_GLASS_PANE"
+  Glowing: false
+
+Settings:
+  Permission: ""
+
+  Give-Interest-If-Not-Available: false
+
+  # This is the item that will be showed up in the
+  # banks-gui if the multiple-banks module is enabled.
+  #
+  # You can also use heads and placeholders.
+  BanksGuiItem:
+    # The item showed in the banks gui
+    # if this bank is available.
+    Available:
+      Material: "CHEST"
+      Displayname: "&a&lBANK"
+      Lore:
+        - "&aYour main bank :)"
+        - ""
+        - "&7Bank capacity: &a%bankplus_capacity{bank}%"
+        - "&7Bank level: &a%bankplus_level{bank}%"
+        - "&7Bank money: &a%bankplus_balance_formatted{bank}%"
+        - ""
+        - "&aAvailable: &2YES"
+      Glowing: true
+
+    # The item showed in the banks gui
+    # if this bank is unavailable.
+    Unavailable:
+      Material: "CHEST"
+      Displayname: "&a&lBANK"
+      Lore:
+        - "&aYour main bank :)"
+        - ""
+        - "&7Bank capacity: &a%bankplus_capacity{bank}%"
+        - "&7Bank level: &a%bankplus_level{bank}%"
+        - "&7Bank money: &a%bankplus_balance_formatted{bank}%"
+        - ""
+        - "&aAvailable: &cNO"
+        - "&aNeeded permission: &bbankplus.use"
+      Glowing: true
+
+# These are the bank levels, you can upgrade a bank
+# by running the command /bank upgrade <bank> or by
+# using the action in the gui "Upgrade".
+#
+# If the levels section isn't specified, the bank will
+# have no upgrades and will use the default values set
+# in the config.yml
+Levels:
+  1: 
+    Capacity: "50000000"
+    Interest: "1%"
+    Offline-Interest: "1%"
+    Max-Interest-Amount: 250000
+  2:
+    Cost: "5000000"
+    Remove-Required-Items: true
+    Capacity: "100000000"
+    Interest: "1.5%"
+    Offline-Interest: "1.5%"
+    Max-Interest-Amount: 300000
+  3:
+    Cost: "10000000"
+    Remove-Required-Items: true
+    Capacity: "250000000"
+    Interest: "2%"
+    Offline-Interest: "2%"
+    Max-Interest-Amount: 350000
+  4:
+    Cost: "25000000"
+    Remove-Required-Items: true
+    Capacity: "500000000"
+    Interest: "2%"
+    Offline-Interest: "2%"
+    Max-Interest-Amount: 400000
+  5:
+    Cost: "50000000"
+    Remove-Required-Items: true
+    Capacity: "1000000000"
+    Interest: "2%"
+    Offline-Interest: "2%"
+    Max-Interest-Amount: 500000
+
+Items:
+  Personal-Info:
+    Material: "BOOK"
+    CustomModelData: 43
+    Displayname: "#e3a95d   Yᴏᴜʀ Bᴀɴᴋ Aᴄᴄᴏᴜɴᴛ"
+    Slot: 6
+    Lore:
+      - "&8          ᴛɪᴇʀ %bankplus_level%"
+      - ""
+      - "#ba8d52  → &6%bankplus_balance_formatted%&8/%bankplus_capacity_formatted% &6Coins"
+      - ""
+      - "#bd7f2f▶ Iɴᴛᴇʀᴇsᴛ! #ba8d52(%bankplus_interest_rate%% rate)"
+      - "#baa88f %bankplus_interest_cooldown%"
+      - "&8    ↓"
+      - "#ed9726 +%bankplus_next_interest_formatted% Coins"
+
+  Upgrade:
+    Material: "BOOK"
+    CustomModelData: 44
+    Slot: 15
+    Displayname: "#dea75f↑ Upgrade your account"
+    Lore:
+      Default:
+        - ""
+        - "#b3864b  Tɪᴇʀ &f%bankplus_level% &8→ &6%bankplus_next_level%"
+        - " #b37422↑Capacity: &8&m%bankplus_capacity_formatted%&8 &7→ &6%bankplus_next_level_capacity_formatted%"
+        - " #b37422↑Interest: &8&m%bankplus_interest_rate%%&8 &7→ &6%bankplus_next_level_interest_rate%%"
+        - ""
+        - "&8Costs"
+        - "&6 %bankplus_next_level_cost% Coins"
+      5:
+        - ""
+        - "&7Your account is &6&lMAXED&7!"
+    Actions:
+      - "[UPGRADE]"
+
+  WithdrawButton2:
+    Material: "BOOK"
+    CustomModelData: 48
+    Displayname: "&cWithdraw &f25% Coins"
+    Slot: 3
+    Lore: []
+    Actions:
+      - "[WITHDRAW] 25%"
+
+  WithdrawButton3:
+    Material: "BOOK"
+    CustomModelData: 49
+    Displayname: "&cWithdraw &f50% Coins"
+    Slot: 4
+    Lore: []
+    Actions:
+      - "[WITHDRAW] 50%"
+
+  WithdrawButton4:
+    Material: "BOOK"
+    CustomModelData: 50
+    Slot: 12
+    Displayname: "&cWithdraw &fAll Coins"
+    Lore: []
+    Actions:
+      - "[WITHDRAW] 100%"
+
+  WithdrawButton5:
+    Material: "BOOK"
+    CustomModelData: 51
+    Slot: 13
+    Displayname: "&cWithdraw &fCustom Coins"
+    Lore:
+      - "&7Type &athrough chat&7 the number you withdraw"
+    Actions:
+      - "[WITHDRAW] CUSTOM"
+
+  DepositButton2:
+    Material: "BOOK"
+    CustomModelData: 42
+    Slot: 8
+    Displayname: "&aDeposit &f25% Coins"
+    Lore: []
+    Actions:
+      - "[DEPOSIT] 25%"
+
+  DepositButton3:
+    Material: "BOOK"
+    CustomModelData: 45
+    Slot: 9
+    Displayname: "&aDeposit &f50% Coins"
+    Lore: []
+    Actions:
+      - "[DEPOSIT] 50%"
+
+  DepositButton4:
+    Material: "BOOK"
+    CustomModelData: 46
+    Slot: 17
+    Displayname: "&aDeposit &fAll Coins"
+    Lore: []
+    Actions:
+      - "[DEPOSIT] 100%"
+
+  DepositButton5:
+    Material: "BOOK"
+    CustomModelData: 47
+    Slot: 18
+    Displayname: "&aDeposit &fCustom Coins"
+    Lore:
+      - "&7Type &athrough chat&7 the number you deposit"
+    Actions:
+      - "[DEPOSIT] CUSTOM"

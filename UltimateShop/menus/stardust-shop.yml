@@ -1,0 +1,28 @@
+title: '&fꐮꂜ ꐱꐰꐡ %coinsengine_balance_rounded_stardust%'
+size: 54
+
+open-actions:
+  - 'sound: shopbell;;1;;1'
+
+layout:
+  - 'ABCDEFGHI'
+  - 'JKLMNOPQR'
+  - 'STUVWXYZ!'
+  - '@#$%^&*()'
+  - '[]\;,./_+'
+  - '000000000'
+
+buttons:
+  3:
+    display-item:
+      material: BOOK
+      custom-model-data: 27
+      name: '&#556db5✉ &#6884d9Pʟᴀʏᴇʀ''s Pᴜʀsᴇ'
+      lore:
+        - ''
+        - '&#515a75Your purse contains:'
+        - ' %coinsengine_balance_coin%'
+        - ' %coinsengine_balance_ruby%'
+        - ''
+        - '&#515a75Your bank contains:'
+        - ' &#d1884f%bankplus_balance_formatted% Coins'

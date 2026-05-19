@@ -1,0 +1,109 @@
+display:
+    name: 'Witch'
+    
+    attribute-lore:
+    - '&f▶ ʙᴀꜱᴇ ꜱᴛᴀᴛꜱ'
+    - ' <#4965ab> 30 Max Mana &8(<#4965ab>↑+1.5&8)'
+    - ' <#2c488f> 0.3 Mana Regen &8(<#2c488f>↑+0.05&8)'
+    - ' <#c96166> 5% Skill Damage &8(<#c96166>↑+0.5&8)'
+    - '&8[↑ = stats gain per level]'
+    - '&7'
+    - '&e       ᴄʟɪᴄᴋ ᴛᴏ ꜱᴇʟᴇᴄᴛ!'
+    - '&8    Costs 1 faction token!'
+
+    lore:
+    - '<#c2b0d6>Originated from the ancient'
+    - '<#c2b0d6>Coven, faction of the mystic'
+    - '<#c2b0d6>arcane has long stood their'
+    - '<#c2b0d6>ground. Whether friends or'
+    - '<#c2b0d6>foes, they are a force to be'
+    - '<#c2b0d6>reckoned with.'
+
+    item: BARRIER:1
+
+attributes:
+    max-mana:
+        base: 30
+        per-level: 1.5
+    mana-regeneration:
+        base: 0.3
+        per-level: 0.05
+    skill-damage:
+        base: 5
+        per-level: 0.5
+
+exp-curve: levels
+
+exp-table: faction_rewards
+
+max-level: 30
+
+skill-trees: []
+
+
+skill-slots:
+    1:
+        name: "<#bae6e6>♦ <#438c8c>%mmocore_bound_1%"
+        lore: []
+
+mana:
+    char: ■
+    icon: '&9⭐'
+    color:
+        full: AQUA
+        half: BLUE
+        empty: WHITE
+    name: 'Mana'
+
+cast-particle:
+    particle: SPELL_INSTANT
+
+resource:
+    mana:
+        type: MAX
+        value:
+            base: 5
+            per-level: .1
+            max: 15
+        off-combat: true
+
+options:
+    off-combat-health-regen: true
+    needs-permission: false
+
+skills:
+    AMBERS:
+        level: 1
+        max-level: 10
+        needs-bound: true
+        percent:
+            base: 10.0
+            per-level: 3.0
+        cooldown:
+            base: 3.0
+            per-level: -0.2
+    NEPTUNE_GIFT:
+        level: 10
+        max-level: 10
+        needs-bound: true
+        extra:
+            base: 20.0
+            per-level: 2.0
+    SNEAKY_PICKY:
+        level: 25
+        max-level: 10
+        needs-bound: true
+        extra:
+            base: 25.0
+            per-level: 2.0
+        mana:
+            base: 0
+        cooldown:
+            base: 0
+    DIVINE_INTERVENTION:
+        max-level: 10
+        unlocked-by-default: false
+
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

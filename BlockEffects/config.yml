@@ -1,0 +1,42 @@
+# ################
+# General Settings
+# ################
+
+# This option controls how often (in ticks) particles spawn.
+# You can use https://mapmaking.fr/tick/ for conversion.
+delay: 20
+
+# ########
+# Messages
+# ########
+
+prefix: '#00b2ff&lB#00b2ff&lE &8&l|'
+
+reload: '%prefix% #F0F3FAYou have &asuccessfully #F0F3FAreloaded #00b2ffBlockEffects %1%#F0F3FA!'
+create: '%prefix% #F0F3FAYou have created the effect #00b2ff%1% #F0F3FAwith the particle #00b2ff%2%#F0F3FA.'
+remove: '%prefix% #F0F3FAYou have removed the effect #00b2ff%1%#F0F3FA.'
+flag: '%prefix% #F0F3FAYou have set #00b2ff%1% #F0F3FAto #00b2ff%2% #F0F3FAfor #00b2ff%3%#F0F3FA.'
+move: '%prefix% #F0F3FAYou have moved #00b2ff%1% #F0F3FAto #00b2ff%2%#F0F3FA.'
+list: '%prefix% #F0F3FAThe following effects are active: #00b2ff%1%'
+
+info: |-
+    &8&m                                                                                 &r
+    #00b2ff&l%1% Information:&r
+    %2%
+    &8&m                                                                                 &r
+    
+help: |-
+    &8&m                                                                                 &r
+    &8&l| #00b2ff/be reload: #F0F3FAReloads plugin files
+    &8&l| #00b2ff/be create [name] [effect]: #F0F3FACreates a new effect
+    &8&l| #00b2ff/be remove [name]: #F0F3FADeletes an active effect
+    &8&l| #00b2ff/be flag [name] [flag] [value]: #F0F3FAEdits effects visually
+    &8&l| #00b2ff/be move [name]: #F0F3FAChanges an effect's location
+    &8&l| #00b2ff/be info [name]: #F0F3FAView information on an effect
+    &8&l| #00b2ff/be list: #F0F3FADisplays all active effects
+    &8&m                                                                                 &r
+
+no_permission: '%prefix% #F0F3FAYou don''t have access to this command.'
+incorrect_usage: '%prefix% #F0F3FAIncorrect usage, use "#00b2ff/be help#F0F3FA" to learn more.'
+not_found: '%prefix% #F0F3FAThe effect &9%1% #F0F3FAcouldn''t be found.'
+unknown_flag: '%prefix% #F0F3FAThat flag couldn''t be found.'

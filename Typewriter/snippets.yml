@@ -1,0 +1,475 @@
+quest:
+  tracked:
+    none: None tracked
+  objective:
+    inactive: <gray><display></gray>
+    showing: <white><display></white>
+    interact_entity: Interact with <entity>
+chat:
+  # The amount of messages displayed in the chat history during a dialogue
+  darken-limit: 12
+  # The amount of padding between the dialogue and the chat history
+  spacing: 3
+dialogue:
+  actionbar:
+    format: '<white><speaker><reset><gray>: <white><message><padding>'
+  spoken:
+    format: |-
+      <speaker>
+      <reset><message>
+
+      <next_color>             <dark_gray>[<#b6bbd6>Pʀᴇss<white> <confirmation_key> </white><#b6bbd6>ᴛᴏ <finish_text><dark_gray>]
+    instruction:
+      next: ᴄᴏɴᴛɪɴᴜᴇ
+      finish: ғɪɴɪsʜ
+      color:
+        base: <gray>
+        highlight: <red>
+      ticks:
+        highlighted: 10
+        base: 30
+    padding: '             '
+    minLines: 3
+    maxLineLength: 35
+entity:
+  nameplate: <other>
+  name:
+    offset: 0.2
+    color: '#40000000'
+  activity:
+    look_close:
+      range: 10.0
+cinematic:
+  dialogue:
+    spoken:
+      format: |-
+        <speaker>
+        <reset><message>
+      padding: '             '
+      minLines: 4
+      maxLineLength: 35
+      percentage: 0.5
+    subtitle:
+      format: <white><message>
+      speaker:
+        format: <gray>[ <reset><bold><speaker></bold><reset><gray> ]
+      percentage: 0.4
+objective:
+  entity:
+    indicator:
+      tracked: <gold><b>❗
+      normal: <blue><b>❓
+      dialogue: <white>ꁡ
+action:
+  simple_message:
+    format: <message>
+  message:
+    format: |2
+
+      <speaker>
+      <reset><message>
+  padding: '             '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#e1ea8b9fce8c48290142cc325750ea51

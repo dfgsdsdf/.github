@@ -1,0 +1,18 @@
+shop-buy:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/shop/buy
+    custom_model_data: 52
+shop-sell:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/shop/sell
+    custom_model_data: 53

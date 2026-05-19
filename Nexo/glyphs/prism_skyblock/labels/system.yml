@@ -1,0 +1,243 @@
+system-success:
+  char: ꀒ
+  texture: prism_skyblock/labels/system/success.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-fail:
+  char: ꀓ
+  texture: prism_skyblock/labels/system/fail.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-npc:
+  char: ꀱ
+  texture: prism_skyblock/labels/system/npc.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+system-warning:
+  char: ꀶ
+  texture: prism_skyblock/labels/system/warning.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-info:
+  char: ꀷ
+  texture: prism_skyblock/labels/system/info.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-dialogue:
+  char: ꁡ
+  texture: prism_skyblock/labels/system/dialogue.png
+  ascent: 8
+  height: 9
+  chat:
+    permission: somerandom.perm
+
+system-leftclick:
+  char: ꂀ
+  texture: prism_skyblock/labels/system/left_click.png
+  ascent: 8
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-rightclick:
+  char: ꂁ
+  texture: prism_skyblock/labels/system/right_click.png
+  ascent: 8
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-lshift:
+  char: ꀍ
+  texture: prism_skyblock/labels/system/lshift.png
+  ascent: 8
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-lshiftclick:
+  char: ꂫ
+  texture: prism_skyblock/labels/system/lshift_click.png
+  ascent: 8
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-rshift:
+  char: ꂬ
+  texture: prism_skyblock/labels/system/rshift.png
+  ascent: 8
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-rshiftclick:
+  char: ꂭ
+  texture: prism_skyblock/labels/system/rshift_click.png
+  ascent: 8
+  height: 7
+  chat:
+    permission: somerandom.perm
+
+elements-hp:
+  char: ꂆ
+  texture: prism_skyblock/labels/elements/hp.png
+  ascent: 8
+  height: 9
+  chat:
+    permission: somerandom.perm
+elements-armor:
+  char: ꂇ
+  texture: prism_skyblock/labels/elements/armor.png
+  ascent: 8
+  height: 9
+  chat:
+    permission: somerandom.perm
+elements-damage:
+  char: ꂈ
+  texture: prism_skyblock/labels/elements/damage.png
+  ascent: 8
+  height: 9
+  chat:
+    permission: somerandom.perm
+
+elements-sword:
+  char: ꂯ
+  texture: prism_skyblock/labels/elements/iron_sword.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-bow:
+  char: ꂰ
+  texture: prism_skyblock/labels/elements/bow.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-crossbow:
+  char: ꂾ
+  texture: prism_skyblock/labels/elements/crossbow.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-elytra:
+  char: ꂿ
+  texture: prism_skyblock/labels/elements/elytra.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-fishingrod:
+  char: ꃀ
+  texture: prism_skyblock/labels/elements/fishing_rod.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-shield:
+  char: ꃁ
+  texture: prism_skyblock/labels/elements/shield.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-trident:
+  char: ꃂ
+  texture: prism_skyblock/labels/elements/trident.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-pickaxe:
+  char: ꂲ
+  texture: prism_skyblock/labels/elements/iron_pickaxe.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-axe:
+  char: ꂳ
+  texture: prism_skyblock/labels/elements/iron_axe.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-hoe:
+  char: ꂴ
+  texture: prism_skyblock/labels/elements/iron_hoe.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-shovel:
+  char: ꂵ
+  texture: prism_skyblock/labels/elements/iron_shovel.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-helmet:
+  char: ꂶ
+  texture: prism_skyblock/labels/elements/iron_helmet.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-chestplate:
+  char: ꂷ
+  texture: prism_skyblock/labels/elements/iron_chestplate.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-leggings:
+  char: ꂸ
+  texture: prism_skyblock/labels/elements/iron_leggings.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+elements-boots:
+  char: ꂹ
+  texture: prism_skyblock/labels/elements/iron_boots.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+
+system-dungeon:
+  char: ꁈ
+  texture: prism_skyblock/labels/system/dungeon.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+system-ancient_enchant:
+  char: ꁐ
+  texture: prism_skyblock/labels/system/ancient_enchant.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+system-scroll:
+  char: ꂞ
+  texture: prism_skyblock/labels/elements/scroll.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+
+system-infobox:
+  char: ꂠ
+  texture: prism_skyblock/interface/gui_textures/codex/infobox
+  ascent: 30
+  height: 128
+  chat:
+    permission: somerandom.perm

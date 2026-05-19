@@ -1,0 +1,197 @@
+INFECTED_SCIENTIST:
+  Type: ZOMBIE
+  Display: "&cInfected Scientist &8[&c<caster.hp{round=0}><red><&heart></red>&8]"
+  Health: 40
+  Armor: 5
+  Damage: 4
+  Disguise: player <inherit> setSkin infected_scientist setDynamicName true
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=INFECTED_FLESH} 1 0.1
+  Equipment:
+  - leather_leggings{color=WHITE} legs
+  - leather_boots{color=WHITE} boots
+  - SHEARS HAND
+  Skills:
+  - setname{name=<caster.name>;delay=2} @self ~onDamaged
+  - randomskill{skills=
+      [- shootpotion{type=SLOW;duration=100;level=1;velocity=5} @target],
+      [- shootpotion{type=POISON;duration=100;level=2;velocity=5} @target],
+      [- shootpotion{type=WEAKNESS;duration=100;level=2;velocity=5} @target]} ~onAttack 0.3
+ 
+UNCAGED_SUBJECT:
+  Type: ZOMBIE
+  Display: "&cUncaged Subject &8[&c<caster.hp{round=0}><red><&heart></red>&8]"
+  Health: 35
+  Armor: 0
+  Damage: 5
+  Disguise: villager setbiome swamp setprofession fletcher setDynamicName true
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=INFECTED_FLESH} 1 0.1
+  Equipment:
+  - leather_leggings{color=WHITE} legs
+  - leather_boots{color=WHITE} boots
+  - SHEARS HAND
+  Skills:
+  - setname{name=<caster.name>;delay=1} @self ~onDamaged
+  - summonareaeffectcloud{t=POISON;d=120;pd=40;l=1;r=2;p=Spore_Blossom_Air} @self ~onDeath 0.1
+ 
+HALF_CONVERTED_RESEARCHER:
+  Type: ZOMBIE
+  Display: "&cHalf-Converted Researcher &8[&c<caster.hp{round=0}><red><&heart></red>&8]"
+  Health: 65
+  Armor: 0
+  Damage: 10
+  Disguise: villager setbiome swamp setprofession cartographer setDynamicName true
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=INFECTED_FLESH} 1 0.1
+  Equipment:
+  - leather_leggings{color=WHITE} legs
+  - leather_boots{color=WHITE} boots
+  - SHEARS HAND
+  Skills:
+  - setname{name=<caster.name>;delay=1} @self ~onDamaged
+  - summonareaeffectcloud{t=POISON;d=120;pd=40;l=3;r=2;p=Spore_Blossom_Air} @self ~onDeath 0.1
+
+CONVERTED_UNDEAD:
+  Type: ZOMBIE
+  Display: "&cConverted Undead &8[&c<caster.hp{round=0}><red><&heart></red>&8]"
+  Health: 25
+  Armor: 0
+  Damage: 10
+  Disguise: ZOMBIFIED_PIGLIN setDynamicName true
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=INFECTED_FLESH} 1 0.1
+  Skills:
+  - setname{name=<caster.name>;delay=1} @self ~onDamaged
+  - summon{type=SILVER_PARASITE;amount=2;radius=4} ~onDeath 0.3
+
+SILVER_PARASITE:
+  Type: SILVERFISH
+  Display: "&cSilver Parasite &8[&c<caster.hp{round=0}><red><&heart></red>&8]"
+  Health: 10
+  Armor: 3
+  Damage: 3
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=INFECTED_FLESH} 1 0.1
+  Skills:
+  - setname{name=<caster.name>;delay=1} @self ~onDamaged
+
+CONFUSED_HEXTECHNOLOGIST:
+  Type: ZOMBIE
+  Display: "&cConfused Hextechnologist &8[&c<caster.hp{round=0}><red><&heart></red>&8]"
+  Health: 100
+  Armor: 0
+  Damage: 0
+  Disguise: illusioner setDynamicName true
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=INFECTED_FLESH} 1 0.5
+  AIGoalSelectors:
+  - 0 clear
+  - 1 movetowardstarget
+  - 2 float
+  - 3 lookatplayers
+  - 4 fleesun
+  AITargetSelectors:
+  - 0 clear
+  - 1 threatholder
+  - 2 players
+  - 3 hurtbytarget
+  Skills:
+  - setname{name=<caster.name>;delay=1} @self ~onDamaged
+  - skill{s=HexBolt} @target ~onTimer:200
+
+DRAEDON_DISCIPLE:
+  Type: ZOMBIE
+  Display: "&dDraedon Disciple &8[&c<caster.hp{round=0}><red><&heart></red>&8]"
+  Health: 1000
+  Armor: 6
+  Damage: 8
+  Disguise: evoker setDynamicName true
+  Faction: dungeon
+  Options:
+    AlwaysShowName: true
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventTransformation: true
+    PreventConversion: true
+    PreventJockeyMounts: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=INFECTED_FLESH} 1-3 1
+  AIGoalSelectors:
+  - 0 clear
+  - 1 movetowardstarget
+  - 2 float
+  - 3 lookatplayers
+  - 4 fleesun
+  AITargetSelectors:
+  - 0 clear
+  - 1 threatholder
+  - 2 players
+  - 3 hurtbytarget
+  Skills:
+  - setname{name=<caster.name>;delay=1} @self ~onDamaged
+  - dsignal{s=loh_bossteleport} ~onDeath
+  - randomskill{skills=HexBolt,HexWave} ~onTimer:200

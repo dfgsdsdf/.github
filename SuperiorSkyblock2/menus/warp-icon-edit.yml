@@ -1,0 +1,44 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&{HEX:5e5e5e}Island Warps > &{HEX:3b3b3b}{0}'
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+type: HOPPER
+
+pattern:
+  - '! $ ^ ~ %'
+
+icon-type: '!'
+icon-rename: '~'
+icon-relore: '$'
+icon-confirm: '%'
+icon-slots: '^'
+
+items:
+  '!':
+    type: DIAMOND
+    name: '&6Set Type'
+  '~':
+    type: ANVIL
+    name: '&aSet Name'
+  '$':
+    type: PAPER
+    name: '&dSet Lore'
+  '%':
+    type: EMERALD
+    name: '&eConfirm Changes'
+  '^':
+    type: STONE
+
+sounds:
+  '%':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

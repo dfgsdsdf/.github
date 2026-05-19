@@ -1,0 +1,131 @@
+offset_1:
+  texture: required/null
+  ascent: -32768
+  height: -1
+  char: ꐠ
+
+offset_2:
+  texture: required/null
+  ascent: -32768
+  height: 0
+  char: ꐡ
+
+offset_4:
+  texture: required/null
+  ascent: -32768
+  height: 2
+  char: ꐢ
+
+offset_8:
+  texture: required/null
+  ascent: -32768
+  height: 6
+  char: ꐣ
+
+offset_16:
+  texture: required/null
+  ascent: -32768
+  height: 14
+  char: ꐤ
+
+offset_32:
+  texture: required/null
+  ascent: -32768
+  height: 30
+  char: ꐥ
+
+offset_64:
+  texture: required/null
+  ascent: -32768
+  height: 62
+  char: ꐦ
+
+offset_128:
+  texture: required/null
+  ascent: -32768
+  height: 126
+  char: ꐧ
+
+offset_256:
+  texture: required/null
+  ascent: -32768
+  height: 254
+  char: ꐨ
+
+offset_512:
+  texture: required/null
+  ascent: -32768
+  height: 510
+  char: ꐩ
+
+offset_1024:
+  texture: required/null
+  ascent: -32768
+  height: 1022
+  char: ꐪ
+
+neg_offset_1:
+  texture: required/null
+  ascent: -32768
+  height: -3
+  char: ꐫ
+
+neg_offset_2:
+  texture: required/null
+  ascent: -32768
+  height: -4
+  char: ꐬ
+
+neg_offset_4:
+  texture: required/null
+  ascent: -32768
+  height: -6
+  char: ꐭ
+
+neg_offset_8:
+  texture: required/null
+  ascent: -32768
+  height: -10
+  char: ꐮ
+
+neg_offset_16:
+  texture: required/null
+  ascent: -32768
+  height: -18
+  char: ꐯ
+
+neg_offset_32:
+  texture: required/null
+  ascent: -32768
+  height: -34
+  char: ꐰ
+
+neg_offset_64:
+  texture: required/null
+  ascent: -32768
+  height: -66
+  char: ꐱ
+
+neg_offset_128:
+  texture: required/null
+  ascent: -32768
+  height: -130
+  char: ꐲ
+
+neg_offset_256:
+  texture: required/null
+  ascent: -32768
+  height: -258
+  char: ꐳ
+
+neg_offset_512:
+  texture: required/null
+  ascent: -32768
+  height: -514
+  char: ꐴ
+
+neg_offset_1024:
+  texture: required/null
+  ascent: -32768
+  height: -1026
+  char: ꐵ

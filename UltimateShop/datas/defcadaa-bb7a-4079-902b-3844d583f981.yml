@@ -1,0 +1,139 @@
+useTimes:
+  logs:
+    D: {}
+    I: {}
+    N: {}
+    E: {}
+    J: {}
+    F: {}
+    C: {}
+    A: {}
+    H: {}
+    K: {}
+    G: {}
+    B: {}
+    L: {}
+    M: {}
+    O: {}
+  flowers:
+    A: {}
+    L: {}
+    B: {}
+    Q:
+      buyUseTimes: 1
+      lastBuyTime: '2025-11-14 18:31:34'
+    E: {}
+    G: {}
+    D: {}
+    C: {}
+    I: {}
+    N: {}
+    J: {}
+    F: {}
+    P:
+      buyUseTimes: 1
+      lastBuyTime: '2025-11-14 18:31:35'
+    K: {}
+    O: {}
+    H: {}
+    M: {}
+  blocks:
+    Z: {}
+    (: {}
+    N: {}
+    J: {}
+    ;: {}
+    '&': {}
+    H: {}
+    P: {}
+    M: {}
+    W: {}
+    E: {}
+    U: {}
+    Q: {}
+    S: {}
+    '%': {}
+    \: {}
+    F: {}
+    ^: {}
+    $: {}
+    G: {}
+    '#': {}
+    T: {}
+    '@': {}
+    ']': {}
+    '!': {}
+    R: {}
+    Y: {}
+    '[': {}
+    O: {}
+    K: {}
+    '*': {}
+    C: {}
+    V: {}
+    L: {}
+    ): {}
+    B: {}
+    X: {}
+    I: {}
+    D: {}
+    A: {}
+  drops:
+    G: {}
+    J: {}
+    H: {}
+    K:
+      lastSellTime: '2025-10-21 14:10:21'
+      sellUseTimes: 1
+    E:
+      buyUseTimes: 2
+      lastBuyTime: '2025-10-26 02:03:44'
+    I: {}
+    B: {}
+    D: {}
+    C: {}
+    O: {}
+    N:
+      buyUseTimes: 3
+      lastBuyTime: '2025-11-08 11:54:59'
+    A: {}
+    M:
+      buyUseTimes: 1
+      lastBuyTime: '2025-11-12 23:25:26'
+    L: {}
+    F: {}
+  fish:
+    A: {}
+    B: {}
+    F: {}
+    D: {}
+    E: {}
+    C: {}
+  minerals:
+    M:
+      lastSellTime: '2025-11-14 01:58:51'
+      sellUseTimes: 6
+    C: {}
+    A: {}
+    E: {}
+    H: {}
+    K:
+      lastSellTime: '2025-11-14 01:58:53'
+      sellUseTimes: 10
+    G: {}
+    I: {}
+    F: {}
+    B: {}
+    L: {}
+    D: {}
+    J: {}
+  stardust:
+    A:
+      buyUseTimes: 1
+      lastBuyTime: '2025-11-09 00:45:20'
+    C: {}
+    B: {}
+    E:
+      buyUseTimes: 2
+      lastBuyTime: '2025-11-09 00:43:30'
+    D: {}

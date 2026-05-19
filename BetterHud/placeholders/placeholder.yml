@@ -1,0 +1,5 @@
+test:
+  variable: online
+  placeholder: "%server_online%"
+  update: 20
+  async: false

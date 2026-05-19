@@ -1,0 +1,372 @@
+GILDED_NETHERITE_HELMET:
+  base:
+    material: CHAINMAIL_HELMET
+    name: Gilded Netherite Helmet
+    tier: TIER3
+    set: GILDED_NETHERITE
+    max-health: 1.0
+    armor: 3.0
+    armor-toughness: 3.0
+    knockback-resistance: 0.1
+    custom-model-data: 3
+    trim-pattern: nexo:gilded_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_helmet - 1.0..
+          - m material gilded_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+GILDED_NETHERITE_CHESTPLATE:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: Gilded Netherite Chestplate
+    tier: TIER3
+    set: GILDED_NETHERITE
+    max-health: 1.0
+    armor: 8.0
+    armor-toughness: 4.0
+    knockback-resistance: 0.1
+    custom-model-data: 3
+    trim-pattern: nexo:gilded_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_chestplate - 1.0..
+          - m material gilded_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+GILDED_NETHERITE_LEGGINGS:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: Gilded Netherite Leggings
+    tier: TIER3
+    set: GILDED_NETHERITE
+    max-health: 1.0
+    armor: 6.0
+    armor-toughness: 4.0
+    knockback-resistance: 0.1
+    custom-model-data: 3
+    trim-pattern: nexo:gilded_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_leggings - 1.0..
+          - m material gilded_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+GILDED_NETHERITE_BOOTS:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: Gilded Netherite Boots
+    tier: TIER3
+    set: GILDED_NETHERITE
+    max-health: 1.0
+    armor: 3.0
+    armor-toughness: 3.0
+    knockback-resistance: 0.1
+    custom-model-data: 3
+    trim-pattern: nexo:gilded_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_boots - 1.0..
+          - m material gilded_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+
+SOUL_NETHERITE_HELMET:
+  base:
+    material: CHAINMAIL_HELMET
+    name: Soul Netherite Helmet
+    tier: TIER3
+    set: SOUL_NETHERITE
+    max-health: 1.0
+    armor: 3.0
+    armor-toughness: 3.0
+    knockback-resistance: 0.1
+    custom-model-data: 4
+    trim-pattern: nexo:soul_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_helmet - 1.0..
+          - m material soul_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SOUL_NETHERITE_CHESTPLATE:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: Soul Netherite Chestplate
+    tier: TIER3
+    set: SOUL_NETHERITE
+    max-health: 1.0
+    armor: 8.0
+    armor-toughness: 4.0
+    knockback-resistance: 0.1
+    custom-model-data: 4
+    trim-pattern: nexo:soul_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_chestplate - 1.0..
+          - m material soul_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SOUL_NETHERITE_LEGGINGS:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: Soul Netherite Leggings
+    tier: TIER3
+    set: SOUL_NETHERITE
+    max-health: 1.0
+    armor: 6.0
+    armor-toughness: 4.0
+    knockback-resistance: 0.1
+    custom-model-data: 4
+    trim-pattern: nexo:soul_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_leggings - 1.0..
+          - m material soul_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SOUL_NETHERITE_BOOTS:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: Soul Netherite Boots
+    tier: TIER3
+    set: SOUL_NETHERITE
+    max-health: 1.0
+    armor: 3.0
+    armor-toughness: 3.0
+    knockback-resistance: 0.1
+    custom-model-data: 4
+    trim-pattern: nexo:soul_netherite
+    hide-armor-trim: true
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v diamond_boots - 1.0..
+          - m material soul_netherite_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+WARDEN_HELMET:
+  base:
+    material: CHAINMAIL_HELMET
+    name: Warden Helmet
+    tier: TIER4
+    set: WARDEN
+    max-health: 1.0
+    armor: 4.0
+    armor-toughness: 3.0
+    knockback-resistance: 0.1
+    custom-model-data: 2
+    trim-pattern: nexo:warden
+    hide-armor-trim: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material warden_ingot 1.0..|m material warden_ingot 1.0..|m material
+            warden_ingot 1.0..
+          - m material warden_ingot 1.0..|v AIR 0 1..|m material warden_ingot 1.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+WARDEN_CHESTPLATE:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: Warden Chestplate
+    tier: TIER4
+    set: WARDEN
+    max-health: 2.0
+    armor: 8.0
+    armor-toughness: 4.0
+    knockback-resistance: 0.2
+    custom-model-data: 2
+    trim-pattern: nexo:warden
+    hide-armor-trim: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material warden_ingot 1.0..|v AIR 0 1..|m material warden_ingot 1.0..
+          - m material warden_ingot 1.0..|m material warden_ingot 1.0..|m material
+            warden_ingot 1.0..
+          - m material warden_ingot 1.0..|m material warden_ingot 1.0..|m material
+            warden_ingot 1.0..
+WARDEN_LEGGINGS:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: Warden Leggings
+    tier: TIER4
+    set: WARDEN
+    max-health: 1.0
+    armor: 7.0
+    armor-toughness: 4.0
+    knockback-resistance: 0.2
+    custom-model-data: 2
+    hide-armor-trim: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material warden_ingot 1.0..|m material warden_ingot 1.0..|m material
+            warden_ingot 1.0..
+          - m material warden_ingot 1.0..|v AIR 0 1..|m material warden_ingot 1.0..
+          - m material warden_ingot 1.0..|v AIR 0 1..|m material warden_ingot 1.0..
+    trim-pattern: nexo:warden
+WARDEN_BOOTS:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: Warden Boots
+    tier: TIER4
+    set: WARDEN
+    max-health: 1.0
+    armor: 4.0
+    armor-toughness: 3.0
+    knockback-resistance: 0.1
+    custom-model-data: 2
+    trim-pattern: nexo:warden
+    hide-armor-trim: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material warden_ingot 1.0..|v AIR 0 1.0..|m material warden_ingot 1.0..
+          - m material warden_ingot 1.0..|v AIR 0 1.0..|m material warden_ingot 1.0..
+          - v AIR 0 1..|v AIR 0 1.0..|v AIR 0 1..
+
+HEXTECH_HELMET:
+  base:
+    material: CHAINMAIL_HELMET
+    name: Hextech Helmet
+    tier: TIER5
+    set: HEXTECH
+    max-health: 2.0
+    armor: 4.0
+    armor-toughness: 4.0
+    pve-damage: 2.5
+    custom-model-data: 5
+    trim-pattern: nexo:hextech
+    hide-armor-trim: true
+    lore:
+    - ' <#c199d1>{upgrade_level}/5 Hexia Crystals Applied.'
+    upgrade:
+      template: hextecharmor
+      reference: hextech
+      max: 5
+HEXTECH_CHESTPLATE:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: Hextech Chestplate
+    tier: TIER5
+    set: HEXTECH
+    max-health: 3.0
+    armor: 9.0
+    armor-toughness: 4.0
+    pve-damage: 2.5
+    custom-model-data: 5
+    trim-pattern: nexo:hextech
+    hide-armor-trim: true
+    lore:
+    - ' <#c199d1>{upgrade_level}/5 Hexia Crystals Applied.'
+    upgrade:
+      template: hextecharmor
+      reference: hextech
+      max: 5
+HEXTECH_LEGGINGS:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: Hextech Leggings
+    tier: TIER5
+    set: HEXTECH
+    max-health: 2.0
+    armor: 8.0
+    armor-toughness: 4.0
+    pve-damage: 2.5
+    custom-model-data: 5
+    trim-pattern: nexo:hextech
+    hide-armor-trim: true
+    lore:
+    - ' <#c199d1>{upgrade_level}/5 Hexia Crystals Applied.'
+    upgrade:
+      template: hextecharmor
+      reference: hextech
+      max: 5
+HEXTECH_BOOTS:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: Hextech Boots
+    tier: TIER5
+    set: HEXTECH
+    max-health: 1.0
+    armor: 4.0
+    armor-toughness: 4.0
+    pve-damage: 2.5
+    custom-model-data: 5
+    trim-pattern: nexo:hextech
+    hide-armor-trim: true
+    lore:
+    - ' <#c199d1>{upgrade_level}/5 Hexia Crystals Applied.'
+    upgrade:
+      template: hextecharmor
+      reference: hextech
+      max: 5

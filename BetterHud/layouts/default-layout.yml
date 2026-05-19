@@ -1,0 +1,219 @@
+objective_tracker:
+  texts:
+    1:
+      name: default_font2
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#fcefe3>[papi:typewriter_tracked_objectives]"
+      align: center
+      x: 0
+      y: 10
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+      background: banner
+      background-scale: 1
+      conditions:
+        1:
+          first: papi:typewriter_tracked_objectives
+          second: "'None tracked'"
+          operation: '!='
+
+cutsceneskip:
+  texts:
+    1:
+      name: default_font
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#0097d8>Sneak to skip this cutscene!"
+      align: center
+      x: 0
+      y: 10
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+      background: location
+      background-scale: 1
+
+tophud:
+  images:
+    1:
+      name: tophud
+      x: 22
+      y: 10
+    2:
+      name: xpbar
+      x: 76
+      y: 31
+      scale: 1
+  texts:
+    1:
+      name: default_font2
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#524228>[mmocore_class]"
+      align: center
+      x: 92
+      y: 18
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+    2:
+      name: default_font2
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#80531d>[mmocore_level]"
+      align: center
+      x: 40
+      y: 38
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+    3:
+      name: default_font2
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#f5d6b0>[papi:vault_eco_balance_fixed]<#ebbc83>C"
+      align: center
+      x: 92
+      y: 48
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+      conditions:
+        1:
+          first: (number)papi:vault_eco_balance_fixed
+          second: 1000000
+          operation: '<'
+    4:
+      name: default_font2
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#f5d6b0>[papi:vault_eco_balance_formatted]<#ebbc83>C"
+      align: center
+      x: 92
+      y: 48
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+      conditions:
+        1:
+          first: (number)papi:vault_eco_balance_fixed
+          second: 1000000
+          operation: '>='
+    5:
+      name: default_font2
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#614921>[papi:rdn_name]"
+      align: center
+      x: 74
+      y: 65
+      scale: 0.48
+      outline: true
+      deserialize-text: true
+  heads:
+    0:
+      name: head
+      x: 32
+      y: 20
+
+experiencebar:
+  images:
+    1:
+      name: experiencebar
+      x: 1
+      y: -29
+      layer: 2
+      conditions:
+        1:
+          first: papi:player_gamemode
+          second: "'SURVIVAL'"
+          operation: '=='
+    2:
+      name: experiencebar_empty
+      x: 1
+      y: -29
+      layer: 1
+      conditions:
+        1:
+          first: papi:player_gamemode
+          second: "'SURVIVAL'"
+          operation: '=='
+  texts:
+    1:
+      name: default_font
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: true
+      pattern: "<#80ff20>[level]"
+      align: center
+      x: 92
+      y: -35
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+      layer: 3
+      conditions:
+        1:
+          first: papi:player_gamemode
+          second: "'SURVIVAL'"
+          operation: '=='
+        2:
+          first: (number)level
+          second: 0
+          operation: '!='
+
+manabar:
+  images:
+    1:
+      name: manabar
+      x: 50
+      y: -49
+      layer: 2
+      conditions:
+        1:
+          first: (number)air
+          second: 300
+          operation: '=='
+        2:
+          first: papi:player_gamemode
+          second: "'SURVIVAL'"
+          operation: '=='
+    2:
+      name: manabar_empty
+      x: 50
+      y: -49
+      layer: 1
+      conditions:
+        1:
+          first: (number)air
+          second: 300
+          operation: '=='
+        2:
+          first: papi:player_gamemode
+          second: "'SURVIVAL'"
+          operation: '=='
+
+armortoughnessbar:
+  images:
+    1:
+      name: armortoughnessbar
+      x: -50
+      y: 5
+      conditions:
+        1:
+          first: (number)papi:math_0:0_{mmoitems_stat_armor}-20
+          second: 0
+          operation: '>'
+        2:
+          first: papi:player_gamemode
+          second: "'SURVIVAL'"
+          operation: '=='

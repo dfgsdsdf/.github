@@ -1,0 +1,71 @@
+UNDECIPHERED_COMMON_ANCIENT_BOOK:
+  base:
+    material: LAPIS_LAZULI
+    name: <white>ꂺ <#44ca2d>Undeciphered Book
+    lore-format: material
+    custom-model-data: 1.0
+    tier: TIER2
+    lore:
+    - <#504952>Can be deciphered by Helix
+    - <#504952>to reveal an ancient enchant!
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    max-stack-size: 1.0
+
+UNDECIPHERED_RARE_ANCIENT_BOOK:
+  base:
+    material: LAPIS_LAZULI
+    name: <white>ꂻ <#48d8b4>Undeciphered Book
+    lore-format: material
+    custom-model-data: 2.0
+    tier: TIER3
+    lore:
+    - <#504952>Can be deciphered by Helix
+    - <#504952>to reveal an ancient enchant!
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    max-stack-size: 1.0
+
+UNDECIPHERED_LEGENDARY_ANCIENT_BOOK:
+  base:
+    material: LAPIS_LAZULI
+    name: <white>ꂼ <#dc9730>Undeciphered Book
+    lore-format: material
+    custom-model-data: 3.0
+    tier: TIER4
+    lore:
+    - <#504952>Can be deciphered by Helix
+    - <#504952>to reveal an ancient enchant!
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    max-stack-size: 1.0
+
+UNDECIPHERED_FABLED_ANCIENT_BOOK:
+  base:
+    material: LAPIS_LAZULI
+    name: <white>ꂽ <#e22828>Undeciphered Book
+    lore-format: material
+    custom-model-data: 4.0
+    tier: TIER5
+    lore:
+    - <#504952>Can be deciphered by Helix
+    - <#504952>to reveal an ancient enchant!
+    disable-repairing: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    max-stack-size: 1.0

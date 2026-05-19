@@ -1,0 +1,2612 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: &id001
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: PLAYER
+    location: &id002
+      ==: org.bukkit.Location
+      x: 205.0
+      y: -9.0
+      z: 267.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id002
+    cooldownTime: 0
+    rewards: &id007 []
+    levels: 0
+  targetType: *id001
+  location: *id002
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMythicSkill
+  mythicSkill: LOH_LootChest_Emerald
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 223.0
+    y: -9.0
+    z: 228.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 1
+    targetType: &id004
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: PARTY
+    location: &id003
+      ==: org.bukkit.Location
+      x: 190.0
+      y: -8.0
+      z: 268.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §fꀒ §x§0§4§d§4§2§cDoor to next room is §lOPENED
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_room6
+    range: 0.0
+    targetType: &id005
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: NONE
+    location: *id003
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+    savePoint: false
+    targetType: *id004
+    location: *id003
+    pitch: 1.8528468608856201
+    trigger: null
+    yaw: 89.17626953125
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.iron_door.open
+    targetType: *id004
+    location: *id003
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: ANY
+    targetType: *id005
+    location: *id003
+    trigger: null
+    remove: true
+    direction: NORTH
+  targetType: *id004
+  location: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id006
+      ==: org.bukkit.Location
+      x: 205.0
+      y: -8.0
+      z: 245.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id006
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id006
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 135.0
+    y: -8.0
+    z: 241.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: HEAD_HEXTECHNOLOGIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 190.0
+    y: -10.0
+    z: 260.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room5
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 83.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc:
+    ==: org.bukkit.Location
+    x: 95.51901543948331
+    y: 1.75
+    z: 288.3615986414803
+    pitch: 1.7102947
+    yaw: 1.1195136
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 95.0
+    y: -1.0
+    z: 286.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_bossfight
+    allowRetrigger: true
+    conditions: []
+  message: §x§c§2§0§c§0§c§lʙᴏss ғɪɢʜᴛ!\n\n§x§f§f§9§c§9§cClick on the button to begin!
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id008
+      ==: org.bukkit.Location
+      x: 139.0
+      y: -9.0
+      z: 270.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id008
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id008
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: HALF_CONVERTED_RESEARCHER
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 161.0
+    y: -10.0
+    z: 264.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room4
+    allowRetrigger: false
+    conditions: []
+  maxCount: 4
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 140.0
+    y: -9.0
+    z: 263.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONVERTED_UNDEAD
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 134.0
+    y: -10.0
+    z: 238.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room2
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: INFECTED_SCIENTIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 138.0
+    y: -10.0
+    z: 265.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room3
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 0
+    targetType: *id004
+    location: &id009
+      ==: org.bukkit.Location
+      x: 95.0
+      y: 0.0
+      z: 253.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §fꀒ §x§0§4§d§4§2§cDungeon cleared! Loot your chests, this dungeon instance
+      will close in §f2m
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionFinishDungeon
+    leave: false
+    targetType: *id004
+    location: *id009
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionDelayed
+    delay: 2400
+    functions: []
+    function:
+      ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+      targetType: *id004
+      location:
+        ==: org.bukkit.Location
+        x: 95.0
+        y: 0.0
+        z: 253.0
+        pitch: 0.0
+        yaw: 0.0
+      trigger: null
+    targetType: *id004
+    location: *id009
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionDelayed
+    delay: 80
+    functions: []
+    function:
+      ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+      targetType: *id004
+      location:
+        ==: org.bukkit.Location
+        x: 95.0
+        y: 0.0
+        z: 253.0
+        pitch: 0.0
+        yaw: 0.0
+      teleportTarget:
+        ==: org.bukkit.Location
+        x: 220.43815797862402
+        y: -9.0
+        z: 230.7966283630668
+        pitch: 10.472652
+        yaw: 179.36182
+      trigger: null
+    targetType: *id004
+    location: *id009
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSetStatus
+    targetType: *id005
+    location: *id009
+    trigger: null
+    status: bossdefeated
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_bossdefeated
+    range: 0.0
+    targetType: *id005
+    location: *id009
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+    commandType: 0
+    forEachPlayer: true
+    targetType: *id004
+    location: *id009
+    trigger: null
+    command: dqa customcomplete %player_name% COMPLETE_DUNGEON 1
+  targetType: *id004
+  location: *id009
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_finish
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: DRAEDON_DISCIPLE
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 136.0
+    y: -10.0
+    z: 285.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room7
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -105.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 135.0
+    y: -9.0
+    z: 241.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+  triggerName: loh_bossbegin
+  range: 0.0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 95.0
+    y: 1.0
+    z: 287.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONVERTED_UNDEAD
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 135.0
+    y: -10.0
+    z: 252.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room3
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: HALF_CONVERTED_RESEARCHER
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 176.0
+    y: -10.0
+    z: 235.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  maxCount: 3
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc:
+    ==: org.bukkit.Location
+    x: 211.54602340995174
+    y: -7.25
+    z: 235.5829358222272
+    pitch: -57.938034
+    yaw: 91.31409
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 211.0
+    y: -8.0
+    z: 235.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  message: §x§4§d§a§1§2§5☠ Lᴀʙ ᴏғ Hᴏʀʀᴏʀs ☠ \n §x§6§9§e§8§2§eA dilapidated lab filled
+    with the stenches §x§6§9§e§8§2§eof past carnages and miseries. \n §a \n §x§c§0§f§f§a§3→
+    All players stand near the gate to begin the dungeon!
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -9.0
+    z: 236.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 164.0
+    y: -9.0
+    z: 236.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 184.0
+    y: -9.0
+    z: 286.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: HALF_CONVERTED_RESEARCHER
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 156.0
+    y: -10.0
+    z: 282.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room7
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 0
+    targetType: *id004
+    location: &id010
+      ==: org.bukkit.Location
+      x: 95.0
+      y: 1.0
+      z: 285.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §x§9§1§5§e§6§3An ominious feeling permeates the air. You feel a sense
+      of impending doom.
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_bossfight
+    range: 0.0
+    targetType: *id005
+    location: *id010
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+    targetType: *id004
+    location: *id010
+    teleportTarget:
+      ==: org.bukkit.Location
+      x: 95.52804491383411
+      y: 0.0
+      z: 269.7739460085257
+      pitch: -17.957829
+      yaw: -179.8836
+    trigger: null
+  targetType: *id004
+  location: *id010
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_bossbegin
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 189.0
+    y: -8.0
+    z: 268.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -9.0
+    z: 235.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 164.0
+    y: -9.0
+    z: 235.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 173.0
+    y: -9.0
+    z: 263.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 1
+    targetType: *id004
+    location: &id011
+      ==: org.bukkit.Location
+      x: 134.0
+      y: -8.0
+      z: 241.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §fꀒ §x§0§4§d§4§2§cDoor to next room is §lOPENED
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_room3
+    range: 0.0
+    targetType: *id005
+    location: *id011
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+    savePoint: false
+    targetType: *id004
+    location: *id011
+    pitch: 1.8528468608856201
+    trigger: null
+    yaw: 89.17626953125
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.iron_door.open
+    targetType: *id004
+    location: *id011
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: ANY
+    targetType: *id005
+    location: *id011
+    trigger: null
+    remove: true
+    direction: NORTH
+  targetType: *id004
+  location: *id011
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id012
+      ==: org.bukkit.Location
+      x: 175.0
+      y: -6.0
+      z: 287.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id012
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id012
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: INFECTED_SCIENTIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 205.0
+    y: -10.0
+    z: 229.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id013
+      ==: org.bukkit.Location
+      x: 184.0
+      y: -8.0
+      z: 281.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id013
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id013
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONVERTED_UNDEAD
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 199.0
+    y: -10.0
+    z: 263.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room5
+    allowRetrigger: false
+    conditions: []
+  maxCount: 3
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -7.0
+    z: 234.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -8.0
+    z: 236.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 164.0
+    y: -8.0
+    z: 236.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 189.0
+    y: -9.0
+    z: 268.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONFUSED_HEXTECHNOLOGIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 168.0
+    y: -10.0
+    z: 259.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room4
+    allowRetrigger: false
+    conditions: []
+  maxCount: 4
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: HALF_CONVERTED_RESEARCHER
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 205.0
+    y: -10.0
+    z: 238.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  maxCount: 4
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: HALF_CONVERTED_RESEARCHER
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 154.0
+    y: -10.0
+    z: 234.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room2
+    allowRetrigger: false
+    conditions: []
+  maxCount: 4
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id014
+      ==: org.bukkit.Location
+      x: 154.0
+      y: -9.0
+      z: 292.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id014
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id014
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 140.0
+    y: -8.0
+    z: 263.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 140.0
+    y: -9.0
+    z: 262.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 134.0
+    y: -9.0
+    z: 241.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMythicSkill
+  mythicSkill: LOH_LootChest_Star
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 220.0
+    y: -9.0
+    z: 226.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONFUSED_HEXTECHNOLOGIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 132.0
+    y: -10.0
+    z: 260.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room3
+    allowRetrigger: false
+    conditions: []
+  maxCount: 3
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: UNCAGED_SUBJECT
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 166.0
+    y: -10.0
+    z: 288.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room7
+    allowRetrigger: false
+    conditions: []
+  maxCount: 4
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 140.0
+    y: -8.0
+    z: 261.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: UNCAGED_SUBJECT
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 172.0
+    y: -10.0
+    z: 239.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  maxCount: 3
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 1
+    targetType: *id004
+    location: &id015
+      ==: org.bukkit.Location
+      x: 173.0
+      y: -8.0
+      z: 262.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §fꀒ §x§0§4§d§4§2§cDoor to next room is §lOPENED
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_room5
+    range: 0.0
+    targetType: *id005
+    location: *id015
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+    savePoint: false
+    targetType: *id004
+    location: *id015
+    pitch: 1.8528468608856201
+    trigger: null
+    yaw: 89.17626953125
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.iron_door.open
+    targetType: *id004
+    location: *id015
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: ANY
+    targetType: *id005
+    location: *id015
+    trigger: null
+    remove: true
+    direction: NORTH
+  targetType: *id004
+  location: *id015
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 173.0
+    y: -9.0
+    z: 261.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONVERTED_UNDEAD
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 145.0
+    y: -10.0
+    z: 280.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room7
+    allowRetrigger: false
+    conditions: []
+  maxCount: 4
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id016
+      ==: org.bukkit.Location
+      x: 158.0
+      y: -9.0
+      z: 267.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id016
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id016
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 191.0
+    y: -9.0
+    z: 268.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id017
+      ==: org.bukkit.Location
+      x: 195.0
+      y: -9.0
+      z: 296.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id017
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id017
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 1
+    targetType: *id004
+    location: &id018
+      ==: org.bukkit.Location
+      x: 140.0
+      y: -8.0
+      z: 262.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §fꀒ §x§0§4§d§4§2§cDoor to next room is §lOPENED
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_room4
+    range: 0.0
+    targetType: *id005
+    location: *id018
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+    savePoint: false
+    targetType: *id004
+    location: *id018
+    pitch: 1.8528468608856201
+    trigger: null
+    yaw: 89.17626953125
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.iron_door.open
+    targetType: *id004
+    location: *id018
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: ANY
+    targetType: *id005
+    location: *id018
+    trigger: null
+    remove: true
+    direction: NORTH
+  targetType: *id004
+  location: *id018
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 140.0
+    y: -9.0
+    z: 261.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -7.0
+    z: 236.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: INFECTED_SCIENTIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 146.0
+    y: -10.0
+    z: 262.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room4
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -8.0
+    z: 235.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 1
+    targetType: *id004
+    location: &id019
+      ==: org.bukkit.Location
+      x: 164.0
+      y: -8.0
+      z: 235.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §fꀒ §x§0§4§d§4§2§cDoor to next room is §lOPENED
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_room2
+    range: 0.0
+    targetType: *id005
+    location: *id019
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+    savePoint: false
+    targetType: *id004
+    location: *id019
+    pitch: 1.8528468608856201
+    trigger: null
+    yaw: 89.17626953125
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.iron_door.open
+    targetType: *id004
+    location: *id019
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: ANY
+    targetType: *id005
+    location: *id019
+    trigger: null
+    remove: true
+    direction: NORTH
+  targetType: *id004
+  location: *id019
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 173.0
+    y: -8.0
+    z: 263.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 173.0
+    y: -9.0
+    z: 262.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONVERTED_UNDEAD
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 197.0
+    y: -10.0
+    z: 229.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  maxCount: 3
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 133.0
+    y: -9.0
+    z: 241.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 184.0
+    y: -8.0
+    z: 286.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 184.0
+    y: -9.0
+    z: 285.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 173.0
+    y: -8.0
+    z: 261.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: UNCAGED_SUBJECT
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 143.0
+    y: -10.0
+    z: 232.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room2
+    allowRetrigger: false
+    conditions: []
+  maxCount: 4
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 184.0
+    y: -8.0
+    z: 284.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id020
+      ==: org.bukkit.Location
+      x: 140.0
+      y: -6.0
+      z: 258.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id020
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id020
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 191.0
+    y: -8.0
+    z: 268.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 0
+    targetType: *id004
+    location: &id021
+      ==: org.bukkit.Location
+      x: 131.0
+      y: -8.0
+      z: 285.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: '&d&lPORTAL ACTIVATED! &fAll players gather near the portal to transport
+      to &cBoss Chamber&f!'
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionDelayed
+    delay: 200
+    functions: []
+    function:
+      ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+      volume: 1.0
+      soundCategory: MASTER
+      playAtLocation: false
+      sound: block.portal.travel
+      targetType: *id004
+      location:
+        ==: org.bukkit.Location
+        x: 131.0
+        y: -8.0
+        z: 285.0
+        pitch: 0.0
+        yaw: 0.0
+      pitch: 1.0
+      trigger: null
+    targetType: *id004
+    location: *id021
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.portal.trigger
+    targetType: *id004
+    location: *id021
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionDelayed
+    delay: 200
+    functions: []
+    function:
+      ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+      targetType: *id004
+      location:
+        ==: org.bukkit.Location
+        x: 131.0
+        y: -8.0
+        z: 285.0
+        pitch: 0.0
+        yaw: 0.0
+      teleportTarget:
+        ==: org.bukkit.Location
+        x: 95.4571881815474
+        y: 0.0
+        z: 295.6867295351317
+        pitch: -0.71262586
+        yaw: 179.84232
+      trigger: null
+    targetType: *id004
+    location: *id021
+    trigger: null
+  targetType: *id001
+  location: *id021
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 30.0
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: DRAEDON
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 95.0
+    y: 0.0
+    z: 257.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_bossfight
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 190.0
+    y: -9.0
+    z: 268.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionStartDungeon
+    targetType: *id001
+    location: &id022
+      ==: org.bukkit.Location
+      x: 210.0
+      y: -10.0
+      z: 235.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+    fadeOut: 10
+    fadeIn: 10
+    subtitle: §x§5§a§c§4§2§7§oWhen science goes wrong...
+    targetType: *id004
+    location: *id022
+    trigger: null
+    title: §x§3§3§6§b§1§8§lLᴀʙ ᴏғ Hᴏʀʀᴏʀs
+    stay: 80
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 0
+    targetType: *id004
+    location: *id022
+    trigger: null
+    message: §fꀷ §x§4§b§5§6§b§4This dungeon has started! Slay mobs, loot chests and
+      clear rooms to reach the end!
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.end_portal.spawn
+    targetType: *id004
+    location: *id022
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_start
+    range: 0.0
+    targetType: *id005
+    location: *id022
+    trigger: null
+  targetType: *id004
+  location: *id022
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: -1
+    allowRetrigger: false
+    radius: 2.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id023
+      ==: org.bukkit.Location
+      x: 151.0
+      y: -6.0
+      z: 240.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id023
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id023
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id024
+      ==: org.bukkit.Location
+      x: 187.0
+      y: -8.0
+      z: 225.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id024
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id024
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -7.0
+    z: 235.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: chest.open
+    targetType: *id001
+    location: &id025
+      ==: org.bukkit.Location
+      x: 133.0
+      y: -9.0
+      z: 292.0
+      pitch: 0.0
+      yaw: 0.0
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+    period: 0
+    loottableName: loh_lootchest
+    isMythic: true
+    targetType: *id001
+    trigger: null
+    cooldownDisabled: false
+    resetDay: 1
+    overrideCooldown: false
+    xp: 0
+    location: *id025
+    cooldownTime: 0
+    rewards: *id007
+    levels: 0
+  targetType: *id001
+  location: *id025
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 164.0
+    y: -8.0
+    z: 234.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -8.0
+    z: 234.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 164.0
+    y: -9.0
+    z: 234.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 209.0
+    y: -9.0
+    z: 234.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: INFECTED_SCIENTIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 177.0
+    y: -10.0
+    z: 282.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room7
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 133.0
+    y: -8.0
+    z: 241.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: INFECTED_SCIENTIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 190.0
+    y: -10.0
+    z: 291.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room6
+    allowRetrigger: false
+    conditions: []
+  maxCount: 5
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: ANY
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 184.0
+    y: -9.0
+    z: 284.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+  remove: true
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 1
+    targetType: *id004
+    location: &id026
+      ==: org.bukkit.Location
+      x: 184.0
+      y: -8.0
+      z: 285.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    message: §fꀒ §x§0§4§d§4§2§cDoor to next room is §lOPENED
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: loh_room7
+    range: 0.0
+    targetType: *id005
+    location: *id026
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+    savePoint: false
+    targetType: *id004
+    location: *id026
+    pitch: 1.8528468608856201
+    trigger: null
+    yaw: 89.17626953125
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionPlaySound
+    volume: 1.0
+    soundCategory: MASTER
+    playAtLocation: false
+    sound: block.iron_door.open
+    targetType: *id004
+    location: *id026
+    pitch: 1.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: ANY
+    targetType: *id005
+    location: *id026
+    trigger: null
+    remove: true
+    direction: NORTH
+  targetType: *id004
+  location: *id026
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMobWithin
+      entityName: zombie
+      mobsExact: true
+      count: 0
+      radius: 50.0
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONVERTED_UNDEAD
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 180.0
+    y: -10.0
+    z: 230.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_start
+    allowRetrigger: false
+    conditions: []
+  maxCount: 3
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMythicSkill
+  mythicSkill: LOH_LootChest_Diamond
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 217.0
+    y: -9.0
+    z: 228.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: UNCAGED_SUBJECT
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 193.0
+    y: -10.0
+    z: 275.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room6
+    allowRetrigger: false
+    conditions: []
+  maxCount: 6
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONFUSED_HEXTECHNOLOGIST
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 143.0
+    y: -10.0
+    z: 288.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room7
+    allowRetrigger: false
+    conditions: []
+  maxCount: 2
+  yaw: -3.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: CONVERTED_UNDEAD
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id005
+  location:
+    ==: org.bukkit.Location
+    x: 182.0
+    y: -10.0
+    z: 263.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: loh_room5
+    allowRetrigger: false
+    conditions: []
+  maxCount: 6
+  yaw: -3.0

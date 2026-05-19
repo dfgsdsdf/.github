@@ -1,0 +1,2 @@
+16:14:07 | prisq -> WITHDRAW - 4277805.88 [bank] Bank before-after: [8555611.77 -> 4277805.88] Vault before-after: [9.98B -> 9.99B]
+16:14:08 | prisq -> DEPOSIT - 2496338271.75 [bank] Bank before-after: [4277805.88 -> 1000000000.00] Vault before-after: [9.99B -> 8.99B]

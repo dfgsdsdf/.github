@@ -1,0 +1,25 @@
+HexBolt:
+  Skills:
+  - projectile{onTick=HexBolt-Tick;onHit=HexBolt-Hit;v=8;i=1;hR=1;vR=1} @target
+HexBolt-Tick:
+  Skills:
+  - effect:particles{p=Scrape;amount=1;speed=0;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=Lava;amount=1;speed=0;hS=0.2;vS=0.2} @origin
+HexBolt-Hit:
+  Skills:
+  - mmodamage{a=10}
+  - potion{t=SLOW;d=100;l=1}
+
+HexWave:
+  Skills:
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=1;p=64;pts=20} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=2;p=64;pts=20;delay=2} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=3;p=64;pts=20;delay=4} @self
+  - mmodamage{a=15} @PIR{r=3}
+
+HexBoom:
+  Skills:
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=1;p=64;pts=20} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=2;p=64;pts=20;delay=2} @self
+  - effect:particlering{particle=scrape;amount=1;y=0.4;radius=3;p=64;pts=20;delay=4} @self
+  - mmodamage{a=15} @PIR{r=3}

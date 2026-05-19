@@ -1,0 +1,499 @@
+COBALT_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    custom-model-data: 1.0
+    tier: TIER2
+    lore-format: material
+    name: Cobalt Pickaxe
+    will-break: true
+    max-item-damage: 3024.0
+    mining-efficiency: 8.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL COBALT_INGOT 1.0..|m MATERIAL COBALT_INGOT 1.0..|m MATERIAL
+            COBALT_INGOT 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+COBALT_AXE:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 1.0
+    tier: TIER2
+    lore-format: material
+    name: Cobalt Axe
+    will-break: true
+    max-item-damage: 3024.0
+    mining-efficiency: 8.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL COBALT_INGOT 1.0..|m MATERIAL COBALT_INGOT 1.0..|v AIR 0 1..
+          - m MATERIAL COBALT_INGOT 1.0..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+COBALT_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    custom-model-data: 1.0
+    tier: TIER2
+    lore-format: material
+    name: Cobalt Shovel
+    will-break: true
+    max-item-damage: 3024.0
+    mining-efficiency: 8.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL COBALT_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+COBALT_HOE:
+  base:
+    material: DIAMOND_HOE
+    custom-model-data: 1.0
+    tier: TIER2
+    lore-format: material
+    name: Cobalt Hoe
+    will-break: true
+    max-item-damage: 3024.0
+    mining-efficiency: 8.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL COBALT_INGOT 1.0..|m MATERIAL COBALT_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+MITHRIL_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    custom-model-data: 2.0
+    tier: TIER2
+    lore-format: material
+    name: Mithril Pickaxe
+    will-break: true
+    max-item-damage: 3510.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL MITHRIL_INGOT 1.0..|m MATERIAL MITHRIL_INGOT 1.0..|m MATERIAL
+            MITHRIL_INGOT 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+MITHRIL_AXE:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 2.0
+    tier: TIER2
+    lore-format: material
+    name: Mithril Axe
+    will-break: true
+    max-item-damage: 3510.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL MITHRIL_INGOT 1.0..|m MATERIAL MITHRIL_INGOT 1.0..|v AIR 0
+            1..
+          - m MATERIAL MITHRIL_INGOT 1.0..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+MITHRIL_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    custom-model-data: 2.0
+    tier: TIER2
+    lore-format: material
+    name: Mithril Shovel
+    will-break: true
+    max-item-damage: 3510.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL MITHRIL_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+MITHRIL_HOE:
+  base:
+    material: DIAMOND_HOE
+    custom-model-data: 2.0
+    tier: TIER2
+    lore-format: material
+    name: Mithril Hoe
+    will-break: true
+    max-item-damage: 3510.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL MITHRIL_INGOT 1.0..|m MATERIAL MITHRIL_INGOT 1.0..|v AIR 0
+            1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+SOULSTEEL_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    custom-model-data: 3.0
+    tier: TIER3
+    lore-format: material
+    name: Soulsteel Pickaxe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL SOULSTEEL_INGOT 1.0..|m MATERIAL SOULSTEEL_INGOT 1.0..|m MATERIAL
+            SOULSTEEL_INGOT 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+SOULSTEEL_AXE:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 3.0
+    tier: TIER3
+    lore-format: material
+    name: Soulsteel Axe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL SOULSTEEL_INGOT 1.0..|m MATERIAL SOULSTEEL_INGOT 1.0..|v AIR
+            0 1..
+          - m MATERIAL SOULSTEEL_INGOT 1.0..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+SOULSTEEL_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    custom-model-data: 3.0
+    tier: TIER3
+    lore-format: material
+    name: Soulsteel Shovel
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL SOULSTEEL_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+SOULSTEEL_HOE:
+  base:
+    material: DIAMOND_HOE
+    custom-model-data: 3.0
+    tier: TIER3
+    lore-format: material
+    name: Soulsteel Hoe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 9.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL SOULSTEEL_INGOT 1.0..|m MATERIAL SOULSTEEL_INGOT 1.0..|v AIR
+            0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+SOUL_NETHERITE_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    custom-model-data: 5.0
+    tier: TIER3
+    lore-format: material
+    name: Soul Netherite Pickaxe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL SOUL_NETHERITE_INGOT 1.0..|m MATERIAL SOUL_NETHERITE_INGOT
+            1.0..|m MATERIAL SOUL_NETHERITE_INGOT 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+SOUL_NETHERITE_AXE:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 5.0
+    tier: TIER3
+    lore-format: material
+    name: Soul Netherite Axe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL SOUL_NETHERITE_INGOT 1.0..|m MATERIAL SOUL_NETHERITE_INGOT
+            1.0..|v AIR 0 1..
+          - m MATERIAL SOUL_NETHERITE_INGOT 1.0..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+SOUL_NETHERITE_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    custom-model-data: 5.0
+    tier: TIER3
+    lore-format: material
+    name: Soul Netherite Shovel
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL SOUL_NETHERITE_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+SOUL_NETHERITE_HOE:
+  base:
+    material: DIAMOND_HOE
+    custom-model-data: 5.0
+    tier: TIER3
+    lore-format: material
+    name: Soul Netherite Hoe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL SOUL_NETHERITE_INGOT 1.0..|m MATERIAL SOUL_NETHERITE_INGOT
+            1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+GILDED_NETHERITE_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    custom-model-data: 4.0
+    tier: TIER3
+    lore-format: material
+    name: Gilded Netherite Pickaxe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL GILDED_NETHERITE_INGOT 1.0..|m MATERIAL GILDED_NETHERITE_INGOT
+            1.0..|m MATERIAL GILDED_NETHERITE_INGOT 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+GILDED_NETHERITE_AXE:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 4.0
+    tier: TIER3
+    lore-format: material
+    name: Gilded Netherite Axe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL GILDED_NETHERITE_INGOT 1.0..|m MATERIAL GILDED_NETHERITE_INGOT
+            1.0..|v AIR 0 1..
+          - m MATERIAL GILDED_NETHERITE_INGOT 1.0..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+GILDED_NETHERITE_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    custom-model-data: 4.0
+    tier: TIER3
+    lore-format: material
+    name: Gilded Netherite Shovel
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL GILDED_NETHERITE_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+GILDED_NETHERITE_HOE:
+  base:
+    material: DIAMOND_HOE
+    custom-model-data: 4.0
+    tier: TIER3
+    lore-format: material
+    name: Gilded Netherite Hoe
+    will-break: true
+    max-item-damage: 4010.0
+    mining-efficiency: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL GILDED_NETHERITE_INGOT 1.0..|m MATERIAL GILDED_NETHERITE_INGOT
+            1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+WARDEN_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    custom-model-data: 6.0
+    tier: TIER4
+    lore-format: material
+    name: Warden Pickaxe
+    will-break: true
+    max-item-damage: 4610.0
+    mining-efficiency: 12.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL WARDEN_INGOT 1.0..|m MATERIAL WARDEN_INGOT 1.0..|m MATERIAL
+            WARDEN_INGOT 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+WARDEN_AXE:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 6.0
+    tier: TIER4
+    lore-format: material
+    name: Warden Axe
+    will-break: true
+    max-item-damage: 4610.0
+    mining-efficiency: 12.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL WARDEN_INGOT 1.0..|m MATERIAL WARDEN_INGOT 1.0..|v AIR 0 1..
+          - m MATERIAL WARDEN_INGOT 1.0..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+WARDEN_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    custom-model-data: 6.0
+    tier: TIER4
+    lore-format: material
+    name: Warden Shovel
+    will-break: true
+    max-item-damage: 4610.0
+    mining-efficiency: 12.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL WARDEN_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+WARDEN_HOE:
+  base:
+    material: DIAMOND_HOE
+    custom-model-data: 6.0
+    tier: TIER4
+    lore-format: material
+    name: Warden Hoe
+    will-break: true
+    max-item-damage: 4610.0
+    mining-efficiency: 12.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL WARDEN_INGOT 1.0..|m MATERIAL WARDEN_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+HEXTECH_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    custom-model-data: 7.0
+    tier: TIER5
+    lore-format: material
+    name: Hextech Pickaxe
+    will-break: true
+    max-item-damage: 5210.0
+    mining-efficiency: 14.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL HEXTECH_INGOT 1.0..|m MATERIAL HEXTECH_INGOT 1.0..|m MATERIAL
+            HEXTECH_INGOT 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+HEXTECH_AXE:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 7.0
+    tier: TIER5
+    lore-format: material
+    name: Hextech Axe
+    will-break: true
+    max-item-damage: 5210.0
+    mining-efficiency: 14.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL HEXTECH_INGOT 1.0..|m MATERIAL HEXTECH_INGOT 1.0..|v AIR 0
+            1..
+          - m MATERIAL HEXTECH_INGOT 1.0..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+HEXTECH_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    custom-model-data: 7.0
+    tier: TIER5
+    lore-format: material
+    name: Hextech Shovel
+    will-break: true
+    max-item-damage: 5210.0
+    mining-efficiency: 14.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL HEXTECH_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+HEXTECH_HOE:
+  base:
+    material: DIAMOND_HOE
+    custom-model-data: 7.0
+    tier: TIER5
+    lore-format: material
+    name: Hextech Hoe
+    will-break: true
+    max-item-damage: 5210.0
+    mining-efficiency: 14.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL HEXTECH_INGOT 1.0..|m MATERIAL HEXTECH_INGOT 1.0..|v AIR 0
+            1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..

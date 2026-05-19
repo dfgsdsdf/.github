@@ -1,0 +1,232 @@
+panels:
+  menu:
+    rows: 6
+    title: '&fꐮꀀ ꐲꐰꐮꐭꐬ<#3b3b3b>Main Menu &m                            '
+    commands:
+    - menu
+    open-with-item:
+        material: LEATHER
+        customdata: '1'
+        name: '&fꂁ &#0097d8Open Main Menu'
+        lore: []
+        stationary: '8'
+        commands:
+        - open= menu
+        - sound= BLOCK_ENDER_CHEST_OPEN
+    item:
+
+
+      '6': &portal
+        material: barrier
+        customdata: '1'
+        name: '<#7a4422>⛄ <#c46427>Factions'
+        lore:
+          - ''
+          - '&#ccccccFactions provide stats boosts'
+          - '&#ccccccand innates related to specific'
+          - '&#ccccccplaystyle.'
+          - ''
+          - '&#693413▶ Cʟᴀss Iɴғᴏʀᴍᴀᴛɪᴏɴ'
+          - ' &#ccccccYou are a &#fa8f4bLᴠʟ.%mmocore_level% %mmocore_class%'
+          - ' &#d6793e%mmocore_experience%&#d66218/%mmocore_next_level% &8until next level.'
+          - ''
+          - '&fꂀ &#83ca16View menu!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'open= your_faction'
+      '7': *portal
+      '8': *portal
+      '15': *portal
+      '16': *portal
+      '17': *portal
+
+
+      '3': &portal
+        material: barrier
+        customdata: '1'
+        name: '<#735836>ℹ <#9c7649>The Codex'
+        lore:
+          - ''
+          - '&#ccccccAn encyclopedia that contains'
+          - '&#cccccceverything, including monsters'
+          - '&#ccccccregions, and bosses.'
+          - ''
+          - '&#705739▶ Cᴏᴅᴇx Pʀᴏɢʀᴇss'
+          - ' &#ccccccYou have found &#9c7649%codex_total_discoveries% &#ccccccentries'
+          - ' &#ccccccwhich is &#9c7649%codex_total_discoveries_percentage% &#ccccccof the codex!'
+          - ''
+          - '&fꂀ &#83ca16View menu!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'codex'
+      '4': *portal
+      '5': *portal
+      '12': *portal
+      '13': *portal
+      '14': *portal
+
+
+      '0': &portal
+        material: barrier
+        customdata: '1'
+        name: '<#76bf3d>✈ <#8fe64c>The Navigator'
+        lore:
+          - ''
+          - '&#ccccccTravel to various places'
+          - '&#ccccccin the world!'
+          - ''
+          - '&fꂀ &#83ca16View menu!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'open= navigator'
+      '1': *portal
+      '2': *portal
+      '9': *portal
+      '10': *portal
+      '11': *portal
+
+
+      '24': &dungeons
+        material: barrier
+        customdata: '1'
+        name: '<#105724>☠ <#15732f>Dungeons'
+        lore:
+          - ''
+          - '&#ccccccFight through dangerous'
+          - '&#ccccccmobs, evade treacherous'
+          - '&#cccccctraps to reach valuable'
+          - '&#ccccccloot!'
+          - ''
+          - '&fꂀ &#83ca16View menu!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'open= dungeon'
+      '25': *dungeons
+      '26': *dungeons
+      '33': *dungeons
+      '34': *dungeons
+      '35': *dungeons
+      '42': *dungeons
+      '43': *dungeons
+      '44': *dungeons
+
+
+      '18': &islands
+        material: barrier
+        customdata: '1'
+        name: '<#648f6d>⚓ <#84ba8f>Private Island'
+        lore:
+          - ''
+          - '&#ccccccCreate your own island,'
+          - '&#ccccccdecorate and gain island'
+          - '&#cccccclevels!'
+          - ''
+          - '&f &#76c286Isʟᴀɴᴅ Lᴇᴠᴇʟ: &#e8af46%superior_island_level%⭐'
+          - '&8 You rank &f#%superior_island_top_level_position%&8!'
+          - ''
+          - '&fꂀ &#83ca16View menu!'
+        commands:
+          - 'is panel'
+      '19': *islands
+      '20': *islands
+      '27': *islands
+      '28': *islands
+      '29': *islands
+      '36': *islands
+      '37': *islands
+      '38': *islands
+
+
+      '30': &skills
+        material: barrier
+        customdata: '1'
+        name: '<#94342b>🗡 <#c9463a>Adventurer Skills'
+        lore:
+          - ''
+          - '&#ccccccPlay, level up your skills'
+          - '&#ccccccand gain various bonuses'
+          - '&#cccccclike stats or passives!'
+          - ''
+          - '&f &#8f6864Sᴋɪʟʟs Aᴠᴇʀᴀɢᴇ: &#94342b%auraskills_average_1%'
+          - '&8 You rank &f#%auraskills_rank%&8!'
+          - ''
+          - '&fꂀ &#83ca16View menu!'
+        commands:
+          - 'skill'
+      '21': *skills
+      '22': *skills
+      '23': *skills
+      '30': *skills
+      '31': *skills
+      '32': *skills
+      '39': *skills
+      '40': *skills
+      '41': *skills
+
+
+      '47':
+        material: book
+        customdata: '4'
+        name: '<#4e5f96>▶ <#6d84cf>Friends'
+        lore:
+          - ''
+          - '&#ccccccAccess friends menu to'
+          - '&#ccccccsee your friends'' status!'
+          - ''
+          - '&fOnline Friends: &#4e5f96%mmocore_online_friends%'
+          - ''
+          - '&fꂀ &#83ca16View menu!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'friends'
+
+      '48':
+        material: book
+        customdata: '2'
+        name: '<#4e5f96>▶ <#6d84cf>Discord Link'
+        lore:
+          - ''
+          - '&#ccccccClick this to get'
+          - '&#cccccca link to discord!'
+          - ''
+          - '&fꂀ &#83ca16Get link!'
+        commands:
+          - 'cpc'
+          - 'sound= ENTITY_CHICKEN_EGG'
+          - "minimessage= <white>ꀷ <#4b56b4>Talk with other players and get the latest news in our discord server: <b>discord.name.com</b>"
+
+      '50':
+        material: book
+        customdata: '3'
+        name: '<#4e5f96>▶ <#6d84cf>Store'
+        lore:
+          - ''
+          - '&#ccccccSee various packages'
+          - '&#ccccccon server store!'
+          - ''
+          - '&fꂀ &#83ca16View store!'
+        commands:
+        - 'sound= BLOCK_NOTE_BLOCK_HAT'
+        - 'open= store'
+
+      '51':
+        material: book
+        customdata: '1'
+        name: '<#4e5f96>▶ <#6d84cf>Settings'
+        lore:
+          - ''
+          - '&#ccccccChange various settings'
+          - '&#ccccccto your profile.'
+          - ''
+          - '&fꂀ &#83ca16View settings!'
+        commands:
+        - 'sound= BLOCK_NOTE_BLOCK_HAT'
+        - 'open= settings'
+
+      '49':
+        material: cps= self
+        customdata: '11'
+        name: '<#323a63>👤 %player_name%'
+        commands:
+        - 'sound= BLOCK_NOTE_BLOCK_HAT'
+        - open= profile

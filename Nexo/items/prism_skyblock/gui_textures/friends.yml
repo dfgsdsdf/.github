@@ -1,0 +1,18 @@
+friends-add:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 18
+    textures:
+    - prism_skyblock/interface/gui_textures/friends/add_friend
+friends-leave:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 19
+    textures:
+    - prism_skyblock/interface/gui_textures/friends/leave

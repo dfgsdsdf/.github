@@ -1,0 +1,397 @@
+panels:
+  ascension:
+    rows: 5
+    title: '&fꐮꀮ'
+    commands:
+    - ascension
+    sound-on-open: BLOCK_BEACON_POWER_SELECT
+    refresh-delay: 5
+    custom-item:
+        air:
+            material: AIR
+        draedon_grimoire:
+            material: mmo= GRIMOIRE DRAEDON_GRIMOIRE
+    item:
+
+#INPUT SLOT TAKEN FROM HAND
+      '0':
+        material: BOOK
+        customdata: '68'
+        name: '&#f03030You are not holding anything...'
+
+        has0: #when item doesnt have custommodeldata
+            value0: ""
+            compare0: '%checkitem_getinfo:mainhand_custommodeldata:%'
+            value1: "NOT AIR"
+            compare1: '%player_item_in_hand%'
+            material: '%checkitem_getinfo:mainhand_mat:%'
+            itemType:
+            - noAttributes
+            name: '%checkitem_getinfo:mainhand_namecontains:%'
+
+        has1:
+            value0: "NOT AIR"
+            compare0: '%player_item_in_hand%'
+            material: '%checkitem_getinfo:mainhand_mat:%'
+            customdata: '%checkitem_getinfo:mainhand_custommodeldata:%'
+            itemType:
+            - noAttributes
+            name: '%checkitem_getinfo:mainhand_namecontains:%'
+
+#INPUT SLOT FOR GRIMOIRE
+      '2':
+        material: AIR
+        itemType:
+        - placeable
+        - returnItem
+
+#ASCENSION RESULT SLOT
+      '4':
+        material: BOOK
+        customdata: '68'
+        name: '&#f03030You are not holding anything...'
+
+        has0:
+            value0: "yes"
+            compare0: '%checkitem_lorecontains:ꂪ,inhand:main%'
+            material: 'BARRIER'
+            itemType:
+            - noAttributes
+            name: '&#f03030This item has already ascended!'
+
+        has1:
+            value0: "AIR"
+            compare0: '%cp-material-2%'
+            material: 'BOOK'
+            customdata: '68'
+            itemType:
+            - noAttributes
+            name: '&#f03030Insert grimoire!'
+
+        has2:
+            value0: "yes"
+            compare0: '%checkitem_nbtstrings:MMOITEMS_ITEM_ID=HEXTECH_SWORD,inhand:main%'
+            value1: "true"
+            compare1: '%cp-identical-draedon_grimoire,2%'
+            material: 'IRON_SWORD'
+            customdata: '8'
+            itemType:
+            - noAttributes
+            name: '&#d19cd9&lASCEND &fHextech Sword'
+            lore:
+            - ''
+            - '&8&m12&#757175 → &#cb9ede14 &#9aa0b3Attack Damage'
+            - '&8&m15%&#757175 → &#cb9ede20% &#9aa0b3Crit Chance'
+            - '&8&m25%&#757175 → &#cb9ede35% &#9aa0b3Crit Damage'
+            - ''
+            - ' &#cb9ede↑&fᴀsᴄᴇɴsɪᴏɴ ʙᴏɴᴜs'
+            - '&8▎ &#b0a797Casting a &#e7b5ebHextech Ability'
+            - '&8▎ &#b0a797boosts your damage by'
+            - '&8▎ &#e7b5eb50% &#b0a797for 10s.'
+            - ''
+            - '&fꂀ &#83ca16Ascend this item.'
+            - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+            - '&#e38d8d ✘ 10 Hexia Crystals Applied'
+            has0:
+              value0: " 10/10 Hexia Crystals Applied."
+              compare0: '%checkitem_getinfo:mainhand_lorecontains:13%'
+              material: 'IRON_SWORD'
+              customdata: '8'
+              itemType:
+              - noAttributes
+              name: '&#d19cd9&lASCEND &fHextech Sword'
+              lore:
+              - ''
+              - '&8&m12&#757175 → &#cb9ede14 &#9aa0b3Attack Damage'
+              - '&8&m15%&#757175 → &#cb9ede20% &#9aa0b3Crit Chance'
+              - '&8&m25%&#757175 → &#cb9ede35% &#9aa0b3Crit Damage'
+              - ''
+              - ' &#cb9ede↑&fᴀsᴄᴇɴsɪᴏɴ ʙᴏɴᴜs'
+              - '&8▎ &#b0a797Casting a &#e7b5ebHextech Ability'
+              - '&8▎ &#b0a797boosts your damage by'
+              - '&8▎ &#e7b5eb50% &#b0a797for 10s.'
+              - ''
+              - '&fꂀ &#83ca16Ascend this item.'
+              - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+              - '&#8ee38d ✔ 10 Hexia Crystals Applied'
+              commands:
+                - 'console= goop mmoitems stat lore %player_name% hand -__<#c199d1>{upgrade_level}/10__Hexia__Crystals__Applied.'
+                - 'console= goop mmoitems stat lore %player_name% hand __<#cb9ede>↑&fᴀsᴄᴇɴsɪᴏɴ__ʙᴏɴᴜs'
+                - 'console= goop mmoitems stat lore %player_name% hand &8▎__<#b0a797>Casting__a__<#e7b5eb>Hextech__Ability'
+                - 'console= goop mmoitems stat lore %player_name% hand &8▎__<#b0a797>boosts__your__damage__by'
+                - 'console= goop mmoitems stat lore %player_name% hand &8▎__<#e7b5eb>50%__<#b0a797>for__10s.'
+                - 'console= goop mmoitems stat custom_model_data %player_name% hand 14'
+                - 'console= goop mmoitems stat attack_damage %player_name% hand 14'
+                - 'console= goop mmoitems stat critical_strike_chance %player_name% hand 20'
+                - 'console= goop mmoitems stat critical_strike_power %player_name% hand 35'
+                - 'console= goop mmoitems stat custom_hextech_ascension_count %player_name% hand 1'
+                - 'console= goop mmoitems setTier %player_name% hand TIER5ASCENDED'
+                - 'console= goop mythicmobs runSkillAs ascend %player_name%'
+                - 'setitem= air 2 Top'
+                - 'cpc'
+
+        has3:
+            value0: "yes"
+            compare0: '%checkitem_nbtstrings:MMOITEMS_ITEM_ID=HEXTECH_BOW,inhand:main%'
+            value1: "true"
+            compare1: '%cp-identical-draedon_grimoire,2%'
+            material: 'BOW'
+            customdata: '8'
+            itemType:
+            - noAttributes
+            name: '&#d19cd9&lASCEND &fHextech Bow'
+            lore:
+            - ''
+            - '&8&m25%&#757175 → &#cb9ede30% &#9aa0b3Crit Chance'
+            - '&8&m40%&#757175 → &#cb9ede50% &#9aa0b3Crit Damage'
+            - ''
+            - ' &#cb9ede↑&fᴀsᴄᴇɴsɪᴏɴ ʙᴏɴᴜs'
+            - '&8▎ &#b0a797Casting a &#e7b5ebHextech Ability'
+            - '&8▎ &#b0a797boosts your damage by'
+            - '&8▎ &#e7b5eb50% &#b0a797for 10s.'
+            - ''
+            - '&fꂀ &#83ca16Ascend this item.'
+            - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+            - '&#e38d8d ✘ 10 Hexia Crystals Applied'
+            has0:
+              value0: " 10/10 Hexia Crystals Applied."
+              compare0: '%checkitem_getinfo:mainhand_lorecontains:12%'
+              material: 'BOW'
+              customdata: '8'
+              itemType:
+              - noAttributes
+              name: '&#d19cd9&lASCEND &fHextech Sword'
+              lore:
+              - ''
+              - '&8&m25%&#757175 → &#cb9ede30% &#9aa0b3Crit Chance'
+              - '&8&m40%&#757175 → &#cb9ede50% &#9aa0b3Crit Damage'
+              - ''
+              - ' &#cb9ede↑&fᴀsᴄᴇɴsɪᴏɴ ʙᴏɴᴜs'
+              - '&8▎ &#b0a797Casting a &#e7b5ebHextech Ability'
+              - '&8▎ &#b0a797boosts your damage by'
+              - '&8▎ &#e7b5eb50% &#b0a797for 10s.'
+              - ''
+              - '&fꂀ &#83ca16Ascend this item.'
+              - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+              - '&#8ee38d ✔ 10 Hexia Crystals Applied'
+              commands:
+                - 'console= goop mmoitems stat lore %player_name% hand -__<#c199d1>{upgrade_level}/10__Hexia__Crystals__Applied.'
+                - 'console= goop mmoitems stat lore %player_name% hand __<#cb9ede>↑&fᴀsᴄᴇɴsɪᴏɴ__ʙᴏɴᴜs'
+                - 'console= goop mmoitems stat lore %player_name% hand &8▎__<#b0a797>Casting__a__<#e7b5eb>Hextech__Ability'
+                - 'console= goop mmoitems stat lore %player_name% hand &8▎__<#b0a797>boosts__your__damage__by'
+                - 'console= goop mmoitems stat lore %player_name% hand &8▎__<#e7b5eb>50%__<#b0a797>for__10s.'
+                - 'console= goop mmoitems stat custom_model_data %player_name% hand 8'
+                - 'console= goop mmoitems stat critical_strike_chance %player_name% hand 30'
+                - 'console= goop mmoitems stat critical_strike_power %player_name% hand 50'
+                - 'console= goop mmoitems stat custom_hextech_ascension_count %player_name% hand 1'
+                - 'console= goop mmoitems setTier %player_name% hand TIER5ASCENDED'
+                - 'console= goop mythicmobs runSkillAs ascend %player_name%'
+                - 'setitem= air 2 Top'
+                - 'cpc'
+
+        has4:
+            value0: "yes"
+            compare0: '%checkitem_nbtstrings:MMOITEMS_ITEM_ID=HEXTECH_HELMET,inhand:main%'
+            value1: "true"
+            compare1: '%cp-identical-draedon_grimoire,2%'
+            material: 'CHAINMAIL_HELMET'
+            customdata: '5'
+            itemType:
+            - noAttributes
+            name: '&#d19cd9&lASCEND &fHextech Helmet'
+            lore:
+            - ''
+            - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+            - '&8&m2&#757175 → &#cb9ede3 &#9aa0b3Health'
+            - ''
+            - '&fꂀ &#83ca16Ascend this item.'
+            - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+            - '&#e38d8d ✘ 5 Hexia Crystals Applied'
+            has0:
+              value0: " 5/5 Hexia Crystals Applied."
+              compare0: '%checkitem_getinfo:mainhand_lorecontains:13%'
+              material: 'CHAINMAIL_HELMET'
+              customdata: '5'
+              itemType:
+              - noAttributes
+              name: '&#d19cd9&lASCEND &fHextech Sword'
+              lore:
+              - ''
+              - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+              - '&8&m2&#757175 → &#cb9ede3 &#9aa0b3Health'
+              - ''
+              - '&fꂀ &#83ca16Ascend this item.'
+              - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+              - '&#8ee38d ✔ 5 Hexia Crystals Applied'
+              commands:
+                - 'console= goop mmoitems stat lore %player_name% hand -__<#c199d1>{upgrade_level}/5__Hexia__Crystals__Applied.'
+                - 'console= goop mmoitems stat custom_model_data %player_name% hand 8'
+                - 'console= goop mmoitems stat max_health %player_name% hand +1'
+                - 'console= goop mmoitems stat pve_damage %player_name% hand +5'
+                - 'console= goop mmoitems setTier %player_name% hand TIER5ASCENDED'
+                - 'console= goop mythicmobs runSkillAs ascend %player_name%'
+                - 'setitem= air 2 Top'
+                - 'cpc'
+
+        has5:
+            value0: "yes"
+            compare0: '%checkitem_nbtstrings:MMOITEMS_ITEM_ID=HEXTECH_CHESTPLATE,inhand:main%'
+            value1: "true"
+            compare1: '%cp-identical-draedon_grimoire,2%'
+            material: 'CHAINMAIL_CHESTPLATE'
+            customdata: '5'
+            itemType:
+            - noAttributes
+            name: '&#d19cd9&lASCEND &fHextech Chestplate'
+            lore:
+            - ''
+            - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+            - '&8&m3&#757175 → &#cb9ede4 &#9aa0b3Health'
+            - ''
+            - '&fꂀ &#83ca16Ascend this item.'
+            - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+            - '&#e38d8d ✘ 5 Hexia Crystals Applied'
+            has0:
+              value0: " 5/5 Hexia Crystals Applied."
+              compare0: '%checkitem_getinfo:mainhand_lorecontains:13%'
+              material: 'CHAINMAIL_CHESTPLATE'
+              customdata: '5'
+              itemType:
+              - noAttributes
+              name: '&#d19cd9&lASCEND &fHextech Chestplate'
+              lore:
+              - ''
+              - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+              - '&8&m3&#757175 → &#cb9ede4 &#9aa0b3Health'
+              - ''
+              - '&fꂀ &#83ca16Ascend this item.'
+              - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+              - '&#8ee38d ✔ 5 Hexia Crystals Applied'
+              commands:
+                - 'console= goop mmoitems stat lore %player_name% hand -__<#c199d1>{upgrade_level}/5__Hexia__Crystals__Applied.'
+                - 'console= goop mmoitems stat custom_model_data %player_name% hand 8'
+                - 'console= goop mmoitems stat max_health %player_name% hand +1'
+                - 'console= goop mmoitems stat pve_damage %player_name% hand +5'
+                - 'console= goop mmoitems setTier %player_name% hand TIER5ASCENDED'
+                - 'console= goop mythicmobs runSkillAs ascend %player_name%'
+                - 'setitem= air 2 Top'
+                - 'cpc'
+
+        has6:
+            value0: "yes"
+            compare0: '%checkitem_nbtstrings:MMOITEMS_ITEM_ID=HEXTECH_LEGGINGS,inhand:main%'
+            value1: "true"
+            compare1: '%cp-identical-draedon_grimoire,2%'
+            material: 'CHAINMAIL_LEGGINGS'
+            customdata: '5'
+            itemType:
+            - noAttributes
+            name: '&#d19cd9&lASCEND &fHextech Leggings'
+            lore:
+            - ''
+            - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+            - '&8&m2&#757175 → &#cb9ede3 &#9aa0b3Health'
+            - ''
+            - '&fꂀ &#83ca16Ascend this item.'
+            - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+            - '&#e38d8d ✘ 5 Hexia Crystals Applied'
+            has0:
+              value0: " 5/5 Hexia Crystals Applied."
+              compare0: '%checkitem_getinfo:mainhand_lorecontains:13%'
+              material: 'CHAINMAIL_LEGGINGS'
+              customdata: '5'
+              itemType:
+              - noAttributes
+              name: '&#d19cd9&lASCEND &fHextech Leggings'
+              lore:
+              - ''
+              - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+              - '&8&m2&#757175 → &#cb9ede3 &#9aa0b3Health'
+              - ''
+              - '&fꂀ &#83ca16Ascend this item.'
+              - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+              - '&#8ee38d ✔ 5 Hexia Crystals Applied'
+              commands:
+                - 'console= goop mmoitems stat lore %player_name% hand -__<#c199d1>{upgrade_level}/5__Hexia__Crystals__Applied.'
+                - 'console= goop mmoitems stat custom_model_data %player_name% hand 8'
+                - 'console= goop mmoitems stat max_health %player_name% hand +1'
+                - 'console= goop mmoitems stat pve_damage %player_name% hand +5'
+                - 'console= goop mmoitems setTier %player_name% hand TIER5ASCENDED'
+                - 'console= goop mythicmobs runSkillAs ascend %player_name%'
+                - 'setitem= air 2 Top'
+                - 'cpc'
+
+        has7:
+            value0: "yes"
+            compare0: '%checkitem_nbtstrings:MMOITEMS_ITEM_ID=HEXTECH_BOOTS,inhand:main%'
+            value1: "true"
+            compare1: '%cp-identical-draedon_grimoire,2%'
+            material: 'CHAINMAIL_BOOTS'
+            customdata: '5'
+            itemType:
+            - noAttributes
+            name: '&#d19cd9&lASCEND &fHextech Boots'
+            lore:
+            - ''
+            - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+            - '&8&m1&#757175 → &#cb9ede2 &#9aa0b3Health'
+            - ''
+            - '&fꂀ &#83ca16Ascend this item.'
+            - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+            - '&#e38d8d ✘ 5 Hexia Crystals Applied'
+            has0:
+              value0: " 5/5 Hexia Crystals Applied."
+              compare0: '%checkitem_getinfo:mainhand_lorecontains:13%'
+              material: 'CHAINMAIL_BOOTS'
+              customdata: '5'
+              itemType:
+              - noAttributes
+              name: '&#d19cd9&lASCEND &fHextech Boots'
+              lore:
+              - ''
+              - '&8&m5%&#757175 → &#cb9ede10% &#9aa0b3Mob Damage'
+              - '&8&m1&#757175 → &#cb9ede2 &#9aa0b3Health'
+              - ''
+              - '&fꂀ &#83ca16Ascend this item.'
+              - '%changeoutput_>=_input:{coinsengine_balance_raw_coin}_matcher:10000000_ifmatch:&#8ee38d ✔_else:&#e38d8d ✘% 10,000,000 Coins'
+              - '&#8ee38d ✔ 5 Hexia Crystals Applied'
+              commands:
+                - 'console= goop mmoitems stat lore %player_name% hand -__<#c199d1>{upgrade_level}/5__Hexia__Crystals__Applied.'
+                - 'console= goop mmoitems stat custom_model_data %player_name% hand 8'
+                - 'console= goop mmoitems stat max_health %player_name% hand +1'
+                - 'console= goop mmoitems stat pve_damage %player_name% hand +5'
+                - 'console= goop mmoitems setTier %player_name% hand TIER5ASCENDED'
+                - 'console= goop mythicmobs runSkillAs ascend %player_name%'
+                - 'setitem= air 2 Top'
+                - 'cpc'
+
+        has8:
+            value0: "NOT AIR"
+            compare0: '%player_item_in_hand%'
+            material: 'BARRIER'
+            itemType:
+            - noAttributes
+            name: '&#f03030This item cannot be ascended!'
+
+      '7':
+        material: BARRIER
+        customdata: '1'
+        name: '&#d19cd9↑ Item Ascension'
+        lore:
+        - ''
+        - '&#cb9edeLilith&#757175 can ascend a number'
+        - '&#757175of your equipment, giving it'
+        - '&#757175elevated powers!'
+        - ''
+        - '&#d19cd9&lASCENDED&#757175 equipments have'
+        - '&#757175higher stats and sometimes'
+        - '&#757175new abilities!'
+        - ''
+        - '&#757175For each item, &#cb9edeLilith&#757175 will also'
+        - '&#757175ask for specific &#cb9edegrimoire&#757175 for'
+        - '&#757175her to ascend that item. The'
+        - '&#757175item also needs to meet some'
+        - '&#757175requirements!'
+        - ''
+        - '&fAsᴄᴇɴᴅᴀʙʟᴇ Iᴛᴇᴍs:'
+        - '&f ꂢ ꂧ ꂣ ꂤ ꂥ ꂦ'

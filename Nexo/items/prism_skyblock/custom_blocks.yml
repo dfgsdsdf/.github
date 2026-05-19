@@ -1,0 +1,90 @@
+cobalt_ore:
+  itemname: Cobalt Ore
+  material: DIAMOND
+  Pack:
+    parent_model: block/cube_all
+    textures:
+    - prism_skyblock/block_textures/cobalt_ore
+    custom_model_data: 1000
+  Mechanics:
+    custom_block:
+      block_sounds:
+        place_sound: block.stone.place
+        break_sound: block.stone.break
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
+        fall_sound: my.custom.fallsound
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 52
+      model: cobalt_ore
+      hardness: 5
+      drop:
+        silktouch: false
+        fortune: true
+        minimal_type: DIAMOND
+        loots:
+        - probability: 1.0
+          nexo_item: raw_cobalt
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+mithril_ore:
+  itemname: Mithril Ore
+  material: DIAMOND
+  Pack:
+    parent_model: block/cube_all
+    textures:
+    - prism_skyblock/block_textures/mithril_ore
+    custom_model_data: 2
+  Mechanics:
+    custom_block:
+      block_sounds:
+        place_sound: block.stone.place
+        break_sound: block.stone.break
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
+        fall_sound: my.custom.fallsound
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 53
+      model: mithril_ore
+      hardness: 5.5
+      drop:
+        silktouch: false
+        fortune: true
+        minimal_type: DIAMOND
+        loots:
+        - probability: 1.0
+          nexo_item: raw_mithril
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+soulsteel_ore:
+  itemname: Soulsteel Ore
+  material: DIAMOND
+  Pack:
+    parent_model: block/cube_all
+    textures:
+    - prism_skyblock/block_textures/soulsteel_ore
+    custom_model_data: 3
+  Mechanics:
+    custom_block:
+      block_sounds:
+        place_sound: block.stone.place
+        break_sound: block.stone.break
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
+        fall_sound: my.custom.fallsound
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 54
+      model: soulsteel_ore
+      hardness: 6
+      drop:
+        silktouch: false
+        fortune: true
+        minimal_type: NETHERITE
+        loots:
+        - probability: 1.0
+          nexo_item: raw_soulsteel
+        best_tool: PICKAXE
+      type: NOTEBLOCK

@@ -1,0 +1,208 @@
+# ==============================================================
+#                        EASY QUESTS FILE
+# ==============================================================
+# Quests must be numbered and increment from 1 to 1.
+# Please be attentive to the indentation and respect the scheme.
+# This could cause several bugs.
+# ==============================================================
+# AVAILABLE QUESTS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/quests-types
+# ==============================================================
+# AVAILABLE REWARDS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/rewards-types
+# ==============================================================
+# AVAILABLE ENTITY TYPES :
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html
+# ==============================================================
+# AVAILABLE ITEM TYPES :
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# ==============================================================
+# AVAILABLE PLUGIN PLACEHOLDERS FOR QUESTS DESCRIPTIONS :
+# %progressBar% is replaced by the progress bar defined in the configuration.
+# %progress% is replaced by the progression of the quest.
+# %required% is replaced by the required amount to complete the quest.
+# ==============================================================
+# More tips available on Wiki :
+# https://ordwenplugins.gitbook.io/odailyquests/
+# Need help ? https://discord.com/invite/NPAUE7kTgJ
+# For more affected objects or types, please make suggestion.
+# ==============================================================
+quests:
+  1:
+    name: "#4e59de♣&lJACK &8| #7581ffStonebreaker"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Mine 128 stones."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: BREAK
+    required_item: STONE
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  2:
+    name: "#4e59de♣&lJACK &8| #7581ffCoal Miner"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Mine 16 coal ores."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: BREAK
+    required_item: COAL_ORE
+    required_amount: 16
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  3:
+    name: "#4e59de♣&lJACK &8| #7581ffEnchant Pregame"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Mine 16 lapis ores."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: BREAK
+    required_item: LAPIS_ORE
+    required_amount: 16
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  4:
+    name: "#4e59de♣&lJACK &8| #7581ffLET HIM COOK"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Cook/smelt 4 random items."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: COOK
+    required_amount: 4
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  5:
+    name: "#4e59de♣&lJACK &8| #7581ffSlayer"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Slay 5 mobs."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: KILL
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  6:
+    name: "#4e59de♣&lJACK &8| #7581ffLabor Time"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Farm 20 random crops."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: FARMING
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  7:
+    name: "#4e59de♣&lJACK &8| #7581ffFishin' Time"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Fish 8 times."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: FISH
+    required_amount: 8
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  8:
+    name: "#4e59de♣&lJACK &8| #7581ffUndead Slayer"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Slay 10 zombies or skeletons."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: FISH
+    required_amount: 10
+    required_entity:
+      - ZOMBIE
+      - SKELETON
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  9:
+    name: "#4e59de♣&lJACK &8| #7581ffWheating"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Farm 15 wheat crops."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: FARMING
+    required_item: WHEAT
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"
+  10:
+    name: "#4e59de♣&lJACK &8| #7581ffArachnophobic"
+    menu_item: custommodeldata:barrier:1
+    description:
+      - "#e8e8e8→ Slay 5 spiders."
+      - ""
+      - " #bcecf7+20 Stardust"
+      - " #d1884f+100 Coins"
+      - " #db8a8a+100 Class EXP"
+    quest_type: KILL
+    required_entity: SPIDER
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "stardust give %player% 20 -s"
+        - "coins give %player% 100 -s"
+        - "mmocore admin exp give %player% main 100"

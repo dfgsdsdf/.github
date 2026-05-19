@@ -1,0 +1,132 @@
+skills:
+  auraskills/farming:
+    abilities:
+    - auraskills/bountiful_harvest
+    - auraskills/scythe_master
+    - auraskills/geneticist
+    - auraskills/growth_aura
+    mana_ability: auraskills/replenish
+    options:
+      enabled: true
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+  auraskills/foraging:
+    abilities:
+    - auraskills/lumberjack
+    - auraskills/axe_master
+    - auraskills/shredder
+    mana_ability: auraskills/treecapitator
+    options:
+      enabled: true 
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+  auraskills/mining:
+    abilities:
+    - auraskills/lucky_miner
+    - auraskills/pick_master
+    - auraskills/hardened_armor
+    - auraskills/metal_detector
+    mana_ability: auraskills/speed_mine
+    options:
+      enabled: true
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+  auraskills/fishing:
+    abilities:
+    - auraskills/lucky_catch
+    - auraskills/treasure_hunter
+    - auraskills/grappler
+    - auraskills/epic_catch
+    mana_ability: auraskills/sharp_hook
+    options:
+      enabled: true
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+  auraskills/excavation:
+    abilities:
+    - auraskills/bigger_scoop
+    - auraskills/spade_master
+    - auraskills/lucky_spades
+    mana_ability: auraskills/terraform
+    options:
+      enabled: false
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+  auraskills/archery:
+    abilities:
+    - auraskills/retrieval
+    - auraskills/bow_master
+    - auraskills/piercing
+    - auraskills/stun
+    mana_ability: auraskills/charged_shot
+    options:
+      enabled: true
+      max_level: 50
+      spawner_multiplier: 1
+      check_multiplier_permissions: true
+  auraskills/defense:
+    abilities:
+    - auraskills/shielding
+    - auraskills/mob_master
+    - auraskills/immunity
+    - auraskills/no_debuff
+    - auraskills/golden_heal
+    mana_ability: auraskills/absorption
+    options:
+      enabled: true
+      max_level: 50
+      check_cancelled: true
+      max: 100.0
+      min: 0
+      allow_shield_blocking: false
+      check_multiplier_permissions: true
+  auraskills/fighting:
+    abilities:
+    - auraskills/parry
+    - auraskills/sword_master
+    - auraskills/first_strike
+    - auraskills/bleed
+    - auraskills/fleeting
+    mana_ability: auraskills/lightning_blade
+    options:
+      enabled: true
+      max_level: 50
+      spawner_multiplier: 1
+      check_multiplier_permissions: true
+  auraskills/agility:
+    abilities:
+    - auraskills/light_fall
+    - auraskills/meal_steal
+    options:
+      enabled: false
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+  auraskills/alchemy:
+    abilities:
+    - auraskills/alchemist
+    - auraskills/life_steal
+    - auraskills/golden_heart
+    options:
+      enabled: true
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+      ignore_custom_potions: false
+  auraskills/enchanting:
+    abilities:
+    - auraskills/xp_convert
+    - auraskills/anvil_master
+    - auraskills/lucky_table
+    - auraskills/skill_mender
+    options:
+      enabled: true
+      max_level: 50
+      check_cancelled: true
+      check_multiplier_permissions: true
+file_version: 1

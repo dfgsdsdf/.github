@@ -1,0 +1,51 @@
+tag-skill:
+  char: ꀈ
+  texture: prism_skyblock/labels/tags/skills.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+tag-unlocked:
+  char: ꀉ
+  texture: prism_skyblock/labels/tags/unlocked.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+tag-current:
+  char: ꀋ
+  texture: prism_skyblock/labels/tags/current.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+tag-locked:
+  char: ꀌ
+  texture: prism_skyblock/labels/tags/locked.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+tag-online:
+  char: ꀛ
+  texture: prism_skyblock/labels/tags/online.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+tag-offline:
+  char: ꀜ
+  texture: prism_skyblock/labels/tags/offline.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+
+
+lore-seperator:
+  char: ꀡ
+  texture: prism_skyblock/labels/tags/seperator.png
+  ascent: 3
+  height: 4
+  chat:
+    permission: somerandom.perm

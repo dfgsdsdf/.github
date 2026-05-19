@@ -1,0 +1,48 @@
+dungeons-labofhorrorportrait:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 28
+    model: prism_skyblock/gui_textures/dungeons/labofhorror_portrait
+dungeons-masterlabofhorrorportrait:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 29
+    model: prism_skyblock/gui_textures/dungeons/master_labofhorror_portrait
+dungeons-normalmode:
+  itemname: ''
+  material: GOLD_NUGGET
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    model: prism_skyblock/gui_textures/dungeons/normal_mode
+dungeons-normalmodepressed:
+  itemname: ''
+  material: GOLD_NUGGET
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    model: prism_skyblock/gui_textures/dungeons/normal_mode_pressed
+dungeons-mastermode:
+  itemname: ''
+  material: GOLD_NUGGET
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 3
+    model: prism_skyblock/gui_textures/dungeons/master_mode
+dungeons-mastermodepressed:
+  itemname: ''
+  material: GOLD_NUGGET
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 4
+    model: prism_skyblock/gui_textures/dungeons/master_mode_pressed

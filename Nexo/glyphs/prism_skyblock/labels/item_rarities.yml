@@ -1,0 +1,58 @@
+rarity-1stars:
+  char: ꁉ
+  texture: prism_skyblock/labels/item_rarity/1stars.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+rarity-2stars:
+  char: ꁊ
+  texture: prism_skyblock/labels/item_rarity/2stars.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+rarity-3stars:
+  char: ꁋ
+  texture: prism_skyblock/labels/item_rarity/3stars.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+rarity-4stars:
+  char: ꁌ
+  texture: prism_skyblock/labels/item_rarity/4stars.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+rarity-5stars:
+  char: ꁍ
+  texture: prism_skyblock/labels/item_rarity/5stars.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+
+
+rarity-3starsascended:
+  char: ꂨ
+  texture: prism_skyblock/labels/item_rarity/3starsascended.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+rarity-4starsascended:
+  char: ꂩ
+  texture: prism_skyblock/labels/item_rarity/4starsascended.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm
+rarity-5starsascended:
+  char: ꂪ
+  texture: prism_skyblock/labels/item_rarity/5starsascended.png
+  ascent: 7
+  height: 8
+  chat:
+    permission: somerandom.perm

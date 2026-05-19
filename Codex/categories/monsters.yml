@@ -1,0 +1,93 @@
+name: "Monsters"
+discover_title:
+  title: "&c&lCODEX UPDATED"
+  subtitle: "&7Monsters: %name%"
+  fade_in: 0
+  stay: 0
+  fade_out: 0
+discover_message:
+- "&fꀷ #4b56b4You have discovered %name%#4b56b4, codex updated!"
+discover_sound:
+  name: BLOCK_NOTE_BLOCK_BELL
+  volume: 10
+  pitch: 0.1
+discoveries:
+  1:
+    name: "#f56969Infected Scientist"
+    lore:
+    - "&f 40ꂆ 5ꂇ 4ꂈ"
+    - "#ffccccScientists infected with a"
+    - "#ffccccstrange strand of virus."
+    - ""
+    - "#6380d6Drops:"
+    - "#ccd9ff Infected Flesh &8(10%)"
+    discovered_on_mob_kill:
+      mythic_mobs_id: INFECTED_SCIENTIST
+  2:
+    name: "#f56969Uncaged Subject"
+    lore:
+    - "&f 35ꂆ 0ꂇ 5ꂈ"
+    - "#ffccccUnforunate subjects endured"
+    - "#ffccccterrifying experiments."
+    - ""
+    - "#6380d6Drops:"
+    - "#ccd9ff Infected Flesh &8(10%)"
+    discovered_on_mob_kill:
+      mythic_mobs_id: UNCAGED_SUBJECT
+  3:
+    name: "#f56969Half-Converted Researcher"
+    lore:
+    - "&f 35ꂆ 0ꂇ 5ꂈ"
+    - "#ffccccUndergoing half of the"
+    - "#ffccccconversion process."
+    - ""
+    - "#6380d6Drops:"
+    - "#ccd9ff Infected Flesh &8(10%)"
+    discovered_on_mob_kill:
+      mythic_mobs_id: HALF_CONVERTED_RESEARCHER
+  4:
+    name: "#f56969Converted Undead"
+    lore:
+    - "&f 25ꂆ 0ꂇ 10ꂈ"
+    - "#ffccccA fully-converted undead"
+    - "#ffccccthat hits hard and spawns"
+    - "#ffccccsilver parasites on death."
+    - ""
+    - "#6380d6Drops:"
+    - "#ccd9ff Infected Flesh &8(10%)"
+    discovered_on_mob_kill:
+      mythic_mobs_id: CONVERTED_UNDEAD
+  5:
+    name: "#f56969Silver Parasite"
+    lore:
+    - "&f 10ꂆ 3ꂇ 3ꂈ"
+    - "#ffccccA parasite that feeds off"
+    - "#ffcccchextech energy."
+    - ""
+    - "#6380d6Drops:"
+    - "#ccd9ff Infected Flesh &8(10%)"
+    discovered_on_mob_kill:
+      mythic_mobs_id: SILVER_PARASITE
+  6:
+    name: "#f56969Confused Hextechnologist"
+    lore:
+    - "&f 100ꂆ 0ꂇ 10ꂈ"
+    - "#ffccccShoots hex bolts to ward"
+    - "#ffccccoff strangers."
+    - ""
+    - "#6380d6Drops:"
+    - "#ccd9ff Infected Flesh &8(50%)"
+    discovered_on_mob_kill:
+      mythic_mobs_id: CONFUSED_HEXTECHNOLOGIST
+  7:
+    name: "#f56969Draedon Disciple"
+    lore:
+    - "&f 1000ꂆ 6ꂇ 8ꂈ"
+    - "#ffccccThe right hand to Draedon,"
+    - "#ffccccuse various technology as"
+    - "#ffccccthe final defense."
+    - ""
+    - "#6380d6Drops:"
+    - "#ccd9ff 1-3x Infected Flesh &8(100%)"
+    discovered_on_mob_kill:
+      mythic_mobs_id: DRAEDON_DISCIPLE

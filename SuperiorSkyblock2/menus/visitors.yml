@@ -1,0 +1,74 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꃌ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Visitors &m           '
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - 'm v c $ $ h h p n'
+
+slots: '@'
+previous-page: 'p'
+next-page: 'n'
+
+items:
+  '@':
+    type: PLAYER_HEAD
+    customModel: 11
+    name: '&6{0}'
+    lore:
+      - '&8{1}'
+
+  'm':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Switch to &{HEX:318ad8}Members'
+  'v':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Switch to &{HEX:318ad8}Visitors'
+  'c':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Switch to &{HEX:318ad8}Coops'
+
+  'p':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Previous Page'
+  'n':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Next Page'
+  'h':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back'
+
+commands:
+  'h':
+    - '[player] is panel'
+  'm':
+    - '[player] is members'
+  'c':
+    - '[player] is coops'
+
+sounds:
+  'p':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+  'n':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1

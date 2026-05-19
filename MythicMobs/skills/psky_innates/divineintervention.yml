@@ -1,0 +1,27 @@
+divine_intervention:
+  Conditions:
+  - healthpercent{p=<40%} true
+  Skills:
+  - totemofundying{model=1} @self
+  - healpercent{m=0.1} @self
+  - shieldPercent{multiplier=0.2;mS=0.5} @self
+  - effect:particlering{particle=redstone;color=#F9DF88;radius=0.8;points=32;amount=1;y=1.5} @self
+  - delay 2
+  - effect:particlering{particle=redstone;color=#F8DA77;radius=1;points=32;amount=1;y=1.3} @self
+  - delay 2
+  - effect:particlering{particle=redstone;color=#DEC15E;radius=1.2;points=32;amount=1;y=1.1} @self
+  - delay 2
+  - effect:particlering{particle=redstone;color=#D3B962;radius=1.4;points=32;amount=1;y=0.9} @self
+  - delay 2
+  - effect:particlering{particle=redstone;color=#AC923C;radius=1.6;points=32;amount=1;y=0.7} @self
+  - delay 2
+  - effect:particlering{particle=redstone;color=#7B692B;radius=1.8;points=32;amount=1;y=0.5} @self
+  - effect:particles{p=villager_happy;amount=25;hS=1;vS=1} @self
+  - effect:particles{p=heart;amount=25;hS=1;vS=1} @self
+
+ascend:
+  Skills:
+  - totemofundying{model=2} @self
+  - sound{s=item.totem.use} @self
+  - delay 1
+  - stopsound{s=item.totem.use} @self

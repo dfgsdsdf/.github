@@ -1,0 +1,58 @@
+rank-player:
+  char: ꁇ
+  texture: prism_skyblock/labels/ranks/player.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+
+rank-vip:
+  char: ꁀ
+  texture: prism_skyblock/labels/ranks/vip.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+rank-mvp:
+  char: ꁁ
+  texture: prism_skyblock/labels/ranks/mvp.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+rank-hero:
+  char: ꁂ
+  texture: prism_skyblock/labels/ranks/hero.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+
+rank-helper:
+  char: ꁃ
+  texture: prism_skyblock/labels/ranks/helper.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+rank-mod:
+  char: ꁄ
+  texture: prism_skyblock/labels/ranks/mod.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+rank-admin:
+  char: ꁅ
+  texture: prism_skyblock/labels/ranks/admin.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm
+rank-owner:
+  char: ꁆ
+  texture: prism_skyblock/labels/ranks/owner.png
+  ascent: 7
+  height: 7
+  chat:
+    permission: somerandom.perm

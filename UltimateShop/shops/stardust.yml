@@ -1,0 +1,90 @@
+settings:
+  menu: 'stardust-shop'
+  buy-more: false
+  shop-name: 'Drops Shop'
+  hide-message: false
+
+general-configs:
+  fail-actions:
+    - 'sound: entity.villager.no;;1;;1'
+  buy-actions:
+    - 'sound: coins;;1;;1-b-o' 
+  sell-actions:
+    - 'sound: coins;;1;;1-b-o' 
+
+items:
+  A:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: CONSUMABLE;;DICE_OF_FATE
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: CoinsEngine
+        economy-type: stardust
+        amount: '500'
+        placeholder: '&#bcecf7{amount} Stardust'
+        start-apply: 0
+  B:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: DUNGEON_KEY;;CHAMBER_DIAMOND_KEY
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: CoinsEngine
+        economy-type: stardust
+        amount: '3500'
+        placeholder: '&#bcecf7{amount} Stardust'
+        start-apply: 0
+  C:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: DUNGEON_KEY;;CHAMBER_EMERALD_KEY
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: CoinsEngine
+        economy-type: stardust
+        amount: '6500'
+        placeholder: '&#bcecf7{amount} Stardust'
+        start-apply: 0
+  D:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: UNDECIPHERED_BOOK;;UNDECIPHERED_COMMON_ANCIENT_BOOK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: CoinsEngine
+        economy-type: stardust
+        amount: '5000'
+        placeholder: '&#bcecf7{amount} Stardust'
+        start-apply: 0
+  E:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        hook-plugin: MMOItems
+        hook-item: UNDECIPHERED_BOOK;;UNDECIPHERED_RARE_ANCIENT_BOOK
+        amount: 1
+    buy-prices:
+      1:
+        economy-plugin: CoinsEngine
+        economy-type: stardust
+        amount: '8500'
+        placeholder: '&#bcecf7{amount} Stardust'
+        start-apply: 0

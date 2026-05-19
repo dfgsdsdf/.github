@@ -1,0 +1,35 @@
+# Uses legacy color codes with the & symbol.
+# RGB can be used with & then the hex code, such as &#FFFF00.
+
+# Displays when the region does not have a set display name.
+Default: None
+
+# Sets the region's display name.
+# Format: region_id: "display name"
+Regions:
+  
+  # Spawn
+  world_spawn: Darwin Village
+  blacksmith: The Blacksmith
+  grotto: The Grotto
+  enchantcenter: Enchant Center
+  treasury: The Treasury
+  guild: Guild's Domain
+  town_hall: Town Hall
+  portal: The Portal
+  dungeonportal: Dungeon Portal
+  rift: The Rift
+  balloondock: Balloon Dock
+  quester_house: Quester House
+  ascension_pedal: Ascension Pedal
+  
+  # Private Island
+  world_private_islands: Private Island
+  world_private_islands_nether: Private Island
+  
+  # Dungeons 1
+  loh_0: Lab of Horrors
+  loh_1: Lab of Horrors
+  loh_2: Lab of Horrors
+  loh_3: Lab of Horrors
+  loh_4: Lab of Horrors

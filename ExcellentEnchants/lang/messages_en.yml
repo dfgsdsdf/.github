@@ -1,0 +1,63 @@
+Command:
+  Argument:
+    Name:
+      Level: level
+      Slot: slot
+      Rarity: rarity
+  List:
+    Desc: List of custom enchantments.
+    DoneOthers: '&fꀒ #04d42cOpened enchantments GUI for <lyellow>%player_name%</lyellow>.#04d42c'
+  Enchant:
+    Desc: Enchant item in specific slot.
+    Done:
+      Self: '&fꀒ #04d42c<lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!#04d42c'
+      Others: '&fꀒ #04d42c<lyellow>%player_display_name%</lyellow>''s <lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!#04d42c'
+    Error:
+      NoItem: <lred>There is no item to enchant!</lred>
+  Book:
+    Desc: Give a book with specific enchantment.
+    Done: '&fꀒ #04d42cGiven <lyellow>%enchant%</lyellow> enchanted book to <lyellow>%player_display_name%</lyellow>.#04d42c'
+  RarityBook:
+    Desc: Give a book with enchantment of specific rarity.
+    Done: '&fꀒ #04d42cGiven <lyellow>%name%</lyellow> enchanted book to <lyellow>%player_display_name%</lyellow>.#04d42c'
+    Error:
+      Empty: '&fꀓ #e55039There is no enchantments with the <lred>%name%</lred> rarity!#e55039'
+  GetFuel:
+    Desc: Get enchantment fuel item.
+    Done: '&fꀒ #04d42cYou got <lyellow>x%amount% %name%</lyellow>.#04d42c'
+    Error:
+      NoCharges: '&fꀓ #e55039Enchantment <lred>%name%</lred> don''t have charges.#e55039'
+  Disenchant:
+    Desc: Disenchant item in specific slot.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow>'s <lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+Error:
+  Command:
+    Argument:
+      InvalidRarity: '&fꀓ #e55039<lred>%value%</lred> is not a valid rarity!#e55039'
+      InvalidSlot: '&fꀓ #e55039<lred>%value%</lred> is not a valid slot!#e55039'
+ItemCategory:
+  Helmet: ꂶ
+  Chestplate: ꂷ
+  Leggings: ꂸ
+  Boots: ꂹ
+  Elytra: ꂿ
+  Sword: ꂯ
+  Axe: ꂳ
+  Hoe: ꂴ
+  Pickaxe: ꂲ
+  Shovel: ꂵ
+  Trident: ꃂ
+  Bow: ꂰ
+  Crossbow: ꂾ
+  FishingRod: ꃀ
+  Shield: ꃁ
+  Breakable: "ꂶ ꂷ ꂸ ꂹ ꂯ ꂳ ꂴ ꂲ ꂵ ꃂ ꂰ ꂾ ꃀ ꃁ"
+  Armor: "ꂶ ꂷ ꂸ ꂹ"
+  Tool: "ꂳ ꂴ ꂲ ꂵ"
+  Weapon: "ꂯ ꂳ"
+  Bows: "ꂰ ꂾ"
+  Torso: "ꂷ ꂿ"
+  AllWeapon: "ꂯ ꂳ ꃂ ꂰ ꂾ"
+  MiningTools: "ꂲ ꂳ ꂵ"

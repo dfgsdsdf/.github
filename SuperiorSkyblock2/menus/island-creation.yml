@@ -1,0 +1,207 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀭ ꐲꐰꐮꐭꐬ&{HEX:3b3b3b}Creating An Island... &m               '
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '1 @ @ 2 ^ ^ 3 $ $'
+  - '@ @ @ ^ ^ ^ $ $ $'
+  - '@ @ @ ^ ^ ^ $ $ $'
+  - '\ \ \ ! ! ! \ \ \'
+
+items:
+  '!':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:71d629}Creating a new island...'
+    lore:
+      - '&{HEX:cccccc}You are creating a new island,'
+      - '&{HEX:cccccc}please choose one of the &atype'
+      - '&{HEX:cccccc}below to get your started!'
+      - ''
+      - '&8Your adventure begins on this'
+      - '&8very island!'
+
+  '1':
+    schematic: 'normal'
+    biome: PLAINS
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg4MWVkMWNkMDVjNWMyYjA3NmZiMzRmNDUyNGY3ZDNjZjcyOGNmZjFkMjQwMGQ4MzM0ZDVlYmVhYzlhOWFkNCJ9fX0='
+      customModel: 16
+      name: '&fCreate a &a&lNORMAL &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A simple island with trees'
+        - '&{HEX:cccccc}and a mining area.'
+        - '&{HEX:cccccc} '
+        - '&fꂀ &{HEX:83ca16}Create island!'
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg4MWVkMWNkMDVjNWMyYjA3NmZiMzRmNDUyNGY3ZDNjZjcyOGNmZjFkMjQwMGQ4MzM0ZDVlYmVhYzlhOWFkNCJ9fX0='
+      customModel: 16
+      name: '&fCreate a &a&lNORMAL &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A simple island with trees'
+        - '&{HEX:cccccc}and a mining area.'
+        - '&{HEX:cccccc} '
+        - '&c&lUNAVAILABLE!'
+  '@':
+    schematic: 'normal'
+    biome: PLAINS
+    access:
+      type: BARRIER
+      customModel: 1
+      name: '&fCreate a &a&lNORMAL &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A simple island with trees'
+        - '&{HEX:cccccc}and a mining area.'
+        - '&{HEX:cccccc} '
+        - '&fꂀ &{HEX:83ca16}Create island!'
+    no-access:
+      type: BARRIER
+      customModel: 1
+      name: '&fCreate a &a&lNORMAL &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A simple island with trees'
+        - '&{HEX:cccccc}and a mining area.'
+        - '&{HEX:cccccc} '
+        - '&c&lUNAVAILABLE!'
+
+  '2':
+    schematic: 'mycel'
+    biome: MUSHROOM_FIELDS
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVmM2ZkYmFiMWI3NzIzNTU5NTZjZjhkMzZlZDQ3YTkzNGNjZDQyYTM2NDRkOGRjOWU0Mzc2ZGY0NjY1YjY2In19fQ=='
+      customModel: 16
+      name: '&fCreate a &d&lMYCELIUM &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of mycelium.'
+        - '&{HEX:cccccc} '
+        - '&fꂀ &{HEX:83ca16}Create island!'
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVmM2ZkYmFiMWI3NzIzNTU5NTZjZjhkMzZlZDQ3YTkzNGNjZDQyYTM2NDRkOGRjOWU0Mzc2ZGY0NjY1YjY2In19fQ=='
+      customModel: 16
+      name: '&fCreate a &d&lMYCELIUM &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of mycelium.'
+        - '&{HEX:cccccc} '
+        - '&c&lUNAVAILABLE'
+  '^':
+    schematic: 'mycel'
+    biome: MUSHROOM_FIELDS
+    access:
+      type: BARRIER
+      customModel: 1
+      name: '&fCreate a &d&lMYCELIUM &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of mycelium.'
+        - '&{HEX:cccccc} '
+        - '&fꂀ &{HEX:83ca16}Create island!'
+    no-access:
+      type: BARRIER
+      customModel: 1
+      name: '&fCreate a &d&lMYCELIUM &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of mycelium.'
+        - '&{HEX:cccccc} '
+        - '&c&lUNAVAILABLE'
+
+  '3':
+    schematic: 'desert'
+    biome: DESERT
+    access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM1YTUwYTNhYjYyZTg2YWMxYzE1MDJmMjNlZDE3ZmFjZDQyM2M4M2ZiN2NjNWFlNTMyZDc4ZDU0MjQ4NmY4In19fQ=='
+      customModel: 16
+      name: '&fCreate a &e&lDESERT &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of sand.'
+        - '&{HEX:cccccc} '
+        - '&fꂀ &{HEX:83ca16}Create island!'
+    no-access:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM1YTUwYTNhYjYyZTg2YWMxYzE1MDJmMjNlZDE3ZmFjZDQyM2M4M2ZiN2NjNWFlNTMyZDc4ZDU0MjQ4NmY4In19fQ=='
+      customModel: 16
+      name: '&fCreate a &e&lDESERT &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of sand.'
+        - '&{HEX:cccccc} '
+        - '&c&lUNAVAILABLE'
+  '$':
+    schematic: 'desert'
+    biome: DESERT
+    access:
+      type: BARRIER
+      customModel: 1
+      name: '&fCreate a &e&lDESERT &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of sand.'
+        - '&{HEX:cccccc} '
+        - '&fꂀ &{HEX:83ca16}Create island!'
+    no-access:
+      type: BARRIER
+      customModel: 1
+      name: '&fCreate a &e&lDESERT &fisland.'
+      lore:
+        - ''
+        - '&{HEX:cccccc}A customized island with lots'
+        - '&{HEX:cccccc}of sand.'
+        - '&{HEX:cccccc} '
+        - '&c&lUNAVAILABLE'
+
+sounds:
+  '@':
+    access:
+      type: BLOCK_PORTAL_AMBIENT
+      volume: 1
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '^':
+    access:
+      type: BLOCK_PORTAL_AMBIENT
+      volume: 1
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '$':
+    access:
+      type: BLOCK_PORTAL_AMBIENT
+      volume: 1
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2

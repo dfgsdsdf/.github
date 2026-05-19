@@ -1,0 +1,219 @@
+panels:
+  dungeon:
+    rows: 5
+    title: '&fꐮꀑ ꐲꐰꐮꐭꐬ<#3b3b3b>Choose A Dungeon &m                 '
+    commands:
+    - dungeon
+    - dungeons
+    - loh
+    pre-load-commands:
+    - 'placeholder= [dungeon:loh]'
+    - 'placeholder= [difficulty:NORMAL]'
+    item:
+
+#DUNGEON CHOOSER
+      '0':
+        material: BOOK
+        customdata: '69'
+        name: '<#5c8a2c>☠         <#7bb83b>Lᴀʙ ᴏғ Hᴏʀʀᴏʀs         <#5c8a2c>☠'
+        lore:
+          - ''
+          - '&#90a37cStenches of misery and carnage'
+          - '&#90a37cstill permeate the air of this lab,'
+          - '&#90a37conce the lair of unspeakably evil'
+          - '&#90a37cexperiments.'
+          - ''
+          - ' &e◆ ◆ ◇ Cʜᴀʟʟᴇɴɢɪɴɢ'
+          - ' &#6f78a1Party Size: &f%md_dungeon_loh_min_players%-%md_dungeon_loh_max_players%'
+          - ' &#6f78a1Size: &fMedium'
+
+      '9': &unreleased
+        material: BOOK
+        customdata: '70'
+        name: '&8Unreleased.'
+      '18': *unreleased
+      '27': *unreleased
+
+#DIFFICULTY CHOOSER
+      '7':
+        material: gold_nugget
+        customdata: '1'
+        name: '&#5dbf52Switch to &#7cc773Normal Mode'
+        lore:
+          - ''
+          - '&#c4c4c4Normal mode dungeons contain'
+          - '&#c4c4c4standard mobs and loot!'
+          - ' '
+          - '&fꂀ &#83ca16Switch to this mode!'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'placeholder= [difficulty:NORMAL]'
+          - 'refresh'
+        has0:
+            value0: "%cp-difficulty%"
+            compare0: 'NORMAL'
+            material: gold_nugget
+            customdata: '2'
+            name: '&#5dbf52Switch to &#7cc773Normal Mode'
+            lore:
+              - ''
+              - '&#c4c4c4Normal mode dungeons contain'
+              - '&#c4c4c4standard mobs and loot!'
+
+      '8':
+        material: gold_nugget
+        customdata: '3'
+        name: '&#cf4450Switch to &#9c1919Master Mode'
+        lore:
+          - ''
+          - ' &#8c464c"Game over man, game over!"'
+          - ''
+          - '&#9c1919Master Mode &#c4c4c4increases difficulty'
+          - '&#c4c4c4significantly, raising all enemies'''
+          - '&chealth &#c4c4c4and &cdamage&#c4c4c4, bumping up'
+          - '&#c4c4c4mob spawns, and buffing up the'
+          - '&#c4c4c4final boss!'
+          - ''
+          - '&#c4c4c4As a reward, both loot chests,'
+          - '&#c4c4c4and chamber chest have &ehigher'
+          - '&#c4c4c4chance to contain &6rare loot&#c4c4c4!'
+          - ' '
+          - '&fꂀ &#83ca16Switch to this mode!'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'placeholder= [difficulty:MASTER]'
+          - 'refresh'
+        has0:
+            value0: "%cp-difficulty%"
+            compare0: 'MASTER'
+            material: gold_nugget
+            customdata: '4'
+            name: '&#cf4450Switch to &#9c1919Master Mode'
+            lore:
+              - ''
+              - ' &#8c464c"Game over man, game over!"'
+              - ''
+              - '&#9c1919Master Mode &#c4c4c4increases difficulty'
+              - '&#c4c4c4significantly, raising all enemies'''
+              - '&chealth &#c4c4c4and &cdamage&#c4c4c4, bumping up'
+              - '&#c4c4c4mob spawns, and buffing up the'
+              - '&#c4c4c4final boss!'
+              - ''
+              - '&#c4c4c4As a reward, both loot chests,'
+              - '&#c4c4c4and chamber chest have &ehigher'
+              - '&#c4c4c4chance to contain &6rare loot&#c4c4c4!'
+
+#DUNGEON SHOWCASE
+      '15': #portrait
+        material: string
+        customdata: '28'
+        name: '<#5c8a2c>'
+        has0:
+            value0: "%cp-difficulty%"
+            compare0: 'MASTER'
+            material: string
+            customdata: '29'
+            name: '&#cf4450'
+
+      '3': &portal
+        material: barrier
+        customdata: '1'
+        name: '<#5c8a2c>☠         <#7bb83b>Lᴀʙ ᴏғ Hᴏʀʀᴏʀs         <#5c8a2c>☠'
+        lore:
+          - ''
+          - '&#90a37cStenches of misery and carnage'
+          - '&#90a37cstill permeate the air of this lab,'
+          - '&#90a37conce the lair of unspeakably evil'
+          - '&#90a37cexperiments.'
+          - ''
+          - ' &e◆ ◆ ◇ Cʜᴀʟʟᴇɴɢɪɴɢ'
+          - ' &#6f78a1Party Size: &f%md_dungeon_loh_min_players%-%md_dungeon_loh_max_players%'
+          - ' &#6f78a1Size: &fMedium'
+          - ' '
+          - '&fꂀ &#83ca16See dungeon''s loot!'
+        commands:
+          - 'sound= ENTITY_CHICKEN_EGG'
+          - 'open= loot_loh'
+        has0:
+            value0: "%cp-difficulty%"
+            compare0: 'MASTER'
+            material: barrier
+            customdata: '1'
+            name: '<#5c8a2c>☠         <#7bb83b>Lᴀʙ ᴏғ Hᴏʀʀᴏʀs         <#5c8a2c>☠'
+            lore:
+              - ''
+              - '&#90a37cStenches of misery and carnage'
+              - '&#90a37cstill permeate the air of this lab,'
+              - '&#90a37conce the lair of unspeakably evil'
+              - '&#90a37cexperiments.'
+              - ''
+              - ' &e◆ ◆ ◇ Cʜᴀʟʟᴇɴɢɪɴɢ'
+              - ' &#6f78a1Party Size: &f%md_dungeon_loh_min_players%-%md_dungeon_loh_max_players%'
+              - ' &#6f78a1Size: &fMedium'
+              - ''
+              - ' &#9c1919☠ Master Mode!'
+              - ' &#8c4141+50% &#7d5c5cMob HP'
+              - '&#473535 &#8c4141+35% &#7d5c5cMob Damage'
+              - '&#473535 &#8c4141Buffed &#7d5c5cFinal Boss'
+              - '&#473535 &#8c4141Increased &#7d5c5cLoot'
+              - ' '
+              - '&fꂀ &#83ca16See dungeon''s loot!'
+            commands:
+              - 'sound= ENTITY_CHICKEN_EGG'
+              - 'open= loot_loh_master'
+      '4': *portal
+      '5': *portal
+      '12': *portal
+      '13': *portal
+      '14': *portal
+      '21': *portal
+      '22': *portal
+      '23': *portal
+      '30': *portal
+      '31': *portal
+      '32': *portal
+
+#PLAY DUNGEON BUTTON
+      '40': &play
+        material: barrier
+        customdata: '1'
+        name: '<#e09163>Enter and play this dungeon'
+        lore:
+          - ''
+          - '&#ccccccStarts a dungeon instance. Slay'
+          - '&#ccccccenemies, loot chests and unlock'
+          - '&#ccccccdoors!'
+          - ''
+          - '&#a66656 You are playing &#bd614asolo&#a66656!'
+          - ''
+          - '&fꂀ &#83ca16Queue for dungeon!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'md play loh:%cp-difficulty% %player_name%'
+        has0:
+            value0: "%mmocore_party_count% ISGREATER"
+            compare0: '1'
+            material: BARRIER
+            customdata: '1'
+            name: '<#e09163>Enter and play this dungeon'
+            lore:
+              - ''
+              - '&#ccccccStarts a dungeon instance. Slay'
+              - '&#ccccccenemies, loot chests and unlock'
+              - '&#ccccccdoors!'
+              - ''
+              - '&#a66656 Your party: &#bd614a(%mmocore_party_count%/5)'
+              - '&#633226+ &#944c3a%mmocore_party_member_1%'
+              - '&#633226+ &#944c3a%mmocore_party_member_2%'
+              - '&#633226+ &#944c3a%mmocore_party_member_3%'
+              - '&#633226+ &#944c3a%mmocore_party_member_4%'
+              - '&#633226+ &#944c3a%mmocore_party_member_5%'
+              - ' '
+              - '&fꂀ &#83ca16Queue for dungeon!'
+            commands:
+              - 'sound= BLOCK_NOTE_BLOCK_HAT'
+              - 'md play loh:%cp-difficulty% %player_name%'
+      '38': *play
+      '39': *play
+      '41': *play
+      '42': *play

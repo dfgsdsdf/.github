@@ -1,0 +1,106 @@
+raw_cobalt:
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/ore/raw_cobalt.png
+  mmoitem:
+    type: MATERIAL
+    id: RAW_COBALT
+cobalt-ingot:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/ore/cobalt_ingot.png
+raw_mithril:
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/item_texture/ore/raw_mithril.png
+  mmoitem:
+    type: MATERIAL
+    id: RAW_MITHRIL
+mithril-ingot:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/item_texture/ore/mithril_ingot.png
+raw_soulsteel:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/item_texture/ore/raw_soulsteel.png
+  mmoitem:
+    type: MATERIAL
+    id: RAW_SOULSTEEL
+soulsteel-ingot:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 8
+    textures:
+    - prism_skyblock/item_texture/ore/soulsteel_ingot.png
+soul-netherite-ingot:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 9
+    textures:
+    - prism_skyblock/item_texture/ore/soul_netherite_ingot.png
+gilded-netherite-ingot:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 10
+    textures:
+    - prism_skyblock/item_texture/ore/gilded_netherite_ingot.png
+warden-ingot:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 11
+    textures:
+    - prism_skyblock/item_texture/ore/warden_ingot.png
+raw-hextech:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 13
+    textures:
+    - prism_skyblock/item_texture/ore/raw_hextech.png
+hextech-ingot:
+  itemname: ''
+  material: RAW_IRON
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 12
+    textures:
+    - prism_skyblock/item_texture/ore/hextech_ingot.png

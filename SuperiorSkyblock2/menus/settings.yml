@@ -1,0 +1,488 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Settings &m          '
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - 'p p p h h h n n n'
+
+slots: '@'
+previous-page: 'p'
+next-page: 'n'
+
+items:
+  'p':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Previous Page'
+  'n':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Next Page'
+  'h':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back'
+
+commands:
+  'h':
+    - '[player] is panel'
+
+sounds:
+  'p':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+  'n':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+
+settings:
+  always_day:
+    settings-enabled:
+      type: YELLOW_TERRACOTTA
+      name: '&fAlways Day'
+      lore:
+        - '&{HEX:cccccc}Set a day time on your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: YELLOW_TERRACOTTA
+      name: '&fAlways Day'
+      lore:
+        - '&{HEX:cccccc}Set a day time on your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_middle_day:
+    settings-enabled:
+      type: ORANGE_TERRACOTTA
+      name: '&fAlways Middle Day'
+      lore:
+        - '&{HEX:cccccc}Set a middle day time on your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: ORANGE_TERRACOTTA
+      name: '&fAlways Middle Day'
+      lore:
+        - '&{HEX:cccccc}Set a middle day time on your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_night:
+    settings-enabled:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fAlways Night'
+      lore:
+        - '&{HEX:cccccc}Set a night time on your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fAlways Night'
+      lore:
+        - '&{HEX:cccccc}Set a night time on your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_middle_night:
+    settings-enabled:
+      type: BLUE_TERRACOTTA
+      name: '&fAlways Middle Night'
+      lore:
+        - '&{HEX:cccccc}Set a middle night day time on your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: BLUE_TERRACOTTA
+      name: '&fAlways Middle Night'
+      lore:
+        - '&{HEX:cccccc}Set a middle night day time on your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_rain:
+    settings-enabled:
+      type: LILY_PAD
+      name: '&fAlways Rain'
+      lore:
+        - '&{HEX:cccccc}Set a rainy weather on your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: LILY_PAD
+      name: '&fAlways Rain'
+      lore:
+        - '&{HEX:cccccc}Set a rainy weather on your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_shiny:
+    settings-enabled:
+      type: DEAD_BUSH
+      name: '&fAlways Shiny'
+      lore:
+        - '&{HEX:cccccc}Set a shiny weather on your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: DEAD_BUSH
+      name: '&fAlways Shiny'
+      lore:
+        - '&{HEX:cccccc}Set a shiny weather on your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  creeper_explosion:
+    settings-enabled:
+      type: CREEPER_HEAD
+      name: '&fCreeper Explosion'
+      lore:
+        - '&{HEX:cccccc}Allow creepers to explode blocks inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: CREEPER_HEAD
+      name: '&fCreeper Explosion'
+      lore:
+        - '&{HEX:cccccc}Allow creepers to explode blocks inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  crops_growth:
+    settings-enabled:
+      type: WHEAT_SEEDS
+      name: '&fCrops Growth'
+      lore:
+        - '&{HEX:cccccc}Allow growth of crops inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: WHEAT_SEEDS
+      name: '&fCrops Growth'
+      lore:
+        - '&{HEX:cccccc}Allow growth of crops inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  egg_lay:
+    settings-enabled:
+      type: EGG
+      name: '&fEgg Lay'
+      lore:
+        - '&{HEX:cccccc}Allow chickens to lay eggs inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: EGG
+      name: '&fEgg Lay'
+      lore:
+        - '&{HEX:cccccc}Allow chickens to lay eggs inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  enderman_grief:
+    settings-enabled:
+      type: ENDER_PEARL
+      name: '&fEnderman Grief'
+      lore:
+        - '&{HEX:cccccc}Allow enderman to grief blocks inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: ENDER_PEARL
+      name: '&fEnderman Grief'
+      lore:
+        - '&{HEX:cccccc}Allow enderman to grief blocks inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+
+  fire_spread:
+    settings-enabled:
+      type: FLINT_AND_STEEL
+      name: '&fFire Spread'
+      lore:
+        - '&{HEX:cccccc}Allow fire to spread inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: FLINT_AND_STEEL
+      name: '&fFire Spread'
+      lore:
+        - '&{HEX:cccccc}Allow fire to spread inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  ghast_fireball:
+    settings-enabled:
+      type: FIRE_CHARGE
+      name: '&fGhast Fireball'
+      lore:
+        - '&{HEX:cccccc}Allow fireballs to break blocks inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: FIRE_CHARGE
+      name: '&fGhast Fireball'
+      lore:
+        - '&{HEX:cccccc}Allow fireballs to break blocks inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  lava_flow:
+    settings-enabled:
+      type: LAVA_BUCKET
+      name: '&fLava Flow'
+      lore:
+        - '&{HEX:cccccc}Allow lava to flow inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: LAVA_BUCKET
+      name: '&fLava Flow'
+      lore:
+        - '&{HEX:cccccc}Allow lava to flow inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  natural_animals_spawn:
+    settings-enabled:
+      type: PIG_SPAWN_EGG
+      name: '&fNatural Animals Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow natural spawning of animals inside the island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: PIG_SPAWN_EGG
+      name: '&fNatural Animals Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow natural spawning of animals inside the island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  natural_monster_spawn:
+    settings-enabled:
+      type: ZOMBIE_SPAWN_EGG
+      name: '&fNatural Monster Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow natural spawning of monsters inside the island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: ZOMBIE_SPAWN_EGG
+      name: '&fNatural Monster Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow natural spawning of monsters inside the island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  pvp:
+    settings-enabled:
+      type: DIAMOND_SWORD
+      name: '&fPvP'
+      lore:
+        - '&{HEX:cccccc}Allow players to pvp inside the island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: DIAMOND_SWORD
+      name: '&fPvP'
+      lore:
+        - '&{HEX:cccccc}Allow players to pvp inside the island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  spawner_animals_spawn:
+    settings-enabled:
+      type: SPAWNER
+      name: '&fSpawner Animals Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow spawner spawning of animals inside the island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: SPAWNER
+      name: '&fSpawner Animals Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow spawner spawning of animals inside the island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  spawner_monster_spawn:
+    settings-enabled:
+      type: SPAWNER
+      name: '&fSpawner Monster Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow spawner spawning of monsters inside the island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: SPAWNER
+      name: '&fSpawner Monster Spawn'
+      lore:
+        - '&{HEX:cccccc}Allow spawner spawning of monsters inside the island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  tnt_explosion:
+    settings-enabled:
+      type: TNT
+      name: '&fTNT Explosion'
+      lore:
+        - '&{HEX:cccccc}Allow TNT to explode blocks inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: TNT
+      name: '&fTNT Explosion'
+      lore:
+        - '&{HEX:cccccc}Allow TNT to explode blocks inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  tree_growth:
+    settings-enabled:
+      type: OAK_SAPLING
+      name: '&fTree Growth'
+      lore:
+        - '&{HEX:cccccc}Allow growth of trees inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: OAK_SAPLING
+      name: '&fTree Growth'
+      lore:
+        - '&{HEX:cccccc}Allow growth of trees inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  water_flow:
+    settings-enabled:
+      type: WATER_BUCKET
+      name: '&fWater Flow'
+      lore:
+        - '&{HEX:cccccc}Allow water to flow inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: WATER_BUCKET
+      name: '&fWater Flow'
+      lore:
+        - '&{HEX:cccccc}Allow water to flow inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  wither_explosion:
+    settings-enabled:
+      type: WITHER_SKELETON_SKULL
+      name: '&fWither Explosion'
+      lore:
+        - '&{HEX:cccccc}Allow withers to explode blocks inside your island.'
+        - ''
+        - '&{HEX:71d629}✔ Enabled'
+    settings-disabled:
+      type: WITHER_SKELETON_SKULL
+      name: '&fWither Explosion'
+      lore:
+        - '&{HEX:cccccc}Allow withers to explode blocks inside your island.'
+        - ''
+        - '&{HEX:d62929}✘ Disabled'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2

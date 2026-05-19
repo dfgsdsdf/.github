@@ -1,0 +1,557 @@
+# Supports '&' colour codes and hex codes! Hex code format: <#000000>
+# Use $1, $2, etc. for args
+general:
+  prefix: '&fꐫꁈ'
+  # The item display name of the function editor tool.
+  function-editor-name: '&6Function Builder'
+  function-editor-lore:
+  - '&6----------------------'
+  - <#4b56b4>Right-click a block to
+  - <#4b56b4>create a function!
+  # What language to use for certain complicated system messages. (Such as the cooldown message.)
+  # A list of locales can be found here: https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html#util-text
+  # NOTE: Not all translations may be supported!
+  java-locale: en-US
+  room-editor-name: '&dRoom Editor'
+  room-editor-lore:
+  - '&d----------------------'
+  - <#4b56b4>Right-click selects first corner.
+  - <#4b56b4>Left-click selects second corner.
+  - ''
+  - <#4b56b4>Right-click while inside a room
+  - <#4b56b4>to edit the room's settings.
+
+# #####################
+# # COMMAND MESSAGES ##
+# #####################
+# Messages displayed by commands.
+
+commands:
+  # /recruit
+  recruit:
+    no-party-system: <#e55039>There's no party system installed on this server!
+    already-recruiting: <#e55039>You're already recruiting!
+    leader-only: <#e55039>Only party leaders can recruit members!
+    recruit-for: <#4b56b4>In 3 words or less, what are you recruiting for?
+    setup:
+      # $1 = Max number of text characters.
+      too-many-characters: <#e55039>Cannot be longer than $1 characters!
+      # $1 = Max number of words.
+      too-many-words: <#e55039>Cannot be longer than $1 words!
+      # $1 = The recruitment label. (What the party is recruiting for.)
+      label-set: '&bSet label to ''&6$1&b''!'
+      description: <#4b56b4>Enter recruitment description to provide more details!
+      # $1 = The recruitment description.
+      description-set: '&bSet description to ''&6$1&b''!'
+      players: <#4b56b4>How many players do you want to recruit?
+      party-too-small: <#e55039>Party size must be at least 2!
+      party-too-big: <#e55039>Party size cannot be more than 12!
+      # $1 = The number of players needed for this recruitment listing.
+      players-set: '&bSet player count to ''&6$1&b''!'
+      password: <#4b56b4>Enter a password to limit who can join! Use 'none' for no
+        password.
+      no-spaces: <#e55039>Recruitment password cannot contain spaces!
+      # $1 = The password for this recruitment listing.
+      password-set: '&bSet recruitment password to ''&6$1&b''!'
+      open-recruitment: '&bLeaving party recruitment open to all!'
+      complete: '&bRecruitment setup complete!'
+    cancel:
+      not-recruiting: <#e55039>You aren't currently recruiting party members!
+      success: <#4b56b4>You cancelled the party recruitment.
+    join:
+      unspecified: <#e55039>You must specify a player to join!
+      join-self: <#e55039>You can't join your own party!
+      player-not-found: <#e55039>No player by that name found!
+      not-recruiting: <#e55039>This player is not recruiting players!
+  # /leave AND /md leave
+  leave:
+    not-in-dungeon: <#e55039>You are not currently in a dungeon!
+    left-queue: <#4b56b4>You cancelled entering the dungeon with your party.
+  # /ready
+  ready:
+    not-queued: <#e55039>You aren't currently queued for a dungeon!
+    # $1 = Name of the player who is ready.
+    # $2 = Number of players ready.
+    # $3 = Total players needed to ready up.
+    success: <#04d42c>&l$1 <#04d42c>is ready to enter the dungeon! &b($2/$3)
+  # /notready
+  notready:
+    not-queued: <#e55039>You aren't currently queued for a dungeon!
+    # $1 = Name of the player who is not ready.
+    cancel: <#e55039>&l$1 <#e55039>has cancelled the dungeon.
+  # /stuck AND /md stuck
+  stuck:
+    not-in-dungeon: <#e55039>You are not currently in a dungeon!
+    success: '&dOh no! Sending you to your last checkpoint.'
+  # /md loot
+  loot:
+    create:
+      # $1 = Provided loot table name.
+      already-exists: <#e55039>There is already a table named '&6$1<#e55039>'!
+      # $1 = Provided loot table name.
+      success: <#04d42c>Created new loot table '&6$1<#04d42c>'!
+    remove:
+      # $1 = Provided loot table name.
+      success: <#4b56b4>Removed loot table '&6$1<#4b56b4>'!
+    edit:
+      # $1 = Provided loot table name.
+      not-found: <#e55039>No loot table found by name '&6$1<#e55039>'!
+      # $1 = Provided loot table name.
+      already-editing: <#e55039>Someone is already editing loot table '&6$1<#e55039>'!
+  # /md play
+  play:
+    # $1 = Provided player name.
+    player-not-found: <#e55039>No player found by name '&6$1<#e55039>'!
+    console-needs-player: <#e55039>From console, this command requires you specify
+      the player!
+    already-in-dungeon: <#e55039>You're already in a dungeon!
+    already-in-queue: <#e55039>You're already queued for another dungeon!
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    party-lead-only: <#e55039>Only the party leader can start a dungeon!
+    # $1 = Player that's currently in a dungeon.
+    player-in-dungeon: '&6&l$1 <#e55039>is in another dungeon instance!'
+    requirements-not-met: '&6&l$1 <#e55039>doesn''t meet the requirements for this
+      dungeon!'
+    instances-full: <#e55039>All instances are currently full! You will be notified
+      when an instance becomes available.
+    how-to-cancel: '&bYou are waiting for a dungeon! Use &6/leave &bto cancel.'
+  lives:
+    not-in-dungeon: <#e55039>You are not currently in a dungeon!
+    infinite-lives: <#4b56b4>You have &6infinite <#4b56b4>lives left.
+    # $1 = Amount of lives remaining.
+    lives-remaining: <#4b56b4>You have &6$1 <#4b56b4>lives left.
+  join:
+    not-in-dungeon: <#e55039>This player is not currently in a dungeon!
+  kick:
+    not-in-dungeon: <#e55039>This player is not currently in a dungeon!
+    kick-alert: <#e55039>You were kicked from the dungeon by an admin.
+  status:
+    # $1 = Total number of running dungeon instances.
+    total-instances: '<#4b56b4>Total Instances: $1'
+    # $1 = Total number of players across all instances.
+    total-players: '<#4b56b4>Total players: $1'
+    # $1 = Number of running instances of a specific dungeon.
+    dungeon-instances: '<#4b56b4> - Instances: $1'
+    # $1 = Number of players across all instances of a specific dungeon.
+    dungeon-players: '<#4b56b4> - Instances: $1'
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    none-loaded: <#4b56b4>There are no instances of this dungeon loaded!
+  reload:
+    config-reloading: <#4b56b4>Reloading config and loot tables...
+    config-reloaded: <#04d42c>Configs reloaded!
+    all-dungeons-reloading: <#4b56b4>Reloading all dungeons...
+    all-dungeons-reloaded: <#04d42c>Dungeons reloaded!
+    reload-all-warning: <#e55039>This kicks any players currently in a dungeon!
+    reload-all-confirm: <#e55039>Use &6/dungeon reload all <#e55039>again to confirm.
+    # $1 = Dungeon being reloaded
+    dungeon-reloading: <#4b56b4>Reloading dungeon $1...
+    # $1 = Dungeon that has been reloaded
+    dungeon-reloaded: <#04d42c>$1 reloaded!
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    # $1 = Dungeon that we are trying to reload.
+    reload-dungeon-warning: <#e55039>This kicks any players currently in $1!
+    # $1 = Dungeon that we are trying to reload.
+    reload-dungeon-confirm: <#e55039>Use &6/dungeon reload $1 <#e55039>again to confirm.
+  create:
+    already-exists: <#e55039>A dungeon with this name already exists!
+    failed-to-create: <#e55039>Could not create dungeon! Check console for info...
+    # $1 = Provided dungeon name.
+    success: <#04d42c>Successfully created blank dungeon &6$1
+  edit:
+    already-in-dungeon: <#e55039>You're already in a dungeon!
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    no-permission: <#e55039>You don't have permission to edit that dungeon!
+    loading: Loading dungeon...
+  delete:
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    edit-in-progress: <#e55039>Someone is currently editing this dungeon!
+    delete-warning: <#e55039>Are you sure you want to delete this dungeon? (Backups
+      will remain.)
+    delete-confirm: '&bRun the command again to confirm.'
+    notification: <#e55039>The dungeon was deleted by an admin!
+    # $1 = The dungeon deleted.
+    success: <#e55039>Dungeon '$1' was deleted.
+  addkey:
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    no-permission: <#e55039>You don't have permission to edit that dungeon!
+    no-held-item: <#e55039>You aren't holding anything in your hand!
+    success: <#04d42c>Added the item in your hand as an access key for this dungeon!
+  removekey:
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    no-permission: <#e55039>You don't have permission to edit that dungeon!
+    no-held-item: <#e55039>You aren't holding anything in your hand!
+    no-key-found: <#e55039>No access key was found matching the item in your hand
+      for this dungeon.
+    success: <#04d42c>Removed the item in your hand from the dungeon's access keys.
+  setlobby:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+    # $1 = X position
+    # $2 = Y position
+    # $3 = Z position
+    # $4 = YAW position
+    success: '<#04d42c>Set dungeon lobby to &6X: $1 Y: $2 Z: $3 YAW: $4'
+  setspawn:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+    # $1 = X position
+    # $2 = Y position
+    # $3 = Z position
+    # $4 = YAW position
+    success: '<#04d42c>Set dungeon spawn to &6X: $1 Y: $2 Z: $3 YAW: $4'
+  setexit:
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    # $1 = X position
+    # $2 = Y position
+    # $3 = Z position
+    # $4 = YAW position
+    success: '<#04d42c>Set dungeon exit to &6X: $1 Y: $2 Z: $3 YAW: $4'
+  banitem:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+    success: <#4b56b4>Added your held item to the dungeon's 'banned item' list.
+  unbanitem:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+    not-banned: <#e55039>This item is not banned in this dungeon!
+    success: <#4b56b4>Removed your held item to the dungeon's 'banned item' list.
+  dungeonitem:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+    success: <#4b56b4>Made item in your hand a dungeon item.
+  functiontool:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+  save:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+    saving: <#4b56b4>Saving dungeon...
+    # $1 = Name of the dungeon being saved.
+    success: <#04d42c>Save of &6$1 <#04d42c>complete!
+  import:
+    # $1 = Provided world name.
+    world-not-found: <#e55039>A world by name &6$1 <#e55039>doesn't exist.
+    # $1 = Provided dimension type.
+    invalid-dimension: <#e55039>$1 is not a valid dimension type!
+    failed: <#e55039>Could not import dungeon! Check console for info...
+    # $1 = Provided world name.
+    success: <#04d42c>Successfully imported dungeon &6$1
+  dxlimport:
+    # $1 = The provided DXL map name.
+    importing: <#4b56b4>Attempting to convert DXL map '&6$1<#4b56b4>'...
+    failed: <#e55039>&lFAILED! <#e55039>Could not import DXL map! Check console for
+      info.
+    success: <#04d42c>&lSuccess! <#04d42c>Finished importing DXL map!
+    check-console: '&dSee console for any functions you need to configure manually!'
+    clean-signs: '&dYou can use &6&l/dungeon cleansigns &dto remove DXL signs in a
+      dungeon!'
+  cleansigns:
+    not-in-dungeon: <#e55039>You are not currently editing a dungeon!
+    # $1 = Number of signed cleaned up.
+    success: <#4b56b4>Cleaned out &6$1 <#4b56b4>signs. (Excluding Interact triggers.)
+  setcooldown:
+    # $1 = Provided dungeon name.
+    dungeon-not-found: <#e55039>No dungeon found with name '&6$1<#e55039>'!
+    # $1 = Provided player name.
+    player-not-found: <#e55039>No player found by name '&6$1<#e55039>'!
+    invalid-duration: <#e55039>Invalid duration! Enter a number and use &6s (seconds),
+      m (minutes), h (hours), or d (days)<#e55039> to determine the duration.
+    # $1 = Provided player name.
+    # $2 = Provided dungeon name.
+    success: <#4b56b4>Set &6$1's <#4b56b4>cooldown for dungeon &6$2<#4b56b4>!
+    # $1 = Time the dungeon will unlock at.
+    cooldown-time: <#4b56b4>Dungeon will unlock again at &6$1
+  # /party
+  party:
+    # Base command.
+    not-in-party: <#e55039>You are not in a party. Run &6/party invite [playername]
+      <#e55039>to invite another player and create a party.
+    # /party invite
+    invite:
+      # $1 = Provided player name.
+      player-not-found: <#e55039>No player found by name '&6$1<#e55039>'
+      player-is-self: '&dIt''s not a party if there''s only one person!'
+      # $1 = Provided player name.
+      player-is-in-a-party: '&6$1 <#e55039>is already in a party!'
+      sender-not-leader: <#e55039>Only the party leader can invite players!
+      player-is-in-sender-party: <#e55039>That player is already in your party!
+      success: '&bInvited &6$1 &bto your party.'
+    # /party join
+    join:
+      no-pending-invites: <#e55039>You aren't currently invited to a party.
+    # /party leave
+    leave:
+      not-in-party: <#e55039>You aren't currently in a party.
+      # $1 = Party leader's name.
+      success: '&bYou left &6$1''s &bparty.'
+    # /party givelead
+    givelead:
+      not-in-party: <#e55039>You aren't currently in a party.
+      not-party-lead: <#e55039>Only party leaders can change the leader.
+      # $1 = Provided player name.
+      player-not-found: <#e55039>No player found by name '&6$1<#e55039>' in the party.
+    # /party kick
+    kick:
+      not-in-party: <#e55039>You aren't currently in a party.
+      not-party-lead: <#e55039>Only party leaders can kick players.
+      # $1 = Provided player name.
+      player-not-found: <#e55039>No player found by name '&6$1<#e55039>' in the party.
+      player-is-self: '&dYou know there''s a leave command, right?'
+    # /party disband
+    disband:
+      not-in-party: <#e55039>You aren't currently in a party.
+      not-party-lead: <#e55039>Only party leaders can disband the party.
+    # /party chat
+    chat:
+      not-in-party: <#e55039>You aren't currently in a party.
+    # /party spy
+    spy:
+      enabled: <#04d42c>You are now spying on party messages from other players!
+      disabled: <#e55039>You are no longer spying on party messages from other players.
+  roomtool:
+    not-in-procedural: <#e55039>This tool is only available in procedural dungeons!
+
+# ######################
+# # INSTANCE MESSAGES ##
+# ######################
+# Messages dedicated to the operating of dungeon instances.
+
+instance:
+  menu:
+    difficulty-select: '&8Select Difficulty'
+  loading: Loading dungeon...
+  is-saving: <#e55039>Dungeon is saving! Please wait and try again.
+  timed-out: <#e55039>Could not load dungeon! Contact an admin. (Timed out)
+  loaded: Dungeon loaded!
+  failed: <#e55039>Failed to load dungeon! Ask an admin to check console.
+  stealth-join: '&7Entered dungeon as a spectator; you will not be considered a participant.'
+  prevent-teleport-in: <#e55039>You can't teleport into an ongoing dungeon!
+  requirements:
+    # $1 = Name of the player who doesn't meet the requirements.
+    requirements-not-met: '&6$1 <#e55039>doesn''t meet this dungeon''s requirements!'
+    # $1 = The maximum party size this dungeon allows.
+    party-too-big: <#e55039>This dungeon only accepts parties of up to &6$1 <#e55039>players.
+    # $1 = The minimum party size this dungeon requires.
+    party-too-small: <#e55039>This dungeon only accepts parties of at least &6$1 <#e55039>players.
+    # $1 = Permission the player is missing.
+    no-permission: '<#e55039>Missing permission: &6$1'
+    on-cooldown: <#e55039>You must wait until you can play this dungeon again!
+    # $1 = Time the dungeon will unlock at.
+    cooldown-time: '<#4b56b4>Unlocks on: &6$1'
+    # $1 = Dungeon the player must complete first.
+    complete-required: <#e55039>You need to complete the dungeon &6$1 <#e55039>first!
+    # $1 = Amount of money required to play this dungeon.
+    not-enough-money: '<#e55039>You don''t have enough currency to play this dungeon!
+      Cost: &6$1'
+    # $1 = Amount of money consumed to enter the dungeon.
+    money-deducted: <#4b56b4>You spent &6$1 <#4b56b4>to enter the dungeon!
+    # $1 = Name of the banned item.
+    banned-item: '<#e55039>This item is banned from this dungeon: &6$1'
+    no-access-key: <#e55039>You're missing an access key for this dungeon!
+  events:
+    # $1 = Name of the player who left the dungeon.
+    player-leave: '&6$1 <#4b56b4>left the dungeon.'
+    # $1 = Name of the player kicked for being offline.
+    player-kicked: '&6$1 <#e55039>was kicked from the dungeon for being offline!'
+    # $1 = Name of the player who returned from being offline.
+    player-returned: '&6$1 <#04d42c>returned to the dungeon!'
+    # $1 = Name of the player who lost a life.
+    # $2 = How many lives the player has left.
+    life-lost: '&6$1 <#e55039>died! They have &6$2 <#e55039>lives left...'
+    # $1 = Name of the player who lost all their lives.
+    all-lives-lost: '&6$1 <#e55039>lost all their lives!'
+    all-lives-lost-and-spectating: <#e55039>All players have lost all their lives!
+      Use &6/md leave <#e55039>to leave the dungeon.
+    all-lives-lost-and-spectating-auto-close: <#e55039>All players have lost all their
+      lives! Closing the dungeon.
+    # $1 = Name of the player who is inheriting the departed player's dungeon keys.
+    key-inheritance: <#4b56b4>Their keys were given to &6$1<#4b56b4>.
+    # $1 = Name of the player who is inheriting the departed player's dungeon items.
+    dungeon-item-inheritance: <#4b56b4>Their dungeon items were given to &6$1<#4b56b4>.
+    enderpearl-deny: <#e55039>Enderpearls are not allowed here!
+    chorus-fruit-deny: <#e55039>Enderpearls are not allowed here!
+    bucket-deny: <#e55039>Buckets are not allowed here!
+    item-banned: <#e55039>This item is banned in this dungeon!
+    command-deny: <#e55039>That command is not allowed in this dungeon!
+    spectate-deny: <#e55039>Can't spectate players outside the dungeon!
+  queue:
+    # $1 = Name of the dungeon the player is about to play.
+    dungeon-ready: <#4b56b4>Dungeon '&6$1<#4b56b4>' is now available! Are you ready?
+    click-one: ' <#4b56b4>Click one →  '
+    ready-button: '&b&l[READY!] '
+    cancel-button: '<#e55039>&l[CANCEL] '
+    dungeon-ready-title: '&6Dungeon Ready!'
+    not-all-ready: <#e55039>Not all players were ready! Queue cancelled...
+    all-ready: <#4b56b4>All players are ready. Entering the dungeon!
+  editmode:
+    autosaving: <#4b56b4>&lAutosaving dungeon...
+    autosaved: <#04d42c>&lAutosave complete!
+    function-select: <#4b56b4>Choose the function you want to build here!
+    # $1 = Name of the selected function.
+    function-selected: '<#4b56b4>Function selected: $1'
+    room-click-required: <#e55039>You must click a block to select a corner.
+    room-select-1: <#4b56b4>Selected first corner.
+    room-select-2: <#4b56b4>Selected second corner.
+    room-name-request: <#4b56b4>What is the name of this room? &bUse the room tool
+      again to cancel.
+    room-name-invalid: <#e55039>Room name can't contain spaces or symbols! Try again.
+    room-create-cancelled: <#4b56b4>Cancelled room creation.
+    room-created: <#04d42c>Created new room &6$1<#04d42c>!
+    room-edit-cancelled: <#4b56b4>Cancelled new room area selection.
+    room-edited: <#04d42c>Set new area for room &6$1<#04d42c>!
+    room-connectors-outside: <#4b56b4>ALERT! There are connectors outside the room's
+      bounds!
+    function-outside-room: <#e55039>Can't place functions outside of a room!
+    room-whitelist:
+      add-prompt: <#4b56b4>Type the name of the room you want to add, or right-click
+        a block in it.
+      # $1 = Name of the added room.
+      add-success: <#04d42c>Added room &6$1 <#04d42c>to the whitelist!
+      edit-prompt: <#4b56b4>Type the name of the room you want to edit the weight
+        of, or right-click a block in it.
+      remove-prompt: <#4b56b4>Click the rooms you want to remove from the whitelist.
+      # $1 = Name of the removed room.
+      remove-success: <#e55039>Removed room &6$1 <#e55039>from the whitelist.
+  rewards:
+    gui-display-name: Rewards
+    # $1 = Amount of experience received.
+    xp-received: <#04d42c>You got $1 experience!
+    # $1 = Amount of experience levels received.
+    levels-received: <#04d42c>You got $1 experience levels!
+    rewards-inv-info: <#4b56b4>These items will be added to your rewards inventory!
+      You'll get them when you finish the dungeon.
+    view-rewards-info: '&bView your rewards with &l/rewards'
+    already-received: <#e55039>You have already received this reward recently!
+    # $1 = When the rewards will be available again.
+    cooldown-time: '<#4b56b4>Unlocks on: &6$1'
+    on-cooldown: ''
+    added-to-inv: <#4b56b4>The rewards you didn't take were added to your inventory.
+    added-to-rewards-inv: <#4b56b4>The rewards you didn't take were added to your
+      rewards inventory.
+    unclaimed-rewards: <#4b56b4>You have unclaimed rewards! &b&lClick here to access
+      them!
+    invalid-loottable: '<#e55039>ERROR: This chest has an invalid loot table! Tell
+      an admin!'
+  time-limit:
+    # $1 = Dungeon name.
+    ten-minute-warning: <#4b56b4>10 minutes remaining to complete &6$1.
+    # $1 = Dungeon name.
+    five-minute-warning: <#4b56b4>5 minutes remaining to complete &6$1.
+    # $1 = Dungeon name.
+    one-minute-warning: <#4b56b4>1 minute remaining to complete &6$1.
+    # $1 = Dungeon name.
+    times-up: <#e55039>Times up!! Dungeon ending...
+  functions:
+    start-dungeon-ready: <#4b56b4>You are ready to start the dungeon.
+    finish-dungeon: <#04d42c>You completed $1<#04d42c>!
+    checkpoint: <#4b56b4>Respawn checkpoint reached!
+    savepoint: <#4b56b4>Starting at the party leader's last checkpoint!
+    # $1 = Player's new life count.
+    # $2 = + or - change from their previous life count.
+    lives-editor: <#4b56b4>You now have &6$1 <#4b56b4>lives. ($2<#4b56b4>)
+    # $1 = Amount of the item received.
+    # $2 = Name of the item received.
+    item-dispenser: <#04d42c>You got &b$1 &6$2<#04d42c>!
+    # $1 = Name of the dungeon finished.
+    keys:
+      key-ground: <#4b56b4>The party found a key! It dropped to the ground...
+      # $1 = Name of the player who found the key.
+      key-player: '&6$1 <#4b56b4>found a key!'
+      # $1 = Name of the party leader.
+      key-leader: <#4b56b4>The party found a key! The key was given to &6$1
+    doors:
+      lock: <#e55039>The door locks!
+      unlock: <#04d42c>The door unlocks!
+      # $1 = Name of the key item.
+      locked-key: <#e55039>The door is locked! You need a &6$1 <#e55039>to open it!
+      locked: <#e55039>The door is locked!
+    reviver:
+      no-uses: <#e55039>This reviver can't bring back any more players!
+      infinite-uses: <#04d42c>You can use this reviver an infinite number of times.
+      # $1 = Number of remaining times the reviver can be used.
+      uses-remaining: <#04d42c>You can use this reviver &6$1 <#04d42c>more times.
+      # $1 = Name of the player we are trying to revive.
+      not-in-dungeon: <#e55039>Attempted to revive &6$1<#e55039>, but they aren't
+        in the dungeon anymore!
+      not-dead: <#e55039>This player isn't dead!
+      # $1 = Name of the player who has been revived.
+      revived: <#04d42c>&l$1 <#04d42c>was revived!!
+
+# ###################
+# # PARTY MESSAGES ##
+# ###################
+# Messages surrounding the party system.
+party:
+  prefix: '&b[Party]'
+  invite:
+    # $1 = Name of the player who sent the invite.
+    message: '&6$1 &binvited you to their party.'
+    join-prompt: <#4b56b4>&l[JOIN]
+    # $1 = Name of the player who sent the invite.
+    expired: <#e55039>The party invite from &6$1 <#e55039>has expired...
+  # $1 = Name of the player who joined the party.
+  join: '&6$1 &bjoined the party!'
+  # $1 = Name of the player who left the party.
+  leave: '&6$1 &bleft the party!'
+  kick:
+    # $1 = Name of the player who owns the party and kicked the player.
+    kicked-player-alert: <#e55039>You were kicked from &6$1's <#e55039>party.
+    # $1 = Name of the player who was kicked from the party.
+    party-kicked-player-alert: '&6$1 <#e55039>was kicked from the party.'
+    # $1 = Name of the player who was kicked from the party for being offline too long.
+    offline-too-long: '&6$1 <#e55039>was kicked from the party for being offline too
+      long!'
+  disband: <#e55039>The party was disbanded.
+  new-leader:
+    # $1 = Name of the player who is now the leader of the party.
+    success: '&6$1 &bis now the party leader!'
+    # $1 = Name of the player being made the party leader
+    failure: <#e55039>Player &6$1 <#e55039>is not a party member.
+  # This is shown when a player requests party info with /party
+  # $1 = Name of the leader of the party.
+  info: '&b&lParty owned by &6$1'
+  # $1 = Name of the player logging in.
+  login: '&6$1 &bhas returned to the party.'
+  # $1 = Name of the player logging out.
+  logout: '&6$1 &bhas logged off.'
+  # Shown when recruitment is cancelled because the party leader left.
+  recruit:
+    # $1 = Name of the host.
+    # $2 = Name of the recruitment listing.
+    listing: '&6&l$1 <#4b56b4>is recruiting for ''&b$2<#4b56b4>''!'
+    cancel-leader-left: <#e55039>Party recruitment was cancelled because the party
+      leader left.
+    join:
+      button: '&b&l--[CLICK TO JOIN]--'
+      cancel: <#e55039>Cancelled joining this recruitment...
+    already-in-party: <#e55039>You're already in this party!
+    listing-expired: <#e55039>This party is no longer recruiting!
+    password:
+      request: <#4b56b4>Enter the password for this recruitment listing.
+      no-spaces: <#e55039>Passwords cannot contain spaces!
+      incorrect: '<#e55039>Incorrect password, try again! (Note: Passwords are CaSe
+        SeNsItIvE.)'
+      correct: '&bPassword accepted!'
+    # $1 = Party Size
+    complete: '&bParty recruitment complete! <#04d42c>$1/$1 &bplayers found!'
+  chat:
+    enable: '&bEnabled party chat.'
+    disable: '&bDisabled party chat.'
+    # $1 = Sending player's display name.
+    # $2 = Message sent.
+    format: '&b[Party] &6$1&f: &b$2'
+    # $1 = Sending player's party leader name.
+    # $2 = Sending player's display name.
+    # $3 = Message sent.
+    spy-format: '&7[$1''s Party] &f&6$2&f: &b$3'
+
+
+# ###########################
+# # MISCELLANEOUS MESSAGES ##
+# ###########################
+# Messages that don't belong to a particular category.
+
+misc:
+  item-dropped: <#e55039>Your inventory is full! Item dropped to the ground...
+  rewards-unavailable: <#e55039>Not all rewards are available to you in this dungeon!

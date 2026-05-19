@@ -1,0 +1,16 @@
+faction_rewards:
+  innate_token:
+    period: 1
+    chance: 100
+    first-trigger: 2
+    triggers:
+    - 'command{format="mmocore admin skill-points give %player_name% 1"}'
+    - 'message{format="<white>ꀒ <#04d42c>You have gained 1 innate token!"}'
+
+dungeoneering_rewards:
+  bonus_dungeon_damage:
+    period: 1
+    chance: 100
+    first-trigger: 2
+    triggers:
+    - 'stat{stat=faction-damage-dungeon;amount=2;type=FLAT}'

@@ -1,0 +1,44 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: "&fꐮꀙ"
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '\ @ @ @ \ ^ ^ ^ \'
+
+confirm: '@'
+cancel: '^'
+
+items:
+  '@':
+    type: BARRIER
+    customModel: 1
+    name: '&aConfirm &2deleting your island&a?'
+    lore:
+      - '&{HEX:cccccc}Are you sure you want to'
+      - '&{HEX:cccccc}delete your island?'
+      - ''
+      - '&4&lWARNING! &cThis is &c&nirreversible&c!'
+      - '&cAll of your progress on the'
+      - '&cisland will be wiped!'
+  '^':
+    type: BARRIER
+    customModel: 1
+    name: '&4Cancel'
+
+sounds:
+  '@':
+    type: ENTITY_BLAZE_DEATH
+    volume: 1
+    pitch: 1
+  '^':
+    type: BLOCK_ANVIL_PLACE
+    volume: 0.2
+    pitch: 0.2

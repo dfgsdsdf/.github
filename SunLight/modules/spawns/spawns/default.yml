@@ -1,0 +1,11 @@
+Name: Darwin Village
+World: world_spawn
+BlockPos: 10,70,-4,9.946538,179.11893
+Permission_Required: false
+Priority: 0
+Teleport_On_Login:
+  Enabled: false
+  Groups: []
+Teleport_On_Death:
+  Enabled: false
+  Groups: []

@@ -1,0 +1,18 @@
+consumable-diceoffate:
+  itemname: ''
+  material: APPLE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/item_texture/consumables/dice_of_fate.png
+consumable-hexiacrystal:
+  itemname: ''
+  material: APPLE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/item_texture/consumables/hexia_crystal.png

@@ -1,0 +1,12 @@
+npc_hotairballoon:
+  Type: ARMOR_STAND
+  Display: ''
+  Options:
+    AlwaysShowName: false
+    Collidable: false
+    NoGravity: true
+    Despawn: persistent
+  Skills:
+  - model{m=hot_airballoon;save=true} @self ~onSpawn
+  - cancelevent{sync=true} @self ~onDamaged
+  - effect:particles{p=cloud;amount=5;y=4;vs=0.3;hs=0.3;speed=0.1} @self ~onTimer:40

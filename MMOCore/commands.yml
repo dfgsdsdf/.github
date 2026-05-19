@@ -1,0 +1,20 @@
+class:
+  main: class
+  aliases:
+  - pickfaction
+  - pickmyfaction
+  description: Select a new class
+friends:
+  main: friends
+  aliases:
+  - f
+  description: Show online/offline friends
+party:
+  main: party
+  aliases: []
+  description: Invite players in a party to split exp
+skills:
+  main: innates
+  aliases:
+  - innate
+  description: Spend skill points to unlock new skills/innates

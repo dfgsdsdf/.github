@@ -1,0 +1,271 @@
+panels:
+  your_faction:
+    rows: 3
+    title: '&fꐮꂟ ꐲꐰꐮꐭꐬ<#3b3b3b>Your Faction &m                        '
+    commands:
+    - factions
+    - faction
+    - class
+    item:
+
+#FACTION TEXT
+      '4':
+        material: AIR
+        name: '&a'
+        material: string
+        customdata: '26'
+        has0:
+            value0: "%mmocore_class%"
+            compare0: 'Warrior'
+            name: '&a'
+            material: string
+            customdata: '23'
+        has1:
+            value1: "%mmocore_class%"
+            compare1: 'Marksman'
+            name: '&a'
+            material: string
+            customdata: '24'
+        has2:
+            value2: "%mmocore_class%"
+            compare2: 'Witch'
+            name: '&a'
+            material: string
+            customdata: '25'
+
+      '0': &factiontext
+        name: '&#811331'
+        material: BARRIER
+        customdata: '1'
+        lore:
+        - '&#9a9fdb   Click to choose a faction!   '
+        - '&#9a9fdb'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'pickfaction'
+        has0:
+            value0: "%mmocore_class%"
+            compare0: 'Warrior'
+            name: '&#811331🗡&l       &#a81d43ᴛʜᴇ ᴡᴀʀʀɪᴏʀ&r       &#811331🗡'
+            material: BARRIER
+            customdata: '1'
+            lore:
+            - '&#ba8c98Bulky, strong and resillient,'
+            - '&#ba8c98warriors charge head-first'
+            - '&#ba8c98into battles, blocking attacks'
+            - '&#ba8c98with heavy armor and strike'
+            - '&#ba8c98down enemies with force.'
+        has1:
+            value1: "%mmocore_class%"
+            compare1: 'Marksman'
+            name: '&#5F8575🏹&l        &#7db09aᴛʜᴇ ᴍᴀʀᴋꜱᴍᴀɴ&r        &#5F8575🏹'
+            material: BARRIER
+            customdata: '1'
+            lore:
+            - '&#6d877cCalled the eagle-eyed, those of'
+            - '&#6d877cthis feared faction fights with'
+            - '&#6d877crange, showering their enemies'
+            - '&#6d877cwith cascade of projectiles.'
+        has2:
+            value2: "%mmocore_class%"
+            compare2: 'Witch'
+            name: '&#68468C۞&l        &#aa74e3ᴛʜᴇ ᴡɪᴛᴄʜ&r          &#68468C۞'
+            material: BARRIER
+            customdata: '1'
+            lore:
+            - '&#c2b0d6Originated from the ancient'
+            - '&#c2b0d6Coven, faction of the mystic'
+            - '&#c2b0d6arcane has long stood their'
+            - '&#c2b0d6ground. Whether friends or'
+            - '&#c2b0d6foes, they are a force to be'
+            - '&#c2b0d6reckoned with.'
+      '1': *factiontext
+      '2': *factiontext
+      '9': *factiontext
+      '10': *factiontext
+      '11': *factiontext
+      '18': *factiontext
+      '19': *factiontext
+      '20': *factiontext
+
+#FACTION
+      '8':
+        name: '&a'
+        material: string
+        customdata: '27'
+        has0:
+            value0: "%mmocore_class%"
+            compare0: 'Warrior'
+            name: '&a'
+            material: string
+            customdata: '20'
+        has1:
+            value1: "%mmocore_class%"
+            compare1: 'Marksman'
+            name: '&a'
+            material: string
+            customdata: '21'
+        has2:
+            value2: "%mmocore_class%"
+            compare2: 'Witch'
+            name: '&a'
+            material: string
+            customdata: '22'
+
+#STATS
+      '21':
+        material: BARRIER
+        customdata: '1'
+        name: '&#56e87dYour Faction Stat Boosts'
+        lore:
+          - '&#ccccccLevelling up increases'
+          - '&#ccccccthese stats!'
+          - ''
+          - '&8    No Faction Chosen'
+        has0:
+            value0: "%mmocore_class%"
+            compare0: 'Warrior'
+            material: BARRIER
+            customdata: '1'
+            name: '&#56e87dYour Faction Stat Boosts'
+            lore:
+              - '&#ccccccLevelling up increases'
+              - '&#ccccccthese stats!'
+              - ''
+              - '&#ed1a41 %mythiclib_stat_max_health% Health &8(&#ed1a41+%math_0:0_2*({mmocore_level}-1)%&8)'
+              - '&#755543 %mythiclib_stat_max_health_regeneration%% Max HP Regen &8(&#755543+%math_1:0_0.2*({mmocore_level}-1)%%&8)'
+              - '&#c96166 %mythiclib_stat_weapon_damage%% Weapon Damage &8(&#c96166+%math_1:0_0.5*({mmocore_level}-1)%%&8)'
+        has1:
+            value0: "%mmocore_class%"
+            compare0: 'Marksman'
+            material: BARRIER
+            customdata: '1'
+            name: '&#56e87dYour Faction Stat Boosts'
+            lore:
+              - '&#ccccccLevelling up increases'
+              - '&#ccccccthese stats!'
+              - ''
+              - '&#6F8FAF %mythiclib_stat_critical_strike_chance%% Crit Chance &8(&#6F8FAF+%math_1:0_0.1*({mmocore_level}-1)%&8)'
+              - '&#6F8FAF %mythiclib_stat_critical_strike_damage%% Crit Damage &8(&#2c488f+%math_1:0_0.5*({mmocore_level}-1)%&8)'
+              - '&#c96166 %mythiclib_stat_projectile_damage%% Projectile Damage &8(&#c96166+%math_1:0_0.5*({mmocore_level}-1)%&8)'
+        has2:
+            value0: "%mmocore_class%"
+            compare0: 'Witch'
+            material: BARRIER
+            customdata: '1'
+            name: '&#56e87dYour Faction Stat Boosts'
+            lore:
+              - '&#ccccccLevelling up increases'
+              - '&#ccccccthese stats!'
+              - ''
+              - '&#4965ab %mythiclib_stat_max_mana% Max Mana &8(&#4965ab+%math_1:0_1.5*({mmocore_level}-1)%&8)'
+              - '&#2c488f %mythiclib_stat_mana_regeneration% Mana Regen &8(&#2c488f+%math_2:0_0.05*({mmocore_level}-1)%&8)'
+              - '&#c96166 %mythiclib_stat_skill_damage%% Skill Damage &8(&#c96166+%math_1:0_0.5*({mmocore_level}-1)%&8)'
+
+      '22':
+        material: BARRIER
+        customdata: '1'
+        name: '&#74b4e8Faction EXP Multiplier'
+        lore:
+          - '&#cccccceIncreases the amount'
+          - '&#cccccceof EXP you earn!'
+          - ''
+          - ' &#3c98e8+%mmocore_exp_boost_main%% Faction EXP'
+          - '&#445869Increase multiplier by'
+          - '&#445869eating special food!'
+      '23':
+        material: BARRIER
+        customdata: '1'
+        name: '&#de5090Save Progress & Switch Faction'
+        lore:
+          - '&#ccccccSwitch to a different faction and'
+          - '&#cccccckeep your progress in this one.'
+          - ''
+          - ' &#e31974%mmocore_class_points% &#bd2a6cfaction tokens left.'
+          - ''
+          - '&fꂀ &#83ca16Choose faction!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'pickfaction'
+
+
+      '25':
+        material: NETHER_STAR
+        name: '&#b3dce8Faction Innates Menu'
+        lore:
+          - '&#ccccccOpen innates menu and'
+          - '&#ccccccmanage chosen innate!'
+          - ''
+          - '&fꂀ &#83ca16Open menu!'
+        commands:
+          - 'sound= BLOCK_NOTE_BLOCK_HAT'
+          - 'innate'
+
+#EXPBAR
+      '12':
+        material: string
+        customdata: '16'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '14'
+            material: string
+            customdata: '13'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+
+      '13':
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '29'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '14': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '43'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '15': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '57'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '16': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '71'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '17':
+        material: string
+        customdata: '12'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '90'
+            material: string
+            customdata: '19'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []

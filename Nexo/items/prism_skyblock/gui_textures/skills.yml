@@ -1,0 +1,189 @@
+level-locked:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/level_locked
+level-current:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/level_current
+level-unlocked:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/level_unlocked
+button-ability:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 8
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/button_ability
+button-rank:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 9
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/button_rank
+button-xp:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 10
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/button_xp
+button-nextpage:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 11
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/next_page
+button-previouspage:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 12
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/previous_page
+button-back:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 13
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/back
+button-sort:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 14
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/button_sort
+button-ability-locked:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 15
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/button_ability_locked
+button-ability-unlocked:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 16
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/button_ability_unlocked
+skill-farming:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_farming
+skill-mining:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_mining
+skill-alchemy:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_alchemy
+skill-archery:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_archery
+skill-fighting:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_fighting
+skill-fishing:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_fishing
+skill-foraging:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_foraging
+skill-enchant:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 8
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_enchant
+skill-defense:
+  itemname: ''
+  material: BONE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 9
+    textures:
+    - prism_skyblock/interface/gui_textures/skills/skill_defense

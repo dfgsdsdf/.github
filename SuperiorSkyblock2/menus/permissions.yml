@@ -1,0 +1,2476 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Permissions &m     '
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - 'p p p h h h n n n'
+
+slots: '@'
+previous-page: 'p'
+next-page: 'n'
+
+messages:
+  no-role-permission: '&{HEX:d62929} ✘ {}'
+  exact-role-permission: '&{HEX:d68229} → {}'
+  higher-role-permission: '&{HEX:71d629} ✔ {}'
+
+items:
+  'p':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Previous Page'
+  'n':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Next Page'
+  'h':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back'
+
+commands:
+  'h':
+    - '[player] is panel'
+
+sounds:
+  'p':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+  'n':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+
+permissions:
+  all:
+    display-menu: true
+    permission-enabled:
+      type: BEDROCK
+      name: '&fAll'
+      lore:
+        - '&{HEX:cccccc}Access to all the abilities of the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: BEDROCK
+      name: '&fAll'
+      lore:
+        - '&{HEX:cccccc}Access to all the abilities of the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: BEDROCK
+      name: '&fAll'
+      lore:
+        - '&{HEX:cccccc}Access to all the abilities of the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  animal_breed:
+    display-menu: true
+    permission-enabled:
+      type: WHEAT
+      name: '&fAnimal Breed'
+      lore:
+        - '&{HEX:cccccc}Access to breed animals inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      name: '&fAnimal Breed'
+      type: WHEAT
+      lore:
+        - '&{HEX:cccccc}Access to breed animals inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      name: '&fAnimal Breed'
+      type: WHEAT
+      lore:
+        - '&{HEX:cccccc}Access to breed animals inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  animal_damage:
+    display-menu: true
+    permission-enabled:
+      type: DIAMOND_SWORD
+      name: '&fAnimal Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage animals inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: DIAMOND_SWORD
+      name: '&fAnimal Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage animals inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: DIAMOND_SWORD
+      name: '&fAnimal Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage animals inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  animal_shear:
+    display-menu: true
+    permission-enabled:
+      type: SHEARS
+      name: '&fAnimal Shear'
+      lore:
+        - '&{HEX:cccccc}Access to shear animals inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: SHEARS
+      name: '&fAnimal Shear'
+      lore:
+        - '&{HEX:cccccc}Access to shear animals inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: SHEARS
+      name: '&fAnimal Shear'
+      lore:
+        - '&{HEX:cccccc}Access to shear animals inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  animal_spawn:
+    display-menu: true
+    permission-enabled:
+      type: CHICKEN_SPAWN_EGG
+      name: '&fAnimal Spawn'
+      lore:
+        - '&{HEX:cccccc}Access to spawn animals inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: CHICKEN_SPAWN_EGG
+      name: '&fAnimal Spawn'
+      lore:
+        - '&{HEX:cccccc}Access to spawn animals inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: CHICKEN_SPAWN_EGG
+      name: '&fAnimal Spawn'
+      lore:
+        - '&{HEX:cccccc}Access to spawn animals inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  ban_member:
+    display-menu: true
+    permission-enabled:
+      type: SKELETON_SKULL
+      name: '&fBan Member'
+      lore:
+        - '&{HEX:cccccc}Access to ban members from the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: SKELETON_SKULL
+      name: '&fBan Member'
+      lore:
+        - '&{HEX:cccccc}Access to ban members from the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: SKELETON_SKULL
+      name: '&fBan Member'
+      lore:
+        - '&{HEX:cccccc}Access to ban members from the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  break:
+    display-menu: true
+    permission-enabled:
+      type: DIAMOND_PICKAXE
+      name: '&fBreak'
+      lore:
+        - '&{HEX:cccccc}Access to break blocks inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: DIAMOND_PICKAXE
+      name: '&fBreak'
+      lore:
+        - '&{HEX:cccccc}Access to break blocks inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: DIAMOND_PICKAXE
+      name: '&fBreak'
+      lore:
+        - '&{HEX:cccccc}Access to break blocks inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  brush:
+    display-menu: true
+    permission-enabled:
+      type: BRUSH
+      name: '&fBrush'
+      lore:
+        - '&{HEX:cccccc}Access to brush suspicious blocks inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: BRUSH
+      name: '&fBrush'
+      lore:
+        - '&{HEX:cccccc}Access to brush suspicious blocks inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: BRUSH
+      name: '&fBrush'
+      lore:
+        - '&{HEX:cccccc}Access to brush suspicious blocks inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  build:
+    display-menu: true
+    permission-enabled:
+      type: COBBLESTONE
+      name: '&fBuild'
+      lore:
+        - '&{HEX:cccccc}Access to place blocks inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: COBBLESTONE
+      name: '&fBuild'
+      lore:
+        - '&{HEX:cccccc}Access to place blocks inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: COBBLESTONE
+      name: '&fBuild'
+      lore:
+        - '&{HEX:cccccc}Access to place blocks inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  change_name:
+    display-menu: true
+    permission-enabled:
+      type: NAME_TAG
+      name: '&fChange Name'
+      lore:
+        - '&{HEX:cccccc}Access to change the island''s name.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: NAME_TAG
+      name: '&fChange Name'
+      lore:
+        - '&{HEX:cccccc}Access to change the island''s name.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: NAME_TAG
+      name: '&fChange Name'
+      lore:
+        - '&{HEX:cccccc}Access to change the island''s name.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  chest_access:
+    display-menu: true
+    permission-enabled:
+      type: CHEST
+      name: '&fChest Access'
+      lore:
+        - '&{HEX:cccccc}Access to open chests inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: CHEST
+      name: '&fChest Access'
+      lore:
+        - '&{HEX:cccccc}Access to open chests inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: CHEST
+      name: '&fChest Access'
+      lore:
+        - '&{HEX:cccccc}Access to open chests inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  chorus_fruit:
+    display-menu: true
+    permission-enabled:
+      type: CHORUS_FRUIT
+      name: '&fChorus Fruit'
+      lore:
+        - '&{HEX:cccccc}Access to consume chorus fruits inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: CHORUS_FRUIT
+      name: '&fChorus Fruit'
+      lore:
+        - '&{HEX:cccccc}Access to consume chorus fruits inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: CHORUS_FRUIT
+      name: '&fChorus Fruit'
+      lore:
+        - '&{HEX:cccccc}Access to consume chorus fruits inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  close_bypass:
+    display-menu: true
+    permission-enabled:
+      type: TRIPWIRE_HOOK
+      name: '&fLocked Bypass'
+      lore:
+        - '&{HEX:cccccc}Access to bypass the island''s lock.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: TRIPWIRE_HOOK
+      name: '&fLocked Bypass'
+      lore:
+        - '&{HEX:cccccc}Access to bypass the island''s lock.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: TRIPWIRE_HOOK
+      name: '&fLocked Bypass'
+      lore:
+        - '&{HEX:cccccc}Access to bypass the island''s lock.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  close_island:
+    display-menu: true
+    permission-enabled:
+      type: BARRIER
+      name: '&fLock Island'
+      lore:
+        - '&{HEX:cccccc}Access to lock the island from public.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: BARRIER
+      name: '&fLock Island'
+      lore:
+        - '&{HEX:cccccc}Access to lock the island from public.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: BARRIER
+      name: '&fLock Island'
+      lore:
+        - '&{HEX:cccccc}Access to lock the island from public.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  coop_member:
+    display-menu: true
+    permission-enabled:
+      type: GOLDEN_APPLE
+      name: '&fCoop Member'
+      lore:
+        - '&{HEX:cccccc}Access to add a player as a co-op member.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: GOLDEN_APPLE
+      name: '&fCoop Member'
+      lore:
+        - '&{HEX:cccccc}Access to add a player as a co-op member.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: GOLDEN_APPLE
+      name: '&fCoop Member'
+      lore:
+        - '&{HEX:cccccc}Access to add a player as a co-op member.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  delete_warp:
+    display-menu: true
+    permission-enabled:
+      type: ENDER_PEARL
+      name: '&fDelete Warp'
+      lore:
+        - '&{HEX:cccccc}Access to delete island warps.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: ENDER_PEARL
+      name: '&fDelete Warp'
+      lore:
+        - '&{HEX:cccccc}Access to delete island warps.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: ENDER_PEARL
+      name: '&fDelete Warp'
+      lore:
+        - '&{HEX:cccccc}Access to delete island warps.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  demote_members:
+    display-menu: true
+    permission-enabled:
+      type: IRON_INGOT
+      name: '&fDemote Members'
+      lore:
+        - '&{HEX:cccccc}Access to demote members inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: IRON_INGOT
+      name: '&fDemote Members'
+      lore:
+        - '&{HEX:cccccc}Access to demote members inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: IRON_INGOT
+      name: '&fDemote Members'
+      lore:
+        - '&{HEX:cccccc}Access to demote members inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  deposit_money:
+    display-menu: true
+    permission-enabled:
+      type: MAP
+      name: '&fDeposit Money'
+      lore:
+        - '&{HEX:cccccc}Access to deposit money into the island''s bank.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: MAP
+      name: '&fDeposit Money'
+      lore:
+        - '&{HEX:cccccc}Access to deposit money into the island''s bank.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: MAP
+      name: '&fDeposit Money'
+      lore:
+        - '&{HEX:cccccc}Access to deposit money into the island''s bank.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  disband_island:
+    display-menu: true
+    permission-enabled:
+      type: TNT
+      name: '&fDisband Island'
+      lore:
+        - '&{HEX:cccccc}Access to disband the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: TNT
+      name: '&fDisband Island'
+      lore:
+        - '&{HEX:cccccc}Access to disband the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: TNT
+      name: '&fDisband Island'
+      lore:
+        - '&{HEX:cccccc}Access to disband the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  discord_show:
+    display-menu: true
+    permission-enabled:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fDiscord Show'
+      lore:
+        - '&{HEX:cccccc}Access to check the island''s linked discord.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fDiscord Show'
+      lore:
+        - '&{HEX:cccccc}Access to check the island''s linked discord.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fDiscord Show'
+      lore:
+        - '&{HEX:cccccc}Access to check the island''s linked discord.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  drop_items:
+    display-menu: true
+    permission-enabled:
+      type: ARROW
+      name: '&fDrop Items'
+      lore:
+        - '&{HEX:cccccc}Access to drop items inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: ARROW
+      name: '&fDrop Items'
+      lore:
+        - '&{HEX:cccccc}Access to drop items inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: ARROW
+      name: '&fDrop Items'
+      lore:
+        - '&{HEX:cccccc}Access to drop items inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  ender_pearl:
+    display-menu: true
+    permission-enabled:
+      type: ENDER_PEARL
+      name: '&fEnder Pearl'
+      lore:
+        - '&{HEX:cccccc}Access to use ender pearls inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: ENDER_PEARL
+      name: '&fEnder Pearl'
+      lore:
+        - '&{HEX:cccccc}Access to use ender pearls inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: ENDER_PEARL
+      name: '&fEnder Pearl'
+      lore:
+        - '&{HEX:cccccc}Access to use ender pearls inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  expel_bypass:
+    display-menu: true
+    permission-enabled:
+      type: FEATHER
+      name: '&fExpel Bypass'
+      lore:
+        - '&{HEX:cccccc}Access to bypass from being expelled.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: FEATHER
+      name: '&fExpel Bypass'
+      lore:
+        - '&{HEX:cccccc}Access to bypass from being expelled.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: FEATHER
+      name: '&fExpel Bypass'
+      lore:
+        - '&{HEX:cccccc}Access to bypass from being expelled.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  expel_players:
+    display-menu: true
+    permission-enabled:
+      type: DISPENSER
+      name: '&fExpel Players'
+      lore:
+        - '&{HEX:cccccc}Access to expel players from the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: DISPENSER
+      name: '&fExpel Players'
+      lore:
+        - '&{HEX:cccccc}Access to expel players from the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: DISPENSER
+      name: '&fExpel Players'
+      lore:
+        - '&{HEX:cccccc}Access to expel players from the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  farm_tramping:
+    display-menu: true
+    permission-enabled:
+      type: FARMLAND
+      name: '&fFarm Tramping'
+      lore:
+        - '&{HEX:cccccc}Access to tramp farmlands inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: FARMLAND
+      name: '&fFarm Tramping'
+      lore:
+        - '&{HEX:cccccc}Access to tramp farmlands inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: FARMLAND
+      name: '&fFarm Tramping'
+      lore:
+        - '&{HEX:cccccc}Access to tramp farmlands inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  fertilize:
+    display-menu: true
+    permission-enabled:
+      type: BONE_MEAL
+      name: '&fFertilize'
+      lore:
+        - '&{HEX:cccccc}Access to fertilize blocks around the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: BONE_MEAL
+      name: '&fFertilize'
+      lore:
+        - '&{HEX:cccccc}Access to fertilize blocks around the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: BONE_MEAL
+      name: '&fFertilize'
+      lore:
+        - '&{HEX:cccccc}Access to fertilize blocks around the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  fish:
+    display-menu: true
+    permission-enabled:
+      type: FISHING_ROD
+      name: '&fFish'
+      lore:
+        - '&{HEX:cccccc}Access fishing around the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: FISHING_ROD
+      name: '&fFish'
+      lore:
+        - '&{HEX:cccccc}Access fishing around the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: FISHING_ROD
+      name: '&fFish'
+      lore:
+        - '&{HEX:cccccc}Access fishing around the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  fly:
+    display-menu: true
+    permission-enabled:
+      type: FEATHER
+      name: '&fFly'
+      lore:
+        - '&{HEX:cccccc}Access fly around the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: FEATHER
+      name: '&fFly'
+      lore:
+        - '&{HEX:cccccc}Access fly around the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: FEATHER
+      name: '&fFly'
+      lore:
+        - '&{HEX:cccccc}Access fly around the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  horse_interact:
+    display-menu: true
+    permission-enabled:
+      type: HORSE_SPAWN_EGG
+      name: '&fHorse Interact'
+      lore:
+        - '&{HEX:cccccc}Access to interact with horses inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: HORSE_SPAWN_EGG
+      name: '&fHorse Interact'
+      lore:
+        - '&{HEX:cccccc}Access to interact with horses inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: HORSE_SPAWN_EGG
+      name: '&fHorse Interact'
+      lore:
+        - '&{HEX:cccccc}Access to interact with horses inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  ignite_creeper:
+    display-menu: true
+    permission-enabled:
+      type: CREEPER_SPAWN_EGG
+      name: '&fIgnite Creepers'
+      lore:
+        - '&{HEX:cccccc}Access to ignite creepers with flint and steel inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: CREEPER_SPAWN_EGG
+      name: '&fIgnite Creepers'
+      lore:
+        - '&{HEX:cccccc}Access to ignite creepers with flint and steel inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: CREEPER_SPAWN_EGG
+      name: '&fIgnite Creepers'
+      lore:
+        - '&{HEX:cccccc}Access to ignite creepers with flint and steel inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  interact:
+    display-menu: true
+    permission-enabled:
+      type: PISTON
+      name: '&fInteract'
+      lore:
+        - '&{HEX:cccccc}Access to interact with blocks inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: PISTON
+      name: '&fInteract'
+      lore:
+        - '&{HEX:cccccc}Access to interact with blocks inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: PISTON
+      name: '&fInteract'
+      lore:
+        - '&{HEX:cccccc}Access to interact with blocks inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  invite_member:
+    display-menu: true
+    permission-enabled:
+      type: PLAYER_HEAD
+      data: 3
+      name: '&fInvite Member'
+      lore:
+        - '&{HEX:cccccc}Access to invite new members to the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: PLAYER_HEAD
+      name: '&fInvite Member'
+      lore:
+        - '&{HEX:cccccc}Access to invite new members to the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: PLAYER_HEAD
+      name: '&fInvite Member'
+      lore:
+        - '&{HEX:cccccc}Access to invite new members to the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  island_chest:
+    display-menu: true
+    permission-enabled:
+      type: ENDER_CHEST
+      name: '&fCommunity Chest'
+      lore:
+        - '&{HEX:cccccc}Access to the community chest of the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: ENDER_CHEST
+      name: '&fCommunity Chest'
+      lore:
+        - '&{HEX:cccccc}Access to the community chest of the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: ENDER_CHEST
+      name: '&fCommunity Chest'
+      lore:
+        - '&{HEX:cccccc}Access to the community chest of the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  item_frame:
+    display-menu: true
+    permission-enabled:
+      type: ITEM_FRAME
+      name: '&fItem Frame'
+      lore:
+        - '&{HEX:cccccc}Access to interact with item frames inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: ITEM_FRAME
+      name: '&fItem Frame'
+      lore:
+        - '&{HEX:cccccc}Access to interact with item frames inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: ITEM_FRAME
+      name: '&fItem Frame'
+      lore:
+        - '&{HEX:cccccc}Access to interact with item frames inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  kick_member:
+    display-menu: true
+    permission-enabled:
+      type: SKELETON_SKULL
+      name: '&fKick Member'
+      lore:
+        - '&{HEX:cccccc}Access to kick members from the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: SKELETON_SKULL
+      name: '&fKick Member'
+      lore:
+        - '&{HEX:cccccc}Access to kick members from the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: SKELETON_SKULL
+      name: '&fKick Member'
+      lore:
+        - '&{HEX:cccccc}Access to kick members from the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  leash:
+    display-menu: true
+    permission-enabled:
+      type: LEAD
+      name: '&fLeash Mobs'
+      lore:
+        - '&{HEX:cccccc}Access to leash mobs inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: LEAD
+      name: '&fLeash Mobs'
+      lore:
+        - '&{HEX:cccccc}Access to leash mobs inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: LEAD
+      name: '&fLeash Mobs'
+      lore:
+        - '&{HEX:cccccc}Access to leash mobs inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  monster_damage:
+    display-menu: true
+    permission-enabled:
+      type: ZOMBIE_HEAD
+      name: '&fMonster Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage monsters inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: ZOMBIE_HEAD
+      name: '&fMonster Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage monsters inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: ZOMBIE_HEAD
+      name: '&fMonster Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage monsters inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  minecart_damage:
+    display-menu: true
+    permission-enabled:
+      type: TNT_MINECART
+      name: '&fMinecart Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: TNT_MINECART
+      name: '&fMinecart Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: TNT_MINECART
+      name: '&fMinecart Damage'
+      lore:
+        - '&{HEX:cccccc}Access to damage minecarts inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  minecart_enter:
+    display-menu: true
+    permission-enabled:
+      type: HOPPER_MINECART
+      name: '&fMinecart Enter'
+      lore:
+        - '&{HEX:cccccc}Access to enter minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: HOPPER_MINECART
+      name: '&fMinecart Enter'
+      lore:
+        - '&{HEX:cccccc}Access to enter minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: HOPPER_MINECART
+      name: '&fMinecart Enter'
+      lore:
+        - '&{HEX:cccccc}Access to enter minecarts inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  minecart_open:
+    display-menu: true
+    permission-enabled:
+      type: CHEST_MINECART
+      name: '&fMinecart Open'
+      lore:
+        - '&{HEX:cccccc}Access to open minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: CHEST_MINECART
+      name: '&fMinecart Open'
+      lore:
+        - '&{HEX:cccccc}Access to open minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: CHEST_MINECART
+      name: '&fMinecart Open'
+      lore:
+        - '&{HEX:cccccc}Access to open minecarts inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  minecart_place:
+    display-menu: true
+    permission-enabled:
+      type: MINECART
+      name: '&fMinecart Place'
+      lore:
+        - '&{HEX:cccccc}Access to place minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: MINECART
+      name: '&fMinecart Place'
+      lore:
+        - '&{HEX:cccccc}Access to place minecarts inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: MINECART
+      name: '&fMinecart Place'
+      lore:
+        - '&{HEX:cccccc}Access to place minecarts inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  monster_spawn:
+    display-menu: true
+    permission-enabled:
+      type: CAVE_SPIDER_SPAWN_EGG
+      name: '&fMonster Spawn'
+      lore:
+        - '&{HEX:cccccc}Access to spawn monsters inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: CAVE_SPIDER_SPAWN_EGG
+      name: '&fMonster Spawn'
+      lore:
+        - '&{HEX:cccccc}Access to spawn monsters inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: CAVE_SPIDER_SPAWN_EGG
+      name: '&fMonster Spawn'
+      lore:
+        - '&{HEX:cccccc}Access to spawn monsters inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  name_entity:
+    display-menu: true
+    permission-enabled:
+      type: NAME_TAG
+      name: '&fName Entity'
+      lore:
+        - '&{HEX:cccccc}Access to name-tag entities inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: NAME_TAG
+      name: '&fName Entity'
+      lore:
+        - '&{HEX:cccccc}Access to name-tag entities inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: NAME_TAG
+      name: '&fName Entity'
+      lore:
+        - '&{HEX:cccccc}Access to name-tag entities inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  open_island:
+    display-menu: true
+    permission-enabled:
+      type: REDSTONE_TORCH
+      name: '&fOpen Island'
+      lore:
+        - '&{HEX:cccccc}Access to open the island to the public.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: REDSTONE_TORCH
+      name: '&fOpen Island'
+      lore:
+        - '&{HEX:cccccc}Access to open the island to the public.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: REDSTONE_TORCH
+      name: '&fOpen Island'
+      lore:
+        - '&{HEX:cccccc}Access to open the island to the public.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  painting:
+    display-menu: true
+    permission-enabled:
+      type: PAINTING
+      name: '&fPainting'
+      lore:
+        - '&{HEX:cccccc}Access to interact with paintings inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: PAINTING
+      name: '&fPainting'
+      lore:
+        - '&{HEX:cccccc}Access to interact with paintings inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: PAINTING
+      name: '&fPainting'
+      lore:
+        - '&{HEX:cccccc}Access to interact with paintings inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  paypal_show:
+    display-menu: true
+    permission-enabled:
+      type: BLUE_WOOL
+      name: '&fPaypal Show'
+      lore:
+        - '&{HEX:cccccc}Access to check the island''s linked paypal.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: BLUE_WOOL
+      name: '&fPaypal Show'
+      lore:
+        - '&{HEX:cccccc}Access to check the island''s linked paypal.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: BLUE_WOOL
+      name: '&fPaypal Show'
+      lore:
+        - '&{HEX:cccccc}Access to check the island''s linked paypal.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  pickup_axolotl:
+    display-menu: true
+    permission-enabled:
+      type: AXOLOTL_SPAWN_EGG
+      name: '&fPickup Axolotls'
+      lore:
+        - '&{HEX:cccccc}Access to pickup axolotls using a water bucket inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: AXOLOTL_SPAWN_EGG
+      name: '&fPickup Axolotls'
+      lore:
+        - '&{HEX:cccccc}Access to pickup axolotls using a water bucket inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: AXOLOTL_SPAWN_EGG
+      name: '&fPickup Axolotls'
+      lore:
+        - '&{HEX:cccccc}Access to pickup axolotls using a water bucket inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  pickup_drops:
+    display-menu: true
+    permission-enabled:
+      type: HOPPER
+      name: '&fPickup Drops'
+      lore:
+        - '&{HEX:cccccc}Access to pickup items inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: HOPPER
+      name: '&fPickup Drops'
+      lore:
+        - '&{HEX:cccccc}Access to pickup items inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: HOPPER
+      name: '&fPickup Drops'
+      lore:
+        - '&{HEX:cccccc}Access to pickup items inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  pickup_fish:
+    display-menu: true
+    permission-enabled:
+      type: COD
+      name: '&fPickup Fish'
+      lore:
+        - '&{HEX:cccccc}Access to pickup fish using buckets inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: COD
+      name: '&fPickup Fish'
+      lore:
+        - '&{HEX:cccccc}Access to pickup fish using buckets inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: COD
+      name: '&fPickup Fish'
+      lore:
+        - '&{HEX:cccccc}Access to pickup fish using buckets inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  pickup_lectern_book:
+    display-menu: true
+    permission-enabled:
+      type: LECTERN
+      name: '&fPickup Lectern Book'
+      lore:
+        - '&{HEX:cccccc}Access to pickup books out of lecterns inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: LECTERN
+      name: '&fPickup Lectern Book'
+      lore:
+        - '&{HEX:cccccc}Access to pickup books out of lecterns inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: LECTERN
+      name: '&fPickup Lectern Book'
+      lore:
+        - '&{HEX:cccccc}Access to pickup books out of lecterns inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  promote_members:
+    display-menu: true
+    permission-enabled:
+      type: DIAMOND
+      name: '&fPromote Members'
+      lore:
+        - '&{HEX:cccccc}Access to promote members inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: DIAMOND
+      name: '&fPromote Members'
+      lore:
+        - '&{HEX:cccccc}Access to promote members inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: DIAMOND
+      name: '&fPromote Members'
+      lore:
+        - '&{HEX:cccccc}Access to promote members inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  rankup:
+    display-menu: true
+    permission-enabled:
+      type: GOLD_INGOT
+      name: '&fUpgrades Rankup'
+      lore:
+        - '&{HEX:cccccc}Access to rankup island''s upgrades.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: GOLD_INGOT
+      name: '&fUpgrades Rankup'
+      lore:
+        - '&{HEX:cccccc}Access to rankup island''s upgrades.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: GOLD_INGOT
+      name: '&fUpgrades Rankup'
+      lore:
+        - '&{HEX:cccccc}Access to rankup island''s upgrades.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  ratings_show:
+    display-menu: true
+    permission-enabled:
+      type: NETHER_STAR
+      name: '&fRatings Show'
+      lore:
+        - '&{HEX:cccccc}Access to see all island''s ratings.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: NETHER_STAR
+      name: '&fRatings Show'
+      lore:
+        - '&{HEX:cccccc}Access to see all island''s ratings.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: NETHER_STAR
+      name: '&fRatings Show'
+      lore:
+        - '&{HEX:cccccc}Access to see all island''s ratings.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_biome:
+    display-menu: true
+    permission-enabled:
+      type: GRASS_BLOCK
+      name: '&fSet Biome'
+      lore:
+        - '&{HEX:cccccc}Access to change the island''s biome.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: GRASS_BLOCK
+      name: '&fSet Biome'
+      lore:
+        - '&{HEX:cccccc}Access to change the island''s biome.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: GRASS_BLOCK
+      name: '&fSet Biome'
+      lore:
+        - '&{HEX:cccccc}Access to change the island''s biome.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_discord:
+    display-menu: true
+    permission-enabled:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fSet Discord'
+      lore:
+        - '&{HEX:cccccc}Access to change the discord linked to the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fSet Discord'
+      lore:
+        - '&{HEX:cccccc}Access to change the discord linked to the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: LIGHT_BLUE_TERRACOTTA
+      name: '&fSet Discord'
+      lore:
+        - '&{HEX:cccccc}Access to change the discord linked to the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_home:
+    display-menu: true
+    permission-enabled:
+      type: RED_BED
+      name: '&fSet Home'
+      lore:
+        - '&{HEX:cccccc}Access to change the home location of the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: RED_BED
+      name: '&fSet Home'
+      lore:
+        - '&{HEX:cccccc}Access to change the home location of the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: RED_BED
+      name: '&fSet Home'
+      lore:
+        - '&{HEX:cccccc}Access to change the home location of the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_paypal:
+    display-menu: true
+    permission-enabled:
+      type: BLUE_WOOL
+      name: '&fSet Paypal'
+      lore:
+        - '&{HEX:cccccc}Access to change the paypal linked to the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: BLUE_WOOL
+      name: '&fSet Paypal'
+      lore:
+        - '&{HEX:cccccc}Access to change the paypal linked to the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: BLUE_WOOL
+      name: '&fSet Paypal'
+      lore:
+        - '&{HEX:cccccc}Access to change the paypal linked to the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_permission:
+    display-menu: true
+    permission-enabled:
+      type: REPEATER
+      name: '&fSet Permission'
+      lore:
+        - '&{HEX:cccccc}Access to change permissions for island members.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: REPEATER
+      name: '&fSet Permission'
+      lore:
+        - '&{HEX:cccccc}Access to change permissions for island members.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: REPEATER
+      name: '&fSet Permission'
+      lore:
+        - '&{HEX:cccccc}Access to change permissions for island members.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_role:
+    display-menu: true
+    permission-enabled:
+      type: DIAMOND_CHESTPLATE
+      name: '&fSet Role'
+      lore:
+        - '&{HEX:cccccc}Access to change roles for island members.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: DIAMOND_CHESTPLATE
+      name: '&fSet Role'
+      lore:
+        - '&{HEX:cccccc}Access to change roles for island members.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: DIAMOND_CHESTPLATE
+      name: '&fSet Role'
+      lore:
+        - '&{HEX:cccccc}Access to change roles for island members.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_settings:
+    display-menu: true
+    permission-enabled:
+      type: LEVER
+      name: '&fSet Settings'
+      lore:
+        - '&{HEX:cccccc}Access to change settings for islands.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: LEVER
+      name: '&fSet Settings'
+      lore:
+        - '&{HEX:cccccc}Access to change settings for islands.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: LEVER
+      name: '&fSet Settings'
+      lore:
+        - '&{HEX:cccccc}Access to change settings for islands.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  set_warp:
+    display-menu: true
+    permission-enabled:
+      type: ENDER_EYE
+      name: '&fSet Warp'
+      lore:
+        - '&{HEX:cccccc}Access to set new warps for the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: ENDER_EYE
+      name: '&fSet Warp'
+      lore:
+        - '&{HEX:cccccc}Access to set new warps for the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: ENDER_EYE
+      name: '&fSet Warp'
+      lore:
+        - '&{HEX:cccccc}Access to set new warps for the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  uncoop_member:
+    display-menu: true
+    permission-enabled:
+      type: GOLDEN_APPLE
+      name: '&fUncoop Member'
+      lore:
+        - '&{HEX:cccccc}Access to remove co-op members from the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: GOLDEN_APPLE
+      name: '&fUncoop Member'
+      lore:
+        - '&{HEX:cccccc}Access to remove co-op members from the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: GOLDEN_APPLE
+      name: '&fUncoop Member'
+      lore:
+        - '&{HEX:cccccc}Access to remove co-op members from the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  sign_interact:
+    display-menu: true
+    permission-enabled:
+      type: OAK_SIGN
+      name: '&fSign Interact'
+      lore:
+        - '&{HEX:cccccc}Access to interact with signs inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: OAK_SIGN
+      name: '&fSign Interact'
+      lore:
+        - '&{HEX:cccccc}Access to interact with signs inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: OAK_SIGN
+      name: '&fSign Interact'
+      lore:
+        - '&{HEX:cccccc}Access to interact with signs inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  spawner_break:
+    display-menu: true
+    permission-enabled:
+      type: SPAWNER
+      name: '&fSpawner Break'
+      lore:
+        - '&{HEX:cccccc}Access to break spawners inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: SPAWNER
+      name: '&fSpawner Break'
+      lore:
+        - '&{HEX:cccccc}Access to break spawners inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: SPAWNER
+      name: '&fSpawner Break'
+      lore:
+        - '&{HEX:cccccc}Access to break spawners inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  turtle_egg_tramping:
+    display-menu: true
+    permission-enabled:
+      type: TURTLE_EGG
+      name: '&fTurtle Eggs Tramping'
+      lore:
+        - '&{HEX:cccccc}Access to tramp turtle eggs inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: TURTLE_EGG
+      name: '&fTurtle Eggs Tramping'
+      lore:
+        - '&{HEX:cccccc}Access to tramp turtle eggs inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: TURTLE_EGG
+      name: '&fTurtle Eggs Tramping'
+      lore:
+        - '&{HEX:cccccc}Access to tramp turtle eggs inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  use:
+    display-menu: true
+    permission-enabled:
+      type: STONE_BUTTON
+      name: '&fUse'
+      lore:
+        - '&{HEX:cccccc}Access to use different blocks inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: STONE_BUTTON
+      name: '&fUse'
+      lore:
+        - '&{HEX:cccccc}Access to use different blocks inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: STONE_BUTTON
+      name: '&fUse'
+      lore:
+        - '&{HEX:cccccc}Access to use different blocks inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  valuable_break:
+    display-menu: true
+    permission-enabled:
+      type: GOLD_INGOT
+      name: '&fValuable Blocks Break'
+      lore:
+        - '&{HEX:cccccc}Access to break valuable blocks inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: GOLD_INGOT
+      name: '&fValuable Blocks Break'
+      lore:
+        - '&{HEX:cccccc}Access to break valuable blocks inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: GOLD_INGOT
+      name: '&fValuable Blocks Break'
+      lore:
+        - '&{HEX:cccccc}Access to break valuable blocks inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  villager_trading:
+    display-menu: true
+    permission-enabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19'
+      name: '&fVillagers Trading'
+      lore:
+        - '&{HEX:cccccc}Access to trade with villagers inside the island.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19'
+      name: '&fVillagers Trading'
+      lore:
+        - '&{HEX:cccccc}Access to trade with villagers inside the island.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19'
+      name: '&fVillagers Trading'
+      lore:
+        - '&{HEX:cccccc}Access to trade with villagers inside the island.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2
+
+  withdraw_money:
+    display-menu: true
+    permission-enabled:
+      type: EMERALD
+      name: '&fWithdraw Money'
+      lore:
+        - '&{HEX:cccccc}Access to withdraw money from the island''s bank.'
+        - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
+    permission-disabled:
+      type: EMERALD
+      name: '&fWithdraw Money'
+      lore:
+        - '&{HEX:cccccc}Access to withdraw money from the island''s bank.'
+        - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
+    role-permission:
+      type: EMERALD
+      name: '&fWithdraw Money'
+      lore:
+        - '&{HEX:cccccc}Access to withdraw money from the island''s bank.'
+        - ''
+        - '&{HEX:cccccc}Role: &{HEX:d68229}{}&{HEX:cccccc}.'
+        - '{0}'
+        - ''
+        - '&fꂀ &{HEX:83ca16}Switch role.'
+    has-access:
+      sound:
+        type: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 0.2
+        pitch: 0.2
+    no-access:
+      sound:
+        type: BLOCK_ANVIL_PLACE
+        volume: 0.2
+        pitch: 0.2

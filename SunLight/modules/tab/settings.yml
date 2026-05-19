@@ -1,0 +1,134 @@
+Tablist:
+  # Sets tablist update interval (in ticks).
+  # [Asynchronous]
+  # [1 second = 20 ticks]
+  # [Default is 1]
+  Update_Interval: 1
+  # Individual per-player tablist format based on player's rank and world.
+  # [You must have Vault with compatible Permissions plugins installed for this feature to work properly]
+  #
+  # If multiple tablists are available for a player, the one with the greatest priority will be used.
+  # If no tablist is available for a player, the one labeled 'default' will be used (if present).
+  #
+  # Add '*' to the 'Groups' list to make tablist available for any rank.
+  # Add '*' to the 'Worlds' list to make tablist available in any world.
+  #
+  # Use '%animation:[name]%' placeholder to include dynamic text (animation) from the animations.yml config file.
+  # Text and Color Formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+  # You can use PlaceholderAPI placeholders.
+  Format:
+    default:
+      Priority: 1
+      Worlds:
+      - '*'
+      Groups:
+      - '*'
+      Header:
+      - ""
+      - ""
+      - "&fꁧ"
+      - ""
+      - ""
+      - ""
+      Footer:
+      - ""
+      - "<#66e368>You are playing with <#56ba57>%server_online%</#56ba57> players!</#66e368>"
+      - "<#4c6649>%mmocore_online_friends% of your friends are online!</#4c6649>"
+      - ""
+      - "  #55b0c2ᴍᴄ.ɴᴀᴍᴇ.ᴄᴏᴍ   &8|   #7289daᴅɪsᴄᴏʀᴅ.ɴᴀᴍᴇ.ᴄᴏᴍ   &8|   #79c255%server_tps_1% Tᴘs  "
+      - ""
+  # Tablist name format based on player's rank.
+  # [You must have Vault with compatible Permissions plugins installed for this feature to work properly]
+  #
+  # ====================[ IMPORTANT! ]====================
+  # This option does NOT affect player sorting in tablist!
+  # To make tablist sorted by player ranks you MUST setup 'Nametags' option!
+  # This is just how the game works.
+  #
+  # If multiple name formats are available for a player, the one with the greatest priority will be used.
+  # If no name format is available for a player, the one labeled 'default' will be used (if present).
+  #
+  # Use '%animation:[name]%' placeholder to include dynamic text (animation) from the animations.yml config file.
+  # Text and Color Formations: https://github.com/nulli0n/nightcore-spigot/wiki/Text-Formation
+  # You can use PlaceholderAPI placeholders.
+  Player_Names:
+    default:
+      Priority: 1
+      Format: '%luckperms_prefix%%player_display_name%'
+    vip:
+      Priority: 2
+      Format: '%luckperms_prefix%%player_display_name%'
+    mvp:
+      Priority: 3
+      Format: '%luckperms_prefix%%player_display_name%'
+    hero:
+      Priority: 4
+      Format: '%luckperms_prefix%%player_display_name%'
+    helper:
+      Priority: 5
+      Format: '%luckperms_prefix%%player_display_name%'
+    mod:
+      Priority: 6
+      Format: '%luckperms_prefix%%player_display_name%'
+    admin:
+      Priority: 7
+      Format: '%luckperms_prefix%%player_display_name%'
+    owner:
+      Priority: 8
+      Format: '%luckperms_prefix%%player_display_name%'
+Nametags:
+  # Sets player nametag update interval (in ticks).
+  # [Asynchronous, Packet-Based]
+  # [1 second = 20 ticks]
+  # [Default is 300]
+  Update_Interval: 300
+  # Player nametag format based on their permission group.
+  # [You must have Vault with compatible Permissions plugins installed for this feature to work properly]
+  #
+  # If multiple tag formats are available for a player, the one with the greatest priority will be used.
+  # If no tag format is available for a player, the one labeled 'default' will be used (if present).
+  #
+  # You can use PlaceholderAPI placeholders for 'Prefix' and 'Suffix' options.
+  #
+  # The game does not support RGB colors for tag names yet!
+  # List of available colors: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+  Groups:
+    default:
+      Priority: 1
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+    vip:
+      Priority: 2
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+      Color: white
+    mvp:
+      Priority: 3
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+      Color: white
+    hero:
+      Priority: 4
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+      Color: white
+    helper:
+      Priority: 5
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+      Color: white
+    mod:
+      Priority: 6
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+      Color: white
+    admin:
+      Priority: 7
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+      Color: white
+    owner:
+      Priority: 8
+      Prefix: '%luckperms_prefix%'
+      Suffix: ''
+      Color: white

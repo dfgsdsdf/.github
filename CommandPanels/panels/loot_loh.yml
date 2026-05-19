@@ -1,0 +1,36 @@
+panels:
+  loot_loh:
+    rows: 5
+    title: '&fꐮꂮ ꐲꐰꐮꐭꐬ<#5e5e5e>Choose A Dungeon > <#3b3b3b>Loot &m        '
+    item:
+
+#BACK BUTTON
+      '37':
+        material: BARRIER
+        customdata: '1'
+        name: '&#d6d6d6Go back.'
+        commands:
+          - 'sound= UI_BUTTON_CLICK'
+          - 'open= dungeon'
+
+#LOOT
+      '10':
+        material: mmo= MATERIAL RAW_COBALT
+      '11':
+        material: mmo= MATERIAL RAW_MITHRIL
+      '12':
+        material: mmo= MATERIAL WARDEN_INGOT
+      '13':
+        material: mmo= MATERIAL RAW_HEXTECH
+      '14':
+        material: mmo= MATERIAL LAB_SAMPLE
+      '15':
+        material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_COMMON_ANCIENT_BOOK
+      '16':
+        material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_RARE_ANCIENT_BOOK
+      '19':
+        material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_LEGENDARY_ANCIENT_BOOK
+      '20':
+        material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_FABLED_ANCIENT_BOOK
+      '21':
+        material: mmo= MATERIAL HEXTECH_CRYSTAL

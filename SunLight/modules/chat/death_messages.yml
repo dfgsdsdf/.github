@@ -1,0 +1,120 @@
+# Sets the range for death messages broadcast.
+# Set to 0 for a world-wide messages.
+# Set to -1 for a server-wide messages.
+# Set other value for blocks distance.
+Range: 0
+By_DamageType:
+  cactus:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> tried to obtain some water from cactus.</dark_gray>
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> died when accidiently touch a cactus.</dark_gray>
+  arrow:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was shot by a <lred>%source%</lred>.</dark_gray>
+  drown:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> drowned.</dark_gray>
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> forgot how to swim.</dark_gray>
+  fly_into_wall:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> exceeded the speed limit with elytras.</dark_gray>
+  cramming:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> trampled into the ground by a crowd.</dark_gray>
+  mob_attack:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was slain by <lred>%source%</lred>.</dark_gray>
+  on_fire:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> burned to the ground.</dark_gray>
+  lava:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> tried to swim in lava.</dark_gray>
+  mob_projectile:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was shot by a <lred>%source%</lred>.</dark_gray>
+  magic:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> killed by a deadly magic.</dark_gray>
+  explosion:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> blowed up!</dark_gray>
+  fall:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> fell from a high spot.</dark_gray>
+  lightning_bolt:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was shot by a Lightning.</dark_gray>
+  in_wall:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was buried alive.</dark_gray>
+  falling_anvil:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was unable to hold an Anvil.</dark_gray>
+  thorns:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> died when touching <lred>%source%</lred>.</dark_gray>
+  sonic_boom:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred>''s eardrums were exploded.</dark_gray>
+  in_fire:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> burned to the ground.</dark_gray>
+  freeze:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> frozen to death.</dark_gray>
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> fell asleep in the snow.</dark_gray>
+  hot_floor:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> walked too long on Magma Blocks.</dark_gray>
+  player_attack:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%source%</lred> killed <lred>%player_display_name%</lred>.</dark_gray>
+  dragon_breath:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was incinerated by a Dragon Breath.</dark_gray>
+  starve:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> forgot to eat.</dark_gray>
+By_CausingEntity:
+  zombie:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred>''s brain was eaten by Zombie.</dark_gray>
+  ghast:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was fireballed by a Ghast.</dark_gray>
+  piglin:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> offered a very bad trade to Piglin.</dark_gray>
+  enderman:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> looked strange at Enderman.</dark_gray>
+  creeper:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> could not run away from a Creeper in time.</dark_gray>
+  zombie_villager:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> tried to talk with Zombie Villager.</dark_gray>
+  blaze:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> could not reflect Blaze''s fireball.</dark_gray>
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> catched a fireball with his head.</dark_gray>
+  cave_spider:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was bited to death by a little spidee.</dark_gray>
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> climb down too deep in a cave with Spiders.</dark_gray>
+  skeleton:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was shot by a skeleton.</dark_gray>
+  tnt:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> lost his limbs due to TNT explosion!</dark_gray>
+  bee:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> attempted to steal honey from Bees.</dark_gray>
+  wither:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> could not beat Wither.</dark_gray>
+  drowned:
+    Messages:
+    - <dark_gray><lred>☠</lred> <lred>%player_display_name%</lred> was drowned by Drowned.</dark_gray>

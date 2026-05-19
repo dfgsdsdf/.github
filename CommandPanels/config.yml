@@ -1,0 +1,80 @@
+# |------------------------------------------------------------------------
+# |                       CommandPanels Config File
+# |                           By RockyHawk v5.2
+# |               https://www.spigotmc.org/resources/67788/
+# |
+# |------------------------------------------------------------------------
+config:
+  refresh-panels: true
+  refresh-delay: 40
+  panel-blocks: true
+  hotbar-items: true
+  custom-commands: true
+  auto-register-commands: true
+  auto-update-panels: true
+  server-ping-timeout: 10
+  stop-sound: true
+  disabled-world-message: true
+  panel-snooper: false
+  enable-import-command: false
+  format:
+    tag: ''
+    perms: '&fꀓ &#e55039No permission.'
+    reload: '&fꀒ &#04d42cReloaded.'
+    nopanel: '&fꀓ &#e55039Panel not found.'
+    noitem: '&fꀓ &#e55039Panel doesn''t have clickable item.'
+    notitem: '&fꀓ &#e55039Player not found.'
+    error: '&fꀓ &#e55039Error found in config.'
+    offline: Offline
+    offlineHeadValue: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmU1Mjg2YzQ3MGY2NmZmYTFhMTgzMzFjYmZmYjlhM2MyYTQ0MjRhOGM3MjU5YzQ0MzZmZDJlMzU1ODJhNTIyIn19fQ==
+    input: '&fꀓ &#e55039Your Input is too long!'
+    disabled: '&fꀓ &#e55039This feature is disabled in your plugin config.'
+input:
+  input-cancel: cancel
+  input-cancelled: '&fꀓ &#e55039Cancelled!'
+  max-input-length: -1
+  input-message:
+  - '&fꀒ &#04d42cEnter Input for Command'
+  - '&fꀓ &#e55039Type &4%cp-args% &fꀓ &#e55039to Cancel the command'
+hexcodes:
+  start_tag: '&#'
+  end_tag: ''
+placeholders:
+  primary:
+    start: '%'
+    end: '%'
+  secondary:
+    start: '{'
+    end: '}'
+updater:
+  auto-update: false
+  update-checks: true
+purchase:
+  currency:
+    enable: true
+    success: '&fꀒ &#04d42c%cp-args% Coins has been taken!'
+    failure: '&fꀓ &#e55039Insufficient Coins!'
+  data:
+    enable: true
+    success: '&fꀒ &#04d42c$%cp-args% has been taken!'
+    failure: '&fꀓ &#e55039Insufficient Funds!'
+  tokens:
+    enable: true
+    success: '&fꀒ &#04d42cSuccessfully Bought For %cp-args% Tokens.'
+    failure: '&fꀓ &#e55039Insufficient Tokens!'
+  coins:
+    enable: true
+    success: '&fꀒ &#04d42cSuccessfully Bought For %cp-args% Coins.'
+    failure: '&fꀓ &#e55039Insufficient Coins!'
+  item:
+    enable: true
+    success: '&fꀒ &#04d42c%cp-args% has been taken.'
+    failure: '&fꀓ &#e55039Insufficient Items!'
+  xp:
+    enable: true
+    success: '&fꀒ &#04d42c%cp-args% experience has been taken.'
+    failure: '&fꀓ &#e55039Insufficient Experience!'
+  permission:
+    enable: true
+    success: '&fꀒ &#04d42cYou have successfully passed the permission check for "%cp-args%".'
+    failure: '&fꀓ &#e55039Inefficient Permissions'

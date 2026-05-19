@@ -1,0 +1,49 @@
+manabar:
+  type: listener
+  file: manabar.png
+  split: 20
+  split-type: right
+  setting:
+    listener:
+      class: mmocore_mana
+manabar_empty:
+  type: single
+  file: manabar_empty.png
+
+experiencebar:
+  type: listener
+  file: experience_bar.png
+  split: 36
+  split-type: left
+  setting:
+    listener:
+      class: exp
+experiencebar_empty:
+  type: single
+  file: experience_bar_empty.png
+
+
+armortoughnessbar:
+  type: listener
+  file: armor_toughness_bar.png
+  split: 10
+  split-type: left
+  setting:
+    listener:
+      class: placeholder
+      value: "(number)papi:math_0:0_{mmoitems_stat_armor}-20"
+      max: 10
+
+tophud:
+  type: single
+  file: tophud.png
+xpbar:
+  type: listener
+  file: xpbar.png
+  split: 25
+  split-type: left
+  setting:
+    listener:
+      class: mmocore_experience
+
+    

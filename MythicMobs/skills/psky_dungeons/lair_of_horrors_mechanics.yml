@@ -1,0 +1,64 @@
+LOH_LootChest_Diamond:
+  TriggerConditions:
+  - variableEquals{var=target.raidchest;value="true"} orElsecast LootChest_NoMore
+  - holding{m=mmoitems.DUNGEON_KEY.CHAMBER_DIAMOND_KEY} orElsecast LootChest_Nokey
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - sound{s=block.chest.open;p=0} @trigger
+  - message{m="<gold><bold>CHEST UNLOCKED!</bold> <#cfcfcf>You have looted this chest!"} @trigger
+  - giveitem{i=loh_diamondchest;fl=true} @trigger ?~!dungeondifficulty{d=MASTER}
+  - giveitem{i=loh_diamondchest_master;fl=true} @trigger ?~dungeondifficulty{d=MASTER}
+  - variableUnset{var=target.raidchest} @trigger
+
+LOH_LootChest_Emerald:
+  TriggerConditions:
+  - variableEquals{var=target.raidchest;value="true"} orElsecast LootChest_NoMore
+  - holding{m=mmoitems.DUNGEON_KEY.CHAMBER_EMERALD_KEY} orElsecast LootChest_Nokey
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - sound{s=block.chest.open;p=0} @trigger
+  - message{m="<gold><bold>CHEST UNLOCKED!</bold> <#cfcfcf>You have looted this chest!"} @trigger
+  - giveitem{i=loh_emeraldchest;fl=true} @trigger ?~!dungeondifficulty{d=MASTER}
+  - giveitem{i=loh_emeraldchest_master;fl=true} @trigger ?~dungeondifficulty{d=MASTER}
+  - variableUnset{var=target.raidchest} @trigger
+
+LOH_LootChest_Star:
+  TriggerConditions:
+  - variableEquals{var=target.raidchest;value="true"} orElsecast LootChest_NoMore
+  - holding{m=mmoitems.DUNGEON_KEY.CHAMBER_STAR_KEY} orElsecast LootChest_Nokey
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - sound{s=block.chest.open;p=0} @trigger
+  - message{m="<gold><bold>CHEST UNLOCKED!</bold> <#cfcfcf>You have looted this chest!"} @trigger
+  - giveitem{i=loh_starchest;fl=true} @trigger ?~!dungeondifficulty{d=MASTER}
+  - giveitem{i=loh_starchest_master;fl=true} @trigger ?~dungeondifficulty{d=MASTER}
+  - variableUnset{var=target.raidchest} @trigger
+
+LootChest_Nokey:
+  Skills:
+  - sound{s=entity.villager.no} @trigger
+  - message{m="<white>ꀓ <#e55039>You don't have a raid chest key!"} @trigger
+LootChest_NoMore:
+  Skills:
+  - sound{s=entity.villager.no} @trigger
+  - message{m="<white>ꀓ <#e55039>You can only open one chest per dungeon run!"} @trigger
+
+#this plays whenever a grimoire is acquired
+grimoire_acquired:
+  Skills:
+  - sound{s=grimoireacquired;audience=self}
+  - sendtitle{title="<white>ꃃ";subtitle="";d=20;fo=9;fi=0} @self
+  - delay 2
+  - sendtitle{title="<white>ꃄ";subtitle="";d=20;fo=9} @self
+  - delay 2
+  - sendtitle{title="<white>ꃅ";subtitle="";d=20;fo=9} @self
+  - delay 2
+  - sendtitle{title="<white>ꃆ";subtitle="";d=20;fo=9} @self
+  - delay 2
+  - sendtitle{title="<white>ꃇ";subtitle="";d=20;fo=9} @self
+  - delay 2
+  - sendtitle{title="<white>ꃈ";subtitle="";d=20;fo=9} @self
+  - delay 2
+  - sendtitle{title="<white>ꃉ";subtitle="";d=20;fo=9} @self
+  - delay 2
+  - sendtitle{title="<white>ꃊ";subtitle="";d=100;fo=20} @self

@@ -1,0 +1,158 @@
+panels:
+  enchant:
+    rows: 1
+    title: '&fꐮꁎ'
+    commands:
+    - enchantress
+    sound-on-open: BLOCK_ENCHANTMENT_TABLE_USE
+    refresh-delay: 3
+    custom-item:
+        air:
+            material: AIR
+        common_book:
+            material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_COMMON_ANCIENT_BOOK
+        rare_book:
+            material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_RARE_ANCIENT_BOOK
+        legendary_book:
+            material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_LEGENDARY_ANCIENT_BOOK
+        fabled_book:
+            material: mmo= UNDECIPHERED_BOOK UNDECIPHERED_FABLED_ANCIENT_BOOK
+    item:
+
+      '3':
+        material: AIR
+        itemType:
+        - placeable
+        - noAttributes
+        - returnItem
+
+
+      '5':
+        material: BOOK
+        customdata: '56'
+        name: '&#b84848← Sʟᴏᴛ Eᴍᴛᴘʏ!'
+        lore:
+        - '&#5c4f4fPut an &#7d419cundeciphered book'
+        - '&#5c4f4fin the slot for me to do'
+        - '&#5c4f4fdeciphering!'
+
+        has0:
+            value0: "true"
+            compare0: '%cp-identical-common_book,3%'
+            material: BOOK
+            customdata: '54'
+            name: '&fꁐ &#a359c9Dᴇᴄɪᴘʜᴇʀ &#96d97eCᴏᴍᴍᴏɴ Bᴏᴏᴋ'
+            lore:
+            - ''
+            - '&#a079adUncipher the book and reveal'
+            - '&#a079ada random &#7b4099Ancient Enchantment'
+            - '&#a079adtier &#96d97eCommon&#a079ad!'
+            - ''
+            - '&#a079adCosts &#d1884f10,000 Coins'
+            - ''
+            - '&fꂀ &#83ca16Decipher and reveal!'
+            multi-paywall:
+            - 'paywall= 10000'
+            commands:
+            - 'console= excellentenchants raritybook common 1 %player_name%'
+            - 'sk xp add %player_name% enchanting 500 true'
+            - 'sound= BLOCK_ENCHANTMENT_TABLE_USE'
+            - 'setitem= air 3 Top'
+
+        has1:
+            value0: "true"
+            compare0: '%cp-identical-rare_book,3%'
+            material: BOOK
+            customdata: '54'
+            name: '&fꁐ &#a359c9Dᴇᴄɪᴘʜᴇʀ &#669dc4Rᴀʀᴇ Bᴏᴏᴋ'
+            lore:
+            - ''
+            - '&#a079adUncipher the book and reveal'
+            - '&#a079ada random &#7b4099Ancient Enchantment'
+            - '&#a079adtier &#669dc4Rare&#a079ad!'
+            - ''
+            - '&#a079adCosts &#d1884f50,000 Coins'
+            - ''
+            - '&fꂀ &#83ca16Decipher and reveal!'
+            multi-paywall:
+            - 'paywall= 50000'
+            commands:
+            - 'console= excellentenchants raritybook rare 1 %player_name%'
+            - 'sk xp add %player_name% enchanting 1000 true'
+            - 'sound= BLOCK_ENCHANTMENT_TABLE_USE'
+            - 'setitem= air 3 Top'
+
+        has2:
+            value0: "true"
+            compare0: '%cp-identical-legendary_book,3%'
+            material: BOOK
+            customdata: '54'
+            name: '&fꁐ &#a359c9Dᴇᴄɪᴘʜᴇʀ &#c4ab66Lᴇɢᴇɴᴅᴀʀʏ Bᴏᴏᴋ'
+            lore:
+            - ''
+            - '&#a079adUncipher the book and reveal'
+            - '&#a079ada random &#7b4099Ancient Enchantment'
+            - '&#a079adtier &#c4ab66Legendary&#a079ad!'
+            - ''
+            - '&#a079adCosts &#d1884f150,000 Coins'
+            - ''
+            - '&fꂀ &#83ca16Decipher and reveal!'
+            multi-paywall:
+            - 'paywall= 150000'
+            commands:
+            - 'console= excellentenchants raritybook legendary 1 %player_name%'
+            - 'sk xp add %player_name% enchanting 2000 true'
+            - 'sound= BLOCK_ENCHANTMENT_TABLE_USE'
+            - 'setitem= air 3 Top'
+
+        has3:
+            value0: "true"
+            compare0: '%cp-identical-fabled_book,3%'
+            material: BOOK
+            customdata: '54'
+            name: '&fꁐ &#a359c9Dᴇᴄɪᴘʜᴇʀ &#c46666Fᴀʙʟᴇᴅ Bᴏᴏᴋ'
+            lore:
+            - ''
+            - '&#a079adUncipher the book and reveal'
+            - '&#a079ada random &#7b4099Ancient Enchantment'
+            - '&#a079adtier &#c46666Fabled&#a079ad!'
+            - ''
+            - '&#a079adCosts &#d1884f500,000 Coins'
+            - ''
+            - '&fꂀ &#83ca16Decipher and reveal!'
+            multi-paywall:
+            - 'paywall= 500000'
+            commands:
+            - 'console= excellentenchants raritybook fabled 1 %player_name%'
+            - 'sk xp add %player_name% enchanting 5000 true'
+            - 'sound= BLOCK_ENCHANTMENT_TABLE_USE'
+            - 'setitem= air 3 Top'
+
+        has4:
+            value0: "NOT AIR"
+            compare0: '%cp-material-3%'
+            material: BOOK
+            customdata: '55'
+            name: '<#bf2c2c>I can''t acccept this item!'
+            lore: []
+
+
+
+      '7':
+        material: BARRIER
+        customdata: '1'
+        name: '&fꁐ &#b14ad4Arcane Wikipedia'
+        lore:
+        - ''
+        - '&#e8b1faAncient Enchants are special'
+        - '&#e8b1faenchantments unobtainable via'
+        - '&#e8b1fanormal means. These can only'
+        - '&#e8b1fabe obtained via Ancient Books.'
+        - ''
+        - '&#4f424eEach equipment can only hold'
+        - '&#4f424emax &d3 &#4f424eancient enchants!'
+        - ''
+        - '&fꂀ &#83ca16See all ancient enchants!'
+        commands:
+        - 'excellentenchants list'
+        - 'sound= ITEM_BOOK_PAGE_TURN'

@@ -1,0 +1,16 @@
+settings-enabled:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 64
+    model: prism_skyblock/gui_textures/settings/enabled
+settings-disabled:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 65
+    model: prism_skyblock/gui_textures/settings/disabled

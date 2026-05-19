@@ -1,0 +1,196 @@
+# PlayerAuctions by Olzie-12
+# https://www.spigotmc.org/resources/83073
+# We also have a discord server for help: https://olziedev.com/discord or check docs https://docs.olziedev.com/projects/playerauctions
+# Also if you find any bugs be happy to report them I will fix them :)
+# Made with love
+
+expiredauctions:
+  # Should you enable my auctions gui meaning players will be able to view their auctions?
+  enabled: true
+  # What is the name of the gui?
+  name: "expiredauctions"
+  # The title of the gui (Can use color codes)
+  title: "&fꐮꀲ ꐲꐰꐯꐢꐠ[page]/[pages] ꐤꐬ🔎 {#c9c9c9}No Search Filter."
+  # What is the size of this GUI? (multiples of 9 can only go up to 54)
+  size: 54
+  # What are the actions when this menu is opened up?
+  open-actions: 
+  - "[sound] UI_BUTTON_CLICK"
+  # What are the actions when this menu is closed?
+  close-actions: []
+  # Should the page items be removed if there is page for that button. E.g. you're on page 0, it won't show the previous item.
+  # You can also put an item where this page item is, and it'll only show if the page item isn't there.
+  show-needed-page-items: false
+  # What are the blacklisted slots that auctions will not appear in the GUI?
+  # This is useful if you want to add empty slots in the middle of the GUI instead of having an item there instead.
+  blacklisted-slots: ["48", "50"]
+
+  # Searching for auctions through the GUI
+  search:
+    # Should the feature be enabled?
+    # You will need ProtocolLib for this to work.
+    enabled: true
+    # What is the title for the inventory?
+    title: "&f㋠ [page]/[pages] 🔎 {#4d69c4}[search]."
+    # What are the premade lines in the sign? %search% is the variable they have to enter the auction in.
+    lines:
+      - "%search%"
+      - "----------------"
+      - "Please enter a"
+      - "search result."
+    # This is the sign material that will be used for the search. This is only allowed to be a sign.
+    material: OAK_SIGN
+
+    item:
+      material: BARRIER
+      custom-model-data: 1
+      name: "{#6d71c9}🔎 Search For Item"
+      lore:
+        - "&a "
+        - "{#4d508a}Search an item by:"
+        - "&f Full IGN"
+        - "&f Item name/Item type"
+        - "&f Auction ID"
+        - " "
+        - "&fꂀ {#83ca16}Search."
+      slot: 49
+      amount: 1
+      glowing: false
+      commands:
+      - "[sound] BLOCK_NOTE_BLOCK_HAT"
+
+  icon:
+    item-flags:
+      - "HIDE_ATTRIBUTES"
+
+    lore:
+      - "[lore]"
+      - " "
+      - "{#4d508a}Worth &e[price]"
+      - "{#8a544d}Auctioned on &f[date]"
+      - " "
+      - "&fꂀ {#83ca16}Collect expired auction."
+    # What are the commands that are ran when a player clicks on an auction?
+    commands:
+      - "[sound] BLOCK_NOTE_BLOCK_PLING"
+
+  clickable-items:
+    next-page:
+      # This is the name of the next page item
+      # If you wish to disable any of these please set them the material to "AIR"
+      name: "{#4d548a}Next Page →"
+      # this is the material of the next page item. valid material names: https://javadocs.olziedev.com/spigot/latest/org/bukkit/Material.html
+      material: BARRIER
+      custom-model-data: 1
+      data: 0
+      lore:
+        - "&7Go to next page."
+      slot: 50
+      amount: 1
+      glowing: false
+      commands:
+      - "[sound] BLOCK_NOTE_BLOCK_HAT"
+      commands:
+      - "[sound] BLOCK_NOTE_BLOCK_HAT"
+      # These only work if the skull is a PLAYER_HEAD and the data is 3!
+      #texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE0ZjY4YzhmYjI3OWU1MGFiNzg2ZjlmYTU0Yzg4Y2E0ZWNmZTFlYjVmZDVmMGMzOGM1NGM5YjFjNzIwM2Q3YSJ9fX0= - Skull texture
+      #owner: Next - Skull owner
+    previous-page:
+      name: "{#4d548a}← Previous Page"
+      material: BARRIER
+      custom-model-data: 1
+      data: 0
+      lore:
+        - "&7Go to previous page."
+      slot: 48
+      amount: 1
+      glowing: false
+      commands:
+      - "[sound] BLOCK_NOTE_BLOCK_HAT"
+    refresh:
+      name: "{#4d548a}🔄 Refresh"
+      material: AIR
+      data: 0
+      lore:
+        - "&7Refresh all items."
+      slot: 49
+      amount: 1
+      glowing: false
+      commands:
+      - "[sound] BLOCK_NOTE_BLOCK_HAT"
+      cooldown: 3
+    category:
+      # If you have enabled the category GUI then this item wil appear into the main GUI.
+      name: "{#4d548a}ⓘ Category menu"
+      material: AIR
+      data: 0
+      lore:
+        - "&eClick&b to go back to the category menu."
+      slot: 45
+      amount: 1
+      glowing: false
+    category-swapper:
+      # If you have enabled the category GUI then this item wil appear into the main GUI.
+      name: "&8ⓘ Switch Category"
+      material: BARRIER
+      custom-model-data: 1
+      data: 0
+      lore: []
+      slot: 53
+      amount: 1
+      glowing: false
+      commands:
+      - "[sound] BLOCK_NOTE_BLOCK_HAT"
+      current-category: "&9→  %category%"
+      other-category: "&f   %category%"
+    sort:
+      name: "{#4d548a}☰ Switch Sort Type"
+      material: BARRIER
+      custom-model-data: 1
+      data: 0
+      lore:
+        - "&9→ &f%sort%"
+      slot: 52
+      amount: 1
+      glowing: false
+      commands:
+      - "[sound] BLOCK_NOTE_BLOCK_HAT"
+    menu:
+      name: "{#4babde}Switch To {#ccedff}Listings"
+      material: "BOOK"
+      custom-model-data: 73
+      data: 0
+      lore:
+      - "{#e3e3e3}See listings from all"
+      - "{#e3e3e3}players."
+      - ""
+      - "&fꂀ {#83ca16}Switch."
+      slot: 45
+      amount: 1
+      glowing: false
+    myauctions:
+      name: "{#4babde}Switch To {#ccedff}Your Auctions"
+      material: "BOOK"
+      custom-model-data: 75
+      data: 0
+      lore:
+      - "{#e3e3e3}See listings that you"
+      - "{#e3e3e3}listed."
+      - ""
+      - "&fꂀ {#83ca16}Switch."
+      slot: 46
+      amount: 1
+      glowing: false
+    expired:
+      name: "{#4babde}Switch To {#ccedff}Expired Auctions"
+      material: "BOOK"
+      custom-model-data: 78
+      data: 0
+      lore:
+      - "{#e3e3e3}See own listings that have"
+      - "{#e3e3e3}expired."
+      slot: 47
+      amount: 1
+      glowing: false
+
+  items: []

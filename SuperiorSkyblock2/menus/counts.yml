@@ -1,0 +1,58 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Block Counts &m     '
+
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - 'p p p h h h n n n'
+
+slots: '@'
+previous-page: 'p'
+next-page: 'n'
+
+items:
+  '@':
+    type: STONE
+    name: '&f{0} &8x{1}'
+    lore:
+      - ''
+      - '&{HEX:cccccc}Worth: &{HEX:cccccc}${2}'
+      - '&{HEX:cccccc}Level: &{HEX:e8af46}{3}⭐'
+  'p':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Previous Page'
+  'n':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Next Page'
+  'h':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back'
+
+commands:
+  'h':
+    - '[player] is panel'
+
+sounds:
+  'p':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+  'n':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1

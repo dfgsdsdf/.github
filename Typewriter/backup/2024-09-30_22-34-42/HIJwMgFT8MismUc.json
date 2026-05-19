@@ -1,0 +1,1 @@
+{"id":"HIJwMgFT8MismUc","name":"npcs","type":"static","entries":[{"id":"B6cqtJfqCWEMFP8","name":"new_npc_instance","definition":"NLVVGH0TLXJ6xTK","spawnLocation":{"world":"world_spawn","x":8.71,"y":70,"z":-6.49,"yaw":-13.45,"pitch":1.07},"data":[],"type":"npc_instance"}],"chapter":"","priority":0,"version":"0.6.0-beta-129"}

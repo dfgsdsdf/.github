@@ -1,0 +1,151 @@
+COBALT_BOW:
+  base:
+    material: BOW
+    custom-model-data: 1.0
+    name: Cobalt-Infused Bow
+    tier: TIER2
+    critical-strike-chance: 5.0
+    critical-strike-power: 7.5
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+          - v stick - 1.0..|v AIR 0 1..|m material cobalt_ingot 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+
+MITHRIL_BOW:
+  base:
+    material: BOW
+    custom-model-data: 7.0
+    name: Mithril-Infused Bow
+    tier: TIER2
+    critical-strike-chance: 7.5
+    critical-strike-power: 10.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+          - v stick - 1.0..|v AIR 0 1..|m material mithril_ingot 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+
+SOULSTEEL_BOW:
+  base:
+    material: BOW
+    custom-model-data: 3.0
+    name: Soulsteel Bow
+    tier: TIER3
+    critical-strike-chance: 7.5
+    critical-strike-power: 12.5
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+          - v stick - 1.0..|v AIR 0 1..|m material soulsteel_ingot 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+
+SOUL_NETHERITE_BOW:
+  base:
+    material: BOW
+    custom-model-data: 5.0
+    name: Soul Netherite Bow
+    tier: TIER3
+    critical-strike-chance: 10.0
+    critical-strike-power: 15.0
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ
+    - <dark_gray>▎ <#b0a797>Slaying an emeny consumes
+    - <dark_gray>▎ <#b0a797>its <#2d4db5>soul <#b0a797>to heal for <red>1❤ <#b0a797>and
+    - <dark_gray>▎ <#b0a797><red>+3% damage<#b0a797>.
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+          - v stick - 1.0..|v AIR 0 1..|m material soul_netherite_ingot 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+    ability:
+      ability1:
+        type: SOUL_NETHERITE_SWORD
+        mode: KILL_ENTITY
+        cooldown: 3.0
+
+GILDED_NETHERITE_BOW:
+  base:
+    material: BOW
+    custom-model-data: 6.0
+    name: Gilded Netherite Bow
+    tier: TIER3
+    critical-strike-chance: 12.5
+    critical-strike-power: 12.5
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ
+    - <dark_gray>▎ <#b0a797>Consumes <#ebaa60>100 Coins <#b0a797>to
+    - <dark_gray>▎ <#b0a797>deal an additional <red>2❤<#b0a797>.
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+          - v stick - 1.0..|v AIR 0 1..|m material gilded_netherite_ingot 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+    ability:
+      ability1:
+        type: GILDED_NETHERITE_SWORD
+        mode: ARROW_HIT
+
+WARDEN_BOW:
+  base:
+    material: BOW
+    custom-model-data: 4.0
+    name: Warden Bow
+    tier: TIER4
+    critical-strike-chance: 17.5
+    critical-strike-power: 20.0
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ
+    - <dark_gray>▎ <#b0a797>Hitting an enemy creates a
+    - <dark_gray>▎ <#b0a797><#253e70>Sonic Nova<#b0a797>, dealing <red>3❤<#b0a797>
+      to
+    - <dark_gray>▎ <#b0a797>nearby targets and grants
+    - <dark_gray>▎ <#b0a797><#253e70>5 Sonic Energy <dark_gray>(3s cooldown)
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+          - v stick - 1.0..|v AIR 0 1..|m material warden_ingot 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v string - 1.0..
+    ability:
+      ability1:
+        type: WARDEN_BOW
+        mode: ARROW_HIT
+
+HEXTECH_BOW:
+  base:
+    material: BOW
+    custom-model-data: 2.0
+    name: Hextech Techbow
+    tier: TIER5
+    critical-strike-chance: 20.0
+    critical-strike-power: 30.0
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ
+    - <dark_gray>▎ <#b0a797>Shooting an arrow at maxed
+    - <dark_gray>▎ <#b0a797><#e7b5eb>Hextech Energy <#b0a797>releases a
+    - <dark_gray>▎ <#b0a797>powerful laser, dealing <red>40❤
+    - <dark_gray>▎ <#b0a797><#b0a797>while inflicting a variety of
+    - <dark_gray>▎ <#b33d6a>negative effects <#b0a797>to targets
+    - <dark_gray>▎ <#b0a797>hit.
+    - ''
+    - ' <#c199d1>{upgrade_level}/10 Hexia Crystals Applied.'
+    ability:
+      ability1:
+        type: HEXTECH_BOW
+        mode: SHOOT_BOW
+    upgrade:
+      template: hextechweapon
+      reference: hextech
+      max: 10

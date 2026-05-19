@@ -1,0 +1,167 @@
+npc-lewis:
+  char: ꀼ
+  texture: prism_skyblock/interface/npc_portraits/lewis.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-wally:
+  char: ꁠ
+  texture: prism_skyblock/interface/npc_portraits/wally.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-pris:
+  char: ꁥ
+  texture: prism_skyblock/interface/npc_portraits/pris.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-samuel:
+  char: ꁦ
+  texture: prism_skyblock/interface/npc_portraits/samuel.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-robot:
+  char: ꁨ
+  texture: prism_skyblock/interface/npc_portraits/robot.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-duncan:
+  char: ꁩ
+  texture: prism_skyblock/interface/npc_portraits/duncan.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-callan:
+  char: ꁪ
+  texture: prism_skyblock/interface/npc_portraits/callan.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-sabrina:
+  char: ꁫ
+  texture: prism_skyblock/interface/npc_portraits/sabrina.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-mia:
+  char: ꁳ
+  texture: prism_skyblock/interface/npc_portraits/mia.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-froggy:
+  char: ꁴ
+  texture: prism_skyblock/interface/npc_portraits/froggy.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-norman:
+  char: ꁵ
+  texture: prism_skyblock/interface/npc_portraits/norman.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-liana:
+  char: ꁶ
+  texture: prism_skyblock/interface/npc_portraits/liana.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-bengbeng:
+  char: ꁷ
+  texture: prism_skyblock/interface/npc_portraits/bengbeng.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-glen:
+  char: ꁸ
+  texture: prism_skyblock/interface/npc_portraits/glen.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-lissandra:
+  char: ꁹ
+  texture: prism_skyblock/interface/npc_portraits/lissandra.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-dustindinh:
+  char: ꁺ
+  texture: prism_skyblock/interface/npc_portraits/dustindinh.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-48minh:
+  char: ꁻ
+  texture: prism_skyblock/interface/npc_portraits/48minh.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-anika:
+  char: ꁼ
+  texture: prism_skyblock/interface/npc_portraits/anika.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-kurt:
+  char: ꁽ
+  texture: prism_skyblock/interface/npc_portraits/kurt.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-wilfred:
+  char: ꂉ
+  texture: prism_skyblock/interface/npc_portraits/wilfred.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm
+
+npc-darcy:
+  char: ꂊ
+  texture: prism_skyblock/interface/npc_portraits/darcy.png
+  ascent: 9.5
+  height: 46
+  chat:
+    permission: somerandom.perm

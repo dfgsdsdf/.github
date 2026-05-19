@@ -1,0 +1,11 @@
+Name: Balloon Dock C
+World: world_spawn
+BlockPos: 127,70,-97,1.9965023,88.81929
+Permission_Required: false
+Priority: 0
+Teleport_On_Login:
+  Enabled: false
+  Groups: []
+Teleport_On_Death:
+  Enabled: false
+  Groups: []

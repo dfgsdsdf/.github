@@ -1,0 +1,60 @@
+panels:
+  scroll:
+    rows: 1
+    title: '&fꐮꂝ'
+    commands:
+    - scroll
+    refresh-delay: 3
+    custom-item:
+        air:
+            material: AIR
+        scroll_divine_intervention:
+            material: mmo= INNATE_SCROLL SCROLL_OF_DIVINE_INTERVENTION
+    item:
+
+      '3':
+        material: AIR
+        itemType:
+        - placeable
+        - noAttributes
+        - returnItem
+
+
+      '5':
+        material: BOOK
+        customdata: '56'
+        name: '&#b84848← Sʟᴏᴛ Eᴍᴛᴘʏ!'
+        lore:
+        - '&#5c4f4fPut an &#edb561innate scroll &#5c4f4fin'
+        - '&#5c4f4fthe slot for me to do'
+        - '&#5c4f4fdeciphering!'
+
+        has0:
+            value0: "true"
+            compare0: '%cp-identical-scroll_divine_intervention,3%'
+            material: BOOK
+            customdata: '54'
+            name: '&fꂞ &#edb561Uɴʟᴏᴄᴋ &#f2ab3fDivine Intervention'
+            lore:
+            - ''
+            - '&#a89983Decipher scroll and unlock this'
+            - '&#a89983innate which can be activated in'
+            - '&#a89983the innate menu.'
+            - ''
+            - '&#a89983Costs &#d1884f50,000 Coins'
+            - ''
+            - '&fꂀ &#83ca16Decipher and unlock!'
+            multi-paywall:
+            - 'paywall= 50000'
+            commands:
+            - 'mmocore admin skill unlock %player_name% DIVINE_INTERVENTION'
+            - 'sound= BLOCK_RESPAWN_ANCHOR_SET_SPAWN'
+            - 'setitem= air 3 Top'
+
+        has4:
+            value0: "NOT AIR"
+            compare0: '%cp-material-3%'
+            material: BOOK
+            customdata: '55'
+            name: '<#bf2c2c>I can''t acccept this item!'
+            lore: []

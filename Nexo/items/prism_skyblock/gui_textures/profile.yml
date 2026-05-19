@@ -1,0 +1,217 @@
+profile-rankplayer:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    model: prism_skyblock/gui_textures/profile/rank_player
+profile-rankvip:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    model: prism_skyblock/gui_textures/profile/rank_vip
+profile-rankmvp:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 3
+    model: prism_skyblock/gui_textures/profile/rank_mvp
+profile-rankhero:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 4
+    model: prism_skyblock/gui_textures/profile/rank_hero
+profile-rankhelper:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 5
+    model: prism_skyblock/gui_textures/profile/rank_helper
+profile-rankmod:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 6
+    model: prism_skyblock/gui_textures/profile/rank_mod
+profile-rankadmin:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 7
+    model: prism_skyblock/gui_textures/profile/rank_admin
+profile-rankowner:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 8
+    model: prism_skyblock/gui_textures/profile/rank_owner
+profile-factionwarrior:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 9
+    model: prism_skyblock/gui_textures/profile/faction_warrior
+profile-factionmarksman:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 10
+    model: prism_skyblock/gui_textures/profile/faction_marksman
+profile-factionwitch:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 11
+    model: prism_skyblock/gui_textures/profile/faction_witch
+profile-stat-damage:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_damage
+profile-stat-crit:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_crit
+profile-stat-damagebuff:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_damagebuff
+profile-stat-hp:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_hp
+profile-stat-armor:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 5
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_armor
+profile-stat-damagereduction:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 6
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_damagereduction
+profile-stat-speed:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 7
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_speed
+profile-stat-mana:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 8
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_mana
+profile-stat-cooldown:
+  itemname: ''
+  material: COOKIE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 9
+    textures:
+    - prism_skyblock/interface/gui_textures/profile/stat_cooldown
+profile-expbarstart:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    model: prism_skyblock/gui_textures/profile/expbar_start
+    custom_model_data: 16
+profile-expbarmiddle:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    model: prism_skyblock/gui_textures/profile/expbar_middle
+    custom_model_data: 17
+profile-expbarend:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 12
+    model: prism_skyblock/gui_textures/profile/expbar_end
+profile-expbarstartfilled:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 13
+    model: prism_skyblock/gui_textures/profile/expbar_start_filled
+profile-expbarmiddlefilled:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 14
+    model: prism_skyblock/gui_textures/profile/expbar_middle_filled
+profile-expbarendfilled:
+  itemname: ''
+  material: STRING
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 15
+    model: prism_skyblock/gui_textures/profile/expbar_end_filled

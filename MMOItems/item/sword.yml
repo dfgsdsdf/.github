@@ -1,0 +1,172 @@
+COBALT_SWORD:
+  base:
+    material: IRON_SWORD
+    tier: TIER2
+    custom-model-data: 1.0
+    attack-damage: 7.0
+    attack-speed: 2.0
+    name: Cobalt Sword
+    max-item-damage: 2031.0
+    will-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL COBALT_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL COBALT_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+MITHRIL_SWORD:
+  base:
+    material: IRON_SWORD
+    tier: TIER2
+    custom-model-data: 2.0
+    attack-damage: 8.0
+    name: Mithril Sword
+    max-item-damage: 2031.0
+    will-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL MITHRIL_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL MITHRIL_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+SOULSTEEL_SWORD:
+  base:
+    material: IRON_SWORD
+    tier: TIER3
+    custom-model-data: 3.0
+    attack-damage: 9.0
+    name: Soulsteel Sword
+    critical-strike-chance: 5.0
+    max-item-damage: 3012.0
+    will-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL SOULSTEEL_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL SOULSTEEL_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+GILDED_NETHERITE_SWORD:
+  base:
+    material: IRON_SWORD
+    tier: TIER3
+    custom-model-data: 7.0
+    attack-damage: 10.0
+    max-item-damage: 4041.0
+    name: Gilded Netherite Sword
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ
+    - <dark_gray>▎ <#b0a797>Consumes <#ebaa60>100 Coins <#b0a797>to
+    - <dark_gray>▎ <#b0a797>deal an additional <red>2❤<#b0a797>.
+    ability:
+      ability1:
+        type: GILDED_NETHERITE_SWORD
+        mode: ATTACK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL GILDED_NETHERITE_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL GILDED_NETHERITE_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+SOUL_NETHERITE_SWORD:
+  base:
+    material: IRON_SWORD
+    tier: TIER3
+    custom-model-data: 6.0
+    attack-damage: 10.0
+    name: Soul Netherite Sword
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ
+    - <dark_gray>▎ <#b0a797>Slaying an emeny consumes
+    - <dark_gray>▎ <#b0a797>its <#2d4db5>soul <#b0a797>to heal for <red>1❤ <#b0a797>and
+    - <dark_gray>▎ <#b0a797><red>+3% damage<#b0a797>.
+    max-item-damage: 4041.0
+    ability:
+      ability1:
+        type: SOUL_NETHERITE_SWORD
+        mode: KILL_ENTITY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL SOUL_NETHERITE_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL SOUL_NETHERITE_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+WARDEN_SWORD:
+  base:
+    material: IRON_SWORD
+    tier: TIER4
+    custom-model-data: 5.0
+    attack-damage: 11.0
+    attack-speed: 2.0
+    name: Warden Sword
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ ꂁ
+    - <dark_gray>▎ <#b0a797>Emit a <#253e70>sonic boom <#b0a797>ahead,
+    - <dark_gray>▎ <#b0a797>dealing <red>7❤ <#b0a797>to enemies hit
+    - <dark_gray>▎ <#b0a797>and gain <#253e70>5 Sonic Energy
+    - <dark_gray>▎ <#b0a797>for each target. Also,
+    - <dark_gray>▎ <#b0a797>grants <red>Strength III <#b0a797>and
+    - <dark_gray>▎ <#b0a797><red>Speed II <#b0a797>to <#274c96><b>Pet Warden<#b0a797>.
+    max-item-damage: 4082.0
+    ability:
+      ability1:
+        type: WARDEN_SWORD
+        mode: RIGHT_CLICK
+        mana: 10.0
+        cooldown: 3.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL WARDEN_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL WARDEN_INGOT 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+
+HEXTECH_SWORD:
+  base:
+    material: IRON_SWORD
+    tier: TIER5
+    custom-model-data: 4.0
+    attack-damage: 12.0
+    attack-speed: 2.0
+    critical-strike-chance: 10.0
+    critical-strike-power: 15.0
+    name: Hextech Sword
+    lore:
+    - <dark_gray>▎ <#d6b351>⭐<white>ɪᴛᴇᴍ ᴀʙɪʟɪᴛʏ ꂁ
+    - <dark_gray>▎ <#b0a797>Consumes all <#e7b5eb>Hextech Energy
+    - <dark_gray>▎ <#b0a797>to emit a massive beam, dealing
+    - <dark_gray>▎ <#b0a797><red>40❤ <#b0a797>and inflicting a variety of
+    - <dark_gray>▎ <#b33d6a>negative effects <#b0a797>to all targets
+    - <dark_gray>▎ <#b0a797>hit.
+    - ''
+    - ' <#c199d1>{upgrade_level}/10 Hexia Crystals Applied.'
+    max-item-damage: 6256.0
+    will-break: true
+    ability:
+      ability1:
+        type: HEXTECH_SWORD
+        mode: RIGHT_CLICK
+        cooldown: 1.0
+    upgrade:
+      template: hextechweapon
+      reference: hextech
+      max: 10
+      workbench: false
+
+ADMIN:
+  base:
+    material: IRON_SWORD
+    attack-damage: 1000000.0
+    sweeping-damage-ratio: 1.0
+    damage-reduction: 100.0
+    entity-interaction-range: 6.0

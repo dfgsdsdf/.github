@@ -1,0 +1,16 @@
+general-page_forward:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 71
+    model: prism_skyblock/gui_textures/page_forward
+general-page_backward:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 72
+    model: prism_skyblock/gui_textures/page_backward

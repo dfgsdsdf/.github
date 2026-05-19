@@ -1,0 +1,56 @@
+migrated_custom_entities_player_head:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/head
+    custom_model_data: 1
+migrated_custom_entities_player_right_arm:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/right_arm
+    custom_model_data: 2
+migrated_custom_entities_player_left_arm:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/left_arm
+    custom_model_data: 3
+migrated_custom_entities_player_torso:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/torso
+    custom_model_data: 4
+migrated_custom_entities_player_right_leg:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/right_leg
+    custom_model_data: 5
+migrated_custom_entities_player_left_leg:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/left_leg
+    custom_model_data: 6
+migrated_custom_entities_player_slim_right:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/slim_right
+    custom_model_data: 7
+migrated_custom_entities_player_slim_left:
+  material: PLAYER_HEAD
+  excludeFromInventory: true
+  excludeFromCommands: true
+  Pack:
+    model: custom/entities/player/slim_left
+    custom_model_data: 8

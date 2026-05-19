@@ -1,0 +1,29 @@
+backup_version: 2
+users:
+    defcadaa-bb7a-4079-902b-3844d583f981:
+        skills:
+            auraskills/excavation: {level: 0, xp: 0.0}
+            auraskills/defense: {level: 3, xp: 26.0}
+            auraskills/fishing: {level: 0, xp: 0.0}
+            auraskills/fighting: {level: 0, xp: 0.0}
+            auraskills/enchanting: {level: 0, xp: 0.0}
+            auraskills/farming: {level: 3, xp: 0.0}
+            auraskills/archery: {level: 0, xp: 0.0}
+            auraskills/mining: {level: 0, xp: 0.4}
+            auraskills/agility: {level: 0, xp: 40.924}
+            auraskills/foraging: {level: 0, xp: 12.200000000000001}
+            auraskills/alchemy: {level: 2, xp: 200.0}
+        mana: 44.0
+        stat_modifiers:
+        - {name: mmoitems_STRENGTH, stat: auraskills/strength, value: 0.0}
+        - {name: mmoitems_TOUGHNESS, stat: auraskills/toughness, value: 0.0}
+        - {name: mmoitems_WISDOM, stat: auraskills/wisdom, value: 0.0}
+        - {name: mmoitems_REGENERATION, stat: auraskills/regeneration, value: 0.0}
+        - {name: mmoitems_CRIT_CHANCE, stat: auraskills/crit_chance, value: 0.0}
+        - {name: mmoitems_SPEED, stat: auraskills/speed, value: 0.0}
+        - {name: mmoitems_CRIT_DAMAGE, stat: auraskills/crit_damage, value: 0.0}
+        - {name: mmoitems_LUCK, stat: auraskills/luck, value: 0.0}
+        - {name: mmoitems_HEALTH, stat: auraskills/health, value: 0.0}
+        trait_modifiers:
+        - {name: mmoitems_max_mana, trait: auraskills/max_mana, value: 20.0}
+        - {name: farming_luck_ability, trait: auraskills/farming_luck, value: 10.0}

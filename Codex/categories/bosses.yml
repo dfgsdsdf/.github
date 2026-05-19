@@ -1,0 +1,26 @@
+name: "Bosses"
+discover_title:
+  title: "&c&lCODEX UPDATED"
+  subtitle: "&7Monsters: %name%"
+  fade_in: 0
+  stay: 0
+  fade_out: 0
+discover_message:
+- "&fꀷ #4b56b4You have discovered %name%#4b56b4, codex updated!"
+discover_sound:
+  name: BLOCK_NOTE_BLOCK_BELL
+  volume: 10
+  pitch: 0.1
+discoveries:
+  1:
+    name: "#ae63d6Draedon &f- #894da8The Lost One"
+    lore:
+    - "&f 10000ꂆ 14ꂇ Highꂈ"
+    - "#e9bfffUnfazed by many warnings, Draedon"
+    - "#e9bffftook upon researching Hextech, an"
+    - "#e9bfffact lead to his inevitable corruption."
+    - "#e9bfffNow he wanders around his abadoned"
+    - "#e9bffflab, mindlessly obeying all commands"
+    - "#e9bfffof the virus."
+    discovered_on_mob_kill:
+      mythic_mobs_id: DRAEDON

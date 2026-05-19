@@ -1,0 +1,13 @@
+title: '&fꐮꀻ ꐱꐰꐡ %coinsengine_balance_rounded_coin%'
+size: 54
+
+open-actions:
+  - 'sound: shopbell;;1;;1'
+
+layout:
+  - 'ABCDEFGHI'
+  - 'JKLMNOPQR'
+  - 'STUVWXYZ!'
+  - '@#$%^&*()'
+  - '[]\;,./_+'
+  - '000000000'

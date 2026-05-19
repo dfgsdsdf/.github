@@ -1,0 +1,16 @@
+totem-divineintervention:
+  itemname: ''
+  material: TOTEM_OF_UNDYING
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/labels/innate_icons/divine_intervention.png
+totem-ascend:
+  itemname: ''
+  material: TOTEM_OF_UNDYING
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/interface/totem_effect/ascend.png

@@ -1,0 +1,45 @@
+button-settings:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 1
+    textures:
+    - prism_skyblock/interface/gui_textures/main_menu/button_settings
+button-discord:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 2
+    textures:
+    - prism_skyblock/interface/gui_textures/main_menu/button_discord
+button-store:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 3
+    textures:
+    - prism_skyblock/interface/gui_textures/main_menu/button_store
+button-friends:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 4
+    textures:
+    - prism_skyblock/interface/gui_textures/main_menu/button_friends
+slot-nothing:
+  itemname: ''
+  material: BARRIER
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 1
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/air

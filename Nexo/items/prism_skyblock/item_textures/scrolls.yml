@@ -1,0 +1,9 @@
+scroll-divine_intervention:
+  itemname: ''
+  material: BLACK_DYE
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/item_texture/scrolls/scroll_of_divine_intervention.png
+    custom_model_data: 1

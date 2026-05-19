@@ -1,0 +1,77 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Top Islands &m       '
+open-sound: 
+  type: BLOCK_NOTE_BLOCK_HAT
+previous-menu: false
+
+pattern:
+
+  - '@ @ @ @ # @ @ @ @'
+  - '@ @ @ # # # @ @ @'
+  - '@ @ # # # # # @ @'
+  - '@ # # # # # # # @'
+  - '@ % * p h n & ^ @'
+
+slots: '#'
+previous-page: 'p'
+current-page: 'h'
+next-page: 'n'
+
+player-island: '$'
+sort-glow-when-selected: true
+
+items:
+  '#':
+    island:
+      type: PLAYER_HEAD
+      customModel: 11
+      name: '&{HEX:a1ccf7}ɪꜱʟᴀɴᴅ: &f{0} &8(#{1})'
+      name: '&{HEX:ffffff}Island: &{HEX:1fa5de}@{0} &8(#{1})'
+      lore:
+        - ''
+        - '&{HEX:cccccc}▪ Island Level: &{HEX:e8af46}%superior_island_level%⭐ &8(#%superior_island_top_level_position%)'
+        - '&{HEX:9c9c9c} Worth: &f%superior_island_worth_format% &8(#%superior_island_top_worth_position%)'
+        - '&{HEX:9c9c9c} Rating: &f%superior_island_rating_stars%'
+        - ''
+        - '&{HEX:cccccc}▪ Members: &f{10}'
+        - '{4}:&{HEX:9c9c9c} {}'
+        - '&{HEX:9c9c9c} Visitors: &f%superior_island_visitors_count%'
+        - '&{HEX:cccccc}'
+        - '&fꂀ &{HEX:83ca16}View items!'
+        - '&fꂁ &{HEX:0097d8}Teleport to warp!'
+    no-island:
+      type: PLAYER_HEAD
+      customModel: 11
+      name: '&8N/A'
+  'p':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Previous Page'
+  'n':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Next Page'
+  'h':
+    type: BARRIER
+    customModel: 1
+    name: '&{HEX:cccccc}Go Back'
+
+commands:
+  'h':
+    - '[player] is panel'
+
+sounds:
+  'p':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1
+  'n':
+    type: ITEM_BOOK_PAGE_TURN
+    volume: 1
+    pitch: 1

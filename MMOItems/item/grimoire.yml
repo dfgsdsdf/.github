@@ -1,0 +1,21 @@
+DRAEDON_GRIMOIRE:
+  base:
+    material: FEATHER
+    name: <GRADIENT:#9466d4:#9c3360>Draedon's Grimoire
+    lore:
+    - <#cccccc>This strange, glowing book
+    - <#cccccc>pulsates with dark power.
+    - <#cccccc>Lilith will know what to do
+    - <#cccccc>with it.
+    - ''
+    - <#564b66>&o"Hextech - the art of magic
+    - <#564b66>&oand science intertwined. To
+    - <#564b66>&odabble in such force is to
+    - <#564b66>&odip in madness itself. Yet,
+    - <#564b66>&othe few who mastered it is
+    - <#564b66>&osaid to be invincible."
+    - <#564b66>&o- Draedon, 1976
+    tier: TIER5
+    lore-format: material
+    custom-model-data: 1.0
+    max-stack-size: 1.0

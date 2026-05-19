@@ -1,0 +1,41 @@
+
+# GUI display name
+name: '&fꐮꀚ ꐲꐰꐮꐭꐬ<#3b3b3b>Your Party &m                          '
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 18
+
+items:
+    member:
+        slots: [11,12,13,14,15]
+        function: member
+        empty:  
+            item: BOOK
+            custom-model-data: 68
+            name: '&8No Player'
+        member:
+            item: PLAYER_HEAD
+            name: '&6{name}'
+            custom-model-data: 11
+            lore:
+            - '&8Lvl.{level} {class}'
+            - ''
+            - '&7Online <#6082B6>{since} &7ago.'
+
+    leave:
+        slots: [0]
+        function: leave
+        item: BARRIER
+        custom-model-data: 1
+        name: '&c✘ Leave Party'
+        lore: {}
+    request:
+        slots: [8]
+        function: invite
+        item: BARRIER
+        custom-model-data: 1
+        name: '&8➕ <#969ad6>Send Party Request'
+        lore: 
+        - '<#666a96>Click to send a party'
+        - '<#666a96>request to a player!'

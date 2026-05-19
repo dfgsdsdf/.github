@@ -1,0 +1,275 @@
+panels:
+  profile:
+    rows: 4
+    title: '&fꐮꂃ ꐲꐰꐮꐭꐬ<#3b3b3b>Your Profile: <#5c5c5c>@%player_name%'
+    commands:
+    - profile
+    - player
+    - me
+    item:
+
+      '0':
+        material: cps= self
+        customdata: '12'
+        name: '&a'
+
+#PLAYERRANKS
+      '3':
+        material: string
+        customdata: '1'
+        name: '&a'
+        has0:
+            value0: "%luckperms_primary_group_name%"
+            compare0: 'owner'
+            name: '&a'
+            material: string
+            customdata: '8'
+        has1:
+            value1: "%luckperms_primary_group_name%"
+            compare1: 'admin'
+            name: '&a'
+            material: string
+            customdata: '7'
+        has2:
+            value2: "%luckperms_primary_group_name%"
+            compare2: 'mod'
+            name: '&a'
+            material: string
+            customdata: '6'
+        has3:
+            value3: "%luckperms_primary_group_name%"
+            compare3: 'helper'
+            name: '&a'
+            material: string
+            customdata: '5'
+        has4:
+            value4: "%luckperms_primary_group_name%"
+            compare4: 'hero'
+            name: '&a'
+            material: string
+            customdata: '4'
+        has5:
+            value5: "%luckperms_primary_group_name%"
+            compare5: 'mvp'
+            name: '&a'
+            material: string
+            customdata: '3'
+        has6:
+            value6: "%luckperms_primary_group_name%"
+            compare6: 'vip'
+            name: '&a'
+            material: string
+            customdata: '2'
+
+#PLAYERFACTION
+
+      '12':
+        material: AIR
+        has0:
+            value0: "%mmocore_class%"
+            compare0: 'Warrior'
+            name: '&a'
+            material: string
+            customdata: '9'
+        has1:
+            value1: "%mmocore_class%"
+            compare1: 'Marksman'
+            name: '&a'
+            material: string
+            customdata: '10'
+        has2:
+            value2: "%mmocore_class%"
+            compare2: 'Witch'
+            name: '&a'
+            material: string
+            customdata: '11'
+
+#STATS
+      '6':
+        material: cookie
+        customdata: '1'
+        name: '&f%mythiclib_stat_attack_damage% <#AA4A44>Attack Damage'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dDetermines the base damage'
+          - '&#6e737ddealt through melee attacks.'
+      '7':
+        material: cookie
+        customdata: '2'
+        name: '&f%mythiclib_stat_critical_strike_chance%% <#6F8FAF>Crit Chance'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dDetermines the chance'
+          - '&#6e737dto deal a crit.'
+          - ''
+          - '&#6e737dCrit deals &f+%mythiclib_stat_critical_strike_power%% &#6e737ddamage!'
+      '8':
+        material: cookie
+        customdata: '3'
+        name: '&#c96166Bonus Damage Multipliers'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dIncreases your damage'
+          - '&#6e737dby a factor.'
+          - ''
+          - ' &#c96166+%mythiclib_stat_weapon_damage%% &fWeapon Damage' 
+          - ' &#c96166+%mythiclib_stat_skill_damage%% &fSkill Damage' 
+          - ' &#c96166+%mythiclib_stat_projectile_damage%% &fProjectile Damage' 
+          - ' &#c96166+%mythiclib_stat_pve_damage%% &fMob Damage' 
+          - ' &#c96166+%mythiclib_stat_pvp_damage%% &fPVP Damage' 
+          - ' &#c96166+%mythiclib_stat_faction_damage_dungeon%% &fDungeon Damage'
+      '15':
+        material: cookie
+        customdata: '4'
+        name: '&f%mythiclib_stat_max_health% <#ed1a41>Max Health'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dDetermines the damage'
+          - '&#6e737dyou can take.'
+      '16':
+        material: cookie
+        customdata: '5'
+        name: '&f%mythiclib_stat_armor% <#755543>Armor'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dReduces damage from'
+          - '&#6e737dmost sources.'
+          - ''
+          - '&#6e737dArmor toughness: &#755543%mythiclib_stat_armor_toughness%'
+      '17':
+        material: cookie
+        customdata: '6'
+        name: '&f%mythiclib_stat_damage_reduction%% <#ab4f1d>Damage Reduction'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dReduces damage taken'
+          - '&#6e737dby a factor.'
+      '24':
+        material: cookie
+        customdata: '7'
+        name: '&f%mythiclib_stat_movement_speed% <#a8dee6>Movement Speed'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dDetermines speed you'
+          - '&#6e737dmove.'
+      '25':
+        material: cookie
+        customdata: '8'
+        name: '&f%mythiclib_stat_max_mana% <#4965ab>Max Mana'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dDetermines the max'
+          - '&#6e737dmana you can hold.'
+      '26':
+        material: cookie
+        customdata: '9'
+        name: '&f%mythiclib_stat_cooldown_reduction%% <#ce87de>Cooldown Reduction'
+        lore:
+          - '&8Player Stats'
+          - ''
+          - '&#6e737dReduces all cooldowns'
+          - '&#6e737dof skills and items.'
+
+#EXPBAR
+      '27':
+        material: string
+        customdata: '10'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '0'
+            material: string
+            customdata: '13'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+
+      '28':
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '12.5'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '29': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '25'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '30': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '37.5'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '31': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '50'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '32': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '62.5'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '33': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '75'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+      '34': 
+        material: string
+        customdata: '17'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'
+        has0:
+            value0: "%mmocore_level_percent% ISGREATER"
+            compare0: '87.5'
+            material: string
+            customdata: '14'
+            name: '&#8ef071%mmocore_level_percent%% to next level!'
+            lore: []
+
+      '35':
+        material: string
+        customdata: '12'
+        name: '&#8ef071%mmocore_level_percent%% to next level!'

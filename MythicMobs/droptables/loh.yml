@@ -1,0 +1,94 @@
+loh_lootchest:
+  MaxItems: 2
+  MinItems: 1
+  Drops:
+  - mmoitems{type=MATERIAL;id=KEY_FRAGMENT} 1-2 1000
+  - mmoitems{type=MATERIAL;id=COBALT_INGOT} 1-2 64
+  - mmoitems{type=MATERIAL;id=MITHRIL_INGOT} 1 32
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_COMMON_ANCIENT_BOOK} 1 10
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_RARE_ANCIENT_BOOK} 1 10
+
+loh_diamondchest:
+  TotalItems: 2
+  Drops:
+  - mmoitems{type=MATERIAL;id=LAB_SAMPLE} 2-4 1000
+  - mmoitems{type=MATERIAL;id=COBALT_INGOT} 2-5 512
+  - mmoitems{type=MATERIAL;id=MITHRIL_INGOT} 2-4 256
+  - mmoitems{type=MATERIAL;id=RAW_HEXTECH} 1-4 256
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_COMMON_ANCIENT_BOOK} 1 32
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_RARE_ANCIENT_BOOK} 1 16
+loh_diamondchest_master:
+  TotalItems: 2
+  Drops:
+  - mmoitems{type=MATERIAL;id=LAB_SAMPLE} 3-5 512
+  - mmoitems{type=MATERIAL;id=COBALT_INGOT} 3-5 256
+  - mmoitems{type=MATERIAL;id=MITHRIL_INGOT} 3-4 256
+  - mmoitems{type=MATERIAL;id=RAW_HEXTECH} 2-4 256
+  - mmoitems{type=CONSUMABLE;id=HEXIA} 1 64
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_COMMON_ANCIENT_BOOK} 1 64
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_RARE_ANCIENT_BOOK} 1 32
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_LEGENDARY_ANCIENT_BOOK} 1 32
+
+loh_emeraldchest:
+  TotalItems: 3
+  Drops:
+  - mmoitems{type=MATERIAL;id=LAB_SAMPLE} 3-5 1000
+  - mmoitems{type=MATERIAL;id=COBALT_INGOT} 2-5 512
+  - mmoitems{type=MATERIAL;id=MITHRIL_INGOT} 2-5 256
+  - mmoitems{type=MATERIAL;id=WARDEN_INGOT} 2-3 128
+  - mmoitems{type=MATERIAL;id=RAW_HEXTECH} 2-4 512
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_COMMON_ANCIENT_BOOK} 1 64
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_RARE_ANCIENT_BOOK} 1 32
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_LEGENDARY_ANCIENT_BOOK} 1 16
+  - mmoitems{type=MATERIAL;id=HEXTECH_CRYSTAL} 16
+loh_emeraldchest_master:
+  TotalItems: 3
+  Drops:
+  - mmoitems{type=MATERIAL;id=LAB_SAMPLE} 4-6 512
+  - mmoitems{type=MATERIAL;id=COBALT_INGOT} 2-5 256
+  - mmoitems{type=MATERIAL;id=MITHRIL_INGOT} 2-5 256
+  - mmoitems{type=MATERIAL;id=WARDEN_INGOT} 2-3 128
+  - mmoitems{type=MATERIAL;id=RAW_HEXTECH} 2-5 256
+  - mmoitems{type=CONSUMABLE;id=HEXIA} 1 100
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_COMMON_ANCIENT_BOOK} 1 64
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_RARE_ANCIENT_BOOK} 1 32
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_LEGENDARY_ANCIENT_BOOK} 1 16
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_FABLED_ANCIENT_BOOK} 1 4
+  - mmoitems{type=MATERIAL;id=HEXTECH_CRYSTAL} 1 20
+  - mmoitems{type=INNATE_SCROLL;id=SCROLL_OF_DIVINE_INTERVENTION} 1 4
+
+loh_starchest:
+  TotalItems: 3
+  Drops:
+  - mmoitems{type=MATERIAL;id=LAB_SAMPLE} 4-8 1000
+  - mmoitems{type=MATERIAL;id=COBALT_INGOT} 3-6 256
+  - mmoitems{type=MATERIAL;id=MITHRIL_INGOT} 3-5 256
+  - mmoitems{type=MATERIAL;id=SOULSTEEL_INGOT} 2-4 256
+  - mmoitems{type=MATERIAL;id=WARDEN_INGOT} 2-4 128
+  - mmoitems{type=MATERIAL;id=RAW_HEXTECH} 2-5 512
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_COMMON_ANCIENT_BOOK} 1 64
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_RARE_ANCIENT_BOOK} 1 32
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_LEGENDARY_ANCIENT_BOOK} 1 16
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_FABLED_ANCIENT_BOOK} 1 4
+  - mmoitems{type=MATERIAL;id=HEXTECH_CRYSTAL} 64
+loh_starchest_master:
+  TotalItems: 3
+  Drops:
+  - mmoitems{type=MATERIAL;id=LAB_SAMPLE} 5-9 256
+  - mmoitems{type=MATERIAL;id=COBALT_INGOT} 3-6 160
+  - mmoitems{type=MATERIAL;id=MITHRIL_INGOT} 3-5 160
+  - mmoitems{type=MATERIAL;id=WARDEN_INGOT} 2-4 128
+  - mmoitems{type=MATERIAL;id=RAW_HEXTECH} 3-6 512
+  - mmoitems{type=CONSUMABLE;id=HEXIA} 1 128
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_COMMON_ANCIENT_BOOK} 1 100
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_RARE_ANCIENT_BOOK} 1 45
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_LEGENDARY_ANCIENT_BOOK} 1 26
+  - mmoitems{type=UNDECIPHERED_BOOK;id=UNDECIPHERED_FABLED_ANCIENT_BOOK} 1 10
+  - mmoitems{type=MATERIAL;id=HEXTECH_CRYSTAL} 76
+  - mmoitems{type=INNATE_SCROLL;id=SCROLL_OF_DIVINE_INTERVENTION} 1 16
+  - loh_grimoire 1 4
+
+loh_grimoire:
+  Drops:
+  - command{c="goop mythicmobs runSkillAs grimoire_acquired <target.name>"} 1 1
+  - mmoitems{type=GRIMOIRE;id=DRAEDON_GRIMOIRE} 1 1

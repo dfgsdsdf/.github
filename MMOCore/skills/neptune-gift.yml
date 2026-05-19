@@ -1,0 +1,10 @@
+name: <#438c8c>Neptune's Gift
+lore:
+- <#9ba8a8>Mana regen is boosted by <#36e3e3>+{extra}%
+- <#9ba8a8>when standing in water.
+material: BLAZE_ROD:8
+extra:
+  base: 30.0
+  per-level: 5.0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'

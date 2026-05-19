@@ -1,0 +1,1882 @@
+Command:
+  Argument:
+    Name:
+      Slot: slot
+      Enchant: enchant
+      Level: level
+      Target: target
+      Type: type
+      Time: time
+      Mode: mode
+      IPAddress: address
+      Radius: radius
+      Text: text
+      Position: position
+      X: x
+      Y: y
+      Z: z
+      Reason: reason
+      IPorName: name | address
+  Air:
+    Add:
+      Desc: Add air ticks.
+    Set:
+      Desc: Set air ticks.
+      Target: '<systemgreen>Set <lyellow>%amount%</lyellow> air ticks for <lyellow>%player_display_name%</lyellow>. New air ticks: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+      Notify:
+      - <output:"action_bar">
+      - '<systemgreen>Your air ticks set to <lyellow>%amount%</lyellow>: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+    Remove:
+      Desc: Remove air ticks.
+    Give:
+      Target: '<systemgreen>Added <lyellow>%amount%</lyellow> air ticks to <lyellow>%player_display_name%</lyellow>. New air ticks: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+      Notify:
+      - <output:"action_bar">
+      - '<systemgreen>You got <lyellow>%amount%</lyellow> air ticks: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+    Take:
+      Target: '<systemgreen>Removed <lyellow>%amount%</lyellow> air ticks from <lyellow>%player_display_name%</lyellow>. New air ticks: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+      Notify:
+      - <output:"action_bar">
+      - '<systemgreen>You lost <lyellow>%amount%</lyellow> air ticks: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+  Anvil:
+    Desc: Open portable anvil.
+    Target: <white>ꀒ <systemgreen>Opened portable anvil for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+    Notify:
+    - <output:"action_bar">
+    - <white>ꀒ <systemgreen>You opened portable anvil.</systemgreen>
+  Broadcast:
+    Desc: Broadcast a message.
+  Condense:
+    Desc: Condense items into blocks.
+    Error:
+      Nothing:
+      - <sound:"entity_villager_no">
+      - <white>ꀓ <systemred>Nothing to condense.</systemred>
+      NotEnough: <white>ꀓ <systemred>Not enough items to convert <systemred>%source%</systemred> to <systemred>%result%</systemred>. Need at least <systemred>%amount%</systemred>.</systemred>
+    Done: <white>ꀒ <systemgreen>Converted <lyellow>x%total% %source%</lyellow> to <lyellow>x%amount% %result%</lyellow>.</systemgreen>
+  Disposal:
+    Desc: Open a disposal menu.
+    Target: <white>ꀒ <systemgreen>Opened disposal for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+    Notify:
+    - <output:"action_bar"><sound:"block_chest_open">
+    - <white>ꀒ <systemgreen>You opened disposal.</systemgreen>
+  Dimension:
+    Desc: Teleport to a world.
+    Target: <white>ꀒ <systemgreen>Teleported <lyellow>%player_display_name%</lyellow> to the <lyellow>%world%</lyellow>.</systemgreen>
+    Notify:
+    - <output:"action_bar"><sound:"entity_enderman_teleport">
+    - <white>ꀒ <systemgreen>You travelled to the <lyellow>%world%</lyellow>.</systemgreen>
+  Enchant:
+    Desc: (Dis)Enchant item in a slot.
+    Error:
+      NoItem: <white>ꀓ <systemred>No item to enchant!</systemred>
+    Enchanted:
+      Target:
+      - <sound:"block_enchantment_table_use">
+      - <white>ꀒ <systemgreen>Enchanted <lyellow>%item%</lyellow> with <lyellow>%name% %amount%</lyellow> in <lyellow>%player_display_name%</lyellow>'s <lyellow>%type%</lyellow> slot!</systemgreen>
+      Notify:
+      - <sound:"block_enchantment_table_use">
+      - <white>ꀒ <systemgreen>Your <lyellow>%item%</lyellow> have been enchanted with <lyellow>%name% %amount%</lyellow>!</systemgreen>
+    Disenchanted:
+      Target:
+      - <sound:"block_grindstone_use">
+      - <white>ꀒ <systemgreen>Enchantment <lyellow>%name%</lyellow> have been removed from <lyellow>%item%</lyellow> in <lyellow>%player_display_name%</lyellow>'s <lyellow>%type%</lyellow> slot.</systemgreen>
+      Notify:
+      - <sound:"block_grindstone_use">
+      - <white>ꀒ <systemgreen>Your <lyellow>%item%</lyellow> have been disenchanted from <lyellow>%name%</lyellow>!</systemgreen>
+  Enchanting:
+    Desc: Open portable enchanting table.
+    Notify:
+    - <output:"action_bar">
+    - <white>ꀒ <systemgreen>You opened enchanting table.</systemgreen>
+    Target: <white>ꀒ <systemgreen>Opened enchanting table for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+  Experience:
+    Add:
+      Desc: Add xp points or levels.
+      Info:
+      - <noprefix>
+      - ' '
+      - <white>ꀒ <systemgreen>Added <lyellow>%amount%</lyellow> %type% to <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      - '<systemgreen>New level: <lyellow>%level%</lyellow></systemgreen>'
+      - '<systemgreen>Total experience: <lyellow>%total%</lyellow></systemgreen>'
+      - ' '
+      Notify:
+      - <noprefix>
+      - ' '
+      - <white>ꀒ <systemgreen><lyellow>%amount%</lyellow> %type% have been added to your experience!</systemgreen>
+      - '<systemgreen>New level: <lyellow>%level%</lyellow></systemgreen>'
+      - '<systemgreen>Total experience: <lyellow>%total%</lyellow></systemgreen>'
+      - ' '
+    Remove:
+      Desc: Remove xp points or levels.
+      Info:
+      - <noprefix>
+      - ' '
+      - <white>ꀒ <systemgreen>Removed <lyellow>%amount%</lyellow> %type% off <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      - '<systemgreen>New level: <lyellow>%level%</lyellow></systemgreen>'
+      - '<systemgreen>Total experience: <lyellow>%total%</lyellow></systemgreen>'
+      - ' '
+      Notify:
+      - <noprefix>
+      - ' '
+      - <white>ꀒ <systemgreen><lyellow>%amount%</lyellow> %type% have been removed off your experience!</systemgreen>
+      - '<systemgreen>New level: <lyellow>%level%</lyellow></systemgreen>'
+      - '<systemgreen>Total experience: <lyellow>%total%</lyellow></systemgreen>'
+      - ' '
+    Set:
+      Desc: Set xp points or levels.
+      Info:
+      - <noprefix>
+      - ' '
+      - <white>ꀒ <systemgreen>Set <lyellow>%amount%</lyellow> %type% for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      - '<systemgreen>New level: <lyellow>%level%</lyellow></systemgreen>'
+      - '<systemgreen>Total experience: <lyellow>%total%</lyellow></systemgreen>'
+      - ' '
+      Notify:
+      - <noprefix>
+      - ' '
+      - <white>ꀒ <systemgreen><lyellow>%amount%</lyellow> %type% have been set as your experience!</systemgreen>
+      - '<systemgreen>New level: <lyellow>%level%</lyellow></systemgreen>'
+      - '<systemgreen>Total experience: <lyellow>%total%</lyellow></systemgreen>'
+      - ' '
+    View:
+      Desc: View experience status.
+    Info:
+      Info:
+      - <noprefix>
+      - ' '
+      - <lyellow><b>Experience of %player_display_name%:</b></lyellow>
+      - '<systemgreen>Level: <lyellow>%level%</lyellow></systemgreen>'
+      - '<systemgreen>Total experience: <lyellow>%total%</lyellow></systemgreen>'
+      - '<systemgreen>To next level: <lyellow>%max%</lyellow></systemgreen>'
+      - ' '
+  Enderchest:
+    Clear:
+      Desc: Clear ender chest.
+      Done:
+        Target:
+        - <sound:"block_fire_extinguish">
+        - <white>ꀒ <systemgreen>Cleared <lyellow>%player_display_name%</lyellow>'s ender chest!</systemgreen>
+        Notify:
+        - <sound:"block_fire_extinguish">
+        - <white>ꀒ <systemgreen>Your ender chest has been cleared!</systemgreen>
+    Copy:
+      Desc: Copy player's ender chest.
+      Done:
+        Executor:
+        - <sound:"item_armor_equip_leather">
+        - <white>ꀒ <systemgreen>Copied <lyellow>%player_display_name%</lyellow>'s ender chest.</systemgreen>
+        Others:
+        - <sound:"item_armor_equip_leather">
+        - <white>ꀒ <systemgreen>Copied <lyellow>%source%</lyellow>'s ender chest content to <lyellow>%target%</lyellow>'s ender chest.</systemgreen>
+    Fill:
+      Desc: Fill ender chest with specified item.
+      Done:
+        Executor:
+        - <sound:"entity_item_pickup">
+        - <white>ꀒ <systemgreen>Filled <lyellow>%player_display_name%</lyellow>'s ender chest with <lyellow>%item%</lyellow>.</systemgreen>
+    Open:
+      Desc: Open ender chest.
+      Done:
+        Executor:
+        - <sound:"block_ender_chest_open">
+        - <white>ꀒ <systemgreen>Opened <lyellow>%player_display_name%</lyellow>'s ender chest.</systemgreen>
+    Repair:
+      Desc: Repair all ender chest items.
+      Notify:
+      - <sound:"block_anvil_use">
+      - <white>ꀒ <systemgreen>Repaired all ender chest items!</systemgreen>
+      Target:
+      - <sound:"block_anvil_use">
+      - <white>ꀒ <systemgreen>Repaired all items in <lyellow>%player_display_name%</lyellow>'s ender chest!</systemgreen>
+  Hat:
+    Desc: Put item in head.
+    Done:
+    - <sound:"item_armor_equip_leather">
+    - <white>ꀒ <systemgreen>Enjoy your new hat!</systemgreen>
+  Fly:
+    Desc: Toggle fly.
+    Target: <white>ꀒ <systemgreen>Set flying for <lyellow>%player_display_name%</lyellow> to <lyellow>%state%</lyellow>.</systemgreen>
+    Notify: <white>ꀒ <systemgreen>Flying <lyellow>%state%</lyellow>.</systemgreen>
+  FlySpeed:
+    Desc: Change fly speed.
+    Done:
+      Notify: <white>ꀒ <systemgreen>Your fly speed has been set to <lyellow>%amount%</lyellow>.</systemgreen>
+      Target: <white>ꀒ <systemgreen>Set fly speed to <lyellow>%amount%</lyellow> for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+  Fire:
+    Set:
+      Desc: Set fire ticks.
+      Info: '<systemgreen>Set <lyellow>%player_display_name%</lyellow>''s fire ticks to <lyellow>%amount%</lyellow>, aka ignited for: <lyellow>%time%</lyellow>s.</systemgreen>'
+      Target: <white>ꀒ <systemgreen>You have been ignited for <lyellow>%time%</lyellow>s.</systemgreen>
+    Reset:
+      Desc: Reset fire ticks.
+      Info:
+      - <sound:"block_fire_extinguish">
+      - <white>ꀒ <systemgreen>Reset <lyellow>%player_display_name%</lyellow>'s fire ticks value, aka extinguished.</systemgreen>
+      Target:
+      - <sound:"block_fire_extinguish">
+      - <white>ꀒ <systemgreen>You have been extinguished.</systemgreen>
+  Food:
+    Add:
+      Desc: Add food points.
+    Set:
+      Desc: Set food level.
+      Target: <white>ꀒ <systemgreen>Set <lyellow>%player_display_name%</lyellow>'s food level to <lyellow>%amount%</lyellow>.</systemgreen>
+      Notify: <white>ꀒ <systemgreen>Your food level has been set to <lyellow>%amount%</lyellow>.</systemgreen>
+    Remove:
+      Desc: Remove food points.
+    Restore:
+      Desc: Restore food level.
+      Notify:
+      - <sound:"entity_generic_eat">
+      - <white>ꀒ <systemgreen>You food level has been restored!</systemgreen>
+      Info:
+      - <sound:"entity_generic_eat">
+      - <white>ꀒ <systemgreen>Restored <lyellow>%player_display_name%</lyellow>'s food level!</systemgreen>
+    Give:
+      Target: '<systemgreen>Added <lyellow>%amount%</lyellow> food points to <lyellow>%player_display_name%</lyellow>. New food level: <lyellow>%current%</lyellow>.</systemgreen>'
+      Notify: <white>ꀒ <systemgreen>Your food level has been increased by <lyellow>%amount%</lyellow>.</systemgreen>
+    Take:
+      Target: '<systemgreen>Removed <lyellow>%amount%</lyellow> food points from <lyellow>%player_display_name%</lyellow>. New food level: <lyellow>%current%</lyellow>.</systemgreen>'
+      Notify: <white>ꀒ <systemgreen>Your food level has been decreased by <lyellow>%amount%</lyellow>.</systemgreen>
+  Grindstone:
+    Desc: Open portable grindstone.
+    Notify:
+    - <output:"action_bar">
+    - <white>ꀒ <systemgreen>You opened grindstone.</systemgreen>
+    Target: <white>ꀒ <systemgreen>Opened grindstone for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+  GameMode:
+    Type:
+      Desc: Set gamemode to %type%.
+    Notify: <white>ꀒ <systemgreen>Your game mode has been set to <lyellow>%type%</lyellow>.</systemgreen>
+    Target: <white>ꀒ <systemgreen>Set <lyellow>%type%</lyellow> game mode for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+  Health:
+    Add:
+      Desc: Add health points.
+      Target: '<systemgreen>Added <lyellow>%amount%</lyellow> health to <lyellow>%player_display_name%</lyellow>. New health: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+      Notify:
+      - <output:"action_bar">
+      - '<systemgreen>You got <lyellow>%amount%</lyellow> health: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+    Set:
+      Desc: Set health points.
+      Target: '<systemgreen>Set <lyellow>%amount%</lyellow> health for <lyellow>%player_display_name%</lyellow>. New health: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+      Notify:
+      - <output:"action_bar">
+      - <white>ꀒ <systemgreen>Your health has been set to <lyellow>%amount%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>
+    Remove:
+      Desc: Remove health points.
+      Target: '<systemgreen>Removed <lyellow>%amount%</lyellow> health from <lyellow>%player_display_name%</lyellow>. New health: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+      Notify:
+      - <output:"action_bar">
+      - '<systemgreen>You lost <lyellow>%amount%</lyellow> health: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow>.</systemgreen>'
+    Restore:
+      Desc: Restore health.
+      Notfiy: <white>ꀒ <systemgreen>You have been healed!</systemgreen>
+      Info: <white>ꀒ <systemgreen>Player <lyellow>%player_display_name%</lyellow> has been healed.</systemgreen>
+  Ignore:
+    Add:
+      Desc: Add player to the blacklist.
+      Done:
+      - <noprefix>
+      - <lyellow><b>Player Blocked!</b></lyellow>
+      - <white>ꀒ <systemgreen>Player <lyellow>%player_display_name%</lyellow> added to the blacklist.</systemgreen>
+      - <white>ꀒ <systemgreen>You can change settings or unblock them using <lyellow>/ignorelist</lyellow></systemgreen>
+      Error:
+        AlreadyIn: <white>ꀓ <systemred>Player is already blocked.</systemred>
+    List:
+      Desc: Open player blacklist.
+    Remove:
+      Desc: Remove player from the blacklist.
+      Done: <white>ꀒ <systemgreen>Player <lyellow>%player_name%</lyellow> has been unblocked.</systemgreen>
+      Error:
+        NotIn: <white>ꀓ <systemred>Player is not blocked.</systemred>
+  Inventory:
+    Clear:
+      Desc: Clear inventory.
+      Done:
+        Target:
+        - <sound:"block_fire_extinguish">
+        - <white>ꀒ <systemgreen>Cleared <lyellow>%player_display_name%</lyellow>'s inventory!</systemgreen>
+        Notify:
+        - <sound:"block_fire_extinguish">
+        - <white>ꀒ <systemgreen>Your inventory has been cleared!</systemgreen>
+    Copy:
+      Desc: Copy player's inventory.
+      Done:
+        Notify:
+        - <sound:"item_armor_equip_leather">
+        - <white>ꀒ <systemgreen>Copied <lyellow>%player_display_name%</lyellow>'s inventory.</systemgreen>
+        Target:
+        - <sound:"item_armor_equip_leather">
+        - <white>ꀒ <systemgreen>Copied <lyellow>%source%</lyellow>'s inventory to <lyellow>%target%</lyellow>'s inventory.</systemgreen>
+    Fill:
+      Desc: Fill inventory with specified items.
+      Done:
+      - <sound:"entity_item_pickup">
+      - <white>ꀒ <systemgreen>Filled <lyellow>%player_display_name%</lyellow>'s inventory with <lyellow>%item%</lyellow>.</systemgreen>
+    Open:
+      Desc: Open player's inventory.
+      Done:
+      - <sound:"block_chest_open">
+      - <white>ꀒ <systemgreen>Opened <lyellow>%player_display_name%</lyellow>'s inventory.</systemgreen>
+    Repair:
+      Desc: Repair all inventory items.
+      Notify:
+      - <sound:"block_anvil_use">
+      - <white>ꀒ <systemgreen>Repaired all inventory items!</systemgreen>
+      Target:
+      - <sound:"block_anvil_use">
+      - <white>ꀒ <systemgreen>Repaired all items in <lyellow>%player_display_name%</lyellow>'s inventory!</systemgreen>
+  Item:
+    Amount:
+      Desc: Change item amount.
+      Done:
+      - <sound:"entity_item_pickup">
+      - <white>ꀒ <systemgreen>Set <lyellow>%item%</lyellow> stack amount to x<lyellow>%amount%</lyellow>.</systemgreen>
+    Damage:
+      Desc: Change item's damage.
+      Done:
+      - <sound:"block_anvil_use">
+      - <white>ꀒ <systemgreen>Set <lyellow>%item%</lyellow> damage to <lyellow>%amount%</lyellow>.</systemgreen>
+    Enchant:
+      Desc: (Dis)Enchant an item in hand.
+      Done:
+        Enchanted:
+        - <sound:"block_enchantment_table_use">
+        - <white>ꀒ <systemgreen><lyellow>%item%</lyellow> enchanted with <lyellow>%name% %level%</lyellow>!</systemgreen>
+        Disenchanted:
+        - <sound:"block_enchantment_table_use">
+        - <white>ꀒ <systemgreen>Enchantment <lyellow>%name%</lyellow> have been removed from <lyellow>%item%</lyellow>!</systemgreen>
+    Get:
+      Desc: Get specified item stack.
+      Done:
+      - <sound:"entity_item_pickup">
+      - <white>ꀒ <systemgreen>You got <lyellow>x%amount% %type%</lyellow>!</systemgreen>
+    Give:
+      Desc: Give specified item stack to a player.
+      Done:
+      - <sound:"entity_item_pickup">
+      - <white>ꀒ <systemgreen>Added <lyellow>x%amount% %type%</lyellow> to <lyellow>%player_display_name%</lyellow>!</systemgreen>
+      Notify:
+      - <sound:"entity_item_pickup">
+      - <white>ꀒ <systemgreen><lyellow>x%amount% %type%</lyellow> have been added to your inventory!</systemgreen>
+    Take:
+      Desc: Take item off a player.
+      Done:
+      - <sound:"entity_glow_item_frame_remove_item">
+      - <white>ꀒ <systemgreen>Removed <lyellow>x%amount%</lyellow> of <lyellow>%type%</lyellow> from <lyellow>%player_display_name%</lyellow>!</systemgreen>
+      Error:
+        NotEnough:
+        - <sound:"entity_villager_no">
+        - <white>ꀓ <systemred>Could not take item(s). Player don't have enough <systemred>%type%</systemred> (<white>%amount%</white>/<white>%total%</white>)!</systemred>
+      Notify:
+      - <sound:"entity_glow_item_frame_remove_item">
+      - <white>ꀒ <systemgreen><lyellow>x%amount%</lyellow> of <lyellow>%type%</lyellow> has been taken from your inventory!</systemgreen>
+    Lore:
+      Add:
+        Desc: Add a lore.
+        Done:
+        - <sound:"block_anvil_use">
+        - <white>ꀒ <systemgreen>Lore added!</systemgreen>
+      Remove:
+        Desc: Remove a lore.
+        Done:
+        - <sound:"block_anvil_use">
+        - <white>ꀒ <systemgreen>Lore removed!</systemgreen>
+      Clear:
+        Desc: Clear lore.
+        Done:
+        - <sound:"block_anvil_use">
+        - <white>ꀒ <systemgreen>Lore cleared!</systemgreen>
+    Model:
+      Desc: Change item model data.
+      Done:
+      - <sound:"block_anvil_use">
+      - <white>ꀒ <systemgreen>Set <lyellow>%amount%</lyellow> as <lyellow>%item%</lyellow>'s model data!</systemgreen>
+    Name:
+      Desc: Change item display name.
+      Done:
+        Changed:
+        - <sound:"block_anvil_use">
+        - <white>ꀒ <systemgreen>Item renamed!</systemgreen>
+    Potion:
+      Add:
+        Desc: Add effect to a potion.
+        Done: <white>ꀒ <systemgreen>Potion effect added!</systemgreen>
+    Repair:
+      Desc: Repair item.
+      Done:
+      - <sound:"block_anvil_use">
+      - <white>ꀒ <systemgreen>Item <lyellow>%item%</lyellow> repaired!</systemgreen>
+    Spawn:
+      Desc: Spawn item in world.
+      Done:
+      - <sound:"entity_item_pickup">
+      - <white>ꀒ <systemgreen>Spawned <lyellow>x%amount%</lyellow> <lyellow>%type%</lyellow> at <lyellow>%location_x%, %location_y%, %location_z%</lyellow> in <lyellow>%location_world%</lyellow>!</systemgreen>
+    Unbreakable:
+      Desc: Toggle unbreakable state.
+      Done:
+      - <sound:"block_anvil_use">
+      - '<systemgreen>Set <lyellow>%item%</lyellow> Unbreakable: <lyellow>%state%</lyellow>.</systemgreen>'
+  Loom:
+    Desc: Open portable loom.
+    Notify:
+    - <output:"action_bar">
+    - <white>ꀒ <systemgreen>You opened loom.</systemgreen>
+    Target: <white>ꀒ <systemgreen>Opened loom for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+  Mob:
+    Kill:
+      Desc: Kill specific mob.
+      Done:
+      - <sound:"entity_zombie_death">
+      - <white>ꀒ <systemgreen>Killed <lyellow>x%amount% %type%</lyellow> in <lyellow>%world%</lyellow> within <lyellow>%radius%</lyellow> blocks.</systemgreen>
+    Clear:
+      Desc: Kill all mobs.
+      Done:
+      - <sound:"entity_zombie_death">
+      - <white>ꀒ <systemgreen>Killed <lyellow>%amount%</lyellow> mobs in <lyellow>%world%</lyellow> within <lyellow>%radius%</lyellow> blocks.</systemgreen>
+    Spawn:
+      Desc: Spawn a mob.
+      Done: <white>ꀒ <systemgreen>Created <lyellow>x%amount% %type%</lyellow>.</systemgreen>
+  Near:
+    Desc: Show nearest players.
+    Error:
+      Nothing: <white>ꀓ <systemred>There are no players in a <lyellow>%radius%</lyellow> block radius.</systemred>
+  Nick:
+    Clear:
+      Desc: Remove custom name.
+      Target: <white>ꀒ <systemgreen>Removed <lyellow>%player_display_name%</lyellow>'s custom name.</systemgreen>
+      Notify: <white>ꀒ <systemgreen>You custom name has been removed.</systemgreen>
+    Set:
+      Desc: Set player's custom name.
+      Target: <white>ꀒ <systemgreen>Set <lyellow>%player_name%</lyellow>'s custom name to <lyellow>%name%</lyellow>.</systemgreen>
+      Notify: '<systemgreen>You got a new custom name: <lyellow>%name%</lyellow>.</systemgreen>'
+    Change:
+      Desc: Set custom name.
+      Done: <white>ꀒ <systemgreen>You changed your custom name to <lyellow>%name%</lyellow>.</systemgreen>
+    Error:
+      BadWords: <white>ꀓ <systemred>This name is not allowed.</systemred>
+      Regex: <white>ꀓ <systemred>Name contains forbidden characters.</systemred>
+      TooLong: <white>ꀓ <systemred>Name can't be no longer than <systemred>%amount%</systemred> characters.</systemred>
+      TooShort: <white>ꀓ <systemred>Name can't be shorted than <systemred>%amount%</systemred> characters.</systemred>
+  PlayerInfo:
+    Desc: Show player info.
+  Skull:
+    Custom:
+      Desc: Create custom head.
+      Done: <white>ꀒ <systemgreen>Created custom head.</systemgreen>
+    Player:
+      Desc: Get player head.
+      Done: <white>ꀒ <systemgreen>You got <lyellow>%player_name%</lyellow>'s head.</systemgreen>
+  Staff:
+    Desc: Show online staff.
+    Empty: <white>ꀒ <systemgreen>There is no staff online.</systemgreen>
+  Spawner:
+    Desc: Change spawner type.
+    Done: <white>ꀒ <systemgreen>Spawner type changed to <lyellow>%type%</lyellow>.</systemgreen>
+    Error:
+      Type: <white>ꀓ <systemred>This type can not be set for spawner.</systemred>
+      Block: <white>ꀓ <systemred>You must look at Spawner block!</systemred>
+  Speed:
+    Desc: Change walk speed.
+    Done:
+      Notify: <white>ꀒ <systemgreen>Your walk speed has been set to <lyellow>%amount%</lyellow>.</systemgreen>
+      Target: <white>ꀒ <systemgreen>Set walk speed to <lyellow>%amount%</lyellow> for <lyellow>%player_display_name%</lyellow>Tag{name='lyellow'}.</systemgreen>
+  Sudo:
+    Command:
+      Desc: Force player to execute a command.
+    Chat:
+      Desc: Force player to send a chat message.
+    Done:
+      Command: '<systemgreen>Forced <lyellow>%player_display_name%</lyellow> to perform: <lyellow>/%command%</lyellow></systemgreen>'
+      Chat: '<systemgreen>Forced <lyellow>%player_display_name%</lyellow> to say: <lyellow>%command%</lyellow></systemgreen>'
+  Suicide:
+    Desc: Commit suicide.
+    Done:
+    - <noprefix>
+    - <white>ꀒ <systemgreen><lyellow>%player_display_name%</lyellow> commited suicide.</systemgreen>
+  Teleport:
+    Location:
+      Desc: Teleport to coordinates.
+      Done:
+        Target:
+        - <sound:"entity_enderman_teleport">
+        - <white>ꀒ <systemgreen>Player <lyellow>%player_display_name%</lyellow> teleported to <lyellow>%location_x%, %location_y%, %location_z%</lyellow> in <lyellow>%location_world%</lyellow>.</systemgreen>
+        Notify:
+        - <sound:"entity_enderman_teleport">
+        - <white>ꀒ <systemgreen>Teleport to <lyellow>%location_x%, %location_y%, %location_z%</lyellow> in <lyellow>%location_world%</lyellow>.</systemgreen>
+    Summon:
+      Desc: Summon player to you.
+      Target:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>You summonned <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      Notify:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>You were summoned by <lyellow>%player_display_name%</lyellow>.</systemgreen>
+    To:
+      Desc: Teleport to a player.
+      Done:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>Teleport to <lyellow>%player_display_name%</lyellow>...</systemgreen>
+    Send:
+      Desc: Teleport one player to another.
+      Target:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>Teleported <lyellow>%source%</lyellow> to <lyellow>%target%</lyellow>.</systemgreen>
+      Notify:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>You have been teleported to <lyellow>%player_display_name%</lyellow>.</systemgreen>
+    Top:
+      Desc: Teleport to the highest block.
+      Target:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>Teleported <lyellow>%player_display_name%</lyellow> on the highest block.</systemgreen>
+      Notify:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>Teleport on the highest block...</systemgreen>
+  Time:
+    Show:
+      Desc: Display current world time.
+      Print:
+      - <noprefix>
+      - ' '
+      - <lyellow><b>Time Info:</b></lyellow>
+      - '<systemgreen><lyellow>▪ </lyellow>%world% Time: <lyellow>%time%</lyellow> (<white>%ticks% ticks</white>)</systemgreen>'
+      - '<systemgreen><lyellow>▪ </lyellow>Server Time: <lyellow>%global%</lyellow></systemgreen>'
+      - ' '
+    Set:
+      Desc: Set world's time.
+      Done: <white>ꀒ <systemgreen>Time set to <lyellow>%time%</lyellow> (<white>%total% ticks</white>) in world <lyellow>%world%</lyellow>.</systemgreen>
+    Personal:
+      Set:
+        Desc: Set personal time.
+        Target: <white>ꀒ <systemgreen>Set <lyellow>%player_display_name%</lyellow>'s time to <lyellow>%time%</lyellow> (<white>%total% ticks</white>).</systemgreen>
+        Notify: <white>ꀒ <systemgreen>Your personal time has been set to <lyellow>%time%</lyellow> (<white>%total% ticks</white>).</systemgreen>
+      Reset:
+        Desc: Reset personal time.
+        Target: <white>ꀒ <systemgreen>Reset <lyellow>%player_display_name%</lyellow>'s time.</systemgreen>
+        Notify: <white>ꀒ <systemgreen>Your personal time has been reset.</systemgreen>
+  Smite:
+    Desc: Smite player with lightning.
+    Target: <white>ꀒ <systemgreen>Smited <lyellow>%player_name%</lyellow>!</systemgreen>
+    Notify: <white>ꀒ <systemgreen>You have been smited!</systemgreen>
+  Weather:
+    Type:
+      Desc: Set weather to %type%.
+    Set: <white>ꀒ <systemgreen>Set <lyellow>%type%</lyellow> weather in <lyellow>%world%</lyellow>.</systemgreen>
+  Workbench:
+    Desc: Open portable workbench.
+    Target: <white>ꀒ <systemgreen>Opened portable workbench for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+    Notify:
+    - <output:"action_bar">
+    - <white>ꀒ <systemgreen>You opened portable workbench.</systemgreen>
+  FoodGod:
+    Desc: Toggle Food God.
+  Vanish:
+    Desc: Toggle Vanish.
+    Notify: <white>ꀒ <systemgreen>Vanish has been set on <lyellow>%state%</lyellow>.</systemgreen>
+    Target: <white>ꀒ <systemgreen>Set Vanish on <lyellow>%state%</lyellow> for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+Generic:
+  Command:
+    Cooldown:
+      Default:
+      - <noprefix>
+      - <white>ꀓ <systemred>You have to wait <lorange>%time%</lorange> before you can use <lorange>%command%</lorange> again.</systemred>
+      OneTime:
+      - <noprefix>
+      - <white>ꀓ <systemred>This command is one-time and you already have used it.</systemred>
+Error:
+  ItemNotAPotion: <white>ꀓ <systemred>You must hold a potion!</systemred>
+  EmptyHand:
+  - <sound:"block_anvil_place">
+  - <white>ꀓ <systemred>You must hold an item!</systemred>
+  ItemNotDamageable:
+  - <sound:"block_anvil_place">
+  - <white>ꀒ <systemgreen>Item <systemred>%item%</systemred> doesn't have a durability.</systemgreen>
+  Command:
+    Argument:
+      InvalidSlot: <white>ꀒ <systemgreen><systemred>%value%</systemred> is not a valid equipment slot!</systemgreen>
+      InvalidType: <white>ꀒ <systemgreen><systemred>%value%</systemred> is not a valid type!</systemgreen>
+      InvalidTime: <white>ꀒ <systemgreen><systemred>%value%</systemred> is not a valid time!</systemgreen>
+      InvalidMode: <white>ꀒ <systemgreen><systemred>%value%</systemred> is not a valid mode!</systemgreen>
+      InvalidIPAddress: <white>ꀒ <systemgreen><systemred>%value%</systemred> is not an IP address!</systemgreen>
+      InvalidReason: <white>ꀒ <systemgreen><systemred>%value%</systemred> is not a valid reason!</systemgreen>
+Editor:
+  Input:
+    Generic:
+      Value: <white>ꀒ <systemgreen>Enter <lgreen>[Value]</lgreen></systemgreen>
+      Seconds: <white>ꀒ <systemgreen>Enter <lgreen>[Seconds Amount]</lgreen></systemgreen>
+      Name: <white>ꀒ <systemgreen>Enter <lgreen>[Name]</lgreen></systemgreen>
+  SpawnsEditorType:
+    DeathTeleport:
+      Ranks:
+        Name: <lyellow><b>Death Groups</b></lyellow>
+        Lore:
+        - '%spawn_respawn_teleport_groups%'
+        - ''
+        - <white>ꀒ <systemgreen>List of permission groups affected</systemgreen>
+        - <white>ꀒ <systemgreen>by Death Teleport setting.</systemgreen>
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Shift-Left to <lyellow>add group</lyellow>.</systemgreen>
+        - <lyellow>[▶]</lyellow> <systemgreen>Shift-Right to <lyellow>clear groups</lyellow>.</systemgreen>
+      Toggle:
+        Name: <lyellow><b>Death Teleport</b></lyellow>
+        Lore:
+        - '<lyellow>● <systemgreen>Enabled: </systemgreen>%spawn_respawn_teleport_enabled%</lyellow>'
+        - ''
+        - <white>ꀒ <systemgreen>Teleports players from listed groups</systemgreen>
+        - <white>ꀒ <systemgreen>to this spawn after death.</systemgreen>
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>toggle</lyellow>.</systemgreen>
+    LoginTeleport:
+      Ranks:
+        Name: <lyellow><b>Login Groups</b></lyellow>
+        Lore:
+        - '%spawn_login_teleport_groups%'
+        - ''
+        - <white>ꀒ <systemgreen>List of permission groups affected</systemgreen>
+        - <white>ꀒ <systemgreen>by Login Teleport setting.</systemgreen>
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Shift-Left to <lyellow>add group</lyellow>.</systemgreen>
+        - <lyellow>[▶]</lyellow> <systemgreen>Shift-Right to <lyellow>clear groups</lyellow>.</systemgreen>
+      Toggle:
+        Name: <lyellow><b>Login Teleport</b></lyellow>
+        Lore:
+        - '<lyellow>● <systemgreen>Enabled: </systemgreen>%spawn_login_teleport_enabled%</lyellow>'
+        - ''
+        - <white>ꀒ <systemgreen>Teleports players from listed groups</systemgreen>
+        - <white>ꀒ <systemgreen>to this spawn on login.</systemgreen>
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>toggle</lyellow>.</systemgreen>
+    SPAWN_CHANGE_PRIORITY:
+      Name: <lyellow><b>Priority</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Current: </systemgreen>%spawn_priority%</lyellow>'
+      - ''
+      - <white>ꀒ <systemgreen>If multiple spawns are available</systemgreen>
+      - <white>ꀒ <systemgreen>for a player on death/login,</systemgreen>
+      - <white>ꀒ <systemgreen>the one with the greatest</systemgreen>
+      - <white>ꀒ <systemgreen>priority will be used.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>change</lyellow>.</systemgreen>
+    SPAWN_CHANGE_PERMISSION:
+      Name: <lyellow><b>Permission Requirement</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Enabled: </systemgreen>%spawn_permission_required%</lyellow>'
+      - '<lyellow>● <systemgreen>Permission Node: </systemgreen>%spawn_permission_node%</lyellow>'
+      - ''
+      - <white>ꀒ <systemgreen>Sets whether or not players</systemgreen>
+      - <white>ꀒ <systemgreen>must have permission to</systemgreen>
+      - <white>ꀒ <systemgreen>use this spawn.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>toggle</lyellow>.</systemgreen>
+    SPAWN_CHANGE_LOCATION:
+      Name: <lyellow><b>Location</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Current: </systemgreen>%spawn_location_x%, %spawn_location_y%, %spawn_location_z% in %spawn_location_world%</lyellow>'
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>set to your position</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>Right-Click to <lyellow>set as world spawn</lyellow>.</systemgreen>
+    SPAWN_CHANGE_NAME:
+      Name: <lyellow><b>Display Name</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Current: </systemgreen>%spawn_name%</lyellow>'
+      - ''
+      - <white>ꀒ <systemgreen>Sets spawn display name.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>change</lyellow>.</systemgreen>
+    SPAWN_OBJECT:
+      Name: '<lyellow><b>%spawn_name%<reset><systemgreen> (ID: <white>%spawn_id%</white>)</systemgreen></b></lyellow>'
+      Lore:
+      - '<lyellow>● <systemgreen>Priority: </systemgreen>%spawn_priority%</lyellow>'
+      - '<lyellow>● <systemgreen>Permission: </systemgreen>%spawn_permission_required%</lyellow>'
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>edit</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>Shift-Right to <lyellow>delete <systemred>(no undo)</systemred></lyellow>.</systemgreen>
+  KitsEditorType:
+    KIT_CHANGE_ARMOR:
+      Name: <lyellow><b>Armor Content</b></lyellow>
+      Lore:
+      - ''
+      - '<systemgreen><lyellow>Slot #1: <white>ꀒ <systemgreen>Boots</systemgreen></lyellow></systemgreen>'
+      - '<systemgreen><lyellow>Slot #2: <white>ꀒ <systemgreen>Leggings</systemgreen></lyellow></systemgreen>'
+      - '<systemgreen><lyellow>Slot #3: <white>ꀒ <systemgreen>Chestplate</systemgreen></lyellow></systemgreen>'
+      - '<systemgreen><lyellow>Slot #4: <white>ꀒ <systemgreen>Helmet</systemgreen></lyellow></systemgreen>'
+      - '<systemgreen><lyellow>Slot #5: <white>ꀒ <systemgreen>OffHand</systemgreen></lyellow></systemgreen>'
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>navigate</lyellow>.</systemgreen>
+    KIT_CHANGE_INVENTORY:
+      Name: <lyellow><b>Inventory Content</b></lyellow>
+      Lore:
+      - ''
+      - '<systemgreen><lyellow>Row #1: <white>ꀒ <systemgreen>Hotbar</systemgreen></lyellow></systemgreen>'
+      - '<systemgreen><lyellow>Row #2+: <white>ꀒ <systemgreen>Inventory</systemgreen></lyellow></systemgreen>'
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>navigate</lyellow>.</systemgreen>
+    KIT_CHANGE_COMMANDS:
+      Name: <lyellow><b>Commands</b></lyellow>
+      Lore:
+      - '%kit_commands%'
+      - ''
+      - <white>ꀒ <systemgreen>Listed commands will be execued when</systemgreen>
+      - <white>ꀒ <systemgreen>player recievies the kit.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>add command</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>Right-Click to <lyellow>clear</lyellow>.</systemgreen>
+    KIT_CHANGE_ICON:
+      Name: <lyellow><b>Icon</b></lyellow>
+      Lore:
+      - <lyellow>[▶]</lyellow> <systemgreen>Drag & Drop to <lyellow>change</lyellow>.</systemgreen>
+    KIT_CHANGE_PRIORITY:
+      Name: <lyellow><b>Priority</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Current: </systemgreen>%kit_priority%</lyellow>'
+      - ''
+      - <white>ꀒ <systemgreen>Kits with higher priority will</systemgreen>
+      - <white>ꀒ <systemgreen>appear first in the GUI.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>change</lyellow>.</systemgreen>
+    KIT_CHANGE_COST:
+      Name: <lyellow><b>Cost</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Current: </systemgreen>%kit_cost_money%</lyellow>'
+      - ''
+      - <white>ꀒ <systemgreen>Sets how much player must pay</systemgreen>
+      - <white>ꀒ <systemgreen>in order to use this kit.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>change</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>Right-Click to <lyellow>disable</lyellow>.</systemgreen>
+    KIT_CHANGE_PERMISSION:
+      Name: <lyellow><b>Permission Requirement</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Required: </systemgreen>%kit_permission_required%</lyellow>'
+      - '<lyellow>● <systemgreen>Node: </systemgreen>%kit_permission_node%</lyellow>'
+      - ''
+      - <white>ꀒ <systemgreen>Sets whether or not player must</systemgreen>
+      - <white>ꀒ <systemgreen>have permission in order to</systemgreen>
+      - <white>ꀒ <systemgreen>use this kit.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>toggle</lyellow>.</systemgreen>
+    KIT_CHANGE_COOLDOWN:
+      Name: <lyellow><b>Cooldown</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Current: </systemgreen>%kit_cooldown%</lyellow>'
+      - ''
+      - <white>ꀒ <systemgreen>Sets cooldown to use the kit again.</systemgreen>
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>change</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>[F / Swap] Key to <lyellow>make one-time</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>[Q / Drop] Key to <lyellow>disable</lyellow>.</systemgreen>
+    KIT_CHANGE_DESCRIPTION:
+      Name: <lyellow><b>Description</b></lyellow>
+      Lore:
+      - '%kit_description%'
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>add line</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>Right-Click to <lyellow>clear</lyellow>.</systemgreen>
+    KIT_CHANGE_NAME:
+      Name: <lyellow><b>Display Name</b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Current: </systemgreen>%kit_name%</lyellow>'
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>change</lyellow>.</systemgreen>
+    KIT_OBJECT:
+      Name: <lyellow><b>%kit_name%<reset> <gray>(<white>%kit_id%</white>)</gray></b></lyellow>
+      Lore:
+      - '<lyellow>● <systemgreen>Priority: </systemgreen>%kit_priority%</lyellow>'
+      - '<lyellow>● <systemgreen>Permission: </systemgreen>%kit_permission_required%</lyellow>'
+      - ''
+      - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>edit</lyellow>.</systemgreen>
+      - <lyellow>[▶]</lyellow> <systemgreen>Shift-Right to <lyellow>Delete <systemred>(no undo)</systemred></lyellow>.</systemgreen>
+EquipmentSlot:
+  HAND: Hand
+  OFF_HAND: Off Hand
+  FEET: Feet
+  LEGS: Legs
+  CHEST: Chest
+  HEAD: Head
+  BODY: Body
+GameMode:
+  CREATIVE: Creative
+  SURVIVAL: Survival
+  ADVENTURE: Adventure
+  SPECTATOR: Spectator
+ExperienceType:
+  POINTS: Points
+  LEVELS: Levels
+WeatherType:
+  CLEAR: Clear
+  STORM: Storm
+  THUNDER: Thunder
+Bans:
+  Command:
+    History:
+      Ban:
+        Desc: View bans history of a player or IP.
+      Mute:
+        Desc: View mutes history of a player or IP.
+      Warn:
+        Desc: View warns history of a player or IP.
+    BanList:
+      Desc: List of banned players and IPs.
+    MuteList:
+      Desc: List of muted players.
+    WarnList:
+      Desc: List of warned players.
+    Ban:
+      Desc: Ban player.
+      Done:
+        Permanent:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Ban Info</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>»</systemred> You permanently banned <systemred>%punishment_user%</systemred>.</systemgreen>
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - ' '
+        Temporary:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Ban Info</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>»</systemred> You banned <systemred>%punishment_user%</systemred>.</systemgreen>
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+        - ' '
+    Banip:
+      Desc: Ban IP address.
+    Mute:
+      Desc: Mute player.
+      Done:
+        Permanent:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Mute Info</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>»</systemred> You permanently muted <systemred>%punishment_user%</systemred>.</systemgreen>
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - ' '
+        Temporary:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Mute Info</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>»</systemred> You muted <systemred>%punishment_user%</systemred>.</systemgreen>
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+        - ' '
+    Kick:
+      Desc: Kick player.
+    Unmute:
+      Desc: Unmute player.
+    Unban:
+      Desc: Unban player or IP address.
+    Warn:
+      Desc: Warn player.
+      Done:
+        Permanent:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Warn Info</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>»</systemred> You permanently warned <systemred>%punishment_user%</systemred>.</systemgreen>
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - ' '
+        Temporary:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Warn Info</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>»</systemred> You warned <systemred>%punishment_user%</systemred>.</systemgreen>
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+        - ' '
+    Unwarn:
+      Desc: Remove the most recent warn of player.
+    Alts:
+      Desc: List players from same IP.
+    BanIP:
+      Done:
+        Permanent:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Ban Info</b></systemred>
+        - '<systemgreen><systemred>»</systemred> You permanently banned IP: <white>ꀓ <systemred>%punishment_user%</systemred>.</systemgreen>'
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - ' '
+        Temporary:
+        - <noprefix>
+        - ' '
+        - <white>ꀓ <systemred>🛈 <b>Ban Info</b></systemred>
+        - '<systemgreen><systemred>»</systemred> You banned IP: <white>ꀓ <systemred>%punishment_user%</systemred>.</systemgreen>'
+        - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+        - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+        - ' '
+  Alts:
+    Global:
+      Nothing: There are no players with same IPs.
+      List:
+      - <noprefix>
+      - <lyellow><b>Alts List:</b></lyellow>
+      - ' '
+      - '%entry%'
+      - ' '
+      Entry: '<systemgreen><lorange>%source%</lorange>: %name%</systemgreen>'
+  Punishment:
+    Error:
+      RankPriority:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> You can't punish <systemred>%punishment_user%</systemred>!</systemgreen>
+      - ' '
+      PunishDuration:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> You can't punish more than <systemred>%time%</systemred>!</systemgreen>
+      - ' '
+      UnPunishDuration:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> You can't remove punishments with duration more than <systemred>%time%</systemred>!</systemgreen>
+      - ' '
+      Immune:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> can't be punished!</systemgreen>
+      - ' '
+      PlayerNotBanned:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> is not banned!</systemgreen>
+      - ' '
+      IPNotBanned:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> IP Address <systemred>%punishment_user%</systemred> is not banned!</systemgreen>
+      - ' '
+      NotMuted:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> is not muted!</systemgreen>
+      - ' '
+      NotWarned:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Error!</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> has no warns!</systemgreen>
+      - ' '
+  Kick:
+    Done:
+    - <noprefix>
+    - <white>ꀒ <systemgreen><systemred>🛈</systemred> Kicked <systemred>%punishment_user%</systemred> for <systemred>%punishment_reason%</systemred>.</systemgreen>
+    Broadcast:
+    - <noprefix>
+    - ' '
+    - <white>ꀓ <systemred>🛈 <b>Kick Notification</b></systemred>
+    - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> have been kicked!</systemgreen>
+    - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+    - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+    - ' '
+  Ban:
+    Permanent:
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Ban Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> have permanently been banned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - ' '
+    Temporary:
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Ban Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> have been banned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+      - ' '
+  BanIP:
+    Permanent:
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Ban Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> IP Address <systemred>%punishment_user%</systemred> have permanently been banned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - ' '
+    Temporary:
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Ban Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> IP Address <systemred>%punishment_user%</systemred> have been banned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+      - ' '
+  UnBan:
+    Done:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Ban Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> You unbanned <lgreen>%punishment_user%</lgreen>.</systemgreen>
+    - ' '
+    Broadcast:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Ban Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> Player <lgreen>%punishment_user%</lgreen> have been unbanned.</systemgreen>
+    - '<systemgreen><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></systemgreen>'
+    - ' '
+  UnBanIP:
+    Done:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Ban Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> You unbanned IP <lgreen>%punishment_user%</lgreen>.</systemgreen>
+    - ' '
+    Broadcast:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Ban Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> IP Address <lgreen>%punishment_user%</lgreen> have been unbanned.</systemgreen>
+    - '<systemgreen><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></systemgreen>'
+    - ' '
+  Mute:
+    Permanent:
+      Notify:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Mute Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> You have permanently been muted!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - ' '
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Mute Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> have permanently been muted!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - ' '
+    Temporary:
+      Notify:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Mute Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> You have been muted!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+      - ' '
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Mute Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> have been muted!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+      - ' '
+  Unmute:
+    Done:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Mute Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> You unmuted <lgreen>%punishment_user%</lgreen>.</systemgreen>
+    - ' '
+    Notify:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Mute Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> You have been unmuted.</systemgreen>
+    - '<systemgreen><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></systemgreen>'
+    - ' '
+    Broadcast:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Mute Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> Player <lgreen>%punishment_user%</lgreen> have been unmuted.</systemgreen>
+    - '<systemgreen><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></systemgreen>'
+    - ' '
+  Warn:
+    Permanent:
+      Notify:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Warn Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> You have permanently been warned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - ' '
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Warn Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> have permanently been warned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - ' '
+    Temporary:
+      Notify:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Warn Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> You have been warned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+      - ' '
+      Broadcast:
+      - <noprefix>
+      - ' '
+      - <white>ꀓ <systemred>🛈 <b>Warn Notification</b></systemred>
+      - <white>ꀒ <systemgreen><systemred>»</systemred> Player <systemred>%punishment_user%</systemred> have been warned!</systemgreen>
+      - '<systemgreen><systemred>»</systemred> By: <white>ꀓ <systemred>%punishment_punisher%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Reason: <white>ꀓ <systemred>%punishment_reason%</systemred></systemgreen>'
+      - '<systemgreen><systemred>»</systemred> Duration: <white>ꀓ <systemred>%punishment_expires_in%</systemred></systemgreen>'
+      - ' '
+  Unwarn:
+    Done:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Warn Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> You removed a warn from <lgreen>%punishment_user%</lgreen>.</systemgreen>
+    - ' '
+    Notify:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Warn Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> Your latest warn has been removed.</systemgreen>
+    - '<systemgreen><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></systemgreen>'
+    - ' '
+    Broadcast:
+    - <noprefix>
+    - ' '
+    - <lgreen>🛈 <b>Warn Info</b></lgreen>
+    - <white>ꀒ <systemgreen><lgreen>»</lgreen> Latest warn has been removed from <lgreen>%punishment_user%</lgreen>.</systemgreen>
+    - '<systemgreen><lgreen>»</lgreen> By: <lgreen>%punishment_punisher%</lgreen></systemgreen>'
+    - ' '
+  Other:
+    NoReason: <no reason>
+  SortMode:
+    NAME: Name
+    DATE: Date
+    PUNISHER: Punisher
+    REASON: Reason
+Worlds:
+  Command:
+    Worlds:
+      Create:
+        Desc: Create a new world.
+        Error: <white>ꀓ <systemred>World with such name already exists!</systemred>
+        Done: '<systemgreen>Created world data: <lyellow>%world_id%</lyellow>!</systemgreen>'
+      Delete:
+        Desc: Delete a custom world.
+        Error: '<systemred>Could not delete world: <white>ꀓ <systemred>%world_id%</systemred>!</systemred>'
+        Done: '<systemgreen>World deleted: <lyellow>%world_id%</lyellow>!</systemgreen>'
+      Editor:
+        Desc: Open world editor.
+      Load:
+        Desc: Load a custom world.
+        Error: '<systemred>Could not load world: <white>ꀓ <systemred>%world_id%</systemred>!</systemred>'
+        Done: '<systemgreen>World loaded: <lyellow>%world_id%</lyellow>!</systemgreen>'
+      Unload:
+        Desc: Unload a custom world.
+        Error: '<systemred>Could not unload world: <white>ꀓ <systemred>%world_id%</systemred>!</systemred>'
+        Done: '<systemgreen>World unloaded: <lyellow>%world_id%</lyellow>!</systemgreen>'
+  AutoWipe:
+    MoveOut: <white>ꀒ <systemgreen>You have been teleported due to world unload.</systemgreen>
+    Notify:
+    - <noprefix>
+    - ''
+    - <white>ꀓ <systemred><b>Auto-Reset Warning:</b></systemred>
+    - <white>ꀒ <systemgreen>The world will auto-reset in <systemred>%time%</systemred></systemgreen>
+  Error:
+    CommandBlocked: <white>ꀓ <systemred>You can't use that command in this world!</systemred>
+    FlyDisabled: <white>ꀓ <systemred>Flying is not allowed in this world!</systemred>
+    Command:
+      Argument:
+        InvalidWorldData: <white>ꀒ <systemgreen><systemred>%value%</systemred> is not a valid world!</systemgreen>
+  Editor:
+    Title:
+      List: <black>World List</black>
+      Settings: <black>World Settings</black>
+      Generation: <black>World Loading/Generation</black>
+      GameRules: <black>World Game Rules</black>
+    World:
+      Rule:
+        Object:
+          Name: '<lyellow><b>Rule: <reset><white>%name%</white></b></lyellow>'
+          Lore:
+          - '<lyellow>● <systemgreen>Value: </systemgreen>%value%</lyellow>'
+          - ''
+          - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>change</lyellow>.</systemgreen>
+      Difficulty:
+        Name: <lyellow><b>Difficulty</b></lyellow>
+        Lore:
+        - '<lyellow>● <systemgreen>Current: </systemgreen>%world_difficulty%</lyellow>'
+        - ''
+        - <white>ꀒ <systemgreen>Sets world's difficulty.</systemgreen>
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>toggle</lyellow>.</systemgreen>
+      AutoWipe:
+        Name: <lyellow><b>Auto Reset</b></lyellow>
+        Lore:
+        - <white>ꀒ <systemgreen>Sets whether or not this world</systemgreen>
+        - <white>ꀒ <systemgreen>should auto reset with</systemgreen>
+        - <white>ꀒ <systemgreen>certain interval.</systemgreen>
+        - ''
+        - '<lyellow>● <systemgreen>Enabled: </systemgreen>%world_auto_wipe_enabled%</lyellow>'
+        - '<lyellow>● <systemgreen>Interval: </systemgreen>%world_auto_wipe_interval%</lyellow>'
+        - '<lyellow>● <systemgreen>Last Reset: </systemgreen>%world_auto_wipe_last_wipe%</lyellow>'
+        - '<lyellow>● <systemgreen>Next Reset: </systemgreen>%world_auto_wipe_next_wipe%</lyellow>'
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Left-Click to <lyellow>toggle</lyellow>.</systemgreen>
+        - <lyellow>[▶]</lyellow> <systemgreen>Right-Click to <lyellow>change interval</lyellow>.</systemgreen>
+        - <lyellow>[▶]</lyellow> <systemgreen>[Q / Drop] Key to <lyellow>set last time</lyellow>.</systemgreen>
+      GameRules:
+        Name: <lyellow><b>Game Rules</b></lyellow>
+        Lore:
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>navigate</lyellow>.</systemgreen>
+      Structures:
+        Name: <lyellow><b>Structure Generation</b></lyellow>
+        Lore:
+        - '<lyellow>● <systemgreen>Enabled: </systemgreen>%world_structures%</lyellow>'
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>toggle</lyellow>.</systemgreen>
+      Environment:
+        Name: <lyellow><b>Environment</b></lyellow>
+        Lore:
+        - '<lyellow>● <systemgreen>Current: </systemgreen>%world_environment%</lyellow>'
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>toggle</lyellow>.</systemgreen>
+      Generator:
+        Name: <lyellow><b>Chunk Generator</b></lyellow>
+        Lore:
+        - '<lyellow>● <systemgreen>Current: </systemgreen>%world_generator%</lyellow>'
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>change</lyellow>.</systemgreen>
+      Delete:
+        Name: <lyellow><b>Delete Data</b></lyellow>
+        Lore:
+        - <white>ꀒ <systemgreen><systemred>(No Undo)</systemred></systemgreen>
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>[Q / Drop] Key to <lyellow>delete world files</lyellow>.</systemgreen>
+        - <lyellow>[▶]</lyellow> <systemgreen>Right-Click to <lyellow>delete config</lyellow>.</systemgreen>
+        - <lyellow>[▶]</lyellow> <systemgreen>Shift-Right to <lyellow>delete both</lyellow>.</systemgreen>
+      Unload:
+        Name: <lyellow><b>Unload World</b></lyellow>
+        Lore: []
+      Load:
+        Name: <lyellow><b>Load World</b></lyellow>
+        Lore: []
+      AutoLoad:
+        Name: <lyellow><b>Auto-Load</b></lyellow>
+        Lore:
+        - '<lyellow>● <systemgreen>Enabled: </systemgreen>%world_auto_load%</lyellow>'
+        - ''
+        - <white>ꀒ <systemgreen>Loads the world on server startup.</systemgreen>
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>toggle</lyellow>.</systemgreen>
+      Object:
+        Name: '<lyellow><b>World: <reset><white>%world_id%</white></b></lyellow>'
+        Lore:
+        - '<lyellow>● <systemgreen>Created: </systemgreen>%world_is_created%</lyellow>'
+        - '<lyellow>● <systemgreen>Loaded: </systemgreen>%world_is_loaded%</lyellow>'
+        - '<lyellow>● <systemgreen>Auto-Load: </systemgreen>%world_auto_load%</lyellow>'
+        - ''
+        - <lyellow>[▶]</lyellow> <systemgreen>Click to <lyellow>edit</lyellow>.</systemgreen>
+  Difficulty:
+    PEACEFUL: Peaceful
+    EASY: Easy
+    NORMAL: Normal
+    HARD: Hard
+Spawns:
+  Command:
+    Spawns:
+      Delete:
+        Desc: Delete a spawn.
+        Done:
+        - <output:"titles:20:60:20">
+        - <lyellow><b>Spawn Deleted!</b></lyellow>
+        - <white>ꀒ <systemgreen>You deleted <lyellow>%spawn_name%</lyellow> spawn!</systemgreen>
+      Create:
+        Desc: Set spawn point.
+        Done:
+        - <output:"titles:20:60:20">
+        - '<lgreen><b>Spawn Set: </b><white>%spawn_name%</white></lgreen>'
+        - <white>ꀒ <systemgreen>Use <lgreen>/editspawn</lgreen> to configure it.</systemgreen>
+      Teleport:
+        Desc: Teleport to a spawn.
+        Notify: <white>ꀒ <systemgreen>Teleporting <lyellow>%player_display_name%</lyellow> on <lyellow>%spawn_name%</lyellow> spawn.</systemgreen>
+        Done:
+        - <white>ꀒ <systemgreen>You teleported to the <lyellow>%spawn_name%</lyellow> spawn.</systemgreen>
+      Editor:
+        Desc: Open spawn editor.
+    Spawn:
+      Error:
+        NoDefault: <white>ꀓ <systemred>You must specify spawn name.</systemred>
+  Spawn:
+    Teleport:
+      Error:
+        World: <white>ꀓ <systemred>This spawn located in a world that is not available currently.</systemred>
+    Error:
+      Invalid: <white>ꀓ <systemred><systemred>%value%</systemred> is not a valid spawn!</systemred>
+  Editor:
+    Title:
+      List: <black>Spawns Editor</black>
+      Settings: <black>Spawn Settings</black>
+    Enter:
+      Name: <white>ꀒ <systemgreen>Enter <lgreen>[Spawn Name]</lgreen></systemgreen>
+      Priority: <white>ꀒ <systemgreen>Enter <lgreen>[Priority]</lgreen></systemgreen>
+      Group: <white>ꀒ <systemgreen>Enter <lgreen>[Group Name]</lgreen></systemgreen>
+Homes:
+  Command:
+    Argument:
+      Name:
+        Home: home
+    Homes:
+      Delete:
+        Desc: Delete a home.
+      Teleport:
+        Desc: Teleport to a home.
+      Set:
+        Desc: Set home point.
+      Visit:
+        Desc: Visit a home.
+      Invite:
+        Desc: Invite player to a home.
+      List:
+        Desc: List of homes.
+      Invute:
+        Usage: <white>ꀒ <systemgreen>You invited <lyellow>%player_name%</lyellow> to your <lyellow>%home_name%</lyellow> home!</systemgreen>
+    HomesAdmin:
+      Delete:
+        Desc: Delete player's home.
+        Done:
+          Single: <white>ꀒ <systemgreen>You deleted <lyellow>%player_name%</lyellow>'s <lyellow>%home_id%</lyellow> home.</systemgreen>
+          All: <white>ꀒ <systemgreen>You deleted all <lyellow>%player_name%</lyellow>'s homes.</systemgreen>
+      Create:
+        Desc: Create a home for the player.
+        Done:
+          Fresh: <white>ꀒ <systemgreen>Set <lyellow>%home_id%</lyellow> home for <lyellow>%player_name%</lyellow>.</systemgreen>
+          Edited: <white>ꀒ <systemgreen>Updated <lyellow>%home_id%</lyellow>home of <lyellow>%player_name%</lyellow>.</systemgreen>
+    Error:
+      Argument:
+        InvalidHome: <white>ꀓ <systemred><systemred>%value%</systemred> is not a valid home.</systemred>
+  Home:
+    Teleport:
+    - <output:"titles:20:60:20"><sound:"entity_enderman_teleport">
+    - <lyellow><b>Home</b></lyellow>
+    - <white>ꀒ <systemgreen>You teleported to <lyellow>%home_name%</lyellow> home.</systemgreen>
+    Visit:
+      Success:
+      - <output:"titles:20:60:20"><sound:"entity_enderman_teleport">
+      - <lyellow><b>Home Visit</b></lyellow>
+      - <white>ꀒ <systemgreen>You visited the <lyellow>%home_owner%</lyellow>'s <lyellow>%home_name%</lyellow> home.</systemgreen>
+      Error:
+        NotPermitted:
+        - <sound:"entity_villager_no">
+        - <white>ꀓ <systemred>You don't have an invite to this home!</systemred>
+        UnsafeLocation:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Unsafe Location!</b></systemred>
+        - <white>ꀓ <systemred>Visit has been cancelled.</systemred>
+    Set:
+      Error:
+        Limit:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Limit Reached!</b></systemred>
+        - <white>ꀓ <systemred>You can't create more homes.</systemred>
+        World:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>World Error!</b></systemred>
+        - <white>ꀓ <systemred>You can't create homes in this world.</systemred>
+        UnsafeLocation:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Unsafe Location!</b></systemred>
+        - <white>ꀓ <systemred>You can't create homes here.</systemred>
+        Protection:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Protected Area!</b></systemred>
+        - <white>ꀓ <systemred>You can't create homes here.</systemred>
+      Success:
+      - <output:"titles:20:60:20"><sound:"block_wooden_door_open">
+      - <lyellow><b>Home Set!</b></lyellow>
+      - '<systemgreen>Usage: <lyellow>/home %home_id%</lyellow> | View homes: <lyellow>/homelist</lyellow></systemgreen>'
+      Edited:
+      - <output:"titles:20:60:20"><sound:"block_wooden_door_close">
+      - <lyellow><b>Home Updated!</b></lyellow>
+      - <white>ꀒ <systemgreen>Home location has been updated.</systemgreen>
+    Delete:
+      Done:
+      - <output:"titles:20:60:20"><sound:"entity_zombie_break_wooden_door">
+      - <lyellow><b>Home Removed!</b></lyellow>
+      - <white>ꀒ <systemgreen>You removed <lyellow>%home_name%</lyellow> home.</systemgreen>
+  Error:
+    NoHomes: <white>ꀓ <systemred>You have no homes set!</systemred>
+  Editor:
+    Enter:
+      PlayerName: <white>ꀒ <systemgreen>Enter <lgreen>[Player Name]</lgreen></systemgreen>
+      HomeName: <white>ꀒ <systemgreen>Enter <lgreen>[Home Name]</lgreen></systemgreen>
+  HomeType:
+    PUBLIC: Public
+    PRIVATE: Private
+Kits:
+  Command:
+    Kits:
+      Editor:
+        Desc: Open kit editor.
+      Preview:
+        Desc: Preview a kit.
+        Others: <white>ꀒ <systemgreen>Opened <lyellow>%kit_name%</lyellow> kit preview for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      Give:
+        Desc: Give a kit.
+        Done: <white>ꀒ <systemgreen>Given <lyellow>%kit_name%</lyellow> kit to <lyellow>%player_display_name%</lyellow>!</systemgreen>
+      List:
+        Desc: Open Kits GUI.
+        Others: <white>ꀒ <systemgreen>Opened Kits GUI for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      ResetCooldown:
+        Desc: Reset player's kit cooldown.
+        Done: <white>ꀒ <systemgreen>Reset <lyellow>%kit_name%</lyellow> kit cooldown for <lyellow>%player_name%</lyellow>.</systemgreen>
+        Notify: <white>ꀒ <systemgreen>Your <lyellow>%kit_name%</lyellow> kit cooldown have been reset!</systemgreen>
+      SetCooldown:
+        Desc: Set player's kit cooldown.
+        Done: <white>ꀒ <systemgreen>Set <lyellow>%kit_name%</lyellow> kit cooldown on <lyellow>%amount%</lyellow> for <lyellow>%player_name%</lyellow>.</systemgreen>
+        Notify: <white>ꀒ <systemgreen>Your <lyellow>%kit_name%</lyellow> kit cooldown have been set to <lyellow>%amount%</lyellow>!</systemgreen>
+    Error:
+      Argument:
+        InvalidKit: <white>ꀓ <systemred><systemred>%value%</systemred> is not a valid kit!</systemred>
+  Kit:
+    Get:
+    - <output:"titles:20:60:20"><sound:"item_armor_equip_leather">
+    - <lyellow><b>Kit Received!</b></lyellow>
+    - <white>ꀒ <systemgreen>You got <lyellow>%kit_name%</lyellow> kit!</systemgreen>
+    Error:
+      NoPermission: <white>ꀓ <systemred>You don't have permissions to use this kit!</systemred>
+      NotEnoughFunds: <white>ꀓ <systemred>You can't afford this kit! You need <systemred>$%kit_cost_money%</systemred>.</systemred>
+      Cooldown:
+        Expirable: <white>ꀓ <systemred>You can use this kit again in <systemred>%cooldown%</systemred></systemred>
+        OneTimed: <white>ꀓ <systemred>You already have used this kit. You can not use it more.</systemred>
+  Editor:
+    Title:
+      List: <black>Kits Editor</black>
+      Settings: <black>Kit Settings</black>
+      Content: <black>Kit Content</black>
+    Enter:
+      Id: <white>ꀒ <systemgreen>Enter <lgreen>[Kit Identifier]</lgreen></systemgreen>
+      Command: <white>ꀒ <systemgreen>Enter <lgreen>[Command]</lgreen></systemgreen>
+      Cost: <white>ꀒ <systemgreen>Enter <lgreen>[Money Cost]</lgreen></systemgreen>
+      Description: <white>ꀒ <systemgreen>Enter <lgreen>[Description]</lgreen></systemgreen>
+      Priority: <white>ꀒ <systemgreen>Enter <lgreen>[Priority]</lgreen></systemgreen>
+    Error:
+      AlreadyExists: <white>ꀓ <systemred>Kit already exists!</systemred>
+Warps:
+  Command:
+    Warps:
+      Delete:
+        Desc: Delete a warp.
+      Create:
+        Desc: Create a new warp.
+      Teleport:
+        Desc: Teleport to a warp.
+        Others: <white>ꀒ <systemgreen>Teleported <lyellow>%player_display_name%</lyellow> to <lyellow>%warp_name%</lyellow> warp.</systemgreen>
+      ResetCooldown:
+        Desc: Reset warp cooldown.
+        Done: <white>ꀒ <systemgreen>Reset <lyellow>%warp_name%</lyellow> warp cooldown for <lyellow>%player_name%</lyellow>.</systemgreen>
+        Notify: <white>ꀒ <systemgreen>Your <lyellow>%warp_name%</lyellow> warp cooldown have been reset!</systemgreen>
+      SetCooldown:
+        Desc: Set warp cooldown.
+        Done: <white>ꀒ <systemgreen>Set <lyellow>%warp_name%</lyellow> warp cooldown on <lyellow>%amount%</lyellow> for <lyellow>%player_name%</lyellow>.</systemgreen>
+        Notify: <white>ꀒ <systemgreen>Your <lyellow>%warp_name%</lyellow> warp cooldown have been set to <lyellow>%amount%</lyellow>!</systemgreen>
+      List:
+        Desc: Open Warps GUI.
+        Others: <white>ꀒ <systemgreen>Opened Warp GUI for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+  Delete:
+    Done:
+    - <output:"titles:20:60:20"><sound:"block_glass_break">
+    - <lyellow><b>Warp Removed!</b></lyellow>
+    - <white>ꀒ <systemgreen>You removed <lyellow>%warp_name%</lyellow> warp.</systemgreen>
+  Warp:
+    Creation:
+      New:
+      - <output:"titles:20:60:20"><sound:"block_anvil_place">
+      - <lgreen><b>Warp Created!</b></lgreen>
+      - '<systemgreen>Teleport: <lgreen>/warp %warp_id%</lgreen> | Edit in: <lgreen>/warplist</lgreen></systemgreen>'
+      Relocate:
+      - <output:"titles:20:60:20"><sound:"block_anvil_place">
+      - <lgreen><b>Warp Relocated!</b></lgreen>
+      - <white>ꀒ <systemgreen>You moved out <lgreen>%warp_name%</lgreen> warp.</systemgreen>
+      Error:
+        Limit:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Limit Reached!</b></systemred>
+        - <white>ꀒ <systemgreen>You can't create more warps!</systemgreen>
+        World:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Forbidden World!</b></systemred>
+        - <white>ꀒ <systemgreen>You can't create warps in this world!</systemgreen>
+        Exists:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Already Exists!</b></systemred>
+        - <white>ꀒ <systemgreen>Warp with such name already exists.</systemgreen>
+        Unsafe:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Unsafe Location!</b></systemred>
+        - <white>ꀒ <systemgreen>Please, choose another place.</systemgreen>
+    Teleport:
+      Done:
+      - <output:"titles:20:60:20"><sound:"entity_enderman_teleport">
+      - <lyellow><b>%warp_name%</b></lyellow>
+      - <white>ꀒ <systemgreen>%warp_description%</systemgreen>
+      Error:
+        NotEnoughFunds:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Not Enough Funds!</b></systemred>
+        - <white>ꀒ <systemgreen>You need <systemred>$%warp_visit_cost%</systemred> to visit this warp!</systemgreen>
+        NoPermission:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>No Permission!</b></systemred>
+        - <white>ꀒ <systemgreen>You don't have permission for <systemred>%warp_name%</systemred> warp!</systemgreen>
+        Cooldown:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Cooldown!</b></systemred>
+        - <white>ꀒ <systemgreen>You can visit <systemred>%warp_name%</systemred> again in <systemred>%cooldown%</systemred></systemgreen>
+        Unreachable:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Unreachable Warp!</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>%warp_name%</systemred> located in an unavailable world.</systemgreen>
+        Time:
+        - <output:"titles:20:60:20"><sound:"entity_villager_no">
+        - <white>ꀓ <systemred><b>Wrong Time!</b></systemred>
+        - <white>ꀒ <systemgreen><systemred>%warp_name%</systemred> is not available for visits now.</systemgreen>
+  Error:
+    Command:
+      Argument:
+        InvalidWarp: <white>ꀓ <systemred><systemred>%value%</systemred> is not a valid warp!</systemred>
+  Editor:
+    Enter:
+      CostMoney: <white>ꀒ <systemgreen>Enter <lgreen>[Cost]</lgreen></systemgreen>
+      Command: <white>ꀒ <systemgreen>Enter <lgreen>[Command Name]</lgreen></systemgreen>
+      Times: <white>ꀒ <systemgreen>Enter <lgreen>[Times] <systemgreen>></systemgreen> 10:00 14:00</lgreen></systemgreen>
+      Cooldown: <white>ꀒ <systemgreen>Enter <lgreen>[Cooldown]</lgreen></systemgreen>
+      Name: <white>ꀒ <systemgreen>Enter <lgreen>[Display Name]</lgreen></systemgreen>
+      Description: <white>ꀒ <systemgreen>Enter <lgreen>[Description]</lgreen></systemgreen>
+  WarpType:
+    SERVER: Server
+    PLAYER: Player
+  SortType:
+    WARP_NAME: Warp Name
+    WARP_ID: Warp Id
+    WARP_TYPE: Warp Type
+    VISIT_COST: Visit Cost
+Chat:
+  Commant:
+    Argument:
+      Name:
+        Channel: channel
+  Command:
+    ShortChannel:
+      Desc: Switch channel or send message.
+    Channel:
+      Join:
+        Desc: Join a channel.
+      Leave:
+        Desc: Leave a channel.
+      Set:
+        Desc: Set active channel.
+    Mentions:
+      Desc: Toggle Mentions.
+      Toggle:
+        Notify: '<systemgreen>Mention notifications: <lyellow>%state%</lyellow>.</systemgreen>'
+        Target: <white>ꀒ <systemgreen>Set mention notifications on <lyellow>%state%</lyellow> for <lyellow>%player_name%</lyellow>.</systemgreen>
+    TogglePM:
+      Desc: Toggle Private Messages.
+      Toggle:
+        Notify: '<systemgreen>Private Messages: <lyellow>%state%</lyellow>.</systemgreen>'
+        Target: <white>ꀒ <systemgreen>Set Private Messages on <lyellow>%state%</lyellow> for <lyellow>%player_name%</lyellow>.</systemgreen>
+    ClearChat:
+      Desc: Clear chat.
+      Done:
+      - <noprefix>
+      - <white>ꀒ <systemgreen>Chat has been cleared by <lyellow>%name%</lyellow>.</systemgreen>
+    Me:
+      Desc: Show action in chat.
+    Tell:
+      Desc: Send private message.
+    Spy:
+      Mode:
+        Desc: Toggle %type% spy.
+        Done:
+          Others: <white>ꀒ <systemgreen>Set <lyellow>%type%</lyellow> spy for <lyellow>%player_display_name%</lyellow> to <lyellow>%state%</lyellow></systemgreen>
+          Notify: '<systemgreen><lyellow>%type%</lyellow> spy: <lyellow>%state%</lyellow></systemgreen>'
+      Logger:
+        Desc: Toggle spy logger.
+        Done: <white>ꀒ <systemgreen>Set<lyellow>%type%</lyellow> logger for <lyellow>%player_display_name%</lyellow> to <lyellow>%state%</lyellow></systemgreen>
+    Reply:
+      Desc: Quick reply on latest PM.
+      Error:
+        Empty:
+        - <noprefix>
+        - <white>ꀓ <systemred>You have not received any private messages.</systemred>
+  Chat:
+    AntiSpam:
+      Similar:
+        Msg:
+        - <noprefix>
+        - <white>ꀓ <systemred>Do not spam messages!</systemred>
+        Cmd:
+        - <noprefix>
+        - <white>ꀓ <systemred>Do not spam commands!</systemred>
+      Delay:
+        Msg:
+        - <noprefix>
+        - <white>ꀓ <systemred>You have to wait <orange>%time%</orange> before you can send another message.</systemred>
+        Cmd:
+        - <noprefix>
+        - <white>ꀓ <systemred>&cYou have to wait <orange>%time%</orange> before you can use another command.</systemred>
+    Mention:
+      Error:
+        Cooldown:
+        - <noprefix>
+        - <white>ꀓ <systemred>You can mention <orange>%name%</orange> again in <orange>%time%</orange></systemred>
+  Channel:
+    Join:
+      Success:
+      - <noprefix>
+      - <white>ꀒ <systemgreen>You have joined the <lyellow>%channel_name%</lyellow> chat channel.</systemgreen>
+      Error:
+        NoPermission:
+        - <noprefix>
+        - <white>ꀓ <systemred>You don't have permissions to join this channel.</systemred>
+        AlreadyIn:
+        - <noprefix>
+        - <white>ꀓ <systemred>You already joined this channel!</systemred>
+    Leave:
+      Success:
+      - <noprefix>
+      - <white>ꀒ <systemgreen>You have left the <lyellow>%channel_name%</lyellow> chat channel.</systemgreen>
+      Error:
+        NotIn:
+        - <noprefix>
+        - <white>ꀓ <systemred>You're are not in the channel!</systemred>
+    Set:
+      Success:
+      - <noprefix>
+      - <white>ꀒ <systemgreen>Set <lyellow>%channel_name%</lyellow> as default chat channel.</systemgreen>
+  Mentions:
+    Notify:
+    - <sound:"block_note_block_bell">
+    - <white>ꀒ <systemgreen><lgreen>%player_display_name%</lgreen> mentioned you in chat!</systemgreen>
+  PrivateMessage:
+    Error:
+      Disabled: <white>ꀓ <systemred><systemred>%player_display_name%</systemred> doesn't accept messages.</systemred>
+      Ignorance: <white>ꀓ <systemred><systemred>%player_display_name%</systemred> doesn't accept your messages.</systemred>
+  Error:
+    Command:
+      Argument:
+        InvalidChannel: <white>ꀓ <systemred><systemred>%value%</systemred> is not a valid channel!</systemred>
+  SpyType:
+    SOCIAL: Social
+    COMMAND: Command
+    CHAT: Chat
+PTP:
+  Command:
+    Teleport:
+      Invite:
+        Desc: Ask player to be summoned.
+        Notify:
+          Sender:
+          - <noprefix><sound:"entity_ender_pearl_throw">
+          - <white>ꀒ <systemgreen>Sent summon request to <lyellow>%player_display_name%</lyellow>.</systemgreen>
+          Target:
+          - <noprefix><sound:"entity_ender_pearl_throw">
+          - ' '
+          - <lyellow><b>Teleport Invite:</b></lyellow>
+          - ' '
+          - <lyellow>Player <orange>%player_display_name%</orange> wants summon you to them.</lyellow>
+          - <lyellow>Type <lgreen>/tpyes %player_name%</lgreen> to accept and be summoned.</lyellow>
+          - <lyellow>or <systemred>/tpno %player_name%</systemred> to decline.</lyellow>
+          - ' '
+          - <lyellow>            <hover:show_text:'<gray>Click to be summoned by <green>%player_display_name%</green></gray>'><click:run_command:"/tpyes %player_name%"><lgreen><b>[Accept]</b></lgreen></click></hover>      <hover:show_text:'<gray>Click to deny summoning by <red>%player_display_name%</red></gray>'><click:run_command:"/tpno %player_name%"><systemred><b>[Decline]</b></systemred></click></hover></lyellow>
+          - ' '
+      Request:
+        Desc: Ask player to teleport you.
+      Accept:
+        Desc: Accept teleport request.
+      Decline:
+        Desc: Decline teleport request.
+    Toggle:
+      Desc: Toggle teleport requests/invites.
+      Target: <white>ꀒ <systemgreen>Set teleport requests <lyellow>%state%</lyellow> for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      Notify: '<systemgreen>Teleport requests: <lyellow>%state%</lyellow>.</systemgreen>'
+  Request:
+    Accept:
+      Done:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen>You accepted <lgreen>%player_display_name%</lgreen>'s teleport request!</systemgreen>
+      Notify:
+      - <sound:"entity_enderman_teleport">
+      - <white>ꀒ <systemgreen><lgreen>%player_display_name%</lgreen> accepted your teleport request!</systemgreen>
+      Nothing:
+      - <sound:"entity_villager_no">
+      - <white>ꀒ <systemgreen>You don't have any active requests.</systemgreen>
+    Decline:
+      Done:
+      - <sound:"entity_villager_no">
+      - <white>ꀒ <systemgreen>You declined <systemred>%player_display_name%</systemred>'s teleport request.</systemgreen>
+      Notify:
+      - <sound:"entity_villager_no">
+      - <white>ꀒ <systemgreen><systemred>%player_display_name%</systemred> declines your teleport request.</systemgreen>
+      Nothing:
+      - <sound:"entity_villager_no">
+      - <white>ꀒ <systemgreen>You don't have any active requests.</systemgreen>
+    Send:
+      Error:
+        Cooldown:
+        - <sound:"entity_villager_no">
+        - <white>ꀒ <systemgreen>You can send another request in <systemred>%time%</systemred></systemgreen>
+        Disabled:
+        - <sound:"entity_villager_no">
+        - <white>ꀒ <systemgreen>You can't send teleport requests to <systemred>%player_name%</systemred>.</systemgreen>
+    Sent:
+    - <noprefix><sound:"entity_ender_pearl_throw">
+    - <white>ꀒ <systemgreen>Sent teleport request to <lyellow>%player_display_name%</lyellow>.</systemgreen>
+    Notify:
+    - <noprefix><sound:"entity_ender_pearl_throw">
+    - ' '
+    - <lyellow><b>Teleport Request:</b></lyellow>
+    - ' '
+    - <lyellow>Player <orange>%player_display_name%</orange> wants teleport to you.</lyellow>
+    - <lyellow>Type <lgreen>/tpyes %player_name%</lgreen> to accept and summon him.</lyellow>
+    - <lyellow>or <systemred>/tpno %player_name%</systemred> to decline.</lyellow>
+    - ' '
+    - <lyellow>            <hover:show_text:'<gray>Click to teleport <green>%player_display_name%</green></gray>'><click:run_command:"/tpyes %player_name%"><lgreen><b>[Accept]</b></lgreen></click></hover>      <hover:show_text:'<gray>Click to deny <red>%player_display_name%</red> teleport.</gray>'><click:run_command:"/tpno %player_name%"><systemred><b>[Decline]</b></systemred></click></hover></lyellow>
+    - ' '
+Scoreboard:
+  Command:
+    Scoreboard:
+      Desc: Toggle scoreboard.
+      Notify: '<systemgreen>Scoreboard: <lyellow>%state%</lyellow></systemgreen>'
+      Target: <white>ꀒ <systemgreen>Set Scoreboard <lyellow>%state%</lyellow> for <lyellow>%player_name%</lyellow>.</systemgreen>
+RTP:
+  Command:
+    RTP:
+      Desc: Teleport to a random place.
+  Teleport:
+    Error:
+      AlreadyIn: <white>ꀓ <systemred>You're already in RTP!</systemred>
+      InvalidRange: <white>ꀓ <systemred>Random teleport is not supported for this world or have invalid range settings.</systemred>
+    Notify:
+      Done:
+      - <output:"titles:20:80:20"><sound:"entity_enderman_teleport">
+      - <lgreen><b>Successful Teleport!</b></lgreen>
+      - '<systemgreen>Location: <lgreen>%location_x%</lgreen>, <lgreen>%location_y%</lgreen>, <lgreen>%location_z%</lgreen></systemgreen>'
+      Search:
+      - <output:"titles:20:80:20"><sound:"block_lava_pop">
+      - <lyellow><b>Search for location...</b></lyellow>
+      - '<systemgreen>Step: <lyellow>%current%</lyellow>/<lyellow>%max%</lyellow></systemgreen>'
+      Failure:
+      - <output:"titles:20:80:20"><sound:"entity_villager_no">
+      - <white>ꀓ <systemred><b>Teleport Failed</b></systemred>
+      - <white>ꀒ <systemgreen>Could not find a valid location.</systemgreen>
+Extras:
+  Command:
+    Chairs:
+      Desc: Toggle Chairs.
+      Notify: <white>ꀒ <systemgreen>Set <lyellow>Chairs</lyellow> on <lyellow>%state%</lyellow>.</systemgreen>
+      Target: <white>ꀒ <systemgreen>Set <lyellow>%player_display_name%</lyellow>'s <lyellow>Chairs</lyellow> on <lyellow>%state%</lyellow>.</systemgreen>
+    Sit:
+      Desc: Sit on a block.
+      Notify: <white>ꀒ <systemgreen>You are sitting now.</systemgreen>
+      Target: <white>ꀒ <systemgreen>Made <lyellow>%player_name%</lyellow> to sit.</systemgreen>
+    ChestSort:
+      Desc: Toggle ChestSort.
+      Notify: <white>ꀒ <systemgreen>Set <lyellow>Chest Sort</lyellow> on <lyellow>%state%</lyellow>.</systemgreen>
+      Target: <white>ꀒ <systemgreen>Set <lyellow>%player_display_name%</lyellow>'s <lyellow>Chest Sort</lyellow> on <lyellow>%state%</lyellow>.</systemgreen>
+BackLocation:
+  Command:
+    Back:
+      Desc: Return to previous location.
+      Others:
+        Done: <white>ꀒ <systemgreen>Player <lyellow>%player_display_name%</lyellow> teleported to previous location.</systemgreen>
+        Nothing: <white>ꀒ <systemgreen>Player <systemred>%player_display_name%</systemred> don't have a previous location.</systemgreen>
+    DeathBack:
+      Desc: Return to death location.
+      Others:
+        Done: <white>ꀒ <systemgreen>Player <lyellow>%player_display_name%</lyellow> teleported to death location.</systemgreen>
+        Nothing: <white>ꀒ <systemgreen>Player <systemred>%player_display_name%</systemred> don't have a death location.</systemgreen>
+  Previous:
+    Teleport:
+      Nothing:
+      - <sound:"entity_villager_no">
+      - <white>ꀒ <systemgreen>You don't have a previous location.</systemgreen>
+      Notify:
+      - <output:"action_bar"><sound:"entity_enderman_teleport">
+      - <lyellow>Return to previous location...</lyellow>
+  Death:
+    Teleport:
+      Nothing:
+      - <sound:"entity_villager_no">
+      - <white>ꀒ <systemgreen>You don't have a death location.</systemgreen>
+      Notify:
+      - <output:"action_bar"><sound:"entity_enderman_teleport">
+      - <lyellow>Return to death location...</lyellow>
+NerfPhantoms:
+  Command:
+    NoPhantom:
+      Desc: Toggle anti-phantom mode.
+      Toggle:
+        Notify: '<systemgreen>Anti-Phantom mode: <lyellow>%state%</lyellow>.</systemgreen>'
+        Others: <white>ꀒ <systemgreen>Set Anti-Phantom mode <lyellow>%state%</lyellow> for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+Afk:
+  Command:
+    Afk:
+      Desc: Toggle AFK mode.
+      Done:
+        Others: '<systemgreen>Set <lyellow>%player_display_name%</lyellow> afk mode: <lyellow>%state%</lyellow>.</systemgreen>'
+  Mode:
+    Enter:
+    - <noprefix>
+    - <white>ꀒ <systemgreen>Player <lyellow>%player_display_name%</lyellow> is AFK now.</systemgreen>
+    Exit:
+    - <noprefix>
+    - <white>ꀒ <systemgreen>Player <lyellow>%player_display_name%</lyellow> returned after <lyellow>%time%</lyellow> of afk.</systemgreen>
+  Notify:
+    PrivateMessage:
+    - <noprefix>
+    - <white>ꀒ <systemgreen>Player <systemred>%player_display_name%</systemred> is AFK and may not respond.</systemgreen>
+    TeleportRequest:
+    - <noprefix>
+    - <white>ꀒ <systemgreen>Player <systemred>%player_display_name%</systemred> is AFK and may not respond.</systemgreen>
+CustomText:
+  Command:
+    Text:
+      Desc: View a custom text.
+  Error:
+    Command:
+      Argument:
+        InvalidCustomText: <white>ꀓ <systemred><systemred>%value%</systemred> is not a valid custom text!</systemred>
+GodMode:
+  Command:
+    God:
+      Desc: Toggle God Mode.
+      Notify: <white>ꀒ <systemgreen>God Mode has been set on <lyellow>%state%</lyellow>.</systemgreen>
+      Target: <white>ꀒ <systemgreen>Set God Mode on <lyellow>%state%</lyellow> for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+    FoodGod:
+      Target: <white>ꀒ <systemgreen>Set Food God on <lyellow>%state%</lyellow> for <lyellow>%player_display_name%</lyellow>.</systemgreen>
+      Notify: <white>ꀒ <systemgreen>Food God has been set on <lyellow>%state%</lyellow>.</systemgreen>
+  Notify:
+    DamageDisabled:
+    - <output:"action_bar">
+    - <white>ꀓ <systemred>You can't inflict damage in God Mode!</systemred>
+    BadWorld:
+    - <white>ꀓ <systemred><b>God Mode Info:</b></systemred>
+    - <white>ꀒ <systemgreen>God Mode has no effect in this world!</systemgreen>

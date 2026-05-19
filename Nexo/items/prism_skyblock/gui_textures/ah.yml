@@ -1,0 +1,52 @@
+ah-cata-listings:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 73
+    model: prism_skyblock/gui_textures/ah/cata_listings
+ah-cata-listings-selected:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 74
+    model: prism_skyblock/gui_textures/ah/cata_listings_selected
+ah-cata-yours:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 75
+    model: prism_skyblock/gui_textures/ah/cata_yours
+ah-cata-yours-selected:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 76
+    model: prism_skyblock/gui_textures/ah/cata_yours_selected
+ah-cata-expired:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 77
+    model: prism_skyblock/gui_textures/ah/cata_expired
+ah-cata-expired-selected:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 78
+    model: prism_skyblock/gui_textures/ah/cata_expired_selected
+ah-slot-available:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 79
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/ah/available_slot
+ah-slot-locked:
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 80
+    parent_model: item/generated
+    textures:
+    - prism_skyblock/interface/gui_textures/ah/locked_slot

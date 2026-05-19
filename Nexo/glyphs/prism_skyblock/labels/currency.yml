@@ -1,0 +1,14 @@
+currency-coin:
+  char: ꀾ
+  texture: prism_skyblock/labels/currency/coin.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm
+currency-ruby:
+  char: ꀿ
+  texture: prism_skyblock/labels/currency/ruby.png
+  ascent: 8
+  height: 10
+  chat:
+    permission: somerandom.perm

@@ -1,0 +1,81 @@
+codex-categoryregion:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 32
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/category_region
+codex-categorymonster:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 33
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/category_monster
+codex-categoryboss:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 34
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/category_boss
+codex-categoryregionselected:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 35
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/category_region_selected
+codex-categorymonsterselected:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 36
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/category_monster_selected
+codex-categorybossselected:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 37
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/category_boss_selected
+codex-undiscovered:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 68
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/undiscovered
+codex-draedon:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 69
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/draedon
+codex-locked:
+  itemname: ''
+  material: BOOK
+  excludeFromInventory: true
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 70
+    textures:
+    - prism_skyblock/interface/gui_textures/codex/locked
