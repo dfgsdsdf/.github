@@ -25,7 +25,7 @@ items:
     valid-page:
       type: BOOK
       customModel: 22
-      name: '&{HEX:cf935b}Island Chest &f#{0}'
+      name: '&{HEX:cf935b}Остров Chest &f#{0}'
     invalid-page:
       type: BOOK
       customModel: 23
@@ -33,16 +33,16 @@ items:
   '%':
     type: BOOK
     customModel: 25
-    name: '{0}Previous Page'
+    name: '{0}Назад Страница'
   '*':
     type: SUNFLOWER
-    name: '&aCurrent Page'
+    name: '&aCurrent Страница'
     lore:
-      - '&{HEX:cccccc}Page {0}'
+      - '&{HEX:cccccc}Страница {0}'
   '^':
     type: BOOK
     customModel: 24
-    name: '{0}Next Page'
+    name: '{0}Далее Страница'
 
 sounds:
   '@':

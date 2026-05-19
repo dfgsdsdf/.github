@@ -1,11 +1,11 @@
-Settings:
+Настройки:
   # Worlds, where GodMode is not available.
   # This setting can be bypasses with the 'sunlight.godmode.bypass.worlds' permission.
-  Disabled_Worlds:
+  Отключено_Worlds:
   - world_name
   - other_world
   OutgoingDamage:
     # Sets whether or not players in GodMode can damage other players.
-    Players: false
+    Игрокs: false
     # Sets whether or not players in GodMode can damage mobs.
     Mobs: true

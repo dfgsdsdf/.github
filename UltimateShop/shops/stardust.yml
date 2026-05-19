@@ -1,7 +1,7 @@
 settings:
   menu: 'stardust-shop'
   buy-more: false
-  shop-name: 'Drops Shop'
+  shop-name: 'Drops Магазин'
   hide-message: false
 
 general-configs:

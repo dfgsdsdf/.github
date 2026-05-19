@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: BlocksMissions
+mission-file: BlocksМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -22,7 +22,7 @@ rewards:
   commands:
     - 'eco give %player% 1000'
     - 'is admin rankup %player% generator-rates'
-    - 'is admin msg %player% &e&lMiner | &7Successfully finished the mission Miner I!'
+    - 'is admin msg %player% &e&lMiner | &7Успехfully finished the mission Miner I!'
     - 'is admin msg %player% &e&lMiner | &7Now that you are familiar with generators, mine some iron.'
     - 'is admin msg %player% &e&lMiner | &7&oFor more information about the next mission, checkout /is missions'
 
@@ -51,7 +51,7 @@ icons:
       - ''
       - '&6Rewards:'
       - '&8 - &7$1,000'
-      - '&8 - &7Generator Upgrade'
+      - '&8 - &7Generator Улучшение'
       - ''
       - '&6Cobblestone Mined: &7{value_stone}/48'
       - '&6Coal Ore Mined: &7{value_coal_ore}/16'
@@ -69,12 +69,12 @@ icons:
       - ''
       - '&6Rewards:'
       - '&8 - &7$1,000'
-      - '&8 - &7Generator Upgrade'
+      - '&8 - &7Generator Улучшение'
       - ''
       - '&6Cobblestone Mined: &748/48'
       - '&6Coal Ore Mined: &716/16'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:
@@ -87,7 +87,7 @@ icons:
       - ''
       - '&6Rewards:'
       - '&8 - &7$1,000'
-      - '&8 - &7Generator Upgrade'
+      - '&8 - &7Generator Улучшение'
       - ''
       - '&6Cobblestone Mined: &748/48'
       - '&6Coal Ore Mined: &716/16'

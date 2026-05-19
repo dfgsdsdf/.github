@@ -1,9 +1,9 @@
 Plugin:
   # Localized plugin name. It's used in messages and with internal placeholders.
   Name: SunLight
-  # Command names that will be registered as main plugin commands.
+  # Команда names that will be registered as main plugin commands.
   # Do not leave this empty. Split multiple names with a comma.
-  Command_Aliases: sunlight,sl
+  Команда_Aliases: sunlight,sl
   # Sets the plugin language.
   # Basically it tells the plugin to use certain messages config from the '/lang/' sub-folder.
   # If specified language is not available, default one (English) will be used instead.
@@ -42,7 +42,7 @@ Database:
   Purge:
     # Enables the purge feature.
     # Purge will remove all records from the plugin tables that are 'old' enough.
-    Enabled: false
+    Включено: false
     # Sets maximal 'age' for the database records before they will be purged.
     # This option may have different behavior depends on the plugin.
     # By default it's days of inactivity for the plugin users.

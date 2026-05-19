@@ -13,7 +13,7 @@ amount-items:
       custom-model-data: 52
       name: '&#8ceb44+1'
       lore:
-        - '&#ccccccClick to add 1 more.'
+        - '&#ccccccНажмите чтобы add 1 more.'
     add-amount: 1
   2:
     display-item:
@@ -22,7 +22,7 @@ amount-items:
       amount: 10
       name: '&#8ceb44+10'
       lore:
-        - '&#ccccccClick to add 10 more.'
+        - '&#ccccccНажмите чтобы add 10 more.'
     add-amount: 10
   3:
     display-item:
@@ -31,7 +31,7 @@ amount-items:
       amount: 32
       name: '&#8ceb44+32'
       lore:
-        - '&#ccccccClick to add 32 more.'
+        - '&#ccccccНажмите чтобы add 32 more.'
     add-amount: 32
   4:
     display-item:
@@ -39,7 +39,7 @@ amount-items:
       custom-model-data: 53
       name: '&#db4848-1'
       lore:
-        - '&#ccccccClick to add 1 more.'
+        - '&#ccccccНажмите чтобы add 1 more.'
     add-amount: -1
   5:
     display-item:
@@ -48,7 +48,7 @@ amount-items:
       amount: 10
       name: '&#db4848-10'
       lore:
-        - '&#ccccccClick to add 10 more.'
+        - '&#ccccccНажмите чтобы add 10 more.'
     add-amount: -10
   6:
     display-item:
@@ -57,7 +57,7 @@ amount-items:
       amount: 32
       name: '&#db4848-32'
       lore:
-        - '&#ccccccClick to add 32 more.'
+        - '&#ccccccНажмите чтобы add 32 more.'
     add-amount: -32
     # Support replace add-amount option to set-amount.
     # set-amount: 32
@@ -69,7 +69,7 @@ confirm-items:
     display-item:
       material: BARRIER
       custom-model-data: 1
-      name: '&#8ceb44Buy &fx{amount} &#8ceb44of this item.'
+      name: '&#8ceb44Купить &fx{amount} &#8ceb44of this item.'
       lore:
     # You can remove click-action option, then confirm button can do all things, like buy, sell, sell all.
     # If this option exists, then this confirm button can only do the thing.
@@ -78,7 +78,7 @@ confirm-items:
     display-item:
       material: BARRIER
       custom-model-data: 1
-      name: '&#db4848Sell &fx{amount} &#db4848of this item.'
+      name: '&#db4848Продать &fx{amount} &#db4848of this item.'
       lore:
     click-action: sell
 

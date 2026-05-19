@@ -1,19 +1,19 @@
-Settings:
+Настройки:
   # GUI title.
-  Title: <black>Warps</black>
+  Title: <black>Варпs</black>
   # GUI size. Must be multiply of 9.
-  # Useful for 'CHEST' Inventory Type only.
+  # Useful for 'CHEST' Инвентарь Type only.
   Size: 45
   # GUI type.
-  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
-  Inventory_Type: CHEST
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/ИнвентарьType.html
+  Инвентарь_Type: CHEST
   # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
   Auto_Refresh: 0
-Warp:
+Варп:
   Server:
     Name: '<lyellow><b>%warp_name%</b></lyellow> <gray>(ID: <white>%warp_id%</white>)</gray>'
     Lore:
-    - <dgray>Official Warp</dgray>
+    - <dgray>Official Варп</dgray>
     - ''
     - '%warp_description%'
     - ''
@@ -26,10 +26,10 @@ Warp:
     - ''
     - '%action_teleport%'
     - '%action_editor%'
-  Player:
+  Игрок:
     Name: '<lyellow><b>%warp_name%</b></lyellow> <gray>(ID: <white>%warp_id%</white>)</gray>'
     Lore:
-    - <dgray>Created by %warp_owner_name%</dgray>
+    - <dgray>Создатьd by %warp_owner_name%</dgray>
     - ''
     - '%warp_description%'
     - ''
@@ -44,16 +44,16 @@ Warp:
     - '%action_editor%'
   Lore:
     Teleport:
-    - <lgray><lyellow>[▶]</lyellow> Left-Click to <lyellow>teleport</lyellow>.</lgray>
+    - <lgray><lyellow>[▶]</lyellow> Left-Нажмите чтобы <lyellow>teleport</lyellow>.</lgray>
     Editor:
-    - <lgray><lyellow>[▶]</lyellow> Right-Click to <lyellow>edit</lyellow>.</lgray>
-    Times_Open:
-    - <lgray><lgreen>✔</lgreen> Open until <lgreen>%time%</lgreen>.</lgray>
-    Times_Closed:
-    - <lgray><lred>[❗]</lred> Closed until <lred>%time%</lred>.</lgray>
+    - <lgray><lyellow>[▶]</lyellow> Right-Нажмите чтобы <lyellow>edit</lyellow>.</lgray>
+    Times_Открыть:
+    - <lgray><lgreen>✔</lgreen> Открыть until <lgreen>%time%</lgreen>.</lgray>
+    Times_Закрытьd:
+    - <lgray><lred>[❗]</lred> Закрытьd until <lred>%time%</lred>.</lgray>
     No_Permission:
     - <lgray><lred>[❗]</lred> You don't have <lred>permission</lred> to visit this warp.</lgray>
-    No_Money:
+    No_Деньги:
     - <lgray><lred>[❗]</lred> You don't have <lred>%warp_visit_cost%</lred> to visit this warp.</lgray>
     VisitCost:
     - '<lgray><lred>[❗]</lred> Visit Cost: <lred>$%warp_visit_cost%</lred></lgray>'
@@ -76,10 +76,10 @@ Warp:
 # > Item: Item to display. Please check: https://github.com/nulli0n/nightcore-spigot/wiki/ItemStack-Options
 # > Priority: Button priority. Better values will override other item(s) in the same slot(s).
 # > Slots: Button slots. From [0] to [Size - 1]. Split with commas.
-# > Click_Commands: Execute custom commands on click. PlaceholderAPI available here.
+# > Click_Командаs: Execute custom commands on click. PlaceholderAPI available here.
 #     Available click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4, NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9
 #     Use prefix 'player:' to run command by a player.
-#     Click_Commands:
+#     Click_Командаs:
 #       LEFT:
 #       - say Hello
 #       - give %player_name% diamond 1
@@ -97,7 +97,7 @@ Content:
     Item:
       Material: PLAYER_HEAD
       SkinURL: f32ca66056b72863e98f7f32bd7d94c7a0d796af691c9ac3a9136331352288f9
-      Name: <lgray>Next Page →</lgray>
+      Name: <lgray>Далее Страница →</lgray>
     Slots: '23'
     Type: page_next
   _previous_page:
@@ -105,7 +105,7 @@ Content:
     Item:
       Material: PLAYER_HEAD
       SkinURL: 86971dd881dbaf4fd6bcaa93614493c612f869641ed59d1c9363a3666a5fa6
-      Name: <lgray>← Previous Page</lgray>
+      Name: <lgray>← Назад Страница</lgray>
     Slots: '18'
     Type: page_previous
   display_order:
@@ -117,7 +117,7 @@ Content:
       Lore:
       - '<lyellow>▪ <lgray>Current: </lgray>%sorting_mode%</lyellow>'
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>toggle</lyellow>.</lgray>
     Slots: '16'
     Type: sorting_mode
   own_only:
@@ -126,9 +126,9 @@ Content:
       Material: OAK_SIGN
       Name: <lyellow><b>Own Only</b></lyellow>
       Lore:
-      - '<lyellow>▪ <lgray>Enabled: </lgray>%own_only%</lyellow>'
+      - '<lyellow>▪ <lgray>Включено: </lgray>%own_only%</lyellow>'
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>toggle</lyellow>.</lgray>
     Slots: '25'
     Type: own_toggle
   player_warps:
@@ -136,11 +136,11 @@ Content:
     Item:
       Material: PLAYER_HEAD
       SkinURL: 100191e52d207a0ef4972ff8393e4ed1277b1b872e72e7830aff09e938f337ec
-      Name: <lyellow><b>Player Warps</b></lyellow>
+      Name: <lyellow><b>Игрок Варпs</b></lyellow>
       Lore:
       - <lgray>Browse warps created by our players!</lgray>
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>navigate</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>navigate</lyellow>.</lgray>
     Slots: '34'
     Type: player_warps
   server_warps:
@@ -148,10 +148,10 @@ Content:
     Item:
       Material: PLAYER_HEAD
       SkinURL: efbf8fdcac5b1419ea1954f2b6fcff65bfdb6511b601bf4408d9bbb311de7648
-      Name: <lyellow><b>Server Warps</b></lyellow>
+      Name: <lyellow><b>Server Варпs</b></lyellow>
       Lore:
       - <lgray>Browse our official, server warps!</lgray>
       - ''
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>navigate</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>navigate</lyellow>.</lgray>
     Slots: '34'
     Type: server_warps

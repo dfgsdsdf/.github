@@ -3,13 +3,13 @@ Default_World: world
 # Sets whether or not RTP will search location in Default World, if no ranges are available in the current one.
 Force_To_Default: true
 LocationSearch:
-  # Amount of RTP attempts to get a valid teleport location.
+  # Количество of RTP attempts to get a valid teleport location.
   Attempts: 5
   # Sets whether or not only chunks that have already been generated will be used when searching for a teleport location.
   # NOTE: Works only for 1.19.4 or above!
   Generated_Chunks_Only: true
   # Sets whether or not only chunks that have been loaded by players will be used when searching for a teleport location.
-  # NOTE: Settings this on 'true' may result in a lot of failures when server lacks online players.
+  # NOTE: Настройки this on 'true' may result in a lot of failures when server lacks online players.
   Loaded_Chunks_Only: false
   # List of per-world range values to search location in.
   # You can create as many entries per world as you want.

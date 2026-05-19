@@ -1,12 +1,12 @@
-Settings:
+Настройки:
   # GUI title.
-  Title: <black>Ignore Settings</black>
+  Title: <black>Ignore Настройки</black>
   # GUI size. Must be multiply of 9.
-  # Useful for 'CHEST' Inventory Type only.
+  # Useful for 'CHEST' Инвентарь Type only.
   Size: 36
   # GUI type.
-  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
-  Inventory_Type: CHEST
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/ИнвентарьType.html
+  Инвентарь_Type: CHEST
   # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
   Auto_Refresh: 0
 # ==================== GUI CONTENT ====================
@@ -21,10 +21,10 @@ Settings:
 # > Item: Item to display. Please check: https://github.com/nulli0n/nightcore-spigot/wiki/ItemStack-Options
 # > Priority: Button priority. Better values will override other item(s) in the same slot(s).
 # > Slots: Button slots. From [0] to [Size - 1]. Split with commas.
-# > Click_Commands: Execute custom commands on click. PlaceholderAPI available here.
+# > Click_Командаs: Execute custom commands on click. PlaceholderAPI available here.
 #     Available click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4, NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9
 #     Use prefix 'player:' to run command by a player.
-#     Click_Commands:
+#     Click_Командаs:
 #       LEFT:
 #       - say Hello
 #       - give %player_name% diamond 1
@@ -45,12 +45,12 @@ Content:
       Material: MAP
       Name: <lyellow><b>Hide Chat</b></lyellow>
       Lore:
-      - '<lyellow>● <lgray>Enabled: </lgray>%hide_chat%</lyellow>'
+      - '<lyellow>● <lgray>Включено: </lgray>%hide_chat%</lyellow>'
       - ' '
       - <lgray>Hides out chat messages</lgray>
       - <lgray>from this player.</lgray>
       - ' '
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>toggle</lyellow>.</lgray>
     Slots: '10'
     Type: hide_chat
   block_conversations:
@@ -59,12 +59,12 @@ Content:
       Material: WRITABLE_BOOK
       Name: <lyellow><b>Block Conversations</b></lyellow>
       Lore:
-      - '<lyellow>● <lgray>Enabled: </lgray>%deny_conversations%</lyellow>'
+      - '<lyellow>● <lgray>Включено: </lgray>%deny_conversations%</lyellow>'
       - ' '
-      - <lgray>Player can not send you</lgray>
+      - <lgray>Игрок не можете send you</lgray>
       - <lgray>private messages.</lgray>
       - ' '
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>toggle</lyellow>.</lgray>
     Slots: '13'
     Type: deny_conversations
   block_teleports:
@@ -73,11 +73,11 @@ Content:
       Material: ENDER_PEARL
       Name: <lyellow><b>Block Teleports</b></lyellow>
       Lore:
-      - '<lyellow>● <lgray>Enabled: </lgray>%deny_teleports%</lyellow>'
+      - '<lyellow>● <lgray>Включено: </lgray>%deny_teleports%</lyellow>'
       - ' '
-      - <lgray>Player can not send you</lgray>
+      - <lgray>Игрок не можете send you</lgray>
       - <lgray>teleport requests.</lgray>
       - ' '
-      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+      - <lgray><lyellow>[▶]</lyellow> Нажмите чтобы <lyellow>toggle</lyellow>.</lgray>
     Slots: '15'
     Type: deny_teleports

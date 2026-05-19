@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&{HEX:5e5e5e}Island Warps > &{HEX:3b3b3b}{0}'
+title: '&{HEX:5e5e5e}Остров Варпs > &{HEX:3b3b3b}{0}'
 
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
@@ -33,7 +33,7 @@ items:
     name: '&dSet Lore'
   '%':
     type: EMERALD
-    name: '&eConfirm Changes'
+    name: '&eПодтвердить Changes'
   '^':
     type: STONE
 

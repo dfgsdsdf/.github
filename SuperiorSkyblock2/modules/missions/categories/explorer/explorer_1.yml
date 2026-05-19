@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: IslandMissions
+mission-file: ОстровМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -18,13 +18,13 @@ reset-after-finish: true
 rewards:
   commands:
     - 'eco give %player% 25000'
-    - 'is admin msg %player% &e&lExplorer | &7Successfully finished the mission Nether Explorer!'
+    - 'is admin msg %player% &e&lExplorer | &7Успехfully finished the mission Nether Explorer!'
     - 'is admin msg %player% &e&lExplorer | &7Are you ready for the real challenge?'
     - 'is admin msg %player% &e&lExplorer | &7&oFor more information about the next mission, checkout /is missions'
 
 # List of events that will trigger the mission.
 events:
-  - IslandSchematicPasteEvent
+  - ОстровSchematicPasteEvent
 
 # Requirement of the event to complete the mission.
 success-check: 'event.getSchematic().endsWith("_nether")'
@@ -50,7 +50,7 @@ icons:
       - '&6Rewards:'
       - '&8 - &7$25,000'
       - ''
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:

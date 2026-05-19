@@ -21,7 +21,7 @@ Rules:
     - myserver.abc
     - spigotmc.org
     # Enables the rule.
-    Enabled: true
+    Включено: true
   inet_addresses:
     # A list of Regex Expressions to match in message.
     # If you want to match a simple text/word, just add it as is, like 'bad word'.
@@ -40,4 +40,4 @@ Rules:
     Ignored_Words:
     - 127.0.0.1
     # Enables the rule.
-    Enabled: true
+    Включено: true

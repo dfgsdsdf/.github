@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Island Warps &m     '
+title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Остров Panel > &{HEX:3b3b3b}Остров Варпs &m     '
 
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
@@ -32,19 +32,19 @@ edit-lore:
 items:
   '@':
     type: ENDER_PEARL
-    name: '&{HEX:cccccc}Warp: &f{0} &8{2}'
+    name: '&{HEX:cccccc}Варп: &f{0} &8{2}'
   'p':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Previous Page'
+    name: '&{HEX:cccccc}Назад Страница'
   'n':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Next Page'
+    name: '&{HEX:cccccc}Далее Страница'
   'h':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back'
+    name: '&{HEX:cccccc}Go Назад'
 
 commands:
   'h':

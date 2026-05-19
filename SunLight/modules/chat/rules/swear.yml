@@ -30,7 +30,7 @@ Rules:
     # A list of words (non-regex) that will be ignored by this rule.
     Ignored_Words: []
     # Enables the rule.
-    Enabled: true
+    Включено: true
   bad_words_ru:
     # A list of Regex Expressions to match in message.
     # If you want to match a simple text/word, just add it as is, like 'bad word'.
@@ -87,4 +87,4 @@ Rules:
     - барсуки
     - сабля
     # Enables the rule.
-    Enabled: true
+    Включено: true

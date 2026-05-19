@@ -13,7 +13,7 @@ enabled: false
 # automatically claimed only in island worlds.
 auto-reward-outside-islands: false
 
-# Settings related to mission categories.
+# Настройки related to mission categories.
 # A tutorial about configuring missions can be found here:
 # https://wiki.bg-software.com/superiorskyblock/missions
 categories:

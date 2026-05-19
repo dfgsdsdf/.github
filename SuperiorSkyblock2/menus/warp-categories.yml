@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&lWarp Categories'
+title: '&lВарп Категории'
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
@@ -36,15 +36,15 @@ items:
     name: '&f'
   '%':
     type: PAPER
-    name: '&cPrevious Page'
+    name: '&cНазад Страница'
   '*':
     type: SUNFLOWER
-    name: '&aCurrent Page'
+    name: '&aCurrent Страница'
     lore:
-      - '&{HEX:cccccc}Page 1'
+      - '&{HEX:cccccc}Страница 1'
   '^':
     type: PAPER
-    name: '&cNext Page'
+    name: '&cДалее Страница'
   '$':
     type: BLACK_STAINED_GLASS_PANE
     name: '&f'

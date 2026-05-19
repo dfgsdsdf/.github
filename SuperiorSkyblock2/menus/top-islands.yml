@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Top Islands &m       '
+title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Остров Panel > &{HEX:3b3b3b}Top Островs &m       '
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
@@ -32,16 +32,16 @@ items:
       type: PLAYER_HEAD
       customModel: 11
       name: '&{HEX:a1ccf7}ɪꜱʟᴀɴᴅ: &f{0} &8(#{1})'
-      name: '&{HEX:ffffff}Island: &{HEX:1fa5de}@{0} &8(#{1})'
+      name: '&{HEX:ffffff}Остров: &{HEX:1fa5de}@{0} &8(#{1})'
       lore:
         - ''
-        - '&{HEX:cccccc}▪ Island Level: &{HEX:e8af46}%superior_island_level%⭐ &8(#%superior_island_top_level_position%)'
+        - '&{HEX:cccccc}▪ Остров Level: &{HEX:e8af46}%superior_island_level%⭐ &8(#%superior_island_top_level_position%)'
         - '&{HEX:9c9c9c} Worth: &f%superior_island_worth_format% &8(#%superior_island_top_worth_position%)'
         - '&{HEX:9c9c9c} Rating: &f%superior_island_rating_stars%'
         - ''
-        - '&{HEX:cccccc}▪ Members: &f{10}'
+        - '&{HEX:cccccc}▪ Участникs: &f{10}'
         - '{4}:&{HEX:9c9c9c} {}'
-        - '&{HEX:9c9c9c} Visitors: &f%superior_island_visitors_count%'
+        - '&{HEX:9c9c9c} Посетительs: &f%superior_island_visitors_count%'
         - '&{HEX:cccccc}'
         - '&fꂀ &{HEX:83ca16}View items!'
         - '&fꂁ &{HEX:0097d8}Teleport to warp!'
@@ -52,15 +52,15 @@ items:
   'p':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Previous Page'
+    name: '&{HEX:cccccc}Назад Страница'
   'n':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Next Page'
+    name: '&{HEX:cccccc}Далее Страница'
   'h':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back'
+    name: '&{HEX:cccccc}Go Назад'
 
 commands:
   'h':

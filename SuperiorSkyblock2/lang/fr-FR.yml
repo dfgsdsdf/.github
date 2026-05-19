@@ -17,7 +17,7 @@ ADMIN_DEPOSIT_MONEY: '&e&lBanque | &7Vous avez déposé {0}$ à la banque d''îl
 ADMIN_DEPOSIT_MONEY_NAME: '&e&lBanque | &7Vous avez déposé {0}$ sur la banque de l''île
   {1}.'
 ADMIN_HELP_FOOTER: '&e&lSkyblock'
-ADMIN_HELP_HEADER: '&e&lSkyblock | &7Liste des Commandes Admin [{0}/{1}]:'
+ADMIN_HELP_HEADER: '&e&lSkyblock | &7Liste des Командаes Admin [{0}/{1}]:'
 ADMIN_HELP_LINE: '&e/{0} &f- &7{1}'
 ADMIN_HELP_NEXT_PAGE: '&e&lSkyblock | &7Utilisez /is admin {0} pour la page suivante.'
 ALREADY_IN_ISLAND: '&c&lErreur | &7Vous êtes déjà membre d''une île.'
@@ -42,9 +42,9 @@ BLOCK_LEVEL: '&e&lNiveau | &7Le le niveau du bloc {0} est de {1}.'
 BLOCK_LEVEL_WORTHLESS: '&e&lNiveau | &7Le bloc {0} n''a pas de valeur.'
 BLOCK_VALUE: '&e&lValeur | &7La valeur du bloc {0} est de {1}.'
 BLOCK_VALUE_WORTHLESS: '&e&lValeur | &7Le bloc {0} n''a pas de valeur.'
-BONUS_SYNC_ALL: '&e&lIsland | &7Successfully synced the island bonus to all the islands'
-BONUS_SYNC_NAME: '&e&lIsland | &7Successfully synced the island bonus to {0}.'
-BONUS_SYNC: '&e&lIsland | &7Successfully synced the island bonus to {0}''s island.'
+BONUS_SYNC_ALL: '&e&lОстров | &7Успехfully synced the island bonus to all the islands'
+BONUS_SYNC_NAME: '&e&lОстров | &7Успехfully synced the island bonus to {0}.'
+BONUS_SYNC: '&e&lОстров | &7Успехfully synced the island bonus to {0}''s island.'
 BORDER_PLAYER_COLOR_NAME_BLUE: Bleue
 BORDER_PLAYER_COLOR_NAME_RED: Rouge
 BORDER_PLAYER_COLOR_NAME_GREEN: Verte
@@ -75,17 +75,17 @@ CHANGED_BLOCK_LIMIT_ALL: '&e&lAméliorations | &7Vous avez changé la limite de 
   de {0} pour toutes les îles.'
 CHANGED_BLOCK_LIMIT_NAME: '&e&lAméliorations | &7Vous avez changé la limite de blocs
   de {0} pour {1}.'
-CHANGED_BONUS_LEVEL: '&e&lIsland | &7Successfully updated the level bonus of {0}''s
+CHANGED_BONUS_LEVEL: '&e&lОстров | &7Успехfully updated the level bonus of {0}''s
   island.'
-CHANGED_BONUS_LEVEL_ALL: '&e&lIsland | &7Successfully updated the level bonus of all
+CHANGED_BONUS_LEVEL_ALL: '&e&lОстров | &7Успехfully updated the level bonus of all
   the islands.'
-CHANGED_BONUS_LEVEL_NAME: '&e&lIsland | &7Successfully updated the level bonus of
+CHANGED_BONUS_LEVEL_NAME: '&e&lОстров | &7Успехfully updated the level bonus of
   {0}.'
-CHANGED_BONUS_WORTH: '&e&lIsland | &7Successfully updated the worth bonus of {0}''s
+CHANGED_BONUS_WORTH: '&e&lОстров | &7Успехfully updated the worth bonus of {0}''s
   island.'
-CHANGED_BONUS_WORTH_ALL: '&e&lIsland | &7Successfully updated the worth bonus of all
+CHANGED_BONUS_WORTH_ALL: '&e&lОстров | &7Успехfully updated the worth bonus of all
   the islands.'
-CHANGED_BONUS_WORTH_NAME: '&e&lIsland | &7Successfully updated the worth bonus of
+CHANGED_BONUS_WORTH_NAME: '&e&lОстров | &7Успехfully updated the worth bonus of
   {0}.'
 CHANGED_CHEST_SIZE: '&e&lStockage | &7Mise à jour des lignes de la page #{0} sur {1}
   pour l''île de {2}.'
@@ -139,11 +139,11 @@ CHANGED_NAME: '&e&lIle | &7Vous avez changé le nom de votre île pour {0}.'
 CHANGED_NAME_OTHER: '&e&lIle | &7Vous avez changé le nom de l''île de {0} pour {1}.'
 CHANGED_NAME_OTHER_NAME: '&e&lIle | &7Vous avez changé le nom de {0} pour {1}.'
 CHANGED_PAYPAL: '&e&lIle | &7Vous avez changé le paypal de l''île pour {0}.'
-CHANGED_ROLE_LIMIT: '&e&lUpgrades | &7Successfully updated the limit of the role {0}
+CHANGED_ROLE_LIMIT: '&e&lУлучшениеs | &7Успехfully updated the limit of the role {0}
   for {1}''s island.'
-CHANGED_ROLE_LIMIT_ALL: '&e&lUpgrades | &7Successfully updated the limit of the role
+CHANGED_ROLE_LIMIT_ALL: '&e&lУлучшениеs | &7Успехfully updated the limit of the role
   {0} for all the islands.'
-CHANGED_ROLE_LIMIT_NAME: '&e&lUpgrades | &7Successfully updated the limit of the role
+CHANGED_ROLE_LIMIT_NAME: '&e&lУлучшениеs | &7Успехfully updated the limit of the role
   {0} for {1}.'
 CHANGED_SPAWNER_RATES: '&e&lAméliorations | &7Vous avez changé le multiplicateur de
   taux des spawners de l''île de {0}.'
@@ -339,7 +339,7 @@ COMMAND_DESCRIPTION_BALANCE: Vérifier la quantité d'argent dans le coffre de l
   spécifiée.
 COMMAND_DESCRIPTION_BAN: Bannir un joueur de votre île.
 COMMAND_DESCRIPTION_BANK: Ouvrir la banque de l'île.
-COMMAND_DESCRIPTION_BANS: Open the bans menu.
+COMMAND_DESCRIPTION_BANS: Открыть the bans menu.
 COMMAND_DESCRIPTION_BIOME: Changer le biome de l'île.
 COMMAND_DESCRIPTION_BORDER: Changer la couleur de la bordure de l'île.
 COMMAND_DESCRIPTION_CHEST: Ouvrir le stockage communautaire de l'île.
@@ -394,7 +394,7 @@ COMMAND_DESCRIPTION_VALUES: Ouvrir le menu des valeurs.
 COMMAND_DESCRIPTION_VISIT: Se téléporter sur la zone visiteurs d'une île.
 COMMAND_DESCRIPTION_VISITORS: Ouvrir le menu des visiteurs.
 COMMAND_DESCRIPTION_WARP: Se téléporter au warp d'une île.
-COMMAND_DESCRIPTION_WARPS: Ouvrir le menu des Warps.
+COMMAND_DESCRIPTION_WARPS: Ouvrir le menu des Варпs.
 COMMAND_DESCRIPTION_WITHDRAW: Transférer de l'argent du compte de votre île à votre
   compte personnel.
 COMMAND_USAGE: '&cUtilisation: /{0}'
@@ -406,7 +406,7 @@ COOP_LIMIT_EXCEED: '&c&lErreur | &7Vous avez atteint le nombre maximal de coopé
 CREATE_ISLAND: '&e&lIle | &7Création d''une nouvelle île aux coordonnées {0} en {1}ms.'
 CREATE_ISLAND_FAILURE: '&c&lErreur | &7Une erreur est survenue ors de la création
   de votre île. Veuillez contacter un administrateur et le notifier de ce problème.'
-CREATE_WORLD_FAILURE: '&c&lError | &7An error occurred while generating your world.
+CREATE_WORLD_FAILURE: '&c&lОшибка | &7An error occurred while generating your world.
   Please contact the administrator to investigate the issue.'
 DEBUG_MODE_DISABLED: '&e&lDebug | &7Débogage &cDÉSACTIVÉ&7.'
 DEBUG_MODE_ENABLED: '&e&lDebug | &7Débogage &aACTIVÉ&7.'
@@ -497,7 +497,7 @@ INTERACT_OUTSIDE_ISLAND: '&c&lErreur | &7Vous ne pouvez pas interagir en dehors 
 INVALID_AMOUNT: '&c&lErreur | &7Nombre invalide {0}.'
 INVALID_BIOME: '&c&lErreur | &7Biome invalide {0}.'
 INVALID_BLOCK: '&c&lErreur | &7Emplacement {0} du bloc invalide.'
-INVALID_BORDER_COLOR: '&c&lError | &7Invalid border color {0}.'
+INVALID_BORDER_COLOR: '&c&lОшибка | &7Invalid border color {0}.'
 INVALID_EFFECT: '&c&lErreur | &7Effet invalide {0}.'
 INVALID_ENTITY: '&c&lErreur | &7Entité invalide {0}.'
 INVALID_SCHEMATIC: '&c&lErreur | &7Il n''existe aucun schematic portant le nom {0}.'
@@ -509,16 +509,16 @@ INVALID_ISLAND_OTHER: '&c&lErreur | &7{0} n''a pas d''île.'
 INVALID_ISLAND_OTHER_NAME: '&c&lErreur | &7Il n''y a pas d''île portant le nom {0}.'
 INVALID_ISLAND_PERMISSION: |
   &c&lErreur | &7La permission {0} nexiste pas.
-  &c&lErreur | &7Permissions d'île: {1}
+  &c&lErreur | &7Права d'île: {1}
 INVALID_LEVEL: '&c&lErreur | &7Niveau invalide: {0}.'
 INVALID_LIMIT: '&c&lErreur | &7Limite invalide: {0}.'
 INVALID_MATERIAL: '&c&lErreur | &7Matériau invalide: {0}.'
 INVALID_MATERIAL_DATA: '&c&lErreur | &7Donnée de matériau {0} invalide.'
-INVALID_MENU: '&c&lError | &7Invalid menu {0}.'
-INVALID_MISSION: '&c&lErreur | &7Mission {0} invalide.'
+INVALID_MENU: '&c&lОшибка | &7Invalid menu {0}.'
+INVALID_MISSION: '&c&lErreur | &7Миссия {0} invalide.'
 INVALID_MODULE: '&c&lErreur | &7Module {0} invalide.'
 INVALID_MULTIPLIER: '&c&lErreur | &7Multiplicateur invalide: {0}.'
-INVALID_PAGE: '&c&lErreur | &7Page {0} invalide.'
+INVALID_PAGE: '&c&lErreur | &7Страница {0} invalide.'
 INVALID_PERCENTAGE: '&c&lErreur | &7Le poucentage doit être compris entre 0 et 100.'
 INVALID_PLAYER: '&c&lErreur | &7Le joueur {0} n''existe pas.'
 INVALID_RATE: |
@@ -541,16 +541,16 @@ INVALID_UPGRADE: |
 INVALID_VISIT_LOCATION: '&c&lErreur | &7Cette île ne possède aucune zone visiteurs.'
 INVALID_VISIT_LOCATION_BYPASS: '&7&oVous avez activé le mode bypass, téléportation
   sur l''île...'
-INVALID_WARP: '&c&lErreur | &7Warp invalide: {0}.'
+INVALID_WARP: '&c&lErreur | &7Варп invalide: {0}.'
 INVALID_WORLD: '&c&lErreur | &7Monde {0} invalide.'
 INVITE_ANNOUNCEMENT: '&e&lIle | &7{0} a invité {1} sur l''île.'
 INVITE_BANNED_PLAYER: '&c&lErreur | &7Ce joueur est banni de l''île et ne peut pas
   être invité.'
 INVITE_TO_FULL_ISLAND: '&c&lErreur | &7Vous ne pouvez pas inviter plus de membres
   sur l''île.'
-ISLAND_ALREADY_CLOSED: '&c&lError | &7The island is already closed to the public.'
+ISLAND_ALREADY_CLOSED: '&c&lОшибка | &7The island is already closed to the public.'
 ISLAND_ALREADY_EXIST: '&c&lErreur | &7Une île portant ce nom existe déjà.'
-ISLAND_ALREADY_OPENED: '&c&lError | &7The island is already opened to the public.'
+ISLAND_ALREADY_OPENED: '&c&lОшибка | &7The island is already opened to the public.'
 ISLAND_BANK_EMPTY: '&e&lBanque | &7La banque de l''île est vide.'
 ISLAND_BANK_SHOW: '&e&lBanque | &7Votre île possède {0} crystaux !'
 ISLAND_BANK_SHOW_OTHER: '&e&lBanque | &7L''île de {0} possède {1} crystaux !'
@@ -567,7 +567,7 @@ ISLAND_GOT_DELETED_WHILE_INSIDE: '&e&lIle | &7&oVous vous trouviez sur une île 
 ISLAND_GOT_PVP_ENABLED_WHILE_INSIDE: '&e&lIle | &7&oVous vous trouviez sur une île
   ayant activé le PVP, vous avez donc été téléporté(e) au spawn...'
 ISLAND_HELP_FOOTER: '&e&lSkyblock'
-ISLAND_HELP_HEADER: '&e&lSkyblock | &7Liste des Commandes [{0}/{1}]:'
+ISLAND_HELP_HEADER: '&e&lSkyblock | &7Liste des Командаes [{0}/{1}]:'
 ISLAND_HELP_LINE: '&e/{0} &f- &7{1}'
 ISLAND_HELP_NEXT_PAGE: '&e&lSkyblock | &7Utilisez /is help {0} pour accéder à la page
   suivante.'
@@ -603,7 +603,7 @@ ISLAND_INFO_ADMIN_UPGRADES: |
   {0}
 ISLAND_INFO_ADMIN_UPGRADE_LINE: '&e&lIle | &7  {0}: {1}'
 ISLAND_INFO_ADMIN_VALUE_SYNCED: '&a∞'
-ISLAND_INFO_ADMIN_WARPS_LIMIT: '&e&lIle | &7Limite de Warps: {0}'
+ISLAND_INFO_ADMIN_WARPS_LIMIT: '&e&lIle | &7Limite de Варпs: {0}'
 ISLAND_INFO_BANK: '&e&lIle | &7Banque: {0}'
 ISLAND_INFO_BONUS: '&e&lIle | &7Bonus de Valeur: {0}'
 ISLAND_INFO_BONUS_LEVEL: '&e&lIle | &7Bonus de Niveau: {0}'
@@ -636,14 +636,14 @@ ISLAND_INFO_WORTH: '&e&lIle | &7Valeur: {0}'
 ISLAND_NAME_NONE: None
 ISLAND_OPENED: '&e&lIle | &7L''île est désormais ouverte au public.'
 ISLAND_OWNER_NONE: None
-ISLAND_PREVIEW_BLOCK_COMMAND: '&c&lError | &7You cannot use that command in preview
+ISLAND_PREVIEW_BLOCK_COMMAND: '&c&lОшибка | &7You не можете use that command in preview
   mode.'
 ISLAND_PREVIEW_CANCEL_DISTANCE: '&e&lPrévisualisation | &7Vous vous êtes trop éloigné(e).
   La prévisualisation à donc été désactivée.'
 ISLAND_PREVIEW_CANCEL: '&e&lPrévisualisation | &7Vous avez annulé(e) la prévisualisation.'
 ISLAND_PREVIEW_CONFIRM_TEXT: CONFIRMER
 ISLAND_PREVIEW_CANCEL_TEXT: ANNULER
-ISLAND_PREVIEW_SET: '&e&lPreview | &7Successfully updated the preview location for
+ISLAND_PREVIEW_SET: '&e&lPreview | &7Успехfully updated the preview location for
   {0} schematic to {1}.'
 ISLAND_PREVIEW_START: |
   &e&lPrévisualisation | &7Vous avez débuté la prévisualisation de l'île {0}.
@@ -702,17 +702,17 @@ MAXIMUM_LEVEL: '&c&lErreur | &7Le niveau maximal pour cette amélioration est de
 MESSAGE_SENT: '&e&lIle | &7Message envoyé a {0} !'
 MISSION_CANNOT_COMPLETE: '&c&lErreur | &7Vous ne pouvez compléter cette mission pour
   le moment.'
-MISSION_NO_AUTO_REWARD: '&e&lMission | &7Vous possédez tous les matériaux requis pour
+MISSION_NO_AUTO_REWARD: '&e&lМиссия | &7Vous possédez tous les matériaux requis pour
   compléter la mission {0} - Tapez /is missions afin de compléter la mission !'
 MISSION_NOT_COMPLETE_REQUIRED_MISSIONS: '&c&lErreur | &7Vous devez compléter {0} avant
   de compléter cette mission.'
-MISSION_STATUS_COMPLETE: '&e&lMission | &7Le statut de la mission {0} a été complété
+MISSION_STATUS_COMPLETE: '&e&lМиссия | &7Le statut de la mission {0} a été complété
   sur {1}.'
-MISSION_STATUS_COMPLETE_ALL: '&e&lMission | &7Toutes les missions ont été completées
+MISSION_STATUS_COMPLETE_ALL: '&e&lМиссия | &7Toutes les missions ont été completées
   pour {0}.'
-MISSION_STATUS_RESET: '&e&lMission | &7Le statut de la mission {0} a été réinitialisé
+MISSION_STATUS_RESET: '&e&lМиссия | &7Le statut de la mission {0} a été réinitialisé
   sur {1}.'
-MISSION_STATUS_RESET_ALL: '&e&lMission | &7Réinitialisation du statut de toutes les
+MISSION_STATUS_RESET_ALL: '&e&lМиссия | &7Réinitialisation du statut de toutes les
   missions pour {0}.'
 MODULE_ALREADY_INITIALIZED: '&e&lModule | &7Ce module est déjà chargé.'
 MODULE_INFO: |
@@ -727,8 +727,8 @@ MODULES_LIST: '&fModules ({0}): {1}'
 MODULES_LIST_MODULE_NAME: '&a{0}'
 MODULES_LIST_SEPARATOR: '&f, '
 NAME_ANNOUNCEMENT: '&e&lIle | &7{0} a changé le nom de son île sur {1}.'
-NAME_ANNOUNCEMENT_OTHER: '&e&lIsland | &7{0} changed the {1} island''s name to {2}&7.'
-NAME_ANNOUNCEMENT_OTHER_NAME: '&e&lIsland | &7{0} changed the name of {1}&7 to {2}&7.'
+NAME_ANNOUNCEMENT_OTHER: '&e&lОстров | &7{0} changed the {1} island''s name to {2}&7.'
+NAME_ANNOUNCEMENT_OTHER_NAME: '&e&lОстров | &7{0} changed the name of {1}&7 to {2}&7.'
 NAME_BLACKLISTED: '&c&lErreur | &7Vous ne pouvez pas utiliser ce nom.'
 NAME_CHAT_FORMAT: '&8[&e{0}&8] &r'
 NAME_SAME_AS_PLAYER: '&c&lErreur | &7Vous ne pouvez pas utiliser le pseudonyme d''un
@@ -741,7 +741,7 @@ NO_ISLANDS_TO_PURGE: '&c&lErreur | &7Il n''y a aucune îles à purger.'
 NO_BAN_PERMISSION: '&c&lErreur | &7Vous devez être {0} afin de bannir un joueur.'
 NO_CLOSE_BYPASS: '&c&lErreur | &7Cette île n''est pas ouverte au public.'
 NO_CLOSE_PERMISSION: '&c&lErreur | &7Vous devez être {0} afin de fermer cette.'
-NO_COMMAND_PERMISSION: '&8&l» &eCommande inconnue. Fais &c/help &epour afficher l''assistance.'
+NO_COMMAND_PERMISSION: '&8&l» &eКомандаe inconnue. Fais &c/help &epour afficher l''assistance.'
 NO_COOP_PERMISSION: '&c&lErreur | &7Vous devez être {0} afin d''ajouter des coopérateurs
   à l''île.'
 NO_DELETE_WARP_PERMISSION: '&c&lErreur | &7Vous devez être {0} afin de supprimer des
@@ -810,19 +810,19 @@ PANEL_TOGGLE_ON: |-
 PERMISSION_CHANGED: '&e&lIle | &7Permission {0} de l''île de {1} mise à jour.'
 PERMISSION_CHANGED_NAME: '&e&lIle | &7Permission {0} de l''île {1} mise à jour.'
 PERMISSION_CHANGED_ALL: '&e&lIle | &7Permission {0} mise à jour pour toutes les îles.'
-PERSISTENT_DATA_EMPTY: '&c&lError | &7No data was found for your query.'
-PERSISTENT_DATA_MODIFY: '&e&lData | &7Successfully set data for {0} with {1}: {2}'
+PERSISTENT_DATA_EMPTY: '&c&lОшибка | &7No data was found for your query.'
+PERSISTENT_DATA_MODIFY: '&e&lData | &7Успехfully set data for {0} with {1}: {2}'
 PERSISTENT_DATA_SHOW: '&e&lData | &7Data of {0}: &f{{1}}'
 PERSISTENT_DATA_SHOW_PATH: '&b{0}&f: '
 PERSISTENT_DATA_SHOW_SPACER: '&f, '
 PERSISTENT_DATA_SHOW_VALUE: '&6{0}&c{1}&f'
-PERSISTENT_DATA_REMOVED: '&e&lData | &7Successfully removed data for {0} from path
+PERSISTENT_DATA_REMOVED: '&e&lData | &7Успехfully removed data for {0} from path
   {1}.'
-PERMISSIONS_RESET: '&e&lIsland | &7Successfully reset all the permissions of {0}''s
+PERMISSIONS_RESET: '&e&lОстров | &7Успехfully reset all the permissions of {0}''s
   island to default values!'
-PERMISSIONS_RESET_ALL: '&e&lIsland | &7Successfully reset all the permissions of all
+PERMISSIONS_RESET_ALL: '&e&lОстров | &7Успехfully reset all the permissions of all
   the islands to default values!'
-PERMISSIONS_RESET_NAME: '&e&lIsland | &7Successfully reset all the permissions of
+PERMISSIONS_RESET_NAME: '&e&lОстров | &7Успехfully reset all the permissions of
   the island {0} to default values!'
 PERMISSIONS_RESET_PLAYER: '&e&lIle | &7Réinitialisation de toutes les permissions
   de {0} !'
@@ -854,7 +854,7 @@ RANKUP_SUCCESS_ALL: '&e&lIle | &7Niveau de l''amélioration {0} mis à jour pour
   les îles.'
 RANKUP_SUCCESS_NAME: '&e&lIle | &7Niveau de l''amélioration {0} mis à jour pour l''île
   {1}.'
-RATE_ALREADY_GIVEN: '&c&lError | &7You already rated this island.'
+RATE_ALREADY_GIVEN: '&c&lОшибка | &7You already rated this island.'
 RATE_ANNOUNCEMENT: '&e&lIle | &7{0} a noté votre île {1} / 5 !.'
 RATE_CHANGE_OTHER: '&e&lIle | &7Vous avez modifié la note de {0} sur {1}.'
 RATE_OWN_ISLAND: '&c&lErreur | &7Vous ne pouvez pas noter votre île.'
@@ -863,7 +863,7 @@ RATE_REMOVE_ALL_ISLANDS: '&e&llIle | &7Suppression des notes de toutes les îles
 RATE_SUCCESS: '&e&lIle | &7Vous avez noté cette île {0} étoile(s) !'
 REACHED_BLOCK_LIMIT: '&e&lAméliorations | &7Vous avez atteint la limite de bloc d''île
   pour {0}.'
-REACHED_ENTITY_LIMIT: '&e&lUpgrades | &7You have reached the island''s limit for the
+REACHED_ENTITY_LIMIT: '&e&lУлучшениеs | &7Вы reached the island''s limit for the
   entity {0}.'
 RECALC_ALREADY_RUNNING: '&c&lErreur | &7Votre île est déjà en cours de calcul.'
 RECALC_ALREADY_RUNNING_OTHER: '&c&lErreur | &7Cette île est déjà en cours de calcul.'
@@ -881,7 +881,7 @@ RESET_WORLD_SUCCEED_NAME: '&e&lIle | &7Réinitialisation du monde {0} pour l''î
   {1}.'
 SAME_NAME_CHANGE: '&c&lErreur | &7Vous devez entrer un nom différent de celui actuel.'
 SCHEMATIC_LEFT_SELECT: '&e&lSchémas | &7Position #2 séléctionnée ({0})'
-SCHEMATIC_NOT_ADDED: '&c&lError | &7The server hasn''t added a {0} schematic. Please
+SCHEMATIC_NOT_ADDED: '&c&lОшибка | &7The server hasn''t added a {0} schematic. Please
   contact administrator to solve the problem. The format for {0} schematic is "{1}".'
 SCHEMATIC_NOT_READY: '&c&lErreur | &7Vous n''avez pas séléctionné deux positionss.'
 SCHEMATIC_PROCCESS_REQUEST: '&e&lSchémas | &7Traitement de votre requête...'
@@ -896,20 +896,20 @@ SET_UPGRADE_LEVEL_NAME: '&e&lAméliorations | &7Niveau de {0} augmenté sur {1}.
 SET_WARP: '&e&lIle | &7Nouveau warp crée au coordonnées {0}.'
 SET_WARP_OUTSIDE: '&c&lErreur | &7Vous ne pouvez pas définir de warps hors de votre
   île.'
-SETTINGS_RESET: '&e&lIsland | &7Successfully reset all the settings of {0}''s island
+SETTINGS_RESET: '&e&lОстров | &7Успехfully reset all the settings of {0}''s island
   to default values!'
-SETTINGS_RESET_ALL: '&e&lIsland | &7Successfully reset all the settings of all the
+SETTINGS_RESET_ALL: '&e&lОстров | &7Успехfully reset all the settings of all the
   islands to default values!'
-SETTINGS_RESET_NAME: '&e&lIsland | &7Successfully reset all the settings of the island
+SETTINGS_RESET_NAME: '&e&lОстров | &7Успехfully reset all the settings of the island
   {0} to default values!'
-SETTINGS_RESET_SELF: '&e&lIsland | &7Successfully reset all the settings of the island
+SETTINGS_RESET_SELF: '&e&lОстров | &7Успехfully reset all the settings of the island
   to default values!'
 SETTINGS_UPDATED: '&e&lIle | &7Paramètre {0} mit à jour pour l''île de {1}.'
 SETTINGS_UPDATED_NAME: '&e&lIle | &7Paramètre {0} mit à jour pour l''île {1}.'
 SETTINGS_UPDATED_ALL: '&e&lIle | &7Paramètre {0} mit à jour pour toutes les îles.'
 SIZE_BIGGER_MAX: '&c&lErreur | &7Vous ne pouvez pas définir une taille d''île supérieure
   à la taille d''île maximale.'
-SPAWN_PROTECTED: '&c&lError | &7Spawn is protected.'
+SPAWN_PROTECTED: '&c&lОшибка | &7Spawn is protected.'
 SPAWN_PROTECTED_OPPED: '&7&oYou can bypass this restriction by using "/is admin bypass".'
 SPAWN_TELEPORT_SUCCESS: '&e&lSpawn | &7Téléporation de {0} au spawn.'
 SPAWN_SET_SUCCESS: '&e&lSpawn | &7Mise à jour de la position du spawn sur {0}.'
@@ -961,7 +961,7 @@ TRANSFER_ALREADY_LEADER: '&c&lErreur | &7Vous êtes déjà le chef de l''île.'
 TRANSFER_BROADCAST: '&e&lIle | &7Le Chef de l''île est désormais {0}.'
 UNBAN_ANNOUNCEMENT: '&e&lIle | &7{0} a été DÉBANNI de l''île par {1}.'
 UNCOOP_ANNOUNCEMENT: '&e&lIle | &7{0} a retiré le rôle de coopérateur de {1}.'
-UNCOOP_AUTO_ANNOUNCEMENT: '&e&lIsland | &7There are no island members online and therefore
+UNCOOP_AUTO_ANNOUNCEMENT: '&e&lОстров | &7There are no island members online and therefore
   you were un-cooped automatically.'
 UNCOOP_LEFT_ANNOUNCEMENT: '&e&lIle | &7{0} a quitté le jeu et n''est désormais plus
   un coopérateur.'
@@ -981,53 +981,53 @@ UPDATED_PERMISSION: '&e&lIle | &7Permission mise à jour pour {0}.'
 UPDATED_SETTINGS: '&e&lIle | &7Paramètre de l''île mit à jour {0}.'
 UPGRADE_COOLDOWN_FORMAT: '&c&lErreur | &7Vous devez patienter {0} afin d''effectuer
   une nouvelle amélioration.'
-VAULT_NOT_INSTALLED: '&c&lError | &7Server doesn''t have vault installed so transactions
+VAULT_NOT_INSTALLED: '&c&lОшибка | &7Server doesn''t have vault installed so transactions
   are disabled.'
 VISITOR_BLOCK_COMMAND: '&c&lErreur | &7Vous ne pouvez pas utiliser cette commande
   sur d''autres îles.'
 WARP_ALREADY_EXIST: '&c&lErreur | &7Un warp portant ce nom éxiste déjà.'
 WARP_CATEGORY_ICON_NEW_LORE: |
-  &e&lWarps | &7Spécifiez un nouveau lore (Entrez "-cancel" to pour annuler) :
-  &e&lWarps | &7Vous pouvez ajouter une nouvelle ligne en utilisant "\n".
-WARP_CATEGORY_ICON_NEW_NAME: '&e&lWarps | &7Spécifiez un nom (Entrez "-cancel" to
+  &e&lВарпs | &7Spécifiez un nouveau lore (Entrez "-cancel" to pour annuler) :
+  &e&lВарпs | &7Vous pouvez ajouter une nouvelle ligne en utilisant "\n".
+WARP_CATEGORY_ICON_NEW_NAME: '&e&lВарпs | &7Spécifiez un nom (Entrez "-cancel" to
   pour annuler) :'
-WARP_CATEGORY_ICON_NEW_TYPE: '&e&lWarps | &7Spécifiez un nouveau matériau (Entrez
+WARP_CATEGORY_ICON_NEW_TYPE: '&e&lВарпs | &7Spécifiez un nouveau matériau (Entrez
   "-cancel" to pour annuler) :'
-WARP_CATEGORY_ICON_UPDATED: '&e&lWarps | &7Mise à jour de l''icone de la catégorie.'
+WARP_CATEGORY_ICON_UPDATED: '&e&lВарпs | &7Mise à jour de l''icone de la catégorie.'
 WARP_CATEGORY_ILLEGAL_NAME: '&c&lErreur | &7Vous ne pouvez utiliser uniquement des
   lettres, nombres et ''_'' comme nom de catégorie de warp.'
 WARP_CATEGORY_NAME_TOO_LONG: '&c&lErreur | &7Le nom d''une catégorie de warp ne peut
   dépasser 255 caractères.'
-WARP_CATEGORY_SLOT: '&e&lWarps | &7Spécifiez un nouvel emplacement (Entrez "-cancel"
+WARP_CATEGORY_SLOT: '&e&lВарпs | &7Spécifiez un nouvel emplacement (Entrez "-cancel"
   to pour annuler) :'
 WARP_CATEGORY_SLOT_ALREADY_TAKEN: '&c&lErreur | &7Cet emplacement est déjà utilisé
   par une autre catégorie.'
-WARP_CATEGORY_SLOT_SUCCESS: '&e&lWarps | &7L''emplacement de la catégorie est désormais
+WARP_CATEGORY_SLOT_SUCCESS: '&e&lВарпs | &7L''emplacement de la catégorie est désormais
   {0}.'
-WARP_CATEGORY_RENAME: '&e&lWarps | &7Spécifiez un nom (Entrez "-cancel" to pour annuler)
+WARP_CATEGORY_RENAME: '&e&lВарпs | &7Spécifiez un nom (Entrez "-cancel" to pour annuler)
   :'
 WARP_CATEGORY_RENAME_ALREADY_EXIST: '&c&lErreur | &7Ce nom est déjà utilisé par une
   autre catégorie.'
-WARP_CATEGORY_RENAME_SUCCESS: '&e&lWarps | &7Cette catégorie a été renommée en {0}.'
+WARP_CATEGORY_RENAME_SUCCESS: '&e&lВарпs | &7Cette catégorie a été renommée en {0}.'
 WARP_ICON_NEW_LORE: |
-  &e&lWarps | &7Spécifiez un nouveau lore (Entrez "-cancel" to pour annuler) :
-  &e&lWarps | &7Vous pouvez ajouter une nouvelle ligne en utilisant "\n".
-WARP_ICON_NEW_NAME: '&e&lWarps | &7Spécifiez un nom (Entrez "-cancel" to pour annuler)
+  &e&lВарпs | &7Spécifiez un nouveau lore (Entrez "-cancel" to pour annuler) :
+  &e&lВарпs | &7Vous pouvez ajouter une nouvelle ligne en utilisant "\n".
+WARP_ICON_NEW_NAME: '&e&lВарпs | &7Spécifiez un nom (Entrez "-cancel" to pour annuler)
   :'
-WARP_ICON_NEW_TYPE: '&e&lWarps | &7Spécifiez un nouveau matériau (Entrez "-cancel"
+WARP_ICON_NEW_TYPE: '&e&lВарпs | &7Spécifiez un nouveau matériau (Entrez "-cancel"
   to pour annuler) :'
-WARP_ICON_UPDATED: '&e&lWarps | &7Mise à jour de l''icone du warp.'
+WARP_ICON_UPDATED: '&e&lВарпs | &7Mise à jour de l''icone du warp.'
 WARP_ILLEGAL_NAME: '&c&lErreur | &7Vous ne pouvez utiliser uniquement des lettres,
   nombres et ''_'' comme nom de warp.'
-WARP_LOCATION_UPDATE: '&e&lWarps | &7Mise à jour de la position de téléportation du
+WARP_LOCATION_UPDATE: '&e&lВарпs | &7Mise à jour de la position de téléportation du
   warp sur votre emplacement actuel.'
 WARP_NAME_TOO_LONG: '&c&lErreur | &7Le nom d''un warp ne peut dépasser 255 caractères.'
-WARP_PUBLIC_UPDATE: '&e&lWarps | &7Le warp est désormais accessible au public.'
-WARP_PRIVATE_UPDATE: '&e&lWarps | &7Le warp n''est plus accessible au public.'
-WARP_RENAME: '&e&lWarps | &7Spécifiez un nouveau nom (Entrez "-cancel" to pour annuler)
+WARP_PUBLIC_UPDATE: '&e&lВарпs | &7Le warp est désormais accessible au public.'
+WARP_PRIVATE_UPDATE: '&e&lВарпs | &7Le warp n''est plus accessible au public.'
+WARP_RENAME: '&e&lВарпs | &7Spécifiez un nouveau nom (Entrez "-cancel" to pour annuler)
   :'
 WARP_RENAME_ALREADY_EXIST: '&c&lErreur | &7Ce nom est déjà utilisé par un autre warp.'
-WARP_RENAME_SUCCESS: '&e&lWarps | &7Le warp a été renommé en {0}.'
+WARP_RENAME_SUCCESS: '&e&lВарпs | &7Le warp a été renommé en {0}.'
 WITHDRAW_ALL_MONEY: |-
   &e&lBanque | &7Le compte de l'île ne contient que {0}$.
   &e&lBanque | &7&oRécupération de tout l'argent..."

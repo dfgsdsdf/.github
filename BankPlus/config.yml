@@ -1,9 +1,9 @@
-# Configuration File of BankPlus
+# Configuration File of БанкPlus
 
 # Check for new updates of the plugin.
 Update-Checker: true
 
-General-Settings:
+General-Настройки:
   # Choose if automatically update your
   # files when a new version is downloaded.
   # You can disable this option if you see that the
@@ -16,7 +16,7 @@ General-Settings:
   Log-Transactions: true
 
   # Notify with a console message when bankplus register a new player.
-  Notify-Registered-Player: true
+  Notify-Registered-Игрок: true
 
   # Silent some messages that are sent to the console for info
   # if you don't want to see them or to not spam the console.
@@ -24,14 +24,14 @@ General-Settings:
   Silent-Info-Messages: false
 
   # Enable this option to show the help message when the player has no banks to open.
-  Show-Help-Message-When-No-Available-Banks: true
+  Show-Help-Message-When-No-Available-Банкs: true
 
   # If enabled, to open a bank the player will also need the permission bankplus.open to open it.
-  Need-Open-Permission-To-Open: true
+  Need-Открыть-Permission-To-Открыть: true
 
-  # Settings to enable and manage MySQL
+  # Настройки to enable and manage MySQL
   MySQL:
-    # Enabling this option will stop BankPlus from storing data in
+    # Enabling this option will stop БанкPlus from storing data in
     # the player files and will start storing it in the database.
     #
     # WARNING!
@@ -39,7 +39,7 @@ General-Settings:
     # using the data of the database that will be empty if that's your first time enabling it!
     #
     # To transfer the data from the files to the database type the command "/bankplus transferData filesToDatabase"
-    Enabled: false
+    Включено: false
 
     Username: "root"
     Host: "localhost"
@@ -58,19 +58,19 @@ General-Settings:
   #
   # This is useful if you want to make a player use the bank only through
   # the gui (usually with an NPC) and prevent him to use all other commands.
-  Gui-Actions-Need-Permissions: false
+  Gui-Actions-Need-Права: false
 
   # You need to restart the server
   # to apply these changes.
   #
   # Priorities: LOWEST, LOW, NORMAL, HIGH, HIGHEST
   Event-Priorities:
-    PlayerChat: "NORMAL"
-    BankClick: "NORMAL"
+    ИгрокChat: "NORMAL"
+    БанкClick: "NORMAL"
 
   # The amount that a player will receive
   # when joining for the first time
-  Join-Start-Amount: "0"
+  Join-Start-Количество: "0"
 
   # Enable or not the guis module.
   #
@@ -108,7 +108,7 @@ General-Settings:
   # IMPORTANT! The bank capacity is defined in the BANK FILE!
   # This option is only a fallback value in case the
   # level of the bank does not specify its capacity!
-  Max-Bank-Capacity: "500000000"
+  Max-Банк-Capacity: "500000000"
 
   # The text displayed when the capacity is 0 (infinite).
   Infinite-Capacity-Text: "Infinite"
@@ -116,11 +116,11 @@ General-Settings:
   # The max number of decimals that a player balance can have.
   #
   # You can put 0 to use an economy without decimals.
-  Max-Decimals-Amount: 2
+  Max-Decimals-Количество: 2
 
   # Enabling this option, it will reopen the bank after
   # typing in chat when depositing / withdrawing money.
-  Reopen-Bank-After-Chat: true
+  Reopen-Банк-After-Chat: true
 
   # The message that a player has to type
   # to stop typing the custom amount.
@@ -133,41 +133,41 @@ General-Settings:
   # in chat while using the custom withdraw / deposit.
   #
   # You can put as many commands as you want.
-  Chat-Exit-Commands: []
+  Chat-Exit-Командаs: []
   # - "[CONSOLE] tell %player% You typed in chat!"
   # - "[PLAYER] say I typed in chat!"
 
   # Worlds where the banks won't work
   Worlds-Blacklist:
-  - "noBankWorld"
+  - "noБанкWorld"
 
   # Choose if using the bank or the vault
   # balance to upgrade the bank levels.
-  Use-Bank-Balance-To-Upgrade: true
+  Use-Банк-Баланс-To-Улучшение: true
 
   # Send an alert message to show the player how
   # much money has earned while being offline.
   Offline-Interest-Earned-Message:
-    Enabled: true
+    Включено: true
     # In seconds, put 0 to disable the delay.
     Delay: 2
-    Message: "&fꀷ <#4b56b4>You have earned &f%amount% <#4b56b4>coins while being offline!"
+    Message: "&fꀷ <#4b56b4>Вы earned &f%amount% <#4b56b4>coins while being offline!"
 
-  Withdraw-Sound:
-    Enabled: true
+  Снятие-Sound:
+    Включено: true
     # Sound-Type,Volume,Pitch.
     Sound: "ENTITY_EXPERIENCE_ORB_PICKUP,5,1"
 
-  Deposit-Sound:
-    Enabled: true
+  Депозит-Sound:
+    Включено: true
     Sound: "ENTITY_EXPERIENCE_ORB_PICKUP,5,1"
 
   View-Sound:
-    Enabled: true
+    Включено: true
     Sound: "ENTITY_EXPERIENCE_ORB_PICKUP,5,1"
 
   Personal-Sound:
-    Enabled: true
+    Включено: true
     Sound: "ENTITY_EXPERIENCE_ORB_PICKUP,5,1"
 
 # Interest will increase player bank balance
@@ -175,11 +175,11 @@ General-Settings:
 #
 # To restart the interest type /bank restartInterest.
 #
-# Players must have the "bankplus.receive.interest"
+# Игрокs must have the "bankplus.receive.interest"
 # permission to receive the interest.
 Interest:
   # Enable or disable the interest feature.
-  Enabled: true
+  Включено: true
 
   # The interest rate. (Default: 5%)
   #
@@ -188,9 +188,9 @@ Interest:
   # level of the bank does not specify its amount!
   Rate: "1%"
 
-  # Enabled this option to deliver the interest on
+  # Включено this option to deliver the interest on
   # the vault bank balance instead of the bank balance.
-  Give-Interest-On-Vault-Balance: false
+  Give-Interest-On-Vault-Баланс: false
 
   # This is the interest cooldown.
   # You can choose the delay between:
@@ -208,13 +208,13 @@ Interest:
   Skip-Message-If-Lower-Than: "0"
 
   # The max amount that you can receive with interest.
-  # This is a fallback value, in case the bank level does not specify one. (Max-Interest-Amount)
+  # This is a fallback value, in case the bank level does not specify one. (Max-Interest-Количество)
   #
   # Put "0" to disable.
-  Max-Amount: "1000000"
+  Max-Количество: "1000000"
 
   # Choose if also giving interest to offline players.
-  Give-To-Offline-Players: false
+  Give-To-Offline-Игрокs: false
 
   # The time before the offline interest
   # will stop working if the player doesn't join.
@@ -229,7 +229,7 @@ Interest:
 
   # If 'Different-Offline-Rate' is enabled, the offline players
   # will receive this interest rate. It works the same as the
-  # "Money-Given" above; you can edit this in the bank file.
+  # "Деньги-Given" above; you can edit this in the bank file.
   Offline-Rate: "5%"
 
   # The permission for offline players to receive interest.
@@ -240,7 +240,7 @@ Interest:
   # overridden if the player's money is between the 2 specified amounts.
   Enable-Interest-Limiter: false
 
-  # Format: Amount1-Amount2:InterestRatePercentage
+  # Format: Количество1-Количество2:InterestRatePercentage
   # You can edit this in the bank.yml just
   # like interest and offline interest.
   Interest-Limiter:
@@ -253,10 +253,10 @@ Interest:
   # (Based on the default interest limiter configuration)
   Accumulate-Interest-Limiter: false
 
-  AFK-Settings:
+  AFK-Настройки:
     # Enable this option to activate the afk counting system.
     # (If you don't want to use it, disable that to improve the performance)
-    Enabled: false
+    Включено: false
 
     # The time, in minutes, that will pass
     # before marking a player as AFK.
@@ -273,53 +273,53 @@ Interest:
     # If a player is AFK, it won't receive the interest.
     # AFK = When a player is online on the server but
     # is not doing anything for the specified time.
-    Ignore-AFK-Players: false
+    Ignore-AFK-Игрокs: false
 
     # The interest rate that AFK players will receive.
-    # The option "Ignore-AFK-Players" needs
+    # The option "Ignore-AFK-Игрокs" needs
     # to be disabled to make this work.
     AFK-Rate: "4%"
 
 # The player needs to have the permission
 # "bankplus.deposit" to be able to deposit.
-Deposit-Settings:
+Депозит-Настройки:
   # The max amount to deposit per time, use 0 to disable.
-  Max-Deposit-Amount: "0"
+  Max-Депозит-Количество: "0"
 
   # The minimum amount to deposit per time, use 0 to disable.
-  Minimum-Deposit-Amount: "0"
+  Minimum-Депозит-Количество: "0"
 
   # The money that a player will lose for taxes
   # when depositing, use 0 to disable.
   #
   # Use the permission "bankplus.deposit.bypass-taxes"
   # to bypass the deposit taxes.
-  Deposit-Taxes: "0%"
+  Депозит-Taxes: "0%"
 
 # The player needs to have the permission
 # "bankplus.withdraw" to be able to deposit.
-Withdraw-Settings:
+Снятие-Настройки:
   # The max amount to withdraw per time, use 0 to disable.
-  Max-Withdraw-Amount: "0"
+  Max-Снятие-Количество: "0"
 
   # The minimum amount to withdraw per time, use 0 to disable.
-  Minimum-Withdraw-Amount: "0"
+  Minimum-Снятие-Количество: "0"
 
   # The money that a player will lose for taxes
   # when withdrawing, use 0 to disable.
   #
   # Use the permission "bankplus.withdraw.bypass-taxes"
   # to bypass the deposit taxes.
-  Withdraw-Taxes: "0%"
+  Снятие-Taxes: "0%"
 
 # Loans are a way to give money to a player and then
 # having them back after a period of time.
 # If a player can't afford to give the money back, he
 # will receive a debt, every money put in the bank
 # with a debt will be removed till the debt reaches 0
-Loan-Settings:
+Loan-Настройки:
   # The max amount to give as a loan.
-  Max-Amount: "0"
+  Max-Количество: "0"
 
   # The default interest for loans.
   Interest: "5%"
@@ -333,9 +333,9 @@ Loan-Settings:
   # The time in seconds before the loan request will be deleted.
   Accept-Time: 5
 
-BankTop:
+БанкTop:
   # Enable or not the feature.
-  Enabled: false
+  Включено: false
 
   # The size of the banktop.
   Size: 10
@@ -350,24 +350,24 @@ BankTop:
   Update-Broadcast:
     # Choose if broadcasting to the server
     # when the plugin updates the banktop.
-    Enabled: false
+    Включено: false
 
     # Choose if the broadcast won't be shown on the console.
     Silent-Console: false
 
     # The message that will be sent when updating.
-    Message: "%prefix% &aThe BankTop has been updated!"
+    Message: "%prefix% &aThe БанкTop has been updated!"
 
   # The format that will be used to
   # display the money in the banktop.
   # You can choose between:
   #   default_amount, amount_long,
   #   amount_formatted, amount_formatted_long
-  Money-Format: "amount_formatted"
+  Деньги-Format: "amount_formatted"
 
   # The message to display the banktop.
   Format:
-  - "&8&m---------&8[&a &lBank&9&lPlus &aBankTop &8]&m---------"
+  - "&8&m---------&8[&a &lБанк&9&lPlus &aБанкTop &8]&m---------"
   - "&61# &f%bankplus_banktop_name_1%&8: &a%bankplus_banktop_money_1%"
   - "&a2# &f%bankplus_banktop_name_2%&8: &a%bankplus_banktop_money_2%"
   - "&b3# &f%bankplus_banktop_name_3%&8: &a%bankplus_banktop_money_3%"
@@ -378,11 +378,11 @@ BankTop:
   - "&78# &f%bankplus_banktop_name_8%&8: &a%bankplus_banktop_money_8%"
   - "&79# &f%bankplus_banktop_name_9%&8: &a%bankplus_banktop_money_9%"
   - "&710# &f%bankplus_banktop_name_10%&8: &a%bankplus_banktop_money_10%"
-  - "    &7&o(( The BankTop will update every 10m ))"
+  - "    &7&o(( The БанкTop will update every 10m ))"
 
 # You can use color codes.
 Placeholders:
-  Money:
+  Деньги:
     Thousands: "K"
     Millions: "M"
     Billions: "B"
@@ -403,9 +403,9 @@ Placeholders:
     Separator: ", "
     Final-Separator: " and "
 
-  Upgrades:
+  Улучшениеs:
     Max-Level: "Maxed"
     No-Required-Items: "None"
 
-  BankTop:
-    Player-Not-Found: "Player not found."
+  БанкTop:
+    Игрок-Not-Found: "Игрок not found."

@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: FishingMissions
+mission-file: FishingМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -18,7 +18,7 @@ reset-after-finish: true
 rewards:
   commands:
     - 'eco give %player% 2500'
-    - 'is admin msg %player% &e&lFisherman | &7Successfully finished the mission Fisherman I!'
+    - 'is admin msg %player% &e&lFisherman | &7Успехfully finished the mission Fisherman I!'
     - 'is admin msg %player% &e&lFisherman | &7I heard you can find other items as well...'
     - 'is admin msg %player% &e&lFisherman | &7&oFor more information about the next mission, checkout /is missions'
 
@@ -86,7 +86,7 @@ icons:
       - '&6Tropical Fish Caught: &71/1'
       - '&6Pufferfish Caught: &71/1'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:

@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: BlocksMissions
+mission-file: BlocksМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -21,9 +21,9 @@ only-natural-blocks: true
 rewards:
   commands:
     - 'eco give %player% 250000'
-    - 'is admin msg %player% &e&lMiner | &7Successfully finished the mission Miner V!'
+    - 'is admin msg %player% &e&lMiner | &7Успехfully finished the mission Miner V!'
     - 'is admin msg %player% &e&lMiner | &7Diamonds... diamonds... diamonds!'
-    - 'is admin msg %player% &e&lMiner | &7&oYou are now a professional Miner, congratz!'
+    - 'is admin msg %player% &e&lMiner | &7&oВы now a professional Miner, congratz!'
 
 # List of required missions that must be completed before completing this one.
 required-missions:
@@ -72,7 +72,7 @@ icons:
       - ''
       - '&6Diamond Ore Mined: &732/32'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:

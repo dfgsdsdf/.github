@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Permissions &m     '
+title: '&fꐮꀨ ꐲꐰꐮꐭꐬ&{HEX:5e5e5e}Остров Panel > &{HEX:3b3b3b}Права &m     '
 
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
@@ -31,15 +31,15 @@ items:
   'p':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Previous Page'
+    name: '&{HEX:cccccc}Назад Страница'
   'n':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Next Page'
+    name: '&{HEX:cccccc}Далее Страница'
   'h':
     type: BARRIER
     customModel: 1
-    name: '&{HEX:cccccc}Go Back'
+    name: '&{HEX:cccccc}Go Назад'
 
 commands:
   'h':
@@ -235,19 +235,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: SKELETON_SKULL
-      name: '&fBan Member'
+      name: '&fBan Участник'
       lore:
         - '&{HEX:cccccc}Access to ban members from the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: SKELETON_SKULL
-      name: '&fBan Member'
+      name: '&fBan Участник'
       lore:
         - '&{HEX:cccccc}Access to ban members from the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: SKELETON_SKULL
-      name: '&fBan Member'
+      name: '&fBan Участник'
       lore:
         - '&{HEX:cccccc}Access to ban members from the island.'
         - ''
@@ -515,19 +515,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: BARRIER
-      name: '&fLock Island'
+      name: '&fLock Остров'
       lore:
         - '&{HEX:cccccc}Access to lock the island from public.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: BARRIER
-      name: '&fLock Island'
+      name: '&fLock Остров'
       lore:
         - '&{HEX:cccccc}Access to lock the island from public.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: BARRIER
-      name: '&fLock Island'
+      name: '&fLock Остров'
       lore:
         - '&{HEX:cccccc}Access to lock the island from public.'
         - ''
@@ -550,19 +550,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: GOLDEN_APPLE
-      name: '&fCoop Member'
+      name: '&fCoop Участник'
       lore:
         - '&{HEX:cccccc}Access to add a player as a co-op member.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: GOLDEN_APPLE
-      name: '&fCoop Member'
+      name: '&fCoop Участник'
       lore:
         - '&{HEX:cccccc}Access to add a player as a co-op member.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: GOLDEN_APPLE
-      name: '&fCoop Member'
+      name: '&fCoop Участник'
       lore:
         - '&{HEX:cccccc}Access to add a player as a co-op member.'
         - ''
@@ -585,19 +585,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: ENDER_PEARL
-      name: '&fDelete Warp'
+      name: '&fDelete Варп'
       lore:
         - '&{HEX:cccccc}Access to delete island warps.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: ENDER_PEARL
-      name: '&fDelete Warp'
+      name: '&fDelete Варп'
       lore:
         - '&{HEX:cccccc}Access to delete island warps.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: ENDER_PEARL
-      name: '&fDelete Warp'
+      name: '&fDelete Варп'
       lore:
         - '&{HEX:cccccc}Access to delete island warps.'
         - ''
@@ -620,19 +620,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: IRON_INGOT
-      name: '&fDemote Members'
+      name: '&fDemote Участникs'
       lore:
         - '&{HEX:cccccc}Access to demote members inside the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: IRON_INGOT
-      name: '&fDemote Members'
+      name: '&fDemote Участникs'
       lore:
         - '&{HEX:cccccc}Access to demote members inside the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: IRON_INGOT
-      name: '&fDemote Members'
+      name: '&fDemote Участникs'
       lore:
         - '&{HEX:cccccc}Access to demote members inside the island.'
         - ''
@@ -655,19 +655,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: MAP
-      name: '&fDeposit Money'
+      name: '&fДепозит Деньги'
       lore:
         - '&{HEX:cccccc}Access to deposit money into the island''s bank.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: MAP
-      name: '&fDeposit Money'
+      name: '&fДепозит Деньги'
       lore:
         - '&{HEX:cccccc}Access to deposit money into the island''s bank.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: MAP
-      name: '&fDeposit Money'
+      name: '&fДепозит Деньги'
       lore:
         - '&{HEX:cccccc}Access to deposit money into the island''s bank.'
         - ''
@@ -690,19 +690,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: TNT
-      name: '&fDisband Island'
+      name: '&fDisband Остров'
       lore:
         - '&{HEX:cccccc}Access to disband the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: TNT
-      name: '&fDisband Island'
+      name: '&fDisband Остров'
       lore:
         - '&{HEX:cccccc}Access to disband the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: TNT
-      name: '&fDisband Island'
+      name: '&fDisband Остров'
       lore:
         - '&{HEX:cccccc}Access to disband the island.'
         - ''
@@ -865,19 +865,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: DISPENSER
-      name: '&fExpel Players'
+      name: '&fExpel Игрокs'
       lore:
         - '&{HEX:cccccc}Access to expel players from the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: DISPENSER
-      name: '&fExpel Players'
+      name: '&fExpel Игрокs'
       lore:
         - '&{HEX:cccccc}Access to expel players from the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: DISPENSER
-      name: '&fExpel Players'
+      name: '&fExpel Игрокs'
       lore:
         - '&{HEX:cccccc}Access to expel players from the island.'
         - ''
@@ -1146,19 +1146,19 @@ permissions:
     permission-enabled:
       type: PLAYER_HEAD
       data: 3
-      name: '&fInvite Member'
+      name: '&fInvite Участник'
       lore:
         - '&{HEX:cccccc}Access to invite new members to the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: PLAYER_HEAD
-      name: '&fInvite Member'
+      name: '&fInvite Участник'
       lore:
         - '&{HEX:cccccc}Access to invite new members to the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: PLAYER_HEAD
-      name: '&fInvite Member'
+      name: '&fInvite Участник'
       lore:
         - '&{HEX:cccccc}Access to invite new members to the island.'
         - ''
@@ -1251,19 +1251,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: SKELETON_SKULL
-      name: '&fKick Member'
+      name: '&fKick Участник'
       lore:
         - '&{HEX:cccccc}Access to kick members from the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: SKELETON_SKULL
-      name: '&fKick Member'
+      name: '&fKick Участник'
       lore:
         - '&{HEX:cccccc}Access to kick members from the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: SKELETON_SKULL
-      name: '&fKick Member'
+      name: '&fKick Участник'
       lore:
         - '&{HEX:cccccc}Access to kick members from the island.'
         - ''
@@ -1426,19 +1426,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: CHEST_MINECART
-      name: '&fMinecart Open'
+      name: '&fMinecart Открыть'
       lore:
         - '&{HEX:cccccc}Access to open minecarts inside the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: CHEST_MINECART
-      name: '&fMinecart Open'
+      name: '&fMinecart Открыть'
       lore:
         - '&{HEX:cccccc}Access to open minecarts inside the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: CHEST_MINECART
-      name: '&fMinecart Open'
+      name: '&fMinecart Открыть'
       lore:
         - '&{HEX:cccccc}Access to open minecarts inside the island.'
         - ''
@@ -1566,19 +1566,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: REDSTONE_TORCH
-      name: '&fOpen Island'
+      name: '&fОткрыть Остров'
       lore:
         - '&{HEX:cccccc}Access to open the island to the public.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: REDSTONE_TORCH
-      name: '&fOpen Island'
+      name: '&fОткрыть Остров'
       lore:
         - '&{HEX:cccccc}Access to open the island to the public.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: REDSTONE_TORCH
-      name: '&fOpen Island'
+      name: '&fОткрыть Остров'
       lore:
         - '&{HEX:cccccc}Access to open the island to the public.'
         - ''
@@ -1811,19 +1811,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: DIAMOND
-      name: '&fPromote Members'
+      name: '&fPromote Участникs'
       lore:
         - '&{HEX:cccccc}Access to promote members inside the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: DIAMOND
-      name: '&fPromote Members'
+      name: '&fPromote Участникs'
       lore:
         - '&{HEX:cccccc}Access to promote members inside the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: DIAMOND
-      name: '&fPromote Members'
+      name: '&fPromote Участникs'
       lore:
         - '&{HEX:cccccc}Access to promote members inside the island.'
         - ''
@@ -1846,19 +1846,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: GOLD_INGOT
-      name: '&fUpgrades Rankup'
+      name: '&fУлучшениеs Rankup'
       lore:
         - '&{HEX:cccccc}Access to rankup island''s upgrades.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: GOLD_INGOT
-      name: '&fUpgrades Rankup'
+      name: '&fУлучшениеs Rankup'
       lore:
         - '&{HEX:cccccc}Access to rankup island''s upgrades.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: GOLD_INGOT
-      name: '&fUpgrades Rankup'
+      name: '&fУлучшениеs Rankup'
       lore:
         - '&{HEX:cccccc}Access to rankup island''s upgrades.'
         - ''
@@ -2126,19 +2126,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: LEVER
-      name: '&fSet Settings'
+      name: '&fSet Настройки'
       lore:
         - '&{HEX:cccccc}Access to change settings for islands.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: LEVER
-      name: '&fSet Settings'
+      name: '&fSet Настройки'
       lore:
         - '&{HEX:cccccc}Access to change settings for islands.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: LEVER
-      name: '&fSet Settings'
+      name: '&fSet Настройки'
       lore:
         - '&{HEX:cccccc}Access to change settings for islands.'
         - ''
@@ -2161,19 +2161,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: ENDER_EYE
-      name: '&fSet Warp'
+      name: '&fSet Варп'
       lore:
         - '&{HEX:cccccc}Access to set new warps for the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: ENDER_EYE
-      name: '&fSet Warp'
+      name: '&fSet Варп'
       lore:
         - '&{HEX:cccccc}Access to set new warps for the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: ENDER_EYE
-      name: '&fSet Warp'
+      name: '&fSet Варп'
       lore:
         - '&{HEX:cccccc}Access to set new warps for the island.'
         - ''
@@ -2196,19 +2196,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: GOLDEN_APPLE
-      name: '&fUncoop Member'
+      name: '&fUncoop Участник'
       lore:
         - '&{HEX:cccccc}Access to remove co-op members from the island.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: GOLDEN_APPLE
-      name: '&fUncoop Member'
+      name: '&fUncoop Участник'
       lore:
         - '&{HEX:cccccc}Access to remove co-op members from the island.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: GOLDEN_APPLE
-      name: '&fUncoop Member'
+      name: '&fUncoop Участник'
       lore:
         - '&{HEX:cccccc}Access to remove co-op members from the island.'
         - ''
@@ -2444,19 +2444,19 @@ permissions:
     display-menu: true
     permission-enabled:
       type: EMERALD
-      name: '&fWithdraw Money'
+      name: '&fСнятие Деньги'
       lore:
         - '&{HEX:cccccc}Access to withdraw money from the island''s bank.'
         - '&{HEX:cccccc}Currently &aENABLED&{HEX:cccccc}.'
     permission-disabled:
       type: EMERALD
-      name: '&fWithdraw Money'
+      name: '&fСнятие Деньги'
       lore:
         - '&{HEX:cccccc}Access to withdraw money from the island''s bank.'
         - '&{HEX:cccccc}Currently &cDISABLED&{HEX:cccccc}.'
     role-permission:
       type: EMERALD
-      name: '&fWithdraw Money'
+      name: '&fСнятие Деньги'
       lore:
         - '&{HEX:cccccc}Access to withdraw money from the island''s bank.'
         - ''

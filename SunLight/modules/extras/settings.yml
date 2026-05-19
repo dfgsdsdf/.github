@@ -1,7 +1,7 @@
-KeepInventory:
-  # Sets whether or not Keep Inventory feature is enabled.
-  Enabled: true
-  # Players from the following permission groups will keep their items on death.
+KeepИнвентарь:
+  # Sets whether or not Keep Инвентарь feature is enabled.
+  Включено: true
+  # Игрокs from the following permission groups will keep their items on death.
   Items_Ranks:
   - 'default'
   - 'vip'
@@ -11,18 +11,18 @@ KeepInventory:
   - 'mod'
   - 'admin'
   - 'owner'
-  # Players from the following permission groups will keep their XP on death.
+  # Игрокs from the following permission groups will keep their XP on death.
   Exp_Ranks:
   - '*'
-JoinCommands:
-  # Sets whether or not Join Commands feature is enabled.
-  Enabled: false
-  # List of commands to execute when player joined server for the first time.
+JoinКомандаs:
+  # Sets whether or not Join Командаs feature is enabled.
+  Включено: false
+  # List of commands to execute when player вошёл server for the first time.
   # Use 'player:' prefix to run command by a player.
   # Use '%player_name%' for a player name.
   # You can use PlaceholderAPI here.
   FirstJoin:
-  - 'broadcast Welcome new player: %player_name%!'
+  - 'broadcast Добро пожаловать new player: %player_name%!'
   # List of commands to execute when player joins the server and has played before.
   # Use 'player:' prefix to run command by a player.
   # Use '%player_name%' for a player name.
@@ -30,19 +30,19 @@ JoinCommands:
   Default: []
 Anvil_Colors:
   # Sets whether or not Anvil Colors feature is enabled.
-  # Players with 'sunlight.extras.anvils.color' permission will be able to use colors on anvils.
-  Enabled: true
+  # Игрокs with 'sunlight.extras.anvils.color' permission will be able to use colors on anvils.
+  Включено: true
 Sign_Colors:
   # Sets whether or not Sign Colors feature is enabled.
-  # Players with 'sunlight.extras.signs.color' permission will be able to use colors on signs.
-  Enabled: true
+  # Игрокs with 'sunlight.extras.signs.color' permission will be able to use colors on signs.
+  Включено: true
 Physic_Explosions:
   # Sets whether or not Physic Explosions feature is enabled.
   # This will make blocks flying away on explosions.
-  Enabled: false
+  Включено: false
 Chairs:
   # Sets whether or not Chairs feature is enabled.
-  Enabled: true
+  Включено: true
   # Sets whether or not Stair blocks can be used as chairs.
   Allow_Stairs: true
   # Sets whether or not Slab blocks can be used as chairs.
@@ -53,7 +53,7 @@ Chairs:
   Allowed_Blocks: []
 ChestSort:
   # Sets whether or not Chest Sort feature is enabled.
-  Enabled: true
+  Включено: true
   # List of sorting order & rules.
   # Available values: IS_BLOCK, IS_ITEM, MATERIAL, AMOUNT, NAME
   Rules:

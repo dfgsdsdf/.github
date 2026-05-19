@@ -1,12 +1,12 @@
-Settings:
+Настройки:
   # GUI title.
   Title: <black>Kit Preivew</black>
   # GUI size. Must be multiply of 9.
-  # Useful for 'CHEST' Inventory Type only.
+  # Useful for 'CHEST' Инвентарь Type only.
   Size: 54
   # GUI type.
-  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
-  Inventory_Type: CHEST
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/ИнвентарьType.html
+  Инвентарь_Type: CHEST
   # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
   Auto_Refresh: 0
 Item_Slots: 9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44
@@ -21,10 +21,10 @@ Extra_Slots: '6'
 # > Item: Item to display. Please check: https://github.com/nulli0n/nightcore-spigot/wiki/ItemStack-Options
 # > Priority: Button priority. Better values will override other item(s) in the same slot(s).
 # > Slots: Button slots. From [0] to [Size - 1]. Split with commas.
-# > Click_Commands: Execute custom commands on click. PlaceholderAPI available here.
+# > Click_Командаs: Execute custom commands on click. PlaceholderAPI available here.
 #     Available click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4, NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9
 #     Use prefix 'player:' to run command by a player.
-#     Click_Commands:
+#     Click_Командаs:
 #       LEFT:
 #       - say Hello
 #       - give %player_name% diamond 1

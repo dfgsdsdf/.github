@@ -3,7 +3,7 @@
 # Plugin Version 3.12.0
 # Author: 氿雾
 
-Command:
+Команда:
   Argument:
     Name:
       Slot: 槽位
@@ -53,12 +53,12 @@ Command:
     Desc: 广播一条消息
   Condense:
     Desc: 将物品压缩成方块
-    Error:
+    Ошибка:
       Nothing:
         - <sound:"entity_villager_no">
         - "&7没有可压缩成方块的物品"
       NotEnough: "&c没有足够多的物品将 &b%source% &c压缩成为 &b%result%。&c至少需要 &e%amount% &c个物品"
-    Done: "&7将 &e%total% &7个 &b%source% &7压缩成 &e%amount% &7个 &b%result%"
+    Готово: "&7将 &e%total% &7个 &b%source% &7压缩成 &e%amount% &7个 &b%result%"
   Disposal:
     Desc: 打开处理菜单
     Target: "&7为玩家 &a%player_display_name% &7打开处理菜单"
@@ -72,7 +72,7 @@ Command:
     - "&7你已经前往 &b%world%"
   Enchant:
     Desc: 在一个槽位中对物品进行 添加/删除 附魔
-    Error:
+    Ошибка:
       NoItem: "&c没有可附魔的物品！"
     Enchanted:
       Target:
@@ -157,7 +157,7 @@ Command:
   Enderchest:
     Clear:
       Desc: 清空末影箱
-      Done:
+      Готово:
         Target:
           - <sound:"block_fire_extinguish">
           - "&7已清空 &a%player_display_name% &7的末影箱！"
@@ -166,7 +166,7 @@ Command:
           - "&7你的末影箱已被清空！"
     Copy:
       Desc: 复制玩家的末影箱
-      Done:
+      Готово:
         Executor:
           - <sound:"item_armor_equip_leather">
           - "&7已复制 &a%player_display_name% &7的末影箱"
@@ -175,13 +175,13 @@ Command:
           - "&7已将 &a%source% &7的末影箱内容复制到 &a%target% &7的末影箱中"
     Fill:
       Desc: 使用指定物品填充末影箱
-      Done:
+      Готово:
         Executor:
           - <sound:"entity_item_pickup">
           - "&7已使用 &b%item% &7填充 &a%player_display_name% &7的末影箱"
-    Open:
+    Открыть:
       Desc: 打开末影箱
-      Done:
+      Готово:
         Executor:
           - <sound:"block_ender_chest_open">
           - "&7已打开 &a%player_display_name% &7的末影箱"
@@ -195,7 +195,7 @@ Command:
         - "&7已修复 &a%player_display_name% &7的末影箱中所有物品！"
   Hat:
     Desc: 将物品戴在头上
-    Done:
+    Готово:
       - <sound:"item_armor_equip_leather">
       - "&7享受你的新帽子吧！"
   Fly:
@@ -204,7 +204,7 @@ Command:
     Notify: "&7飞行模式 &b%state%"
   FlySpeed:
     Desc: 更改飞行速度
-    Done:
+    Готово:
       Notify: "&7你的飞行速度已设置为 &e%amount%"
       Target: "&7为 &a%player_display_name% &7的飞行速度设置为 &e%amount%"
   Fire:
@@ -276,27 +276,27 @@ Command:
     Restore:
       Desc: 恢复生命值
       Info: "&7玩家 &a%player_display_name% &7的生命值已被恢复"
-      Notfiy: "&7You have been healed!"
+      Notfiy: "&7Вы been healed!"
   Ignore:
     Add:
       Desc: 将玩家加入黑名单
-      Done:
+      Готово:
         - "&e玩家已被屏蔽！"
         - "&7玩家 &a%player_display_name% &7已被加入黑名单"
         - "&7你可以通过 &e/ignorelist &7改变设置或解除屏蔽"
-      Error:
+      Ошибка:
         AlreadyIn: "&7玩家已经被屏蔽了"
     List:
       Desc: 打开玩家黑名单
     Remove:
       Desc: 将玩家从黑名单删除
-      Done: "&7玩家 &a%player_name% &7已被解除屏蔽"
-      Error:
-        NotIn: "&7Player is not blocked."
-  Inventory:
+      Готово: "&7玩家 &a%player_name% &7已被解除屏蔽"
+      Ошибка:
+        NotIn: "&7Игрок is not blocked."
+  Инвентарь:
     Clear:
       Desc: 清空物品栏
-      Done:
+      Готово:
         Target:
           - <sound:"block_fire_extinguish">
           - "&7已清空 &a%player_display_name% &7的物品栏！"
@@ -305,7 +305,7 @@ Command:
           - "&7你的物品栏已被清空！"
     Copy:
       Desc: 复制玩家的物品栏
-      Done:
+      Готово:
         Notify:
           - <sound:"item_armor_equip_leather">
           - "&7已复制 &a%player_display_name% &7的物品栏"
@@ -314,12 +314,12 @@ Command:
           - "&7已将 &a%source% &7的物品栏复制到 &a%target% &7的物品栏中"
     Fill:
       Desc: 使用指定物品填充物品栏
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - "&7已使用 &b%item% &7填充 &a%player_display_name% &7的物品栏"
-    Open:
+    Открыть:
       Desc: 打开玩家的物品栏
-      Done:
+      Готово:
         - <sound:"block_chest_open">
         - "&7已打开 &a%player_display_name% &7的物品栏"
     Repair:
@@ -331,19 +331,19 @@ Command:
         - <sound:"block_anvil_use">
         - "&7已修复 &a%player_display_name% &7的物品栏中所有物品！"
   Item:
-    Amount:
+    Количество:
       Desc: 更改物品数量
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - "&7将 &b%item% &7的堆叠数量设为 &e%amount% &7个"
     Damage:
       Desc: 更改物品的耐久度
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - "&7将 &b%item% &7的耐久度设为 &e%amount%"
     Enchant:
       Desc: 对手持物品 添加/删除 附魔
-      Done:
+      Готово:
         Enchanted:
           - <sound:"block_enchantment_table_use">
           - "&b%item% &7已附魔 &b%name% %level%!"
@@ -352,12 +352,12 @@ Command:
           - "&7附魔 &b%name% &7已从 &b%item% &7上删除！"
     Get:
       Desc: 获取指定的物品堆叠
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - "&7你获得了 &e%amount% &7个 &b%type%！"
     Give:
       Desc: 给玩家指定的物品堆叠
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - "&7已向 &a%player_display_name% &7添加 &b%type% &7个 &e%amount%！"
       Notify:
@@ -365,10 +365,10 @@ Command:
         - "&b%type% &7个 &e%amount% &7已添加到你的物品栏！"
     Take:
       Desc: 从玩家处拿走物品
-      Done:
+      Готово:
         - <sound:"entity_glow_item_frame_remove_item">
         - "&7从 &a%player_display_name% &7拿走了 &b%type% &7个 &e%amount%！"
-      Error:
+      Ошибка:
         NotEnough:
           - <sound:"entity_villager_no">
           - "&7无法拿走物品。玩家没有足够的 &b%type% &7(&e%amount% &8/ &e%total%&7)！"
@@ -378,47 +378,47 @@ Command:
     Lore:
       Add:
         Desc: 添加描述
-        Done:
+        Готово:
           - <sound:"block_anvil_use">
           - "&7描述已添加！"
       Remove:
         Desc: 删除描述
-        Done:
+        Готово:
           - <sound:"block_anvil_use">
           - "&7描述已删除！"
       Clear:
         Desc: 清空描述
-        Done:
+        Готово:
           - <sound:"block_anvil_use">
           - "&7描述已清空！"
     Model:
       Desc: 更改物品模型数据
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - "&7将 &e%amount% &7设为 &b%item% &7的自定义模型数据！"
     Name:
       Desc: 更改物品显示名称
-      Done:
+      Готово:
         Changed:
           - <sound:"block_anvil_use">
           - "&7物品已重命名！"
     Potion:
       Add:
         Desc: 向药水添加效果
-        Done: "&7药水效果已添加！"
+        Готово: "&7药水效果已添加！"
     Repair:
       Desc: 修复物品
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - "&7物品 &b%item% &7已修复！"
     Spawn:
       Desc: 在世界中生成物品
-      Done:
+      Готово:
         - <sound:"entity_item_pickup">
         - "&e%amount% &7个 &b%type% &7已在 &b%location_world% &e%location_x%, %location_y%, %location_z% &7位置生成！"
     Unbreakable:
       Desc: 切换不可破坏状态
-      Done:
+      Готово:
         - <sound:"block_anvil_use">
         - "&7将 &b%item% &7的不可破坏状态设为: &b%state%"
   Loom:
@@ -430,20 +430,20 @@ Command:
   Mob:
     Kill:
       Desc: 杀死指定生物
-      Done:
+      Готово:
         - <sound:"entity_zombie_death">
         - "&7在 &b%world% &7内 &e%radius% &7方块范围内杀死了 &e%amount% &7个 &b%type%"
     Clear:
       Desc: 杀死所有生物
-      Done:
+      Готово:
         - <sound:"entity_zombie_death">
         - "&7在 &b%world% &7内 &e%radius% &7方块范围内杀死了 &e%amount% &7个生物"
     Spawn:
       Desc: 生成生物
-      Done: "&7创建了 &e%amount% &7个 &b%type%"
+      Готово: "&7创建了 &e%amount% &7个 &b%type%"
   Near:
     Desc: 显示最近的玩家
-    Error:
+    Ошибка:
       Nothing: "&7在 &e%radius% &7方块半径内没有玩家"
   Nick:
     Clear:
@@ -456,52 +456,52 @@ Command:
       Notify: "&7你获得了新的自定义名称: &b%name%"
     Change:
       Desc: 设置自定义名称
-      Done: "&7你已将自定义名称更改为 &b%name%"
-    Error:
+      Готово: "&7你已将自定义名称更改为 &b%name%"
+    Ошибка:
       BadWords: "&c该名称不允许使用"
       Regex: "&c名称包含禁止的字符"
       TooLong: "&c名称不能超过 &e%amount% &c个字符"
       TooShort: "&c名称不能短于 &e%amount% &c个字符"
-  PlayerInfo:
+  ИгрокInfo:
     Desc: 显示玩家信息
   Skull:
     Custom:
       Desc: 创建自定义头部
-      Done: "&7创建了自定义头部"
-    Player:
+      Готово: "&7创建了自定义头部"
+    Игрок:
       Desc: 获取玩家头部
-      Done: "&7你获得了 &a%player_name% &7的头部"
+      Готово: "&7你获得了 &a%player_name% &7的头部"
   Staff:
     Desc: 显示在线工作人员
     Empty: "&c没有在线工作人员"
   Spawner:
     Desc: 更改刷怪笼类型
-    Done: "&7刷怪笼类型已更改为 &b%type%"
-    Error:
+    Готово: "&7刷怪笼类型已更改为 &b%type%"
+    Ошибка:
       Type: "&c此类型不能设置为刷怪笼"
       Block: "&c你必须查看刷怪笼方块！"
   Speed:
     Desc: 更改行走速度
-    Done:
+    Готово:
       Notify: "&7你的行走速度已设为 &e%amount%"
       Target: "&7为 &a%player_display_name% &7设置行走速度至 &e%amount%"
   Sudo:
-    Command:
+    Команда:
       Desc: 强制玩家执行一个命令
     Chat:
       Desc: 强制玩家发送聊天消息
-    Done:
-      Command: "&7强制 &a%player_display_name% &7执行: &d/%command%"
+    Готово:
+      Команда: "&7强制 &a%player_display_name% &7执行: &d/%command%"
       Chat: "&7强制 &a%player_display_name% &7说: &b%command%"
   Suicide:
     Desc: 自杀
-    Done:
+    Готово:
       - <noprefix>
       - "&a%player_display_name% &7自杀了"
   Teleport:
     Location:
       Desc: 传送到坐标
-      Done:
+      Готово:
         Target:
           - <sound:"entity_enderman_teleport">
           - "&7玩家 &a%player_display_name% &7传送到了 &b%location_world% &e%location_x%, %location_y%, %location_z%"
@@ -518,7 +518,7 @@ Command:
         - "&7你被 &a%player_display_name% &7召唤"
     To:
       Desc: 传送到玩家
-      Done:
+      Готово:
         - <sound:"entity_enderman_teleport">
         - "&7传送至 &a%player_display_name%..."
     Send:
@@ -549,7 +549,7 @@ Command:
         - ""
     Set:
       Desc: 设置世界时间
-      Done: "&7在世界 &b%world% &7时间已设置为 &e%time% &7(&e%total% &7游戏刻)"
+      Готово: "&7在世界 &b%world% &7时间已设置为 &e%time% &7(&e%total% &7游戏刻)"
     Personal:
       Set:
         Desc: 设置个人时间
@@ -586,7 +586,7 @@ Command:
       - <output:"action_bar"><sound:"entity_enderman_teleport">
       - "&7你已经前往了 &e%world%"
 Generic:
-  Command:
+  Команда:
     Cooldown:
       Default:
         - <noprefix>
@@ -594,7 +594,7 @@ Generic:
       OneTime:
         - <noprefix>
         - "&c此命令是一次性的，你已经使用过它了"
-Error:
+Ошибка:
   ItemNotAPotion: "&c你必须手持药水！"
   EmptyHand:
     - <sound:"block_anvil_place">
@@ -602,7 +602,7 @@ Error:
   ItemNotDamageable:
     - <sound:"block_anvil_place">
     - "&c物品 &b%item% &c没有耐久度"
-  Command:
+  Команда:
     Argument:
       InvalidSlot: "&e%value% &c不是一个有效的装备槽位！"
       InvalidType: "&b%value% &c不是一个有效类型！"
@@ -630,7 +630,7 @@ WeatherType:
   STORM: 风暴
   THUNDER: 雷暴
 Kits:
-  Command:
+  Команда:
     Kits:
       Editor:
         Desc: 打开礼包编辑器
@@ -639,20 +639,20 @@ Kits:
         Others: "&7为 &a%player_display_name% &7打开了 &b%kit_name% &7礼包预览"
       Give:
         Desc: 发放礼包
-        Done: "&7已向 &a%player_display_name% &7发放了 &b%kit_name% &7礼包！"
+        Готово: "&7已向 &a%player_display_name% &7发放了 &b%kit_name% &7礼包！"
         Notify: "&7你获得了 &b%kit_name% &7礼包"
       List:
         Desc: 打开礼包 GUI
         Others: "&7为 &a%player_display_name% &7打开了礼包 GUI"
       ResetCooldown:
         Desc: 重置玩家的礼包冷却时间
-        Done: "&7已重置 &a%player_name% &7的 &b%kit_name% &7礼包冷却时间"
+        Готово: "&7已重置 &a%player_name% &7的 &b%kit_name% &7礼包冷却时间"
         Notify: "&7你的 &b%kit_name% &7礼包冷却时间已被重置！"
       SetCooldown:
         Desc: 设置玩家的礼包冷却时间
-        Done: "&7已为 &a%player_name% &7设置 &b%kit_name% &7礼包冷却时间为 &a%amount%"
+        Готово: "&7已为 &a%player_name% &7设置 &b%kit_name% &7礼包冷却时间为 &a%amount%"
         Notify: "&7你的 &b%kit_name% &7礼包冷却时间已被设置为 &a%amount%！"
-    Error:
+    Ошибка:
       Argument:
         InvalidKit: "&b%value% &c不是一个有效的礼包！"
   Kit:
@@ -660,7 +660,7 @@ Kits:
       - <output:"titles:20:60:20"><sound:"item_armor_equip_leather">
       - "&a礼包已接收！"
       - "&7你获得了 &b%kit_name% &7礼包！"
-    Error:
+    Ошибка:
       NoPermission: "&c你没有权限使用这个礼包！"
       NotEnoughFunds: "&c你买不起这个礼包！你需要 &6%kit_cost_money% &c金币"
       Cooldown:
@@ -669,22 +669,22 @@ Kits:
   Editor:
     Title:
       List: "&8礼包编辑器"
-      Settings: "&8礼包设置"
+      Настройки: "&8礼包设置"
       Content: "&8礼包内容"
     Enter:
       Id: "&7输入 &a[礼包标识符]"
-      Command: "&7输入 &a[命令]"
+      Команда: "&7输入 &a[命令]"
       Cost: "&7输入 &a[金钱成本]"
       Description: "&7输入 &a[描述]"
       Priority: "&7输入 &a[优先级]"
-    Error:
+    Ошибка:
       AlreadyExists: "&7礼包已存在！"
 Chat:
   Commant:
     Argument:
       Name:
         Channel: 频道
-  Command:
+  Команда:
     ShortChannel:
       Desc: 切换频道或发送消息
     Channel:
@@ -706,7 +706,7 @@ Chat:
         Target: "&7为 &a%player_name% &7设置私人消息为 &b%state%"
     ClearChat:
       Desc: 清除聊天记录
-      Done:
+      Готово:
         - <noprefix>
         - "&7聊天记录已被 &a%name% &7清除"
     Me:
@@ -716,15 +716,15 @@ Chat:
     Spy:
       Mode:
         Desc: 切换 %type% 监听模式
-        Done:
+        Готово:
           Others: "&7为 &a%player_display_name% &7设置 &e%type% &7监听模式为 &b%state%"
           Notify: "&e%type% &7监听模式: &b%state%"
       Logger:
         Desc: 切换监听日志
-        Done: "&7为 &a%player_display_name% 设置 &e%type% 日志为 &b%state%"
+        Готово: "&7为 &a%player_display_name% 设置 &e%type% 日志为 &b%state%"
     Reply:
       Desc: 快速回复最近的私信
-      Error:
+      Ошибка:
         Empty:
           - <noprefix>
           - "&c你未收到任何私人消息"
@@ -745,16 +745,16 @@ Chat:
           - <noprefix>
           - "&c你必须等待 &a%time% &c才能使用另一条命令"
     Mention:
-      Error:
+      Ошибка:
         Cooldown:
           - <noprefix>
           - "&c你可以再过 &a%time% &c提及 &a%name%"
   Channel:
     Join:
-      Success:
+      Успех:
         - <noprefix>
         - "&7你已加入 &b%channel_name% &7聊天频道"
-      Error:
+      Ошибка:
         NoPermission:
           - <noprefix>
           - "&c你没有权限加入这个频道"
@@ -762,15 +762,15 @@ Chat:
           - <noprefix>
           - "&c你已加入这个频道！"
     Leave:
-      Success:
+      Успех:
         - <noprefix>
         - "&7你已离开 &b%channel_name% &7聊天频道"
-      Error:
+      Ошибка:
         NotIn:
           - <noprefix>
           - "&c你不在这个频道里！"
     Set:
-      Success:
+      Успех:
         - <noprefix>
         - "&7将 &b%channel_name% &7设置为默认聊天频道"
   Mentions:
@@ -779,11 +779,11 @@ Chat:
       - "&a被提及！"
       - "&a%player_display_name% &7在聊天中提及了你"
   PrivateMessage:
-    Error:
-      Disabled: "&a%player_display_name% &c不接受消息"
+    Ошибка:
+      Отключено: "&a%player_display_name% &c不接受消息"
       Ignorance: "&a%player_display_name% &c不接受你的消息"
-  Error:
-    Command:
+  Ошибка:
+    Команда:
       Argument:
         InvalidChannel: "&b%value% &c不是一个有效的频道！"
   SpyType:
@@ -791,7 +791,7 @@ Chat:
     COMMAND: 命令
     CHAT: 聊天
 PTP:
-  Command:
+  Команда:
     Teleport:
       Invite:
         Desc: 请求玩家被召唤
@@ -822,7 +822,7 @@ PTP:
       Notify: "&7传送请求: &b%state%"
   Request:
     Accept:
-      Done:
+      Готово:
         - <sound:"entity_enderman_teleport">
         - "&7你接受了 &a%player_display_name% &7的传送请求！"
       Notify:
@@ -832,7 +832,7 @@ PTP:
         - <sound:"entity_villager_no">
         - "&7你没有任何活跃的请求"
     Decline:
-      Done:
+      Готово:
         - <sound:"entity_villager_no">
         - "&c你拒绝了 &a%player_display_name% &c的传送请求"
       Notify:
@@ -842,11 +842,11 @@ PTP:
         - <sound:"entity_villager_no">
         - "&7你没有任何活跃的请求"
     Send:
-      Error:
+      Ошибка:
         Cooldown:
           - <sound:"entity_villager_no">
           - "&7你可以再过 &a%time% &7后发送另一个请求"
-        Disabled:
+        Отключено:
           - <sound:"entity_villager_no">
           - "&c你不能向 &a%player_name% &c发送传送请求"
     Sent:
@@ -864,24 +864,24 @@ PTP:
       - <hover:show_text:"&7点击传送至 &a%player_display_name%"><click:run_command:"/tpyes %player_name%">&a[接受]</click></hover>       <hover:show_text:"&7点击拒绝 &a%player_display_name% &7的传送"><click:run_command:"/tpno %player_name%">&c[拒绝]</click></hover>
       - ""
 Scoreboard:
-  Command:
+  Команда:
     Scoreboard:
       Desc: 切换记分板
       Notify: "&7记分板: &b%state%"
       Target: "&7为 &a%player_name% &7设置记分板为 &b%state%"
-BackLocation:
-  Command:
-    Back:
+НазадLocation:
+  Команда:
+    Назад:
       Desc: 返回上一个位置
       Others:
-        Done: "&7玩家 &a%player_display_name% &7传送到上一个位置"
+        Готово: "&7玩家 &a%player_display_name% &7传送到上一个位置"
         Nothing: "&c玩家 &a%player_display_name% &c没有上一个位置"
-    DeathBack:
+    DeathНазад:
       Desc: 返回死亡地点
       Others:
-        Done: "&7玩家 &a%player_display_name% &7传送到死亡地点"
+        Готово: "&7玩家 &a%player_display_name% &7传送到死亡地点"
         Nothing: "&c玩家 &a%player_display_name% &c没有死亡地点"
-  Previous:
+  Назад:
     Teleport:
       Nothing:
         - <sound:"entity_villager_no">
@@ -898,22 +898,22 @@ BackLocation:
         - <output:"action_bar"><sound:"entity_enderman_teleport">
         - "&a返回死亡地点..."
 NerfPhantoms:
-  Command:
+  Команда:
     NoPhantom:
       Desc: 切换反幻翼模式
       Toggle:
         Notify: "&7反幻翼模式: &b%state%"
         Others: "&7为 &a%player_display_name% &7设置反幻翼模式为 &b%state%"
 CustomText:
-  Command:
+  Команда:
     Text:
       Desc: 查看自定义文本
-  Error:
-    Command:
+  Ошибка:
+    Команда:
       Argument:
         InvalidCustomText: "&b%value% &c不是一个有效的自定义文本！"
 GodMode:
-  Command:
+  Команда:
     God:
       Desc: 切换上帝模式
       Notify: "&7上帝模式已设置为 &b%state%"
@@ -922,14 +922,14 @@ GodMode:
       Target: "&7为 &a%player_display_name% &7设置食神模式为 &b%state%"
       Notify: "&7食神模式已设置为 &b%state%"
   Notify:
-    DamageDisabled:
+    DamageОтключено:
       - <output:"action_bar">
       - "&c在上帝模式下你无法造成伤害！"
     BadWorld:
       - "&c上帝模式信息: "
       - "&7在这个世界中上帝模式无效！"
 Bans:
-  Command:
+  Команда:
     History:
       Ban:
         Desc: 查看玩家或 IP 的封禁历史
@@ -945,7 +945,7 @@ Bans:
       Desc: 被警告的玩家列表
     Ban:
       Desc: 封禁玩家
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ""
@@ -965,7 +965,7 @@ Bans:
       Desc: 封禁 IP 地址
     Mute:
       Desc: 禁言玩家
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ""
@@ -989,7 +989,7 @@ Bans:
       Desc: 解除封禁玩家或 IP 地址
     Warn:
       Desc: 警告玩家
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ""
@@ -1008,7 +1008,7 @@ Bans:
     Unwarn:
       Desc: 删除玩家最近的一次警告
     BanIP:
-      Done:
+      Готово:
         Permanent:
           - <noprefix>
           - ""
@@ -1025,7 +1025,7 @@ Bans:
           - "&c| &7时长: &a%punishment_expires_in%"
           - ""
   Punishment:
-    Error:
+    Ошибка:
       RankPriority:
         - <noprefix>
         - ""
@@ -1050,7 +1050,7 @@ Bans:
         - "&c错误！"
         - "&c| &7玩家 &a%punishment_user% &7不能被惩罚！"
         - ""
-      PlayerNotBanned:
+      ИгрокNotBanned:
         - <noprefix>
         - ""
         - "&c错误！"
@@ -1075,7 +1075,7 @@ Bans:
         - "&c| &7玩家 &a%punishment_user% &7没有警告记录！"
         - ""
   Kick:
-    Done:
+    Готово:
       - <noprefix>
       - "&c已踢出 &a%punishment_user%，&7原因: &c%punishment_reason%"
     Broadcast:
@@ -1127,7 +1127,7 @@ Bans:
         - "&c| &7时长: &c%punishment_expires_in%"
         - ""
   UnBan:
-    Done:
+    Готово:
       - <noprefix>
       - ""
       - "&b封禁信息"
@@ -1141,7 +1141,7 @@ Bans:
       - "&a| &7执行者: &a%punishment_punisher%"
       - ""
   UnBanIP:
-    Done:
+    Готово:
       - <noprefix>
       - ""
       - "&b封禁信息"
@@ -1192,7 +1192,7 @@ Bans:
         - "&c| &7时长: &c%punishment_expires_in%"
         - ""
   Unmute:
-    Done:
+    Готово:
       - <noprefix>
       - ""
       - "&b禁言信息"
@@ -1250,7 +1250,7 @@ Bans:
         - "&c| &7时长: &c%punishment_expires_in%"
         - ""
   Unwarn:
-    Done:
+    Готово:
       - <noprefix>
       - ""
       - "&b警告信息"
@@ -1278,26 +1278,26 @@ Bans:
     PUNISHER: 执行者
     REASON: 原因
 Worlds:
-  Command:
+  Команда:
     Worlds:
-      Create:
+      Создать:
         Desc: 创建一个新世界
-        Error: "&c具有相同名称的世界已经存在！"
-        Done: "&7创建了世界数据: &b%world_id%！"
+        Ошибка: "&c具有相同名称的世界已经存在！"
+        Готово: "&7创建了世界数据: &b%world_id%！"
       Delete:
         Desc: 删除一个自定义世界
-        Error: "&c无法删除世界: &b%world_id%！"
-        Done: "&7已删除世界: &b%world_id%！"
+        Ошибка: "&c无法删除世界: &b%world_id%！"
+        Готово: "&7已删除世界: &b%world_id%！"
       Editor:
         Desc: 打开世界编辑器
       Load:
         Desc: 加载一个自定义世界
-        Error: "&c无法加载世界: &b%world_id%！"
-        Done: "&7已加载世界: &b%world_id%！"
+        Ошибка: "&c无法加载世界: &b%world_id%！"
+        Готово: "&7已加载世界: &b%world_id%！"
       Unload:
         Desc: 卸载一个自定义世界
-        Error: "&c无法卸载世界: &b%world_id%！"
-        Done: "&7已卸载世界: &b%world_id%！"
+        Ошибка: "&c无法卸载世界: &b%world_id%！"
+        Готово: "&7已卸载世界: &b%world_id%！"
   AutoWipe:
     MoveOut: "&7由于世界卸载，你已被传送出该区域"
     Notify:
@@ -1305,16 +1305,16 @@ Worlds:
       - ""
       - "&c自动重置警告："
       - "&7世界将在 &a%time% &7后自动重置"
-  Error:
-    CommandBlocked: "&c你不能在这个世界中使用那个命令！"
-    FlyDisabled: "&c在这个世界中不允许飞行！"
-    Command:
+  Ошибка:
+    КомандаBlocked: "&c你不能在这个世界中使用那个命令！"
+    FlyОтключено: "&c在这个世界中不允许飞行！"
+    Команда:
       Argument:
         InvalidWorldData: "&b%value% &c不是一个有效的世界！"
   Editor:
     Title:
       List: "&8世界列表"
-      Settings: "&8世界设置"
+      Настройки: "&8世界设置"
       Generation: "&8世界 加载/生成"
       GameRules: "&8世界游戏规则"
     World:
@@ -1406,48 +1406,48 @@ Worlds:
     NORMAL: 普通
     HARD: 困难
 Spawns:
-  Command:
+  Команда:
     Spawns:
       Delete:
         Desc: 删除一个重生点
-        Done:
+        Готово:
           - <output:"titles:20:60:20">
           - "&c重生点已删除！"
           - "&7你已删除 &b%spawn_name% &7重生点！"
-      Create:
+      Создать:
         Desc: 设置重生点
-        Done:
+        Готово:
           - <output:"titles:20:60:20">
           - "&7重生点设置: &b%spawn_name%"
           - "&7使用 &d/editspawn &7来配置它"
       Teleport:
         Desc: 传送到一个重生点
         Notify: "&7正在将 &a%player_display_name% &7传送到 &b%spawn_name% &7重生点"
-        Done:
+        Готово:
           - <output:"titles:20:60:20">
           - "&b重生点"
           - "&7你已传送到 &b%spawn_name% &7重生点"
       Editor:
         Desc: 打开重生点编辑器
     Spawn:
-      Error:
+      Ошибка:
         NoDefault: "&c你必须指定重生点名称"
   Spawn:
     Teleport:
-      Error:
+      Ошибка:
         World: "&c这个重生点位于当前不可用的世界中"
-    Error:
+    Ошибка:
       Invalid: "&b%value% &c不是一个有效的重生点！"
   Editor:
     Title:
       List: "&8重生点编辑器"
-      Settings: "&8重生点设置"
+      Настройки: "&8重生点设置"
     Enter:
       Name: "&7输入 &a[重生点名称]"
       Priority: "&7输入 &a[优先级]"
       Group: "&7输入 &a[组名]"
 Homes:
-  Command:
+  Команда:
     Argument:
       Name:
         Home: 家园
@@ -1469,15 +1469,15 @@ Homes:
     HomesAdmin:
       Delete:
         Desc: 删除玩家的家园
-        Done:
+        Готово:
           Single: "&7你删除了 &a%player_name% &7的 &b%home_id% &7家园"
           All: "&7你删除了所有 &a%player_name% &7的家园"
-      Create:
+      Создать:
         Desc: 为玩家创建一个家园
-        Done:
+        Готово:
           Fresh: "&7为 &a%player_name% &7设置了 &b%home_id% &7家园"
           Edited: "&7更新了 &a%player_name% &7的 &b%home_id% &7家园"
-    Error:
+    Ошибка:
       Argument:
         InvalidHome: "&b%value% &c不是一个有效的家园"
   Home:
@@ -1486,11 +1486,11 @@ Homes:
       - "&b家园"
       - "&7你已传送到 &b%home_name% &7家园"
     Visit:
-      Success:
+      Успех:
         - <output:"titles:20:60:20"><sound:"entity_enderman_teleport">
         - "&b家园访问"
         - "&7你访问了 &a%home_owner% &7的 &b%home_name% &7家园"
-      Error:
+      Ошибка:
         NotPermitted:
           - <sound:"entity_villager_no">
           - "&c你没有被邀请到这个家园！"
@@ -1499,7 +1499,7 @@ Homes:
           - "&c不安全的位置！"
           - "&c访问已取消"
     Set:
-      Error:
+      Ошибка:
         Limit:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - "&c已达上限！"
@@ -1516,7 +1516,7 @@ Homes:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - "&c受保护区域！"
           - "&c你不能在这里创建家园"
-      Success:
+      Успех:
         - <output:"titles:20:60:20"><sound:"block_wooden_door_open">
         - "&a家园设置成功！"
         - "&7使用方法: &d/home %home_id% &8| &7查看家园: &d/homelist"
@@ -1525,46 +1525,46 @@ Homes:
         - "&a家园已更新！"
         - "&7家园位置已更新"
     Delete:
-      Done:
+      Готово:
         - <output:"titles:20:60:20"><sound:"entity_zombie_break_wooden_door">
         - "&c家园已删除！"
         - "&c你删除了 &e%home_name% &c家园"
-  Error:
+  Ошибка:
     NoHomes: "&c你尚未设置任何家园！"
   Editor:
     Enter:
-      PlayerName: "&7输入 &a[玩家名称]"
+      ИгрокName: "&7输入 &a[玩家名称]"
       HomeName: "&7输入 &a[家园名称]"
   HomeType:
     PUBLIC: 公共
     PRIVATE: 私有
-Warps:
-  Command:
-    Warps:
+Варпs:
+  Команда:
+    Варпs:
       Delete:
         Desc: 删除一个传送点
-      Create:
+      Создать:
         Desc: 创建一个新的传送点
       Teleport:
         Desc: 传送到一个传送点
         Others: "&7将 &a%player_display_name% &7传送到了 &b%warp_name% &7传送点"
       ResetCooldown:
         Desc: 重置传送点冷却时间
-        Done: "&7为 &a%player_name% &7重置了 &b%warp_name% &7传送点的冷却时间"
+        Готово: "&7为 &a%player_name% &7重置了 &b%warp_name% &7传送点的冷却时间"
         Notify: "&7您的 &b%warp_name% &7传送点冷却时间已被重置！"
       SetCooldown:
         Desc: 设置传送点冷却时间
-        Done: "&7为 &a%player_name% &7设置了 &b%warp_name% &7传送点的冷却时间为 &a%amount%"
+        Готово: "&7为 &a%player_name% &7设置了 &b%warp_name% &7传送点的冷却时间为 &a%amount%"
         Notify: "&7您的 &e%warp_name% &7传送点冷却时间已被设置为 &a%amount%！"
       List:
         Desc: 打开传送点图形用户界面
         Others: "&7为 &a%player_display_name% &7打开了传送点GUI"
   Delete:
-    Done:
+    Готово:
       - <output:"titles:20:60:20"><sound:"block_glass_break">
       - "&c传送点已删除！"
       - "&c您删除了 &b%warp_name% &c传送点"
-  Warp:
+  Варп:
     Creation:
       New:
         - <output:"titles:20:60:20"><sound:"block_anvil_place">
@@ -1574,7 +1574,7 @@ Warps:
         - <output:"titles:20:60:20"><sound:"block_anvil_place">
         - "&a传送点已重新定位！"
         - "&7您移动了 &b%warp_name% &7传送点"
-      Error:
+      Ошибка:
         Limit:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - "&c已达上限！"
@@ -1592,11 +1592,11 @@ Warps:
           - "&c不安全的位置！"
           - "&7请选择另一个地方"
     Teleport:
-      Done:
+      Готово:
         - <output:"titles:20:60:20"><sound:"entity_enderman_teleport">
         - "&b%warp_name%"
         - "&7%warp_description%"
-      Error:
+      Ошибка:
         NotEnoughFunds:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - "&c资金不足！"
@@ -1617,19 +1617,19 @@ Warps:
           - <output:"titles:20:60:20"><sound:"entity_villager_no">
           - "&c错误的时间！"
           - "&b%warp_name% &c当前不可访问"
-  Error:
-    Command:
+  Ошибка:
+    Команда:
       Argument:
-        InvalidWarp: "&b%value% &c不是一个有效的传送点！"
+        InvalidВарп: "&b%value% &c不是一个有效的传送点！"
   Editor:
     Enter:
-      CostMoney: "&7输入 &a[费用]"
-      Command: "&7输入 &a[命令名称]"
+      CostДеньги: "&7输入 &a[费用]"
+      Команда: "&7输入 &a[命令名称]"
       Times: "&7输入 &a[时间] &7> 10:00 14:00"
       Cooldown: "&7输入 &a[冷却时间]"
       Name: "&7输入 &a[显示名称]"
       Description: "&7输入 &a[描述]"
-  WarpType:
+  ВарпType:
     SERVER: 服务器
     PLAYER: 玩家
   SortType:
@@ -1638,15 +1638,15 @@ Warps:
     WARP_TYPE: 传送点类型
     VISIT_COST: 访问费用
 RTP:
-  Command:
+  Команда:
     RTP:
       Desc: 随机传送到一个位置
   Teleport:
-    Error:
+    Ошибка:
       AlreadyIn: "&c您已经在随机传送中！"
       InvalidRange: "&c此世界不支持随机传送或具有无效的范围设置"
     Notify:
-      Done:
+      Готово:
         - <output:"titles:20:80:20"><sound:"entity_enderman_teleport">
         - "&a传送成功！"
         - "&7位置: &e%location_x%&7, &e%location_y%&7, &e%location_z%"
@@ -1659,7 +1659,7 @@ RTP:
         - "&c传送失败"
         - "&7未能找到一个有效的位置"
 Extras:
-  Command:
+  Команда:
     Chairs:
       Desc: 开关椅子功能
       Notify: "&7设置 &b椅子 &7功能为 &b%state%"
@@ -1673,10 +1673,10 @@ Extras:
       Notify: "&7设置 &b箱子排序 &7功能为 &b%state%"
       Target: "&7设置 &a%player_display_name% &7的 &b箱子排序 &7功能为 &b%state%"
 Afk:
-  Command:
+  Команда:
     Afk:
       Desc: 开关AFK模式
-      Done:
+      Готово:
         Others: "&7设置 &a%player_display_name% &7的AFK模式为: &b%state%"
   Mode:
     Enter:

@@ -22,7 +22,7 @@ General:
   DisconnectInfo:
     # Text to display for player in disconnect window when kicked.
     Kick:
-    - <lred><b>Server</b></lred> <dgray>»</dgray> <gray>You have been kicked!</gray>
+    - <lred><b>Server</b></lred> <dgray>»</dgray> <gray>Вы been kicked!</gray>
     - ' '
     - <lred>Reason</lred> <dgray>»</dgray> <gray>%punishment_reason%</gray>
     - <lred>By</lred> <dgray>»</dgray> <gray>%punishment_punisher%</gray>
@@ -57,24 +57,24 @@ General:
     YEARS: year,y
 AltsCheck:
   # Sets whether or not alt-account checker feature is enabled.
-  Enabled: true
-  # Sets whether or not plugin should cache IPs only of players that joined since the latest server or plugin reboot.
+  Включено: true
+  # Sets whether or not plugin should cache IPs only of players that вошёл since the latest server or plugin reboot.
   # When disabled, plugin will cache IPs of all players in the database, which can increase memory usage.
   # [*] Keep in mind that local IPs (127.0.0.1) are never cached.
   # [Default is false]
-  Cache_Joined_Players_Only: false
+  Cache_Joined_Игрокs_Only: false
 Punishments:
   Mute:
     # List of disabled commands for muted players.
     # All aliases for listed commands will be auto-detected and disabled too.
-    Blocked_Commands:
+    Blocked_Командаs:
     - broadcast
     - tell
     - me
   Rank:
     # ==================== BETA FEATURE ====================
     # Set here priority for each rank that has access to punishment commands.
-    # Players with greatest ranks can not be punished by lowest ones.
+    # Игрокs with greatest ranks не можете be punished by lowest ones.
     # [WARNING] This setting will not prevent IP bans!
     Priority:
       # Available values: RANK, PERMISSION
@@ -82,18 +82,18 @@ Punishments:
       # Get value by player's permission group. All keys in 'Values' list will represent permission group names.
       # If player has none of specified groups, the 'Default_Value' setting will be used then
       #   Values:
-      #     vip: 1 # -> Player must be in 'vip' permission group.
-      #     gold: 2 # -> Player must be in 'gold' permission group.
-      #     emerald: 3 # -> Player must be in 'emerald' permission group.
+      #     vip: 1 # -> Игрок must be in 'vip' permission group.
+      #     gold: 2 # -> Игрок must be in 'gold' permission group.
+      #     emerald: 3 # -> Игрок must be in 'emerald' permission group.
       #
       # ==================== PERMISSION MODE ====================
       # Get value by player's permissions. All keys in 'Values' list will represent postfixes for the 'Permission_Prefix' setting (see below).
       # If player has none of specified permissions, the 'Default_Value' setting will be used then
       #   Permission_Prefix: 'example.prefix.'
       #   Values:
-      #     vip: 1 # -> Player must have 'example.prefix.vip' permission.
-      #     gold: 2 # -> Player must have 'example.prefix.gold' permission.
-      #     emerald: 3 # -> Player must have 'example.prefix.emerald' permission.
+      #     vip: 1 # -> Игрок must have 'example.prefix.vip' permission.
+      #     gold: 2 # -> Игрок must have 'example.prefix.gold' permission.
+      #     emerald: 3 # -> Игрок must have 'example.prefix.emerald' permission.
       Mode: RANK
       # Sets permission prefix for the 'PERMISSION' mode.
       Permission_Prefix: sunlight.bans.priority.
@@ -104,49 +104,49 @@ Punishments:
         admin: 3
         owner: 10
     # When enabled, the 'Duration_Limit' settings will apply to all unpunish commands as well (unban, unmute, unwarn).
-    # Players can not remove punishments with a duration greater than set in player's limit.
+    # Игрокs не можете remove punishments with a duration greater than set in player's limit.
     Duration_Limit_to_Unpunish: true
     # A list of rank based duration limits for each punishment type.
     # (Vault and a compatible permissions plugins are required)
-    # (Player permission groups are auto-detected)
+    # (Игрок permission groups are auto-detected)
     # This will prevent players to punish others for a time longer than you set here.
-    # 'Amount' = amount of units for specified time unit. Example: 'TimeUnit' = 'DAYS' and 'Amount' = '3' equals to 3 days.
+    # 'Количество' = amount of units for specified time unit. Example: 'TimeUnit' = 'DAYS' and 'Количество' = '3' equals to 3 days.
     # For the 'PERMANENT' time unit, amount value does not matter.
     # Available Time Units: PERMANENT, SECONDS, MINUTES, HOURS, DAYS, WEEKS, MONTHS, YEARS
     # Available Punishment Types: BAN, MUTE, WARN
     # The greatest duration limit will be used if player has multiple ranks with duration limits.
-    # To remove limit for certain punishment type, set 'Amount' to -1.
+    # To remove limit for certain punishment type, set 'Количество' to -1.
     # To remove all limits, give 'sunlight.bans.bypass.duration.limit' permission.
     Duration_Limit:
       helper:
         WARN:
-          Amount: 3
+          Количество: 3
           TimeUnit: WEEKS
         MUTE:
-          Amount: 1
+          Количество: 1
           TimeUnit: DAYS
         BAN:
-          Amount: 2
+          Количество: 2
           TimeUnit: WEEKS
       moderator:
         WARN:
-          Amount: 3
+          Количество: 3
           TimeUnit: MONTHS
         MUTE:
-          Amount: 1
+          Количество: 1
           TimeUnit: WEEKS
         BAN:
-          Amount: 2
+          Количество: 2
           TimeUnit: MONTHS
   Warn:
     # Sets active warn limit for a player when all previous warns gets expired.
     # Example: With default value 5, when player gets 5th active warn, all previous 4 active warns becomes expired.
-    # This setting is required for the 'Warns -> Auto_Commands' feature to work properly.
+    # This setting is required for the 'Warns -> Auto_Командаs' feature to work properly.
     # Set to '0' or '-1' for unlimit.
-    Max_Amount: 5
+    Max_Количество: 5
     # Executes custom commands (from console) when player reaches certain amount of active warns.
     # Use '%player_name%' placeholder for a player name.
-    Auto_Commands:
+    Auto_Командаs:
       '5':
       - kick %player_name%
       '3':
@@ -182,7 +182,7 @@ Database:
   Purge:
     # Enables the purge feature.
     # Purge will remove all records from the plugin tables that are 'old' enough.
-    Enabled: false
+    Включено: false
     # Sets maximal 'age' for the database records before they will be purged.
     # This option may have different behavior depends on the plugin.
     # By default it's days of inactivity for the plugin users.

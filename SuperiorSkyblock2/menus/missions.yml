@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&lMissions'
+title: '&lМиссияs'
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
@@ -23,31 +23,31 @@ items:
     name: '&f'
   '#':
     type: DIAMOND_PICKAXE
-    name: '&eMiner Missions'
+    name: '&eMiner Миссияs'
     lore:
-      - '&{HEX:cccccc}Click to start your adventure as a Miner.'
+      - '&{HEX:cccccc}Нажмите чтобы start your adventure as a Miner.'
     flags:
       - HIDE_ATTRIBUTES
   '@':
     type: ZOMBIE_HEAD
-    name: '&eSlayer Missions'
+    name: '&eSlayer Миссияs'
     lore:
-      - '&{HEX:cccccc}Click to start your adventure as a Slayer.'
+      - '&{HEX:cccccc}Нажмите чтобы start your adventure as a Slayer.'
   '%':
     type: WHEAT
-    name: '&eFarmer Missions'
+    name: '&eFarmer Миссияs'
     lore:
-      - '&{HEX:cccccc}Click to start your adventure as a Farmer.'
+      - '&{HEX:cccccc}Нажмите чтобы start your adventure as a Farmer.'
   '^':
     type: FISHING_ROD
-    name: '&eFisherman Missions'
+    name: '&eFisherman Миссияs'
     lore:
-      - '&{HEX:cccccc}Click to start your adventure as a Fisherman.'
+      - '&{HEX:cccccc}Нажмите чтобы start your adventure as a Fisherman.'
   '&':
     type: MAP
-    name: '&eExplorer Missions'
+    name: '&eExplorer Миссияs'
     lore:
-      - '&{HEX:cccccc}Click to start your adventure as an Explorer.'
+      - '&{HEX:cccccc}Нажмите чтобы start your adventure as an Explorer.'
 
 sounds:
   '#':

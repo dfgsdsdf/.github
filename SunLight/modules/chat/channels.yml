@@ -6,7 +6,7 @@ global:
   # You must have at least ONE default channel.
   Default: true
   # When enabled, players will automatically join this channel on server join.
-  # Player must have channel permission to be able to join it (if enabled).
+  # Игрок must have channel permission to be able to join it (if enabled).
   Auto_Join: true
   Permission_Required:
     # When enabled, players will must have permission to be able to read (receive) messages in this channel, as well as ability to join it.
@@ -22,7 +22,7 @@ global:
   Message_Cooldown: 2
   # Sets custom command-shortcut to join/write this channel.
   # Do not leave this empty.
-  Command_Alias: global
+  Команда_Alias: global
   # Sets custom message prefix for this channel.
   # This prefix can be used at a start of message to write in this channel.
   # Leave this empty ('') to disable.
@@ -46,7 +46,7 @@ staff:
   # You must have at least ONE default channel.
   Default: false
   # When enabled, players will automatically join this channel on server join.
-  # Player must have channel permission to be able to join it (if enabled).
+  # Игрок must have channel permission to be able to join it (if enabled).
   Auto_Join: false
   Permission_Required:
     # When enabled, players will must have permission to be able to read (receive) messages in this channel, as well as ability to join it.
@@ -62,7 +62,7 @@ staff:
   Message_Cooldown: 0
   # Sets custom command-shortcut to join/write this channel.
   # Do not leave this empty.
-  Command_Alias: staffchat
+  Команда_Alias: staffchat
   # Sets custom message prefix for this channel.
   # This prefix can be used at a start of message to write in this channel.
   # Leave this empty ('') to disable.

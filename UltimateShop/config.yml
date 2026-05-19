@@ -1,4 +1,4 @@
-# UltimateShop by @PQguanfang
+# UltimateМагазин by @PQguanfang
 #
 # Read the Wiki: ultimateshop.superiormc.cn
 
@@ -31,7 +31,7 @@ sell:
     - 'tool.damage-per-block'
   sell-all:
     ignore-items:
-      # Format: Shop ID;;Item ID
+      # Format: Магазин ID;;Item ID
       - 'hideshop;;A'
     hide-message: true
   sell-stick:
@@ -53,7 +53,7 @@ give-item:
 
 menu:
   # Recommend use when you are running big server, it will make player no longer quickly click
-  # and reopen shop menu to make sure UltimateShop not lag your server.
+  # and reopen shop menu to make sure UltimateМагазин not lag your server.
   # In ticks.
   cooldown:
     click: -1
@@ -70,7 +70,7 @@ menu:
     click-update: false
   sell-all:
     size: 54
-    title: '&fSell All &7- Esc to confirm sell!'
+    title: '&fПродать All &7- Esc to confirm sell!'
     black-slots: []
   # Premium version only
   bedrock:
@@ -79,17 +79,17 @@ menu:
     # If enabled, we will try to reopen shop menu after player successfully buy or sell products.
     not-auto-close: true
     buy-or-sell:
-      title: 'Select Amount: {item-name}'
+      title: 'Select Количество: {item-name}'
       buttons:
         amount:
-          name: 'Amount'
+          name: 'Количество'
           tip: 'Type amount here! Type all to sell all!'
     info:
       title: 'Product Info: {item-name}'
       buttons:
-        buy: 'Buy'
-        sell: 'Sell'
-        buy-more: 'Select Amount'
+        buy: 'Купить'
+        sell: 'Продать'
+        buy-more: 'Select Количество'
   buy-more:
     menu: buy-more
     max-amount: 64
@@ -135,8 +135,8 @@ display-item:
   # Otherwise, the line without this will always display it.
   add-lore:
     - '@n '
-    - '@a&#d4d4d4Buy Price: &#d69e6b{buy-price}'
-    - '@b&#d4d4d4Sell Price: &#d69e6b{sell-price}'
+    - '@a&#d4d4d4Купить Цена: &#d69e6b{buy-price}'
+    - '@b&#d4d4d4Продать Цена: &#d69e6b{sell-price}'
     - '@c&#69503aYou can buy &#b09072{buy-times-player}/{buy-limit-player} &#69503aitems!'
     - '@d&#69503aAll players can buy &#b09072{buy-times-server}/{buy-limit-server} &#69503aitems!'
     - '@e&#69503aYou can sell &#b09072{sell-times-player}/{sell-limit-player} &#69503aitems!'
@@ -157,10 +157,10 @@ display-item:
     - '@a{buy-click}-b'
     - '@b{sell-click}-b'
     - '@k&fꀍꂫ &#d9c24cPick amount!-b'
-    - '@b&fꂬꂭ &#00e5c9Sell all items!-b'
+    - '@b&fꂬꂭ &#00e5c9Продать all items!-b'
     - '@n&c&l:( Can not do this-i'
-    - '@a&cThis item can not be sold-i-m'
-    - '@b&cThis item can not be purchased-i-m'
+    - '@a&cThis item не можете be sold-i-m'
+    - '@b&cThis item не можете be purchased-i-m'
 
 placeholder:
   auto-settings:
@@ -221,8 +221,8 @@ placeholder:
   # Premium version only
   status:
     # If disabled, status placeholder will only display in shop GUI.
-    # For sell all, sell stick etc. still can not use status placeholder because it will sell not only 1 type product
-    # and we can not know whether total price is cheaper or higher.
+    # For sell all, sell stick etc. still не можете use status placeholder because it will sell not only 1 type product
+    # and we не можете know whether total price is cheaper or higher.
     can-used-everywhere: false
   math:
     scale: 0
@@ -241,23 +241,23 @@ placeholder:
     split-symbol-all: ', '
     replace-new-line-symbol: ', '
     unknown: "Unknown"
-    unknown-price-type: "Unknown Price Type"
-    empty: "Price is empty!"
+    unknown-price-type: "Unknown Цена Type"
+    empty: "Цена is empty!"
   click:
     # If enabled, {buy-click} and {sell-stick} will display different value according to product status.
     # But, it will maybe make server lag if you are running big server and have many products in your shop.
     enabled: false
-    buy: '&fꂀ &#83ca16Buy this item!'
-    sell: '&fꂁ &#0097d8Sell this item!'
-    buy-with-no-sell: '&fꂀ &#83ca16Buy this item!'
-    sell-with-no-buy: '&fꂁ &#0097d8Sell this item!'
-    buy-max-limit-player: '&#e62c2cYou can not buy more!'
+    buy: '&fꂀ &#83ca16Купить this item!'
+    sell: '&fꂁ &#0097d8Продать this item!'
+    buy-with-no-sell: '&fꂀ &#83ca16Купить this item!'
+    sell-with-no-buy: '&fꂁ &#0097d8Продать this item!'
+    buy-max-limit-player: '&#e62c2cYou не можете buy more!'
     buy-max-limit-server: '&#e62c2cThis item is sold out!'
     sell-max-limit-player: '&#e62c2cCan not sell more!'
-    sell-max-limit-server: '&#e62c2cThis item cannot be sold!'
+    sell-max-limit-server: '&#e62c2cThis item не можете be sold!'
     buy-price-not-enough: '&#e62c2cDo not have enough money to buy!'
     sell-price-not-enough: '&#e62c2cDo not have enough item to sell!'
-    error: '&#e62c2cError!'
+    error: '&#e62c2cОшибка!'
     buy-condition-not-meet: '&#e62c2cNot meet the buy condition!'
     sell-condition-not-meet: '&#e62c2cNot meet the sell condition!'
     buy-in-cooldown: '&#e62c2cIn cooldown!'
@@ -293,7 +293,7 @@ prices:
 sell-stick-items:
   A:
     material: STICK
-    name: '&dSell Stick &7(5 times)'
+    name: '&dПродать Stick &7(5 times)'
     lore:
       - '&fRight click a chest to use this item!'
       - ''
@@ -301,7 +301,7 @@ sell-stick-items:
     usage-times: 5
   B:
     material: STICK
-    name: '&dAdvanced Sell Stick &7(50 times)'
+    name: '&dAdvanced Продать Stick &7(50 times)'
     lore:
       - '&fRight click a chest to use this item!'
       - ''
@@ -309,7 +309,7 @@ sell-stick-items:
     usage-times: 50
   C:
     material: STICK
-    name: '&5Epic Sell Stick'
+    name: '&5Epic Продать Stick'
     lore:
       - '&fRight click a chest to use this item!'
       - ''

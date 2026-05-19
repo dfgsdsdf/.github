@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&l{0} Missions'
+title: '&l{0} Миссияs'
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false

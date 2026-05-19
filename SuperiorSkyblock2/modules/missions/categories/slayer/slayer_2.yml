@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: KillsMissions
+mission-file: KillsМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -19,7 +19,7 @@ rewards:
   commands:
     - 'eco give %player% 15000'
     - 'is admin unlockworld %player% nether true'
-    - 'is admin msg %player% &e&lSlayer | &7Successfully finished the mission Slayer II!'
+    - 'is admin msg %player% &e&lSlayer | &7Успехfully finished the mission Slayer II!'
     - 'is admin msg %player% &e&lSlayer | &7Explore the nether, bring some goodies back home.'
     - 'is admin msg %player% &e&lSlayer | &7&oFor more information about the next mission, checkout /is missions'
 
@@ -93,7 +93,7 @@ icons:
       - '&6Spiders Killed: &732/32'
       - '&6Creepers Killed: &724/24'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:

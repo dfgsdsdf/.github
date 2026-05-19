@@ -6,7 +6,7 @@
 ######################################################
 
 # The mission file to use
-mission-file: FarmingMissions
+mission-file: FarmingМиссияs
 
 # Whether the mission should be given when completing all requirements.
 auto-reward: true
@@ -19,9 +19,9 @@ rewards:
   commands:
     - 'eco give %player% 1000000'
     - 'is admin rankup %player% crop-growth'
-    - 'is admin msg %player% &e&lFarmer | &7Successfully finished the mission Farmer V!'
+    - 'is admin msg %player% &e&lFarmer | &7Успехfully finished the mission Farmer V!'
     - 'is admin msg %player% &e&lFarmer | &7There is nothing you don''t know how to grow.'
-    - 'is admin msg %player% &e&lFarmer | &7&oYou are now a professional Framer, congratz!'
+    - 'is admin msg %player% &e&lFarmer | &7&oВы now a professional Framer, congratz!'
 
 # List of required missions that must be completed before completing this one.
 required-missions:
@@ -80,7 +80,7 @@ icons:
       - ''
       - '&6Rewards:'
       - '&8 - &7$1,000,000'
-      - '&8 - &7Crops Upgrade'
+      - '&8 - &7Crops Улучшение'
       - ''
       - '&6Grown Carrots: &7{value_carrot}/320'
       - '&6Grown Potatoes: &7{value_potato}/320'
@@ -105,7 +105,7 @@ icons:
       - ''
       - '&6Rewards:'
       - '&8 - &7$1,000,000'
-      - '&8 - &7Crops Upgrade'
+      - '&8 - &7Crops Улучшение'
       - ''
       - '&6Grown Carrots: &7320/320'
       - '&6Grown Potatoes: &7320/320'
@@ -116,7 +116,7 @@ icons:
       - '&6Grown Sugar Canes: &7320/320'
       - '&6Grown Cactus: &7320/320'
       - '&6Progress: &7100%'
-      - '&a&l ✔ &7Click to redeem your reward.'
+      - '&a&l ✔ &7Нажмите чтобы redeem your reward.'
     enchants:
       DURABILITY: 1
     flags:
@@ -130,7 +130,7 @@ icons:
       - ''
       - '&6Rewards:'
       - '&8 - &7$1,000,000'
-      - '&8 - &7Crops Upgrade'
+      - '&8 - &7Crops Улучшение'
       - ''
       - '&6Grown Carrots: &7320/320'
       - '&6Grown Potatoes: &7320/320'

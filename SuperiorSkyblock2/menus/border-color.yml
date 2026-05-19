@@ -5,7 +5,7 @@
 ##                                                  ##
 ######################################################
 
-title: '&{HEX:5e5e5e}Island Panel > &{HEX:3b3b3b}Border Colors &m   '
+title: '&{HEX:5e5e5e}Остров Panel > &{HEX:3b3b3b}Border Colors &m   '
 open-sound: 
   type: BLOCK_NOTE_BLOCK_HAT
 previous-menu: false
