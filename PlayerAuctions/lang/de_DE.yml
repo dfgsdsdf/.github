@@ -1,125 +1,129 @@
-#PlayerAuctions von Olzie-12
-#https://www.spigotmc.org/resources/83073
-#Wir haben auch einen Discord-Server für Hilfe: https://olziedev.com/discord oder schau in die Dokumentation https://docs.olziedev.com/projects/playerauctions
-#Wenn du Fehler findest, melde sie bitte, ich werde sie beheben :)
+# PlayerAuctions by Olzie-12
+# https://www.spigotmc.org/resources/83073
+# We also have a discord server for help: https://olziedev.com/discord or check docs https://docs.olziedev.com/projects/playerauctions
+# Also if you find any bugs be happy to report them I will fix them :)
+# Made with love
 
-#Wenn du eine Nachricht deaktivieren möchtest, setze sie einfach auf nichts, indem du
-#list: "" <- Dadurch wird keine Nachricht mehr gesendet.
-#Jede einzelne Nachricht des Plugins ist hier.
-#Stelle sicher, dass du "" verwendest, um jeden String abzuschließen.
-#Du kannst auch Farbcodes verwenden <3
-#Um Hex-Farbcodes zu verwenden, musst du Folgendes tun:
-#'{#HEX} Text"
+# If you want to disable any message just set it to nothing. by doing
+# list: "" <- This will no longer send a message.
+
+
+# every singe message in the plugin is here.
+# make sure you use "" to end of every string
+# Also you can use colour codes <3
+
+# To use hex color codes you will need to do
+# '{#HEX} text"
 
 lang:
-  cancel-chat-wait: "Abbrechen"
+  cancel-chat-wait: "отмена"
   chat-wait-cancelled: "&cCancelled your request!"
-  friendly-max-auctions: "Unbegrenzt" # Wenn du möchtest, dass die tatsächliche Anzahl angezeigt wird, verwende %amount%
-  prefix: "&b&lAuction &7»" # Verwende %prefix%, um dem Text jede Nachricht das Präfix hinzuzufügen!
-  auction-confirmation: "%prefix% &aDas Verkaufen dieser Auktion kostet dich &e%price%&a. Wiederhole den Befehl, um zu bestätigen."
-  auction-sell: "%prefix% &aBeginne mit dem Verkauf von &e%item_displayname%&a für &e%price%&a in der Auktion!"
-  auction-added: "%prefix% &aDu hast &e%amount%&a Gegenstände zu deiner ähnlichen Auktion auf dem Markt hinzugefügt. Der Gesamtpreis für diesen Gegenstand beträgt nun &e%price%&a, das ergibt &e$%priceper%&a pro Gegenstand."
-  auction-bid: "%prefix% &aBiete den Gegenstand für &e%price%&a in der Auktion!"
-  reloaded: "%prefix% &aAlle Konfigurationen wurden erfolgreich neu geladen!"
-  money-taken: "%prefix% &a%price% wurde von deinem Bankkonto abgebucht."
-  auctions-cancelled: "%prefix% &aDeine Auktionen wurden abgebrochen!"
-  auctions-collected: "%prefix% &aDu hast erfolgreich &e%items%&a abgelaufene Gegenstände abgeholt!"
-  bought-item: "%prefix% &aDu hast &e%item%&a erfolgreich für &e%price%&a gekauft!"
-  someone-purchased: "%prefix% &e%player%&a hat gerade &e%item% x%amount%&a für &e%price%&a gekauft!"
-  offline-title: "%prefix% &bWährend du offline warst..."
-  bidder: "%prefix% &e%player%&a hat soeben dein Gebot für &e%item%&a über &e%price%&a abgegeben."
-  bidded: "%prefix% &aDu hast soeben ein Gebot für &e%item%&a über &e%price%&a abgegeben."
-  bid-success: "%prefix% &e%player%&a hat deine Auktion von &e%item%&a für &e%price%&a gewonnen."
-  bidder-success: "%prefix% &aDu hast die Auktion von &e%item%&a für &e%price%&a gewonnen. Überprüfe deine abgelaufenen Auktionen."
-  earned-offline: "%prefix% &aDu hast insgesamt &e$%total%&a verdient!"
-  given-more-auctions-success: "%prefix% &aDu hast &e%player%&a zusätzliche Auktionen im Wert von &e%extra%&a und insgesamt &e%total%&a erfolgreich gegeben!"
-  dbexec-successful: "%prefix% &aErfolgreich %count% Zeilen aktualisiert. Bitte führe %cmd% reload aus, um die Änderungen zu aktualisieren."
+  friendly-max-auctions: "Неограниченно" # If you want it to show the actual amount, use %amount%
+  prefix: "&b&lPA &7»" # Use %prefix% to add the prefix to any message!
+  auction-confirmation: "%prefix% &aСоздание аукциона будет стоить &e%price%&a, повторите команду для подтверждения."
+  auction-sell: "%prefix% &aНачата продажа &e%item_displayname%&a за &e%price%&a на аукционе!"
+  auction-added: "%prefix% &aВы добавили &e%amount%&a предметов к существующему лоту, общая цена теперь составляет &e%price%&a, цена за один предмет &e$%priceper%&a."
+  auction-bid: "%prefix% &aНачат аукцион с начальной ценой в &e%price%&a!"
+  reloaded: "%prefix% &aКонфигурация перезагружена!"
+  money-taken: "%prefix% &a%price% было взято с вашего аккаунта."
+  auctions-cancelled: "%prefix% &aВаши аукционы были отменены!"
+  auctions-collected: "%prefix% &aПолучено &e%items%&a просроченных предметов!"
+  bought-item: "%prefix% &aУспешно приобретено &e%item%&a за &e%price%&a!"
+  someone-purchased: "%prefix% &e%player%&a только что купил &e%item% x%amount%&a за &e%price%&a!"
+  offline-title: "%prefix% &bПока вы были оффлайн..."
+  bidder: "%prefix% &e%player%&a только что сделал ставку на &e%item%&a в размере &e%price%"
+  bidded: "%prefix% &aВы сделали ставку на &e%item%&a в размере &e%price%"
+  bid-success: "%prefix% &e%player%&a победил в аукционе &e%item%&a, заплатив &e%price%"
+  bidder-success: "%prefix% &aВы выиграли в аукционе на &e%item%&a, заплатив &e%price%&a. Проверьте свои просроченные аукционы."
+  earned-offline: "%prefix% &aВ сумме вы заработали &e$%total%&a!"
+  given-more-auctions-success: "%prefix% &aИгроку &e%player%&a успешно выдано &e%extra%&a дополнительных аукционов, что в итоге дает &e%total%&a!"
+  dbexec-successful: "%prefix% &aУспешно обновлено &d%count%&a строк. &aВыполните команду &d/%cmd% reload&a чтобы загрузить изменения."
   current-amount-of-auctions:
-  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
-  - "%prefix% &bDu hast derzeit maximal &e%auctionsmax%&b (&e%staticauctions% statische&b) Auktionen."
-  - "%prefix% &bDu hast derzeit &e%auctionsused%&b Auktionen verwendet."
-  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+    - "%prefix% &bМожно иметь до &e%auctionsmax%&b (&e%staticauctions% стат.&b) аукционов(а)."
+    - "%prefix% &bВы используете &e%auctionsused%&b аукционов(а)."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
   current-amount-of-auctions-other:
-  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
-  - "%prefix% &d%player%&b hat derzeit maximal &e%auctionsmax%&b (&e%staticauctions% statische&b) Auktionen."
-  - "%prefix% &d%player%&b hat derzeit &e%auctionsused%&b Auktionen verwendet."
-  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
-  amount-auctions-others-alert: "&c%player% ist derzeit offline. Es werden nur deren maximale Auktionen als statische Anzahl angezeigt."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+    - "%prefix% &d%player%&b может иметь до &e%auctionsmax%&b (&e%staticauctions% стат.&b) аукционов."
+    - "%prefix% &d%player%&b имеет &e%auctionsused%&b аукционов."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+  amount-auctions-others-alert: "&c%player% сейчас оффлайн, максимальное число аукционов отображается как статическое значение."
 
-#Die Hilfe-Anleitung für einen Spieler
-#Die Variable %cmd% steht für einen beliebigen Befehl aus der config.yml :)
+  # the help menu for a player
+  # The variable %cmd% is any command from the config.yml :)
   help-player:
     - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
-    - "%prefix% &e/%cmd% help &7&l- &bZeigt dieses Menü an."
-    - "%prefix% &e/%cmd% sell <Preis> [Währung] [Anzahl] &7&l- &bVerkaufe einen Gegenstand."
-    - "%prefix% &e/%cmd% bid <Preis> &7&l- &bBiete auf einen Gegenstand."
-    - "%prefix% &e/%cmd% auction &7&l- &bAuktioniere über ein GUI."
-    - "%prefix% &e/%cmd% cancel [ID] [Spieler] &7&l- &bBreche deine Auktion ab."
-    - "%prefix% &e/%cmd% collect &7&l- &bHole deine abgebrochenen Gegenstände ab."
-    - "%prefix% &e/%cmd% open [Menü] [Optionen] &7&l- &bÖffnet das Player Auction GUI."
-    - "%prefix% &e/%cmd% amount &7&l- &bÜberprüfe, wie viele Auktionen du hast."
-    - "%prefix% &e/%cmd% reload &7&l- &bLädt alle Konfigurationsdateien neu."
+    - "%prefix% &e/%cmd% help &7&l- &bОтобразить это меню."
+    - "%prefix% &e/%cmd% sell <цена> [валюта] [кол-во] &7&l- &bПродать предмет."
+    - "%prefix% &e/%cmd% bid <цена> &7&l- &bСделать ставку."
+    - "%prefix% &e/%cmd% auction &7&l- &bИнтерфейс аукционов."
+    - "%prefix% &e/%cmd% cancel [id] [игрок] &7&l- &bОтменить аукцион."
+    - "%prefix% &e/%cmd% collect &7&l- &bПолучить предметы."
+    - "%prefix% &e/%cmd% open [меню] [опция] &7&l- &bОткрыть меню."
+    - "%prefix% &e/%cmd% amount &7&l- &bПроверить число аукционов."
+    - "%prefix% &e/%cmd% reload &7&l- &bПерезагрузить конфигурацию."
     - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
 
-#Die Hilfe-Anleitung für die Konsole
-#Die Variable %cmd% steht für einen beliebigen Befehl aus der config.yml :)
+  # the help menu for console
+  # The variable %cmd% is any command from the config.yml :)
   help-console:
     - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
-    - "%prefix% &e/%cmd% help &7&l- &bZeigt dieses Menü an."
-    - "%prefix% &e/%cmd% open [Menü] [Optionen] &7&l- &bÖffnet das Player Auction GUI."
-    - "%prefix% &e/%cmd% reload &7&l- &bLädt alle Konfigurationsdateien neu."
-    - "%prefix% &e/%cmd% dbexec <Anfrage> &7&l- &bFührt eine Abfrage aus."
+    - "%prefix% &e/%cmd% help &7&l- &bОтобразить это меню."
+    - "%prefix% &e/%cmd% open [меню] [опция] &7&l- &bОткрыть интерфейс аукционов."
+    - "%prefix% &e/%cmd% reload &7&l- &bПерезагрузить конфигурацию."
+    - "%prefix% &e/%cmd% dbexec <query> &7&l- &bВыполнить запрос."
     - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
 
- #Fehlermeldungen.
+  # error messages.
   errors:
-    command-syntax: "%prefix% &cFalsche Syntax. Verwende:\n%syntax%"
-    player-only: "%prefix%&c Du musst ein Spieler sein!"
-    console-only: "%prefix% &cDieser Befehl kann nur von der Konsole ausgeführt werden!"
-    not-a-number: "%prefix%&c Das ist keine Zahl!"
-    no-permission: "%prefix%&c Du hast keine Berechtigung, dies zu tun! %reason%"
-    auction-dont-exist: "%prefix% &cDiese Auktion existiert nicht!"
-    too-many-auctions: "%prefix%&c Du kannst nicht so viele Gegenstände verkaufen. Aufgrund deiner Berechtigungen/der statischen Menge kannst du nur &4%amount%&c verkaufen!"
-    money-not-enough-sell: "%prefix%&c Du hast nicht genügend %price%, um diesen Gegenstand zu verkaufen!"
-    money-not-enough-buy: "%prefix%&c Du hast nicht genügend %price%, um diesen Gegenstand zu kaufen!"
-    money-not-enough-bid: "%prefix%&c Du hast nicht genügend %price%, um auf diesen Gegenstand zu bieten!"
-    disabled-world-sell: "%prefix%&c Du kannst in dieser Welt keine Gegenstände verkaufen!"
-    invalid-item: "%prefix%&c Das ist ein ungültiger Gegenstand zum Verkaufen!"
-    damaged-item: "%prefix%&c Du kannst keinen beschädigten Gegenstand verkaufen!"
-    invalid-gamemode: "%prefix%&c Das ist ein ungültiger Spielmodus zum Verkaufen!"
-    invalid-category: "%prefix%&c Das ist eine ungültige Kategorie."
-    min-price: "%prefix%&c Du musst den Preis mindestens auf %min% setzen!"
-    max-price: "%prefix%&c Du musst den Preis unter %max% setzen!"
-    no-auctions: "%prefix%&c Du hast derzeit keine Auktionen!"
-    no-expired-auctions: "%prefix%&c Du hast derzeit keine abgelaufenen Auktionen zum Abholen!"
-    purchase-own: "%prefix%&c Du kannst deine eigene Auktion nicht kaufen!"
-    bid-own: "%prefix%&c Du kannst nicht auf deine eigene Auktion bieten!"
-    sell-cooldown: "%prefix%&c Du hast derzeit eine Abklingzeit für das Verkaufen von Gegenständen! (%cooldown% übrig)"
-    bid-cooldown: "%prefix%&c Du hast derzeit eine Abklingzeit für das Bieten auf Gegenstände! (%cooldown% übrig)"
-    offer-cooldown: "%prefix%&c Du hast derzeit eine Abklingzeit für das Abgeben eines Gebots! (%cooldown% übrig)"
-    purchase-cooldown: "%prefix%&c Du hast derzeit eine Abklingzeit für den Kauf von Gegenständen! (%cooldown% übrig)"
-    no-player-joined: "%prefix% &cDieser Spieler existiert nicht!"
-    bidder-no-money: "%prefix% &c%player% hat nicht genügend Geld für deinen &e%item%, ihr Angebot wurde entfernt."
-    bid-no-money: "%prefix% &cDu hast nicht mehr genügend Geld für das Gebot von &e%item%, dein Angebot wurde entfernt."
-    min-bid: "%prefix% &cDu kannst nicht so viel bieten! Das Mindestgebot beträgt $1.000"
-    gui-cooldown: "%prefix% &cDu musst einige Sekunden warten, um dies erneut zu verwenden."
-    not-enough-add-bid: "%prefix% &cDu hast nicht genügend Geld, um $%amount% zu $%bid% hinzuzufügen."
-    cancel-bid: "%prefix% &cDu kannst diese Auktion nicht abbrechen, solange ein Gebot abgegeben wurde!"
+    command-syntax: "%prefix% &cНеверная команда, используйте:\n%syntax%"
+    player-only: "%prefix%&c Вы должны быть игроком!"
+    console-only: "%prefix% &cЭту команду можно выполнить только через консоль!"
+    not-a-number: "%prefix%&c Это не число!"
+    no-permission: "%prefix%&c У вас нет разрешения &4%permission%&c для этого! %reason%"
+    auction-dont-exist: "%prefix% &cЭтот аукцион не существует!"
+    too-many-auctions: "%prefix%&c Вы не можете иметь так много аукционов. Вы можете иметь до &4%amount%&c!"
+    money-not-enough-sell: "%prefix%&c У вас нету %price%, чтобы продать этот предмет!"
+    money-not-enough-buy: "%prefix%&c У вас нету have %price%, чтобы купить этот предмет!"
+    money-not-enough-bid: "%prefix%&c У вас нету have %price%, чтобы сделать ставку!"
+    disabled-world-sell: "%prefix%&c Вы не можете продавать предметы в этом мире!"
+    invalid-item: "%prefix%&c Этот предмет нельзя продавать!"
+    damaged-item: "%prefix%&c You cannot sell a damaged item!"
+    invalid-gamemode: "%prefix%&c Нельзя продавать в этом игровом режиме (гейм моде)!"
+    invalid-category: "%prefix%&c Неверная категория"
+    min-price: "%prefix%&c Цена должна быть больше минимальной цены: %min%!"
+    max-price: "%prefix%&c Цена должна быть меньше максимальной: %max%!"
+    no-auctions: "%prefix%&c У вас сейчас нет аукционов!"
+    no-expired-auctions: "%prefix%&c У вас сейчас нет просроченных аукционов для получения предметов!"
+    purchase-own: "%prefix%&c Вы не можете купить свой лот!"
+    bid-own: "%prefix%&c Вы не можете делать ставки на свой лот!"
+    sell-cooldown: "%prefix%&c На продажу предметов действует кулдаун! (осталось %cooldown%)"
+    bid-cooldown: "%prefix%&c На выставление предметов на аукцион действует кулдаун ! (осталось %cooldown%)"
+    offer-cooldown: "%prefix%&c На предложение ставок действует кулдаун! (осталось %cooldown%)"
+    purchase-cooldown: "%prefix%&c На покупку предметов действует кулдаун! (осталось %cooldown%)"
+    no-player-joined: "%prefix% &cЭтот игрок не существует!"
+    bidder-no-money: "%prefix% &c%player% более не имеет достаточного количества денег для покупки &e%item%, его предложение было аннулировано."
+    bid-no-money: "%prefix% &cУ вас более недостаточно денег для ставки на &e%item%, ваше предложение было аннулировано."
+    min-bid: "%prefix% &cВы не можете предложить такую ставку! Минимальная ставка: $1,000"
+    gui-cooldown: "%prefix% &cВам нужно подождать несколько секунд."
+    not-enough-add-bid: "%prefix% &cУ вас не хватает денег, чтобы добавить $%amount% к ставке в $%bid%"
+    cancel-bid: "%prefix% &cВы не можете отменить аукцион, когда на него сделали ставку!"
     auction-doesnt-exist: "%prefix% &cThat auction doesn't exist anymore!"
-    dbexec-failed: "%prefix% &cEs ist ein Fehler bei der Ausführung dieser Anfrage aufgetreten. %error%"
+    dbexec-failed: "%prefix% &cПри выполнении запроса произошла ошибка. %error%"
 
-#Hier kannst du verschiedene Arten von Nachrichten pro "no-permission"-Nachricht festlegen, indem du den entsprechenden Berechtigungsknoten verwendest.
-#Oder du kannst es leer lassen, um überhaupt keine Nachricht zu senden.
-#no-permission:
-#pa.purchase: "Du hast keine Berechtigung, Auktionen zu kaufen!"
+# Here you can specify different types of messages per no-permission message, using the specific permission node.
+# Or you may set it to blank to not send a message at all.
+# no-permission:
+#   pa.purchase: "You do not have permission to purchase auctions!"
 
 n/a:
-  no-seller: "K.A."
-  no-expire: "K.A."
-  no-category: "K.A."
+  no-seller: "нет"
+  no-expire: "нет"
+  no-category: "нет"
   no-displayname: "%player%" # show the players name instead
 
-#Hier kannst du die Formatierung des Gegenstandsnamens konfigurieren. Bitte beachte, dass du die gewünschten Gegenstände unten hinzufügen musst.
-#Eine Liste der Gegenstände findest du hier: https://javadocs.olziedev.com/spigot/latest/org/bukkit/Material.html
+# Here you can configure the item name formatting, please note that you will have to add the items below that you want to change
+# You can view the list of the items here: https://javadocs.olziedev.com/spigot/latest/org/bukkit/Material.html
 item-names:
-  ARMOR_STAND: "Armor Stand"
+  ARMOR_STAND: "Стойка для брони"

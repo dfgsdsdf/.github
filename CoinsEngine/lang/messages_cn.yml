@@ -1,82 +1,85 @@
 Command:
   Migrate:
-    Desc: "从其他插件迁移数据"
-    Usage: "<plugin> <currency>"
+    Desc: Перенос баланса игроков из другого плагина.
     Error:
-      Plugin: "&7插件不支持或未安装！"
-    Start: "&7已开始从 &b%name% &7迁移数据！ 这可能需要一些时间"
-    Done: "&7已从 &b%name% &7迁移数据！"
+      Plugin: <light_gray>Плагин не поддерживается или не установлен!</light_gray>
+    Start: <light_gray>Начат перенос баланса из <light_yellow>%name%</light_yellow>! Это может занять какое-то время...</light_gray>
+    Done: <light_gray>Перенос баланса из <light_yellow>%name%</light_yellow> завершен!</light_gray>
   Reset:
-    Desc: 重置玩家的余额
-    Usage: <player>
-    Done: "&7已重置 &a%player_name% &7的所有货币余额！"
+    Desc: Обнуление баланса всех валют игрока.
+    Done: <light_gray>Обнулен баланс всех валют у игрока <light_yellow>%player_name%</light_yellow>!</light_gray>
   Wipe:
-    Desc: 重置所有用户的货币
-    Usage: <currency>
-    Start: "&7已开始为 &b%currency_name% &7删除货币数据。这可能需要一些时间..."
-    Finish: "&7已完成为 &b%currency_name% &7删除货币数据"
+    Desc: Обнуление баланса валюты для всех игроков.
+    Start: <light_gray>Начато обнуление баланса валюты <light_yellow>%currency_name%</light_yellow> для всех игроков. Это может занять какое-то время...</light_gray>
+    Finish: <light_gray>Обнуление баланса валюты <light_yellow>%currency_name%</light_yellow> для всех игроков завершено.</light_gray>
   Currency:
     Balance:
-      Usage: "[player]"
-      Desc: 检查 [player] 的货币余额
+      Desc: Просмотр баланса.
     Give:
-      Usage: <player> <amount> [-s]
-      Desc: 给玩家添加货币
-      Done: "&7已添加 &e%amount%金币 &7到 &a%player_name% &7的余额。当前余额: &e%balance%金币"
-      Notify: "&7已将 &e%amount%金币 &7添加到你的账户！"
+      Desc: Добавить на баланс.
+      Done: '<light_gray>Добавлено <light_yellow>%amount%</light_yellow> на баланс игрока <light_yellow>%player_name%</light_yellow>. Новый баланс: <light_yellow>%balance%</light_yellow>.</light_gray>'
+      Notify: <light_gray><light_yellow>%amount%</light_yellow> было добавлено на ваш баланс!</light_gray>
     Take:
-      Usage: <player> <amount> [-s]
-      Desc: 扣除玩家的货币
-      Done: "&7已从 &a%player_name% &7的余额中扣除 &e%amount%金币&7。当前余额: &e%balance%金币"
-      Notify: "&7已从你的账户中扣除 &e%amount%金币！"
+      Desc: Снять с баланса.
+      Done: '<light_gray>Снято <light_yellow>%amount%</light_yellow> с баланса игрока <light_yellow>%player_name%</light_yellow>. Новый баланс: <light_yellow>%balance%</light_yellow>.</light_gray>'
+      Notify: <light_gray><light_yellow>%amount%</light_yellow> было снято с вашего баланса!</light_gray>
     Set:
-      Usage: <player> <amount> [-s]
-      Desc: 设置玩家的货币余额
-      Done: "&7设置 &a%player_name% &7的 &b%currency_name% 余额为 &e%balance%"
-      Notify: "&7你的 &b%currency_name% &7余额已设置为 &e%amount%"
+      Desc: Установить баланс.
+      Done: <light_gray>Баланс валюты <light_yellow>%currency_name%</light_yellow> игрока <light_yellow>%player_name%</light_yellow> установлен на <light_yellow>%balance%</light_yellow>.</light_gray>
+      Notify: <light_gray>Ваш баланс валюты <light_yellow>%currency_name%</light_yellow> был установлен на <light_yellow>%amount%</light_yellow>.</light_gray>
     Send:
-      Usage: <player> <amount>
-      Desc: 向玩家转移货币
+      Desc: Перевод валюты игроку.
       Error:
-        NotEnough: "&c你没有足够的 &b%currency_name%&c！"
-        TooLow: "&c你不能发送少于 &e%amount% &c的金额！"
-        NoPayments: "&a%player_name% &c不接受 &b%currency_name% &c付款！"
+        NotEnough: '<light_gray>У вас недостаточно средств: <light_red>%currency_name%</light_red>!</light_gray>'
+        TooLow: <light_gray>Нельзя отправить меньше, чем <light_red>%amount%</light_red>!</light_gray>
+        NoPayments: <light_gray><light_red>%player_name%</light_red> не принимает переводы валюты <light_red>%currency_name%</light_red>!</light_gray>
       Done:
-        Sender: "&7你已发送 &e%amount% 金币 &7给 &a%player_name%！"
-        Notify: "&7你已收到来自 &a%player_name% &7的 &e%amount% 金币！"
+        Sender: <light_gray>Отправлено <light_yellow>%amount%</light_yellow> игроку <light_yellow>%player_name%</light_yellow>!</light_gray>
+        Notify: <light_gray>Вы получили <light_yellow>%amount%</light_yellow> от игрока <light_yellow>%player_name%</light_yellow>!</light_gray>
     Payments:
-      Usage: "[player] [-s]"
-      Desc: 切换是否接受其他玩家的付款
-      Toggle: "&b%currency_name% &7付款接受: &b%state%"
-      Target: "&b%currency_name% &7付款接受为 &a%player_name%: &b%state%"
+      Desc: Вкл/выкл. прием платежей.
+      Toggle: '<light_gray>Прием платежей валюты <light_yellow>%currency_name%</light_yellow>: <light_yellow>%state%</light_yellow>.</light_gray>'
+      Target: '<light_gray>Прием платежей валюты <light_yellow>%currency_name%</light_yellow> игрока <light_yellow>%player_name%</light_yellow>: <light_yellow>%state%</light_yellow>.</light_gray>'
     Exchange:
-      Usage: <currency> <amount>
-      Desc: 货币兑换
+      Desc: Обмен валюты.
     Top:
-      Usage: "[page]"
-      Desc: 拥有最多余额的玩家列表
+      Desc: Топ богачей по убыванию.
       List:
         - <noprefix>
-        - '&b<b>%currency_name% 排行榜:</b>'
-        - " "
-        - "%entry%"
-        - " "
-        - ""
-        - "&7页数 &e%current% &7/ &e%max%"
-        - " "
-      Entry: " &b| &7%pos%. &a%player_name%: &e%balance%"
+        - ' '
+        - <cyan><b>%currency_name% Top:</b></cyan>
+        - ' '
+        - '%entry%'
+        - ' '
+        - <light_gray>Страница <cyan>%current%</cyan> из <cyan>%max%</cyan>.</light_gray>
+        - ' '
+      Entry: '<cyan>%pos%. <gray>%player_name%: </gray>%balance%</cyan>'
+    GiveAll:
+      Desc: Выдача валюты всем игрокам на сервере.
+      Done: <lgray>Выдано <lyellow>%amount%</lyellow> всем игрокам <lyellow>на сервере</lyellow>.</lgray>
+    Root:
+      Desc: 'Команды валюты %currency_name%.'
+  Argument:
+    Name:
+      Currency: валюта
+      Page: страница
+      Plugin: плагин
 Currency:
   Balance:
     Display:
-      Own: "&7余额: &e%balance%"
-      Others: "&a%player_name% &7的余额: &e%balance%"
+      Own: '<light_gray>Баланс: <light_yellow>%balance%</light_yellow>.</light_gray>'
+      Others: '<light_gray>Баланс игрока <light_yellow>%player_name%</light_yellow>: <light_yellow>%balance%</light_yellow>.</light_gray>'
   Exchange:
     Error:
-      Disabled: "&b%currency_name% &c无法兑换！"
-      NoRate: "&b%currency_name% &c无法以 &b%name% &c兑换！"
-      LowAmount: "&b%currency_name% &c的金额太低无法兑换！"
-      LimitExceed: "&7你可以获得 &e%amount%&c，但你不能持有超过 &e%max% &c的总额！"
-      LowBalance: "&c你没有 &c%amount% 来兑换！"
-    Success: "&7你已将 &e%balance% &7兑换为 &e%amount%！"
+      Disabled: <light_gray><light_red>%currency_name%</light_red> нельзя обменять!</light_gray>
+      NoRate: <light_gray><light_red>%currency_name%</light_red> нельзя обменять на <light_red>%name%</light_red>!</light_gray>
+      LowAmount: <light_gray>Количество валюты <light_red>%currency_name%</light_red> слишком мало для обмена!</light_gray>
+      LowBalance: <light_gray>У вас нет <light_red>%amount%</light_red> для обмена!</light_gray>
+      LimitExceed: <light_gray>Вы могли получить +<light_red>%amount%</light_red>, но вы не можете иметь более <light_red>%max%</light_red> на балансе!</light_gray>
+    Success: <light_gray>Вы обменяли <light_yellow>%balance%</light_yellow> на <light_yellow>%amount%</light_yellow>!</light_gray>
   Error:
-    Invalid: "&c无效的货币！"
+    Invalid: <lgray>Валюты <light_red>%value%</light_red> не существует.</lgray>
+VaultEconomy:
+  Error:
+    InsufficientFunds: 'Недостаточно средств.'
+    InvalidPlayer: 'Игрок не найден.'

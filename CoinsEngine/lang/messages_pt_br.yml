@@ -1,77 +1,85 @@
 Command:
   Migrate:
-    Desc: Migrar dados de outros plugins.
-    Usage: <plugin> <moeda>
+    Desc: Перенос баланса игроков из другого плагина.
     Error:
-      Plugin: '#ea3131O plugin não é suportado ou instalado!'
-    Start: '#ead931Iniciada a migração de dados do #ea9631%name%#ead931! Isso pode levar um tempo.'
-    Done: '#ead931Dados migrados do #ea9631%name%#ead931!'
-
+      Plugin: <light_gray>Плагин не поддерживается или не установлен!</light_gray>
+    Start: <light_gray>Начат перенос баланса из <light_yellow>%name%</light_yellow>! Это может занять какое-то время...</light_gray>
+    Done: <light_gray>Перенос баланса из <light_yellow>%name%</light_yellow> завершен!</light_gray>
   Reset:
-    Desc: Resetar os saldos do jogador.
-    Usage: <jogador>
-    Done: '#ead931Resetados todos os saldos de moeda para #ea9631%player_name%#ead931!'
-
+    Desc: Обнуление баланса всех валют игрока.
+    Done: <light_gray>Обнулен баланс всех валют у игрока <light_yellow>%player_name%</light_yellow>!</light_gray>
   Wipe:
-    Desc: Resetar todas as moedas para todos os usuários.
-    Usage: <moeda>
-    Start: '#ead931Iniciada a limpeza de dados de moeda para #ea9631%currency_name%#ead931. Isso pode levar um tempo...'
-    Finish: '#ead931Limpeza de dados de moeda concluída para #ea9631%currency_name%#ead931.'
-
+    Desc: Обнуление баланса валюты для всех игроков.
+    Start: <light_gray>Начато обнуление баланса валюты <light_yellow>%currency_name%</light_yellow> для всех игроков. Это может занять какое-то время...</light_gray>
+    Finish: <light_gray>Обнуление баланса валюты <light_yellow>%currency_name%</light_yellow> для всех игроков завершено.</light_gray>
   Currency:
     Balance:
-      Usage: '[jogador]'
-      Desc: Verificar saldo de [jogador].
-      Done: '#74ea31Saldo de #74ea31%player_name%#aaa8a8: #74ea31%balance%#aaa8a8.'
-
+      Desc: Просмотр баланса.
     Give:
-      Usage: <jogador> <quantia> [-s]
-      Desc: Adicionar moeda a um jogador.
-      Done: '#ead931Adicionado #ea9631%amount%#ead931 à conta de #ea9631%player_name%#ead931. Novo saldo: #ea9631%balance%#ead931.'
-      Notify: '#ea9631#quantia# #ead931foi adicionada à sua conta!'
-
+      Desc: Добавить на баланс.
+      Done: '<light_gray>Добавлено <light_yellow>%amount%</light_yellow> на баланс игрока <light_yellow>%player_name%</light_yellow>. Новый баланс: <light_yellow>%balance%</light_yellow>.</light_gray>'
+      Notify: <light_gray><light_yellow>%amount%</light_yellow> было добавлено на ваш баланс!</light_gray>
     Take:
-      Usage: <jogador> <quantia> [-s]
-      Desc: Retirar moeda de um jogador.
-      Done: '#ead931Retirado #ea9631%amount%#ead931 da conta de #ea9631%player_name%#ead931. Novo saldo: #ea9631%balance%#ead931.'
-      Notify: '#ea9631#quantia# #ead931foi retirada da sua conta!'
-
+      Desc: Снять с баланса.
+      Done: '<light_gray>Снято <light_yellow>%amount%</light_yellow> с баланса игрока <light_yellow>%player_name%</light_yellow>. Новый баланс: <light_yellow>%balance%</light_yellow>.</light_gray>'
+      Notify: <light_gray><light_yellow>%amount%</light_yellow> было снято с вашего баланса!</light_gray>
     Set:
-      Usage: <jogador> <quantia> [-s]
-      Desc: Definir o saldo de moeda de um jogador.
-      Done: '#ead931Definido o saldo de #ea9631%player_name%#ead931 para #ea9631%balance%#ead931.'
-      Notify: '#ead931Seu saldo de #ea9631%currency_name%#ead931 foi definido como #ea9631%amount%#ead931.'
-
+      Desc: Установить баланс.
+      Done: <light_gray>Баланс валюты <light_yellow>%currency_name%</light_yellow> игрока <light_yellow>%player_name%</light_yellow> установлен на <light_yellow>%balance%</light_yellow>.</light_gray>
+      Notify: <light_gray>Ваш баланс валюты <light_yellow>%currency_name%</light_yellow> был установлен на <light_yellow>%amount%</light_yellow>.</light_gray>
     Send:
-      Usage: <jogador> <quantia>
-      Desc: Transferir moeda para um jogador.
+      Desc: Перевод валюты игроку.
       Error:
-        NotEnough: '#ead931Você não tem moedas suficientes de #ea3131%currency_name%#ead931!'
-        TooLow: '#ead931Você não pode enviar menos que #ea3131%amount%#ead931!'
-        NoPayments: '#ea3131#player_name# #ead931não aceita #ea3131%currency_name%#ead931!'
+        NotEnough: '<light_gray>У вас недостаточно средств: <light_red>%currency_name%</light_red>!</light_gray>'
+        TooLow: <light_gray>Нельзя отправить меньше, чем <light_red>%amount%</light_red>!</light_gray>
+        NoPayments: <light_gray><light_red>%player_name%</light_red> не принимает переводы валюты <light_red>%currency_name%</light_red>!</light_gray>
       Done:
-        Sender: '#ead931Você enviou #ea9631%amount%#ead931 para #ea9631%player_name%#ead931!'
-        Notify: '#ead931Você recebeu #ea9631%amount%#ead931 de #ea9631%player_name%#ead931!'
-
+        Sender: <light_gray>Отправлено <light_yellow>%amount%</light_yellow> игроку <light_yellow>%player_name%</light_yellow>!</light_gray>
+        Notify: <light_gray>Вы получили <light_yellow>%amount%</light_yellow> от игрока <light_yellow>%player_name%</light_yellow>!</light_gray>
     Payments:
-      Usage: '[jogador] [-s]'
-      Desc: Alternar aceitação de pagamentos de outros jogadores.
-      Toggle: '#ea9631Aceitação de pagamentos de #ea9631%currency_name%#ead931: #ea9631%state%#ead931.'
-      Target: '#ea9631Aceitação de pagamentos de #ea9631%currency_name%#ead931 para #ea9631%player_name%#ead931: #ea9631%state%#ead931.'
-
+      Desc: Вкл/выкл. прием платежей.
+      Toggle: '<light_gray>Прием платежей валюты <light_yellow>%currency_name%</light_yellow>: <light_yellow>%state%</light_yellow>.</light_gray>'
+      Target: '<light_gray>Прием платежей валюты <light_yellow>%currency_name%</light_yellow> игрока <light_yellow>%player_name%</light_yellow>: <light_yellow>%state%</light_yellow>.</light_gray>'
+    Exchange:
+      Desc: Обмен валюты.
     Top:
-      Usage: '[página]'
-      Desc: Lista de jogadores com o maior saldo.
+      Desc: Топ богачей по убыванию.
       List:
-      - <! prefix:"false" !>
-      - '#31eace'
-      - '#31eace&l%currency_name% TOP:'
-      - '#31eace'
-      - '#31eace%pos%. #aaa8a8%player_name%: #31eace%balance%'
-      - '#31eace'
-      - '#aaa8a8Página #31eace%current%#aaa8a8 de #31eace%max%#aaa8a8.'
-      - '#31eace'
-
+        - <noprefix>
+        - ' '
+        - <cyan><b>%currency_name% Top:</b></cyan>
+        - ' '
+        - '%entry%'
+        - ' '
+        - <light_gray>Страница <cyan>%current%</cyan> из <cyan>%max%</cyan>.</light_gray>
+        - ' '
+      Entry: '<cyan>%pos%. <gray>%player_name%: </gray>%balance%</cyan>'
+    GiveAll:
+      Desc: Выдача валюты всем игрокам на сервере.
+      Done: <lgray>Выдано <lyellow>%amount%</lyellow> всем игрокам <lyellow>на сервере</lyellow>.</lgray>
+    Root:
+      Desc: 'Команды валюты %currency_name%.'
+  Argument:
+    Name:
+      Currency: валюта
+      Page: страница
+      Plugin: плагин
 Currency:
+  Balance:
+    Display:
+      Own: '<light_gray>Баланс: <light_yellow>%balance%</light_yellow>.</light_gray>'
+      Others: '<light_gray>Баланс игрока <light_yellow>%player_name%</light_yellow>: <light_yellow>%balance%</light_yellow>.</light_gray>'
+  Exchange:
+    Error:
+      Disabled: <light_gray><light_red>%currency_name%</light_red> нельзя обменять!</light_gray>
+      NoRate: <light_gray><light_red>%currency_name%</light_red> нельзя обменять на <light_red>%name%</light_red>!</light_gray>
+      LowAmount: <light_gray>Количество валюты <light_red>%currency_name%</light_red> слишком мало для обмена!</light_gray>
+      LowBalance: <light_gray>У вас нет <light_red>%amount%</light_red> для обмена!</light_gray>
+      LimitExceed: <light_gray>Вы могли получить +<light_red>%amount%</light_red>, но вы не можете иметь более <light_red>%max%</light_red> на балансе!</light_gray>
+    Success: <light_gray>Вы обменяли <light_yellow>%balance%</light_yellow> на <light_yellow>%amount%</light_yellow>!</light_gray>
   Error:
-    Invalid: '#ea3131Moeda inválida!'
+    Invalid: <lgray>Валюты <light_red>%value%</light_red> не существует.</lgray>
+VaultEconomy:
+  Error:
+    InsufficientFunds: 'Недостаточно средств.'
+    InvalidPlayer: 'Игрок не найден.'
