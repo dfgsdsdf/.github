@@ -13,7 +13,7 @@
 "<green>%s:</green> <aqua>%s</aqua>": "<green>%s:</green> <aqua>%s</aqua>"
 
 # Reference: ACTIVE_DISGUISES
-"<dark_green>The disguises in use are:</dark_green> <green>%s</green>": "<dark_green>The disguises in use are:</dark_green> <green>%s</green>"
+"<dark_green>Используемые маскировки:</dark_green> <green>%s</green>": "<dark_green>Используемые маскировки:</dark_green> <green>%s</green>"
 
 # Reference: ACTIVE_DISGUISES_SEPERATOR
 "<red>,</red>": "<red>,</red>"
@@ -31,7 +31,7 @@
 "<red>Срок вашей маскировки истёк!": "<red>Срок вашей маскировки истёк!"
 
 # Reference: CAN_USE_DISGS
-"<dark_green>You can use the disguises:</dark_green> <green>%s</green>": "<dark_green>You can use the disguises:</dark_green> <green>%s</green>"
+"<dark_green>Вы можете использовать маскировки:</dark_green> <green>%s</green>": "<dark_green>Вы можете использовать маскировки:</dark_green> <green>%s</green>"
 
 # Reference: CAN_USE_DISGS_SEPERATOR
 "<red>, </red>": "<red>, </red>"
@@ -46,31 +46,31 @@
 "<red>Не удалось найти uuid '%s'": "<red>Не удалось найти uuid '%s'"
 
 # Reference: CLICK_TIMER
-"<red>Right click a entity in the next %s seconds to grab the disguise reference!": "<red>Right click a entity in the next %s seconds to grab the disguise reference!"
+"<red>Нажмите ПКМ a сущность in the next %s seconds to grab the disguise reference!": "<red>Нажмите ПКМ a сущность in the next %s seconds to grab the disguise reference!"
 
 # Reference: CLONE_HELP1
-"<dark_green>Right click a entity to get a disguise reference you can pass to other disguise commands!": "<dark_green>Right click a entity to get a disguise reference you can pass to other disguise commands!"
+"<dark_green>Нажмите ПКМ a сущность to get a disguise reference you can pass to other disguise commands!": "<dark_green>Нажмите ПКМ a сущность to get a disguise reference you can pass to other disguise commands!"
 
 # Reference: CLONE_HELP2
-"<dark_green>Security note: Any references you create will be available to all players able to use disguise references.": "<dark_green>Security note: Any references you create will be available to all players able to use disguise references."
+"<dark_green>Примечание по безопасности: Any references you create will be available to all игрокаs able to use disguise references.": "<dark_green>Примечание по безопасности: Any references you create will be available to all игрокаs able to use disguise references."
 
 # Reference: CLONE_HELP3
 "<dark_green>/disguiseclone IgnoreEquipment<dark_green>(<green>Optional</green>)": "<dark_green>/disguiseclone IgnoreEquipment<dark_green>(<green>Optional</green>)"
 
 # Reference: CUSTOM_DISGUISE_SAVED
-"<gold>Custom disguise has been saved as '%s'!": "<gold>Custom disguise has been saved as '%s'!"
+"<gold>Пользовательская маскировка сохранена как '%s'!": "<gold>Пользовательская маскировка сохранена как '%s'!"
 
 # Reference: D_HELP1
-"<dark_green>Disguise another player!": "<dark_green>Disguise another player!"
+"<dark_green>Disguise another игрока!": "<dark_green>Disguise another игрока!"
 
 # Reference: D_HELP3
-"<dark_green>/disguiseplayer <PlayerName> player <Name>": "<dark_green>/disguiseplayer <PlayerName> player <Name>"
+"<dark_green>/disguiseигрока <PlayerName> игрока <Name>": "<dark_green>/disguiseигрока <PlayerName> игрока <Name>"
 
 # Reference: D_HELP4
-"<dark_green>/disguiseplayer <PlayerName> <DisguiseType> <Baby>": "<dark_green>/disguiseplayer <PlayerName> <DisguiseType> <Baby>"
+"<dark_green>/disguiseигрока <PlayerName> <DisguiseType> <Baby>": "<dark_green>/disguiseигрока <PlayerName> <DisguiseType> <Baby>"
 
 # Reference: D_HELP5
-"<dark_green>/disguiseplayer <PlayerName> <Dropped_Item/Falling_Block> <Id> <Durability>": "<dark_green>/disguiseplayer <PlayerName> <Dropped_Item/Falling_Block> <Id> <Durability>"
+"<dark_green>/disguiseигрока <PlayerName> <Dropped_Item/Falling_Block> <Id> <Durability>": "<dark_green>/disguiseигрока <PlayerName> <Dropped_Item/Falling_Block> <Id> <Durability>"
 
 # Reference: D_PARSE_NOPERM
 "<red>You do not have permission to use the method %s": "<red>You do not have permission to use the method %s"
@@ -112,28 +112,28 @@
 "<gray>%s</gray>": "<gray>%s</gray>"
 
 # Reference: DISABLED_LIVING_TO_MISC
-"<red>Can't disguise a living entity as a misc disguise. This has been disabled in the config!": "<red>Can't disguise a living entity as a misc disguise. This has been disabled in the config!"
+"<red>Can't disguise a living сущность as a misc disguise. This has been disabled in the config!": "<red>Can't disguise a living сущность as a misc disguise. This has been disabled in the config!"
 
 # Reference: DISG_ENT_CLICK
-"<red>Right click an entity in the next %s seconds to disguise it as a %s!": "<red>Right click an entity in the next %s seconds to disguise it as a %s!"
+"<red>Нажмите ПКМ an сущность in the next %s seconds to disguise it as a %s!": "<red>Нажмите ПКМ an сущность in the next %s seconds to disguise it as a %s!"
 
 # Reference: DISG_ENT_HELP1
-"<dark_green>Choose a disguise then right click an entity to disguise it!": "<dark_green>Choose a disguise then right click an entity to disguise it!"
+"<dark_green>Выберите маскировку then right click an сущность to disguise it!": "<dark_green>Выберите маскировку then right click an сущность to disguise it!"
 
 # Reference: DISG_ENT_HELP3
-"<dark_green>/disguiseentity player <Name>": "<dark_green>/disguiseentity player <Name>"
+"<dark_green>/disguiseсущность игрока <Name>": "<dark_green>/disguiseсущность игрока <Name>"
 
 # Reference: DISG_ENT_HELP4
-"<dark_green>/disguiseentity <DisguiseType> <Baby>": "<dark_green>/disguiseentity <DisguiseType> <Baby>"
+"<dark_green>/disguiseсущность <DisguiseType> <Baby>": "<dark_green>/disguiseсущность <DisguiseType> <Baby>"
 
 # Reference: DISG_ENT_HELP5
-"<dark_green>/disguiseentity <Dropped_Item/Falling_Block> <Id> <Durability>": "<dark_green>/disguiseentity <Dropped_Item/Falling_Block> <Id> <Durability>"
+"<dark_green>/disguiseсущность <Dropped_Item/Falling_Block> <Id> <Durability>": "<dark_green>/disguiseсущность <Dropped_Item/Falling_Block> <Id> <Durability>"
 
 # Reference: DISG_HELP1
-"<dark_green>Choose a disguise to become the disguise!": "<dark_green>Choose a disguise to become the disguise!"
+"<dark_green>Выберите маскировку to become the disguise!": "<dark_green>Выберите маскировку to become the disguise!"
 
 # Reference: DISG_HELP2
-"<dark_green>/disguise player <Name>": "<dark_green>/disguise player <Name>"
+"<dark_green>/disguise игрока <Name>": "<dark_green>/disguise игрока <Name>"
 
 # Reference: DISG_HELP3
 "<dark_green>/disguise <DisguiseType> <Baby>": "<dark_green>/disguise <DisguiseType> <Baby>"
@@ -157,7 +157,7 @@
 "<red>Не удалось найти сущности для маскировки!": "<red>Не удалось найти сущности для маскировки!"
 
 # Reference: DMODENT_HELP1
-"<dark_green>Choose the options for a disguise then right click a entity to modify it!": "<dark_green>Choose the options for a disguise then right click a entity to modify it!"
+"<dark_green>Choose the options for a disguise then right click a сущность to modify it!": "<dark_green>Choose the options for a disguise then right click a сущность to modify it!"
 
 # Reference: DMODIFY_HELP1
 "<dark_green>Modify your own disguise as you wear it!": "<dark_green>Modify your own disguise as you wear it!"
@@ -175,19 +175,19 @@
 "<red>Нет прав to modify your disguise!": "<red>Нет прав to modify your disguise!"
 
 # Reference: DMODIFYENT_CLICK
-"<red>Right click a disguised entity in the next %s seconds to modify their disguise!": "<red>Right click a disguised entity in the next %s seconds to modify their disguise!"
+"<red>Нажмите ПКМ a disguised сущность in the next %s seconds to modify their disguise!": "<red>Нажмите ПКМ a disguised сущность in the next %s seconds to modify their disguise!"
 
 # Reference: DISGUISECOPY_INTERACT
-"<red>Right click a disguised entity in the next %s seconds to copy their disguise!": "<red>Right click a disguised entity in the next %s seconds to copy their disguise!"
+"<red>Нажмите ПКМ a disguised сущность in the next %s seconds to copy their disguise!": "<red>Нажмите ПКМ a disguised сущность in the next %s seconds to copy their disguise!"
 
 # Reference: DMODPLAYER_HELP1
-"<dark_green>Modify the disguise of another player!": "<dark_green>Modify the disguise of another player!"
+"<dark_green>Modify the disguise of another игрока!": "<dark_green>Modify the disguise of another игрока!"
 
 # Reference: DMODPLAYER_MODIFIED
 "<red>Modified the disguise of %s!": "<red>Modified the disguise of %s!"
 
 # Reference: DMODPLAYER_NODISGUISE
-"<red>The player '%s' is not disguised": "<red>The player '%s' is not disguised"
+"<red>The игрока '%s' is not disguised": "<red>The игрока '%s' is not disguised"
 
 # Reference: DMODPLAYER_NOPERM
 "<red>You do not have permission to modify this disguise": "<red>You do not have permission to modify this disguise"
@@ -202,7 +202,7 @@
 "Show": "Show"
 
 # Reference: DHELP_NO_OPTIONS
-"<red>No options with permission to use": "<red>No options with permission to use"
+"<red>Нет доступных параметров с правами": "<red>Нет доступных параметров с правами"
 
 # Reference: DCLONE_EQUIP
 "ignoreEquip": "ignoreEquip"
@@ -229,13 +229,13 @@
 "<red>Нет прав to modify %s disguises!": "<red>Нет прав to modify %s disguises!"
 
 # Reference: DMODRADIUS_UNRECOGNIZED
-"<red>Unrecognised DisguiseType %s": "<red>Unrecognised DisguiseType %s"
+"<red>Неизвестный тип маскировки %s": "<red>Неизвестный тип маскировки %s"
 
 # Reference: DMODRADIUS_USABLE
 "<dark_green>DisguiseTypes usable are: %s.</dark_green>": "<dark_green>DisguiseTypes usable are: %s.</dark_green>"
 
 # Reference: DPLAYER_SUPPLY
-"<red>You need to supply a disguise as well as the player/uuid": "<red>You need to supply a disguise as well as the player/uuid"
+"<red>You need to supply a disguise as well as the игрока/uuid": "<red>You need to supply a disguise as well as the игрока/uuid"
 
 # Reference: DRADIUS_ENTITIES
 "<dark_green>EntityTypes usable are:</dark_green> <green>%s</green>": "<dark_green>EntityTypes usable are:</dark_green> <green>%s</green>"
@@ -247,7 +247,7 @@
 "<dark_green>Disguise all entities in a radius! Caps at %s blocks!": "<dark_green>Disguise all entities in a radius! Caps at %s blocks!"
 
 # Reference: DRADIUS_HELP3
-"<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> player <<green>Name<dark_green>>": "<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> player <<green>Name<dark_green>>"
+"<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> игрока <<green>Name<dark_green>>": "<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> игрока <<green>Name<dark_green>>"
 
 # Reference: DRADIUS_HELP4
 "<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>DisguiseType</green>> <<green>Baby</green>(<green>Optional</green>)>": "<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>DisguiseType</green>> <<green>Baby</green>(<green>Optional</green>)>"
@@ -259,7 +259,7 @@
 "<dark_green>See the EntityType's usable by <green>/disguiseradius EntityTypes": "<dark_green>See the EntityType's usable by <green>/disguiseradius EntityTypes"
 
 # Reference: DRADIUS_MISCDISG
-"<red>Не удалось замаскировать %s entities because the option to disguise a living entity as a non-living has been disabled in the config": "<red>Не удалось замаскировать %s entities because the option to disguise a living entity as a non-living has been disabled in the config"
+"<red>Не удалось замаскировать %s entities because the option to disguise a living сущность as a non-living has been disabled in the config": "<red>Не удалось замаскировать %s entities because the option to disguise a living сущность as a non-living has been disabled in the config"
 
 # Reference: DRADIUS_NEEDOPTIONS
 "<red>You need to supply a disguise as well as the radius": "<red>You need to supply a disguise as well as the radius"
@@ -292,22 +292,22 @@
 "<red>Disguised %s as a %s!": "<red>Disguised %s as a %s!"
 
 # Reference: LISTEN_ENTITY_ENTITY_DISG_PLAYER
-"<red>Disguised %s as the player %s!": "<red>Disguised %s as the player %s!"
+"<red>Disguised %s as the игрока %s!": "<red>Disguised %s as the игрока %s!"
 
 # Reference: LISTEN_ENTITY_ENTITY_DISG_PLAYER_FAIL
-"<red>Не удалось замаскировать %s as the player %s!": "<red>Не удалось замаскировать %s as the player %s!"
+"<red>Не удалось замаскировать %s as the игрока %s!": "<red>Не удалось замаскировать %s as the игрока %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_ENTITY
-"<red>Disguised the player %s as a %s!": "<red>Disguised the player %s as a %s!"
+"<red>Disguised the игрока %s as a %s!": "<red>Disguised the игрока %s as a %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_ENTITY_FAIL
-"<red>Не удалось замаскировать the player %s as a %s!": "<red>Не удалось замаскировать the player %s as a %s!"
+"<red>Не удалось замаскировать the игрока %s as a %s!": "<red>Не удалось замаскировать the игрока %s as a %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_PLAYER
-"<red>Disguised the player %s as the player %s!": "<red>Disguised the player %s as the player %s!"
+"<red>Disguised the игрока %s as the игрока %s!": "<red>Disguised the игрока %s as the игрока %s!"
 
 # Reference: LISTEN_ENTITY_PLAYER_DISG_PLAYER_FAIL
-"<red>Не удалось замаскировать the player %s as the player %s!": "<red>Не удалось замаскировать the player %s as the player %s!"
+"<red>Не удалось замаскировать the игрока %s as the игрока %s!": "<red>Не удалось замаскировать the игрока %s as the игрока %s!"
 
 # Reference: LISTEN_UNDISG_ENT
 "<red>Undisguised the %s": "<red>Undisguised the %s"
@@ -388,7 +388,7 @@
 "<red>You must be disguised to run this command!": "<red>You must be disguised to run this command!"
 
 # Reference: TARGET_NOT_DISGUISED
-"<red>That entity is not disguised!": "<red>That entity is not disguised!"
+"<red>That сущность is not disguised!": "<red>That сущность is not disguised!"
 
 # Reference: NOT_NUMBER
 "<red>Error! %s is not a number": "<red>Error! %s is not a number"
@@ -469,13 +469,13 @@
 "<red>You do not have permission to use disguise references!": "<red>You do not have permission to use disguise references!"
 
 # Reference: PARSE_NO_REF
-"<red>Cannot find a disguise under the reference %s": "<red>Cannot find a disguise under the reference %s"
+"<red>Не удалось найти a disguise under the reference %s": "<red>Не удалось найти a disguise under the reference %s"
 
 # Reference: PARSE_OPTION_NA
-"<red>Cannot find the method '%s'": "<red>Cannot find the method '%s'"
+"<red>Не удалось найти the method '%s'": "<red>Не удалось найти the method '%s'"
 
 # Reference: PARSE_SUPPLY_PLAYER
-"<red>Error! You need to give a player name!": "<red>Error! You need to give a player name!"
+"<red>Error! You need to give a игрока name!": "<red>Error! You need to give a игрока name!"
 
 # Reference: PARSE_TOO_MANY_ARGS
 "<red>Error! %s doesn't know what to do with %s!": "<red>Error! %s doesn't know what to do with %s!"
@@ -496,7 +496,7 @@
 "<green>[LibsDisguises] Reloaded config.": "<green>[LibsDisguises] Reloaded config."
 
 # Reference: UND_ENTITY
-"<red>Right click a disguised entity to undisguise them!": "<red>Right click a disguised entity to undisguise them!"
+"<red>Нажмите ПКМ a disguised сущность to undisguise them!": "<red>Нажмите ПКМ a disguised сущность to undisguise them!"
 
 # Reference: UNDISG
 "<red>You are no longer disguised": "<red>You are no longer disguised"
@@ -508,7 +508,7 @@
 "<red>%s not disguised!": "<red>%s not disguised!"
 
 # Reference: UNDISG_PLAYER_HELP
-"<red>/undisguiseplayer <Name>": "<red>/undisguiseplayer <Name>"
+"<red>/undisguiseигрока <Name>": "<red>/undisguiseигрока <Name>"
 
 # Reference: UNDISRADIUS
 "<red>Successfully undisguised %s entities!": "<red>Successfully undisguised %s entities!"
@@ -631,7 +631,7 @@
 "<gray>Found a saved skin under that name locally! Using that!": "<gray>Found a saved skin under that name locally! Using that!"
 
 # Reference: SKIN_API_USING_NAME
-"<gray>Determined to be player name, now attempting to validate and connect to mineskin.org": "<gray>Determined to be player name, now attempting to validate and connect to mineskin.org"
+"<gray>Determined to be игрока name, now attempting to validate and connect to mineskin.org": "<gray>Determined to be игрока name, now attempting to validate and connect to mineskin.org"
 
 # Reference: SKIN_API_TOO_MANY_FAILURES
 "<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, to prevent backend spam you will not be able to make any more requests until a hour has passed from your last failed request. Try /grabskin if you need to test.": "<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, to prevent backend spam you will not be able to make any more requests until a hour has passed from your last failed request. Try /grabskin if you need to test."
@@ -649,7 +649,7 @@
 "<green>/savedisguise <DisguiseName> <Arguments>": "<green>/savedisguise <DisguiseName> <Arguments>"
 
 # Reference: SAVE_DISG_HELP_4
-"<green>Your arguments need to be as if you're using /disguise. So '/disguise player Notch setsneaking' - Means '/savedisguise Notch player Notch setsneaking'": "<green>Your arguments need to be as if you're using /disguise. So '/disguise player Notch setsneaking' - Means '/savedisguise Notch player Notch setsneaking'"
+"<green>Your arguments need to be as if you're using /disguise. So '/disguise игрока Notch setsneaking' - Means '/savedisguise Notch игрока Notch setsneaking'": "<green>Your arguments need to be as if you're using /disguise. So '/disguise игрока Notch setsneaking' - Means '/savedisguise Notch игрока Notch setsneaking'"
 
 # Reference: SAVE_DISG_HELP_5
 "<green>Remember! You can upload your own skins, then reference those skins!": "<green>Remember! You can upload your own skins, then reference those skins!"
@@ -658,7 +658,7 @@
 "<green>If you are using setSkin, you can append :slim to your skin path to get the slim Alex model. So myskin.png:slim": "<green>If you are using setSkin, you can append :slim to your skin path to get the slim Alex model. So myskin.png:slim"
 
 # Reference: GRAB_DISG_HELP_1
-"<green>You can choose a name to save the skins under, the names will be usable as if it was an actual player skin": "<green>You can choose a name to save the skins under, the names will be usable as if it was an actual player skin"
+"<green>You can choose a name to save the skins under, the names will be usable as if it was an actual игрока skin": "<green>You can choose a name to save the skins under, the names will be usable as if it was an actual игрока skin"
 
 # Reference: GRAB_DISG_HELP_2
 "<dark_green>/grabskin <Optional Name> https://somesite.com/myskin.png": "<dark_green>/grabskin <Optional Name> https://somesite.com/myskin.png"
@@ -679,7 +679,7 @@
 "<green>Head successfully grabbed and added to inventory!": "<green>Head successfully grabbed and added to inventory!"
 
 # Reference: GRAB_HEAD_HELP_1
-"<green>Grab the head of a file, player or url! This is a Lib's Disguises feature.": "<green>Grab the head of a file, player or url! This is a Lib's Disguises feature."
+"<green>Grab the head of a file, игрока or url! This is a Lib's Disguises feature.": "<green>Grab the head of a file, игрока or url! This is a Lib's Disguises feature."
 
 # Reference: GRAB_HEAD_HELP_2
 "<dark_green>/grabhead https://somesite.com/myskin.png": "<dark_green>/grabhead https://somesite.com/myskin.png"
@@ -721,7 +721,7 @@
 "<red>This server is not premium, non-admins should not be able to use commands": "<red>This server is not premium, non-admins should not be able to use commands"
 
 # Reference: LIBS_PERM_CHECK_CAN_TARGET
-"<gold>You can specify a player target with /ld permtest <Target> instead!": "<gold>You can specify a player target with /ld permtest <Target> instead!"
+"<gold>You can specify a игрока target with /ld permtest <Target> instead!": "<gold>You can specify a игрока target with /ld permtest <Target> instead!"
 
 # Reference: LIBS_PERM_CHECK_USING_TARGET
 "<gold>Running the permission test on '%s'": "<gold>Running the permission test on '%s'"
@@ -745,7 +745,7 @@
 "<gold>Lib's Disguises permission check, fail. Your permission plugin isn't compliant!": "<gold>Lib's Disguises permission check, fail. Your permission plugin isn't compliant!"
 
 # Reference: LIBS_PERM_CHECK_ZOMBIE_PERMISSIONS
-"<gold>Tested libsdisguises.disguise.zombie, which your player seems to have! There may be a problem in your permissions setup!": "<gold>Tested libsdisguises.disguise.zombie, which your player seems to have! There may be a problem in your permissions setup!"
+"<gold>Tested libsdisguises.disguise.zombie, which your игрока seems to have! There may be a problem in your permissions setup!": "<gold>Tested libsdisguises.disguise.zombie, which your игрока seems to have! There may be a problem in your permissions setup!"
 
 # Reference: LIBS_PERM_CHECK_COMMAND_UNREGISTERED
 "<red>The /disguise command seems to be unregistered! Check your config!": "<red>The /disguise command seems to be unregistered! Check your config!"
@@ -799,7 +799,7 @@
 "<gold>On scoreboard team '%s' with pushing disabled! If you're still having issues and you are disguised right now, then you have a plugin modifying scoreboard through packets. Example of this is a plugin that modifies your name above head, or the tablist. Check their configs for pushing disabling options\nSay 'I read to the end' if you still need help with this, or we'll assume you can't read.": "<gold>On scoreboard team '%s' with pushing disabled! If you're still having issues and you are disguised right now, then you have a plugin modifying scoreboard through packets. Example of this is a plugin that modifies your name above head, or the tablist. Check their configs for pushing disabling options\nSay 'I read to the end' if you still need help with this, or we'll assume you can't read."
 
 # Reference: LIBS_SCOREBOARD_NAMES_DISABLED
-"<red>Scoreboard names has been disabled, the test for player disguises has failed before it started": "<red>Scoreboard names has been disabled, the test for player disguises has failed before it started"
+"<red>Scoreboard names has been disabled, the test for игрока disguises has failed before it started": "<red>Scoreboard names has been disabled, the test for игрока disguises has failed before it started"
 
 # Reference: LIBS_SCOREBOARD_IGNORE_TEST
 "<green>This was a seperate test from the self disguising collision test that will follow!": "<green>This was a seperate test from the self disguising collision test that will follow!"
@@ -811,7 +811,7 @@
 "<green>Too many issues found, hidden %s</green>": "<green>Too many issues found, hidden %s</green>"
 
 # Reference: LIBS_SCOREBOARD_NO_ISSUES
-"<green>No issues found in player disguise scoreboard name teams": "<green>No issues found in player disguise scoreboard name teams"
+"<green>No issues found in игрока disguise scoreboard name teams": "<green>No issues found in игрока disguise scoreboard name teams"
 
 # Reference: LD_COMMAND_UPDATE_PACKET_EVENTS
 "<blue>/libsdisguises updatepacketevents - <aqua>Updates PacketEvents to the latest release": "<blue>/libsdisguises updatepacketevents - <aqua>Updates PacketEvents to the latest release"
@@ -841,7 +841,7 @@
 "<blue>/libsdisguises json - <aqua>Turns the current held item into a string format": "<blue>/libsdisguises json - <aqua>Turns the current held item into a string format"
 
 # Reference: LD_COMMAND_MODS
-"<blue>/libsdisguises mods <Player?> - <aqua>If using modded entities, this will tell you what mods a player is using if possible": "<blue>/libsdisguises mods <Player?> - <aqua>If using modded entities, this will tell you what mods a player is using if possible"
+"<blue>/libsdisguises mods <Player?> - <aqua>If using modded entities, this will tell you what mods a игрока is using if possible": "<blue>/libsdisguises mods <Player?> - <aqua>If using modded entities, this will tell you what mods a игрока is using if possible"
 
 # Reference: LD_COMMAND_PERMTEST
 "<blue>/libsdisguises permtest <Player?> - <aqua>Does a quick test to see if your permissions are working": "<blue>/libsdisguises permtest <Player?> - <aqua>Does a quick test to see if your permissions are working"
@@ -853,7 +853,7 @@
 "<blue>/libsdisguises reload - <aqua>Reload's the plugin config and possibly blows disguises": "<blue>/libsdisguises reload - <aqua>Reload's the plugin config and possibly blows disguises"
 
 # Reference: LD_COMMAND_DEBUG
-"<blue>/libsdisguises debug - <aqua>Used to help debug scoreboard issues on a player disguise": "<blue>/libsdisguises debug - <aqua>Used to help debug scoreboard issues on a player disguise"
+"<blue>/libsdisguises debug - <aqua>Used to help debug scoreboard issues on a игрока disguise": "<blue>/libsdisguises debug - <aqua>Used to help debug scoreboard issues on a игрока disguise"
 
 # Reference: LD_COMMAND_UPLOAD_LOGS
 "<blue>/libsdisguises uploadlogs - <aqua>Uploads latest.log, disguises.yml and configs and gives you the link to share. Used when seeking assistance.": "<blue>/libsdisguises uploadlogs - <aqua>Uploads latest.log, disguises.yml and configs and gives you the link to share. Used when seeking assistance."
