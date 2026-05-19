@@ -32,11 +32,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffStonebreaker"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Mine 128 stones."
+      - "#e8e8e8→ Добудьте 128 камней."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: BREAK
     required_item: STONE
     required_amount: 128
@@ -50,11 +50,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffCoal Miner"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Mine 16 coal ores."
+      - "#e8e8e8→ Добудьте 16 coal руд."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: BREAK
     required_item: COAL_ORE
     required_amount: 16
@@ -68,11 +68,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffEnchant Pregame"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Mine 16 lapis ores."
+      - "#e8e8e8→ Добудьте 16 lapis руд."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: BREAK
     required_item: LAPIS_ORE
     required_amount: 16
@@ -86,11 +86,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffLET HIM COOK"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Cook/smelt 4 random items."
+      - "#e8e8e8→ Приготовьте/переплавьте 4 случайных предметов."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: COOK
     required_amount: 4
     reward:
@@ -103,11 +103,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffSlayer"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Slay 5 mobs."
+      - "#e8e8e8→ Убейте 5 мобов."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: KILL
     required_amount: 5
     reward:
@@ -122,9 +122,9 @@ quests:
     description:
       - "#e8e8e8→ Farm 20 random crops."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: FARMING
     required_amount: 20
     reward:
@@ -137,11 +137,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffFishin' Time"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Fish 8 times."
+      - "#e8e8e8→ Поймайте 8 times."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: FISH
     required_amount: 8
     reward:
@@ -154,11 +154,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffUndead Slayer"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Slay 10 zombies or skeletons."
+      - "#e8e8e8→ Убейте 10 zombies or skeletons."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: FISH
     required_amount: 10
     required_entity:
@@ -176,9 +176,9 @@ quests:
     description:
       - "#e8e8e8→ Farm 15 wheat crops."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: FARMING
     required_item: WHEAT
     required_amount: 15
@@ -192,11 +192,11 @@ quests:
     name: "#4e59de♣&lJACK &8| #7581ffArachnophobic"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Slay 5 spiders."
+      - "#e8e8e8→ Убейте 5 spiders."
       - ""
-      - " #bcecf7+20 Stardust"
-      - " #d1884f+100 Coins"
-      - " #db8a8a+100 Class EXP"
+      - " #bcecf7+20 Стардаст"
+      - " #d1884f+100 Монет"
+      - " #db8a8a+100 Опыт класса"
     quest_type: KILL
     required_entity: SPIDER
     required_amount: 5

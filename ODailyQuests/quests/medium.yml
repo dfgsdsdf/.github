@@ -32,11 +32,11 @@ quests:
     name: "#db4da0♥&lQUEEN &8| #ff70c3Iron Eater"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Mine 32 iron ores."
+      - "#e8e8e8→ Добудьте 32 iron руд."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: BREAK
     required_item: IRON_ORE
     required_amount: 32
@@ -50,11 +50,11 @@ quests:
     name: "#db4da0♥&lQUEEN &8| #ff70c3Gold Savage"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Mine 32 gold ores."
+      - "#e8e8e8→ Добудьте 32 gold руд."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: BREAK
     required_item: GOLD_ORE
     required_amount: 32
@@ -68,11 +68,11 @@ quests:
     name: "#db4da0♥&lQUEEN &8| #ff70c3Quartz Hoarder"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Mine 32 nether quartz ores."
+      - "#e8e8e8→ Добудьте 32 nether quartz руд."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: BREAK
     required_item: NETHER_QUARTZ_ORE
     required_amount: 32
@@ -86,11 +86,11 @@ quests:
     name: "#db4da0♥&lQUEEN &8| #ff70c3Villager Lover"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Mine 16 emerald ores."
+      - "#e8e8e8→ Добудьте 16 emerald руд."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: BREAK
     required_item: EMERALD_ORE
     required_amount: 16
@@ -106,9 +106,9 @@ quests:
     description:
       - "#e8e8e8→ Gain 10 EXP levels."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: EXP_LEVELS
     required_amount: 10
     reward:
@@ -121,11 +121,11 @@ quests:
     name: "#db4da0♥&lQUEEN &8| #ff70c3Enderslayer"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Slay 10 endermen."
+      - "#e8e8e8→ Убейте 10 endermen."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: KILL
     required_entity: ENDERMAN
     required_amount: 10
@@ -139,11 +139,11 @@ quests:
     name: "#db4da0♥&lQUEEN &8| #ff70c3Poison Fisher"
     menu_item: custommodeldata:barrier:1
     description:
-      - "#e8e8e8→ Fish up 3 pufferfish."
+      - "#e8e8e8→ Поймайте up 3 pufferfish."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: FISH
     required_item: PUFFERFISH
     required_amount: 3
@@ -159,9 +159,9 @@ quests:
     description:
       - "#e8e8e8→ Shear 4 times."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: SHEAR
     required_amount: 4
     reward:
@@ -176,9 +176,9 @@ quests:
     description:
       - "#e8e8e8→ Farm 5 carrot crops."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: FARMING
     required_item: CARROT
     required_amount: 5
@@ -194,9 +194,9 @@ quests:
     description:
       - "#e8e8e8→ Farm 5 melon crops."
       - ""
-      - " #bcecf7+35 Stardust"
-      - " #d1884f+250 Coins"
-      - " #db8a8a+150 Class EXP"
+      - " #bcecf7+35 Стардаст"
+      - " #d1884f+250 Монет"
+      - " #db8a8a+150 Опыт класса"
     quest_type: FARMING
     required_item: MELON
     required_amount: 5

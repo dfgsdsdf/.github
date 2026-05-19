@@ -1,16 +1,16 @@
 Settings:
-  # Rarity affects the chance of getting an enchantment from enchanting or loots depending on rarity weight value.
-  # You can create and edit rarities in the config.yml
+  # Редкость влияет на шанс получения зачарования при чаровании или из лута в зависимости от веса редкости.
+  # Вы можете создавать и редактировать редкости в config.yml
   Rarity: legendary
-  # Enchantment display name.
-  Name: Flare
-  # Enchantment description.
+  # Отображаемое название зачарования.
+  Name: Вспышка
+  # Описание зачарования.
   # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
   Description:
   - '%enchantment_trigger_chance%% chance to create'
   - 'a torch where arrow lands.'
   Level:
-    # The maximum level of this enchantment.
+    # Максимальный уровень этого зачарования.
     # Value between 1 and 255 (inclusive).
     # [*] Reboot required when changed.
     Max: 1
@@ -36,14 +36,14 @@ Settings:
     # The base cost when applying this enchantment to another item using an anvil. Halved when adding using a book, multiplied by the level of the enchantment.
     # [*] Reboot required when changed.
     Anvil: 6
-  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  # Определяет, будет ли это зачарование скрыто в GUI зачарований.
   Hide_From_List: false
   VisualEffects:
     # Enables enchantment visual effects (mostly particles).
-    Enabled: true
-    # Sets projectile particle trail effect.
+    Включено: true
+    # Sets projectile particle trail эффект.
     Trail:
-      Name: ELECTRIC_SPARK
+  Name: Вспышка
   # A chance that this enchantment will be triggered.
   Trigger_Chance:
     # Start modifier value.
@@ -63,7 +63,7 @@ Settings:
   Conflicts: []
 Distribution:
   # Sets whether this enchantment is a treasure enchantment.
-  # Treasure enchantments are those that can't be obtained using an enchantment table, and won't be generated on randomly enchanted equipment sold by villagers or worn by mobs.
+  # Treasure enchantments are those that can't be obtained using an enchantment table, and won't be generated on randomly enchanted equipment sold by villagers or worn by мобов.
   # Treasure enchantments can only be received via looting, trading, or fishing.
   # If a treasure enchantment is tradable, it will have double the price (before capping to 64 emeralds) compared to a non-treasure enchantment of the same level.
   # [*] Reboot required when changed.
